@@ -4,10 +4,7 @@ import { describe, expect, it } from 'vitest';
 
 describe('architecture guardrails', () => {
   it('forbids Redux libraries in presentation UI', () => {
-    const scanner = fs.readFileSync(
-      path.resolve('scripts/check-ui-redux-imports.mjs'),
-      'utf8',
-    );
+    const scanner = fs.readFileSync(path.resolve('scripts/check-ui-redux-imports.mjs'), 'utf8');
     expect(scanner).toContain('reduxjs');
     expect(scanner).toContain('react-redux');
     expect(scanner).toMatch(/ui\|components/);
