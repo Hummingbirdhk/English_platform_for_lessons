@@ -20,6 +20,13 @@ export default tseslint.config(
     },
   },
   {
+    files: ['scripts/**/*.mjs', '*.cjs', '*.js'],
+    languageOptions: { ecmaVersion: 2022, globals: globals.node },
+    rules: {
+      'no-useless-escape': 'off',
+    },
+  },
+  {
     files: presentationFiles,
     rules: {
       'no-restricted-imports': [
