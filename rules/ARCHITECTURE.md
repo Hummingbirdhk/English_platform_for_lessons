@@ -30,9 +30,15 @@ features/<name>/
   index.ts
 ```
 
+## React / Redux boundary
+
+React component files (`.tsx`) do not import `@reduxjs/toolkit` or `react-redux` directly. The only allowed infrastructure exception is `src/app/providers/AppProviders.tsx`, which mounts the application Redux Provider.
+
+Feature controllers may use typed hooks from `src/app/store/hooks.ts`. Feature model files may use Redux Toolkit. React components consume controller outputs, props, callbacks, and view-model data instead.
+
 ## Presentation boundary
 
-Files under `ui/` or `components/` consume props and callbacks only. They must not import `@reduxjs/toolkit`, `react-redux`, store modules, slices, reducers, thunks, listeners, or raw selectors.
+Files under `ui/` or `components/` consume props and callbacks only. In addition to the global React/Redux rule, they must not import store modules, slices, reducers, thunks, listeners, model internals, or raw selectors.
 
 A presentation component must work in tests without a Redux Provider.
 
@@ -47,3 +53,5 @@ Normal lessons are data under `src/content`, not one-off React pages. Interactiv
 ## Enforcement
 
 `npm run check:architecture`, `npm run check:ui-redux`, ESLint, tests, and `npm run verify` are executable requirements, not suggestions.
+
+The direct Redux-import rule is intentionally enforced twice: by ESLint and by `scripts/check-ui-redux-imports.mjs`. The independent checker has an executable regression fixture in `tests/architecture`.
