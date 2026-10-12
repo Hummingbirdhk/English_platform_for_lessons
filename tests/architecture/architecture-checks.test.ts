@@ -1,13 +1,21 @@
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 describe('architecture guardrails', () => {
-  it('forbids Redux libraries in presentation UI', () => {
-    const scanner = fs.readFileSync(path.resolve('scripts/check-ui-redux-imports.mjs'), 'utf8');
-    expect(scanner).toContain('reduxjs');
-    expect(scanner).toContain('react-redux');
-    expect(scanner).toMatch(/ui\|components/);
+  it('rejects a React component that imports React Redux directly', () => {
+    const result = spawnSync(
+      process.execPath,
+      [
+        'scripts/check-ui-redux-imports.mjs',
+        'tests/architecture/fixtures/illegal-ui-redux.tsx',
+      ],
+      { encoding: 'utf8' },
+    );
+
+    expect(result.status).not.toBe(0);
+    expect(result.stderr).toContain('react-redux');
   });
 
   it('defines dependency boundaries', () => {
