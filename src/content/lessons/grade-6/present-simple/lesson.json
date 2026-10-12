@@ -1,0 +1,11 @@
+{
+  "id": "present-simple-01",
+  "title": "Present Simple: Daily Routine",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "sections": [
+    {"id":"intro-01","type":"intro","title":"Present Simple","body":"We use Present Simple to talk about routines and things that happen regularly. / Мы используем Present Simple, когда говорим о привычках и регулярных действиях."},
+    {"id":"exercise-01","type":"feature","feature":"multiple-choice","exerciseId":"present-simple-basics"}
+  ]
+}
