@@ -27,6 +27,27 @@ export default tseslint.config(
     },
   },
   {
+    files: ['src/**/*.tsx'],
+    ignores: ['src/app/providers/AppProviders.tsx'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: [
+            {
+              name: '@reduxjs/toolkit',
+              message: 'React components must not depend directly on Redux Toolkit.',
+            },
+            {
+              name: 'react-redux',
+              message: 'React components must not depend directly on React Redux.',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     files: presentationFiles,
     rules: {
       'no-restricted-imports': [
