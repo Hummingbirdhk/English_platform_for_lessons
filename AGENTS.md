@@ -21,7 +21,8 @@ Check `/references` when educational reference material is relevant.
 ## Non-negotiable architecture
 
 - React presentation components are consumers only. They receive data and callbacks through props.
-- Presentation UI must not import `@reduxjs/toolkit`, `react-redux`, store modules, slices, reducers, thunks, listeners, or raw Redux selectors.
+- React component files (`.tsx`) must not import `@reduxjs/toolkit` or `react-redux` directly. The only infrastructure exception is `src/app/providers/AppProviders.tsx`, which mounts the Redux Provider.
+- Presentation UI must not import store modules, slices, reducers, thunks, listeners, or raw Redux selectors.
 - Redux Toolkit belongs in feature `model/` code and app store composition.
 - React-to-business-logic adaptation belongs in `controller/` hooks.
 - Business logic that can be pure belongs in `lib/`.
@@ -44,7 +45,7 @@ npm run verify
 
 Do not disable, weaken, skip, comment out, or special-case a quality gate merely to make verification pass. Fix the cause.
 
-The repository must reject direct Redux/RTK imports in presentation React components, invalid layer dependencies, unknown feature keys, malformed content, duplicate content IDs, missing referenced exercises, TypeScript errors, lint/format failures, failing tests, and production build failures.
+The repository must reject direct Redux/RTK imports in React components, presentation-to-store/model imports, invalid layer dependencies, unknown feature keys, malformed content, duplicate content IDs, missing referenced exercises, TypeScript errors, lint/format failures, failing tests, and production build failures.
 
 ## Educational accuracy
 
