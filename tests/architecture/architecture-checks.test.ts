@@ -7,10 +7,7 @@ describe('architecture guardrails', () => {
   it('rejects a React component that imports React Redux directly', () => {
     const result = spawnSync(
       process.execPath,
-      [
-        'scripts/check-ui-redux-imports.mjs',
-        'tests/architecture/fixtures/illegal-ui-redux.tsx',
-      ],
+      ['scripts/check-ui-redux-imports.mjs', 'tests/architecture/fixtures/illegal-ui-redux.tsx'],
       { encoding: 'utf8' },
     );
 
