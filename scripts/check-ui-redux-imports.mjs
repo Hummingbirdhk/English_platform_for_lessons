@@ -5,10 +5,7 @@ const root = process.cwd();
 const sourceRoot = path.join(root, 'src');
 const explicitFiles = process.argv.slice(2);
 
-const directReduxRules = [
-  /from\s+['"]@reduxjs\/toolkit['"]/,
-  /from\s+['"]react-redux['"]/,
-];
+const directReduxRules = [/from\s+['"]@reduxjs\/toolkit['"]/, /from\s+['"]react-redux['"]/];
 
 const presentationInternalRules = [
   /from\s+['"][^'"]*\/app\/store\//,
@@ -38,7 +35,9 @@ for (const file of candidates) {
 
   if (!isReduxProvider) {
     for (const rule of directReduxRules) {
-      if (rule.test(source)) violations.push(`${relative} directly imports Redux via ${rule}`);
+      if (rule.test(source)) {
+        violations.push(`${relative} directly imports Redux via ${rule}`);
+      }
     }
   }
 
@@ -59,4 +58,6 @@ if (violations.length) {
   process.exit(1);
 }
 
-console.log(`React/Redux boundary check passed (${candidates.length} React component files).`);
+console.log(
+  `React/Redux boundary check passed (${candidates.length} React component files).`,
+);
