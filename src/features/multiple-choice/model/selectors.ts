@@ -1,4 +1,10 @@
-import type { RootState } from '../../../app/store/store';
-export function selectMultipleChoiceState(state: RootState, exerciseId: string) {
-  return state.multipleChoice[exerciseId] ?? { selectedOptionId: null, status: 'idle' as const };
+import type { MultipleChoiceStatus } from '../types';
+
+export type MultipleChoiceSliceState = Record<
+  string,
+  { selectedOptionId: string | null; status: MultipleChoiceStatus }
+>;
+
+export function selectMultipleChoiceState(state: MultipleChoiceSliceState, exerciseId: string) {
+  return state[exerciseId] ?? { selectedOptionId: null, status: 'idle' as const };
 }
