@@ -58,6 +58,4 @@ if (violations.length) {
   process.exit(1);
 }
 
-console.log(
-  `React/Redux boundary check passed (${candidates.length} React component files).`,
-);
+console.log(`React/Redux boundary check passed (${candidates.length} React component files).`);
