@@ -10,8 +10,7 @@ export function useMultipleChoice(exerciseId: string, correctOptionId: string) {
   );
 
   const selectOption = useCallback(
-    (optionId: string) =>
-      dispatch(multipleChoiceActions.selectOption({ exerciseId, optionId })),
+    (optionId: string) => dispatch(multipleChoiceActions.selectOption({ exerciseId, optionId })),
     [dispatch, exerciseId],
   );
 
