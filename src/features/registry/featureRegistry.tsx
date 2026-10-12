@@ -8,6 +8,13 @@ const MultipleChoiceRenderer: FeatureRenderer = ({ exercise }) => {
   return <MultipleChoiceFeature exercise={exercise} />;
 };
 
-export const featureRegistry = { 'multiple-choice': MultipleChoiceRenderer } satisfies Record<FeatureKey, FeatureRenderer>;
-export function getFeatureRenderer(feature: string): FeatureRenderer | undefined { return featureRegistry[feature as keyof typeof featureRegistry]; }
-export function isExerciseCompatible(feature: string, exercise: ExerciseDefinition): boolean { return feature === exercise.type; }
+export const featureRegistry = { 'multiple-choice': MultipleChoiceRenderer } satisfies Record<
+  FeatureKey,
+  FeatureRenderer
+>;
+export function getFeatureRenderer(feature: string): FeatureRenderer | undefined {
+  return featureRegistry[feature as keyof typeof featureRegistry];
+}
+export function isExerciseCompatible(feature: string, exercise: ExerciseDefinition): boolean {
+  return feature === exercise.type;
+}

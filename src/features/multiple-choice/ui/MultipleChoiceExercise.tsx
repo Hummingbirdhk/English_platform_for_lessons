@@ -1,3 +1,43 @@
 import { Alert, Button, Card, Radio, Space, Typography } from 'antd';
 import type { MultipleChoiceExerciseProps } from '../types';
-export function MultipleChoiceExercise({prompt,options,selectedOptionId,status,explanation,onSelect,onSubmit}:MultipleChoiceExerciseProps){return <Card title="Practice" className="lesson-card"><Space direction="vertical" size="middle" style={{width:'100%'}}><Typography.Text strong>{prompt}</Typography.Text><Radio.Group value={selectedOptionId} onChange={(event)=>onSelect(event.target.value)}><Space direction="vertical">{options.map((option)=><Radio key={option.id} value={option.id}>{option.text}</Radio>)}</Space></Radio.Group><Button type="primary" disabled={!selectedOptionId} onClick={onSubmit}>Check answer</Button>{status==='correct'&&<Alert type="success" showIcon message="Correct!" />}{status==='incorrect'&&<Alert type="error" showIcon message="Try again." />}{status!=='idle'&&explanation&&<Alert description={<><div>{explanation.en}</div><div>{explanation.ru}</div></>} />}</Space></Card>}
+export function MultipleChoiceExercise({
+  prompt,
+  options,
+  selectedOptionId,
+  status,
+  explanation,
+  onSelect,
+  onSubmit,
+}: MultipleChoiceExerciseProps) {
+  return (
+    <Card title="Practice" className="lesson-card">
+      <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+        <Typography.Text strong>{prompt}</Typography.Text>
+        <Radio.Group value={selectedOptionId} onChange={(event) => onSelect(event.target.value)}>
+          <Space direction="vertical">
+            {options.map((option) => (
+              <Radio key={option.id} value={option.id}>
+                {option.text}
+              </Radio>
+            ))}
+          </Space>
+        </Radio.Group>
+        <Button type="primary" disabled={!selectedOptionId} onClick={onSubmit}>
+          Check answer
+        </Button>
+        {status === 'correct' && <Alert type="success" showIcon message="Correct!" />}
+        {status === 'incorrect' && <Alert type="error" showIcon message="Try again." />}
+        {status !== 'idle' && explanation && (
+          <Alert
+            description={
+              <>
+                <div>{explanation.en}</div>
+                <div>{explanation.ru}</div>
+              </>
+            }
+          />
+        )}
+      </Space>
+    </Card>
+  );
+}

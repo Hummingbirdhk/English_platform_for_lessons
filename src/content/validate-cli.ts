@@ -3,6 +3,29 @@ import path from 'node:path';
 import { registeredFeatureKeys } from '../shared/config/featureKeys';
 import { contentBundleSchema } from './schema/contentSchema';
 import { validateContent } from './validateContent';
-function readJsonFiles(dir: string): unknown[] { if (!fs.existsSync(dir)) return []; return fs.readdirSync(dir,{withFileTypes:true}).flatMap((entry)=>{const full=path.join(dir,entry.name);if(entry.isDirectory()) return readJsonFiles(full);if(!entry.name.endsWith('.json')) return [];return [JSON.parse(fs.readFileSync(full,'utf8'))];}); }
-const rawBundle={lessons:readJsonFiles(path.resolve('src/content/lessons')),exercises:readJsonFiles(path.resolve('src/content/exercises'))};
-const parsed=contentBundleSchema.safeParse(rawBundle); if(!parsed.success){console.error(parsed.error.issues.map((issue)=>`${issue.path.join('.')}: ${issue.message}`).join('\n'));process.exit(1);} const result=validateContent(parsed.data,registeredFeatureKeys); if(!result.ok){console.error(result.errors.join('\n'));process.exit(1);} console.log('Content validation passed.');
+function readJsonFiles(dir: string): unknown[] {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) return readJsonFiles(full);
+    if (!entry.name.endsWith('.json')) return [];
+    return [JSON.parse(fs.readFileSync(full, 'utf8'))];
+  });
+}
+const rawBundle = {
+  lessons: readJsonFiles(path.resolve('src/content/lessons')),
+  exercises: readJsonFiles(path.resolve('src/content/exercises')),
+};
+const parsed = contentBundleSchema.safeParse(rawBundle);
+if (!parsed.success) {
+  console.error(
+    parsed.error.issues.map((issue) => `${issue.path.join('.')}: ${issue.message}`).join('\n'),
+  );
+  process.exit(1);
+}
+const result = validateContent(parsed.data, registeredFeatureKeys);
+if (!result.ok) {
+  console.error(result.errors.join('\n'));
+  process.exit(1);
+}
+console.log('Content validation passed.');

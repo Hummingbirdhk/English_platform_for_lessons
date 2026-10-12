@@ -35,6 +35,7 @@
 ## File Map
 
 ### Application shell
+
 - `package.json` — dependency list and canonical scripts.
 - `package-lock.json` — deterministic dependency resolution.
 - `vite.config.ts` — Vite build/test aliases and GitHub Pages base path.
@@ -51,6 +52,7 @@
 - `src/shared/ui/AppErrorBoundary.tsx` — student-safe runtime error boundary.
 
 ### Content system
+
 - `src/content/schema/lessonSchema.ts` — Zod schemas for lesson metadata and sections.
 - `src/content/schema/exerciseSchema.ts` — Zod schemas for standard exercise definitions.
 - `src/content/schema/contentSchema.ts` — root content schema and allowed level/grade constants.
@@ -63,6 +65,7 @@
 - `tests/content/content-validation.test.ts` — schema/reference/duplicate tests.
 
 ### Feature architecture
+
 - `src/features/registry/featureRegistry.ts` — canonical registry of renderable feature keys.
 - `src/features/registry/types.ts` — feature-renderer contract.
 - `src/features/multiple-choice/types.ts` — feature-specific data/view-model types.
@@ -78,11 +81,13 @@
 - `tests/features/multiple-choice/MultipleChoiceFeature.test.tsx` — controller/integration test.
 
 ### Lesson rendering
+
 - `src/entities/lesson/LessonRenderer.tsx` — renders validated sections by type.
 - `src/entities/lesson/sectionRenderers.tsx` — maps standard section types and custom feature registry.
 - `tests/entities/lesson/LessonRenderer.test.tsx` — declarative + feature rendering tests.
 
 ### Quality gates
+
 - `eslint.config.js` — lint rules including restricted imports for UI/component paths.
 - `.prettierrc.json` — formatting rules.
 - `.dependency-cruiser.cjs` — layer-boundary/deep-import/cycle rules.
@@ -94,6 +99,7 @@
 - `tests/architecture/architecture-checks.test.ts` — proves the checkers reject invalid fixtures.
 
 ### Agent rules
+
 - `AGENTS.md` — update mandatory technical workflow and verification obligations.
 - `rules/ARCHITECTURE.md` — layer boundaries and controller/UI contract.
 - `rules/CODE_QUALITY.md` — TDD, scripts, verification, dependency rules.
@@ -102,6 +108,7 @@
 - Existing educational rule files remain separate and authoritative.
 
 ### CI/deployment
+
 - `.github/workflows/ci.yml` — `npm ci` + `npm run verify` for PRs/pushes.
 - `.github/workflows/deploy-pages.yml` — verified production build and GitHub Pages deployment from `main`.
 
@@ -110,6 +117,7 @@
 ### Task 1: Bootstrap the static application shell
 
 **Files:**
+
 - Create: `package.json`
 - Create: `package-lock.json`
 - Create: `vite.config.ts`
@@ -130,12 +138,14 @@
 - Test: `tests/app/app-shell.test.tsx`
 
 **Interfaces:**
+
 - Produces: `store`, `RootState`, `AppDispatch`, `useAppDispatch()`, `useAppSelector`, `AppProviders`, and working routes `#/ ` and `#/lesson/:lessonId`.
 - Consumes: none.
 
 - [ ] **Step 1: Write the failing application-shell test**
 
 Create tests that assert:
+
 - the home heading renders;
 - navigating to `#/lesson/missing` renders the not-found/student-safe state;
 - a component throwing under `AppErrorBoundary` renders a friendly fallback without exposing the thrown stack/message.
@@ -166,6 +176,7 @@ git commit -m "feat: bootstrap static React application shell"
 ### Task 2: Add validated declarative content
 
 **Files:**
+
 - Create: `src/content/schema/lessonSchema.ts`
 - Create: `src/content/schema/exerciseSchema.ts`
 - Create: `src/content/schema/contentSchema.ts`
@@ -178,12 +189,14 @@ git commit -m "feat: bootstrap static React application shell"
 - Test: `tests/content/content-validation.test.ts`
 
 **Interfaces:**
+
 - Produces: `Lesson`, `ExerciseDefinition`, `loadAllContent(): ContentBundle`, `validateContent(bundle: ContentBundle, registeredFeatureKeys: ReadonlySet<string>): ValidationResult`.
 - Consumes: registered feature keys will be supplied as a parameter so validation remains decoupled from React rendering.
 
 - [ ] **Step 1: Write failing content-validation tests**
 
 Tests must assert:
+
 - valid A2 Grade-6 content passes;
 - missing required lesson fields fail;
 - an unknown section/feature key fails;
@@ -216,6 +229,7 @@ git commit -m "feat: add validated declarative lesson content"
 ### Task 3: Implement the first decoupled interactive feature
 
 **Files:**
+
 - Create: `src/features/registry/types.ts`
 - Create: `src/features/registry/featureRegistry.ts`
 - Create: `src/features/multiple-choice/types.ts`
@@ -232,12 +246,14 @@ git commit -m "feat: add validated declarative lesson content"
 - Test: `tests/features/multiple-choice/MultipleChoiceFeature.test.tsx`
 
 **Interfaces:**
+
 - Produces: feature registry key `multiple-choice`; `MultipleChoiceExerciseProps`; controller return shape `{ selectedOptionId, status, selectOption(id), submit() }`; public `MultipleChoiceFeature`.
 - Consumes: `useAppDispatch`, `useAppSelector`, validated exercise data.
 
 - [ ] **Step 1: Write failing pure-logic and presentation tests**
 
 Assert:
+
 - `evaluateAnswer(selectedId, correctId)` returns `correct` or `incorrect`;
 - `MultipleChoiceExercise` renders only from props and invokes `onSelect`/`onSubmit`;
 - the UI test does not need a Redux Provider.
@@ -275,6 +291,7 @@ git commit -m "feat: add decoupled multiple choice feature"
 ### Task 4: Render lessons through the feature registry
 
 **Files:**
+
 - Create: `src/entities/lesson/sectionRenderers.tsx`
 - Create: `src/entities/lesson/LessonRenderer.tsx`
 - Modify: `src/pages/home/HomePage.tsx`
@@ -283,12 +300,14 @@ git commit -m "feat: add decoupled multiple choice feature"
 - Modify: `tests/app/app-shell.test.tsx`
 
 **Interfaces:**
+
 - Produces: `LessonRenderer({ lesson, exercises })` and a lesson page that resolves `lessonId` from static content.
 - Consumes: validated content loaders and feature registry.
 
 - [ ] **Step 1: Write failing renderer tests**
 
 Assert:
+
 - the starter Present Simple lesson title renders;
 - the registered multiple-choice section renders from JSON;
 - an unrenderable section produces a student-safe fallback;
@@ -320,6 +339,7 @@ git commit -m "feat: render declarative lessons through feature registry"
 ### Task 5: Add hermetic architecture and code-quality gates
 
 **Files:**
+
 - Create: `eslint.config.js`
 - Create: `.prettierrc.json`
 - Create: `.dependency-cruiser.cjs`
@@ -333,12 +353,14 @@ git commit -m "feat: render declarative lessons through feature registry"
 - Modify: `package-lock.json`
 
 **Interfaces:**
+
 - Produces npm scripts: `format:check`, `lint`, `typecheck`, `check:ui-redux`, `check:architecture`, `validate:content`, `test:run`, `build`, `verify`.
 - Consumes repository source files only; no network or secrets.
 
 - [ ] **Step 1: Write failing architecture-check tests**
 
 Tests execute checkers against fixtures and assert:
+
 - `illegal-ui-redux.tsx` is rejected for `react-redux` and `@reduxjs/toolkit`;
 - `illegal-layer-import.ts` is rejected for reverse/deep dependency;
 - valid production source passes.
@@ -351,6 +373,7 @@ Expected: FAIL because checkers/configuration do not exist.
 - [ ] **Step 3: Implement ESLint restricted imports**
 
 For `**/ui/**/*.tsx` and `**/components/**/*.tsx`, forbid:
+
 - `@reduxjs/toolkit`;
 - `react-redux`;
 - imports matching app-store/model/slice/reducer/thunk/listener paths.
@@ -366,6 +389,7 @@ Enforce the spec's app/pages/features/entities/shared direction, UI-to-model/sto
 - [ ] **Step 6: Implement canonical verifier**
 
 `node scripts/verify-repository.mjs` runs, in order:
+
 1. Prettier check;
 2. ESLint;
 3. TypeScript;
@@ -394,6 +418,7 @@ git commit -m "chore: enforce hermetic architecture quality gates"
 ### Task 6: Encode agent-facing technical rules
 
 **Files:**
+
 - Modify: `AGENTS.md`
 - Create: `rules/ARCHITECTURE.md`
 - Create: `rules/CODE_QUALITY.md`
@@ -403,12 +428,14 @@ git commit -m "chore: enforce hermetic architecture quality gates"
 - Test: `tests/architecture/repository-rules.test.ts`
 
 **Interfaces:**
+
 - Produces: mandatory agent workflow tied to executable checks.
 - Consumes: exact scripts and boundaries created in Task 5.
 
 - [ ] **Step 1: Write failing repository-rules test**
 
 Assert required files exist and `AGENTS.md` explicitly requires:
+
 - reading architecture/code-quality/content/feature rules when relevant;
 - running `npm run verify` before completion;
 - no direct Redux imports in presentation UI;
@@ -440,17 +467,20 @@ git commit -m "docs: codify agent architecture and quality rules"
 ### Task 7: Add GitHub CI and Pages deployment
 
 **Files:**
+
 - Create: `.github/workflows/ci.yml`
 - Create: `.github/workflows/deploy-pages.yml`
 - Test: `tests/architecture/workflows.test.ts`
 
 **Interfaces:**
+
 - Produces: PR/push CI and verified Pages deployment from `main`.
 - Consumes: `npm ci`, `npm run verify`, and Vite `dist/`.
 
 - [ ] **Step 1: Write failing workflow-contract tests**
 
 Parse workflow YAML and assert:
+
 - CI runs on pull requests and invokes `npm ci` then `npm run verify`;
 - deploy workflow is restricted to `main`;
 - deployment verifies before uploading `dist/`;
@@ -482,15 +512,18 @@ git commit -m "ci: add verification and GitHub Pages deployment"
 ### Task 8: Final branch verification and pull request
 
 **Files:**
+
 - Modify only files required by failures found during final verification.
 
 **Interfaces:**
+
 - Produces: reviewable foundation branch and PR into `main`.
 - Consumes: all previous tasks.
 
 - [ ] **Step 1: Run the canonical hermetic verification from a clean dependency install**
 
 Run:
+
 ```bash
 rm -rf node_modules dist
 npm ci
@@ -516,6 +549,7 @@ If no fixes are required, do not create an empty commit.
 Title: `Build platform foundation with hermetic architecture checks`
 
 PR body must summarize:
+
 - static React/RTK/AntD architecture;
 - declarative content + feature registry;
 - UI/Redux decoupling;

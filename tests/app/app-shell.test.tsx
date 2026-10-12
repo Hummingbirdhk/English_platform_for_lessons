@@ -17,8 +17,14 @@ describe('application shell', () => {
   });
 
   it('hides technical error details from students', () => {
-    const Broken = () => { throw new Error('SECRET_STACK_DETAIL'); };
-    render(<AppErrorBoundary><Broken /></AppErrorBoundary>);
+    const Broken = () => {
+      throw new Error('SECRET_STACK_DETAIL');
+    };
+    render(
+      <AppErrorBoundary>
+        <Broken />
+      </AppErrorBoundary>,
+    );
     expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
     expect(screen.queryByText(/SECRET_STACK_DETAIL/i)).not.toBeInTheDocument();
   });

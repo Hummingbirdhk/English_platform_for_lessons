@@ -88,12 +88,7 @@ type Props = {
   onSubmit: () => void;
 };
 
-export function FillGapExercise({
-  answer,
-  status,
-  onAnswerChange,
-  onSubmit,
-}: Props) {
+export function FillGapExercise({ answer, status, onAnswerChange, onSubmit }: Props) {
   // render only
 }
 ```

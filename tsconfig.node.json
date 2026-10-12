@@ -12,7 +12,7 @@
     "noEmit": true,
     "strict": true,
     "baseUrl": ".",
-    "paths": {"@/*": ["src/*"]}
+    "paths": { "@/*": ["src/*"] }
   },
   "include": ["vite.config.ts", "eslint.config.js", "scripts", "tests"]
 }
