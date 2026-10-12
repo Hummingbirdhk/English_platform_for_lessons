@@ -8,29 +8,16 @@ on:
       - feature/**
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Bootstrap dependencies
-        run: npm install
-      - name: Format foundation and persist lockfile
-        shell: bash
-        run: |
-          npm run format
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add package-lock.json .
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: format foundation and lock dependencies"
-            git push
-          fi
+          cache: npm
+      - run: npm ci
       - run: npm run verify
