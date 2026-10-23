@@ -1,0 +1,38 @@
+{
+  "id": "reading-toms-day",
+  "type": "reading",
+  "title": "A Day in Tom's Life",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "tags": [
+    "reading",
+    "daily routine",
+    "present simple"
+  ],
+  "summary": "A short text about a school student's weekday routine.",
+  "preReadingVocabulary": [
+    {
+      "term": "usually",
+      "translation": "обычно"
+    },
+    {
+      "term": "after classes",
+      "translation": "после уроков"
+    },
+    {
+      "term": "before",
+      "translation": "до / перед"
+    }
+  ],
+  "body": [
+    "Tom is twelve and lives in Bristol. On school days, he usually wakes up at seven o'clock. He has breakfast with his family and goes to school at eight.",
+    "After classes, Tom comes home, has a snack and does his homework. In the evening, he sometimes plays computer games or reads. He goes to bed at about ten."
+  ],
+  "questions": [
+    "What time does Tom usually wake up?",
+    "What does he do after classes?",
+    "What does he sometimes do in the evening?"
+  ],
+  "exerciseIds": []
+}
