@@ -1,0 +1,21 @@
+name: Product Structure TDD
+
+on:
+  push:
+    branches:
+      - feature/product-structure
+
+permissions:
+  contents: read
+
+jobs:
+  content-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test -- --run tests/content/content-validation.test.ts
