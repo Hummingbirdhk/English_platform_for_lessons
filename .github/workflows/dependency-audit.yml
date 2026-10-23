@@ -19,15 +19,18 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - name: Upgrade Vitest security baseline
-        run: npm install --save-dev vitest@4.1.12
+      - name: Set Vitest security baseline
+        shell: bash
+        run: |
+          npm pkg set "devDependencies.vitest=^4.1.12"
+          rm -rf node_modules
+          npm install
       - name: Verify repository
         run: npm run verify
       - name: Audit dependencies
         shell: bash
         run: npm audit --json || true
-      - name: Commit lockfile update
+      - name: Commit dependency update
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
