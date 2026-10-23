@@ -19,11 +19,13 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Use current npm
+        run: npm install --global npm@11
       - name: Set Vitest security baseline
         shell: bash
         run: |
+          npm --version
           npm pkg set "devDependencies.vitest=^4.1.12"
-          rm -rf node_modules
           npm install
       - name: Verify repository
         run: npm run verify
