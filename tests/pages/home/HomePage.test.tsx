@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { HomePage } from '../../../src/pages/home/HomePage';
@@ -11,12 +11,16 @@ describe('HomePage', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByRole('link', { name: /Материалы/i })).toHaveAttribute(
+    const main = screen.getByRole('main');
+    expect(within(main).getByRole('link', { name: /Материалы/i })).toHaveAttribute(
       'href',
       '/materials',
     );
-    expect(screen.getByRole('link', { name: /Уроки/i })).toHaveAttribute('href', '/lessons');
-    expect(screen.getByRole('link', { name: /Ученики/i })).toHaveAttribute(
+    expect(within(main).getByRole('link', { name: /Уроки/i })).toHaveAttribute(
+      'href',
+      '/lessons',
+    );
+    expect(within(main).getByRole('link', { name: /Ученики/i })).toHaveAttribute(
       'href',
       '/students',
     );
