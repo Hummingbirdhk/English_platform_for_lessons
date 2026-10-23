@@ -45,6 +45,4 @@ if (!knowledgeResult.ok) {
   process.exit(1);
 }
 
-console.log(
-  `Content validation passed. Knowledge documents: ${knowledgeResult.documents.length}.`,
-);
+console.log(`Content validation passed. Knowledge documents: ${knowledgeResult.documents.length}.`);

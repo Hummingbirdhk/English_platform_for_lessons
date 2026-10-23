@@ -3,10 +3,7 @@
   "version": 1,
   "id": "lexicon-phrasal-verbs",
   "title": "Core Phrasal Verbs A2-B1",
-  "levels": [
-    "A2",
-    "B1"
-  ],
+  "levels": ["A2", "B1"],
   "sourceRefs": [
     {
       "source": "Spotlight 6 Student's Book",

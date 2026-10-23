@@ -3,10 +3,7 @@
   "version": 1,
   "id": "irregular-verbs-a2-b1",
   "title": "Irregular Verbs A2-B1",
-  "levels": [
-    "A2",
-    "B1"
-  ],
+  "levels": ["A2", "B1"],
   "sourceRefs": [
     {
       "source": "Spotlight 6 Student's Book",

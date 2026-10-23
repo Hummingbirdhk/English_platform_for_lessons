@@ -7,15 +7,8 @@
       "kind": "vocabulary-set",
       "title": "Family & Appearance",
       "category": "people",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "family",
-        "appearance",
-        "people"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["family", "appearance", "people"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -130,14 +123,8 @@
       "kind": "vocabulary-set",
       "title": "Personal Information, Countries & Nationalities",
       "category": "identity",
-      "levels": [
-        "A2"
-      ],
-      "tags": [
-        "identity",
-        "countries",
-        "nationalities"
-      ],
+      "levels": ["A2"],
+      "tags": ["identity", "countries", "nationalities"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -236,15 +223,8 @@
       "kind": "vocabulary-set",
       "title": "House & Home",
       "category": "everyday-life",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "home",
-        "rooms",
-        "furniture"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["home", "rooms", "furniture"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -383,15 +363,8 @@
       "kind": "vocabulary-set",
       "title": "Town & Neighbourhood",
       "category": "places",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "town",
-        "places",
-        "services"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["town", "places", "services"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -496,15 +469,8 @@
       "kind": "vocabulary-set",
       "title": "Transport, Road & Directions",
       "category": "travel",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "transport",
-        "road",
-        "directions"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["transport", "road", "directions"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -627,14 +593,8 @@
       "kind": "vocabulary-set",
       "title": "Daily Routine & School Day",
       "category": "everyday-life",
-      "levels": [
-        "A2"
-      ],
-      "tags": [
-        "routine",
-        "school",
-        "time"
-      ],
+      "levels": ["A2"],
+      "tags": ["routine", "school", "time"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -737,15 +697,8 @@
       "kind": "vocabulary-set",
       "title": "Free Time & Hobbies",
       "category": "leisure",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "hobbies",
-        "free time",
-        "clubs"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["hobbies", "free time", "clubs"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -848,14 +801,8 @@
       "kind": "vocabulary-set",
       "title": "Sports & Games",
       "category": "leisure",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "sport",
-        "games"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["sport", "games"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -970,15 +917,8 @@
       "kind": "vocabulary-set",
       "title": "Food, Drink & Cooking",
       "category": "food",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "food",
-        "drink",
-        "cooking"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["food", "drink", "cooking"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -1139,15 +1079,8 @@
       "kind": "vocabulary-set",
       "title": "Body & Health",
       "category": "health",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "body",
-        "health",
-        "medicine"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["body", "health", "medicine"],
       "sourceRefs": [
         {
           "source": "Cambridge A2 Key Vocabulary List",
@@ -1316,14 +1249,8 @@
       "kind": "vocabulary-set",
       "title": "Clothes & Style",
       "category": "appearance",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "clothes",
-        "style"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["clothes", "style"],
       "sourceRefs": [
         {
           "source": "Cambridge A2 Key Vocabulary List",
@@ -1452,14 +1379,8 @@
       "kind": "vocabulary-set",
       "title": "Weather & Seasons",
       "category": "nature",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "weather",
-        "seasons"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["weather", "seasons"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -1564,15 +1485,8 @@
       "kind": "vocabulary-set",
       "title": "Holidays & Travel",
       "category": "travel",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "holiday",
-        "travel",
-        "tourism"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["holiday", "travel", "tourism"],
       "sourceRefs": [
         {
           "source": "Spotlight 6 Student's Book",
@@ -1699,14 +1613,8 @@
       "kind": "vocabulary-set",
       "title": "School & Education",
       "category": "school",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "school",
-        "education"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["school", "education"],
       "sourceRefs": [
         {
           "source": "Cambridge English Portal",
@@ -1817,14 +1725,8 @@
       "kind": "vocabulary-set",
       "title": "Jobs & Work",
       "category": "work",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "jobs",
-        "work"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["jobs", "work"],
       "sourceRefs": [
         {
           "source": "Cambridge English A2 activities",
@@ -1951,15 +1853,8 @@
       "kind": "vocabulary-set",
       "title": "Technology & Communication",
       "category": "technology",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "technology",
-        "internet",
-        "communication"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["technology", "internet", "communication"],
       "sourceRefs": [
         {
           "source": "Cambridge A2 Key Vocabulary List",
@@ -2076,15 +1971,8 @@
       "kind": "vocabulary-set",
       "title": "Feelings & Personality",
       "category": "people",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "feelings",
-        "personality",
-        "adjectives"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["feelings", "personality", "adjectives"],
       "sourceRefs": [
         {
           "source": "Cambridge A2/B1 vocabulary guidance",
@@ -2207,14 +2095,8 @@
       "kind": "vocabulary-set",
       "title": "Shopping & Money",
       "category": "shopping",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "shopping",
-        "money"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["shopping", "money"],
       "sourceRefs": [
         {
           "source": "Cambridge English activities",
@@ -2337,14 +2219,8 @@
       "kind": "vocabulary-set",
       "title": "Nature & Environment",
       "category": "nature",
-      "levels": [
-        "A2",
-        "B1"
-      ],
-      "tags": [
-        "nature",
-        "environment"
-      ],
+      "levels": ["A2", "B1"],
+      "tags": ["nature", "environment"],
       "sourceRefs": [
         {
           "source": "Cambridge A2/B1 vocabulary guidance",

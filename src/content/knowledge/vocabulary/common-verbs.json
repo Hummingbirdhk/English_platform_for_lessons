@@ -3,10 +3,7 @@
   "version": 1,
   "id": "lexicon-common-verbs",
   "title": "Common Verbs A2-B1",
-  "levels": [
-    "A2",
-    "B1"
-  ],
+  "levels": ["A2", "B1"],
   "sourceRefs": [
     {
       "source": "Cambridge A2 Key / B1 Preliminary Vocabulary Lists",

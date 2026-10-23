@@ -1,8 +1,7 @@
 import { knowledgeDocumentSchema, type KnowledgeDocument } from './schema/knowledgeSchema';
 
 export type KnowledgeValidationResult =
-  | { ok: true; documents: KnowledgeDocument[] }
-  | { ok: false; errors: string[] };
+  { ok: true; documents: KnowledgeDocument[] } | { ok: false; errors: string[] };
 
 export function validateKnowledgeDocuments(rawDocuments: unknown[]): KnowledgeValidationResult {
   const documents: KnowledgeDocument[] = [];
