@@ -1,10 +1,7 @@
 import { Alert, Card, Typography } from 'antd';
 import type { ExerciseDefinition, LessonSection, Material } from '../../content/types';
 import { MaterialRenderer } from '../material/MaterialRenderer';
-import {
-  getFeatureRenderer,
-  isExerciseCompatible,
-} from '../../features/registry/featureRegistry';
+import { getFeatureRenderer, isExerciseCompatible } from '../../features/registry/featureRegistry';
 
 export function renderLessonSection(
   section: LessonSection,
@@ -26,11 +23,7 @@ export function renderLessonSection(
         <MaterialRenderer material={material} />
       </Card>
     ) : (
-      <Alert
-        key={section.id}
-        type="warning"
-        message="This material is temporarily unavailable."
-      />
+      <Alert key={section.id} type="warning" message="This material is temporarily unavailable." />
     );
   }
 

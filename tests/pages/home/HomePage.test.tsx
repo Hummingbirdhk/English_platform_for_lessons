@@ -16,10 +16,7 @@ describe('HomePage', () => {
       'href',
       '/materials',
     );
-    expect(within(main).getByRole('link', { name: /Уроки/i })).toHaveAttribute(
-      'href',
-      '/lessons',
-    );
+    expect(within(main).getByRole('link', { name: /Уроки/i })).toHaveAttribute('href', '/lessons');
     expect(within(main).getByRole('link', { name: /Ученики/i })).toHaveAttribute(
       'href',
       '/students',

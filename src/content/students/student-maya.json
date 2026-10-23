@@ -4,24 +4,9 @@
   "grade": 6,
   "level": "A2",
   "curriculum": "Spotlight 6",
-  "currentFocus": [
-    "Present Simple",
-    "Daily routine"
-  ],
-  "completedTopics": [
-    "Family",
-    "School subjects"
-  ],
-  "revisionTopics": [
-    "do / does",
-    "third person -s"
-  ],
-  "assignedMaterialIds": [
-    "grammar-present-simple",
-    "vocabulary-daily-routine",
-    "reading-toms-day"
-  ],
-  "assignedLessonIds": [
-    "present-simple-01"
-  ]
+  "currentFocus": ["Present Simple", "Daily routine"],
+  "completedTopics": ["Family", "School subjects"],
+  "revisionTopics": ["do / does", "third person -s"],
+  "assignedMaterialIds": ["grammar-present-simple", "vocabulary-daily-routine", "reading-toms-day"],
+  "assignedLessonIds": ["present-simple-01"]
 }

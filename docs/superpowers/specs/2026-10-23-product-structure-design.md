@@ -130,6 +130,7 @@ Lesson sections may contain:
 - references to interactive exercise IDs.
 
 A lesson may therefore reuse:
+
 - one grammar material;
 - one vocabulary set;
 - one reading text;
@@ -155,6 +156,7 @@ Allowed fields in this phase:
 - assigned lesson IDs.
 
 Do not store:
+
 - surname/full legal name;
 - email;
 - phone;
@@ -186,7 +188,7 @@ type ContentBundle = {
   exercises: ExerciseDefinition[];
   materials: Material[];
   students: StudentProfile[];
-}
+};
 ```
 
 Static loaders use Vite `import.meta.glob`.

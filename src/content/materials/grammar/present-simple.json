@@ -5,11 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Daily routine",
-  "tags": [
-    "grammar",
-    "present simple",
-    "daily routine"
-  ],
+  "tags": ["grammar", "present simple", "daily routine"],
   "summary": "Use Present Simple to talk about routines, habits and facts.",
   "explanation": {
     "en": "We use Present Simple for routines, habits and facts that are generally true.",
@@ -59,7 +55,5 @@
       "note": "After does, use the base form of the verb."
     }
   ],
-  "exerciseIds": [
-    "present-simple-basics"
-  ]
+  "exerciseIds": ["present-simple-basics"]
 }

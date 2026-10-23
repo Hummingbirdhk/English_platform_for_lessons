@@ -21,10 +21,6 @@ export function LessonPage() {
   }
 
   return (
-    <LessonRenderer
-      lesson={lesson}
-      exercises={content.exercises}
-      materials={content.materials}
-    />
+    <LessonRenderer lesson={lesson} exercises={content.exercises} materials={content.materials} />
   );
 }

@@ -21,7 +21,10 @@ export function VideoMaterial({ material }: { material: VideoMaterialData }) {
 
       {material.preWatch.length > 0 ? (
         <Card title="Before watching" className="material-block">
-          <List dataSource={material.preWatch} renderItem={(item) => <List.Item>{item}</List.Item>} />
+          <List
+            dataSource={material.preWatch}
+            renderItem={(item) => <List.Item>{item}</List.Item>}
+          />
         </Card>
       ) : null}
 
@@ -39,7 +42,10 @@ export function VideoMaterial({ material }: { material: VideoMaterialData }) {
 
       {material.postWatch.length > 0 ? (
         <Card title="After watching" className="material-block">
-          <List dataSource={material.postWatch} renderItem={(item) => <List.Item>{item}</List.Item>} />
+          <List
+            dataSource={material.postWatch}
+            renderItem={(item) => <List.Item>{item}</List.Item>}
+          />
         </Card>
       ) : null}
     </article>

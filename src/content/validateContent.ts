@@ -35,7 +35,9 @@ export function validateContent(
           errors.push(`Unknown feature '${section.feature}' in lesson '${lesson.id}'`);
         }
         if (!exerciseIds.has(section.exerciseId)) {
-          errors.push(`Missing exercise '${section.exerciseId}' referenced by lesson '${lesson.id}'`);
+          errors.push(
+            `Missing exercise '${section.exerciseId}' referenced by lesson '${lesson.id}'`,
+          );
         }
       }
 

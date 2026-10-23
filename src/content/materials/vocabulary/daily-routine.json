@@ -5,10 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Daily routine",
-  "tags": [
-    "vocabulary",
-    "daily routine"
-  ],
+  "tags": ["vocabulary", "daily routine"],
   "summary": "Useful phrases for talking about a typical school day.",
   "items": [
     {
@@ -19,10 +16,7 @@
         "en": "I wake up at seven o'clock.",
         "ru": "Я просыпаюсь в семь часов."
       },
-      "collocations": [
-        "wake up early",
-        "wake up late"
-      ]
+      "collocations": ["wake up early", "wake up late"]
     },
     {
       "term": "have breakfast",
@@ -31,9 +25,7 @@
         "en": "I have breakfast before school.",
         "ru": "Я завтракаю перед школой."
       },
-      "collocations": [
-        "have breakfast at home"
-      ]
+      "collocations": ["have breakfast at home"]
     },
     {
       "term": "go to school",

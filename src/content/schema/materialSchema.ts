@@ -20,13 +20,15 @@ const grammarMaterialSchema = z.object({
   ...baseMaterialFields,
   type: z.literal('grammar'),
   explanation: bilingualTextSchema,
-  forms: z.array(
-    z.object({
-      label: z.string().min(1),
-      pattern: z.string().min(1),
-      examples: z.array(bilingualTextSchema).min(1),
-    }),
-  ).min(1),
+  forms: z
+    .array(
+      z.object({
+        label: z.string().min(1),
+        pattern: z.string().min(1),
+        examples: z.array(bilingualTextSchema).min(1),
+      }),
+    )
+    .min(1),
   commonMistakes: z.array(
     z.object({
       wrong: z.string().min(1),
@@ -40,27 +42,31 @@ const grammarMaterialSchema = z.object({
 const vocabularyMaterialSchema = z.object({
   ...baseMaterialFields,
   type: z.literal('vocabulary'),
-  items: z.array(
-    z.object({
-      term: z.string().min(1),
-      translation: z.string().min(1),
-      pronunciation: z.string().min(1).optional(),
-      example: bilingualTextSchema,
-      imageUrl: z.string().url().optional(),
-      collocations: z.array(z.string().min(1)).optional(),
-    }),
-  ).min(1),
+  items: z
+    .array(
+      z.object({
+        term: z.string().min(1),
+        translation: z.string().min(1),
+        pronunciation: z.string().min(1).optional(),
+        example: bilingualTextSchema,
+        imageUrl: z.string().url().optional(),
+        collocations: z.array(z.string().min(1)).optional(),
+      }),
+    )
+    .min(1),
 });
 
 const readingMaterialSchema = z.object({
   ...baseMaterialFields,
   type: z.literal('reading'),
-  preReadingVocabulary: z.array(
-    z.object({
-      term: z.string().min(1),
-      translation: z.string().min(1),
-    }),
-  ).default([]),
+  preReadingVocabulary: z
+    .array(
+      z.object({
+        term: z.string().min(1),
+        translation: z.string().min(1),
+      }),
+    )
+    .default([]),
   body: z.array(z.string().min(1)).min(1),
   questions: z.array(z.string().min(1)).min(1),
   exerciseIds: z.array(z.string().min(1)).default([]),

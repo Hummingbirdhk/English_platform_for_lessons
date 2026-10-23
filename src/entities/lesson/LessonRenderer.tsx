@@ -22,9 +22,7 @@ export function LessonRenderer({
           <Typography.Title level={1}>{lesson.title}</Typography.Title>
           <Typography.Text type="secondary">{lesson.topic}</Typography.Text>
         </div>
-        {lesson.sections.map((section) =>
-          renderLessonSection(section, exercises, materials),
-        )}
+        {lesson.sections.map((section) => renderLessonSection(section, exercises, materials))}
       </Space>
     </main>
   );

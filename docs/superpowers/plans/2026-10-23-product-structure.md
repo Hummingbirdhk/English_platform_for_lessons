@@ -32,6 +32,7 @@
 ### Task 1: Extend content schemas and loaders
 
 **Files:**
+
 - Create: `src/content/schema/materialSchema.ts`
 - Create: `src/content/schema/studentSchema.ts`
 - Modify: `src/content/schema/lessonSchema.ts`
@@ -43,6 +44,7 @@
 - Test: `tests/content/content-validation.test.ts`
 
 **Interfaces:**
+
 - Produces: `Material`, `StudentProfile`, extended `ContentBundle`, lesson `material` section type.
 - Consumes: existing lesson/exercise schemas.
 
@@ -55,6 +57,7 @@
 ### Task 2: Add representative static content
 
 **Files:**
+
 - Create: `src/content/materials/grammar/present-simple.json`
 - Create: `src/content/materials/vocabulary/daily-routine.json`
 - Create: `src/content/materials/reading/day-in-toms-life.json`
@@ -70,6 +73,7 @@
 ### Task 3: Add global application navigation
 
 **Files:**
+
 - Create: `src/shared/ui/AppShell.tsx`
 - Create: `src/shared/ui/PageHeading.tsx`
 - Modify: `src/app/providers/AppProviders.tsx`
@@ -85,6 +89,7 @@
 ### Task 4: Build Materials library and detail renderers
 
 **Files:**
+
 - Create: `src/pages/materials/MaterialsPage.tsx`
 - Create: `src/pages/materials/MaterialPage.tsx`
 - Create: `src/entities/material/MaterialCard.tsx`
@@ -105,6 +110,7 @@
 ### Task 5: Build Lessons library and material-reference rendering
 
 **Files:**
+
 - Create: `src/pages/lessons/LessonsPage.tsx`
 - Modify: `src/entities/lesson/LessonRenderer.tsx`
 - Modify: `src/entities/lesson/sectionRenderers.tsx`
@@ -120,6 +126,7 @@
 ### Task 6: Build Students list and learning profile
 
 **Files:**
+
 - Create: `src/pages/students/StudentsPage.tsx`
 - Create: `src/pages/students/StudentPage.tsx`
 - Create: `src/entities/student/StudentCard.tsx`
@@ -134,6 +141,7 @@
 ### Task 7: Rework Home into a product dashboard
 
 **Files:**
+
 - Modify: `src/pages/home/HomePage.tsx`
 - Test: `tests/pages/home/HomePage.test.tsx`
 
@@ -145,6 +153,7 @@
 ### Task 8: Update product/design rules and verify
 
 **Files:**
+
 - Create: `rules/PRODUCT_STRUCTURE.md`
 - Modify: `rules/DESIGN.md`
 - Modify: `rules/LESSON_STRUCTURE.md`

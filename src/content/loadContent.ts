@@ -1,10 +1,4 @@
-import type {
-  ContentBundle,
-  ExerciseDefinition,
-  Lesson,
-  Material,
-  StudentProfile,
-} from './types';
+import type { ContentBundle, ExerciseDefinition, Lesson, Material, StudentProfile } from './types';
 
 const lessonModules = import.meta.glob('./lessons/**/*.json', {
   eager: true,

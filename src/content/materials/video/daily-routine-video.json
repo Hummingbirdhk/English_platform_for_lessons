@@ -5,18 +5,11 @@
   "grade": 6,
   "level": "A2",
   "topic": "Daily routine",
-  "tags": [
-    "video",
-    "listening",
-    "daily routine"
-  ],
+  "tags": ["video", "listening", "daily routine"],
   "summary": "A short BBC Learning English video for practising everyday routine vocabulary and speaking.",
   "provider": "youtube",
   "videoId": "bq6GBbh3uhU",
-  "preWatch": [
-    "What do you do every morning?",
-    "What do you usually eat for breakfast?"
-  ],
+  "preWatch": ["What do you do every morning?", "What do you usually eat for breakfast?"],
   "vocabulary": [
     {
       "term": "get up",
