@@ -1,4 +1,3 @@
-import { BookOutlined, ReadOutlined, TeamOutlined } from '@ant-design/icons';
 import { Card, Col, Row, Space, Statistic, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
@@ -11,22 +10,22 @@ export function HomePage() {
     {
       to: '/materials',
       title: 'Материалы',
+      eyebrow: 'MATERIALS',
       description: 'Grammar, vocabulary, reading и video в одной библиотеке.',
-      icon: <BookOutlined />,
       count: materials.length,
     },
     {
       to: '/lessons',
       title: 'Уроки',
+      eyebrow: 'LESSONS',
       description: 'Готовые занятия, собранные из переиспользуемых материалов.',
-      icon: <ReadOutlined />,
       count: lessons.length,
     },
     {
       to: '/students',
       title: 'Ученики',
+      eyebrow: 'STUDENTS',
       description: 'Учебные профили, текущие темы и материалы для повторения.',
-      icon: <TeamOutlined />,
       count: students.length,
     },
   ];
@@ -44,7 +43,9 @@ export function HomePage() {
             <Link to={section.to} className="resource-card-link" aria-label={section.title}>
               <Card hoverable className="dashboard-card">
                 <Space direction="vertical" size="middle">
-                  <div className="dashboard-card__icon">{section.icon}</div>
+                  <Typography.Text className="dashboard-card__eyebrow">
+                    {section.eyebrow}
+                  </Typography.Text>
                   <div>
                     <Typography.Title level={3}>{section.title}</Typography.Title>
                     <Typography.Paragraph type="secondary">
