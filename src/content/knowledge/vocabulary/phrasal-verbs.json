@@ -1,0 +1,229 @@
+{
+  "documentType": "lexicon",
+  "version": 1,
+  "id": "lexicon-phrasal-verbs",
+  "title": "Core Phrasal Verbs A2-B1",
+  "levels": ["A2", "B1"],
+  "sourceRefs": [
+    {
+      "source": "Spotlight 6 Student's Book",
+      "locator": "Recurring phrasal verbs in Modules 4-6"
+    },
+    {
+      "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+      "locator": "Exercises 183-200: Phrasal verbs"
+    }
+  ],
+  "items": [
+    {
+      "term": "get up",
+      "translation": "вставать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "wake up",
+      "translation": "просыпаться",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "go out",
+      "translation": "выходить / проводить время вне дома",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "come back",
+      "translation": "возвращаться",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "get on",
+      "translation": "садиться в транспорт / ладить",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "get off",
+      "translation": "выходить из транспорта",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "put on",
+      "translation": "надевать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "take off",
+      "translation": "снимать одежду / взлетать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "turn on",
+      "translation": "включать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "turn off",
+      "translation": "выключать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "pick up",
+      "translation": "поднимать / забирать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "look for",
+      "translation": "искать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "look after",
+      "translation": "присматривать за",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "find out",
+      "translation": "выяснять",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "give up",
+      "translation": "сдаваться / бросать привычку",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "grow up",
+      "translation": "вырастать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "set up",
+      "translation": "создавать / устанавливать",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "clean up",
+      "translation": "убирать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "tidy up",
+      "translation": "прибирать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "fill in",
+      "translation": "заполнять форму",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "write down",
+      "translation": "записывать",
+      "level": "A2",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "carry on",
+      "translation": "продолжать",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "run out of",
+      "translation": "заканчиваться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "look forward to",
+      "translation": "ждать с нетерпением",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "take part in",
+      "translation": "принимать участие",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "get along with",
+      "translation": "ладить с",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "work out",
+      "translation": "разобраться / тренироваться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "check in",
+      "translation": "регистрироваться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "check out",
+      "translation": "выписываться / проверять",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "log in",
+      "translation": "войти в систему",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "log out",
+      "translation": "выйти из системы",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "go on",
+      "translation": "продолжаться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "break down",
+      "translation": "ломаться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "drop off",
+      "translation": "высадить / оставить",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    },
+    {
+      "term": "show up",
+      "translation": "появиться",
+      "level": "B1",
+      "partOfSpeech": "phrasal-verb"
+    }
+  ]
+}

@@ -1,0 +1,2342 @@
+{
+  "documentType": "vocabulary-sets",
+  "version": 1,
+  "items": [
+    {
+      "id": "vocab-family-appearance",
+      "kind": "vocabulary-set",
+      "title": "Family & Appearance",
+      "category": "people",
+      "levels": ["A2", "B1"],
+      "tags": ["family", "appearance", "people"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 1: Family members / appearance"
+        },
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Family and Friends"
+        }
+      ],
+      "items": [
+        {
+          "term": "parent",
+          "translation": "родитель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "relative",
+          "translation": "родственник",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cousin",
+          "translation": "двоюродный брат / сестра",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "neighbour",
+          "translation": "сосед",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "teenager",
+          "translation": "подросток",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "married",
+          "translation": "женатый / замужняя",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "single",
+          "translation": "неженатый / незамужняя",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "tall",
+          "translation": "высокий",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "short",
+          "translation": "невысокий / короткий",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "slim",
+          "translation": "стройный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "well-built",
+          "translation": "крепкого телосложения",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "straight hair",
+          "translation": "прямые волосы",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "curly hair",
+          "translation": "кудрявые волосы",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "fair hair",
+          "translation": "светлые волосы",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "beard",
+          "translation": "борода",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "moustache",
+          "translation": "усы",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-personal-info-countries",
+      "kind": "vocabulary-set",
+      "title": "Personal Information, Countries & Nationalities",
+      "category": "identity",
+      "levels": ["A2"],
+      "tags": ["identity", "countries", "nationalities"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 1: Who are you? / My country"
+        }
+      ],
+      "items": [
+        {
+          "term": "first name",
+          "translation": "имя",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "surname",
+          "translation": "фамилия",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "age",
+          "translation": "возраст",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "address",
+          "translation": "адрес",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "postcode",
+          "translation": "почтовый индекс",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "nationality",
+          "translation": "национальность",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "country",
+          "translation": "страна",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "capital",
+          "translation": "столица",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "language",
+          "translation": "язык",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "British",
+          "translation": "британский / британец",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "German",
+          "translation": "немецкий / немец",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "Spanish",
+          "translation": "испанский / испанец",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "Japanese",
+          "translation": "японский / японец",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "Russian",
+          "translation": "русский",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        }
+      ]
+    },
+    {
+      "id": "vocab-house-home",
+      "kind": "vocabulary-set",
+      "title": "House & Home",
+      "category": "everyday-life",
+      "levels": ["A2", "B1"],
+      "tags": ["home", "rooms", "furniture"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 2: My place"
+        },
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: House and Home"
+        }
+      ],
+      "items": [
+        {
+          "term": "living room",
+          "translation": "гостиная",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "bedroom",
+          "translation": "спальня",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "bathroom",
+          "translation": "ванная",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "kitchen",
+          "translation": "кухня",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "dining room",
+          "translation": "столовая",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "hall",
+          "translation": "прихожая / холл",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "balcony",
+          "translation": "балкон",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "garage",
+          "translation": "гараж",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "garden",
+          "translation": "сад",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "sofa",
+          "translation": "диван",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "armchair",
+          "translation": "кресло",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cupboard",
+          "translation": "шкафчик",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "shelf",
+          "translation": "полка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "drawer",
+          "translation": "ящик",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "curtain",
+          "translation": "занавеска",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "carpet",
+          "translation": "ковёр",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "heating",
+          "translation": "отопление",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "rent",
+          "translation": "арендовать / аренда",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "move house",
+          "translation": "переезжать",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "neighbourhood",
+          "translation": "район",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-town-neighbourhood",
+      "kind": "vocabulary-set",
+      "title": "Town & Neighbourhood",
+      "category": "places",
+      "levels": ["A2", "B1"],
+      "tags": ["town", "places", "services"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 2: My neighbourhood"
+        }
+      ],
+      "items": [
+        {
+          "term": "bank",
+          "translation": "банк",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "post office",
+          "translation": "почта",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "chemist's",
+          "translation": "аптека",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "bakery",
+          "translation": "пекарня",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "greengrocer's",
+          "translation": "овощной магазин",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "newsagent's",
+          "translation": "газетный киоск",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "library",
+          "translation": "библиотека",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "sports centre",
+          "translation": "спортивный центр",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "police station",
+          "translation": "полицейский участок",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "town hall",
+          "translation": "ратуша / мэрия",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "square",
+          "translation": "площадь",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "corner",
+          "translation": "угол",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "pedestrian area",
+          "translation": "пешеходная зона",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "city centre",
+          "translation": "центр города",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "suburb",
+          "translation": "пригород",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-transport-road",
+      "kind": "vocabulary-set",
+      "title": "Transport, Road & Directions",
+      "category": "travel",
+      "levels": ["A2", "B1"],
+      "tags": ["transport", "road", "directions"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 3: Road safety / On the move"
+        }
+      ],
+      "items": [
+        {
+          "term": "bus",
+          "translation": "автобус",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "train",
+          "translation": "поезд",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "underground",
+          "translation": "метро",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "tram",
+          "translation": "трамвай",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "coach",
+          "translation": "междугородний автобус",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "lorry",
+          "translation": "грузовик",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "ride",
+          "translation": "ехать / кататься",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "drive",
+          "translation": "водить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "sail",
+          "translation": "плыть на лодке / корабле",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "traffic lights",
+          "translation": "светофор",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "zebra crossing",
+          "translation": "пешеходный переход",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "pavement",
+          "translation": "тротуар",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "traffic jam",
+          "translation": "пробка",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "turn left",
+          "translation": "повернуть налево",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go straight",
+          "translation": "идти прямо",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "cross the road",
+          "translation": "переходить дорогу",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "get on",
+          "translation": "садиться в транспорт",
+          "level": "A2",
+          "partOfSpeech": "phrasal-verb"
+        },
+        {
+          "term": "get off",
+          "translation": "выходить из транспорта",
+          "level": "A2",
+          "partOfSpeech": "phrasal-verb"
+        }
+      ]
+    },
+    {
+      "id": "vocab-daily-routine-school",
+      "kind": "vocabulary-set",
+      "title": "Daily Routine & School Day",
+      "category": "everyday-life",
+      "levels": ["A2"],
+      "tags": ["routine", "school", "time"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 4: Day in, Day out"
+        },
+        {
+          "source": "Cambridge English Portal",
+          "locator": "A2 vocabulary: daily routines"
+        }
+      ],
+      "items": [
+        {
+          "term": "wake up",
+          "translation": "просыпаться",
+          "level": "A2",
+          "partOfSpeech": "phrasal-verb"
+        },
+        {
+          "term": "get up",
+          "translation": "вставать",
+          "level": "A2",
+          "partOfSpeech": "phrasal-verb"
+        },
+        {
+          "term": "get dressed",
+          "translation": "одеваться",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "brush my teeth",
+          "translation": "чистить зубы",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "have breakfast",
+          "translation": "завтракать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go to school",
+          "translation": "идти / ехать в школу",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "have lessons",
+          "translation": "быть на уроках",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "have lunch",
+          "translation": "обедать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "do homework",
+          "translation": "делать домашнее задание",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "help with the housework",
+          "translation": "помогать по дому",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "meet friends",
+          "translation": "встречаться с друзьями",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go to bed",
+          "translation": "ложиться спать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "be late",
+          "translation": "опаздывать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "on time",
+          "translation": "вовремя",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        }
+      ]
+    },
+    {
+      "id": "vocab-free-time-hobbies",
+      "kind": "vocabulary-set",
+      "title": "Free Time & Hobbies",
+      "category": "leisure",
+      "levels": ["A2", "B1"],
+      "tags": ["hobbies", "free time", "clubs"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 6: Free time"
+        },
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Hobbies and Leisure"
+        }
+      ],
+      "items": [
+        {
+          "term": "go cycling",
+          "translation": "кататься на велосипеде",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go swimming",
+          "translation": "ходить плавать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go fishing",
+          "translation": "ходить на рыбалку",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "paint",
+          "translation": "рисовать красками",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "draw",
+          "translation": "рисовать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "read books",
+          "translation": "читать книги",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "play computer games",
+          "translation": "играть в компьютерные игры",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "photography",
+          "translation": "фотография",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "gardening",
+          "translation": "садоводство",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "join a club",
+          "translation": "вступить в клуб",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "be keen on",
+          "translation": "увлекаться",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "be interested in",
+          "translation": "интересоваться",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "chill out",
+          "translation": "расслабляться",
+          "level": "B1",
+          "partOfSpeech": "phrasal-verb"
+        },
+        {
+          "term": "hang out",
+          "translation": "проводить время с друзьями",
+          "level": "B1",
+          "partOfSpeech": "phrasal-verb"
+        }
+      ]
+    },
+    {
+      "id": "vocab-sports-games",
+      "kind": "vocabulary-set",
+      "title": "Sports & Games",
+      "category": "leisure",
+      "levels": ["A2", "B1"],
+      "tags": ["sport", "games"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Modules 3 and 6: sports / games"
+        },
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Sports"
+        }
+      ],
+      "items": [
+        {
+          "term": "football",
+          "translation": "футбол",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "basketball",
+          "translation": "баскетбол",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "tennis",
+          "translation": "теннис",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "swimming",
+          "translation": "плавание",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cycling",
+          "translation": "велоспорт",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "windsurfing",
+          "translation": "виндсёрфинг",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "chess",
+          "translation": "шахматы",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "darts",
+          "translation": "дартс",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "board game",
+          "translation": "настольная игра",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "team",
+          "translation": "команда",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "player",
+          "translation": "игрок",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "match",
+          "translation": "матч",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "score",
+          "translation": "счёт / забивать",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "win",
+          "translation": "побеждать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "lose",
+          "translation": "проигрывать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "competition",
+          "translation": "соревнование",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-food-drink-cooking",
+      "kind": "vocabulary-set",
+      "title": "Food, Drink & Cooking",
+      "category": "food",
+      "levels": ["A2", "B1"],
+      "tags": ["food", "drink", "cooking"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 9: Food & Refreshments"
+        },
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Food and Drink"
+        },
+        {
+          "source": "Cambridge B1 Preliminary Vocabulary List",
+          "locator": "Topic list: Food and Drink"
+        }
+      ],
+      "items": [
+        {
+          "term": "bread",
+          "translation": "хлеб",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cheese",
+          "translation": "сыр",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "meat",
+          "translation": "мясо",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "fish",
+          "translation": "рыба",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "vegetables",
+          "translation": "овощи",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "fruit",
+          "translation": "фрукты",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "rice",
+          "translation": "рис",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "pasta",
+          "translation": "макароны",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "meal",
+          "translation": "приём пищи",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "dish",
+          "translation": "блюдо",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "recipe",
+          "translation": "рецепт",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "ingredient",
+          "translation": "ингредиент",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "boil",
+          "translation": "варить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "fry",
+          "translation": "жарить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "bake",
+          "translation": "печь",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "grill",
+          "translation": "готовить на гриле",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "chop",
+          "translation": "мелко нарезать",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "slice",
+          "translation": "нарезать ломтиками",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "spicy",
+          "translation": "острый / пряный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "sour",
+          "translation": "кислый",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "tasty",
+          "translation": "вкусный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "hungry",
+          "translation": "голодный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "thirsty",
+          "translation": "хотящий пить",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        }
+      ]
+    },
+    {
+      "id": "vocab-body-health",
+      "kind": "vocabulary-set",
+      "title": "Body & Health",
+      "category": "health",
+      "levels": ["A2", "B1"],
+      "tags": ["body", "health", "medicine"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Health, Medicine and Exercise"
+        },
+        {
+          "source": "Cambridge B1 Preliminary Vocabulary List",
+          "locator": "Topic list: Health, Medicine and Exercise"
+        }
+      ],
+      "items": [
+        {
+          "term": "head",
+          "translation": "голова",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "face",
+          "translation": "лицо",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "neck",
+          "translation": "шея",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "shoulder",
+          "translation": "плечо",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "arm",
+          "translation": "рука",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "elbow",
+          "translation": "локоть",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "hand",
+          "translation": "кисть руки",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "finger",
+          "translation": "палец руки",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "chest",
+          "translation": "грудь",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "back",
+          "translation": "спина",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "stomach",
+          "translation": "живот / желудок",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "knee",
+          "translation": "колено",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "leg",
+          "translation": "нога",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "ankle",
+          "translation": "лодыжка",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "foot",
+          "translation": "ступня",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "toe",
+          "translation": "палец ноги",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "headache",
+          "translation": "головная боль",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "toothache",
+          "translation": "зубная боль",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "sore throat",
+          "translation": "боль в горле",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cough",
+          "translation": "кашель / кашлять",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "fever",
+          "translation": "жар",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "medicine",
+          "translation": "лекарство",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "appointment",
+          "translation": "приём / запись",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "recover",
+          "translation": "выздоравливать",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "keep fit",
+          "translation": "поддерживать форму",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        }
+      ]
+    },
+    {
+      "id": "vocab-clothes-style",
+      "kind": "vocabulary-set",
+      "title": "Clothes & Style",
+      "category": "appearance",
+      "levels": ["A2", "B1"],
+      "tags": ["clothes", "style"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Clothes and Accessories"
+        }
+      ],
+      "items": [
+        {
+          "term": "T-shirt",
+          "translation": "футболка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "shirt",
+          "translation": "рубашка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "jeans",
+          "translation": "джинсы",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "trousers",
+          "translation": "брюки",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "skirt",
+          "translation": "юбка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "dress",
+          "translation": "платье",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "jacket",
+          "translation": "куртка / пиджак",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "coat",
+          "translation": "пальто",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "jumper",
+          "translation": "свитер",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "hoodie",
+          "translation": "толстовка с капюшоном",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "trainers",
+          "translation": "кроссовки",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "boots",
+          "translation": "ботинки / сапоги",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "scarf",
+          "translation": "шарф",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "gloves",
+          "translation": "перчатки",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "suit",
+          "translation": "костюм",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "fit",
+          "translation": "быть впору",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "suit",
+          "translation": "подходить по стилю",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "casual",
+          "translation": "повседневный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "smart",
+          "translation": "элегантный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        }
+      ]
+    },
+    {
+      "id": "vocab-weather-seasons",
+      "kind": "vocabulary-set",
+      "title": "Weather & Seasons",
+      "category": "nature",
+      "levels": ["A2", "B1"],
+      "tags": ["weather", "seasons"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 10: What's the weather like?"
+        }
+      ],
+      "items": [
+        {
+          "term": "sunny",
+          "translation": "солнечный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "cloudy",
+          "translation": "облачный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "rainy",
+          "translation": "дождливый",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "windy",
+          "translation": "ветреный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "snowy",
+          "translation": "снежный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "foggy",
+          "translation": "туманный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "hot",
+          "translation": "жаркий",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "warm",
+          "translation": "тёплый",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "cool",
+          "translation": "прохладный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "cold",
+          "translation": "холодный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "temperature",
+          "translation": "температура",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "forecast",
+          "translation": "прогноз",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "storm",
+          "translation": "буря / шторм",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "thunder",
+          "translation": "гром",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "lightning",
+          "translation": "молния",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-holidays-travel",
+      "kind": "vocabulary-set",
+      "title": "Holidays & Travel",
+      "category": "travel",
+      "levels": ["A2", "B1"],
+      "tags": ["holiday", "travel", "tourism"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 10: Holiday plans"
+        },
+        {
+          "source": "Cambridge English activities",
+          "locator": "B1-B2 vocabulary: Travel the world"
+        }
+      ],
+      "items": [
+        {
+          "term": "holiday",
+          "translation": "отпуск / каникулы",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "trip",
+          "translation": "поездка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "journey",
+          "translation": "путешествие / дорога",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "travel",
+          "translation": "путешествовать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "tourist",
+          "translation": "турист",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "sightseeing",
+          "translation": "осмотр достопримечательностей",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "museum",
+          "translation": "музей",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "hotel",
+          "translation": "отель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "campsite",
+          "translation": "кемпинг",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "passport",
+          "translation": "паспорт",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "luggage",
+          "translation": "багаж",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "suitcase",
+          "translation": "чемодан",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "book a room",
+          "translation": "забронировать номер",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "stay at a hotel",
+          "translation": "остановиться в отеле",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go abroad",
+          "translation": "поехать за границу",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "take photos",
+          "translation": "фотографировать",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "visit a museum",
+          "translation": "посетить музей",
+          "level": "A2",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "go sightseeing",
+          "translation": "осматривать достопримечательности",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        }
+      ]
+    },
+    {
+      "id": "vocab-school-education",
+      "kind": "vocabulary-set",
+      "title": "School & Education",
+      "category": "school",
+      "levels": ["A2", "B1"],
+      "tags": ["school", "education"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge English Portal",
+          "locator": "A2 classroom vocabulary"
+        }
+      ],
+      "items": [
+        {
+          "term": "subject",
+          "translation": "предмет",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "lesson",
+          "translation": "урок",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "classmate",
+          "translation": "одноклассник",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "teacher",
+          "translation": "учитель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "student",
+          "translation": "ученик / студент",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "homework",
+          "translation": "домашнее задание",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "exam",
+          "translation": "экзамен",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "test",
+          "translation": "тест",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "mark",
+          "translation": "оценка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "project",
+          "translation": "проект",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "timetable",
+          "translation": "расписание",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "school uniform",
+          "translation": "школьная форма",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "revise",
+          "translation": "повторять к экзамену",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "pass an exam",
+          "translation": "сдать экзамен",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "fail an exam",
+          "translation": "не сдать экзамен",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "degree",
+          "translation": "диплом / степень",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-jobs-work",
+      "kind": "vocabulary-set",
+      "title": "Jobs & Work",
+      "category": "work",
+      "levels": ["A2", "B1"],
+      "tags": ["jobs", "work"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge English A2 activities",
+          "locator": "Work and jobs / Different jobs"
+        },
+        {
+          "source": "Cambridge B1 Preliminary Vocabulary List",
+          "locator": "Work-related vocabulary"
+        }
+      ],
+      "items": [
+        {
+          "term": "doctor",
+          "translation": "врач",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "nurse",
+          "translation": "медсестра / медбрат",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "teacher",
+          "translation": "учитель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "driver",
+          "translation": "водитель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "waiter",
+          "translation": "официант",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "waitress",
+          "translation": "официантка",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "chef",
+          "translation": "шеф-повар",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "engineer",
+          "translation": "инженер",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "police officer",
+          "translation": "полицейский",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "shop assistant",
+          "translation": "продавец-консультант",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "journalist",
+          "translation": "журналист",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "manager",
+          "translation": "менеджер",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "employee",
+          "translation": "сотрудник",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "employer",
+          "translation": "работодатель",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "salary",
+          "translation": "зарплата",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "apply for a job",
+          "translation": "откликнуться на работу",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "work full-time",
+          "translation": "работать полный день",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "work part-time",
+          "translation": "работать неполный день",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        }
+      ]
+    },
+    {
+      "id": "vocab-technology-communication",
+      "kind": "vocabulary-set",
+      "title": "Technology & Communication",
+      "category": "technology",
+      "levels": ["A2", "B1"],
+      "tags": ["technology", "internet", "communication"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge A2 Key Vocabulary List",
+          "locator": "Topic list: Communication and Technology"
+        }
+      ],
+      "items": [
+        {
+          "term": "computer",
+          "translation": "компьютер",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "laptop",
+          "translation": "ноутбук",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "tablet",
+          "translation": "планшет",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "screen",
+          "translation": "экран",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "keyboard",
+          "translation": "клавиатура",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "mouse",
+          "translation": "мышь",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "website",
+          "translation": "сайт",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "password",
+          "translation": "пароль",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "email",
+          "translation": "электронное письмо",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "message",
+          "translation": "сообщение",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "download",
+          "translation": "скачивать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "upload",
+          "translation": "загружать",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "online",
+          "translation": "онлайн",
+          "level": "A2",
+          "partOfSpeech": "adverb"
+        },
+        {
+          "term": "social media",
+          "translation": "социальные сети",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "account",
+          "translation": "аккаунт",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "log in",
+          "translation": "войти в аккаунт",
+          "level": "B1",
+          "partOfSpeech": "phrasal-verb"
+        },
+        {
+          "term": "log out",
+          "translation": "выйти из аккаунта",
+          "level": "B1",
+          "partOfSpeech": "phrasal-verb"
+        }
+      ]
+    },
+    {
+      "id": "vocab-feelings-personality",
+      "kind": "vocabulary-set",
+      "title": "Feelings & Personality",
+      "category": "people",
+      "levels": ["A2", "B1"],
+      "tags": ["feelings", "personality", "adjectives"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge A2/B1 vocabulary guidance",
+          "locator": "People and descriptive adjectives"
+        }
+      ],
+      "items": [
+        {
+          "term": "happy",
+          "translation": "счастливый",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "sad",
+          "translation": "грустный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "angry",
+          "translation": "злой",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "tired",
+          "translation": "уставший",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "bored",
+          "translation": "скучающий",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "excited",
+          "translation": "взволнованный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "worried",
+          "translation": "обеспокоенный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "nervous",
+          "translation": "нервный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "proud",
+          "translation": "гордый",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "calm",
+          "translation": "спокойный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "friendly",
+          "translation": "дружелюбный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "kind",
+          "translation": "добрый",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "funny",
+          "translation": "забавный",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "shy",
+          "translation": "стеснительный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "confident",
+          "translation": "уверенный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "patient",
+          "translation": "терпеливый",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "honest",
+          "translation": "честный",
+          "level": "B1",
+          "partOfSpeech": "adjective"
+        },
+        {
+          "term": "lazy",
+          "translation": "ленивый",
+          "level": "A2",
+          "partOfSpeech": "adjective"
+        }
+      ]
+    },
+    {
+      "id": "vocab-shopping-money",
+      "kind": "vocabulary-set",
+      "title": "Shopping & Money",
+      "category": "shopping",
+      "levels": ["A2", "B1"],
+      "tags": ["shopping", "money"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge English activities",
+          "locator": "B1 vocabulary: Words related to money / Verbs related to money"
+        }
+      ],
+      "items": [
+        {
+          "term": "shop",
+          "translation": "магазин",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "customer",
+          "translation": "покупатель",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "price",
+          "translation": "цена",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cash",
+          "translation": "наличные",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "card",
+          "translation": "карта",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "change",
+          "translation": "сдача",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "cost",
+          "translation": "стоить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "buy",
+          "translation": "покупать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "sell",
+          "translation": "продавать",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "pay",
+          "translation": "платить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "spend",
+          "translation": "тратить",
+          "level": "A2",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "save",
+          "translation": "копить / экономить",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "borrow",
+          "translation": "брать взаймы",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "lend",
+          "translation": "давать взаймы",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "afford",
+          "translation": "позволить себе",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "discount",
+          "translation": "скидка",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "receipt",
+          "translation": "чек",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "refund",
+          "translation": "возврат денег",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        }
+      ]
+    },
+    {
+      "id": "vocab-nature-environment",
+      "kind": "vocabulary-set",
+      "title": "Nature & Environment",
+      "category": "nature",
+      "levels": ["A2", "B1"],
+      "tags": ["nature", "environment"],
+      "sourceRefs": [
+        {
+          "source": "Cambridge A2/B1 vocabulary guidance",
+          "locator": "Our planet / natural world topics"
+        }
+      ],
+      "items": [
+        {
+          "term": "river",
+          "translation": "река",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "lake",
+          "translation": "озеро",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "mountain",
+          "translation": "гора",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "forest",
+          "translation": "лес",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "island",
+          "translation": "остров",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "beach",
+          "translation": "пляж",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "sea",
+          "translation": "море",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "ocean",
+          "translation": "океан",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "plant",
+          "translation": "растение",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "animal",
+          "translation": "животное",
+          "level": "A2",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "environment",
+          "translation": "окружающая среда",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "pollution",
+          "translation": "загрязнение",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "recycle",
+          "translation": "перерабатывать",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "waste",
+          "translation": "отходы / тратить впустую",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "protect",
+          "translation": "защищать",
+          "level": "B1",
+          "partOfSpeech": "verb"
+        },
+        {
+          "term": "climate",
+          "translation": "климат",
+          "level": "B1",
+          "partOfSpeech": "noun"
+        },
+        {
+          "term": "global warming",
+          "translation": "глобальное потепление",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        },
+        {
+          "term": "save energy",
+          "translation": "экономить энергию",
+          "level": "B1",
+          "partOfSpeech": "phrase"
+        }
+      ]
+    }
+  ]
+}

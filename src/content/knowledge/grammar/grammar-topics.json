@@ -1,0 +1,552 @@
+{
+  "documentType": "grammar-topics",
+  "version": 1,
+  "items": [
+    {
+      "id": "grammar-be-have-got",
+      "kind": "grammar-topic",
+      "title": "Verb to be & have got",
+      "category": "basics",
+      "levels": ["A2"],
+      "subtopics": [
+        "am/is/are",
+        "was/were",
+        "have got/has got",
+        "short forms",
+        "questions and negatives"
+      ],
+      "tags": ["be", "have got", "basics"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Modules 1-2, Grammar Reference / Grammar Practice"
+        },
+        {
+          "source": "English Grammar in Use 5th Edition",
+          "locator": "Units 1-2, 25-28"
+        }
+      ]
+    },
+    {
+      "id": "grammar-possessives",
+      "kind": "grammar-topic",
+      "title": "Possessives",
+      "category": "pronouns-determiners",
+      "levels": ["A2"],
+      "subtopics": ["possessive adjectives", "possessive pronouns", "possessive 's", "whose"],
+      "tags": ["possessives", "pronouns"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 1: Family members / Who are you?"
+        }
+      ]
+    },
+    {
+      "id": "grammar-there-is-are",
+      "kind": "grammar-topic",
+      "title": "There is / There are",
+      "category": "sentence-structure",
+      "levels": ["A2"],
+      "subtopics": ["affirmative", "negative", "questions", "some/any", "someone/anyone/no one"],
+      "tags": ["there is", "there are", "some", "any"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 2: My place"
+        }
+      ]
+    },
+    {
+      "id": "grammar-present-simple",
+      "kind": "grammar-topic",
+      "title": "Present Simple",
+      "category": "tenses",
+      "levels": ["A2"],
+      "subtopics": [
+        "habits and routines",
+        "facts",
+        "third person -s",
+        "negatives with don't/doesn't",
+        "questions with do/does",
+        "short answers"
+      ],
+      "tags": ["present simple", "routines"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 4: Day in, Day out"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 1-10: Present continuous and present simple"
+        }
+      ]
+    },
+    {
+      "id": "grammar-adverbs-frequency",
+      "kind": "grammar-topic",
+      "title": "Adverbs of frequency",
+      "category": "adverbs",
+      "levels": ["A2"],
+      "subtopics": [
+        "always",
+        "usually",
+        "often",
+        "sometimes",
+        "rarely",
+        "never",
+        "position in the sentence"
+      ],
+      "tags": ["frequency", "adverbs"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 4: Day in, Day out"
+        }
+      ]
+    },
+    {
+      "id": "grammar-present-continuous",
+      "kind": "grammar-topic",
+      "title": "Present Continuous",
+      "category": "tenses",
+      "levels": ["A2"],
+      "subtopics": [
+        "actions happening now",
+        "temporary situations",
+        "affirmative",
+        "negative",
+        "questions",
+        "spelling -ing"
+      ],
+      "tags": ["present continuous", "now"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 5: Festive time"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 1-10"
+        }
+      ]
+    },
+    {
+      "id": "grammar-present-simple-vs-continuous",
+      "kind": "grammar-topic",
+      "title": "Present Simple vs Present Continuous",
+      "category": "tenses",
+      "levels": ["A2", "B1"],
+      "subtopics": ["routine vs now", "temporary situations", "stative verbs", "time expressions"],
+      "tags": ["present simple", "present continuous", "contrast"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 6: Game on!"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 1-10"
+        }
+      ]
+    },
+    {
+      "id": "grammar-past-simple",
+      "kind": "grammar-topic",
+      "title": "Past Simple",
+      "category": "tenses",
+      "levels": ["A2"],
+      "subtopics": [
+        "regular verbs",
+        "irregular verbs",
+        "was/were",
+        "did/didn't",
+        "questions",
+        "past time expressions"
+      ],
+      "tags": ["past simple", "irregular verbs"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 7: In the past / Mystery Spirit"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 11-17"
+        }
+      ]
+    },
+    {
+      "id": "grammar-past-continuous",
+      "kind": "grammar-topic",
+      "title": "Past Continuous",
+      "category": "tenses",
+      "levels": ["A2", "B1"],
+      "subtopics": ["actions in progress in the past", "was/were + -ing", "when/while"],
+      "tags": ["past continuous"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 11-17"
+        }
+      ]
+    },
+    {
+      "id": "grammar-past-simple-vs-continuous",
+      "kind": "grammar-topic",
+      "title": "Past Simple vs Past Continuous",
+      "category": "tenses",
+      "levels": ["A2", "B1"],
+      "subtopics": ["background action", "interrupting event", "when", "while"],
+      "tags": ["past simple", "past continuous", "contrast"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 11-22"
+        }
+      ]
+    },
+    {
+      "id": "grammar-future-going-to",
+      "kind": "grammar-topic",
+      "title": "Be going to",
+      "category": "future",
+      "levels": ["A2"],
+      "subtopics": [
+        "plans and intentions",
+        "predictions from evidence",
+        "affirmative",
+        "negative",
+        "questions"
+      ],
+      "tags": ["future", "going to"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 10: Holiday plans"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 59-64"
+        }
+      ]
+    },
+    {
+      "id": "grammar-future-will",
+      "kind": "grammar-topic",
+      "title": "Will / won't",
+      "category": "future",
+      "levels": ["A2", "B1"],
+      "subtopics": ["predictions", "instant decisions", "offers and promises", "will vs going to"],
+      "tags": ["future", "will"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 54-64"
+        }
+      ]
+    },
+    {
+      "id": "grammar-future-present-continuous",
+      "kind": "grammar-topic",
+      "title": "Present Continuous for future arrangements",
+      "category": "future",
+      "levels": ["B1"],
+      "subtopics": ["fixed arrangements", "future time expressions", "contrast with going to"],
+      "tags": ["future", "arrangements"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 59-64"
+        }
+      ]
+    },
+    {
+      "id": "grammar-can-could",
+      "kind": "grammar-topic",
+      "title": "Can / Could / Be able to",
+      "category": "modals",
+      "levels": ["A2", "B1"],
+      "subtopics": ["ability", "permission", "requests", "past ability", "future ability"],
+      "tags": ["modals", "can", "could"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 3: On the move"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 65-72"
+        }
+      ]
+    },
+    {
+      "id": "grammar-must-have-to",
+      "kind": "grammar-topic",
+      "title": "Must / Have to / Mustn't / Don't have to",
+      "category": "modals",
+      "levels": ["A2", "B1"],
+      "subtopics": ["obligation", "prohibition", "lack of necessity", "must vs have to", "needn't"],
+      "tags": ["modals", "rules", "obligation"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 8: That's the rule / Rules & Regulations"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 73-82"
+        }
+      ]
+    },
+    {
+      "id": "grammar-should",
+      "kind": "grammar-topic",
+      "title": "Should / shouldn't",
+      "category": "modals",
+      "levels": ["A2"],
+      "subtopics": ["advice", "recommendations", "questions with should"],
+      "tags": ["modals", "advice"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 3: On the move"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 73-85"
+        }
+      ]
+    },
+    {
+      "id": "grammar-imperatives",
+      "kind": "grammar-topic",
+      "title": "Imperatives",
+      "category": "sentence-structure",
+      "levels": ["A2"],
+      "subtopics": ["positive commands", "negative commands", "instructions", "directions"],
+      "tags": ["imperative", "instructions"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 3: Road safety"
+        }
+      ]
+    },
+    {
+      "id": "grammar-prepositions-time-place",
+      "kind": "grammar-topic",
+      "title": "Prepositions of time and place",
+      "category": "prepositions",
+      "levels": ["A2", "B1"],
+      "subtopics": [
+        "at/on/in time",
+        "in/on/at place",
+        "to/into",
+        "by",
+        "beside/next to/between/opposite"
+      ],
+      "tags": ["prepositions", "time", "place"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 2: Happy times / My place"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 173-182"
+        }
+      ]
+    },
+    {
+      "id": "grammar-countable-uncountable",
+      "kind": "grammar-topic",
+      "title": "Countable & uncountable nouns",
+      "category": "nouns",
+      "levels": ["A2"],
+      "subtopics": [
+        "countable nouns",
+        "uncountable nouns",
+        "a/an",
+        "some/any",
+        "much/many",
+        "a lot of",
+        "containers and quantities"
+      ],
+      "tags": ["countable", "uncountable", "quantifiers"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 9: Food & drink"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 144-159"
+        }
+      ]
+    },
+    {
+      "id": "grammar-articles",
+      "kind": "grammar-topic",
+      "title": "Articles: a/an, the, zero article",
+      "category": "articles",
+      "levels": ["A2", "B1"],
+      "subtopics": ["a/an", "the", "no article", "places and institutions", "geographical names"],
+      "tags": ["articles"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 149-154"
+        }
+      ]
+    },
+    {
+      "id": "grammar-comparatives-superlatives",
+      "kind": "grammar-topic",
+      "title": "Comparatives & superlatives",
+      "category": "adjectives",
+      "levels": ["A2"],
+      "subtopics": ["-er/-est", "more/most", "irregular forms", "than", "as ... as"],
+      "tags": ["comparatives", "superlatives"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 8: Shall we?"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 164-168"
+        }
+      ]
+    },
+    {
+      "id": "grammar-present-perfect",
+      "kind": "grammar-topic",
+      "title": "Present Perfect Simple",
+      "category": "tenses",
+      "levels": ["B1"],
+      "subtopics": [
+        "experience",
+        "recent events",
+        "unfinished time",
+        "ever/never",
+        "just/already/yet",
+        "for/since",
+        "present perfect vs past simple"
+      ],
+      "tags": ["present perfect", "B1"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 23-42"
+        }
+      ]
+    },
+    {
+      "id": "grammar-first-conditional",
+      "kind": "grammar-topic",
+      "title": "First Conditional",
+      "category": "conditionals",
+      "levels": ["B1"],
+      "subtopics": ["if + present, will", "real future possibility", "unless"],
+      "tags": ["conditional", "future"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 88-93"
+        }
+      ]
+    },
+    {
+      "id": "grammar-second-conditional",
+      "kind": "grammar-topic",
+      "title": "Second Conditional",
+      "category": "conditionals",
+      "levels": ["B1"],
+      "subtopics": ["if + past, would", "imaginary situations", "advice with If I were you"],
+      "tags": ["conditional", "would"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 88-99"
+        }
+      ]
+    },
+    {
+      "id": "grammar-relative-clauses",
+      "kind": "grammar-topic",
+      "title": "Relative clauses",
+      "category": "clauses",
+      "levels": ["A2", "B1"],
+      "subtopics": ["who", "which", "that", "whose", "where", "defining relative clauses"],
+      "tags": ["relative clauses"],
+      "sourceRefs": [
+        {
+          "source": "Spotlight 6 Student's Book",
+          "locator": "Module 3: Hot wheels"
+        },
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 160-163"
+        }
+      ]
+    },
+    {
+      "id": "grammar-gerund-infinitive",
+      "kind": "grammar-topic",
+      "title": "Verb + -ing / to-infinitive",
+      "category": "verb-patterns",
+      "levels": ["B1"],
+      "subtopics": [
+        "enjoy doing",
+        "want to do",
+        "decide to do",
+        "like doing / like to do",
+        "preposition + -ing"
+      ],
+      "tags": ["gerund", "infinitive"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 132-143"
+        }
+      ]
+    },
+    {
+      "id": "grammar-passive-basic",
+      "kind": "grammar-topic",
+      "title": "Passive voice: basic forms",
+      "category": "voice",
+      "levels": ["B1"],
+      "subtopics": ["present passive", "past passive", "be + past participle", "active vs passive"],
+      "tags": ["passive", "B1"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 103-113"
+        }
+      ]
+    },
+    {
+      "id": "grammar-reported-speech-basic",
+      "kind": "grammar-topic",
+      "title": "Reported speech: basics",
+      "category": "reported-speech",
+      "levels": ["B1"],
+      "subtopics": [
+        "say/tell",
+        "reported statements",
+        "reported questions",
+        "basic tense backshift"
+      ],
+      "tags": ["reported speech", "B1"],
+      "sourceRefs": [
+        {
+          "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+          "locator": "Exercises 121-131"
+        }
+      ]
+    }
+  ]
+}

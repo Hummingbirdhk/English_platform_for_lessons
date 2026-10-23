@@ -1,0 +1,319 @@
+{
+  "documentType": "lexicon",
+  "version": 1,
+  "id": "lexicon-common-adjectives",
+  "title": "Common Adjectives A2-B1",
+  "levels": ["A2", "B1"],
+  "sourceRefs": [
+    {
+      "source": "Cambridge A2 Key / B1 Preliminary Vocabulary Lists",
+      "locator": "Descriptive vocabulary"
+    },
+    {
+      "source": "Spotlight 6",
+      "locator": "Appearance, places, feelings, food and weather"
+    }
+  ],
+  "items": [
+    {
+      "term": "afraid",
+      "translation": "испуганный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "amazing",
+      "translation": "потрясающий",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "angry",
+      "translation": "злой",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "beautiful",
+      "translation": "красивый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "big",
+      "translation": "большой",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "boring",
+      "translation": "скучный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "brave",
+      "translation": "храбрый",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "busy",
+      "translation": "занятый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "careful",
+      "translation": "осторожный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "cheap",
+      "translation": "дешёвый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "clean",
+      "translation": "чистый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "comfortable",
+      "translation": "удобный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "crowded",
+      "translation": "переполненный",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "dangerous",
+      "translation": "опасный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "delicious",
+      "translation": "очень вкусный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "different",
+      "translation": "разный / отличающийся",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "difficult",
+      "translation": "трудный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "easy",
+      "translation": "лёгкий",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "empty",
+      "translation": "пустой",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "excited",
+      "translation": "взволнованный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "expensive",
+      "translation": "дорогой",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "famous",
+      "translation": "знаменитый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "friendly",
+      "translation": "дружелюбный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "funny",
+      "translation": "смешной",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "healthy",
+      "translation": "здоровый / полезный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "helpful",
+      "translation": "полезный / готовый помочь",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "honest",
+      "translation": "честный",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "hungry",
+      "translation": "голодный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "important",
+      "translation": "важный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "interesting",
+      "translation": "интересный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "kind",
+      "translation": "добрый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "lazy",
+      "translation": "ленивый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "modern",
+      "translation": "современный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "noisy",
+      "translation": "шумный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "patient",
+      "translation": "терпеливый",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "polite",
+      "translation": "вежливый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "popular",
+      "translation": "популярный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "quiet",
+      "translation": "тихий",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "safe",
+      "translation": "безопасный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "serious",
+      "translation": "серьёзный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "shy",
+      "translation": "стеснительный",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "smart",
+      "translation": "умный / элегантный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "strange",
+      "translation": "странный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "strong",
+      "translation": "сильный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "successful",
+      "translation": "успешный",
+      "level": "B1",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "surprised",
+      "translation": "удивлённый",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "tired",
+      "translation": "уставший",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "useful",
+      "translation": "полезный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "worried",
+      "translation": "обеспокоенный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    },
+    {
+      "term": "wrong",
+      "translation": "неправильный",
+      "level": "A2",
+      "partOfSpeech": "adjective"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { registeredFeatureKeys } from '../shared/config/featureKeys';
 import { contentBundleSchema } from './schema/contentSchema';
 import { validateContent } from './validateContent';
+import { validateKnowledgeDocuments } from './validateKnowledge';
 
 function readJsonFiles(dir: string): unknown[] {
   if (!fs.existsSync(dir)) return [];
@@ -35,4 +36,13 @@ if (!result.ok) {
   process.exit(1);
 }
 
-console.log('Content validation passed.');
+const knowledgeResult = validateKnowledgeDocuments(
+  readJsonFiles(path.resolve('src/content/knowledge')),
+);
+
+if (!knowledgeResult.ok) {
+  console.error(knowledgeResult.errors.join('\n'));
+  process.exit(1);
+}
+
+console.log(`Content validation passed. Knowledge documents: ${knowledgeResult.documents.length}.`);
