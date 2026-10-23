@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  content-contract:
+  product-contract:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,4 +18,12 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm test -- --run tests/content/content-validation.test.ts
+      - run: >-
+          npm test -- --run
+          tests/content/content-validation.test.ts
+          tests/app/app-shell.test.tsx
+          tests/entities/material/MaterialRenderer.test.tsx
+          tests/entities/lesson/LessonRenderer.test.tsx
+          tests/pages/materials/MaterialsPage.test.tsx
+          tests/pages/students/StudentsPage.test.tsx
+          tests/pages/home/HomePage.test.tsx
