@@ -1,0 +1,265 @@
+{
+  "documentType": "lexicon",
+  "version": 1,
+  "id": "lexicon-prepositions",
+  "title": "Prepositions A2-B1",
+  "levels": [
+    "A2",
+    "B1"
+  ],
+  "sourceRefs": [
+    {
+      "source": "Spotlight 6 Student's Book",
+      "locator": "Modules 2-3: prepositions of time/place/directions"
+    },
+    {
+      "source": "English Grammar in Use Supplementary Exercises 5th Edition",
+      "locator": "Exercises 173-182; adjective/verb + preposition"
+    }
+  ],
+  "items": [
+    {
+      "term": "at",
+      "translation": "в / у / на",
+      "level": "A2",
+      "partOfSpeech": "preposition",
+      "note": "time/place: at 7, at school"
+    },
+    {
+      "term": "on",
+      "translation": "на / в",
+      "level": "A2",
+      "partOfSpeech": "preposition",
+      "note": "on the table, on Monday"
+    },
+    {
+      "term": "in",
+      "translation": "в / внутри",
+      "level": "A2",
+      "partOfSpeech": "preposition",
+      "note": "in the room, in May"
+    },
+    {
+      "term": "under",
+      "translation": "под",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "above",
+      "translation": "над / выше",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "below",
+      "translation": "ниже / под",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "behind",
+      "translation": "за / позади",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "in front of",
+      "translation": "перед",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "next to",
+      "translation": "рядом с",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "near",
+      "translation": "около",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "opposite",
+      "translation": "напротив",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "between",
+      "translation": "между",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "among",
+      "translation": "среди",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "beside",
+      "translation": "рядом с",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "inside",
+      "translation": "внутри",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "outside",
+      "translation": "снаружи / вне",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "to",
+      "translation": "к / в направлении",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "into",
+      "translation": "внутрь",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "from",
+      "translation": "из / от",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "through",
+      "translation": "через / сквозь",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "across",
+      "translation": "через / поперёк",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "along",
+      "translation": "вдоль",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "past",
+      "translation": "мимо",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "towards",
+      "translation": "по направлению к",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "around",
+      "translation": "вокруг",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "before",
+      "translation": "до / перед",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "after",
+      "translation": "после",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "during",
+      "translation": "во время",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "for",
+      "translation": "в течение / для",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "since",
+      "translation": "с какого-то момента",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "until",
+      "translation": "до",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "by",
+      "translation": "к / посредством",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "with",
+      "translation": "с",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "without",
+      "translation": "без",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "about",
+      "translation": "о / около",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "of",
+      "translation": "из / о / принадлежность",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "for",
+      "translation": "для / за",
+      "level": "A2",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "against",
+      "translation": "против",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "instead of",
+      "translation": "вместо",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    },
+    {
+      "term": "because of",
+      "translation": "из-за",
+      "level": "B1",
+      "partOfSpeech": "preposition"
+    }
+  ]
+}
