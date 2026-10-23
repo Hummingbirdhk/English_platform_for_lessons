@@ -1,12 +1,11 @@
 import type { PropsWithChildren } from 'react';
-import { BookOutlined, HomeOutlined, TeamOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
 
 const navigation = [
-  { to: '/', label: 'Главная', icon: <HomeOutlined />, end: true },
-  { to: '/materials', label: 'Материалы', icon: <BookOutlined /> },
-  { to: '/lessons', label: 'Уроки', icon: <BookOutlined /> },
-  { to: '/students', label: 'Ученики', icon: <TeamOutlined /> },
+  { to: '/', label: 'Главная', end: true },
+  { to: '/materials', label: 'Материалы' },
+  { to: '/lessons', label: 'Уроки' },
+  { to: '/students', label: 'Ученики' },
 ];
 
 export function AppShell({ children }: PropsWithChildren) {
@@ -27,8 +26,7 @@ export function AppShell({ children }: PropsWithChildren) {
                   isActive ? 'app-nav__link app-nav__link--active' : 'app-nav__link'
                 }
               >
-                {item.icon}
-                <span>{item.label}</span>
+                {item.label}
               </NavLink>
             ))}
           </nav>
