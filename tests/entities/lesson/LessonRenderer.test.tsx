@@ -13,7 +13,10 @@ const content: ContentBundle = {
       grade: 6,
       level: 'A2',
       topic: 'Routine',
-      sections: [{ id: 's1', type: 'feature', feature: 'multiple-choice', exerciseId: 'e1' }],
+      sections: [
+        { id: 'm1', type: 'material', materialId: 'g1' },
+        { id: 's1', type: 'feature', feature: 'multiple-choice', exerciseId: 'e1' },
+      ],
     },
   ],
   exercises: [
@@ -28,16 +31,45 @@ const content: ContentBundle = {
       ],
     },
   ],
+  materials: [
+    {
+      id: 'g1',
+      type: 'grammar',
+      title: 'Present Simple Rule',
+      grade: 6,
+      level: 'A2',
+      topic: 'Routine',
+      tags: ['grammar'],
+      summary: 'Rule summary',
+      explanation: { en: 'English rule', ru: 'Русское правило' },
+      forms: [
+        {
+          label: 'Positive',
+          pattern: 'She works.',
+          examples: [{ en: 'She works every day.', ru: 'Она работает каждый день.' }],
+        },
+      ],
+      commonMistakes: [],
+      exerciseIds: [],
+    },
+  ],
+  students: [],
 };
 
 describe('LessonRenderer', () => {
-  it('renders a registered feature from declarative content', () => {
+  it('renders reusable materials and registered features in one lesson', () => {
     render(
       <Provider store={store}>
-        <LessonRenderer lesson={content.lessons[0]} exercises={content.exercises} />
+        <LessonRenderer
+          lesson={content.lessons[0]}
+          exercises={content.exercises}
+          materials={content.materials}
+        />
       </Provider>,
     );
+
     expect(screen.getByRole('heading', { name: 'Present Simple' })).toBeInTheDocument();
+    expect(screen.getByText('Present Simple Rule')).toBeInTheDocument();
     expect(screen.getByText('Choose the answer')).toBeInTheDocument();
   });
 });
