@@ -193,7 +193,8 @@
       "term": "for",
       "translation": "в течение / для",
       "level": "A2",
-      "partOfSpeech": "preposition"
+      "partOfSpeech": "preposition",
+      "note": "duration, purpose or recipient: for two hours, for school, for you"
     },
     {
       "term": "since",
@@ -234,12 +235,6 @@
     {
       "term": "of",
       "translation": "из / о / принадлежность",
-      "level": "A2",
-      "partOfSpeech": "preposition"
-    },
-    {
-      "term": "for",
-      "translation": "для / за",
       "level": "A2",
       "partOfSpeech": "preposition"
     },
