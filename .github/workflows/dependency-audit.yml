@@ -1,4 +1,4 @@
-name: Dependency audit
+name: Dependency security fix
 
 on:
   push:
@@ -6,19 +6,34 @@ on:
       - chore/dependency-security
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  audit:
+  fix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Upgrade Vitest security baseline
+        run: npm install --save-dev vitest@4.1.12
+      - name: Verify repository
+        run: npm run verify
       - name: Audit dependencies
         shell: bash
+        run: npm audit --json || true
+      - name: Commit lockfile update
+        shell: bash
         run: |
-          npm audit --json || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: upgrade Vitest security baseline"
+            git push
+          fi
