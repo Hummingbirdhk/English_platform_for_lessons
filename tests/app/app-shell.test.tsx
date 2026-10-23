@@ -4,10 +4,13 @@ import { App } from '../../src/app/App';
 import { AppErrorBoundary } from '../../src/shared/ui/AppErrorBoundary';
 
 describe('application shell', () => {
-  it('renders the home heading', () => {
+  it('renders primary teacher navigation', () => {
     window.location.hash = '#/';
     render(<App />);
-    expect(screen.getByRole('heading', { name: /english lessons/i })).toBeInTheDocument();
+
+    expect(screen.getByRole('link', { name: /Материалы/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Уроки/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Ученики/i })).toBeInTheDocument();
   });
 
   it('shows a student-safe state for a missing lesson', () => {
@@ -20,11 +23,13 @@ describe('application shell', () => {
     const Broken = () => {
       throw new Error('SECRET_STACK_DETAIL');
     };
+
     render(
       <AppErrorBoundary>
         <Broken />
       </AppErrorBoundary>,
     );
+
     expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
     expect(screen.queryByText(/SECRET_STACK_DETAIL/i)).not.toBeInTheDocument();
   });
