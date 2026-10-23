@@ -14,26 +14,211 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #e8ecf3;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.app-header__inner {
+  width: min(1180px, calc(100% - 32px));
+  min-height: 68px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.app-brand {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.app-nav {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.app-nav__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: #667085;
+  font-weight: 600;
+}
+
+.app-nav__link:hover,
+.app-nav__link--active {
+  background: #eef4ff;
+  color: #1677ff;
+}
+
 .page-shell {
-  width: min(1080px, calc(100% - 32px));
+  width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
   padding: 40px 0 64px;
 }
-.lesson-card {
+
+.page-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.page-heading__title {
+  margin-bottom: 6px !important;
+}
+
+.page-heading__description {
+  max-width: 720px;
+  margin-bottom: 0 !important;
+}
+
+.dashboard-card,
+.resource-card {
+  height: 100%;
+}
+
+.dashboard-card__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.resource-card-link {
+  display: block;
+  height: 100%;
+}
+
+.resource-card__topic {
+  font-weight: 600;
+}
+
+.library-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 12px;
+}
+
+.material-detail {
   width: 100%;
 }
-@media (max-width: 640px) {
+
+.material-block,
+.lesson-card,
+.lesson-material {
+  margin-bottom: 16px;
+}
+
+.lesson-material .material-detail > h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.secondary-copy {
+  margin-top: 4px;
+  color: #667085;
+}
+
+.example-pair {
+  margin-bottom: 14px;
+}
+
+.vocabulary-card {
+  height: 100%;
+}
+
+.vocabulary-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.reading-text {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #111827;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.privacy-note {
+  margin-bottom: 20px;
+}
+
+.privacy-footer {
+  margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+  .app-header__inner {
+    width: min(100% - 20px, 1180px);
+    min-height: auto;
+    padding: 12px 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-nav {
+    width: 100%;
+  }
+
+  .app-nav__link {
+    flex: 0 0 auto;
+  }
+
   .page-shell {
-    width: min(100% - 20px, 1080px);
+    width: min(100% - 20px, 1180px);
     padding-top: 24px;
+  }
+
+  .page-heading {
+    flex-direction: column;
+  }
+
+  .library-controls {
+    grid-template-columns: 1fr;
   }
 }
