@@ -72,7 +72,7 @@ export function StudentPage() {
           <h2>Материалы для {student.displayName.replace(/\.$/, '')}</h2>
           <div className="assigned-list">
             {assignedMaterials.map((material) => (
-              <Link key={material.id} to={`/materials/${material.id}`} className="assigned-row">
+              <Link key={material.id} to={`/materials/${material.id}`} className="assigned-row" aria-label={material.title}>
                 <span className={`assigned-row__dot assigned-row__dot--${material.type}`} />
                 <span className="assigned-row__title">{material.title}</span>
                 <span className="assigned-row__type">{material.type}</span>
