@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { App } from '../../src/app/App';
 import { AppErrorBoundary } from '../../src/shared/ui/AppErrorBoundary';
@@ -8,9 +8,10 @@ describe('application shell', () => {
     window.location.hash = '#/';
     render(<App />);
 
-    expect(screen.getByRole('link', { name: /Материалы/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Уроки/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /Ученики/i })).toBeInTheDocument();
+    const navigation = screen.getByRole('navigation', { name: /main navigation/i });
+    expect(within(navigation).getByRole('link', { name: /Материалы/i })).toBeInTheDocument();
+    expect(within(navigation).getByRole('link', { name: /Уроки/i })).toBeInTheDocument();
+    expect(within(navigation).getByRole('link', { name: /Ученики/i })).toBeInTheDocument();
   });
 
   it('shows a student-safe state for a missing lesson', () => {
