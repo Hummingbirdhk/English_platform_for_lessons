@@ -10,8 +10,15 @@ export function renderLessonSection(
 ) {
   if (section.type === 'intro') {
     return (
-      <Card key={section.id} title={section.title} className="lesson-card">
-        <Typography.Paragraph>{section.body}</Typography.Paragraph>
+      <Card key={section.id} className="lesson-card lesson-card--intro">
+        <div className="lesson-card__index">01</div>
+        <div className="lesson-card__copy">
+          <Typography.Title level={3}>{section.title}</Typography.Title>
+          <Typography.Paragraph>{section.body}</Typography.Paragraph>
+        </div>
+        <span className="lesson-card__arrow" aria-hidden="true">
+          →
+        </span>
       </Card>
     );
   }
@@ -19,7 +26,7 @@ export function renderLessonSection(
   if (section.type === 'material') {
     const material = materials.find((item) => item.id === section.materialId);
     return material ? (
-      <Card key={section.id} className="lesson-material">
+      <Card key={section.id} className={`lesson-material lesson-material--${material.type}`}>
         <MaterialRenderer material={material} />
       </Card>
     ) : (
@@ -36,5 +43,9 @@ export function renderLessonSection(
     );
   }
 
-  return <Renderer key={section.id} exercise={exercise} />;
+  return (
+    <Card key={section.id} className="lesson-feature-card">
+      <Renderer exercise={exercise} />
+    </Card>
+  );
 }

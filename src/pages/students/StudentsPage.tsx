@@ -1,30 +1,31 @@
-import { Alert, Col, Row } from 'antd';
 import { loadAllContent } from '../../content/loadContent';
 import { StudentCard } from '../../entities/student/StudentCard';
-import { PageHeading } from '../../shared/ui/PageHeading';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 
 export function StudentsPage() {
   const { students } = loadAllContent();
 
   return (
-    <main className="page-shell">
-      <PageHeading
-        title="Ученики"
-        description="Учебные профили: текущие темы, повторение и назначенные материалы."
-      />
-      <Alert
-        className="privacy-note"
-        type="info"
-        showIcon
-        message="Здесь хранятся только учебные и неперсональные данные."
-      />
-      <Row gutter={[16, 16]}>
+    <main className="page-shell students-page">
+      <section className="page-hero page-hero--lemon">
+        <div>
+          <span className="sticker sticker--white">УЧЕНИКИ</span>
+          <h1>Учебные профили</h1>
+          <p>Текущие темы, повторение и назначенные материалы — в одном спокойном пространстве.</p>
+        </div>
+        <BrandArtifact kind="smile" className="page-hero__smile" />
+        <BrandArtifact kind="spark" className="page-hero__spark page-hero__spark--orange" />
+      </section>
+
+      <div className="privacy-banner">
+        Для MVP здесь используются только псевдонимы и учебные данные без чувствительной информации.
+      </div>
+
+      <section className="student-grid" aria-label="Ученики">
         {students.map((student) => (
-          <Col xs={24} md={12} lg={8} key={student.id}>
-            <StudentCard student={student} />
-          </Col>
+          <StudentCard key={student.id} student={student} />
         ))}
-      </Row>
+      </section>
     </main>
   );
 }

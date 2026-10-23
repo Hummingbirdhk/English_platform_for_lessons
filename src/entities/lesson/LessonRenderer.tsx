@@ -1,5 +1,5 @@
-import { Space, Tag, Typography } from 'antd';
 import type { ExerciseDefinition, Lesson, Material } from '../../content/types';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { renderLessonSection } from './sectionRenderers';
 
 export function LessonRenderer({
@@ -12,18 +12,24 @@ export function LessonRenderer({
   materials: Material[];
 }) {
   return (
-    <main className="page-shell">
-      <Space direction="vertical" size="large" style={{ width: '100%' }}>
-        <div>
-          <Space wrap>
-            <Tag>{lesson.level}</Tag>
-            <Tag>Grade {lesson.grade}</Tag>
-          </Space>
-          <Typography.Title level={1}>{lesson.title}</Typography.Title>
-          <Typography.Text type="secondary">{lesson.topic}</Typography.Text>
+    <main className="page-shell lesson-page">
+      <section className="lesson-hero">
+        <div className="lesson-hero__chips">
+          <span className="level-chip">{lesson.level}</span>
+          <span className="sticker sticker--lemon">GRADE {lesson.grade}</span>
         </div>
+        <h1>{lesson.title}</h1>
+        <p>{lesson.topic}</p>
+        <div className="progress-track lesson-hero__progress" aria-hidden="true">
+          <div className="progress-track__fill progress-track__fill--dark" />
+        </div>
+        <BrandArtifact kind="fire" className="lesson-hero__fire" />
+        <BrandArtifact kind="spark" className="lesson-hero__spark" />
+      </section>
+
+      <section className="lesson-content">
         {lesson.sections.map((section) => renderLessonSection(section, exercises, materials))}
-      </Space>
+      </section>
     </main>
   );
 }

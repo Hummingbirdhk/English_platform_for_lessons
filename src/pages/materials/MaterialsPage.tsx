@@ -1,9 +1,8 @@
-import { Col, Empty, Input, Row, Segmented, Select, Space } from 'antd';
+import { Empty, Input, Segmented, Select } from 'antd';
 import { useMemo, useState } from 'react';
 import { loadAllContent } from '../../content/loadContent';
-import type { Material } from '../../content/types';
 import { MaterialCard } from '../../entities/material/MaterialCard';
-import { PageHeading } from '../../shared/ui/PageHeading';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 
 const typeOptions = [
   { label: 'Все', value: 'all' },
@@ -45,60 +44,66 @@ export function MaterialsPage() {
   }, [level, materials, query, topic, type]);
 
   return (
-    <main className="page-shell">
-      <PageHeading
-        title="Материалы"
-        description="Грамматика, лексика, тексты и видео, которые можно использовать в разных уроках."
-      />
-
-      <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-        <div className="library-controls">
-          <Input
-            type="search"
-            aria-label="Search materials"
-            placeholder="Поиск по теме, названию или тегу"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            allowClear
-          />
-          <Select
-            aria-label="Filter by level"
-            value={level}
-            onChange={setLevel}
-            options={[
-              { label: 'Все уровни', value: 'all' },
-              { label: 'A1', value: 'A1' },
-              { label: 'A2', value: 'A2' },
-              { label: 'B1', value: 'B1' },
-            ]}
-          />
-          <Select
-            aria-label="Filter by topic"
-            value={topic}
-            onChange={setTopic}
-            options={topicOptions}
-          />
+    <main className="page-shell materials-page">
+      <section className="page-hero page-hero--orange">
+        <div>
+          <span className="sticker sticker--lemon">МАТЕРИАЛЫ</span>
+          <h1>Библиотека для уроков</h1>
+          <p>
+            Ищи по теме, уровню или типу — один материал можно использовать в разных уроках.
+          </p>
         </div>
+        <BrandArtifact kind="spark" className="page-hero__spark" />
+        <BrandArtifact kind="smile" className="page-hero__smile" />
+      </section>
 
-        <Segmented
-          block
-          options={typeOptions}
-          value={type}
-          onChange={(value) => setType(String(value))}
+      <section className="materials-toolbar" aria-label="Фильтры материалов">
+        <Input
+          type="search"
+          aria-label="Search materials"
+          placeholder="Поиск по теме, названию или тегу"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          allowClear
+          className="materials-search"
         />
 
-        {visibleMaterials.length > 0 ? (
-          <Row gutter={[16, 16]}>
-            {visibleMaterials.map((material: Material) => (
-              <Col xs={24} md={12} lg={8} key={material.id}>
-                <MaterialCard material={material} />
-              </Col>
-            ))}
-          </Row>
-        ) : (
-          <Empty description="Материалы не найдены" />
-        )}
-      </Space>
+        <Select
+          aria-label="Filter by level"
+          value={level}
+          onChange={setLevel}
+          options={[
+            { label: 'Все уровни', value: 'all' },
+            { label: 'A1', value: 'A1' },
+            { label: 'A2', value: 'A2' },
+            { label: 'B1', value: 'B1' },
+          ]}
+        />
+
+        <Select
+          aria-label="Filter by topic"
+          value={topic}
+          onChange={setTopic}
+          options={topicOptions}
+        />
+      </section>
+
+      <Segmented
+        className="material-type-tabs"
+        options={typeOptions}
+        value={type}
+        onChange={(value) => setType(String(value))}
+      />
+
+      {visibleMaterials.length > 0 ? (
+        <section className="material-grid" aria-label="Материалы">
+          {visibleMaterials.map((material) => (
+            <MaterialCard key={material.id} material={material} />
+          ))}
+        </section>
+      ) : (
+        <Empty description="Материалы не найдены" className="empty-state" />
+      )}
     </main>
   );
 }

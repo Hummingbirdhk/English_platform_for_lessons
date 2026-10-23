@@ -14,8 +14,9 @@ export function AppShell({ children }: PropsWithChildren) {
       <header className="app-header">
         <div className="app-header__inner">
           <NavLink to="/" className="app-brand" aria-label="English Platform home">
-            English Platform
+            ENGLISH CLUB
           </NavLink>
+
           <nav className="app-nav" aria-label="Main navigation">
             {navigation.map((item) => (
               <NavLink
@@ -30,6 +31,10 @@ export function AppShell({ children }: PropsWithChildren) {
               </NavLink>
             ))}
           </nav>
+
+          <div className="app-profile" aria-label="Teacher profile">
+            M
+          </div>
         </div>
       </header>
       {children}
