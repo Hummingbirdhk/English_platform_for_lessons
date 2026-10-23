@@ -21,4 +21,14 @@ describe('MaterialsPage', () => {
     expect(screen.getByText('Present Simple')).toBeInTheDocument();
     expect(screen.queryByText('Daily Routine Vocabulary')).not.toBeInTheDocument();
   });
+
+  it('offers an explicit topic filter', () => {
+    render(
+      <MemoryRouter>
+        <MaterialsPage />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByRole('combobox', { name: /filter by topic/i })).toBeInTheDocument();
+  });
 });
