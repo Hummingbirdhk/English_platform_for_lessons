@@ -1,0 +1,63 @@
+{
+  "id": "vocabulary-daily-routine",
+  "type": "vocabulary",
+  "title": "Daily Routine Vocabulary",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "tags": [
+    "vocabulary",
+    "daily routine"
+  ],
+  "summary": "Useful phrases for talking about a typical school day.",
+  "items": [
+    {
+      "term": "wake up",
+      "translation": "просыпаться",
+      "pronunciation": "/weɪk ʌp/",
+      "example": {
+        "en": "I wake up at seven o'clock.",
+        "ru": "Я просыпаюсь в семь часов."
+      },
+      "collocations": [
+        "wake up early",
+        "wake up late"
+      ]
+    },
+    {
+      "term": "have breakfast",
+      "translation": "завтракать",
+      "example": {
+        "en": "I have breakfast before school.",
+        "ru": "Я завтракаю перед школой."
+      },
+      "collocations": [
+        "have breakfast at home"
+      ]
+    },
+    {
+      "term": "go to school",
+      "translation": "идти / ехать в школу",
+      "example": {
+        "en": "We go to school at eight.",
+        "ru": "Мы идём в школу в восемь."
+      }
+    },
+    {
+      "term": "do homework",
+      "translation": "делать домашнее задание",
+      "example": {
+        "en": "She does her homework after dinner.",
+        "ru": "Она делает домашнее задание после ужина."
+      }
+    },
+    {
+      "term": "go to bed",
+      "translation": "ложиться спать",
+      "example": {
+        "en": "I go to bed at ten.",
+        "ru": "Я ложусь спать в десять."
+      }
+    }
+  ]
+}
