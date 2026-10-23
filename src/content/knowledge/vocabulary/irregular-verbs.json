@@ -1,0 +1,463 @@
+{
+  "documentType": "irregular-verbs",
+  "version": 1,
+  "id": "irregular-verbs-a2-b1",
+  "title": "Irregular Verbs A2-B1",
+  "levels": [
+    "A2",
+    "B1"
+  ],
+  "sourceRefs": [
+    {
+      "source": "Spotlight 6 Student's Book",
+      "locator": "Irregular Verbs appendix, IV1"
+    },
+    {
+      "source": "English Grammar in Use 5th Edition",
+      "locator": "Appendix 1: Regular and irregular verbs"
+    }
+  ],
+  "items": [
+    {
+      "base": "be",
+      "past": "was/were",
+      "pastParticiple": "been",
+      "translation": "быть",
+      "level": "A2"
+    },
+    {
+      "base": "become",
+      "past": "became",
+      "pastParticiple": "become",
+      "translation": "становиться",
+      "level": "B1"
+    },
+    {
+      "base": "begin",
+      "past": "began",
+      "pastParticiple": "begun",
+      "translation": "начинать",
+      "level": "A2"
+    },
+    {
+      "base": "break",
+      "past": "broke",
+      "pastParticiple": "broken",
+      "translation": "ломать",
+      "level": "A2"
+    },
+    {
+      "base": "bring",
+      "past": "brought",
+      "pastParticiple": "brought",
+      "translation": "приносить",
+      "level": "A2"
+    },
+    {
+      "base": "build",
+      "past": "built",
+      "pastParticiple": "built",
+      "translation": "строить",
+      "level": "A2"
+    },
+    {
+      "base": "buy",
+      "past": "bought",
+      "pastParticiple": "bought",
+      "translation": "покупать",
+      "level": "A2"
+    },
+    {
+      "base": "catch",
+      "past": "caught",
+      "pastParticiple": "caught",
+      "translation": "ловить",
+      "level": "A2"
+    },
+    {
+      "base": "choose",
+      "past": "chose",
+      "pastParticiple": "chosen",
+      "translation": "выбирать",
+      "level": "A2"
+    },
+    {
+      "base": "come",
+      "past": "came",
+      "pastParticiple": "come",
+      "translation": "приходить",
+      "level": "A2"
+    },
+    {
+      "base": "cost",
+      "past": "cost",
+      "pastParticiple": "cost",
+      "translation": "стоить",
+      "level": "A2"
+    },
+    {
+      "base": "cut",
+      "past": "cut",
+      "pastParticiple": "cut",
+      "translation": "резать",
+      "level": "A2"
+    },
+    {
+      "base": "do",
+      "past": "did",
+      "pastParticiple": "done",
+      "translation": "делать",
+      "level": "A2"
+    },
+    {
+      "base": "draw",
+      "past": "drew",
+      "pastParticiple": "drawn",
+      "translation": "рисовать",
+      "level": "A2"
+    },
+    {
+      "base": "drink",
+      "past": "drank",
+      "pastParticiple": "drunk",
+      "translation": "пить",
+      "level": "A2"
+    },
+    {
+      "base": "drive",
+      "past": "drove",
+      "pastParticiple": "driven",
+      "translation": "водить",
+      "level": "A2"
+    },
+    {
+      "base": "eat",
+      "past": "ate",
+      "pastParticiple": "eaten",
+      "translation": "есть",
+      "level": "A2"
+    },
+    {
+      "base": "fall",
+      "past": "fell",
+      "pastParticiple": "fallen",
+      "translation": "падать",
+      "level": "A2"
+    },
+    {
+      "base": "feel",
+      "past": "felt",
+      "pastParticiple": "felt",
+      "translation": "чувствовать",
+      "level": "A2"
+    },
+    {
+      "base": "find",
+      "past": "found",
+      "pastParticiple": "found",
+      "translation": "находить",
+      "level": "A2"
+    },
+    {
+      "base": "fly",
+      "past": "flew",
+      "pastParticiple": "flown",
+      "translation": "летать",
+      "level": "A2"
+    },
+    {
+      "base": "forget",
+      "past": "forgot",
+      "pastParticiple": "forgotten",
+      "translation": "забывать",
+      "level": "A2"
+    },
+    {
+      "base": "get",
+      "past": "got",
+      "pastParticiple": "got/gotten",
+      "translation": "получать / становиться",
+      "level": "A2"
+    },
+    {
+      "base": "give",
+      "past": "gave",
+      "pastParticiple": "given",
+      "translation": "давать",
+      "level": "A2"
+    },
+    {
+      "base": "go",
+      "past": "went",
+      "pastParticiple": "gone",
+      "translation": "идти / ехать",
+      "level": "A2"
+    },
+    {
+      "base": "grow",
+      "past": "grew",
+      "pastParticiple": "grown",
+      "translation": "расти",
+      "level": "A2"
+    },
+    {
+      "base": "have",
+      "past": "had",
+      "pastParticiple": "had",
+      "translation": "иметь",
+      "level": "A2"
+    },
+    {
+      "base": "hear",
+      "past": "heard",
+      "pastParticiple": "heard",
+      "translation": "слышать",
+      "level": "A2"
+    },
+    {
+      "base": "hold",
+      "past": "held",
+      "pastParticiple": "held",
+      "translation": "держать",
+      "level": "B1"
+    },
+    {
+      "base": "keep",
+      "past": "kept",
+      "pastParticiple": "kept",
+      "translation": "хранить / продолжать",
+      "level": "A2"
+    },
+    {
+      "base": "know",
+      "past": "knew",
+      "pastParticiple": "known",
+      "translation": "знать",
+      "level": "A2"
+    },
+    {
+      "base": "leave",
+      "past": "left",
+      "pastParticiple": "left",
+      "translation": "уходить / покидать",
+      "level": "A2"
+    },
+    {
+      "base": "lend",
+      "past": "lent",
+      "pastParticiple": "lent",
+      "translation": "давать взаймы",
+      "level": "B1"
+    },
+    {
+      "base": "lose",
+      "past": "lost",
+      "pastParticiple": "lost",
+      "translation": "терять / проигрывать",
+      "level": "A2"
+    },
+    {
+      "base": "make",
+      "past": "made",
+      "pastParticiple": "made",
+      "translation": "делать / создавать",
+      "level": "A2"
+    },
+    {
+      "base": "mean",
+      "past": "meant",
+      "pastParticiple": "meant",
+      "translation": "значить",
+      "level": "A2"
+    },
+    {
+      "base": "meet",
+      "past": "met",
+      "pastParticiple": "met",
+      "translation": "встречать",
+      "level": "A2"
+    },
+    {
+      "base": "pay",
+      "past": "paid",
+      "pastParticiple": "paid",
+      "translation": "платить",
+      "level": "A2"
+    },
+    {
+      "base": "put",
+      "past": "put",
+      "pastParticiple": "put",
+      "translation": "класть",
+      "level": "A2"
+    },
+    {
+      "base": "read",
+      "past": "read",
+      "pastParticiple": "read",
+      "translation": "читать",
+      "level": "A2"
+    },
+    {
+      "base": "ride",
+      "past": "rode",
+      "pastParticiple": "ridden",
+      "translation": "ездить верхом / на велосипеде",
+      "level": "A2"
+    },
+    {
+      "base": "ring",
+      "past": "rang",
+      "pastParticiple": "rung",
+      "translation": "звонить",
+      "level": "B1"
+    },
+    {
+      "base": "run",
+      "past": "ran",
+      "pastParticiple": "run",
+      "translation": "бежать",
+      "level": "A2"
+    },
+    {
+      "base": "say",
+      "past": "said",
+      "pastParticiple": "said",
+      "translation": "говорить",
+      "level": "A2"
+    },
+    {
+      "base": "see",
+      "past": "saw",
+      "pastParticiple": "seen",
+      "translation": "видеть",
+      "level": "A2"
+    },
+    {
+      "base": "sell",
+      "past": "sold",
+      "pastParticiple": "sold",
+      "translation": "продавать",
+      "level": "A2"
+    },
+    {
+      "base": "send",
+      "past": "sent",
+      "pastParticiple": "sent",
+      "translation": "отправлять",
+      "level": "A2"
+    },
+    {
+      "base": "sing",
+      "past": "sang",
+      "pastParticiple": "sung",
+      "translation": "петь",
+      "level": "A2"
+    },
+    {
+      "base": "sit",
+      "past": "sat",
+      "pastParticiple": "sat",
+      "translation": "сидеть",
+      "level": "A2"
+    },
+    {
+      "base": "sleep",
+      "past": "slept",
+      "pastParticiple": "slept",
+      "translation": "спать",
+      "level": "A2"
+    },
+    {
+      "base": "speak",
+      "past": "spoke",
+      "pastParticiple": "spoken",
+      "translation": "говорить",
+      "level": "A2"
+    },
+    {
+      "base": "spend",
+      "past": "spent",
+      "pastParticiple": "spent",
+      "translation": "тратить / проводить",
+      "level": "A2"
+    },
+    {
+      "base": "stand",
+      "past": "stood",
+      "pastParticiple": "stood",
+      "translation": "стоять",
+      "level": "A2"
+    },
+    {
+      "base": "swim",
+      "past": "swam",
+      "pastParticiple": "swum",
+      "translation": "плавать",
+      "level": "A2"
+    },
+    {
+      "base": "take",
+      "past": "took",
+      "pastParticiple": "taken",
+      "translation": "брать",
+      "level": "A2"
+    },
+    {
+      "base": "teach",
+      "past": "taught",
+      "pastParticiple": "taught",
+      "translation": "обучать",
+      "level": "A2"
+    },
+    {
+      "base": "tell",
+      "past": "told",
+      "pastParticiple": "told",
+      "translation": "рассказывать",
+      "level": "A2"
+    },
+    {
+      "base": "think",
+      "past": "thought",
+      "pastParticiple": "thought",
+      "translation": "думать",
+      "level": "A2"
+    },
+    {
+      "base": "throw",
+      "past": "threw",
+      "pastParticiple": "thrown",
+      "translation": "бросать",
+      "level": "B1"
+    },
+    {
+      "base": "understand",
+      "past": "understood",
+      "pastParticiple": "understood",
+      "translation": "понимать",
+      "level": "A2"
+    },
+    {
+      "base": "wear",
+      "past": "wore",
+      "pastParticiple": "worn",
+      "translation": "носить одежду",
+      "level": "A2"
+    },
+    {
+      "base": "win",
+      "past": "won",
+      "pastParticiple": "won",
+      "translation": "побеждать",
+      "level": "A2"
+    },
+    {
+      "base": "write",
+      "past": "wrote",
+      "pastParticiple": "written",
+      "translation": "писать",
+      "level": "A2"
+    }
+  ]
+}
