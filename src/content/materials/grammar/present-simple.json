@@ -1,0 +1,65 @@
+{
+  "id": "grammar-present-simple",
+  "type": "grammar",
+  "title": "Present Simple",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "tags": [
+    "grammar",
+    "present simple",
+    "daily routine"
+  ],
+  "summary": "Use Present Simple to talk about routines, habits and facts.",
+  "explanation": {
+    "en": "We use Present Simple for routines, habits and facts that are generally true.",
+    "ru": "Present Simple используется для регулярных действий, привычек и фактов."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "I/You/We/They work. He/She/It works.",
+      "examples": [
+        {
+          "en": "She goes to school every day.",
+          "ru": "Она ходит в школу каждый день."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "I/You/We/They don't work. He/She/It doesn't work.",
+      "examples": [
+        {
+          "en": "He doesn't get up late on school days.",
+          "ru": "В учебные дни он не встаёт поздно."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Do I/you/we/they work? Does he/she/it work?",
+      "examples": [
+        {
+          "en": "Does she have breakfast at home?",
+          "ru": "Она завтракает дома?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She go to school every day.",
+      "right": "She goes to school every day.",
+      "note": "With he, she and it, the verb usually takes -s."
+    },
+    {
+      "wrong": "Does he goes to school?",
+      "right": "Does he go to school?",
+      "note": "After does, use the base form of the verb."
+    }
+  ],
+  "exerciseIds": [
+    "present-simple-basics"
+  ]
+}
