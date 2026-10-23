@@ -1,0 +1,31 @@
+{
+  "id": "video-daily-routine",
+  "type": "video",
+  "title": "How to Talk About Your Daily Routine",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "tags": ["video", "listening", "daily routine"],
+  "summary": "A short BBC Learning English video for practising everyday routine vocabulary and speaking.",
+  "provider": "youtube",
+  "videoId": "bq6GBbh3uhU",
+  "preWatch": ["What do you do every morning?", "What do you usually eat for breakfast?"],
+  "vocabulary": [
+    {
+      "term": "get up",
+      "translation": "вставать"
+    },
+    {
+      "term": "have breakfast",
+      "translation": "завтракать"
+    },
+    {
+      "term": "go to work",
+      "translation": "идти / ехать на работу"
+    }
+  ],
+  "postWatch": [
+    "Name three daily routine actions you heard.",
+    "Tell your partner about your own morning routine."
+  ]
+}

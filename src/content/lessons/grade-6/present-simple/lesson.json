@@ -1,6 +1,6 @@
 {
   "id": "present-simple-01",
-  "title": "Present Simple: Daily Routine",
+  "title": "My Daily Routine",
   "grade": 6,
   "level": "A2",
   "topic": "Daily routine",
@@ -8,14 +8,34 @@
     {
       "id": "intro-01",
       "type": "intro",
-      "title": "Present Simple",
-      "body": "We use Present Simple to talk about routines and things that happen regularly. / Мы используем Present Simple, когда говорим о привычках и регулярных действиях."
+      "title": "Today we talk about routines",
+      "body": "Learn useful daily routine vocabulary, revise Present Simple and practise reading and speaking."
+    },
+    {
+      "id": "vocab-01",
+      "type": "material",
+      "materialId": "vocabulary-daily-routine"
+    },
+    {
+      "id": "grammar-01",
+      "type": "material",
+      "materialId": "grammar-present-simple"
     },
     {
       "id": "exercise-01",
       "type": "feature",
       "feature": "multiple-choice",
       "exerciseId": "present-simple-basics"
+    },
+    {
+      "id": "reading-01",
+      "type": "material",
+      "materialId": "reading-toms-day"
+    },
+    {
+      "id": "video-01",
+      "type": "material",
+      "materialId": "video-daily-routine"
     }
   ]
 }

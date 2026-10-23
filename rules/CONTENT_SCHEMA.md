@@ -1,17 +1,52 @@
 # Content Schema Rules
 
-Normal lessons are data, not bespoke React code.
+Normal educational content is data, not bespoke React code.
 
-Lesson JSON belongs under `src/content/lessons`. Exercise definitions belong under `src/content/exercises`.
+Repository locations:
 
-Each content object requires a unique stable `id`. Lesson references to exercises and feature keys must resolve successfully.
+- lessons: `src/content/lessons`
+- exercises: `src/content/exercises`
+- reusable materials: `src/content/materials`
+- non-sensitive learning profiles: `src/content/students`
 
-Default learner metadata:
+Each content object requires a unique stable `id`.
+
+## Materials
+
+Initial material types:
+
+- grammar
+- vocabulary
+- reading
+- video
+
+Material-specific structure is defined in Zod schemas. Add a new material type only with its schema, renderer, tests and documentation.
+
+## References
+
+The validator must resolve:
+
+- lesson → material;
+- lesson → exercise;
+- material → exercise where supported;
+- student → material;
+- student → lesson;
+- feature key → registered feature.
+
+Missing or duplicate references fail `npm run validate:content`.
+
+## Student privacy
+
+Static student files must contain only pseudonymous, non-sensitive learning data.
+
+Do not place private teacher notes, full identifying information, contact information, credentials or health/behaviour data in the public repository.
+
+## Learner metadata
+
+Default:
 
 - grade: 6
 - level: A2
 - early B1 only when explicitly appropriate
 
-`npm run validate:content` must pass before publication.
-
-When introducing a new declarative section/exercise type, update its Zod schema, types, renderer, tests, and documentation together.
+When introducing a new declarative content type, update its Zod schema, inferred types, renderer, validation tests and documentation together.

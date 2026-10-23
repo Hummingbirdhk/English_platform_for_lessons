@@ -621,3 +621,21 @@ Every decision should answer the question:
 **Will this make the lesson clearer and more useful for the student?**
 
 If the answer is no, the element probably does not need to be added.
+
+---
+
+# 25. Product Structure
+
+The platform is organised around three primary areas:
+
+- **Materials** — reusable grammar, vocabulary, reading and video resources;
+- **Lessons** — curated sequences that reference reusable materials and exercises;
+- **Students** — non-sensitive learning profiles for planning current focus, revision and assigned resources.
+
+A material is not a lesson. Do not copy the same grammar explanation, vocabulary set or text into multiple lessons when it can be stored once and referenced by ID.
+
+Because the current application is hosted publicly on GitHub Pages, student files must remain pseudonymous and must not contain sensitive personal information or private teacher notes.
+
+Detailed product rules are stored in:
+
+`rules/PRODUCT_STRUCTURE.md`

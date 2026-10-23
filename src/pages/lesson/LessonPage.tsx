@@ -7,6 +7,7 @@ export function LessonPage() {
   const { lessonId } = useParams();
   const content = loadAllContent();
   const lesson = content.lessons.find((item) => item.id === lessonId);
+
   if (!lesson) {
     return (
       <main className="page-shell">
@@ -18,5 +19,8 @@ export function LessonPage() {
       </main>
     );
   }
-  return <LessonRenderer lesson={lesson} exercises={content.exercises} />;
+
+  return (
+    <LessonRenderer lesson={lesson} exercises={content.exercises} materials={content.materials} />
+  );
 }
