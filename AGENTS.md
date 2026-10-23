@@ -15,6 +15,7 @@ Always read `README.md` when it exists, then read the rule files relevant to the
 - `rules/CODE_QUALITY.md` for any code change
 - `rules/CONTENT_SCHEMA.md` for lesson/content changes
 - `rules/FEATURE_CREATION.md` when adding an interactive feature
+- `rules/PRODUCT_STRUCTURE.md` for Materials / Lessons / Students work
 
 Check `/references` when educational reference material is relevant.
 
@@ -31,9 +32,11 @@ Check `/references` when educational reference material is relevant.
 
 ## Content model
 
-Most lessons must be declarative JSON under `src/content`. Do not create a React component for a normal lesson.
+Most lessons must be declarative JSON under `src/content`. Do not create a React component for a normal lesson. Reusable grammar, vocabulary, reading and video resources belong in `src/content/materials` and should be referenced by lessons instead of duplicated.
 
 Create custom code only when an interaction cannot reasonably be represented by existing declarative exercise types. Custom features must be registered through the feature registry and included in the content feature-key contract.
+
+Static student profiles are learning-planning data only. Never store sensitive or identifying student data, credentials, private teacher notes, health/behaviour information, or contact details in the public repository.
 
 ## Required verification
 
