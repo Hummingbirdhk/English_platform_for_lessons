@@ -49,9 +49,7 @@ export function MaterialsPage() {
         <div>
           <span className="sticker sticker--lemon">МАТЕРИАЛЫ</span>
           <h1>Библиотека для уроков</h1>
-          <p>
-            Ищи по теме, уровню или типу — один материал можно использовать в разных уроках.
-          </p>
+          <p>Ищи по теме, уровню или типу — один материал можно использовать в разных уроках.</p>
         </div>
         <BrandArtifact kind="spark" className="page-hero__spark" />
         <BrandArtifact kind="smile" className="page-hero__smile" />
