@@ -1,7 +1,7 @@
-import { Card, Col, List, Result, Row, Space, Tag, Typography } from 'antd';
+import { Result } from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
-import { PageHeading } from '../../shared/ui/PageHeading';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 
 export function StudentPage() {
   const { studentId } = useParams();
@@ -25,69 +25,81 @@ export function StudentPage() {
     .filter((lesson) => lesson !== undefined);
 
   return (
-    <main className="page-shell">
-      <PageHeading
-        title={student.displayName}
-        description={`Grade ${student.grade} · ${student.level} · ${student.curriculum}`}
-      />
+    <main className="page-shell student-page">
+      <section className="student-hero">
+        <div>
+          <h1>{student.displayName}</h1>
+          <p>
+            Grade {student.grade} · {student.level} · {student.curriculum}
+          </p>
+          <div className="student-hero__chips">
+            {student.currentFocus.map((topic, index) => (
+              <span key={topic} className={index === 0 ? 'sticker sticker--dark' : 'level-chip'}>
+                {index === 0 ? `СЕЙЧАС: ${topic}` : topic}
+              </span>
+            ))}
+          </div>
+        </div>
+        <BrandArtifact kind="spark" className="student-hero__spark" />
+        <BrandArtifact kind="smile" className="student-hero__smile" />
+      </section>
 
-      <Row gutter={[16, 16]}>
-        <Col xs={24} lg={12}>
-          <Card title="Сейчас изучаем" className="material-block">
-            <Space wrap>
-              {student.currentFocus.map((topic) => (
-                <Tag key={topic}>{topic}</Tag>
-              ))}
-            </Space>
-          </Card>
-        </Col>
-        <Col xs={24} lg={12}>
-          <Card title="Нужно повторить" className="material-block">
-            <Space wrap>
-              {student.revisionTopics.map((topic) => (
-                <Tag key={topic}>{topic}</Tag>
-              ))}
-            </Space>
-          </Card>
-        </Col>
-        <Col xs={24}>
-          <Card title="Уже прошли" className="material-block">
-            <Space wrap>
-              {student.completedTopics.map((topic) => (
-                <Tag key={topic}>{topic}</Tag>
-              ))}
-            </Space>
-          </Card>
-        </Col>
-        <Col xs={24} lg={12}>
-          <Card title="Назначенные материалы" className="material-block">
-            <List
-              dataSource={assignedMaterials}
-              renderItem={(material) => (
-                <List.Item>
-                  <Link to={`/materials/${material.id}`}>{material.title}</Link>
-                </List.Item>
-              )}
-            />
-          </Card>
-        </Col>
-        <Col xs={24} lg={12}>
-          <Card title="Назначенные уроки" className="material-block">
-            <List
-              dataSource={assignedLessons}
-              renderItem={(lesson) => (
-                <List.Item>
-                  <Link to={`/lesson/${lesson.id}`}>{lesson.title}</Link>
-                </List.Item>
-              )}
-            />
-          </Card>
-        </Col>
-      </Row>
+      <section className="student-top-grid">
+        <article className="student-panel student-panel--focus">
+          <span className="sticker sticker--purple">СЕЙЧАС ИЗУЧАЕМ</span>
+          <h2>{student.currentFocus[0]}</h2>
+          <p>{student.currentFocus.slice(1).join(' · ') || 'Текущая тема'}</p>
+          <div className="progress-track" aria-hidden="true">
+            <div className="progress-track__fill" />
+          </div>
+        </article>
 
-      <Typography.Paragraph type="secondary" className="privacy-footer">
-        Профиль используется только для учебного планирования и не содержит личных данных.
-      </Typography.Paragraph>
+        <article className="student-panel student-panel--revision">
+          <span className="sticker sticker--lemon">НУЖНО ПОВТОРИТЬ</span>
+          <div className="revision-chips">
+            {student.revisionTopics.map((topic) => (
+              <span key={topic} className="level-chip">
+                {topic}
+              </span>
+            ))}
+          </div>
+          <p>{student.revisionTopics.length} темы на повторение</p>
+        </article>
+      </section>
+
+      <section className="student-bottom-grid">
+        <article className="student-materials-panel">
+          <h2>Материалы для {student.displayName.replace(/\.$/, '')}</h2>
+          <div className="assigned-list">
+            {assignedMaterials.map((material) => (
+              <Link
+                key={material.id}
+                to={`/materials/${material.id}`}
+                className="assigned-row"
+                aria-label={material.title}
+              >
+                <span className={`assigned-row__dot assigned-row__dot--${material.type}`} />
+                <span className="assigned-row__title">{material.title}</span>
+                <span className="assigned-row__type">{material.type}</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </article>
+
+        <article className="student-progress-panel">
+          <BrandArtifact kind="spark" className="student-progress-panel__spark" />
+          <h2>Прогресс</h2>
+          <div className="student-progress-panel__number">{student.completedTopics.length}</div>
+          <p>тем пройдено</p>
+          <div className="student-progress-panel__next">Следующий урок</div>
+          {assignedLessons[0] ? (
+            <Link to={`/lesson/${assignedLessons[0].id}`}>{assignedLessons[0].title} →</Link>
+          ) : (
+            <span>Пока не назначен</span>
+          )}
+        </article>
+      </section>
     </main>
   );
 }
