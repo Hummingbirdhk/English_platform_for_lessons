@@ -11,6 +11,7 @@ describe('Students', () => {
         <StudentsPage />
       </MemoryRouter>,
     );
+
     expect(screen.getByText('Маша К.')).toBeInTheDocument();
     expect(screen.getByText(/Spotlight 6/i)).toBeInTheDocument();
   });
@@ -26,6 +27,9 @@ describe('Students', () => {
 
     expect(screen.getByRole('heading', { name: 'Маша К.' })).toBeInTheDocument();
     expect(screen.getByText('do / does')).toBeInTheDocument();
-    expect(screen.getByText('Present Simple')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Present Simple' })).toHaveAttribute(
+      'href',
+      '/materials/grammar-present-simple',
+    );
   });
 });
