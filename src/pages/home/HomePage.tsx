@@ -1,5 +1,4 @@
 import { loadAllContent } from '../../content/loadContent';
-import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function HomePage() {
@@ -11,7 +10,6 @@ export function HomePage() {
       description: 'Grammar · Vocabulary · Reading · Video',
       count: materials.length,
       color: 'orange',
-      artifact: 'spark' as const,
     },
     {
       to: '/lessons',
@@ -19,7 +17,6 @@ export function HomePage() {
       description: 'Готовые последовательности и практика',
       count: lessons.length,
       color: 'purple',
-      artifact: 'fire' as const,
     },
     {
       to: '/students',
@@ -27,29 +24,23 @@ export function HomePage() {
       description: 'Текущие темы, повторение и задания',
       count: students.length,
       color: 'lemon',
-      artifact: 'smile' as const,
     },
   ];
 
   return (
     <main className="page-shell home-page">
       <section className="home-hero">
-        <WallPattern />
         <div className="home-hero__copy">
           <div className="eyebrow">ТВОЯ АНГЛИЙСКАЯ ПЛАТФОРМА</div>
           <h1>Что изучаем сегодня?</h1>
           <p>Все материалы, уроки и прогресс учеников — в одном месте.</p>
         </div>
-        <BrandArtifact kind="spark" className="home-hero__spark" />
-        <BrandArtifact kind="smile" className="home-hero__smile" />
-        <BrandArtifact kind="fire" className="home-hero__fire" />
       </section>
 
       <section className="section-entry-grid" aria-label="Основные разделы">
         {sections.map((section) => (
           <article key={section.to} className={`section-entry section-entry--${section.color}`}>
             <span className="section-entry__meta">{section.count} В БАЗЕ</span>
-            <BrandArtifact kind={section.artifact} className="section-entry__artifact" />
             <h2>{section.title}</h2>
             <p>{section.description}</p>
             <GlossyActionLink
