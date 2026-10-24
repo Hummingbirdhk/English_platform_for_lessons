@@ -1,5 +1,6 @@
 import { Empty, Input, Segmented, Select } from 'antd';
 import { useMemo, useState } from 'react';
+import { getGrammarPresentation } from '../../content/grammar/grammarPresentations';
 import { loadAllContent } from '../../content/loadContent';
 import { MaterialCard } from '../../entities/material/MaterialCard';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
@@ -36,7 +37,17 @@ export function MaterialsPage() {
       const matchesType = type === 'all' || material.type === type;
       const matchesLevel = level === 'all' || material.level === level;
       const matchesTopic = topic === 'all' || material.topic === topic;
-      const haystack = [material.title, material.topic, ...material.tags].join(' ').toLowerCase();
+      const grammarPresentation =
+        material.type === 'grammar' ? getGrammarPresentation(material.id) : undefined;
+      const haystack = [
+        material.title,
+        material.topic,
+        ...material.tags,
+        ...(grammarPresentation?.searchTerms ?? []),
+        grammarPresentation?.displayTitle ?? '',
+      ]
+        .join(' ')
+        .toLowerCase();
       const matchesQuery = normalizedQuery.length === 0 || haystack.includes(normalizedQuery);
 
       return matchesType && matchesLevel && matchesTopic && matchesQuery;
