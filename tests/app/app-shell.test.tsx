@@ -1,5 +1,5 @@
 import { render, screen, within } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { App } from '../../src/app/App';
 import { AppErrorBoundary } from '../../src/shared/ui/AppErrorBoundary';
 
@@ -21,6 +21,7 @@ describe('application shell', () => {
   });
 
   it('hides technical error details from students', () => {
+    const consoleError = vi.spyOn(console, 'error').mockImplementation(() => undefined);
     const Broken = () => {
       throw new Error('SECRET_STACK_DETAIL');
     };
@@ -33,5 +34,6 @@ describe('application shell', () => {
 
     expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
     expect(screen.queryByText(/SECRET_STACK_DETAIL/i)).not.toBeInTheDocument();
+    consoleError.mockRestore();
   });
 });
