@@ -192,6 +192,131 @@ select {
   stroke: var(--color-ink);
 }
 
+.glossy-action-button {
+  --action-size: 64px;
+  --action-radius: 20px;
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  width: var(--action-size);
+  height: var(--action-size);
+  flex: 0 0 var(--action-size);
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(52, 76, 103, 0.45);
+  border-radius: var(--action-radius);
+  cursor: pointer;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 36%),
+    linear-gradient(180deg, #8eb0cf 0%, #7194b6 42%, #597b9d 100%);
+  box-shadow:
+    inset 0 2px 1px rgba(255, 255, 255, 0.5),
+    inset 0 -2px 4px rgba(26, 49, 72, 0.22),
+    0 2px 0 rgba(55, 77, 98, 0.55),
+    0 8px 18px rgba(63, 82, 104, 0.22);
+  -webkit-tap-highlight-color: transparent;
+  transform: translateY(0) scale(1);
+  transition:
+    transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 160ms ease,
+    filter 160ms ease;
+}
+
+.glossy-action-button::before {
+  content: '';
+  position: absolute;
+  inset: 5px 7px auto;
+  height: 42%;
+  z-index: -1;
+  border-radius: calc(var(--action-radius) - 7px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.02));
+  pointer-events: none;
+}
+
+.glossy-action-button--xs {
+  --action-size: 38px;
+  --action-radius: 12px;
+}
+
+.glossy-action-button--sm {
+  --action-size: 48px;
+  --action-radius: 15px;
+}
+
+.glossy-action-button--md {
+  --action-size: 64px;
+  --action-radius: 20px;
+}
+
+.glossy-action-button__icon {
+  display: grid;
+  width: 54%;
+  height: 54%;
+  place-items: center;
+  transform: translate(0, 0);
+  transition: transform 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.glossy-action-button__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 1px 0 rgba(42, 63, 84, 0.2));
+  fill: currentColor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .glossy-action-button:hover {
+    transform: translateY(-3px) scale(1.035);
+    filter: saturate(1.06) brightness(1.025);
+    box-shadow:
+      inset 0 2px 1px rgba(255, 255, 255, 0.55),
+      inset 0 -2px 4px rgba(26, 49, 72, 0.2),
+      0 2px 0 rgba(55, 77, 98, 0.5),
+      0 13px 24px rgba(63, 82, 104, 0.28);
+  }
+
+  .glossy-action-button:hover .glossy-action-button__icon {
+    transform: translate(3px, -3px);
+  }
+}
+
+.glossy-action-button:active {
+  transform: translateY(2px) scale(0.965);
+  filter: saturate(0.98) brightness(0.98);
+  box-shadow:
+    inset 0 3px 7px rgba(31, 51, 72, 0.25),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.15),
+    0 1px 0 rgba(55, 77, 98, 0.42),
+    0 4px 8px rgba(63, 82, 104, 0.18);
+}
+
+.glossy-action-button:active .glossy-action-button__icon {
+  transform: translate(1px, -1px) scale(0.96);
+}
+
+.glossy-action-button:focus-visible {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 4px;
+}
+
+.glossy-action-button:disabled,
+.glossy-action-button[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.45;
+  filter: grayscale(0.35);
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glossy-action-button,
+  .glossy-action-button__icon {
+    transition: none;
+  }
+}
+
 .section-entry-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -238,12 +363,10 @@ select {
   font-size: 17px;
   line-height: 1.4;
 }
-.section-entry__arrow {
+.section-entry__action {
   position: absolute;
-  right: 28px;
-  bottom: 26px;
-  font-size: 34px;
-  font-weight: 800;
+  right: 24px;
+  bottom: 24px;
 }
 .section-entry__artifact {
   position: absolute;
@@ -274,12 +397,20 @@ select {
   background: #fff;
 }
 .quick-card {
+  position: relative;
   background: var(--color-ink);
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  padding-right: 96px;
+}
+
+.quick-card__action {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
 }
 .continue-card__title,
 .quick-card__title {
@@ -484,10 +615,6 @@ select {
   opacity: 0.6;
   max-width: 80%;
 }
-.material-tile__arrow {
-  font-size: 28px;
-  font-weight: 800;
-}
 .empty-state {
   padding: 70px 0;
 }
@@ -625,11 +752,10 @@ select {
 .student-tile {
   position: relative;
 }
-.student-tile__arrow {
+.student-tile__action {
   position: absolute;
-  right: 22px;
+  right: 20px;
   bottom: 20px;
-  font-size: 26px;
 }
 .privacy-banner {
   margin-top: 22px;
@@ -784,8 +910,11 @@ select {
   font-size: 13px;
   font-weight: 700;
 }
-.student-progress-panel a {
-  display: inline-block;
+.student-progress-panel__lesson {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   margin-top: 8px;
   font-size: 18px;
   font-weight: 700;

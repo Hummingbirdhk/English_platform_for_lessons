@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function HomePage() {
   const { lessons, materials, students } = loadAllContent();
@@ -48,20 +49,18 @@ export function HomePage() {
 
       <section className="section-entry-grid" aria-label="Основные разделы">
         {sections.map((section) => (
-          <Link
-            key={section.to}
-            to={section.to}
-            className={`section-entry section-entry--${section.color}`}
-            aria-label={section.title}
-          >
+          <article key={section.to} className={`section-entry section-entry--${section.color}`}>
             <span className="section-entry__meta">{section.count} В БАЗЕ</span>
             <BrandArtifact kind={section.artifact} className="section-entry__artifact" />
             <h2>{section.title}</h2>
             <p>{section.description}</p>
-            <span className="section-entry__arrow" aria-hidden="true">
-              ↗
-            </span>
-          </Link>
+            <GlossyActionLink
+              to={section.to}
+              label={section.title}
+              size="md"
+              className="section-entry__action"
+            />
+          </article>
         ))}
       </section>
 
@@ -80,11 +79,16 @@ export function HomePage() {
           </Link>
         ) : null}
 
-        <Link to="/materials" className="quick-card">
+        <article className="quick-card">
           <div className="quick-card__title">Открыть библиотеку материалов</div>
           <div className="quick-card__meta">Grammar, vocabulary, reading и video</div>
-          <span aria-hidden="true">→</span>
-        </Link>
+          <GlossyActionLink
+            to="/materials"
+            label="Открыть библиотеку материалов"
+            size="sm"
+            className="quick-card__action"
+          />
+        </article>
       </section>
     </main>
   );

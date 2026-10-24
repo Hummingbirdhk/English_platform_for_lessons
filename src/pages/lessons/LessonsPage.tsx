@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function LessonsPage() {
   const { lessons } = loadAllContent();
@@ -19,7 +19,7 @@ export function LessonsPage() {
 
       <section className="lesson-library" aria-label="Уроки">
         {lessons.map((lesson) => (
-          <Link key={lesson.id} to={`/lesson/${lesson.id}`} className="lesson-tile">
+          <article key={lesson.id} className="lesson-tile">
             <div className="lesson-tile__chips">
               <span className="level-chip">{lesson.level}</span>
               <span className="level-chip">Grade {lesson.grade}</span>
@@ -28,9 +28,13 @@ export function LessonsPage() {
             <p>{lesson.topic}</p>
             <div className="lesson-tile__footer">
               <span>{lesson.sections.length} блоков</span>
-              <span aria-hidden="true">→</span>
+              <GlossyActionLink
+                to={`/lesson/${lesson.id}`}
+                label={`Открыть урок: ${lesson.title}`}
+                size="sm"
+              />
             </div>
-          </Link>
+          </article>
         ))}
       </section>
     </main>

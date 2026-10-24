@@ -2,6 +2,7 @@ import { Result } from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function StudentPage() {
   const { studentId } = useParams();
@@ -81,7 +82,6 @@ export function StudentPage() {
                 <span className={`assigned-row__dot assigned-row__dot--${material.type}`} />
                 <span className="assigned-row__title">{material.title}</span>
                 <span className="assigned-row__type">{material.type}</span>
-                <span aria-hidden="true">→</span>
               </Link>
             ))}
           </div>
@@ -94,7 +94,14 @@ export function StudentPage() {
           <p>тем пройдено</p>
           <div className="student-progress-panel__next">Следующий урок</div>
           {assignedLessons[0] ? (
-            <Link to={`/lesson/${assignedLessons[0].id}`}>{assignedLessons[0].title} →</Link>
+            <div className="student-progress-panel__lesson">
+              <span>{assignedLessons[0].title}</span>
+              <GlossyActionLink
+                to={`/lesson/${assignedLessons[0].id}`}
+                label={`Открыть урок: ${assignedLessons[0].title}`}
+                size="xs"
+              />
+            </div>
           ) : (
             <span>Пока не назначен</span>
           )}
