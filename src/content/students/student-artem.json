@@ -1,0 +1,12 @@
+{
+  "id": "student-artem",
+  "displayName": "Артём",
+  "grade": 6,
+  "level": "A2",
+  "curriculum": "Spotlight 6",
+  "currentFocus": ["Past Simple", "Irregular verbs", "Reading"],
+  "completedTopics": ["Family", "Daily routine"],
+  "revisionTopics": ["Present Simple vs Past Simple", "irregular verbs"],
+  "assignedMaterialIds": ["grammar-present-simple", "reading-toms-day"],
+  "assignedLessonIds": ["present-simple-01"]
+}
