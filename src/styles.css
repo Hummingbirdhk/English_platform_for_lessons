@@ -168,28 +168,85 @@ select {
   display: inline-block;
   line-height: 0;
 }
-.brand-artifact svg {
+.brand-artifact img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
+  user-select: none;
+  pointer-events: none;
 }
-.brand-artifact--spark svg {
-  fill: currentColor;
+
+.home-hero > :not(.wall-pattern),
+.page-hero > :not(.wall-pattern),
+.lesson-hero > :not(.wall-pattern),
+.student-hero > :not(.wall-pattern) {
+  position: relative;
+  z-index: 2;
 }
-.brand-artifact--fire .brand-artifact__fire-shell {
-  fill: var(--color-ink);
+
+.wall-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.12;
 }
-.brand-artifact--fire .brand-artifact__fire-core {
-  fill: var(--color-orange);
+
+.wall-pattern__item {
+  position: absolute;
+  filter: grayscale(1);
 }
-.brand-artifact--smile svg {
-  fill: currentColor;
+
+.wall-pattern__item img {
+  opacity: 0.92;
 }
-.brand-artifact__smile-detail {
-  fill: var(--color-ink);
+
+.wall-pattern__fire-left {
+  width: 18%;
+  left: 2%;
+  bottom: -18%;
 }
-.brand-artifact__smile-line {
-  stroke: var(--color-ink);
+
+.wall-pattern__star-left {
+  width: 17%;
+  left: 18%;
+  top: 18%;
+  transform: rotate(-8deg);
+}
+
+.wall-pattern__blob-top {
+  width: 17%;
+  left: 34%;
+  top: -9%;
+}
+
+.wall-pattern__star-top {
+  width: 19%;
+  right: 20%;
+  top: 0;
+  transform: rotate(8deg);
+}
+
+.wall-pattern__fire-right {
+  width: 18%;
+  right: 3%;
+  bottom: -14%;
+  transform: rotate(10deg);
+}
+
+.wall-pattern__star-center {
+  width: 18%;
+  left: 39%;
+  bottom: -4%;
+  transform: rotate(-4deg);
+}
+
+.wall-pattern__blob-right {
+  width: 17%;
+  right: 10%;
+  top: 38%;
+  transform: rotate(-8deg);
 }
 
 .glossy-action-button {
@@ -1072,5 +1129,12 @@ select {
   }
   .assigned-row__type {
     display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .wall-pattern {
+    opacity: 0.09;
+    transform: scale(1.18);
   }
 }
