@@ -962,6 +962,47 @@ select {
   border: 0;
 }
 
+/* White surfaces stay visually distinct above the global wallpaper. */
+.app-header__inner,
+.material-tile,
+.lesson-tile,
+.student-tile,
+.privacy-banner,
+.student-panel--focus,
+.student-materials-panel,
+.lesson-material,
+.lesson-feature-card,
+.vocabulary-card,
+.materials-search.ant-input-affix-wrapper,
+.materials-toolbar .ant-select-selector,
+.material-type-tabs .ant-segmented-item {
+  border: 1px solid rgba(17, 17, 20, 0.07) !important;
+  box-shadow: 0 12px 34px rgba(17, 17, 20, 0.07) !important;
+}
+
+.lesson-card {
+  border: 1px solid rgba(17, 17, 20, 0.07) !important;
+  box-shadow: 0 12px 34px rgba(17, 17, 20, 0.07) !important;
+}
+
+.material-tile,
+.lesson-tile,
+.student-tile,
+.student-panel--focus,
+.student-materials-panel,
+.lesson-material,
+.lesson-feature-card,
+.vocabulary-card,
+.privacy-banner {
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.materials-toolbar .ant-select-selector,
+.materials-search.ant-input-affix-wrapper,
+.material-type-tabs .ant-segmented-item {
+  background: #fff !important;
+}
+
 @media (max-width: 980px) {
   .app-header__inner {
     grid-template-columns: 1fr auto;
