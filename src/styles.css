@@ -962,7 +962,6 @@ select {
   border: 0;
 }
 
-
 /* White surfaces stay visually distinct above the global wallpaper. */
 .app-header__inner,
 .material-tile,
