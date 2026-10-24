@@ -183,6 +183,20 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     ],
     memoryTip: 'he/she/it → verb + s только в положительном предложении: She plays → She doesn’t play → Does she play?',
     practice: { prompt: 'Leo ___ basketball after school.', options: ['play', 'plays', 'is play'], answer: 'plays', feedback: 'Leo = he → в утверждении нужен plays.' },
+    accordion: {
+      title: 'Маркеры Present Simple',
+      intro: 'Эти слова часто подсказывают, что речь идёт о привычке, регулярности или расписании.',
+      headers: ['Маркер', 'Перевод', 'Пример'],
+      rows: [
+        ['always', 'всегда', 'I always walk to school.'],
+        ['usually', 'обычно', 'We usually eat at home.'],
+        ['often', 'часто', 'She often reads before bed.'],
+        ['sometimes', 'иногда', 'They sometimes play chess.'],
+        ['never', 'никогда', 'He never drinks coffee.'],
+        ['every day / week', 'каждый день / неделю', 'I study English every day.'],
+        ['on Mondays', 'по понедельникам', 'We have PE on Mondays.'],
+      ],
+    },
   },
   'grammar-adverbs-frequency': {
     displayTitle: 'Наречия частоты: always / usually / often / never',
@@ -215,6 +229,19 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     ],
     memoryTip: 'Не забывай две части: be + -ing. He playing и He is play — обе формы неверны.',
     practice: { prompt: 'Look! The dog ___ in the river.', options: ['swims', 'is swimming', 'swim'], answer: 'is swimming', feedback: 'Look! = действие сейчас → is swimming.' },
+    accordion: {
+      title: 'Маркеры Present Continuous',
+      intro: 'Они часто показывают, что действие происходит прямо сейчас или временно.',
+      headers: ['Маркер', 'Перевод', 'Пример'],
+      rows: [
+        ['now', 'сейчас', 'She is studying now.'],
+        ['right now', 'прямо сейчас', 'I am talking to you right now.'],
+        ['at the moment', 'в данный момент', 'They are having lunch at the moment.'],
+        ['today', 'сегодня, временно', 'I am working from home today.'],
+        ['this week', 'на этой неделе', 'We are staying with friends this week.'],
+        ['Look! / Listen!', 'посмотри! / послушай!', 'Look! It is snowing.'],
+      ],
+    },
   },
   'grammar-present-simple-vs-continuous': {
     displayTitle: 'Present Simple vs Present Continuous',
@@ -247,6 +274,18 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     ],
     memoryTip: 'did забирает прошлое на себя: Did she visit? — не Did she visited?',
     practice: { prompt: 'Yesterday we ___ our grandparents.', options: ['visit', 'visited', 'did visited'], answer: 'visited', feedback: 'Утверждение в прошлом → regular verb + -ed.' },
+    accordion: {
+      title: 'Маркеры Past Simple',
+      intro: 'Главный сигнал — законченный момент или период в прошлом.',
+      headers: ['Маркер', 'Перевод', 'Пример'],
+      rows: [
+        ['yesterday', 'вчера', 'I called her yesterday.'],
+        ['last week / month / year', 'на прошлой неделе / в прошлом месяце / году', 'We travelled last year.'],
+        ['two days ago', 'два дня назад', 'He arrived two days ago.'],
+        ['in 2024', 'в 2024 году', 'They moved in 2024.'],
+        ['when I was ten', 'когда мне было десять', 'I had a bike when I was ten.'],
+      ],
+    },
   },
   'grammar-past-simple-irregular': {
     displayTitle: 'Past Simple: неправильные глаголы',
@@ -348,6 +387,20 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     ],
     memoryTip: 'just/already обычно стоят между have/has и V3; yet — часто в конце вопроса или отрицания.',
     practice: { prompt: 'She ___ her homework already.', options: ['finished', 'has finished', 'has finish'], answer: 'has finished', feedback: 'Already + связь с настоящим → has + V3.' },
+    accordion: {
+      title: 'Маркеры Present Perfect',
+      intro: 'Они помогают увидеть связь прошлого действия с настоящим.',
+      headers: ['Маркер', 'Как используется', 'Пример'],
+      rows: [
+        ['ever', 'когда-либо, чаще в вопросах', 'Have you ever seen snow?'],
+        ['never', 'никогда', 'I have never tried sushi.'],
+        ['just', 'только что', 'She has just arrived.'],
+        ['already', 'уже', 'We have already finished.'],
+        ['yet', 'уже? / ещё нет, обычно в конце', 'Have you finished yet?'],
+        ['for', 'в течение периода', 'I have lived here for two years.'],
+        ['since', 'с момента', 'I have lived here since 2024.'],
+      ],
+    },
   },
   'grammar-future-going-to': {
     displayTitle: 'Be going to: планы и намерения',
@@ -540,6 +593,18 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     ],
     memoryTip: 'Ø не означает специальное слово. Это просто «ничего не ставим»: I like music.',
     practice: { prompt: 'I bought ___ book. ___ book is about space.', options: ['a / The', 'the / A', 'Ø / The'], answer: 'a / The', feedback: 'Сначала новая книга → a; второй раз уже известная → the.' },
+    accordion: {
+      title: 'Когда артикль не ставим (Ø)',
+      intro: 'Ø — это не отдельное слово, а отсутствие артикля. Вот самые полезные случаи для A2.',
+      headers: ['Ситуация', 'Пример', 'Перевод'],
+      rows: [
+        ['множественное число в общем смысле', 'Cats are independent.', 'Кошки независимы.'],
+        ['неисчисляемое в общем смысле', 'I like music.', 'Мне нравится музыка.'],
+        ['языки', 'She speaks English.', 'Она говорит по-английски.'],
+        ['школьные предметы', 'We study maths.', 'Мы изучаем математику.'],
+        ['приёмы пищи', 'We have breakfast at seven.', 'Мы завтракаем в семь.'],
+      ],
+    },
   },
   'grammar-comparatives-superlatives': {
     displayTitle: 'Степени сравнения прилагательных',
