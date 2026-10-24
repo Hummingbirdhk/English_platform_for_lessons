@@ -1,6 +1,7 @@
 import { Result } from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function StudentPage() {
@@ -40,6 +41,8 @@ export function StudentPage() {
             ))}
           </div>
         </div>
+        <BrandArtifact kind="spark" className="student-hero__spark" />
+        <BrandArtifact kind="heart" className="student-hero__smile" />
       </section>
 
       <section className="student-top-grid">
@@ -85,6 +88,7 @@ export function StudentPage() {
         </article>
 
         <article className="student-progress-panel">
+          <BrandArtifact kind="spark" className="student-progress-panel__spark" />
           <h2>Прогресс</h2>
           <div className="student-progress-panel__number">{student.completedTopics.length}</div>
           <p>тем пройдено</p>
