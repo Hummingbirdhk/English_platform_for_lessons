@@ -1,7 +1,7 @@
 import { Result } from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
-import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function StudentPage() {
@@ -28,6 +28,7 @@ export function StudentPage() {
   return (
     <main className="page-shell student-page">
       <section className="student-hero">
+        <WallPattern />
         <div>
           <h1>{student.displayName}</h1>
           <p>
@@ -42,7 +43,7 @@ export function StudentPage() {
           </div>
         </div>
         <BrandArtifact kind="spark" className="student-hero__spark" />
-        <BrandArtifact kind="smile" className="student-hero__smile" />
+        <BrandArtifact kind="heart" className="student-hero__smile" />
       </section>
 
       <section className="student-top-grid">
