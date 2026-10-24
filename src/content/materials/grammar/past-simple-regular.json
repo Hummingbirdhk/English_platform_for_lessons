@@ -1,0 +1,74 @@
+{
+  "id": "grammar-past-simple-regular",
+  "type": "grammar",
+  "title": "Past Simple: regular verbs",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past events",
+  "tags": [
+    "grammar",
+    "past simple",
+    "regular verbs",
+    "ed"
+  ],
+  "summary": "Use Past Simple for finished actions in the past.",
+  "explanation": {
+    "en": "Regular verbs form the Past Simple with -ed. Use did/didn't for questions and negatives.",
+    "ru": "Правильные глаголы образуют Past Simple с помощью -ed. В вопросах и отрицаниях используется did/didn't."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "verb + -ed",
+      "examples": [
+        {
+          "en": "We visited London last year.",
+          "ru": "В прошлом году мы посетили Лондон."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "didn't + base verb",
+      "examples": [
+        {
+          "en": "I didn't watch TV yesterday.",
+          "ru": "Я вчера не смотрел телевизор."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Did + subject + base verb?",
+      "examples": [
+        {
+          "en": "Did you play football?",
+          "ru": "Ты играл в футбол?"
+        }
+      ]
+    },
+    {
+      "label": "Spelling",
+      "pattern": "live → lived · study → studied · stop → stopped",
+      "examples": [
+        {
+          "en": "She studied all evening.",
+          "ru": "Она занималась весь вечер."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I didn't watched TV.",
+      "right": "I didn't watch TV.",
+      "note": "After didn't, use the base form."
+    },
+    {
+      "wrong": "Did she visited you?",
+      "right": "Did she visit you?",
+      "note": "After did, use the base form."
+    }
+  ],
+  "exerciseIds": []
+}

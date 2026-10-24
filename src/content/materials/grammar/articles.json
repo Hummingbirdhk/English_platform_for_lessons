@@ -1,0 +1,64 @@
+{
+  "id": "grammar-articles",
+  "type": "grammar",
+  "title": "Articles: a/an, the, zero article",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Articles",
+  "tags": [
+    "grammar",
+    "articles",
+    "a an the",
+    "zero article"
+  ],
+  "summary": "Choose a/an, the or no article depending on whether something is general, new or specific.",
+  "explanation": {
+    "en": "Use a/an for one non-specific countable thing, the for something specific or already known, and no article for many general plural or uncountable meanings.",
+    "ru": "A/an используется с одним неспецифичным исчисляемым предметом, the — с конкретным или уже известным, нулевой артикль — во многих общих значениях."
+  },
+  "forms": [
+    {
+      "label": "A / an",
+      "pattern": "a + consonant sound · an + vowel sound",
+      "examples": [
+        {
+          "en": "She has an umbrella.",
+          "ru": "У неё есть зонт."
+        }
+      ]
+    },
+    {
+      "label": "The",
+      "pattern": "the + specific/known noun",
+      "examples": [
+        {
+          "en": "Close the door, please.",
+          "ru": "Закрой дверь, пожалуйста."
+        }
+      ]
+    },
+    {
+      "label": "Zero article",
+      "pattern": "plural/uncountable noun in a general meaning",
+      "examples": [
+        {
+          "en": "Dogs are friendly animals.",
+          "ru": "Собаки — дружелюбные животные."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "an university",
+      "right": "a university",
+      "note": "Choose a/an by sound: university begins with /j/."
+    },
+    {
+      "wrong": "I like the music.",
+      "right": "I like music.",
+      "note": "For music in general, no article is normally used."
+    }
+  ],
+  "exerciseIds": []
+}

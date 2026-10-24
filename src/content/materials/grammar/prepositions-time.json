@@ -1,0 +1,64 @@
+{
+  "id": "grammar-prepositions-time",
+  "type": "grammar",
+  "title": "Prepositions of time",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Prepositions",
+  "tags": [
+    "grammar",
+    "prepositions",
+    "time",
+    "at on in"
+  ],
+  "summary": "Use at, on and in with different kinds of time expressions.",
+  "explanation": {
+    "en": "Use at for clock times, on for days and dates, and in for months, years and longer periods.",
+    "ru": "At используется со временем на часах, on — с днями и датами, in — с месяцами, годами и более длинными периодами."
+  },
+  "forms": [
+    {
+      "label": "At",
+      "pattern": "at + time",
+      "examples": [
+        {
+          "en": "The lesson starts at six.",
+          "ru": "Урок начинается в шесть."
+        }
+      ]
+    },
+    {
+      "label": "On",
+      "pattern": "on + day/date",
+      "examples": [
+        {
+          "en": "We have English on Thursday.",
+          "ru": "У нас английский в четверг."
+        }
+      ]
+    },
+    {
+      "label": "In",
+      "pattern": "in + month/year/season/part of day",
+      "examples": [
+        {
+          "en": "My birthday is in May.",
+          "ru": "Мой день рождения в мае."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "on 7 o'clock",
+      "right": "at 7 o'clock",
+      "note": "Use at with clock times."
+    },
+    {
+      "wrong": "in Monday",
+      "right": "on Monday",
+      "note": "Use on with days."
+    }
+  ],
+  "exerciseIds": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "grammar-prepositions-place-movement",
+  "type": "grammar",
+  "title": "Prepositions of place & movement",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Prepositions",
+  "tags": [
+    "grammar",
+    "prepositions",
+    "place",
+    "movement",
+    "in on at into"
+  ],
+  "summary": "Use place prepositions to describe location and movement prepositions to show direction.",
+  "explanation": {
+    "en": "Place prepositions answer where. Movement prepositions show where someone or something moves.",
+    "ru": "Предлоги места отвечают на вопрос «где?», а предлоги движения показывают направление."
+  },
+  "forms": [
+    {
+      "label": "Place",
+      "pattern": "in · on · at · under · behind · between · opposite · next to",
+      "examples": [
+        {
+          "en": "The bank is opposite the school.",
+          "ru": "Банк находится напротив школы."
+        }
+      ]
+    },
+    {
+      "label": "Movement",
+      "pattern": "to · into · out of · across · along · through",
+      "examples": [
+        {
+          "en": "Walk across the street.",
+          "ru": "Перейди через улицу."
+        }
+      ]
+    },
+    {
+      "label": "In / into",
+      "pattern": "in = location · into = movement",
+      "examples": [
+        {
+          "en": "The cat is in the box. It jumped into the box.",
+          "ru": "Кот в коробке. Он прыгнул в коробку."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She is into the room.",
+      "right": "She is in the room.",
+      "note": "Use in for location."
+    },
+    {
+      "wrong": "Go in the building.",
+      "right": "Go into the building.",
+      "note": "Use into for movement from outside to inside."
+    }
+  ],
+  "exerciseIds": []
+}

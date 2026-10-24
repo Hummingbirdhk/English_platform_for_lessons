@@ -1,0 +1,64 @@
+{
+  "id": "grammar-have-got",
+  "type": "grammar",
+  "title": "Have got / Has got",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Basics",
+  "tags": [
+    "grammar",
+    "have got",
+    "has got",
+    "possession"
+  ],
+  "summary": "Use have got and has got to talk about possession and relationships.",
+  "explanation": {
+    "en": "Have got means 'have'. Use has got with he, she and it.",
+    "ru": "Have got означает «иметь». С he, she, it используется has got."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "I/You/We/They have got · He/She/It has got",
+      "examples": [
+        {
+          "en": "I have got a new bike.",
+          "ru": "У меня есть новый велосипед."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "haven't got · hasn't got",
+      "examples": [
+        {
+          "en": "He hasn't got a sister.",
+          "ru": "У него нет сестры."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Have you got ...? · Has she got ...?",
+      "examples": [
+        {
+          "en": "Have you got a pet?",
+          "ru": "У тебя есть домашнее животное?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She have got a dog.",
+      "right": "She has got a dog.",
+      "note": "Use has got with he, she and it."
+    },
+    {
+      "wrong": "Do you have got a bike?",
+      "right": "Have you got a bike?",
+      "note": "In the have got pattern, form questions with have/has."
+    }
+  ],
+  "exerciseIds": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "grammar-object-pronouns",
+  "type": "grammar",
+  "title": "Object pronouns",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Pronouns & determiners",
+  "tags": [
+    "grammar",
+    "object pronouns",
+    "me you him her it us them"
+  ],
+  "summary": "Use object pronouns after verbs and prepositions.",
+  "explanation": {
+    "en": "Object pronouns receive the action: me, you, him, her, it, us, them.",
+    "ru": "Объектные местоимения используются после глагола или предлога: me, you, him, her, it, us, them."
+  },
+  "forms": [
+    {
+      "label": "After a verb",
+      "pattern": "verb + me/you/him/her/it/us/them",
+      "examples": [
+        {
+          "en": "I can see him.",
+          "ru": "Я вижу его."
+        }
+      ]
+    },
+    {
+      "label": "After a preposition",
+      "pattern": "to/for/with + object pronoun",
+      "examples": [
+        {
+          "en": "Come with us.",
+          "ru": "Пойдём с нами."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She likes he.",
+      "right": "She likes him.",
+      "note": "After a verb, use the object form."
+    },
+    {
+      "wrong": "Give it to I.",
+      "right": "Give it to me.",
+      "note": "After a preposition, use an object pronoun."
+    }
+  ],
+  "exerciseIds": []
+}

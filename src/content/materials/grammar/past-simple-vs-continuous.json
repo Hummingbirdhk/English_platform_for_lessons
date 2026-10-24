@@ -1,0 +1,54 @@
+{
+  "id": "grammar-past-simple-vs-continuous",
+  "type": "grammar",
+  "title": "Past Simple vs Past Continuous",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past events",
+  "tags": [
+    "grammar",
+    "past simple",
+    "past continuous",
+    "when while"
+  ],
+  "summary": "Use Past Continuous for the background action and Past Simple for the completed event.",
+  "explanation": {
+    "en": "Past Continuous often shows an action in progress. Past Simple shows the shorter or completed event.",
+    "ru": "Past Continuous часто показывает длительное действие-фон, а Past Simple — завершённое или более короткое событие."
+  },
+  "forms": [
+    {
+      "label": "Interrupted action",
+      "pattern": "Past Continuous + when + Past Simple",
+      "examples": [
+        {
+          "en": "I was walking home when it started to rain.",
+          "ru": "Я шёл домой, когда начался дождь."
+        }
+      ]
+    },
+    {
+      "label": "Two actions in progress",
+      "pattern": "while + Past Continuous, Past Continuous",
+      "examples": [
+        {
+          "en": "While I was cooking, he was doing homework.",
+          "ru": "Пока я готовила, он делал домашнее задание."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I watched TV when Mum was coming home.",
+      "right": "I was watching TV when Mum came home.",
+      "note": "The longer background action is usually continuous."
+    },
+    {
+      "wrong": "While I did homework, she was reading.",
+      "right": "While I was doing homework, she was reading.",
+      "note": "While often introduces an action in progress."
+    }
+  ],
+  "exerciseIds": []
+}

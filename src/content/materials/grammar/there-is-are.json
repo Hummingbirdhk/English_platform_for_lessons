@@ -1,0 +1,68 @@
+{
+  "id": "grammar-there-is-are",
+  "type": "grammar",
+  "title": "There is / There are",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Places & things",
+  "tags": [
+    "grammar",
+    "there is",
+    "there are",
+    "some any"
+  ],
+  "summary": "Use there is and there are to say that something exists or is in a place.",
+  "explanation": {
+    "en": "Use there is with singular nouns and there are with plural nouns.",
+    "ru": "There is используется с существительным в единственном числе, there are — во множественном."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "There is + singular · There are + plural",
+      "examples": [
+        {
+          "en": "There is a sofa in the room.",
+          "ru": "В комнате есть диван."
+        },
+        {
+          "en": "There are two windows.",
+          "ru": "Там два окна."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "There isn't · There aren't",
+      "examples": [
+        {
+          "en": "There aren't any shops here.",
+          "ru": "Здесь нет магазинов."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Is there ...? · Are there ...?",
+      "examples": [
+        {
+          "en": "Is there a park nearby?",
+          "ru": "Рядом есть парк?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "There are a table.",
+      "right": "There is a table.",
+      "note": "Use there is with one thing."
+    },
+    {
+      "wrong": "Is there any chairs?",
+      "right": "Are there any chairs?",
+      "note": "Use are with plural nouns."
+    }
+  ],
+  "exerciseIds": []
+}

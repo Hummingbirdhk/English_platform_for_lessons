@@ -1,0 +1,63 @@
+{
+  "id": "grammar-past-continuous",
+  "type": "grammar",
+  "title": "Past Continuous",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past events",
+  "tags": [
+    "grammar",
+    "past continuous",
+    "was were ing"
+  ],
+  "summary": "Use Past Continuous for an action that was in progress at a particular time in the past.",
+  "explanation": {
+    "en": "Past Continuous describes a past action in progress or the background to another event.",
+    "ru": "Past Continuous описывает действие, которое было в процессе в определённый момент в прошлом, или фон другого события."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "was/were + verb-ing",
+      "examples": [
+        {
+          "en": "I was reading at eight o'clock.",
+          "ru": "В восемь часов я читал."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "wasn't/weren't + verb-ing",
+      "examples": [
+        {
+          "en": "They weren't sleeping.",
+          "ru": "Они не спали."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Was/Were + subject + verb-ing?",
+      "examples": [
+        {
+          "en": "What were you doing?",
+          "ru": "Что ты делал?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I was read a book.",
+      "right": "I was reading a book.",
+      "note": "Use verb-ing after was/were."
+    },
+    {
+      "wrong": "They was playing.",
+      "right": "They were playing.",
+      "note": "Use were with they."
+    }
+  ],
+  "exerciseIds": []
+}

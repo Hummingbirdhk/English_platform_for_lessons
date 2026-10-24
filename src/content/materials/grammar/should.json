@@ -1,0 +1,63 @@
+{
+  "id": "grammar-should",
+  "type": "grammar",
+  "title": "Should / Shouldn't",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Modal verbs",
+  "tags": [
+    "grammar",
+    "should",
+    "advice"
+  ],
+  "summary": "Use should and shouldn't to give advice and recommendations.",
+  "explanation": {
+    "en": "Should means that something is a good idea. Shouldn't means it is not a good idea.",
+    "ru": "Should означает, что что-то стоит сделать. Shouldn't — что этого делать не стоит."
+  },
+  "forms": [
+    {
+      "label": "Advice",
+      "pattern": "should + base verb",
+      "examples": [
+        {
+          "en": "You should drink more water.",
+          "ru": "Тебе стоит пить больше воды."
+        }
+      ]
+    },
+    {
+      "label": "Negative advice",
+      "pattern": "shouldn't + base verb",
+      "examples": [
+        {
+          "en": "You shouldn't stay up so late.",
+          "ru": "Тебе не стоит так поздно ложиться."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Should + subject + base verb?",
+      "examples": [
+        {
+          "en": "What should I do?",
+          "ru": "Что мне делать?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "You should to rest.",
+      "right": "You should rest.",
+      "note": "Use the base verb without to."
+    },
+    {
+      "wrong": "He should rests.",
+      "right": "He should rest.",
+      "note": "Do not add -s after a modal verb."
+    }
+  ],
+  "exerciseIds": []
+}

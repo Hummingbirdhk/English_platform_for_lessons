@@ -1,0 +1,65 @@
+{
+  "id": "grammar-must-mustnt-cant",
+  "type": "grammar",
+  "title": "Must / Mustn't / Can't",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Rules & obligation",
+  "tags": [
+    "grammar",
+    "must",
+    "mustn't",
+    "can't",
+    "rules"
+  ],
+  "summary": "Use must for strong obligation and mustn't/can't for prohibition.",
+  "explanation": {
+    "en": "Must expresses a strong rule or obligation. Mustn't and can't can mean that something is not allowed.",
+    "ru": "Must выражает строгую обязанность или правило. Mustn't и can't могут означать запрет."
+  },
+  "forms": [
+    {
+      "label": "Obligation",
+      "pattern": "must + base verb",
+      "examples": [
+        {
+          "en": "You must wear a seat belt.",
+          "ru": "Ты должен пристёгиваться."
+        }
+      ]
+    },
+    {
+      "label": "Prohibition",
+      "pattern": "mustn't/can't + base verb",
+      "examples": [
+        {
+          "en": "You mustn't park here.",
+          "ru": "Здесь нельзя парковаться."
+        }
+      ]
+    },
+    {
+      "label": "Rule",
+      "pattern": "subject + must + verb",
+      "examples": [
+        {
+          "en": "Students must be on time.",
+          "ru": "Ученики должны приходить вовремя."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "You must to stop.",
+      "right": "You must stop.",
+      "note": "Use the base verb without to."
+    },
+    {
+      "wrong": "You mustn't come early if you don't want to.",
+      "right": "You don't have to come early if you don't want to.",
+      "note": "Mustn't means prohibited; don't have to means not necessary."
+    }
+  ],
+  "exerciseIds": []
+}

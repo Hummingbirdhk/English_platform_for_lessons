@@ -1,0 +1,74 @@
+{
+  "id": "grammar-comparatives-superlatives",
+  "type": "grammar",
+  "title": "Comparatives & superlatives",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Comparisons",
+  "tags": [
+    "grammar",
+    "comparatives",
+    "superlatives",
+    "as as"
+  ],
+  "summary": "Use comparative forms to compare two things and superlatives for the highest degree in a group.",
+  "explanation": {
+    "en": "Short adjectives usually take -er/-est. Longer adjectives usually use more/most.",
+    "ru": "Короткие прилагательные обычно получают -er/-est, длинные — more/most."
+  },
+  "forms": [
+    {
+      "label": "Comparative",
+      "pattern": "adjective-er / more + adjective + than",
+      "examples": [
+        {
+          "en": "This car is faster than that one.",
+          "ru": "Эта машина быстрее той."
+        }
+      ]
+    },
+    {
+      "label": "Superlative",
+      "pattern": "the + adjective-est / the most + adjective",
+      "examples": [
+        {
+          "en": "It is the most interesting place here.",
+          "ru": "Это самое интересное место здесь."
+        }
+      ]
+    },
+    {
+      "label": "Equal comparison",
+      "pattern": "as + adjective + as",
+      "examples": [
+        {
+          "en": "Tom is as tall as Ben.",
+          "ru": "Том такой же высокий, как Бен."
+        }
+      ]
+    },
+    {
+      "label": "Irregular",
+      "pattern": "good → better → best · bad → worse → worst",
+      "examples": [
+        {
+          "en": "Today is better than yesterday.",
+          "ru": "Сегодня лучше, чем вчера."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "more faster",
+      "right": "faster",
+      "note": "Do not use more with an -er comparative."
+    },
+    {
+      "wrong": "the most tall",
+      "right": "the tallest",
+      "note": "Use -est with short adjectives such as tall."
+    }
+  ],
+  "exerciseIds": []
+}

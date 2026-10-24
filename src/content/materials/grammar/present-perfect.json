@@ -1,0 +1,73 @@
+{
+  "id": "grammar-present-perfect",
+  "type": "grammar",
+  "title": "Present Perfect",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Experience & recent events",
+  "tags": [
+    "grammar",
+    "present perfect",
+    "ever never just already yet"
+  ],
+  "summary": "Use Present Perfect for experience, recent events and past actions connected to now.",
+  "explanation": {
+    "en": "Present Perfect uses have/has + past participle. It often connects a past event with the present.",
+    "ru": "Present Perfect образуется с have/has + третья форма глагола и связывает прошлое действие с настоящим."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "have/has + past participle",
+      "examples": [
+        {
+          "en": "I have visited London.",
+          "ru": "Я был в Лондоне."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "haven't/hasn't + past participle",
+      "examples": [
+        {
+          "en": "She hasn't finished yet.",
+          "ru": "Она ещё не закончила."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Have/Has + subject + past participle?",
+      "examples": [
+        {
+          "en": "Have you ever tried sushi?",
+          "ru": "Ты когда-нибудь пробовал суши?"
+        }
+      ]
+    },
+    {
+      "label": "Common markers",
+      "pattern": "ever · never · just · already · yet",
+      "examples": [
+        {
+          "en": "He has just arrived.",
+          "ru": "Он только что приехал."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I have went there.",
+      "right": "I have gone there.",
+      "note": "Use the past participle, not the Past Simple form."
+    },
+    {
+      "wrong": "I have seen him yesterday.",
+      "right": "I saw him yesterday.",
+      "note": "Use Past Simple with a finished past time such as yesterday."
+    }
+  ],
+  "exerciseIds": []
+}

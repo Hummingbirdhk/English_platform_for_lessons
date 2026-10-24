@@ -1,0 +1,64 @@
+{
+  "id": "grammar-future-going-to",
+  "type": "grammar",
+  "title": "Be going to",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Future plans",
+  "tags": [
+    "grammar",
+    "future",
+    "going to",
+    "plans"
+  ],
+  "summary": "Use be going to for plans, intentions and predictions based on evidence.",
+  "explanation": {
+    "en": "Be going to is used for plans already decided and for predictions when there is evidence now.",
+    "ru": "Be going to используется для уже принятых планов и прогнозов, основанных на видимых признаках."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "am/is/are going to + verb",
+      "examples": [
+        {
+          "en": "We are going to travel in July.",
+          "ru": "Мы собираемся путешествовать в июле."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "am not/isn't/aren't going to + verb",
+      "examples": [
+        {
+          "en": "I'm not going to stay at home.",
+          "ru": "Я не собираюсь оставаться дома."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Am/Is/Are + subject + going to + verb?",
+      "examples": [
+        {
+          "en": "Are you going to swim?",
+          "ru": "Ты собираешься плавать?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I going to visit Rome.",
+      "right": "I am going to visit Rome.",
+      "note": "Use a form of be before going to."
+    },
+    {
+      "wrong": "She is going to visits us.",
+      "right": "She is going to visit us.",
+      "note": "Use the base verb after going to."
+    }
+  ],
+  "exerciseIds": []
+}

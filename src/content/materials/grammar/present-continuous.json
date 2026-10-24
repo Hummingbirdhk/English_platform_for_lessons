@@ -1,0 +1,74 @@
+{
+  "id": "grammar-present-continuous",
+  "type": "grammar",
+  "title": "Present Continuous",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Actions now",
+  "tags": [
+    "grammar",
+    "present continuous",
+    "now",
+    "ing"
+  ],
+  "summary": "Use Present Continuous for actions happening now or around now.",
+  "explanation": {
+    "en": "Present Continuous describes actions in progress now, temporary situations and changing situations.",
+    "ru": "Present Continuous описывает действия, которые происходят сейчас или временно продолжаются в текущий период."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "am/is/are + verb-ing",
+      "examples": [
+        {
+          "en": "They are playing football now.",
+          "ru": "Они сейчас играют в футбол."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "am not/isn't/aren't + verb-ing",
+      "examples": [
+        {
+          "en": "I am not watching TV.",
+          "ru": "Я сейчас не смотрю телевизор."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Am/Is/Are + subject + verb-ing?",
+      "examples": [
+        {
+          "en": "Are you doing your homework?",
+          "ru": "Ты делаешь домашнее задание?"
+        }
+      ]
+    },
+    {
+      "label": "Spelling",
+      "pattern": "make → making · run → running · lie → lying",
+      "examples": [
+        {
+          "en": "She is making dinner.",
+          "ru": "Она готовит ужин."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He playing now.",
+      "right": "He is playing now.",
+      "note": "Present Continuous needs a form of be."
+    },
+    {
+      "wrong": "She is play tennis.",
+      "right": "She is playing tennis.",
+      "note": "Use verb-ing after am/is/are."
+    }
+  ],
+  "exerciseIds": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "grammar-future-present-continuous",
+  "type": "grammar",
+  "title": "Present Continuous for future arrangements",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Future plans",
+  "tags": [
+    "grammar",
+    "present continuous",
+    "future arrangements"
+  ],
+  "summary": "Use Present Continuous for fixed personal arrangements in the future.",
+  "explanation": {
+    "en": "Present Continuous can describe a future arrangement when the time or plan is already fixed.",
+    "ru": "Present Continuous может обозначать запланированную договорённость в будущем, когда время или план уже определены."
+  },
+  "forms": [
+    {
+      "label": "Arrangement",
+      "pattern": "am/is/are + verb-ing + future time",
+      "examples": [
+        {
+          "en": "I'm meeting Kate at six tomorrow.",
+          "ru": "Я встречаюсь с Кейт завтра в шесть."
+        }
+      ]
+    },
+    {
+      "label": "Question",
+      "pattern": "What/When/Where + am/is/are + subject + verb-ing?",
+      "examples": [
+        {
+          "en": "What are you doing this weekend?",
+          "ru": "Что ты делаешь на выходных?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I meet Tom tomorrow at five.",
+      "right": "I'm meeting Tom tomorrow at five.",
+      "note": "Use Present Continuous for a fixed arrangement."
+    },
+    {
+      "wrong": "She is meet us tonight.",
+      "right": "She is meeting us tonight.",
+      "note": "Use verb-ing after be."
+    }
+  ],
+  "exerciseIds": []
+}
