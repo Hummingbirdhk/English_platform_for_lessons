@@ -1,5 +1,5 @@
 import { loadAllContent } from '../../content/loadContent';
-import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function LessonsPage() {
@@ -8,6 +8,7 @@ export function LessonsPage() {
   return (
     <main className="page-shell lessons-page">
       <section className="page-hero page-hero--purple">
+        <WallPattern />
         <div>
           <span className="sticker sticker--white">УРОКИ</span>
           <h1>Готовые последовательности</h1>

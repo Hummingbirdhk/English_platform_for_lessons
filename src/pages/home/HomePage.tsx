@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
-import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function HomePage() {
@@ -37,6 +37,7 @@ export function HomePage() {
   return (
     <main className="page-shell home-page">
       <section className="home-hero">
+        <WallPattern />
         <div className="home-hero__copy">
           <div className="eyebrow">ТВОЯ АНГЛИЙСКАЯ ПЛАТФОРМА</div>
           <h1>Что изучаем сегодня?</h1>

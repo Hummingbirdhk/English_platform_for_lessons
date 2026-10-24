@@ -1,5 +1,5 @@
 import type { ExerciseDefinition, Lesson, Material } from '../../content/types';
-import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
+import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { renderLessonSection } from './sectionRenderers';
 
 export function LessonRenderer({
@@ -14,6 +14,7 @@ export function LessonRenderer({
   return (
     <main className="page-shell lesson-page">
       <section className="lesson-hero">
+        <WallPattern />
         <div className="lesson-hero__chips">
           <span className="level-chip">{lesson.level}</span>
           <span className="sticker sticker--lemon">GRADE {lesson.grade}</span>
