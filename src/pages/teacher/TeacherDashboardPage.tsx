@@ -144,7 +144,8 @@ export function TeacherDashboardPage() {
     );
   }
 
-  const attendance = attendanceByStudent[activeStudent.id] ?? details.attendance;
+  const defaultAttendance = details.attendance;
+  const attendance = attendanceByStudent[activeStudent.id] ?? defaultAttendance;
   const presentCount = attendance.filter((entry) => entry.status === 'present').length;
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
   const missedCount = attendance.filter((entry) => entry.status === 'missed').length;
@@ -158,7 +159,7 @@ export function TeacherDashboardPage() {
 
   function cycleAttendance(index: number) {
     setAttendanceByStudent((current) => {
-      const currentEntries = current[activeStudent.id] ?? details.attendance;
+      const currentEntries = current[activeStudent.id] ?? defaultAttendance;
       const nextEntries = currentEntries.map((entry, entryIndex) => {
         if (entryIndex !== index) return entry;
         const currentIndex = statusOrder.indexOf(entry.status);
