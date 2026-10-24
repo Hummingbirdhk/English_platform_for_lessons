@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   getStudentSchedule,
   parseScheduleDateTime,
-} from '../../../src/content/teacher/teacherSchedule';
+} from '../../src/content/teacher/teacherSchedule';
 
 describe('teacher schedule', () => {
   it('keeps workbook times and attendance for Zlata', () => {
