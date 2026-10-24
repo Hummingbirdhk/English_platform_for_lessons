@@ -22,7 +22,7 @@ export function MaterialCard({ material }: { material: Material }) {
       </div>
 
       <h3>{displayTitle}</h3>
-      <p>{material.topic}</p>
+      <p>{grammarPresentation ? 'Грамматика · A2' : material.topic}</p>
 
       <div className="material-tile__bottom">
         <span>{material.summary}</span>
