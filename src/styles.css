@@ -988,7 +988,6 @@ select {
   border: 0;
 }
 
-
 .teacher-dashboard__hero {
   position: relative;
   overflow: hidden;
@@ -1123,7 +1122,10 @@ select {
   color: var(--color-ink);
   text-align: left;
   cursor: pointer;
-  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    color 160ms ease;
 }
 
 .teacher-student-button:hover {

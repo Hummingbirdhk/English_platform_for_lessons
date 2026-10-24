@@ -128,12 +128,11 @@ export function TeacherDashboardPage() {
       ]),
     ),
   );
-  const [attendanceByStudent, setAttendanceByStudent] = useState<
-    Record<string, AttendanceEntry[]>
-  >(() =>
-    Object.fromEntries(
-      visibleStudents.map((student) => [student.id, teacherDetails[student.id].attendance]),
-    ),
+  const [attendanceByStudent, setAttendanceByStudent] = useState<Record<string, AttendanceEntry[]>>(
+    () =>
+      Object.fromEntries(
+        visibleStudents.map((student) => [student.id, teacherDetails[student.id].attendance]),
+      ),
   );
   const [savedStudentId, setSavedStudentId] = useState<string | null>(null);
 
@@ -358,15 +357,27 @@ export function TeacherDashboardPage() {
                 <span>скоро</span>
               </div>
               <div className="teacher-quick-actions">
-                <button type="button" className="teacher-quick-action teacher-quick-action--purple" disabled>
+                <button
+                  type="button"
+                  className="teacher-quick-action teacher-quick-action--purple"
+                  disabled
+                >
                   <strong>Создать урок</strong>
                   <span>из материалов платформы</span>
                 </button>
-                <button type="button" className="teacher-quick-action teacher-quick-action--orange" disabled>
+                <button
+                  type="button"
+                  className="teacher-quick-action teacher-quick-action--orange"
+                  disabled
+                >
                   <strong>Назначить материал</strong>
                   <span>grammar / vocabulary / reading</span>
                 </button>
-                <button type="button" className="teacher-quick-action teacher-quick-action--lemon" disabled>
+                <button
+                  type="button"
+                  className="teacher-quick-action teacher-quick-action--lemon"
+                  disabled
+                >
                   <strong>Добавить итог урока</strong>
                   <span>тема + домашка + заметка</span>
                 </button>
