@@ -1313,8 +1313,7 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       ],
       someBridge: {
         title: 'Some = какое-то количество / несколько',
-        text:
-          'Some удобно тем, что оно работает и с исчисляемыми, и с неисчисляемыми. Разница только в форме существительного после него.',
+        text: 'Some удобно тем, что оно работает и с исчисляемыми, и с неисчисляемыми. Разница только в форме существительного после него.',
         countable: ['some apples', 'some books', 'some friends'],
         uncountable: ['some water', 'some milk', 'some rice'],
         examples: [
@@ -1333,7 +1332,10 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
               meaning: 'обычно в утверждениях; также в предложениях и вежливых просьбах',
               examples: [
                 { en: 'I have some friends here.', ru: 'У меня здесь есть несколько друзей.' },
-                { en: 'There is some juice in the fridge.', ru: 'В холодильнике есть немного сока.' },
+                {
+                  en: 'There is some juice in the fridge.',
+                  ru: 'В холодильнике есть немного сока.',
+                },
                 { en: 'Would you like some tea?', ru: 'Хотите чаю?' },
               ],
             },
@@ -1348,8 +1350,7 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
               ],
             },
           ],
-          tip:
-            'Базовая схема для A2: утверждение → some; вопрос / отрицание → any. Но в предложениях и просьбах часто остаётся some: Would you like some tea?',
+          tip: 'Базовая схема для A2: утверждение → some; вопрос / отрицание → any. Но в предложениях и просьбах часто остаётся some: Would you like some tea?',
         },
         {
           title: 'Much / Many / A lot of',
@@ -1383,8 +1384,7 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
               ],
             },
           ],
-          tip:
-            'В обычных утвердительных предложениях a lot of часто звучит естественнее, чем much: I have a lot of time. Much особенно часто встречается в вопросах и отрицаниях.',
+          tip: 'В обычных утвердительных предложениях a lot of часто звучит естественнее, чем much: I have a lot of time. Much особенно часто встречается в вопросах и отрицаниях.',
         },
         {
           title: 'A few / A little',
@@ -1393,7 +1393,8 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
             {
               word: 'a few',
               with: 'только countable plural',
-              meaning: 'несколько отдельных предметов / людей; небольшое, но существующее количество',
+              meaning:
+                'несколько отдельных предметов / людей; небольшое, но существующее количество',
               examples: [
                 { en: 'I have a few questions.', ru: 'У меня есть несколько вопросов.' },
                 { en: 'We bought a few apples.', ru: 'Мы купили несколько яблок.' },
@@ -1409,8 +1410,7 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
               ],
             },
           ],
-          tip:
-            'Быстрая проверка: можно поставить число? → a few. Нельзя посчитать штуками? → a little.',
+          tip: 'Быстрая проверка: можно поставить число? → a few. Нельзя посчитать штуками? → a little.',
         },
       ],
       chooser: {
