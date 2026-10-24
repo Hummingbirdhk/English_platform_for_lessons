@@ -1,0 +1,36 @@
+{
+  "id": "grammar-plural-nouns",
+  "type": "grammar",
+  "title": "Plural nouns",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Nouns",
+  "tags": ["grammar", "plural nouns", "множественное число", "s es ies ves", "irregular plurals"],
+  "summary": "Form regular plurals and learn the most important irregular plural forms.",
+  "explanation": {
+    "en": "Most nouns add -s, but spelling changes depend on the ending and some common nouns have irregular plural forms.",
+    "ru": "Большинство существительных получают -s, но окончание зависит от написания слова, а у некоторых частых существительных форма множественного числа неправильная."
+  },
+  "forms": [
+    {
+      "label": "Most nouns",
+      "pattern": "book → books · car → cars",
+      "examples": [{ "en": "I have two books.", "ru": "У меня две книги." }]
+    },
+    {
+      "label": "-es",
+      "pattern": "box → boxes · bus → buses · watch → watches",
+      "examples": [{ "en": "There are three buses.", "ru": "Там три автобуса." }]
+    },
+    {
+      "label": "-y / -f",
+      "pattern": "city → cities · baby → babies · leaf → leaves",
+      "examples": [{ "en": "The cities are very old.", "ru": "Эти города очень старые." }]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "two childs", "right": "two children", "note": "Child has an irregular plural: children." },
+    { "wrong": "three citys", "right": "three cities", "note": "Consonant + y normally changes to -ies." }
+  ],
+  "exerciseIds": []
+}
