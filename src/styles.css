@@ -394,18 +394,16 @@ select {
 }
 .home-bottom-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 28px;
   margin-top: 30px;
 }
-.continue-card,
+.home-bottom-grid--single {
+  grid-template-columns: 1fr;
+}
 .quick-card {
   border-radius: 28px;
   padding: 26px 28px;
   min-height: 150px;
-}
-.continue-card {
-  background: #fff;
 }
 .quick-card {
   position: relative;
@@ -423,13 +421,11 @@ select {
   right: 24px;
   bottom: 24px;
 }
-.continue-card__title,
 .quick-card__title {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 24px;
 }
-.continue-card__meta,
 .quick-card__meta {
   opacity: 0.55;
   margin-top: 8px;
@@ -992,7 +988,6 @@ select {
   .student-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .home-bottom-grid,
   .student-bottom-grid {
     grid-template-columns: 1fr;
   }
@@ -1059,9 +1054,6 @@ select {
   }
   .section-entry {
     min-height: 230px;
-  }
-  .home-bottom-grid {
-    grid-template-columns: 1fr;
   }
   .materials-toolbar {
     grid-template-columns: 1fr;
