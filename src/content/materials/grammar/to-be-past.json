@@ -1,0 +1,58 @@
+{
+  "id": "grammar-to-be-past",
+  "type": "grammar",
+  "title": "Verb to be: was / were",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past events",
+  "tags": ["grammar", "to be", "was were", "past to be", "глагол to be", "прошедшее время"],
+  "summary": "Use was and were to talk about identity, states and location in the past.",
+  "explanation": {
+    "en": "We use was and were as the past forms of be. Use was with I/he/she/it and were with you/we/they.",
+    "ru": "Was и were — формы глагола to be в прошлом. Was используется с I/he/she/it, а were — с you/we/they."
+  },
+  "forms": [
+    {
+      "label": "Past",
+      "pattern": "I/he/she/it was · you/we/they were",
+      "examples": [
+        { "en": "I was at home yesterday.", "ru": "Вчера я был дома." },
+        { "en": "They were tired after school.", "ru": "После школы они были уставшими." }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "was not = wasn't · were not = weren't",
+      "examples": [
+        { "en": "She wasn't at school.", "ru": "Её не было в школе." },
+        { "en": "We weren't late.", "ru": "Мы не опоздали." }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Was + I/he/she/it ...? · Were + you/we/they ...?",
+      "examples": [
+        { "en": "Were you at home?", "ru": "Ты был дома?" },
+        { "en": "Was the film interesting?", "ru": "Фильм был интересным?" }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "They was at school.",
+      "right": "They were at school.",
+      "note": "Use were with you, we and they."
+    },
+    {
+      "wrong": "Did she was tired?",
+      "right": "Was she tired?",
+      "note": "Do not use did with was/were."
+    },
+    {
+      "wrong": "I weren't at home.",
+      "right": "I wasn't at home.",
+      "note": "Use was with I."
+    }
+  ],
+  "exerciseIds": []
+}
