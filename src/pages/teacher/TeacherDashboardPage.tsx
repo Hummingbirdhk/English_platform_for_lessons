@@ -1,19 +1,11 @@
 import { useMemo, useState } from 'react';
+import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
 import { loadAllContent } from '../../content/loadContent';
 
-type AttendanceStatus = 'planned' | 'present' | 'moved' | 'missed';
-
-type AttendanceEntry = {
-  date: string;
-  topic: string;
-  status: AttendanceStatus;
-};
+type AttendanceStatus = 'planned' | 'present' | 'moved' | 'cancelled';
 
 type TeacherStudentDetails = {
   notes: string;
-  nextLesson: string;
-  nextLessonTime: string;
-  attendance: AttendanceEntry[];
   lessonHistory: Array<{
     date: string;
     title: string;
@@ -26,14 +18,6 @@ const teacherDetails: Record<string, TeacherStudentDetails> = {
   'student-zlata': {
     notes:
       'Хорошо понимает правила, но торопится в заданиях и пропускает окончания -s / -es. На следующем уроке повторить daily routine и дать больше коротких устных вопросов.',
-    nextLesson: '27 октября',
-    nextLessonTime: '18:00 · 60 минут',
-    attendance: [
-      { date: '03 октября', topic: 'Present Simple', status: 'present' },
-      { date: '10 октября', topic: 'Daily routine', status: 'present' },
-      { date: '17 октября', topic: 'Vocabulary practice', status: 'moved' },
-      { date: '24 октября', topic: 'Reading + speaking', status: 'present' },
-    ],
     lessonHistory: [
       {
         date: '24.10',
@@ -58,14 +42,6 @@ const teacherDetails: Record<string, TeacherStudentDetails> = {
   'student-artem': {
     notes:
       'Быстро запоминает лексику, но пока путает формы неправильных глаголов. Лучше работает через короткие игровые задания и визуальные подсказки.',
-    nextLesson: '28 октября',
-    nextLessonTime: '17:00 · 60 минут',
-    attendance: [
-      { date: '02 октября', topic: 'Past Simple', status: 'present' },
-      { date: '09 октября', topic: 'Irregular verbs', status: 'present' },
-      { date: '16 октября', topic: 'Reading', status: 'missed' },
-      { date: '23 октября', topic: 'Speaking practice', status: 'present' },
-    ],
     lessonHistory: [
       {
         date: '23.10',
@@ -89,18 +65,70 @@ const teacherDetails: Record<string, TeacherStudentDetails> = {
   },
 };
 
-const statusOrder: AttendanceStatus[] = ['planned', 'present', 'moved', 'missed'];
+const statusOrder: AttendanceStatus[] = ['planned', 'present', 'moved', 'cancelled'];
 
 const statusLabels: Record<AttendanceStatus, string> = {
   planned: 'Запланировано',
   present: '✓ Был',
   moved: '↔ Перенос',
-  missed: '× Не был',
+  cancelled: '× Отмена',
 };
+
+const monthNames = [
+  'Январь',
+  'Февраль',
+  'Март',
+  'Апрель',
+  'Май',
+  'Июнь',
+  'Июль',
+  'Август',
+  'Сентябрь',
+  'Октябрь',
+  'Ноябрь',
+  'Декабрь',
+];
+
+const monthNamesGenitive = [
+  'января',
+  'февраля',
+  'марта',
+  'апреля',
+  'мая',
+  'июня',
+  'июля',
+  'августа',
+  'сентября',
+  'октября',
+  'ноября',
+  'декабря',
+];
 
 function readStoredValue(key: string, fallback: string): string {
   if (typeof window === 'undefined') return fallback;
   return window.localStorage.getItem(key) ?? fallback;
+}
+
+function getStatus(attendance: string | null): AttendanceStatus {
+  if (attendance === 'Пришел' || attendance === 'Пришла') return 'present';
+  if (attendance === 'Перенос занятия') return 'moved';
+  if (attendance === 'Отмена') return 'cancelled';
+  return 'planned';
+}
+
+function formatLessonDate(date: Date) {
+  return `${date.getUTCDate()} ${monthNamesGenitive[date.getUTCMonth()]}`;
+}
+
+function formatLessonTime(date: Date) {
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
+    2,
+    '0',
+  )} · 60 минут`;
+}
+
+function formatAttendanceDate(date: Date) {
+  return `${String(date.getUTCDate()).padStart(2, '0')} ${monthNamesGenitive[date.getUTCMonth()]}`;
 }
 
 export function TeacherDashboardPage() {
@@ -111,11 +139,18 @@ export function TeacherDashboardPage() {
       .filter((student) => teacherDetails[student.id] !== undefined)
       .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   }, [students]);
+
   const [activeStudentId, setActiveStudentId] = useState(
     visibleStudents.find((student) => student.id === 'student-zlata')?.id ??
       visibleStudents[0]?.id ??
       '',
   );
+  const [selectedMonth, setSelectedMonth] = useState({ year: 2026, month: 9 });
+  const [attendanceOverrides, setAttendanceOverrides] = useState<
+    Record<string, Record<string, AttendanceStatus>>
+  >({});
+  const [savedStudentId, setSavedStudentId] = useState<string | null>(null);
+
   const activeStudent =
     visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
   const details = activeStudent ? teacherDetails[activeStudent.id] : undefined;
@@ -128,13 +163,6 @@ export function TeacherDashboardPage() {
       ]),
     ),
   );
-  const [attendanceByStudent, setAttendanceByStudent] = useState<Record<string, AttendanceEntry[]>>(
-    () =>
-      Object.fromEntries(
-        visibleStudents.map((student) => [student.id, teacherDetails[student.id].attendance]),
-      ),
-  );
-  const [savedStudentId, setSavedStudentId] = useState<string | null>(null);
 
   if (!activeStudent || !details) {
     return (
@@ -144,11 +172,36 @@ export function TeacherDashboardPage() {
     );
   }
 
-  const defaultAttendance = details.attendance;
-  const attendance = attendanceByStudent[activeStudent.id] ?? defaultAttendance;
+  const schedule = getStudentSchedule(activeStudent.id);
+  const now = new Date('2026-10-24T21:00:00Z');
+  const nextLesson = schedule
+    .map((entry) => ({ entry, date: parseScheduleDateTime(entry.dateTime) }))
+    .find(
+      ({ entry, date }) =>
+        date > now && entry.attendance !== 'Отмена' && entry.attendance !== 'Перенос занятия',
+    );
+
+  const monthSchedule = schedule
+    .map((entry) => ({ entry, date: parseScheduleDateTime(entry.dateTime) }))
+    .filter(
+      ({ date }) =>
+        date.getUTCFullYear() === selectedMonth.year && date.getUTCMonth() === selectedMonth.month,
+    );
+
+  const attendance = monthSchedule.map(({ entry, date }) => {
+    const overrideKey = entry.dateTime;
+    return {
+      key: overrideKey,
+      date,
+      status: attendanceOverrides[activeStudent.id]?.[overrideKey] ?? getStatus(entry.attendance),
+      note: entry.reschedule,
+      payment: entry.payment,
+    };
+  });
+
   const presentCount = attendance.filter((entry) => entry.status === 'present').length;
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
-  const missedCount = attendance.filter((entry) => entry.status === 'missed').length;
+  const cancelledCount = attendance.filter((entry) => entry.status === 'cancelled').length;
 
   function saveNotes() {
     const value = notesByStudent[activeStudent.id] ?? '';
@@ -157,19 +210,22 @@ export function TeacherDashboardPage() {
     window.setTimeout(() => setSavedStudentId(null), 1200);
   }
 
-  function cycleAttendance(index: number) {
-    setAttendanceByStudent((current) => {
-      const currentEntries = current[activeStudent.id] ?? defaultAttendance;
-      const nextEntries = currentEntries.map((entry, entryIndex) => {
-        if (entryIndex !== index) return entry;
-        const currentIndex = statusOrder.indexOf(entry.status);
-        return {
-          ...entry,
-          status: statusOrder[(currentIndex + 1) % statusOrder.length],
-        };
-      });
+  function cycleAttendance(entryKey: string, currentStatus: AttendanceStatus) {
+    const currentIndex = statusOrder.indexOf(currentStatus);
+    const nextStatus = statusOrder[(currentIndex + 1) % statusOrder.length];
+    setAttendanceOverrides((current) => ({
+      ...current,
+      [activeStudent.id]: {
+        ...(current[activeStudent.id] ?? {}),
+        [entryKey]: nextStatus,
+      },
+    }));
+  }
 
-      return { ...current, [activeStudent.id]: nextEntries };
+  function moveMonth(offset: number) {
+    setSelectedMonth((current) => {
+      const date = new Date(Date.UTC(current.year, current.month + offset, 1));
+      return { year: date.getUTCFullYear(), month: date.getUTCMonth() };
     });
   }
 
@@ -181,7 +237,7 @@ export function TeacherDashboardPage() {
         <p>Ученики, заметки, посещения и подготовка к следующему занятию.</p>
         <div className="teacher-dashboard__summary">
           <span>{visibleStudents.length} ученика</span>
-          <span>Октябрь</span>
+          <span>Расписание 2026–2027</span>
         </div>
       </section>
 
@@ -236,8 +292,8 @@ export function TeacherDashboardPage() {
 
             <article className="teacher-next-lesson-card">
               <span className="teacher-card-label">СЛЕДУЮЩЕЕ ЗАНЯТИЕ</span>
-              <strong>{details.nextLesson}</strong>
-              <p>{details.nextLessonTime}</p>
+              <strong>{nextLesson ? formatLessonDate(nextLesson.date) : 'Нет занятий'}</strong>
+              <p>{nextLesson ? formatLessonTime(nextLesson.date) : 'Расписание закончилось'}</p>
               <button type="button" disabled>
                 Открыть подготовку →
               </button>
@@ -299,31 +355,38 @@ export function TeacherDashboardPage() {
                 <div className="teacher-attendance-stats">
                   <span>Был: {presentCount}</span>
                   <span>Перенос: {movedCount}</span>
-                  <span>Не был: {missedCount}</span>
+                  <span>Отмена: {cancelledCount}</span>
                 </div>
               </div>
               <div className="teacher-month-control">
-                <button type="button" disabled>
+                <button type="button" onClick={() => moveMonth(-1)} aria-label="Предыдущий месяц">
                   ←
                 </button>
-                <strong>Октябрь 2026</strong>
-                <button type="button" disabled>
+                <strong>
+                  {monthNames[selectedMonth.month]} {selectedMonth.year}
+                </strong>
+                <button type="button" onClick={() => moveMonth(1)} aria-label="Следующий месяц">
                   →
                 </button>
               </div>
             </div>
 
             <div className="teacher-attendance-grid">
-              {attendance.map((entry, index) => (
-                <article key={entry.date} className="teacher-attendance-card">
+              {attendance.map((entry) => (
+                <article key={entry.key} className="teacher-attendance-card">
                   <div>
-                    <strong>{entry.date}</strong>
-                    <p>{entry.topic}</p>
+                    <strong>{formatAttendanceDate(entry.date)}</strong>
+                    <p>
+                      {String(entry.date.getUTCHours()).padStart(2, '0')}:
+                      {String(entry.date.getUTCMinutes()).padStart(2, '0')}
+                    </p>
+                    {entry.note ? <p>{entry.note}</p> : null}
+                    {entry.payment ? <p>{entry.payment}</p> : null}
                   </div>
                   <button
                     type="button"
                     className={`teacher-attendance-status teacher-attendance-status--${entry.status}`}
-                    onClick={() => cycleAttendance(index)}
+                    onClick={() => cycleAttendance(entry.key, entry.status)}
                   >
                     {statusLabels[entry.status]}
                   </button>
