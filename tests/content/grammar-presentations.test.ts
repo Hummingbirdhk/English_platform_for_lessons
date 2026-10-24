@@ -8,8 +8,8 @@ describe('rich grammar library', () => {
       (material) => material.type === 'grammar',
     );
 
-    expect(grammarMaterials).toHaveLength(30);
-    expect(Object.keys(grammarPresentations)).toHaveLength(30);
+    expect(grammarMaterials).toHaveLength(31);
+    expect(Object.keys(grammarPresentations)).toHaveLength(31);
 
     for (const material of grammarMaterials) {
       expect(grammarPresentations[material.id], material.id).toBeDefined();
@@ -17,6 +17,11 @@ describe('rich grammar library', () => {
       expect(grammarPresentations[material.id].cues.length).toBeGreaterThanOrEqual(3);
       expect(grammarPresentations[material.id].practice.options.length).toBeGreaterThanOrEqual(3);
     }
+  });
+
+  it('keeps present and past forms of to be as separate materials', () => {
+    expect(grammarPresentations['grammar-to-be'].displayTitle).toContain('am / is / are');
+    expect(grammarPresentations['grammar-to-be-past'].displayTitle).toContain('was / were');
   });
 
   it('includes expandable reference material where memorisation matters', () => {
