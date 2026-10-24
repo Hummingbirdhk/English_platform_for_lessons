@@ -8,13 +8,13 @@
   "tags": ["grammar", "present simple", "daily routine"],
   "summary": "Use Present Simple to talk about routines, habits and facts.",
   "explanation": {
-    "en": "We use Present Simple for routines, habits and facts that are generally true.",
-    "ru": "Present Simple используется для регулярных действий, привычек и фактов."
+    "en": "We use Present Simple for routines, repeated actions, permanent situations and facts.",
+    "ru": "Present Simple используется для регулярных действий, привычек, постоянных ситуаций и фактов."
   },
   "forms": [
     {
       "label": "Positive",
-      "pattern": "I/You/We/They work. He/She/It works.",
+      "pattern": "I/You/We/They work · He/She/It works",
       "examples": [
         {
           "en": "She goes to school every day.",
@@ -24,35 +24,45 @@
     },
     {
       "label": "Negative",
-      "pattern": "I/You/We/They don't work. He/She/It doesn't work.",
+      "pattern": "don't + verb · doesn't + verb",
       "examples": [
         {
-          "en": "He doesn't get up late on school days.",
-          "ru": "В учебные дни он не встаёт поздно."
+          "en": "He doesn't get up late.",
+          "ru": "Он не встаёт поздно."
         }
       ]
     },
     {
       "label": "Questions",
-      "pattern": "Do I/you/we/they work? Does he/she/it work?",
+      "pattern": "Do + subject + verb? · Does + subject + verb?",
       "examples": [
         {
           "en": "Does she have breakfast at home?",
           "ru": "Она завтракает дома?"
         }
       ]
+    },
+    {
+      "label": "Third person spelling",
+      "pattern": "-s · -es · consonant + y → -ies",
+      "examples": [
+        {
+          "en": "He watches TV and studies English.",
+          "ru": "Он смотрит телевизор и учит английский."
+        }
+      ]
     }
   ],
   "commonMistakes": [
     {
-      "wrong": "She go to school every day.",
-      "right": "She goes to school every day.",
-      "note": "With he, she and it, the verb usually takes -s."
+      "wrong": "She go to school.",
+      "right": "She goes to school.",
+      "note": "With he, she and it, add -s/-es."
     },
     {
       "wrong": "Does he goes to school?",
       "right": "Does he go to school?",
-      "note": "After does, use the base form of the verb."
+      "note": "After does, use the base form."
     }
   ],
   "exerciseIds": ["present-simple-basics"]

@@ -1,0 +1,59 @@
+{
+  "id": "grammar-countable-uncountable",
+  "type": "grammar",
+  "title": "Countable & uncountable nouns",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Food & quantities",
+  "tags": ["grammar", "countable", "uncountable", "much many", "a lot of"],
+  "summary": "Use different quantity words with countable and uncountable nouns.",
+  "explanation": {
+    "en": "Countable nouns can be counted and have singular/plural forms. Uncountable nouns normally do not use a/an or a plural form.",
+    "ru": "Исчисляемые существительные можно посчитать, у них есть единственное и множественное число. Неисчисляемые обычно не употребляются с a/an и во множественном числе."
+  },
+  "forms": [
+    {
+      "label": "Countable",
+      "pattern": "a/an · one/two ... · many · a few",
+      "examples": [
+        {
+          "en": "There are a few apples.",
+          "ru": "Есть несколько яблок."
+        }
+      ]
+    },
+    {
+      "label": "Uncountable",
+      "pattern": "some · much · a little",
+      "examples": [
+        {
+          "en": "We need a little sugar.",
+          "ru": "Нам нужно немного сахара."
+        }
+      ]
+    },
+    {
+      "label": "Both",
+      "pattern": "some/any · a lot of",
+      "examples": [
+        {
+          "en": "There is a lot of water. There are a lot of bottles.",
+          "ru": "Много воды. Много бутылок."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "a bread",
+      "right": "some bread / a piece of bread",
+      "note": "Bread is normally uncountable."
+    },
+    {
+      "wrong": "much apples",
+      "right": "many apples",
+      "note": "Use many with countable plural nouns."
+    }
+  ],
+  "exerciseIds": []
+}

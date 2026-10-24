@@ -1,0 +1,69 @@
+{
+  "id": "grammar-future-will",
+  "type": "grammar",
+  "title": "Will / Won't",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Future",
+  "tags": ["grammar", "future", "will", "won't"],
+  "summary": "Use will for predictions, instant decisions, offers and promises.",
+  "explanation": {
+    "en": "Will is common for predictions and decisions made at the moment of speaking. It is also used for offers and promises.",
+    "ru": "Will используется для прогнозов, спонтанных решений, предложений помощи и обещаний."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "will + base verb",
+      "examples": [
+        {
+          "en": "I think it will rain tomorrow.",
+          "ru": "Думаю, завтра будет дождь."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "won't + base verb",
+      "examples": [
+        {
+          "en": "I won't forget.",
+          "ru": "Я не забуду."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Will + subject + base verb?",
+      "examples": [
+        {
+          "en": "Will you help me?",
+          "ru": "Ты мне поможешь?"
+        }
+      ]
+    },
+    {
+      "label": "Instant decision",
+      "pattern": "I'll + verb",
+      "examples": [
+        {
+          "en": "The phone is ringing. I'll answer it.",
+          "ru": "Телефон звонит. Я отвечу."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I will to call you.",
+      "right": "I will call you.",
+      "note": "Do not use to after will."
+    },
+    {
+      "wrong": "She wills come.",
+      "right": "She will come.",
+      "note": "Will does not change with he/she/it."
+    }
+  ],
+  "exerciseIds": []
+}

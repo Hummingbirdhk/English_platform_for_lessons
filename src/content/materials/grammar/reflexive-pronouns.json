@@ -1,0 +1,49 @@
+{
+  "id": "grammar-reflexive-pronouns",
+  "type": "grammar",
+  "title": "Reflexive pronouns",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Pronouns & determiners",
+  "tags": ["grammar", "reflexive pronouns", "myself yourself"],
+  "summary": "Use reflexive pronouns when the subject and object are the same person or thing.",
+  "explanation": {
+    "en": "Use myself, yourself, himself, herself, itself, ourselves, yourselves and themselves when an action comes back to the subject.",
+    "ru": "Возвратные местоимения используются, когда действие направлено на самого исполнителя: myself, yourself, himself и т. д."
+  },
+  "forms": [
+    {
+      "label": "Singular",
+      "pattern": "myself · yourself · himself · herself · itself",
+      "examples": [
+        {
+          "en": "He hurt himself.",
+          "ru": "Он поранился."
+        }
+      ]
+    },
+    {
+      "label": "Plural",
+      "pattern": "ourselves · yourselves · themselves",
+      "examples": [
+        {
+          "en": "We made it ourselves.",
+          "ru": "Мы сделали это сами."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She looked at her in the mirror.",
+      "right": "She looked at herself in the mirror.",
+      "note": "Use herself when subject and object are the same person."
+    },
+    {
+      "wrong": "I did it by me.",
+      "right": "I did it by myself.",
+      "note": "By myself means alone / without help."
+    }
+  ],
+  "exerciseIds": []
+}

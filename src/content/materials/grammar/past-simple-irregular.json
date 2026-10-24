@@ -1,0 +1,59 @@
+{
+  "id": "grammar-past-simple-irregular",
+  "type": "grammar",
+  "title": "Past Simple: irregular verbs & was/were",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past events",
+  "tags": ["grammar", "past simple", "irregular verbs", "was were"],
+  "summary": "Learn common irregular Past Simple forms and use was/were for the verb be.",
+  "explanation": {
+    "en": "Irregular verbs have special past forms such as went, saw and had. The past of be is was/were.",
+    "ru": "Неправильные глаголы имеют особые формы Past Simple: went, saw, had и т. д. Прошедшие формы be — was/were."
+  },
+  "forms": [
+    {
+      "label": "Irregular verbs",
+      "pattern": "go → went · see → saw · have → had · take → took",
+      "examples": [
+        {
+          "en": "We went to the cinema.",
+          "ru": "Мы ходили в кино."
+        }
+      ]
+    },
+    {
+      "label": "Was / were",
+      "pattern": "I/he/she/it was · you/we/they were",
+      "examples": [
+        {
+          "en": "They were tired after the trip.",
+          "ru": "Они устали после поездки."
+        }
+      ]
+    },
+    {
+      "label": "Questions & negatives",
+      "pattern": "did/didn't + base verb · wasn't/weren't",
+      "examples": [
+        {
+          "en": "Did you see him?",
+          "ru": "Ты его видел?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I goed home.",
+      "right": "I went home.",
+      "note": "Go is irregular: go → went."
+    },
+    {
+      "wrong": "They was at school.",
+      "right": "They were at school.",
+      "note": "Use were with you, we and they."
+    }
+  ],
+  "exerciseIds": []
+}

@@ -1,0 +1,59 @@
+{
+  "id": "grammar-imperatives",
+  "type": "grammar",
+  "title": "Imperatives",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Instructions & directions",
+  "tags": ["grammar", "imperative", "instructions", "directions"],
+  "summary": "Use the imperative for commands, instructions, warnings and directions.",
+  "explanation": {
+    "en": "The imperative uses the base form of the verb. Use don't before the verb for a negative command.",
+    "ru": "Повелительное наклонение использует начальную форму глагола. Для отрицательной команды ставится don't перед глаголом."
+  },
+  "forms": [
+    {
+      "label": "Positive",
+      "pattern": "base verb",
+      "examples": [
+        {
+          "en": "Turn left at the traffic lights.",
+          "ru": "Поверни налево на светофоре."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "Don't + base verb",
+      "examples": [
+        {
+          "en": "Don't cross the road here.",
+          "ru": "Не переходи дорогу здесь."
+        }
+      ]
+    },
+    {
+      "label": "Polite instruction",
+      "pattern": "Please + imperative",
+      "examples": [
+        {
+          "en": "Please sit down.",
+          "ru": "Пожалуйста, садитесь."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "You turn left.",
+      "right": "Turn left.",
+      "note": "For a direct instruction, the subject is normally omitted."
+    },
+    {
+      "wrong": "Don't to run.",
+      "right": "Don't run.",
+      "note": "Use the base verb after don't."
+    }
+  ],
+  "exerciseIds": []
+}

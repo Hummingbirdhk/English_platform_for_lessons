@@ -1,0 +1,73 @@
+{
+  "id": "grammar-to-be",
+  "type": "grammar",
+  "title": "Verb to be",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Basics",
+  "tags": ["grammar", "to be", "am is are", "was were"],
+  "summary": "Use be to talk about identity, age, descriptions, location and states.",
+  "explanation": {
+    "en": "We use the verb be to say who or what someone is, describe people and things, and talk about where they are.",
+    "ru": "Глагол to be нужен, чтобы сказать, кто или что это, описать человека или предмет и сказать, где кто-то находится."
+  },
+  "forms": [
+    {
+      "label": "Present",
+      "pattern": "I am · he/she/it is · you/we/they are",
+      "examples": [
+        {
+          "en": "I am twelve.",
+          "ru": "Мне двенадцать лет."
+        },
+        {
+          "en": "They are at school.",
+          "ru": "Они в школе."
+        }
+      ]
+    },
+    {
+      "label": "Negative",
+      "pattern": "am not · isn't · aren't",
+      "examples": [
+        {
+          "en": "She isn't tired.",
+          "ru": "Она не устала."
+        }
+      ]
+    },
+    {
+      "label": "Questions",
+      "pattern": "Am I ...? · Is he/she/it ...? · Are you/we/they ...?",
+      "examples": [
+        {
+          "en": "Are you ready?",
+          "ru": "Ты готов?"
+        }
+      ]
+    },
+    {
+      "label": "Past",
+      "pattern": "I/he/she/it was · you/we/they were",
+      "examples": [
+        {
+          "en": "We were at home yesterday.",
+          "ru": "Вчера мы были дома."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I is twelve.",
+      "right": "I am twelve.",
+      "note": "With I, use am."
+    },
+    {
+      "wrong": "She don't happy.",
+      "right": "She isn't happy.",
+      "note": "With be, do not use do/does for negatives."
+    }
+  ],
+  "exerciseIds": []
+}

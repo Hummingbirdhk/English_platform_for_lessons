@@ -1,0 +1,59 @@
+{
+  "id": "grammar-adverbs-frequency",
+  "type": "grammar",
+  "title": "Adverbs of frequency",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily routine",
+  "tags": ["grammar", "frequency", "always usually often sometimes never"],
+  "summary": "Use frequency adverbs to say how often something happens.",
+  "explanation": {
+    "en": "Always, usually, often, sometimes, rarely and never show frequency. Their position depends on the verb.",
+    "ru": "Always, usually, often, sometimes, rarely и never показывают частоту действия. Их место зависит от глагола."
+  },
+  "forms": [
+    {
+      "label": "With ordinary verbs",
+      "pattern": "subject + adverb + verb",
+      "examples": [
+        {
+          "en": "I usually walk to school.",
+          "ru": "Я обычно хожу в школу пешком."
+        }
+      ]
+    },
+    {
+      "label": "With be",
+      "pattern": "subject + be + adverb",
+      "examples": [
+        {
+          "en": "She is often tired after school.",
+          "ru": "Она часто устаёт после школы."
+        }
+      ]
+    },
+    {
+      "label": "Sometimes",
+      "pattern": "Sometimes + sentence / subject + sometimes + verb",
+      "examples": [
+        {
+          "en": "Sometimes we eat out.",
+          "ru": "Иногда мы едим вне дома."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I go always to school by bus.",
+      "right": "I always go to school by bus.",
+      "note": "Put the adverb before most main verbs."
+    },
+    {
+      "wrong": "He never is late.",
+      "right": "He is never late.",
+      "note": "Put frequency adverbs after be."
+    }
+  ],
+  "exerciseIds": []
+}

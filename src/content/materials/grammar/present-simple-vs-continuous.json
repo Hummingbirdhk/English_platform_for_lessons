@@ -1,0 +1,59 @@
+{
+  "id": "grammar-present-simple-vs-continuous",
+  "type": "grammar",
+  "title": "Present Simple vs Present Continuous",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Present tenses",
+  "tags": ["grammar", "present simple", "present continuous", "contrast"],
+  "summary": "Choose Present Simple for routines and Present Continuous for actions happening now.",
+  "explanation": {
+    "en": "Present Simple is for repeated or usual actions. Present Continuous is for actions in progress now or temporary situations.",
+    "ru": "Present Simple — для привычных и регулярных действий. Present Continuous — для действий сейчас и временных ситуаций."
+  },
+  "forms": [
+    {
+      "label": "Routine",
+      "pattern": "Present Simple + usually/every day/often",
+      "examples": [
+        {
+          "en": "I walk to school every day.",
+          "ru": "Я каждый день хожу в школу пешком."
+        }
+      ]
+    },
+    {
+      "label": "Now",
+      "pattern": "Present Continuous + now/at the moment",
+      "examples": [
+        {
+          "en": "I am walking to school now.",
+          "ru": "Я сейчас иду в школу пешком."
+        }
+      ]
+    },
+    {
+      "label": "State verbs",
+      "pattern": "like/know/want/need usually use Present Simple",
+      "examples": [
+        {
+          "en": "I like this song.",
+          "ru": "Мне нравится эта песня."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I am knowing the answer.",
+      "right": "I know the answer.",
+      "note": "Know is normally a state verb."
+    },
+    {
+      "wrong": "Look! It rains.",
+      "right": "Look! It is raining.",
+      "note": "Use Present Continuous for an action happening now."
+    }
+  ],
+  "exerciseIds": []
+}

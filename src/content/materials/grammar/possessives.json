@@ -1,0 +1,69 @@
+{
+  "id": "grammar-possessives",
+  "type": "grammar",
+  "title": "Possessives",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Pronouns & determiners",
+  "tags": ["grammar", "possessive adjectives", "possessive pronouns", "whose"],
+  "summary": "Use possessive forms to show who something belongs to.",
+  "explanation": {
+    "en": "Possessive adjectives come before a noun. Possessive pronouns replace the noun.",
+    "ru": "Притяжательные прилагательные стоят перед существительным, а притяжательные местоимения заменяют существительное."
+  },
+  "forms": [
+    {
+      "label": "Possessive adjectives",
+      "pattern": "my · your · his · her · its · our · their + noun",
+      "examples": [
+        {
+          "en": "This is my book.",
+          "ru": "Это моя книга."
+        }
+      ]
+    },
+    {
+      "label": "Possessive pronouns",
+      "pattern": "mine · yours · his · hers · ours · theirs",
+      "examples": [
+        {
+          "en": "This book is mine.",
+          "ru": "Эта книга моя."
+        }
+      ]
+    },
+    {
+      "label": "Possessive 's",
+      "pattern": "name + 's",
+      "examples": [
+        {
+          "en": "This is Anna's bag.",
+          "ru": "Это сумка Анны."
+        }
+      ]
+    },
+    {
+      "label": "Whose",
+      "pattern": "Whose + noun ...?",
+      "examples": [
+        {
+          "en": "Whose jacket is this?",
+          "ru": "Чья это куртка?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "This is mine book.",
+      "right": "This is my book.",
+      "note": "Use my before a noun; mine without a noun."
+    },
+    {
+      "wrong": "The bag of Tom.",
+      "right": "Tom's bag.",
+      "note": "For people, possessive 's is usually the natural form."
+    }
+  ],
+  "exerciseIds": []
+}

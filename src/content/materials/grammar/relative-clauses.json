@@ -1,0 +1,69 @@
+{
+  "id": "grammar-relative-clauses",
+  "type": "grammar",
+  "title": "Relative clauses",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Sentence building",
+  "tags": ["grammar", "relative clauses", "who which that where whose"],
+  "summary": "Use relative words to add information about a person, thing or place.",
+  "explanation": {
+    "en": "Relative clauses join information about a noun. Use who for people, which for things, and where for places. That can often replace who/which in defining clauses.",
+    "ru": "Относительные придаточные добавляют информацию о существительном. Who — для людей, which — для предметов, where — для мест; that часто заменяет who/which."
+  },
+  "forms": [
+    {
+      "label": "People",
+      "pattern": "person + who/that + clause",
+      "examples": [
+        {
+          "en": "The girl who lives next door is my friend.",
+          "ru": "Девочка, которая живёт по соседству, моя подруга."
+        }
+      ]
+    },
+    {
+      "label": "Things",
+      "pattern": "thing + which/that + clause",
+      "examples": [
+        {
+          "en": "This is the book that I bought.",
+          "ru": "Это книга, которую я купил."
+        }
+      ]
+    },
+    {
+      "label": "Places",
+      "pattern": "place + where + clause",
+      "examples": [
+        {
+          "en": "This is the café where we met.",
+          "ru": "Это кафе, где мы встретились."
+        }
+      ]
+    },
+    {
+      "label": "Possession",
+      "pattern": "person + whose + noun",
+      "examples": [
+        {
+          "en": "I know a boy whose dad is a pilot.",
+          "ru": "Я знаю мальчика, чей папа пилот."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The man which lives here",
+      "right": "The man who lives here",
+      "note": "Use who for people."
+    },
+    {
+      "wrong": "The place who we stayed",
+      "right": "The place where we stayed",
+      "note": "Use where for places."
+    }
+  ],
+  "exerciseIds": []
+}

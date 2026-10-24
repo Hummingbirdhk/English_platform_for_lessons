@@ -1,0 +1,59 @@
+{
+  "id": "grammar-have-to-neednt",
+  "type": "grammar",
+  "title": "Have to / Don't have to / Needn't",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Rules & obligation",
+  "tags": ["grammar", "have to", "don't have to", "needn't", "obligation"],
+  "summary": "Use have to for necessary actions and don't have to or needn't when something is not necessary.",
+  "explanation": {
+    "en": "Have to expresses necessity. Don't have to and needn't mean there is no necessity.",
+    "ru": "Have to выражает необходимость. Don't have to и needn't означают, что делать что-то необязательно."
+  },
+  "forms": [
+    {
+      "label": "Necessity",
+      "pattern": "have/has to + base verb",
+      "examples": [
+        {
+          "en": "I have to get up early.",
+          "ru": "Мне приходится рано вставать."
+        }
+      ]
+    },
+    {
+      "label": "No necessity",
+      "pattern": "don't/doesn't have to + base verb",
+      "examples": [
+        {
+          "en": "You don't have to bring food.",
+          "ru": "Тебе не нужно приносить еду."
+        }
+      ]
+    },
+    {
+      "label": "Needn't",
+      "pattern": "needn't + base verb",
+      "examples": [
+        {
+          "en": "You needn't wait for me.",
+          "ru": "Тебе не нужно меня ждать."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He have to leave.",
+      "right": "He has to leave.",
+      "note": "Use has to with he, she and it."
+    },
+    {
+      "wrong": "You don't have to smoke here.",
+      "right": "You mustn't smoke here.",
+      "note": "Use mustn't for prohibition, not don't have to."
+    }
+  ],
+  "exerciseIds": []
+}

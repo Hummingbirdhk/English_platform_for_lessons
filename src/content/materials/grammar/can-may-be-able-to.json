@@ -1,0 +1,59 @@
+{
+  "id": "grammar-can-may-be-able-to",
+  "type": "grammar",
+  "title": "Can / May / Be able to",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Modal verbs",
+  "tags": ["grammar", "can", "may", "be able to", "ability permission"],
+  "summary": "Use can for ability and informal permission, may for more formal permission, and be able to when another tense is needed.",
+  "explanation": {
+    "en": "Can expresses ability and common permission. May can ask or give permission more formally. Be able to is useful when can has no suitable tense.",
+    "ru": "Can выражает умение и обычное разрешение, may — более формальное разрешение, be able to используется, когда нужна другая временная форма."
+  },
+  "forms": [
+    {
+      "label": "Ability",
+      "pattern": "can + base verb",
+      "examples": [
+        {
+          "en": "She can swim very well.",
+          "ru": "Она очень хорошо умеет плавать."
+        }
+      ]
+    },
+    {
+      "label": "Permission",
+      "pattern": "Can/May I + base verb?",
+      "examples": [
+        {
+          "en": "May I come in?",
+          "ru": "Можно войти?"
+        }
+      ]
+    },
+    {
+      "label": "Other tenses",
+      "pattern": "be able to + base verb",
+      "examples": [
+        {
+          "en": "I'll be able to help tomorrow.",
+          "ru": "Я смогу помочь завтра."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He can to swim.",
+      "right": "He can swim.",
+      "note": "Use the base verb without to after can."
+    },
+    {
+      "wrong": "She cans speak English.",
+      "right": "She can speak English.",
+      "note": "Modal verbs do not take -s."
+    }
+  ],
+  "exerciseIds": []
+}

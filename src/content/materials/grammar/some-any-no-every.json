@@ -1,0 +1,59 @@
+{
+  "id": "grammar-some-any-no-every",
+  "type": "grammar",
+  "title": "Some / Any / No / Every",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Quantifiers",
+  "tags": ["grammar", "some", "any", "no", "every", "someone anyone"],
+  "summary": "Use some, any, no and every to talk about indefinite people and things.",
+  "explanation": {
+    "en": "Some is common in positive sentences, any in questions and negatives, no means zero, and every means all members of a group.",
+    "ru": "Some обычно используется в утверждениях, any — в вопросах и отрицаниях, no означает отсутствие, every — каждый элемент группы."
+  },
+  "forms": [
+    {
+      "label": "Things",
+      "pattern": "something · anything · nothing · everything",
+      "examples": [
+        {
+          "en": "I need something to eat.",
+          "ru": "Мне нужно что-нибудь поесть."
+        }
+      ]
+    },
+    {
+      "label": "People",
+      "pattern": "someone/somebody · anyone/anybody · no one/nobody · everyone/everybody",
+      "examples": [
+        {
+          "en": "Is anyone at home?",
+          "ru": "Кто-нибудь дома?"
+        }
+      ]
+    },
+    {
+      "label": "Nouns",
+      "pattern": "some/any/no + noun",
+      "examples": [
+        {
+          "en": "We haven't got any milk.",
+          "ru": "У нас нет молока."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I don't have no money.",
+      "right": "I don't have any money.",
+      "note": "Standard English normally avoids a double negative."
+    },
+    {
+      "wrong": "There is any juice.",
+      "right": "There is some juice.",
+      "note": "Use some in most positive statements."
+    }
+  ],
+  "exerciseIds": []
+}
