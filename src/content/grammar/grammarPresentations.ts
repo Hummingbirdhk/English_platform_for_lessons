@@ -456,6 +456,93 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['on Mondays', 'по понедельникам', 'We have PE on Mondays.'],
       ],
     },
+    tenseGuide: {
+      intro:
+        'Present Simple нужен не для того, что происходит прямо сейчас, а для обычного порядка вещей: привычек, повторяющихся действий, фактов, постоянных ситуаций и расписаний.',
+      uses: [
+        {
+          title: 'Привычки и регулярность',
+          text: 'То, что происходит обычно, часто, каждый день или по расписанию.',
+          exampleEn: 'I usually get up at seven.',
+          exampleRu: 'Я обычно встаю в семь.',
+        },
+        {
+          title: 'Факты и общие истины',
+          text: 'То, что считается постоянным или объективно верным.',
+          exampleEn: 'The Earth goes round the Sun.',
+          exampleRu: 'Земля вращается вокруг Солнца.',
+        },
+        {
+          title: 'Постоянные ситуации',
+          text: 'Работа, место жительства, интересы, то, что длится долго.',
+          exampleEn: 'My parents live in London.',
+          exampleRu: 'Мои родители живут в Лондоне.',
+        },
+        {
+          title: 'Расписания',
+          text: 'Поезда, уроки, фильмы, официальные события часто описываются Present Simple.',
+          exampleEn: 'The train leaves at 8:15.',
+          exampleRu: 'Поезд отправляется в 8:15.',
+        },
+      ],
+      markers: [
+        { marker: 'always / usually / often', meaning: 'всегда / обычно / часто', example: 'She often reads before bed.' },
+        { marker: 'sometimes / never', meaning: 'иногда / никогда', example: 'He never drinks coffee.' },
+        { marker: 'every day / week / year', meaning: 'каждый день / неделю / год', example: 'We study English every day.' },
+        { marker: 'on Mondays / at weekends', meaning: 'по понедельникам / по выходным', example: 'I play tennis on Saturdays.' },
+        { marker: 'How often...?', meaning: 'как часто?', example: 'How often do you go swimming?' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'I/you/we/they + V1; he/she/it + V-s/-es.',
+          exampleEn: 'She works at a school.',
+          exampleRu: 'Она работает в школе.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'don’t / doesn’t + V1. После doesn’t окончание -s у основного глагола исчезает.',
+          exampleEn: 'He doesn’t like milk.',
+          exampleRu: 'Он не любит молоко.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Do / Does + subject + V1?',
+          exampleEn: 'Does Tom play football?',
+          exampleRu: 'Том играет в футбол?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Глаголы состояния',
+          text: 'Like, know, understand, want, need, believe и похожие глаголы обычно употребляются в Simple, даже если речь идёт о настоящем моменте.',
+          exampleEn: 'I understand you.',
+          exampleRu: 'Я тебя понимаю.',
+        },
+        {
+          title: 'I promise / I agree / I suggest',
+          text: 'Иногда действие совершается самим высказыванием, поэтому используется Present Simple.',
+          exampleEn: 'I promise I won’t be late.',
+          exampleRu: 'Обещаю, что не опоздаю.',
+        },
+        {
+          title: 'He / she / it: правописание',
+          text: 'Обычно +s; после -s, -sh, -ch, -x, -o часто +es; consonant + y → -ies.',
+          exampleEn: 'watch → watches · study → studies',
+          exampleRu: 'watch → watches · study → studies',
+        },
+      ],
+      contrast: {
+        title: 'Present Simple или Present Continuous?',
+        leftTitle: 'Present Simple',
+        rightTitle: 'Present Continuous',
+        rows: [
+          { left: 'I work hard most days.', right: 'I’m working hard today.', note: 'обычно ↔ временно сегодня' },
+          { left: 'She lives in Bristol.', right: 'She’s staying with friends this week.', note: 'постоянно ↔ временно' },
+          { left: 'Water boils at 100°C.', right: 'The water is boiling now.', note: 'факт ↔ процесс сейчас' },
+        ],
+      },
+    },
   },
   'grammar-adverbs-frequency': {
     displayTitle: 'Наречия частоты: always / usually / often / never',
@@ -551,6 +638,93 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['Look! / Listen!', 'посмотри! / послушай!', 'Look! It is snowing.'],
       ],
     },
+    tenseGuide: {
+      intro:
+        'Present Continuous показывает действие или ситуацию в процессе: прямо сейчас, вокруг текущего момента, временно или в развитии. Главное ощущение — «это ещё не закончено».',
+      uses: [
+        {
+          title: 'Действие прямо сейчас',
+          text: 'Человек находится в середине действия в момент речи.',
+          exampleEn: 'Please be quiet. I’m trying to work.',
+          exampleRu: 'Пожалуйста, потише. Я пытаюсь работать.',
+        },
+        {
+          title: 'Процесс вокруг настоящего момента',
+          text: 'Действие уже началось, ещё не закончилось, но не обязано происходить именно в эту секунду.',
+          exampleEn: 'I’m reading a really good book at the moment.',
+          exampleRu: 'Сейчас я читаю очень хорошую книгу.',
+        },
+        {
+          title: 'Временная ситуация',
+          text: 'Что-то происходит только в текущий период, а не постоянно.',
+          exampleEn: 'I’m living with friends until I find a flat.',
+          exampleRu: 'Я живу у друзей, пока не найду квартиру.',
+        },
+        {
+          title: 'Изменение и развитие',
+          text: 'Часто с get, become, increase, improve, grow, change.',
+          exampleEn: 'Your English is getting better.',
+          exampleRu: 'Твой английский становится лучше.',
+        },
+      ],
+      markers: [
+        { marker: 'now / right now', meaning: 'сейчас / прямо сейчас', example: 'She is studying now.' },
+        { marker: 'at the moment', meaning: 'в данный момент', example: 'They are having lunch at the moment.' },
+        { marker: 'today / this week / this year', meaning: 'в текущий период', example: 'I’m working from home this week.' },
+        { marker: 'Look! / Listen!', meaning: 'смотри! / слушай!', example: 'Look! It’s snowing.' },
+        { marker: 'still', meaning: 'всё ещё', example: 'He is still sleeping.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'am / is / are + V-ing.',
+          exampleEn: 'They are playing outside.',
+          exampleRu: 'Они играют на улице.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'am not / isn’t / aren’t + V-ing.',
+          exampleEn: 'She isn’t working today.',
+          exampleRu: 'Она сегодня не работает.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Am / Is / Are + subject + V-ing?',
+          exampleEn: 'Are you listening to me?',
+          exampleRu: 'Ты меня слушаешь?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Правописание -ing',
+          text: 'make → making; run → running; lie → lying.',
+          exampleEn: 'She is making dinner.',
+          exampleRu: 'Она готовит ужин.',
+        },
+        {
+          title: 'Глаголы состояния',
+          text: 'Know, like, want, need, believe, understand, belong, seem обычно не используют Continuous.',
+          exampleEn: 'I know the answer. Not: I am knowing the answer.',
+          exampleRu: 'Я знаю ответ.',
+        },
+        {
+          title: 'Always + -ing',
+          text: 'Иногда выражает раздражение: действие происходит слишком часто.',
+          exampleEn: 'You’re always losing your keys!',
+          exampleRu: 'Ты постоянно теряешь ключи!',
+        },
+      ],
+      contrast: {
+        title: 'Present Continuous или Present Simple?',
+        leftTitle: 'Present Continuous',
+        rightTitle: 'Present Simple',
+        rows: [
+          { left: 'I’m staying here this week.', right: 'I live here.', note: 'временно ↔ постоянно' },
+          { left: 'It’s raining now.', right: 'It rains a lot here.', note: 'сейчас ↔ вообще' },
+          { left: 'She’s learning Italian.', right: 'She speaks Italian.', note: 'процесс ↔ умение/факт' },
+        ],
+      },
+    },
   },
   'grammar-present-simple-vs-continuous': {
     displayTitle: 'Present Simple vs Present Continuous',
@@ -589,6 +763,80 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       options: ['drinks / is drinking', 'is drinking / drinks', 'drink / drinking'],
       answer: 'drinks / is drinking',
       feedback: 'Usually → Simple; today (временная ситуация) → Continuous.',
+    },
+    tenseGuide: {
+      intro:
+        'Выбор между этими временами зависит не от слова «сейчас», а от того, как говорящий видит ситуацию: как привычную/постоянную или как временный процесс.',
+      uses: [
+        {
+          title: 'Simple = режим',
+          text: 'Привычки, факты, постоянные ситуации, расписания.',
+          exampleEn: 'I usually work from nine to five.',
+          exampleRu: 'Я обычно работаю с девяти до пяти.',
+        },
+        {
+          title: 'Continuous = кадр',
+          text: 'Действие сейчас или временная ситуация вокруг настоящего.',
+          exampleEn: 'I’m working from home today.',
+          exampleRu: 'Сегодня я работаю из дома.',
+        },
+        {
+          title: 'Permanent vs temporary',
+          text: 'Одна и та же тема может использовать разные времена в зависимости от длительности ситуации.',
+          exampleEn: 'Joe works hard. / Joe is working hard today.',
+          exampleRu: 'Джо обычно много работает. / Сегодня Джо много работает.',
+        },
+      ],
+      markers: [
+        { marker: 'usually / often / every day', meaning: 'часто Simple', example: 'She usually walks to school.' },
+        { marker: 'now / at the moment', meaning: 'часто Continuous', example: 'She is walking to school now.' },
+        { marker: 'today / this week', meaning: 'часто временный Continuous', example: 'I’m staying here this week.' },
+        { marker: 'always', meaning: 'Simple = регулярно; Continuous = слишком часто/раздражает', example: 'He always calls. / He’s always calling me!' },
+      ],
+      build: [
+        {
+          label: 'Present Simple',
+          rule: 'V1 / V-s; вопросы do/does; отрицания don’t/doesn’t.',
+          exampleEn: 'She works here.',
+          exampleRu: 'Она здесь работает.',
+        },
+        {
+          label: 'Present Continuous',
+          rule: 'am/is/are + V-ing.',
+          exampleEn: 'She is working here this week.',
+          exampleRu: 'На этой неделе она работает здесь.',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'State verbs',
+          text: 'Know, like, want, understand, believe, need обычно не ставятся в Continuous.',
+          exampleEn: 'I want some water.',
+          exampleRu: 'Я хочу воды.',
+        },
+        {
+          title: 'Think',
+          text: 'Think = «считать, иметь мнение» → Simple; think about = «обдумывать» → Continuous возможен.',
+          exampleEn: 'I think it’s good. / I’m thinking about your idea.',
+          exampleRu: 'Я думаю, это хорошо. / Я обдумываю твою идею.',
+        },
+        {
+          title: 'See / hear / smell / taste',
+          text: 'Эти глаголы восприятия часто употребляются в Simple.',
+          exampleEn: 'Do you see that man?',
+          exampleRu: 'Ты видишь того мужчину?',
+        },
+      ],
+      contrast: {
+        title: 'Быстрая проверка',
+        leftTitle: 'Present Simple',
+        rightTitle: 'Present Continuous',
+        rows: [
+          { left: 'обычно / регулярно', right: 'сейчас / временно', note: 'routine ↔ process' },
+          { left: 'постоянно', right: 'на текущий период', note: 'permanent ↔ temporary' },
+          { left: 'факт', right: 'изменение в процессе', note: 'fact ↔ development' },
+        ],
+      },
     },
   },
   'grammar-past-simple-regular': {
@@ -644,6 +892,87 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['in 2024', 'в 2024 году', 'They moved in 2024.'],
         ['when I was ten', 'когда мне было десять', 'I had a bike when I was ten.'],
       ],
+    },
+    tenseGuide: {
+      intro:
+        'Past Simple описывает завершённое действие или ситуацию в законченном прошлом. Важный вопрос: «это уже законченный момент/период?» Если да — Past Simple подходит очень часто.',
+      uses: [
+        {
+          title: 'Одно завершённое действие',
+          text: 'Событие произошло и закончилось.',
+          exampleEn: 'I watched a film yesterday.',
+          exampleRu: 'Вчера я посмотрел фильм.',
+        },
+        {
+          title: 'Последовательность событий',
+          text: 'Past Simple удобно рассказывает историю шаг за шагом.',
+          exampleEn: 'She opened the door, walked in and sat down.',
+          exampleRu: 'Она открыла дверь, вошла и села.',
+        },
+        {
+          title: 'Прошлая привычка или состояние',
+          text: 'То, что регулярно происходило раньше или было правдой тогда.',
+          exampleEn: 'We lived near the sea when I was a child.',
+          exampleRu: 'Мы жили у моря, когда я был ребёнком.',
+        },
+      ],
+      markers: [
+        { marker: 'yesterday', meaning: 'вчера', example: 'I called him yesterday.' },
+        { marker: 'last week / year', meaning: 'на прошлой неделе / в прошлом году', example: 'We travelled last year.' },
+        { marker: '... ago', meaning: '... назад', example: 'She arrived two days ago.' },
+        { marker: 'in 2024', meaning: 'в конкретном прошлом году', example: 'They moved in 2024.' },
+        { marker: 'when I was...', meaning: 'когда мне было...', example: 'I played chess when I was ten.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'Правильный глагол: V-ed.',
+          exampleEn: 'We visited our grandparents.',
+          exampleRu: 'Мы навестили бабушку и дедушку.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'didn’t + V1. -ed больше не нужно.',
+          exampleEn: 'We didn’t visit them on Sunday.',
+          exampleRu: 'Мы не навещали их в воскресенье.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Did + subject + V1?',
+          exampleEn: 'Did you visit them?',
+          exampleRu: 'Ты их навещал?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Правописание -ed',
+          text: 'live → lived; study → studied; stop → stopped.',
+          exampleEn: 'She studied all evening.',
+          exampleRu: 'Она занималась весь вечер.',
+        },
+        {
+          title: 'Произношение -ed',
+          text: 'Окончание может звучать как /t/, /d/ или /ɪd/, хотя пишется одинаково.',
+          exampleEn: 'worked / played / wanted',
+          exampleRu: 'worked / played / wanted',
+        },
+        {
+          title: 'Did уже показывает прошлое',
+          text: 'После did/didn’t всегда V1.',
+          exampleEn: 'Did she call? Not: Did she called?',
+          exampleRu: 'Она звонила?',
+        },
+      ],
+      contrast: {
+        title: 'Past Simple или Present Perfect?',
+        leftTitle: 'Past Simple',
+        rightTitle: 'Present Perfect',
+        rows: [
+          { left: 'I saw him yesterday.', right: 'I’ve seen him today.', note: 'законченный момент ↔ период ещё идёт' },
+          { left: 'When did you go?', right: 'Have you ever been?', note: 'когда именно ↔ опыт вообще' },
+          { left: 'She lost her keys last week.', right: 'She has lost her keys.', note: 'прошлое событие ↔ результат сейчас' },
+        ],
+      },
     },
   },
   'grammar-past-simple-irregular': {
@@ -723,6 +1052,86 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['write', 'wrote', 'written', 'писать'],
       ],
     },
+    tenseGuide: {
+      intro:
+        'Логика Past Simple та же, но у неправильных глаголов в утверждении используется особая форма V2. Эту форму нельзя вывести по одному правилу — её нужно запоминать.',
+      uses: [
+        {
+          title: 'Завершённое событие',
+          text: 'Неправильная форма используется только в утверждении.',
+          exampleEn: 'We went to the cinema yesterday.',
+          exampleRu: 'Вчера мы ходили в кино.',
+        },
+        {
+          title: 'Последовательность действий',
+          text: 'V2 помогает рассказывать прошлые события.',
+          exampleEn: 'He got up, ate breakfast and left.',
+          exampleRu: 'Он встал, позавтракал и ушёл.',
+        },
+        {
+          title: 'Was / were',
+          text: 'Глагол be имеет собственные формы: was / were.',
+          exampleEn: 'They were tired after the trip.',
+          exampleRu: 'После поездки они устали.',
+        },
+      ],
+      markers: [
+        { marker: 'yesterday', meaning: 'вчера', example: 'I saw her yesterday.' },
+        { marker: 'last...', meaning: 'прошлый...', example: 'We went there last week.' },
+        { marker: '... ago', meaning: '... назад', example: 'He came an hour ago.' },
+        { marker: 'in + past year', meaning: 'в прошлом году/дате', example: 'She was born in 2014.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'subject + V2: go → went, see → saw, buy → bought.',
+          exampleEn: 'She bought a new bag.',
+          exampleRu: 'Она купила новую сумку.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'didn’t + V1: didn’t go, didn’t see, didn’t buy.',
+          exampleEn: 'She didn’t buy the shoes.',
+          exampleRu: 'Она не купила туфли.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Did + subject + V1?',
+          exampleEn: 'Did she buy it?',
+          exampleRu: 'Она это купила?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'V2 только в утверждении',
+          text: 'После did/didn’t неправильная форма исчезает.',
+          exampleEn: 'Did you go? Not: Did you went?',
+          exampleRu: 'Ты ходил?',
+        },
+        {
+          title: 'Was / were без did',
+          text: 'С be вопросы и отрицания строятся без did.',
+          exampleEn: 'Were you at home? / I wasn’t tired.',
+          exampleRu: 'Ты был дома? / Я не устал.',
+        },
+        {
+          title: 'Учить группами',
+          text: 'Удобно запоминать похожие модели: buy–bought–bought; think–thought–thought.',
+          exampleEn: 'teach–taught–taught',
+          exampleRu: 'teach–taught–taught',
+        },
+      ],
+      contrast: {
+        title: 'V1, V2 или V3?',
+        leftTitle: 'Past Simple',
+        rightTitle: 'Present Perfect',
+        rows: [
+          { left: 'went = V2', right: 'gone = V3', note: 'I went ↔ I have gone' },
+          { left: 'saw = V2', right: 'seen = V3', note: 'I saw ↔ I have seen' },
+          { left: 'wrote = V2', right: 'written = V3', note: 'I wrote ↔ I have written' },
+        ],
+      },
+    },
   },
   'grammar-past-continuous': {
     displayTitle: 'Past Continuous',
@@ -762,6 +1171,80 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       answer: 'were having',
       feedback: 'They → were + having.',
     },
+    tenseGuide: {
+      intro:
+        'Past Continuous показывает действие в процессе в определённый момент прошлого. Оно помогает «остановить кадр» и показать, что происходило вокруг.',
+      uses: [
+        {
+          title: 'Процесс в конкретный момент',
+          text: 'Важно не начало и не конец, а то, что действие шло в этот момент.',
+          exampleEn: 'At eight o’clock I was doing my homework.',
+          exampleRu: 'В восемь часов я делал домашнее задание.',
+        },
+        {
+          title: 'Фон истории',
+          text: 'Описание того, что происходило вокруг главного события.',
+          exampleEn: 'People were talking and music was playing.',
+          exampleRu: 'Люди разговаривали, играла музыка.',
+        },
+        {
+          title: 'Два параллельных процесса',
+          text: 'Два действия могли происходить одновременно.',
+          exampleEn: 'While I was cooking, he was studying.',
+          exampleRu: 'Пока я готовила, он занимался.',
+        },
+      ],
+      markers: [
+        { marker: 'at 7 p.m. yesterday', meaning: 'в конкретный момент', example: 'At 7 p.m. I was having dinner.' },
+        { marker: 'while', meaning: 'пока / в то время как', example: 'While I was reading, she was drawing.' },
+        { marker: 'when', meaning: 'когда другое событие произошло', example: 'I was sleeping when you called.' },
+        { marker: 'all evening', meaning: 'весь вечер как процесс', example: 'They were studying all evening.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'was / were + V-ing.',
+          exampleEn: 'I was reading. They were talking.',
+          exampleRu: 'Я читал. Они разговаривали.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'wasn’t / weren’t + V-ing.',
+          exampleEn: 'She wasn’t sleeping.',
+          exampleRu: 'Она не спала.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Was / Were + subject + V-ing?',
+          exampleEn: 'What were you doing?',
+          exampleRu: 'Что ты делал?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Не для всех прошедших действий',
+          text: 'Если событие просто случилось и закончилось, нужен Past Simple.',
+          exampleEn: 'The phone rang at nine.',
+          exampleRu: 'Телефон зазвонил в девять.',
+        },
+        {
+          title: 'Фон + событие',
+          text: 'Continuous создаёт фон, Simple показывает событие.',
+          exampleEn: 'I was walking home when it started to rain.',
+          exampleRu: 'Я шёл домой, когда начался дождь.',
+        },
+      ],
+      contrast: {
+        title: 'Past Continuous или Past Simple?',
+        leftTitle: 'Past Continuous',
+        rightTitle: 'Past Simple',
+        rows: [
+          { left: 'was walking', right: 'started', note: 'процесс ↔ событие' },
+          { left: 'were talking', right: 'the teacher came in', note: 'фон ↔ действие' },
+          { left: 'was raining', right: 'the rain stopped', note: 'длилось ↔ закончилось' },
+        ],
+      },
+    },
   },
   'grammar-past-simple-vs-continuous': {
     displayTitle: 'Past Simple vs Past Continuous',
@@ -800,6 +1283,73 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       options: ['watched / was coming', 'was watching / came', 'was watch / came'],
       answer: 'was watching / came',
       feedback: 'Фон → was watching; событие → came.',
+    },
+    tenseGuide: {
+      intro:
+        'В рассказах эти времена часто работают вместе: Past Continuous показывает сцену и процесс, Past Simple двигает события вперёд.',
+      uses: [
+        {
+          title: 'Фон + событие',
+          text: 'Длинное действие уже шло, когда произошло короткое событие.',
+          exampleEn: 'I was walking home when it started to rain.',
+          exampleRu: 'Я шёл домой, когда начался дождь.',
+        },
+        {
+          title: 'Два процесса одновременно',
+          text: 'Если оба действия идут параллельно, оба могут быть Continuous.',
+          exampleEn: 'While I was cooking, Tom was doing homework.',
+          exampleRu: 'Пока я готовила, Том делал домашнее задание.',
+        },
+        {
+          title: 'Цепочка событий',
+          text: 'Если действия происходят одно за другим, обычно нужен Past Simple.',
+          exampleEn: 'He opened the door, came in and sat down.',
+          exampleRu: 'Он открыл дверь, вошёл и сел.',
+        },
+      ],
+      markers: [
+        { marker: 'when', meaning: 'часто вводит короткое событие', example: 'I was sleeping when the phone rang.' },
+        { marker: 'while', meaning: 'часто вводит процесс', example: 'While I was studying, she was cooking.' },
+        { marker: 'at that moment', meaning: 'процесс в конкретный момент', example: 'At that moment, they were driving home.' },
+      ],
+      build: [
+        {
+          label: 'Фон',
+          rule: 'was/were + V-ing.',
+          exampleEn: 'We were watching TV...',
+          exampleRu: 'Мы смотрели телевизор...',
+        },
+        {
+          label: 'Событие',
+          rule: 'Past Simple: V2 / V-ed.',
+          exampleEn: '...when the lights went out.',
+          exampleRu: '...когда погас свет.',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Не ориентируйся только на длину',
+          text: 'Главное — роль действия: процесс или завершённое событие.',
+          exampleEn: 'It rained all day.',
+          exampleRu: 'Дождь шёл весь день.',
+        },
+        {
+          title: 'While + два Continuous',
+          text: 'Подходит для двух одновременных действий.',
+          exampleEn: 'While she was reading, I was writing.',
+          exampleRu: 'Пока она читала, я писал.',
+        },
+      ],
+      contrast: {
+        title: 'Как читать историю',
+        leftTitle: 'Past Continuous',
+        rightTitle: 'Past Simple',
+        rows: [
+          { left: 'Что уже происходило?', right: 'Что произошло?', note: 'background ↔ event' },
+          { left: 'линия процесса', right: 'точка события', note: 'ongoing ↔ completed' },
+          { left: 'while', right: 'when', note: 'частая, но не абсолютная подсказка' },
+        ],
+      },
     },
   },
   'grammar-present-perfect': {
@@ -860,6 +1410,94 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['since', 'с момента', 'I have lived here since 2024.'],
       ],
     },
+    tenseGuide: {
+      intro:
+        'Present Perfect связывает прошлое с настоящим. Нам важен опыт, результат сейчас или период, который ещё не закончился, а не конкретный законченный момент прошлого.',
+      uses: [
+        {
+          title: 'Жизненный опыт',
+          text: 'Говорим, случалось ли это когда-нибудь; конкретная дата не важна.',
+          exampleEn: 'Have you ever been to Italy?',
+          exampleRu: 'Ты когда-нибудь был в Италии?',
+        },
+        {
+          title: 'Результат сейчас',
+          text: 'Действие произошло раньше, но его результат важен в настоящем.',
+          exampleEn: 'I’ve lost my keys.',
+          exampleRu: 'Я потерял ключи (и сейчас не могу их найти).',
+        },
+        {
+          title: 'Недавнее событие',
+          text: 'Часто с just, already, yet.',
+          exampleEn: 'She has just arrived.',
+          exampleRu: 'Она только что приехала.',
+        },
+        {
+          title: 'Незаконченный период',
+          text: 'Today, this week, this year — если период ещё продолжается.',
+          exampleEn: 'I’ve had three lessons today.',
+          exampleRu: 'Сегодня у меня уже было три урока.',
+        },
+      ],
+      markers: [
+        { marker: 'ever / never', meaning: 'когда-либо / никогда', example: 'Have you ever tried sushi?' },
+        { marker: 'just', meaning: 'только что', example: 'He has just left.' },
+        { marker: 'already', meaning: 'уже', example: 'We have already finished.' },
+        { marker: 'yet', meaning: 'уже? / ещё нет', example: 'Have you finished yet?' },
+        { marker: 'for', meaning: 'в течение периода', example: 'I have lived here for two years.' },
+        { marker: 'since', meaning: 'с определённого момента', example: 'I have lived here since 2024.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'have / has + V3.',
+          exampleEn: 'She has finished her homework.',
+          exampleRu: 'Она закончила домашнее задание.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'haven’t / hasn’t + V3.',
+          exampleEn: 'I haven’t seen him today.',
+          exampleRu: 'Я сегодня его не видел.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Have / Has + subject + V3?',
+          exampleEn: 'Have you finished?',
+          exampleRu: 'Ты закончил?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Не используем с законченной датой',
+          text: 'Yesterday, last year, in 2020 обычно требуют Past Simple.',
+          exampleEn: 'I saw him yesterday. Not: I have seen him yesterday.',
+          exampleRu: 'Я видел его вчера.',
+        },
+        {
+          title: 'Been to vs gone to',
+          text: 'been to = был и вернулся; gone to = ушёл/уехал и ещё там.',
+          exampleEn: 'She has been to Paris. / She has gone to Paris.',
+          exampleRu: 'Она была в Париже. / Она уехала в Париж.',
+        },
+        {
+          title: 'V3 у неправильных глаголов',
+          text: 'Нужна третья форма: go–gone, see–seen, write–written.',
+          exampleEn: 'I have seen this film.',
+          exampleRu: 'Я видел этот фильм.',
+        },
+      ],
+      contrast: {
+        title: 'Present Perfect или Past Simple?',
+        leftTitle: 'Present Perfect',
+        rightTitle: 'Past Simple',
+        rows: [
+          { left: 'Have you ever been to Spain?', right: 'When did you go to Spain?', note: 'опыт ↔ конкретное время' },
+          { left: 'I’ve lost my keys.', right: 'I lost my keys yesterday.', note: 'результат сейчас ↔ факт прошлого' },
+          { left: 'I’ve seen her today.', right: 'I saw her yesterday.', note: 'период ещё идёт ↔ законченный период' },
+        ],
+      },
+    },
   },
   'grammar-future-going-to': {
     displayTitle: 'Be going to: планы и намерения',
@@ -898,6 +1536,79 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       options: ['will', 'am going to', 'am'],
       answer: 'am going to',
       feedback: 'План уже принят → be going to.',
+    },
+    tenseGuide: {
+      intro:
+        'Be going to показывает будущее, которое уже «началось» в голове или в текущей ситуации: решение принято заранее или уже видны признаки того, что произойдёт.',
+      uses: [
+        {
+          title: 'План / намерение',
+          text: 'Решение принято до момента речи.',
+          exampleEn: 'I’m going to learn Spanish.',
+          exampleRu: 'Я собираюсь учить испанский.',
+        },
+        {
+          title: 'Прогноз по признакам',
+          text: 'Сейчас есть видимая причина ожидать событие.',
+          exampleEn: 'Look at those clouds. It’s going to rain.',
+          exampleRu: 'Посмотри на тучи. Сейчас пойдёт дождь.',
+        },
+        {
+          title: 'Намерение без точной договорённости',
+          text: 'План есть, но время/организация могут быть ещё не определены.',
+          exampleEn: 'I’m going to clean my room tomorrow.',
+          exampleRu: 'Я собираюсь убрать комнату завтра.',
+        },
+      ],
+      markers: [
+        { marker: 'tomorrow / next week', meaning: 'будущее время', example: 'I’m going to call her tomorrow.' },
+        { marker: 'Look!', meaning: 'видимый признак', example: 'Look! He’s going to fall.' },
+        { marker: 'I’ve decided...', meaning: 'решение уже принято', example: 'I’ve decided I’m going to study more.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'am / is / are + going to + V1.',
+          exampleEn: 'She is going to travel.',
+          exampleRu: 'Она собирается путешествовать.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'am not / isn’t / aren’t + going to + V1.',
+          exampleEn: 'I’m not going to eat that.',
+          exampleRu: 'Я не собираюсь это есть.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Am / Is / Are + subject + going to + V1?',
+          exampleEn: 'Are you going to stay?',
+          exampleRu: 'Ты собираешься остаться?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Going to vs Present Continuous',
+          text: 'Going to = намерение; Present Continuous = уже организованная договорённость.',
+          exampleEn: 'I’m going to visit Anna. / I’m meeting Anna at six.',
+          exampleRu: 'Я собираюсь навестить Анну. / Я встречаюсь с Анной в шесть.',
+        },
+        {
+          title: 'Was / were going to',
+          text: 'Можно говорить о прошлом намерении, которое могло не осуществиться.',
+          exampleEn: 'We were going to travel by train, but we drove.',
+          exampleRu: 'Мы собирались ехать поездом, но поехали на машине.',
+        },
+      ],
+      contrast: {
+        title: 'Going to или will?',
+        leftTitle: 'Going to',
+        rightTitle: 'Will',
+        rows: [
+          { left: 'решение уже принято', right: 'решение сейчас', note: 'plan before ↔ decision now' },
+          { left: 'прогноз по видимым признакам', right: 'мнение/предположение', note: 'evidence ↔ opinion' },
+          { left: 'I’m going to study tonight.', right: 'I’ll help you.', note: 'plan ↔ spontaneous offer' },
+        ],
+      },
     },
   },
   'grammar-future-present-continuous': {
@@ -938,6 +1649,79 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       answer: 'am seeing',
       feedback: 'Есть конкретная запись на время → arrangement.',
     },
+    tenseGuide: {
+      intro:
+        'Present Continuous может говорить о будущем, когда событие уже организовано: есть договорённость, запись, билет, конкретное время или другой признак фиксированного плана.',
+      uses: [
+        {
+          title: 'Личная договорённость',
+          text: 'Вы уже договорились с человеком.',
+          exampleEn: 'I’m meeting Kate at six.',
+          exampleRu: 'Я встречаюсь с Кейт в шесть.',
+        },
+        {
+          title: 'Запись / бронирование',
+          text: 'Есть назначенное время или оформленный план.',
+          exampleEn: 'I’m seeing the dentist tomorrow.',
+          exampleRu: 'Завтра я иду к стоматологу.',
+        },
+        {
+          title: 'Поездка с организацией',
+          text: 'Билеты или маршрут уже определены.',
+          exampleEn: 'We’re flying to Rome on Friday.',
+          exampleRu: 'Мы летим в Рим в пятницу.',
+        },
+      ],
+      markers: [
+        { marker: 'tomorrow / tonight', meaning: 'конкретное будущее время', example: 'I’m working tonight.' },
+        { marker: 'at six / on Friday', meaning: 'назначенное время', example: 'We’re meeting at six.' },
+        { marker: 'next week', meaning: 'будущий период', example: 'She’s starting a new course next week.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'am/is/are + V-ing + future time.',
+          exampleEn: 'We are leaving tomorrow.',
+          exampleRu: 'Мы уезжаем завтра.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'am not/isn’t/aren’t + V-ing.',
+          exampleEn: 'I’m not working on Saturday.',
+          exampleRu: 'В субботу я не работаю.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Am/Is/Are + subject + V-ing?',
+          exampleEn: 'What are you doing tonight?',
+          exampleRu: 'Что ты делаешь сегодня вечером?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Не расписание',
+          text: 'Официальные расписания обычно используют Present Simple.',
+          exampleEn: 'The film starts at 8:15.',
+          exampleRu: 'Фильм начинается в 8:15.',
+        },
+        {
+          title: 'Не просто намерение',
+          text: 'Если договорённости ещё нет, going to часто естественнее.',
+          exampleEn: 'I’m going to look for a new phone.',
+          exampleRu: 'Я собираюсь поискать новый телефон.',
+        },
+      ],
+      contrast: {
+        title: 'Три способа говорить о будущем',
+        leftTitle: 'Arrangement',
+        rightTitle: 'Другие варианты',
+        rows: [
+          { left: 'I’m meeting Tom at six.', right: 'I’m going to meet Tom sometime.', note: 'фиксировано ↔ намерение' },
+          { left: 'We’re flying on Friday.', right: 'The flight leaves at 9.', note: 'личный план ↔ расписание' },
+          { left: 'I’m seeing the dentist tomorrow.', right: 'I’ll call the dentist now.', note: 'запись ↔ решение сейчас' },
+        ],
+      },
+    },
   },
   'grammar-future-will': {
     displayTitle: 'Will / won’t: прогнозы и решения',
@@ -976,6 +1760,92 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       options: ['am going', 'will', 'will to'],
       answer: 'will',
       feedback: 'Решение принимается прямо сейчас → will.',
+    },
+    tenseGuide: {
+      intro:
+        'Will используется, когда мы принимаем решение в момент речи, предлагаем помощь, обещаем что-то или просто выражаем мнение/прогноз о будущем.',
+      uses: [
+        {
+          title: 'Спонтанное решение',
+          text: 'Решение принимается прямо сейчас.',
+          exampleEn: 'The phone is ringing. I’ll answer it.',
+          exampleRu: 'Телефон звонит. Я отвечу.',
+        },
+        {
+          title: 'Предложение помощи',
+          text: 'Will часто появляется в реакциях на ситуацию.',
+          exampleEn: 'That bag looks heavy. I’ll help you.',
+          exampleRu: 'Сумка выглядит тяжёлой. Я помогу.',
+        },
+        {
+          title: 'Обещание',
+          text: 'Will / won’t удобно для обещаний.',
+          exampleEn: 'I won’t tell anyone.',
+          exampleRu: 'Я никому не скажу.',
+        },
+        {
+          title: 'Прогноз-мнение',
+          text: 'Мы предполагаем, что что-то произойдёт.',
+          exampleEn: 'I think it will be sunny tomorrow.',
+          exampleRu: 'Думаю, завтра будет солнечно.',
+        },
+      ],
+      markers: [
+        { marker: 'I think / probably', meaning: 'мнение / вероятность', example: 'I think she will come.' },
+        { marker: 'I promise', meaning: 'обещание', example: 'I promise I’ll call.' },
+        { marker: 'I’ll...', meaning: 'решение сейчас', example: 'I’ll open the window.' },
+        { marker: 'won’t', meaning: 'не будет / отказывается', example: 'The car won’t start.' },
+      ],
+      build: [
+        {
+          label: 'Утверждение',
+          rule: 'will + V1. Для всех лиц форма одинаковая.',
+          exampleEn: 'She will come later.',
+          exampleRu: 'Она придёт позже.',
+        },
+        {
+          label: 'Отрицание',
+          rule: 'will not = won’t + V1.',
+          exampleEn: 'I won’t forget.',
+          exampleRu: 'Я не забуду.',
+        },
+        {
+          label: 'Вопрос',
+          rule: 'Will + subject + V1?',
+          exampleEn: 'Will you help me?',
+          exampleRu: 'Ты мне поможешь?',
+        },
+      ],
+      specialCases: [
+        {
+          title: 'Will you...?',
+          text: 'Может быть просьбой.',
+          exampleEn: 'Will you please close the door?',
+          exampleRu: 'Закрой, пожалуйста, дверь.',
+        },
+        {
+          title: 'Shall I / Shall we?',
+          text: 'Используется для предложений и совместных решений, особенно в вопросах.',
+          exampleEn: 'Shall we go?',
+          exampleRu: 'Пойдём?',
+        },
+        {
+          title: 'Не для заранее организованного плана',
+          text: 'Если всё уже договорено, Present Continuous обычно естественнее.',
+          exampleEn: 'I’m meeting Kate tomorrow. Not: I’ll meet Kate tomorrow.',
+          exampleRu: 'Я встречаюсь с Кейт завтра.',
+        },
+      ],
+      contrast: {
+        title: 'Will или going to?',
+        leftTitle: 'Will',
+        rightTitle: 'Going to',
+        rows: [
+          { left: 'решение сейчас', right: 'решение уже принято', note: 'now ↔ before now' },
+          { left: 'мнение: I think...', right: 'признаки сейчас: Look!', note: 'opinion ↔ evidence' },
+          { left: 'I’ll help you.', right: 'I’m going to study tonight.', note: 'offer ↔ plan' },
+        ],
+      },
     },
   },
   'grammar-can-may-be-able-to': {
