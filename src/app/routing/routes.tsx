@@ -1,14 +1,38 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-const HomePage = lazy(() => import('../../pages/home/HomePage').then((module) => ({ default: module.HomePage })));
-const LessonPage = lazy(() => import('../../pages/lesson/LessonPage').then((module) => ({ default: module.LessonPage })));
-const LessonsPage = lazy(() => import('../../pages/lessons/LessonsPage').then((module) => ({ default: module.LessonsPage })));
-const MaterialPage = lazy(() => import('../../pages/materials/MaterialPage').then((module) => ({ default: module.MaterialPage })));
-const MaterialsPage = lazy(() => import('../../pages/materials/MaterialsPage').then((module) => ({ default: module.MaterialsPage })));
-const NotFoundPage = lazy(() => import('../../pages/not-found/NotFoundPage').then((module) => ({ default: module.NotFoundPage })));
-const StudentPage = lazy(() => import('../../pages/students/StudentPage').then((module) => ({ default: module.StudentPage })));
-const StudentsPage = lazy(() => import('../../pages/students/StudentsPage').then((module) => ({ default: module.StudentsPage })));
+const HomePage = lazy(() =>
+  import('../../pages/home/HomePage').then((module) => ({ default: module.HomePage })),
+);
+const LessonPage = lazy(() =>
+  import('../../pages/lesson/LessonPage').then((module) => ({ default: module.LessonPage })),
+);
+const LessonsPage = lazy(() =>
+  import('../../pages/lessons/LessonsPage').then((module) => ({ default: module.LessonsPage })),
+);
+const MaterialPage = lazy(() =>
+  import('../../pages/materials/MaterialPage').then((module) => ({
+    default: module.MaterialPage,
+  })),
+);
+const MaterialsPage = lazy(() =>
+  import('../../pages/materials/MaterialsPage').then((module) => ({
+    default: module.MaterialsPage,
+  })),
+);
+const NotFoundPage = lazy(() =>
+  import('../../pages/not-found/NotFoundPage').then((module) => ({
+    default: module.NotFoundPage,
+  })),
+);
+const StudentPage = lazy(() =>
+  import('../../pages/students/StudentPage').then((module) => ({ default: module.StudentPage })),
+);
+const StudentsPage = lazy(() =>
+  import('../../pages/students/StudentsPage').then((module) => ({
+    default: module.StudentsPage,
+  })),
+);
 const TeacherDashboardPage = lazy(() =>
   import('../../pages/teacher/TeacherDashboardPage').then((module) => ({
     default: module.TeacherDashboardPage,
