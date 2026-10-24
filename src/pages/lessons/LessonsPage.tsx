@@ -1,4 +1,5 @@
 import { loadAllContent } from '../../content/loadContent';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function LessonsPage() {
@@ -12,6 +13,8 @@ export function LessonsPage() {
           <h1>Готовые последовательности</h1>
           <p>Собирай занятия из материалов и интерактивных упражнений без дублирования контента.</p>
         </div>
+        <BrandArtifact kind="fire" className="page-hero__fire" />
+        <BrandArtifact kind="spark" className="page-hero__spark" />
       </section>
 
       <section className="lesson-library" aria-label="Уроки">

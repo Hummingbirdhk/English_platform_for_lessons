@@ -2,6 +2,7 @@ import { Empty, Input, Segmented, Select } from 'antd';
 import { useMemo, useState } from 'react';
 import { loadAllContent } from '../../content/loadContent';
 import { MaterialCard } from '../../entities/material/MaterialCard';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 
 const typeOptions = [
   { label: 'Все', value: 'all' },
@@ -50,6 +51,8 @@ export function MaterialsPage() {
           <h1>Библиотека для уроков</h1>
           <p>Ищи по теме, уровню или типу — один материал можно использовать в разных уроках.</p>
         </div>
+        <BrandArtifact kind="spark" className="page-hero__spark" />
+        <BrandArtifact kind="heart" className="page-hero__smile" />
       </section>
 
       <section className="materials-toolbar" aria-label="Фильтры материалов">

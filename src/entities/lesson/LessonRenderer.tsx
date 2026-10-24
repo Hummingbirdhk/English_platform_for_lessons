@@ -1,4 +1,5 @@
 import type { ExerciseDefinition, Lesson, Material } from '../../content/types';
+import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { renderLessonSection } from './sectionRenderers';
 
 export function LessonRenderer({
@@ -22,6 +23,8 @@ export function LessonRenderer({
         <div className="progress-track lesson-hero__progress" aria-hidden="true">
           <div className="progress-track__fill progress-track__fill--dark" />
         </div>
+        <BrandArtifact kind="fire" className="lesson-hero__fire" />
+        <BrandArtifact kind="spark" className="lesson-hero__spark" />
       </section>
 
       <section className="lesson-content">
