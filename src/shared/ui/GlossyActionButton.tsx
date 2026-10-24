@@ -30,12 +30,7 @@ function actionClassName(size: ActionSize, className?: string) {
     .join(' ');
 }
 
-export function GlossyActionLink({
-  to,
-  label,
-  size = 'md',
-  className,
-}: GlossyActionLinkProps) {
+export function GlossyActionLink({ to, label, size = 'md', className }: GlossyActionLinkProps) {
   return (
     <Link to={to} aria-label={label} className={actionClassName(size, className)}>
       <span className="glossy-action-button__icon">
@@ -53,12 +48,7 @@ export function GlossyActionButton({
   ...props
 }: GlossyActionButtonProps) {
   return (
-    <button
-      {...props}
-      type={type}
-      aria-label={label}
-      className={actionClassName(size, className)}
-    >
+    <button {...props} type={type} aria-label={label} className={actionClassName(size, className)}>
       <span className="glossy-action-button__icon">
         <ActionIcon />
       </span>

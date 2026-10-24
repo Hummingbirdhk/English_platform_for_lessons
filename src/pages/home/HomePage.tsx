@@ -49,10 +49,7 @@ export function HomePage() {
 
       <section className="section-entry-grid" aria-label="Основные разделы">
         {sections.map((section) => (
-          <article
-            key={section.to}
-            className={`section-entry section-entry--${section.color}`}
-          >
+          <article key={section.to} className={`section-entry section-entry--${section.color}`}>
             <span className="section-entry__meta">{section.count} В БАЗЕ</span>
             <BrandArtifact kind={section.artifact} className="section-entry__artifact" />
             <h2>{section.title}</h2>

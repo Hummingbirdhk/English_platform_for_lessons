@@ -2,10 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
-import {
-  GlossyActionButton,
-  GlossyActionLink,
-} from '../../../src/shared/ui/GlossyActionButton';
+import { GlossyActionButton, GlossyActionLink } from '../../../src/shared/ui/GlossyActionButton';
 
 describe('GlossyActionButton', () => {
   it('renders a keyboard-accessible navigation link', () => {
