@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
 import type { StudentProfile } from '../../content/types';
+import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function StudentCard({ student }: { student: StudentProfile }) {
   return (
-    <Link to={`/students/${student.id}`} className="student-tile">
+    <article className="student-tile">
       <div className="student-tile__top">
         <span className="student-avatar">{student.displayName.charAt(0)}</span>
         <span className="level-chip">{student.level}</span>
@@ -13,9 +13,12 @@ export function StudentCard({ student }: { student: StudentProfile }) {
         Grade {student.grade} · {student.curriculum}
       </p>
       <div className="student-focus">{student.currentFocus.join(' · ')}</div>
-      <span className="student-tile__arrow" aria-hidden="true">
-        →
-      </span>
-    </Link>
+      <GlossyActionLink
+        to={`/students/${student.id}`}
+        label={`Открыть профиль: ${student.displayName}`}
+        size="sm"
+        className="student-tile__action"
+      />
+    </article>
   );
 }
