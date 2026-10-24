@@ -121,15 +121,14 @@ function formatLessonDate(date: Date) {
 }
 
 function formatLessonTime(date: Date) {
-  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(
-    date.getUTCMinutes(),
-  ).padStart(2, '0')} · 60 минут`;
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
+    2,
+    '0',
+  )} · 60 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
-  return `${String(date.getUTCDate()).padStart(2, '0')} ${monthNamesGenitive[
-    date.getUTCMonth()
-  ]}`;
+  return `${String(date.getUTCDate()).padStart(2, '0')} ${monthNamesGenitive[date.getUTCMonth()]}`;
 }
 
 export function TeacherDashboardPage() {
@@ -194,8 +193,7 @@ export function TeacherDashboardPage() {
     return {
       key: overrideKey,
       date,
-      status:
-        attendanceOverrides[activeStudent.id]?.[overrideKey] ?? getStatus(entry.attendance),
+      status: attendanceOverrides[activeStudent.id]?.[overrideKey] ?? getStatus(entry.attendance),
       note: entry.reschedule,
       payment: entry.payment,
     };
