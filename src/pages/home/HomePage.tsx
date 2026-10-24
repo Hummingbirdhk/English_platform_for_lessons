@@ -1,12 +1,9 @@
-import { Link } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
 import { BrandArtifact, WallPattern } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function HomePage() {
   const { lessons, materials, students } = loadAllContent();
-  const firstLesson = lessons[0];
-
   const sections = [
     {
       to: '/materials',
@@ -65,21 +62,7 @@ export function HomePage() {
         ))}
       </section>
 
-      <section className="home-bottom-grid">
-        {firstLesson ? (
-          <Link to={`/lesson/${firstLesson.id}`} className="continue-card">
-            <div>
-              <div className="continue-card__title">Продолжить: {firstLesson.title}</div>
-              <div className="continue-card__meta">
-                {firstLesson.topic} · {firstLesson.level} · Grade {firstLesson.grade}
-              </div>
-            </div>
-            <div className="progress-track" aria-hidden="true">
-              <div className="progress-track__fill" />
-            </div>
-          </Link>
-        ) : null}
-
+      <section className="home-bottom-grid home-bottom-grid--single">
         <article className="quick-card">
           <div className="quick-card__title">Открыть библиотеку материалов</div>
           <div className="quick-card__meta">Grammar, vocabulary, reading и video</div>
