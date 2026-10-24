@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   base: '/English_platform_for_lessons/',
@@ -12,7 +12,11 @@ export default defineConfig({
         manualChunks(id) {
           if (!id.includes('node_modules')) return undefined;
           if (id.includes('/antd/') || id.includes('/@ant-design/')) return 'vendor-antd';
-          if (id.includes('/react/') || id.includes('/react-dom/') || id.includes('/react-router')) {
+          if (
+            id.includes('/react/') ||
+            id.includes('/react-dom/') ||
+            id.includes('/react-router')
+          ) {
             return 'vendor-react';
           }
           if (id.includes('/@reduxjs/') || id.includes('/react-redux/')) return 'vendor-redux';
