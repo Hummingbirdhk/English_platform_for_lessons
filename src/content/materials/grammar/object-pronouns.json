@@ -1,11 +1,17 @@
 {
   "id": "grammar-object-pronouns",
   "type": "grammar",
-  "title": "Object pronouns",
+  "title": "Object & reflexive pronouns",
   "grade": 6,
   "level": "A2",
   "topic": "Pronouns & determiners",
-  "tags": ["grammar", "object pronouns", "me you him her it us them"],
+  "tags": [
+    "grammar",
+    "object pronouns",
+    "me you him her it us them",
+    "reflexive pronouns",
+    "myself yourself himself herself themselves"
+  ],
   "summary": "Use object pronouns after verbs and prepositions.",
   "explanation": {
     "en": "Object pronouns receive the action: me, you, him, her, it, us, them.",
@@ -31,6 +37,20 @@
           "ru": "Пойдём с нами."
         }
       ]
+    },
+    {
+      "label": "Reflexive pronouns",
+      "pattern": "myself · yourself · himself · herself · itself · ourselves · yourselves · themselves",
+      "examples": [
+        {
+          "en": "He hurt himself.",
+          "ru": "Он поранился."
+        },
+        {
+          "en": "We made it ourselves.",
+          "ru": "Мы сделали это сами."
+        }
+      ]
     }
   ],
   "commonMistakes": [
@@ -43,6 +63,11 @@
       "wrong": "Give it to I.",
       "right": "Give it to me.",
       "note": "After a preposition, use an object pronoun."
+    },
+    {
+      "wrong": "She looked at her in the mirror.",
+      "right": "She looked at herself in the mirror.",
+      "note": "Subject and object are the same person."
     }
   ],
   "exerciseIds": []
