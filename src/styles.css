@@ -15,7 +15,7 @@
     'TT Travels Next Trial Variable', 'TT Travels Next Trl', Inter, ui-sans-serif, system-ui,
     sans-serif;
   font-family: var(--font-text);
-  background: var(--color-bg);
+  background: #fff;
   color: var(--color-ink);
 }
 
@@ -26,7 +26,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--color-bg);
+  background: #fff;
   color: var(--color-ink);
 }
 a {
@@ -40,14 +40,30 @@ select {
 }
 
 .app-shell {
+  position: relative;
   min-height: 100vh;
+  isolation: isolate;
+  background: #fff;
+}
+
+.app-shell::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('./assets/artifacts/wall-pattern.svg');
+  background-repeat: repeat-y;
+  background-position: center 96px;
+  background-size: min(1176px, 100vw) auto;
+  opacity: 0.72;
 }
 .app-header {
   position: sticky;
   top: 0;
   z-index: 50;
   padding: 22px 0 0;
-  background: linear-gradient(var(--color-bg) 70%, rgba(247, 247, 244, 0));
+  background: linear-gradient(#fff 70%, rgba(255, 255, 255, 0));
 }
 .app-header__inner {
   width: min(1360px, calc(100% - 48px));
@@ -100,6 +116,8 @@ select {
 }
 
 .page-shell {
+  position: relative;
+  z-index: 1;
   width: min(1360px, calc(100% - 48px));
   margin: 0 auto;
   padding: 28px 0 72px;
@@ -174,33 +192,6 @@ select {
   height: auto;
   user-select: none;
   pointer-events: none;
-}
-
-.home-hero > :not(.wall-pattern),
-.page-hero > :not(.wall-pattern),
-.lesson-hero > :not(.wall-pattern),
-.student-hero > :not(.wall-pattern) {
-  position: relative;
-  z-index: 2;
-}
-
-.wall-pattern {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-  opacity: 0.14;
-}
-
-.wall-pattern__artwork {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.wall-pattern__artwork image {
-  opacity: 0.9;
 }
 
 .glossy-action-button {
@@ -1078,13 +1069,3 @@ select {
   }
 }
 
-@media (max-width: 720px) {
-  .wall-pattern {
-    opacity: 0.1;
-  }
-
-  .wall-pattern__artwork {
-    transform: scale(1.08);
-    transform-origin: center;
-  }
-}
