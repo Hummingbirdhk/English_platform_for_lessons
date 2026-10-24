@@ -28,6 +28,31 @@ describe('rich grammar library', () => {
     expect(grammarPresentations['grammar-present-perfect'].accordion).toBeDefined();
   });
 
+  it('expands every tense card into a full study guide', () => {
+    const tenseIds = [
+      'grammar-present-simple',
+      'grammar-present-continuous',
+      'grammar-present-simple-vs-continuous',
+      'grammar-past-simple-regular',
+      'grammar-past-simple-irregular',
+      'grammar-past-continuous',
+      'grammar-past-simple-vs-continuous',
+      'grammar-present-perfect',
+      'grammar-future-going-to',
+      'grammar-future-present-continuous',
+      'grammar-future-will',
+    ];
+
+    for (const id of tenseIds) {
+      const guide = grammarPresentations[id].tenseGuide;
+      expect(guide, id).toBeDefined();
+      expect(guide?.uses.length, id).toBeGreaterThanOrEqual(3);
+      expect(guide?.markers.length, id).toBeGreaterThanOrEqual(3);
+      expect(guide?.build.length, id).toBeGreaterThanOrEqual(2);
+      expect(guide?.contrast, id).toBeDefined();
+    }
+  });
+
   it('explains countable, uncountable and quantifiers as one connected system', () => {
     const guide = grammarPresentations['grammar-countable-uncountable'].quantityGuide;
 
