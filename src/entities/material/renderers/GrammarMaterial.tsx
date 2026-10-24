@@ -4,6 +4,76 @@ import type { Material } from '../../../content/types';
 
 type GrammarMaterialData = Extract<Material, { type: 'grammar' }>;
 
+const formLabelTranslations: Record<string, string> = {
+  Positive: 'Утверждение',
+  Negative: 'Отрицание',
+  Questions: 'Вопросы',
+  Question: 'Вопрос',
+  Present: 'Настоящее',
+  Past: 'Прошедшее',
+  'Past tense': 'Прошедшее',
+  'Third person spelling': 'He / she / it: окончание',
+  Spelling: 'Правописание',
+  'Irregular verbs': 'Неправильные глаголы',
+  'Was / were': 'Was / were',
+  'Questions & negatives': 'Вопросы и отрицания',
+  Routine: 'Регулярно',
+  Now: 'Сейчас',
+  'State verbs': 'Глаголы состояния',
+  'Interrupted action': 'Прерванное действие',
+  'Two actions in progress': 'Два процесса',
+  Experience: 'Опыт',
+  'Recent result': 'Недавний результат',
+  'Common markers': 'Маркеры',
+  Arrangement: 'Договорённость',
+  Ability: 'Умение',
+  Permission: 'Разрешение',
+  'Other tenses': 'Другие времена',
+  Advice: 'Совет',
+  'Negative advice': 'Не стоит',
+  Obligation: 'Обязанность',
+  Prohibition: 'Запрет',
+  Rule: 'Правило',
+  Necessity: 'Необходимость',
+  'No necessity': 'Необязательно',
+  Needn't: 'Needn’t',
+  At: 'AT',
+  On: 'ON',
+  In: 'IN',
+  Place: 'Место',
+  Movement: 'Движение',
+  'In / into': 'In / into',
+  Countable: 'Исчисляемые',
+  Uncountable: 'Неисчисляемые',
+  Both: 'Для обеих групп',
+  'A / an': 'A / an',
+  The: 'The',
+  'Zero article': 'Без артикля (Ø)',
+  Comparative: 'Сравнительная степень',
+  Superlative: 'Превосходная степень',
+  'Equal comparison': 'Одинаковая степень',
+  Irregular: 'Исключения',
+  People: 'Люди',
+  Things: 'Предметы',
+  Places: 'Места',
+  Possession: 'Принадлежность',
+  'After a verb': 'После глагола',
+  'After a preposition': 'После предлога',
+  'Reflexive pronouns': 'Возвратные местоимения',
+  'Most nouns': 'Большинство слов',
+  '-es': 'Окончание -es',
+  '-y / -f': 'Окончания -y / -f',
+};
+
+function getFormLabel(label: string) {
+  return formLabelTranslations[label] ?? label;
+}
+
+function getMistakeNote(note: string | undefined, right: string) {
+  if (note && /[А-Яа-яЁё]/.test(note)) return note;
+  return `Правильная конструкция: ${right}`;
+}
+
 export function GrammarMaterial({ material }: { material: GrammarMaterialData }) {
   const presentation = getGrammarPresentation(material.id);
   const [activeForm, setActiveForm] = useState(0);
@@ -77,7 +147,7 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
           <div className="grammar-form-tabs" role="tablist" aria-label="Формы конструкции">
             {material.forms.map((form, index) => (
               <button
-                key={form.label}
+                key={getFormLabel(form.label)}
                 type="button"
                 className={
                   index === activeForm
@@ -162,7 +232,7 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
               <article className="grammar-mistake" key={mistake.wrong}>
                 <div className="grammar-mistake__wrong">× {mistake.wrong}</div>
                 <div className="grammar-mistake__right">✓ {mistake.right}</div>
-                {mistake.note ? <p>{mistake.note}</p> : null}
+                <p>{getMistakeNote(mistake.note, mistake.right)}</p>
               </article>
             ))}
           </div>
