@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import type { Material } from '../../content/types';
+import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 const typeLabels: Record<Material['type'], string> = {
   grammar: 'Grammar',
@@ -10,10 +10,7 @@ const typeLabels: Record<Material['type'], string> = {
 
 export function MaterialCard({ material }: { material: Material }) {
   return (
-    <Link
-      to={`/materials/${material.id}`}
-      className={`material-tile material-tile--${material.type}`}
-    >
+    <article className={`material-tile material-tile--${material.type}`}>
       <div className="material-tile__top">
         <span className="material-type-chip">{typeLabels[material.type]}</span>
         <span className="level-chip">{material.level}</span>
@@ -24,10 +21,12 @@ export function MaterialCard({ material }: { material: Material }) {
 
       <div className="material-tile__bottom">
         <span>{material.summary}</span>
-        <span className="material-tile__arrow" aria-hidden="true">
-          ↗
-        </span>
+        <GlossyActionLink
+          to={`/materials/${material.id}`}
+          label={`Открыть материал: ${material.title}`}
+          size="sm"
+        />
       </div>
-    </Link>
+    </article>
   );
 }
