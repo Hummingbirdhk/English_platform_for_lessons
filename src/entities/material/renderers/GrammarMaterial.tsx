@@ -393,7 +393,9 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
         <div className="grammar-studio__section-heading">
           <div>
             <span className="grammar-studio__kicker">
-              {presentation.tenseGuide || presentation.quantityGuide ? '03 · МЕХАНИКА' : '02 · МЕХАНИКА'}
+              {presentation.tenseGuide || presentation.quantityGuide
+                ? '03 · МЕХАНИКА'
+                : '02 · МЕХАНИКА'}
             </span>
             <h2>Разбери конструкцию</h2>
           </div>

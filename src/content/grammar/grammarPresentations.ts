@@ -486,11 +486,31 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'always / usually / often', meaning: 'всегда / обычно / часто', example: 'She often reads before bed.' },
-        { marker: 'sometimes / never', meaning: 'иногда / никогда', example: 'He never drinks coffee.' },
-        { marker: 'every day / week / year', meaning: 'каждый день / неделю / год', example: 'We study English every day.' },
-        { marker: 'on Mondays / at weekends', meaning: 'по понедельникам / по выходным', example: 'I play tennis on Saturdays.' },
-        { marker: 'How often...?', meaning: 'как часто?', example: 'How often do you go swimming?' },
+        {
+          marker: 'always / usually / often',
+          meaning: 'всегда / обычно / часто',
+          example: 'She often reads before bed.',
+        },
+        {
+          marker: 'sometimes / never',
+          meaning: 'иногда / никогда',
+          example: 'He never drinks coffee.',
+        },
+        {
+          marker: 'every day / week / year',
+          meaning: 'каждый день / неделю / год',
+          example: 'We study English every day.',
+        },
+        {
+          marker: 'on Mondays / at weekends',
+          meaning: 'по понедельникам / по выходным',
+          example: 'I play tennis on Saturdays.',
+        },
+        {
+          marker: 'How often...?',
+          meaning: 'как часто?',
+          example: 'How often do you go swimming?',
+        },
       ],
       build: [
         {
@@ -537,9 +557,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Present Simple',
         rightTitle: 'Present Continuous',
         rows: [
-          { left: 'I work hard most days.', right: 'I’m working hard today.', note: 'обычно ↔ временно сегодня' },
-          { left: 'She lives in Bristol.', right: 'She’s staying with friends this week.', note: 'постоянно ↔ временно' },
-          { left: 'Water boils at 100°C.', right: 'The water is boiling now.', note: 'факт ↔ процесс сейчас' },
+          {
+            left: 'I work hard most days.',
+            right: 'I’m working hard today.',
+            note: 'обычно ↔ временно сегодня',
+          },
+          {
+            left: 'She lives in Bristol.',
+            right: 'She’s staying with friends this week.',
+            note: 'постоянно ↔ временно',
+          },
+          {
+            left: 'Water boils at 100°C.',
+            right: 'The water is boiling now.',
+            note: 'факт ↔ процесс сейчас',
+          },
         ],
       },
     },
@@ -668,9 +700,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'now / right now', meaning: 'сейчас / прямо сейчас', example: 'She is studying now.' },
-        { marker: 'at the moment', meaning: 'в данный момент', example: 'They are having lunch at the moment.' },
-        { marker: 'today / this week / this year', meaning: 'в текущий период', example: 'I’m working from home this week.' },
+        {
+          marker: 'now / right now',
+          meaning: 'сейчас / прямо сейчас',
+          example: 'She is studying now.',
+        },
+        {
+          marker: 'at the moment',
+          meaning: 'в данный момент',
+          example: 'They are having lunch at the moment.',
+        },
+        {
+          marker: 'today / this week / this year',
+          meaning: 'в текущий период',
+          example: 'I’m working from home this week.',
+        },
         { marker: 'Look! / Listen!', meaning: 'смотри! / слушай!', example: 'Look! It’s snowing.' },
         { marker: 'still', meaning: 'всё ещё', example: 'He is still sleeping.' },
       ],
@@ -719,9 +763,17 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Present Continuous',
         rightTitle: 'Present Simple',
         rows: [
-          { left: 'I’m staying here this week.', right: 'I live here.', note: 'временно ↔ постоянно' },
+          {
+            left: 'I’m staying here this week.',
+            right: 'I live here.',
+            note: 'временно ↔ постоянно',
+          },
           { left: 'It’s raining now.', right: 'It rains a lot here.', note: 'сейчас ↔ вообще' },
-          { left: 'She’s learning Italian.', right: 'She speaks Italian.', note: 'процесс ↔ умение/факт' },
+          {
+            left: 'She’s learning Italian.',
+            right: 'She speaks Italian.',
+            note: 'процесс ↔ умение/факт',
+          },
         ],
       },
     },
@@ -788,10 +840,26 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'usually / often / every day', meaning: 'часто Simple', example: 'She usually walks to school.' },
-        { marker: 'now / at the moment', meaning: 'часто Continuous', example: 'She is walking to school now.' },
-        { marker: 'today / this week', meaning: 'часто временный Continuous', example: 'I’m staying here this week.' },
-        { marker: 'always', meaning: 'Simple = регулярно; Continuous = слишком часто/раздражает', example: 'He always calls. / He’s always calling me!' },
+        {
+          marker: 'usually / often / every day',
+          meaning: 'часто Simple',
+          example: 'She usually walks to school.',
+        },
+        {
+          marker: 'now / at the moment',
+          meaning: 'часто Continuous',
+          example: 'She is walking to school now.',
+        },
+        {
+          marker: 'today / this week',
+          meaning: 'часто временный Continuous',
+          example: 'I’m staying here this week.',
+        },
+        {
+          marker: 'always',
+          meaning: 'Simple = регулярно; Continuous = слишком часто/раздражает',
+          example: 'He always calls. / He’s always calling me!',
+        },
       ],
       build: [
         {
@@ -918,10 +986,18 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       ],
       markers: [
         { marker: 'yesterday', meaning: 'вчера', example: 'I called him yesterday.' },
-        { marker: 'last week / year', meaning: 'на прошлой неделе / в прошлом году', example: 'We travelled last year.' },
+        {
+          marker: 'last week / year',
+          meaning: 'на прошлой неделе / в прошлом году',
+          example: 'We travelled last year.',
+        },
         { marker: '... ago', meaning: '... назад', example: 'She arrived two days ago.' },
         { marker: 'in 2024', meaning: 'в конкретном прошлом году', example: 'They moved in 2024.' },
-        { marker: 'when I was...', meaning: 'когда мне было...', example: 'I played chess when I was ten.' },
+        {
+          marker: 'when I was...',
+          meaning: 'когда мне было...',
+          example: 'I played chess when I was ten.',
+        },
       ],
       build: [
         {
@@ -968,9 +1044,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Past Simple',
         rightTitle: 'Present Perfect',
         rows: [
-          { left: 'I saw him yesterday.', right: 'I’ve seen him today.', note: 'законченный момент ↔ период ещё идёт' },
-          { left: 'When did you go?', right: 'Have you ever been?', note: 'когда именно ↔ опыт вообще' },
-          { left: 'She lost her keys last week.', right: 'She has lost her keys.', note: 'прошлое событие ↔ результат сейчас' },
+          {
+            left: 'I saw him yesterday.',
+            right: 'I’ve seen him today.',
+            note: 'законченный момент ↔ период ещё идёт',
+          },
+          {
+            left: 'When did you go?',
+            right: 'Have you ever been?',
+            note: 'когда именно ↔ опыт вообще',
+          },
+          {
+            left: 'She lost her keys last week.',
+            right: 'She has lost her keys.',
+            note: 'прошлое событие ↔ результат сейчас',
+          },
         ],
       },
     },
@@ -1079,7 +1167,11 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         { marker: 'yesterday', meaning: 'вчера', example: 'I saw her yesterday.' },
         { marker: 'last...', meaning: 'прошлый...', example: 'We went there last week.' },
         { marker: '... ago', meaning: '... назад', example: 'He came an hour ago.' },
-        { marker: 'in + past year', meaning: 'в прошлом году/дате', example: 'She was born in 2014.' },
+        {
+          marker: 'in + past year',
+          meaning: 'в прошлом году/дате',
+          example: 'She was born in 2014.',
+        },
       ],
       build: [
         {
@@ -1195,10 +1287,26 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'at 7 p.m. yesterday', meaning: 'в конкретный момент', example: 'At 7 p.m. I was having dinner.' },
-        { marker: 'while', meaning: 'пока / в то время как', example: 'While I was reading, she was drawing.' },
-        { marker: 'when', meaning: 'когда другое событие произошло', example: 'I was sleeping when you called.' },
-        { marker: 'all evening', meaning: 'весь вечер как процесс', example: 'They were studying all evening.' },
+        {
+          marker: 'at 7 p.m. yesterday',
+          meaning: 'в конкретный момент',
+          example: 'At 7 p.m. I was having dinner.',
+        },
+        {
+          marker: 'while',
+          meaning: 'пока / в то время как',
+          example: 'While I was reading, she was drawing.',
+        },
+        {
+          marker: 'when',
+          meaning: 'когда другое событие произошло',
+          example: 'I was sleeping when you called.',
+        },
+        {
+          marker: 'all evening',
+          meaning: 'весь вечер как процесс',
+          example: 'They were studying all evening.',
+        },
       ],
       build: [
         {
@@ -1308,9 +1416,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'when', meaning: 'часто вводит короткое событие', example: 'I was sleeping when the phone rang.' },
-        { marker: 'while', meaning: 'часто вводит процесс', example: 'While I was studying, she was cooking.' },
-        { marker: 'at that moment', meaning: 'процесс в конкретный момент', example: 'At that moment, they were driving home.' },
+        {
+          marker: 'when',
+          meaning: 'часто вводит короткое событие',
+          example: 'I was sleeping when the phone rang.',
+        },
+        {
+          marker: 'while',
+          meaning: 'часто вводит процесс',
+          example: 'While I was studying, she was cooking.',
+        },
+        {
+          marker: 'at that moment',
+          meaning: 'процесс в конкретный момент',
+          example: 'At that moment, they were driving home.',
+        },
       ],
       build: [
         {
@@ -1440,12 +1560,24 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'ever / never', meaning: 'когда-либо / никогда', example: 'Have you ever tried sushi?' },
+        {
+          marker: 'ever / never',
+          meaning: 'когда-либо / никогда',
+          example: 'Have you ever tried sushi?',
+        },
         { marker: 'just', meaning: 'только что', example: 'He has just left.' },
         { marker: 'already', meaning: 'уже', example: 'We have already finished.' },
         { marker: 'yet', meaning: 'уже? / ещё нет', example: 'Have you finished yet?' },
-        { marker: 'for', meaning: 'в течение периода', example: 'I have lived here for two years.' },
-        { marker: 'since', meaning: 'с определённого момента', example: 'I have lived here since 2024.' },
+        {
+          marker: 'for',
+          meaning: 'в течение периода',
+          example: 'I have lived here for two years.',
+        },
+        {
+          marker: 'since',
+          meaning: 'с определённого момента',
+          example: 'I have lived here since 2024.',
+        },
       ],
       build: [
         {
@@ -1492,9 +1624,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Present Perfect',
         rightTitle: 'Past Simple',
         rows: [
-          { left: 'Have you ever been to Spain?', right: 'When did you go to Spain?', note: 'опыт ↔ конкретное время' },
-          { left: 'I’ve lost my keys.', right: 'I lost my keys yesterday.', note: 'результат сейчас ↔ факт прошлого' },
-          { left: 'I’ve seen her today.', right: 'I saw her yesterday.', note: 'период ещё идёт ↔ законченный период' },
+          {
+            left: 'Have you ever been to Spain?',
+            right: 'When did you go to Spain?',
+            note: 'опыт ↔ конкретное время',
+          },
+          {
+            left: 'I’ve lost my keys.',
+            right: 'I lost my keys yesterday.',
+            note: 'результат сейчас ↔ факт прошлого',
+          },
+          {
+            left: 'I’ve seen her today.',
+            right: 'I saw her yesterday.',
+            note: 'период ещё идёт ↔ законченный период',
+          },
         ],
       },
     },
@@ -1561,9 +1705,17 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'tomorrow / next week', meaning: 'будущее время', example: 'I’m going to call her tomorrow.' },
+        {
+          marker: 'tomorrow / next week',
+          meaning: 'будущее время',
+          example: 'I’m going to call her tomorrow.',
+        },
         { marker: 'Look!', meaning: 'видимый признак', example: 'Look! He’s going to fall.' },
-        { marker: 'I’ve decided...', meaning: 'решение уже принято', example: 'I’ve decided I’m going to study more.' },
+        {
+          marker: 'I’ve decided...',
+          meaning: 'решение уже принято',
+          example: 'I’ve decided I’m going to study more.',
+        },
       ],
       build: [
         {
@@ -1604,9 +1756,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Going to',
         rightTitle: 'Will',
         rows: [
-          { left: 'решение уже принято', right: 'решение сейчас', note: 'plan before ↔ decision now' },
-          { left: 'прогноз по видимым признакам', right: 'мнение/предположение', note: 'evidence ↔ opinion' },
-          { left: 'I’m going to study tonight.', right: 'I’ll help you.', note: 'plan ↔ spontaneous offer' },
+          {
+            left: 'решение уже принято',
+            right: 'решение сейчас',
+            note: 'plan before ↔ decision now',
+          },
+          {
+            left: 'прогноз по видимым признакам',
+            right: 'мнение/предположение',
+            note: 'evidence ↔ opinion',
+          },
+          {
+            left: 'I’m going to study tonight.',
+            right: 'I’ll help you.',
+            note: 'plan ↔ spontaneous offer',
+          },
         ],
       },
     },
@@ -1673,9 +1837,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'tomorrow / tonight', meaning: 'конкретное будущее время', example: 'I’m working tonight.' },
-        { marker: 'at six / on Friday', meaning: 'назначенное время', example: 'We’re meeting at six.' },
-        { marker: 'next week', meaning: 'будущий период', example: 'She’s starting a new course next week.' },
+        {
+          marker: 'tomorrow / tonight',
+          meaning: 'конкретное будущее время',
+          example: 'I’m working tonight.',
+        },
+        {
+          marker: 'at six / on Friday',
+          meaning: 'назначенное время',
+          example: 'We’re meeting at six.',
+        },
+        {
+          marker: 'next week',
+          meaning: 'будущий период',
+          example: 'She’s starting a new course next week.',
+        },
       ],
       build: [
         {
@@ -1716,9 +1892,21 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         leftTitle: 'Arrangement',
         rightTitle: 'Другие варианты',
         rows: [
-          { left: 'I’m meeting Tom at six.', right: 'I’m going to meet Tom sometime.', note: 'фиксировано ↔ намерение' },
-          { left: 'We’re flying on Friday.', right: 'The flight leaves at 9.', note: 'личный план ↔ расписание' },
-          { left: 'I’m seeing the dentist tomorrow.', right: 'I’ll call the dentist now.', note: 'запись ↔ решение сейчас' },
+          {
+            left: 'I’m meeting Tom at six.',
+            right: 'I’m going to meet Tom sometime.',
+            note: 'фиксировано ↔ намерение',
+          },
+          {
+            left: 'We’re flying on Friday.',
+            right: 'The flight leaves at 9.',
+            note: 'личный план ↔ расписание',
+          },
+          {
+            left: 'I’m seeing the dentist tomorrow.',
+            right: 'I’ll call the dentist now.',
+            note: 'запись ↔ решение сейчас',
+          },
         ],
       },
     },
@@ -1791,7 +1979,11 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         },
       ],
       markers: [
-        { marker: 'I think / probably', meaning: 'мнение / вероятность', example: 'I think she will come.' },
+        {
+          marker: 'I think / probably',
+          meaning: 'мнение / вероятность',
+          example: 'I think she will come.',
+        },
         { marker: 'I promise', meaning: 'обещание', example: 'I promise I’ll call.' },
         { marker: 'I’ll...', meaning: 'решение сейчас', example: 'I’ll open the window.' },
         { marker: 'won’t', meaning: 'не будет / отказывается', example: 'The car won’t start.' },
@@ -1842,7 +2034,11 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         rightTitle: 'Going to',
         rows: [
           { left: 'решение сейчас', right: 'решение уже принято', note: 'now ↔ before now' },
-          { left: 'мнение: I think...', right: 'признаки сейчас: Look!', note: 'opinion ↔ evidence' },
+          {
+            left: 'мнение: I think...',
+            right: 'признаки сейчас: Look!',
+            note: 'opinion ↔ evidence',
+          },
           { left: 'I’ll help you.', right: 'I’m going to study tonight.', note: 'offer ↔ plan' },
         ],
       },
