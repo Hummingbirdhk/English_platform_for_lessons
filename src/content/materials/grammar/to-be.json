@@ -1,59 +1,39 @@
 {
   "id": "grammar-to-be",
   "type": "grammar",
-  "title": "Verb to be",
+  "title": "Verb to be: am / is / are",
   "grade": 6,
   "level": "A2",
   "topic": "Basics",
-  "tags": ["grammar", "to be", "am is are", "was were"],
-  "summary": "Use be to talk about identity, age, descriptions, location and states.",
+  "tags": ["grammar", "to be", "am is are", "present to be", "глагол to be", "настоящее время"],
+  "summary": "Use am, is and are to talk about identity, age, descriptions, location and states in the present.",
   "explanation": {
-    "en": "We use the verb be to say who or what someone is, describe people and things, and talk about where they are.",
-    "ru": "Глагол to be нужен, чтобы сказать, кто или что это, описать человека или предмет и сказать, где кто-то находится."
+    "en": "We use am, is and are to say who or what someone is, describe people and things, talk about age, feelings and location in the present.",
+    "ru": "Am, is и are нужны, чтобы говорить о том, кто или что это, описывать людей и предметы, говорить о возрасте, состоянии и местонахождении в настоящем."
   },
   "forms": [
     {
       "label": "Present",
       "pattern": "I am · he/she/it is · you/we/they are",
       "examples": [
-        {
-          "en": "I am twelve.",
-          "ru": "Мне двенадцать лет."
-        },
-        {
-          "en": "They are at school.",
-          "ru": "Они в школе."
-        }
+        { "en": "I am twelve.", "ru": "Мне двенадцать лет." },
+        { "en": "They are at school.", "ru": "Они в школе." }
       ]
     },
     {
       "label": "Negative",
-      "pattern": "am not · isn't · aren't",
+      "pattern": "I am not · he/she/it isn't · you/we/they aren't",
       "examples": [
-        {
-          "en": "She isn't tired.",
-          "ru": "Она не устала."
-        }
+        { "en": "She isn't tired.", "ru": "Она не устала." },
+        { "en": "We aren't late.", "ru": "Мы не опоздали." }
       ]
     },
     {
       "label": "Questions",
       "pattern": "Am I ...? · Is he/she/it ...? · Are you/we/they ...?",
       "examples": [
-        {
-          "en": "Are you ready?",
-          "ru": "Ты готов?"
-        }
-      ]
-    },
-    {
-      "label": "Past",
-      "pattern": "I/he/she/it was · you/we/they were",
-      "examples": [
-        {
-          "en": "We were at home yesterday.",
-          "ru": "Вчера мы были дома."
-        }
+        { "en": "Are you ready?", "ru": "Ты готов?" },
+        { "en": "Is he at home?", "ru": "Он дома?" }
       ]
     }
   ],
@@ -67,6 +47,11 @@
       "wrong": "She don't happy.",
       "right": "She isn't happy.",
       "note": "With be, do not use do/does for negatives."
+    },
+    {
+      "wrong": "Do you are ready?",
+      "right": "Are you ready?",
+      "note": "With be, form the question by moving am/is/are before the subject."
     }
   ],
   "exerciseIds": []
