@@ -96,9 +96,7 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
 
   return (
     <article className="grammar-studio">
-      <header
-        className={`grammar-studio__hero grammar-studio__hero--${presentation.accent}`}
-      >
+      <header className={`grammar-studio__hero grammar-studio__hero--${presentation.accent}`}>
         <span className="grammar-studio__eyebrow">{presentation.eyebrow}</span>
         <h1>{presentation.displayTitle}</h1>
         <p>{presentation.hero}</p>

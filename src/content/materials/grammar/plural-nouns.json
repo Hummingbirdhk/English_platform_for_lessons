@@ -29,8 +29,16 @@
     }
   ],
   "commonMistakes": [
-    { "wrong": "two childs", "right": "two children", "note": "Child has an irregular plural: children." },
-    { "wrong": "three citys", "right": "three cities", "note": "Consonant + y normally changes to -ies." }
+    {
+      "wrong": "two childs",
+      "right": "two children",
+      "note": "Child has an irregular plural: children."
+    },
+    {
+      "wrong": "three citys",
+      "right": "three cities",
+      "note": "Consonant + y normally changes to -ies."
+    }
   ],
   "exerciseIds": []
 }

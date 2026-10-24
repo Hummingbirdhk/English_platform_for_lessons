@@ -20,9 +20,9 @@ describe('rich grammar library', () => {
   });
 
   it('includes expandable reference material where memorisation matters', () => {
-    expect(grammarPresentations['grammar-past-simple-irregular'].accordion?.rows.length).toBeGreaterThan(
-      20,
-    );
+    expect(
+      grammarPresentations['grammar-past-simple-irregular'].accordion?.rows.length,
+    ).toBeGreaterThan(20);
     expect(grammarPresentations['grammar-plural-nouns'].accordion?.rows.length).toBeGreaterThan(8);
     expect(grammarPresentations['grammar-articles'].accordion).toBeDefined();
     expect(grammarPresentations['grammar-present-perfect'].accordion).toBeDefined();
