@@ -36,13 +36,20 @@ export function WallPattern({ className = '' }: { className?: string }) {
       data-design-artifact="wall-pattern"
       aria-hidden="true"
     >
-      <BrandArtifact kind="fire" className="wall-pattern__item wall-pattern__fire-left" />
-      <BrandArtifact kind="spark" className="wall-pattern__item wall-pattern__star-left" />
-      <BrandArtifact kind="blob-alt" className="wall-pattern__item wall-pattern__blob-top" />
-      <BrandArtifact kind="spark" className="wall-pattern__item wall-pattern__star-top" />
-      <BrandArtifact kind="fire" className="wall-pattern__item wall-pattern__fire-right" />
-      <BrandArtifact kind="spark" className="wall-pattern__item wall-pattern__star-center" />
-      <BrandArtifact kind="smile" className="wall-pattern__item wall-pattern__blob-right" />
+      <svg
+        className="wall-pattern__artwork"
+        viewBox="0 0 1176 777"
+        preserveAspectRatio="xMidYMid slice"
+        role="presentation"
+      >
+        <image href={smileFire} x="22" y="440" width="270" height="270" />
+        <image href={smileStar} x="205" y="150" width="320" height="320" />
+        <image href={smileBlobAlt} x="485" y="-45" width="335" height="335" />
+        <image href={smileStar} x="735" y="155" width="345" height="345" />
+        <image href={smileFire} x="890" y="315" width="285" height="285" />
+        <image href={smileStar} x="455" y="430" width="325" height="325" />
+        <image href={smileBlob} x="865" y="500" width="315" height="315" />
+      </svg>
     </span>
   );
 }
