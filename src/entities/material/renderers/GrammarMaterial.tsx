@@ -36,7 +36,7 @@ const formLabelTranslations: Record<string, string> = {
   Rule: 'Правило',
   Necessity: 'Необходимость',
   'No necessity': 'Необязательно',
-  Needn't: 'Needn’t',
+  "Needn't": 'Needn’t',
   At: 'AT',
   On: 'ON',
   In: 'IN',
