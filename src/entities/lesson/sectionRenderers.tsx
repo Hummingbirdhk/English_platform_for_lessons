@@ -23,6 +23,26 @@ export function renderLessonSection(
     );
   }
 
+  if (section.type === 'embed') {
+    return (
+      <section key={section.id} className="lesson-embed-card">
+        <div className="lesson-embed-card__heading">
+          <div>
+            <span className="sticker sticker--lemon">ИНТЕРАКТИВ</span>
+            <Typography.Title level={3}>{section.title}</Typography.Title>
+          </div>
+        </div>
+        <iframe
+          className="lesson-embed-card__frame"
+          src={section.src}
+          title={section.title}
+          loading="lazy"
+          style={{ minHeight: section.minHeight ?? 900 }}
+        />
+      </section>
+    );
+  }
+
   if (section.type === 'material') {
     const material = materials.find((item) => item.id === section.materialId);
     return material ? (
