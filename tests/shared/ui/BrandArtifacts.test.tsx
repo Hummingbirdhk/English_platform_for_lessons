@@ -1,9 +1,6 @@
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import {
-  BrandArtifact,
-  WallPattern,
-} from '../../../src/shared/ui/BrandArtifacts';
+import { BrandArtifact, WallPattern } from '../../../src/shared/ui/BrandArtifacts';
 
 describe('original design artifacts', () => {
   it('renders the uploaded artwork instead of generated placeholder SVGs', () => {
