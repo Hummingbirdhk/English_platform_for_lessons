@@ -140,7 +140,8 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     },
     accordion: {
       title: 'Когда нужен am / is / are',
-      intro: 'В русском языке глагол «быть» в настоящем часто пропускается, но в английском am/is/are обычно обязателен.',
+      intro:
+        'В русском языке глагол «быть» в настоящем часто пропускается, но в английском am/is/are обычно обязателен.',
       headers: ['Ситуация', 'Пример', 'Перевод'],
       rows: [
         ['кто это / профессия', 'She is a doctor.', 'Она врач.'],
@@ -158,7 +159,14 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     rule: 'В Past Simple глагол to be имеет две формы: I/he/she/it → was, you/we/they → were. Для вопросов was/were ставятся перед подлежащим. Для отрицания используем wasn’t / weren’t.',
     visual: 'timeline',
     accent: 'orange',
-    searchTerms: ['to be past', 'was', 'were', 'was were', 'глагол быть в прошлом', 'прошлое to be'],
+    searchTerms: [
+      'to be past',
+      'was',
+      'were',
+      'was were',
+      'глагол быть в прошлом',
+      'прошлое to be',
+    ],
     cues: [
       {
         label: 'I / HE / SHE / IT',
@@ -197,7 +205,11 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
         ['yesterday', 'She was at home yesterday.', 'Вчера она была дома.'],
         ['last night / week', 'We were busy last week.', 'На прошлой неделе мы были заняты.'],
         ['... ago', 'He was here two hours ago.', 'Он был здесь два часа назад.'],
-        ['when I was...', 'When I was ten, I was very shy.', 'Когда мне было десять, я был очень застенчивым.'],
+        [
+          'when I was...',
+          'When I was ten, I was very shy.',
+          'Когда мне было десять, я был очень застенчивым.',
+        ],
       ],
     },
   },
