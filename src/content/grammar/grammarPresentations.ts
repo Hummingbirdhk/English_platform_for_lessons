@@ -30,6 +30,12 @@ export type GrammarPresentation = {
     answer: string;
     feedback: string;
   };
+  accordion?: {
+    title: string;
+    intro: string;
+    headers: string[];
+    rows: string[][];
+  };
 };
 
 export const grammarPresentations: Record<string, GrammarPresentation> = {
@@ -97,21 +103,38 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
     memoryTip: 'Спроси: «кто делает?» — subject pronoun; «кого/кому?» — object pronoun.',
     practice: { prompt: 'I can see ___ over there. (she)', options: ['she', 'her', 'hers'], answer: 'her', feedback: 'После see нужен объект: her.' },
   },
-  'grammar-reflexive-pronouns': {
-    displayTitle: 'Возвратные местоимения: myself / yourself / themselves',
-    eyebrow: 'A2 · САМ / СЕБЯ',
-    hero: 'Действие возвращается к тому, кто его делает.',
-    rule: 'Myself, yourself, himself, herself, itself, ourselves, yourselves, themselves нужны, когда субъект и объект — один и тот же человек или предмет.',
-    visual: 'map',
+  'grammar-plural-nouns': {
+    displayTitle: 'Множественное число существительных',
+    eyebrow: 'A2 · ONE → MANY',
+    hero: 'Чаще всего добавляем -s, но окончание зависит от последнего звука и написания.',
+    rule: 'Большинство существительных получают -s. После -s, -ss, -sh, -ch, -x, -o часто добавляем -es. Согласная + y обычно меняется на -ies. У части слов есть особые формы, которые нужно запомнить.',
+    visual: 'ladder',
     accent: 'lemon',
-    searchTerms: ['возвратные местоимения', 'reflexive pronouns', 'myself yourself himself'],
+    searchTerms: ['множественное число', 'plural nouns', 'plurals', 's es ies ves', 'исключения'],
     cues: [
-      { label: 'I', title: 'myself', text: 'I → myself.', exampleEn: 'I cut myself.', exampleRu: 'Я порезался.' },
-      { label: 'he / she', title: 'himself / herself', text: 'Форма зависит от пола.', exampleEn: 'She made it herself.', exampleRu: 'Она сделала это сама.' },
-      { label: 'they', title: 'themselves', text: 'Для нескольких людей.', exampleEn: 'They introduced themselves.', exampleRu: 'Они представились.' },
+      { label: 'обычно', title: '+ -s', text: 'book → books, car → cars.', exampleEn: 'I have two books.', exampleRu: 'У меня две книги.' },
+      { label: 'шипящие', title: '+ -es', text: 'box → boxes, watch → watches.', exampleEn: 'There are three buses.', exampleRu: 'Там три автобуса.' },
+      { label: 'consonant + y', title: 'y → ies', text: 'city → cities, baby → babies.', exampleEn: 'These cities are very old.', exampleRu: 'Эти города очень старые.' },
     ],
-    memoryTip: 'by myself = самостоятельно / без помощи.',
-    practice: { prompt: 'He looked at ___ in the mirror.', options: ['him', 'himself', 'his'], answer: 'himself', feedback: 'He смотрит на самого себя → himself.' },
+    memoryTip: 'Гласная + y обычно сохраняет y: boy → boys, toy → toys. Не все слова на -f/-fe переходят в -ves — исключения лучше учить отдельно.',
+    practice: { prompt: 'One child → two ___.', options: ['childs', 'children', 'childes'], answer: 'children', feedback: 'Child — неправильная форма множественного числа: children.' },
+    accordion: {
+      title: 'Исключения и особые формы',
+      intro: 'Раскрой список, когда нужно быстро проверить форму. Это не правило для всех слов — эти формы запоминаем отдельно.',
+      headers: ['Единственное', 'Множественное', 'Перевод'],
+      rows: [
+        ['man', 'men', 'мужчина → мужчины'],
+        ['woman', 'women', 'женщина → женщины'],
+        ['child', 'children', 'ребёнок → дети'],
+        ['person', 'people', 'человек → люди'],
+        ['tooth', 'teeth', 'зуб → зубы'],
+        ['foot', 'feet', 'ступня → ступни'],
+        ['mouse', 'mice', 'мышь → мыши'],
+        ['goose', 'geese', 'гусь → гуси'],
+        ['sheep', 'sheep', 'овца → овцы'],
+        ['fish', 'fish', 'рыба → рыбы'],
+      ],
+    },
   },
   'grammar-there-is-are': {
     displayTitle: 'There is / There are: что где находится',
@@ -238,8 +261,45 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
       { label: 'V2', title: 'went', text: 'Past Simple в утверждении.', exampleEn: 'I went by bus yesterday.', exampleRu: 'Вчера я поехал на автобусе.' },
       { label: 'did', title: 'did + V1', text: 'В вопросе возвращаем V1.', exampleEn: 'Did you go by bus?', exampleRu: 'Ты поехал на автобусе?' },
     ],
-    memoryTip: 'Ниже будет отдельный раскрывающийся справочник неправильных глаголов A2.',
+    memoryTip: 'Ниже — отдельный раскрывающийся справочник неправильных глаголов A2. В Past Simple нужен столбец V2.',
     practice: { prompt: 'Last Saturday Mia ___ a new jacket.', options: ['buyed', 'bought', 'did bought'], answer: 'bought', feedback: 'Buy — неправильный: buy → bought.' },
+    accordion: {
+      title: 'Неправильные глаголы A2',
+      intro: 'V1 — базовая форма, V2 — Past Simple, V3 — форма для Present Perfect и других конструкций.',
+      headers: ['V1', 'V2', 'V3', 'Перевод'],
+      rows: [
+        ['be', 'was / were', 'been', 'быть'],
+        ['begin', 'began', 'begun', 'начинать'],
+        ['break', 'broke', 'broken', 'ломать'],
+        ['bring', 'brought', 'brought', 'приносить'],
+        ['buy', 'bought', 'bought', 'покупать'],
+        ['come', 'came', 'come', 'приходить'],
+        ['do', 'did', 'done', 'делать'],
+        ['drink', 'drank', 'drunk', 'пить'],
+        ['drive', 'drove', 'driven', 'водить'],
+        ['eat', 'ate', 'eaten', 'есть'],
+        ['find', 'found', 'found', 'находить'],
+        ['get', 'got', 'got / gotten', 'получать / становиться'],
+        ['give', 'gave', 'given', 'давать'],
+        ['go', 'went', 'gone', 'идти / ехать'],
+        ['have', 'had', 'had', 'иметь'],
+        ['know', 'knew', 'known', 'знать'],
+        ['make', 'made', 'made', 'делать / создавать'],
+        ['meet', 'met', 'met', 'встречать'],
+        ['read', 'read', 'read', 'читать'],
+        ['run', 'ran', 'run', 'бежать'],
+        ['say', 'said', 'said', 'говорить'],
+        ['see', 'saw', 'seen', 'видеть'],
+        ['speak', 'spoke', 'spoken', 'говорить'],
+        ['take', 'took', 'taken', 'брать'],
+        ['teach', 'taught', 'taught', 'обучать'],
+        ['tell', 'told', 'told', 'рассказывать'],
+        ['think', 'thought', 'thought', 'думать'],
+        ['understand', 'understood', 'understood', 'понимать'],
+        ['wear', 'wore', 'worn', 'носить'],
+        ['write', 'wrote', 'written', 'писать'],
+      ],
+    },
   },
   'grammar-past-continuous': {
     displayTitle: 'Past Continuous',
