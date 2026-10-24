@@ -1,12 +1,12 @@
 {
-  "id": "student-maya",
-  "displayName": "Маша К.",
+  "id": "student-zlata",
+  "displayName": "Злата",
   "grade": 6,
   "level": "A2",
   "curriculum": "Spotlight 6",
-  "currentFocus": ["Present Simple", "Daily routine"],
+  "currentFocus": ["Present Simple", "Daily routine", "Vocabulary revision"],
   "completedTopics": ["Family", "School subjects"],
-  "revisionTopics": ["do / does", "third person -s"],
+  "revisionTopics": ["adverbs of frequency", "third person -s"],
   "assignedMaterialIds": ["grammar-present-simple", "vocabulary-daily-routine", "reading-toms-day"],
   "assignedLessonIds": ["present-simple-01"]
 }

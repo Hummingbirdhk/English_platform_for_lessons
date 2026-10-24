@@ -13,9 +13,7 @@ export function AppShell({ children }: PropsWithChildren) {
     <div className="app-shell">
       <header className="app-header">
         <div className="app-header__inner">
-          <NavLink to="/" className="app-brand" aria-label="English Platform home">
-            ENGLISH CLUB
-          </NavLink>
+          <div className="app-header__spacer" aria-hidden="true" />
 
           <nav className="app-nav" aria-label="Main navigation">
             {navigation.map((item) => (
@@ -32,9 +30,15 @@ export function AppShell({ children }: PropsWithChildren) {
             ))}
           </nav>
 
-          <div className="app-profile" aria-label="Teacher profile">
+          <NavLink
+            to="/teacher"
+            className={({ isActive }) =>
+              isActive ? 'app-profile app-profile--active' : 'app-profile'
+            }
+            aria-label="Личный кабинет преподавателя"
+          >
             M
-          </div>
+          </NavLink>
         </div>
       </header>
       {children}
