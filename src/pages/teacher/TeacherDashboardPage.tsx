@@ -105,11 +105,17 @@ function readStoredValue(key: string, fallback: string): string {
 
 export function TeacherDashboardPage() {
   const { students } = loadAllContent();
-  const visibleStudents = useMemo(
-    () => students.filter((student) => teacherDetails[student.id] !== undefined),
-    [students],
+  const visibleStudents = useMemo(() => {
+    const order = ['student-zlata', 'student-artem'];
+    return students
+      .filter((student) => teacherDetails[student.id] !== undefined)
+      .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  }, [students]);
+  const [activeStudentId, setActiveStudentId] = useState(
+    visibleStudents.find((student) => student.id === 'student-zlata')?.id ??
+      visibleStudents[0]?.id ??
+      '',
   );
-  const [activeStudentId, setActiveStudentId] = useState(visibleStudents[0]?.id ?? '');
   const activeStudent =
     visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
   const details = activeStudent ? teacherDetails[activeStudent.id] : undefined;
