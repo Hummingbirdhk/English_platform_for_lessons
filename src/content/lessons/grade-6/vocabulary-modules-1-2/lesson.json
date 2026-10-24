@@ -1,0 +1,22 @@
+{
+  "id": "vocabulary-modules-1-2",
+  "title": "Урок (вокабуляр) по модулям 1 и 2",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Повторение лексики Modules 1–2",
+  "sections": [
+    {
+      "id": "intro-vocab-1-2",
+      "type": "intro",
+      "title": "Повторяем лексику модулей 1 и 2",
+      "body": "7 интерактивных заданий на повторение слов по темам семьи, личной информации, стран и направлений, времени, дома и района."
+    },
+    {
+      "id": "interactive-vocab-1-2",
+      "type": "embed",
+      "title": "Vocabulary Lab — Modules 1–2",
+      "src": "/English_platform_for_lessons/interactive/vocabulary-modules-1-2.html",
+      "minHeight": 980
+    }
+  ]
+}
