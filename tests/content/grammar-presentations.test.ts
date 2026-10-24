@@ -27,4 +27,18 @@ describe('rich grammar library', () => {
     expect(grammarPresentations['grammar-articles'].accordion).toBeDefined();
     expect(grammarPresentations['grammar-present-perfect'].accordion).toBeDefined();
   });
+
+  it('explains countable, uncountable and quantifiers as one connected system', () => {
+    const guide = grammarPresentations['grammar-countable-uncountable'].quantityGuide;
+
+    expect(guide).toBeDefined();
+    expect(guide?.nounGroups).toHaveLength(2);
+    expect(guide?.someBridge.countable).toContain('some apples');
+    expect(guide?.someBridge.uncountable).toContain('some water');
+    expect(guide?.sections.map((section) => section.title)).toEqual([
+      'Some / Any',
+      'Much / Many / A lot of',
+      'A few / A little',
+    ]);
+  });
 });

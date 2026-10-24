@@ -132,6 +132,153 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
         </div>
       </section>
 
+      {presentation.quantityGuide ? (
+        <>
+          <section className="grammar-studio__section quantity-guide">
+            <div className="grammar-studio__section-heading">
+              <div>
+                <span className="grammar-studio__kicker">02 · COUNT OR AMOUNT?</span>
+                <h2>Сначала определяем тип существительного</h2>
+              </div>
+              <p>{presentation.quantityGuide.intro}</p>
+            </div>
+
+            <div className="quantity-guide__noun-groups">
+              {presentation.quantityGuide.nounGroups.map((group) => (
+                <article className="quantity-noun-group" key={group.title}>
+                  <div className="quantity-noun-group__heading">
+                    <div>
+                      <span>{group.subtitle}</span>
+                      <h3>{group.title}</h3>
+                    </div>
+                  </div>
+
+                  <p className="quantity-noun-group__description">{group.description}</p>
+
+                  <div className="quantity-picture-grid">
+                    {group.items.map((item) => (
+                      <div className="quantity-picture-card" key={item.word}>
+                        <span className="quantity-picture-card__icon" aria-hidden="true">
+                          {item.icon}
+                        </span>
+                        <strong>{item.word}</strong>
+                        <small>{item.note}</small>
+                      </div>
+                    ))}
+                  </div>
+
+                  <ul className="quantity-noun-group__rules">
+                    {group.rules.map((rule) => (
+                      <li key={rule}>{rule}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="quantity-some-bridge">
+            <div>
+              <span className="grammar-studio__kicker">SOME · РАБОТАЕТ С ОБЕИМИ ГРУППАМИ</span>
+              <h2>{presentation.quantityGuide.someBridge.title}</h2>
+              <p>{presentation.quantityGuide.someBridge.text}</p>
+            </div>
+
+            <div className="quantity-some-bridge__branches">
+              <div>
+                <span>COUNTABLE PLURAL</span>
+                {presentation.quantityGuide.someBridge.countable.map((item) => (
+                  <strong key={item}>{item}</strong>
+                ))}
+              </div>
+              <div>
+                <span>UNCOUNTABLE</span>
+                {presentation.quantityGuide.someBridge.uncountable.map((item) => (
+                  <strong key={item}>{item}</strong>
+                ))}
+              </div>
+            </div>
+
+            <div className="quantity-some-bridge__examples">
+              {presentation.quantityGuide.someBridge.examples.map((example) => (
+                <div className="grammar-example grammar-example--large" key={example.en}>
+                  <strong>{example.en}</strong>
+                  <span>{example.ru}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="grammar-studio__section">
+            <details className="quantity-quantifiers">
+              <summary>
+                <div>
+                  <span className="grammar-studio__kicker">БОЛЬШАЯ КАРТОЧКА · QUANTIFIERS</span>
+                  <h2>Как выбрать слово количества?</h2>
+                  <p>Some / any · much / many / a lot of · a few / a little</p>
+                </div>
+                <b>+</b>
+              </summary>
+
+              <div className="quantity-quantifiers__body">
+                {presentation.quantityGuide.sections.map((section) => (
+                  <article className="quantity-quantifier-section" key={section.title}>
+                    <div className="quantity-quantifier-section__heading">
+                      <h3>{section.title}</h3>
+                      <p>{section.subtitle}</p>
+                    </div>
+
+                    <div className="quantity-quantifier-rows">
+                      {section.rows.map((row) => (
+                        <div className="quantity-quantifier-row" key={row.word}>
+                          <div className="quantity-quantifier-row__word">{row.word}</div>
+                          <div className="quantity-quantifier-row__with">{row.with}</div>
+                          <div className="quantity-quantifier-row__meaning">{row.meaning}</div>
+                          <div className="quantity-quantifier-row__examples">
+                            {row.examples.map((example) => (
+                              <div key={example.en}>
+                                <strong>{example.en}</strong>
+                                <span>{example.ru}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="quantity-quantifier-section__tip">{section.tip}</div>
+                  </article>
+                ))}
+
+                <div className="quantity-chooser">
+                  <div className="quantity-chooser__column">
+                    <span>COUNTABLE</span>
+                    <h3>Если можно посчитать штуками</h3>
+                    <div>
+                      {presentation.quantityGuide.chooser.countable.map((item) => (
+                        <strong key={item}>{item}</strong>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="quantity-chooser__arrow" aria-hidden="true">
+                    ↔
+                  </div>
+                  <div className="quantity-chooser__column">
+                    <span>UNCOUNTABLE</span>
+                    <h3>Если говорим о количестве</h3>
+                    <div>
+                      {presentation.quantityGuide.chooser.uncountable.map((item) => (
+                        <strong key={item}>{item}</strong>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </section>
+        </>
+      ) : null}
+
       <section className="grammar-studio__section grammar-form-lab">
         <div className="grammar-studio__section-heading">
           <div>
@@ -154,7 +301,7 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
                 }
                 onClick={() => setActiveForm(index)}
               >
-                {form.label}
+                {getFormLabel(form.label)}
               </button>
             ))}
           </div>
