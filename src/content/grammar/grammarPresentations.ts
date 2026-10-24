@@ -29,6 +29,38 @@ export type GrammarPresentation = {
     headers: string[];
     rows: string[][];
   };
+  quantityGuide?: {
+    intro: string;
+    nounGroups: Array<{
+      title: string;
+      subtitle: string;
+      description: string;
+      rules: string[];
+      items: Array<{ icon: string; word: string; note: string }>;
+    }>;
+    someBridge: {
+      title: string;
+      text: string;
+      countable: string[];
+      uncountable: string[];
+      examples: Array<{ en: string; ru: string }>;
+    };
+    sections: Array<{
+      title: string;
+      subtitle: string;
+      rows: Array<{
+        word: string;
+        with: string;
+        meaning: string;
+        examples: Array<{ en: string; ru: string }>;
+      }>;
+      tip: string;
+    }>;
+    chooser: {
+      countable: string[];
+      uncountable: string[];
+    };
+  };
 };
 
 export const grammarPresentations: Record<string, GrammarPresentation> = {
@@ -1192,41 +1224,199 @@ export const grammarPresentations: Record<string, GrammarPresentation> = {
   'grammar-countable-uncountable': {
     displayTitle: 'Исчисляемые и неисчисляемые существительные',
     eyebrow: 'A2 · COUNT OR AMOUNT?',
-    hero: 'Можно посчитать штуками — или измеряем количество?',
-    rule: 'Countable имеют singular/plural: one apple, two apples. Uncountable обычно не имеют множественного числа и не используют a/an: water, bread, information.',
+    hero: 'Сначала решаем: можем посчитать отдельные штуки или говорим о количестве вещества, материала или понятия.',
+    rule: 'Исчисляемые существительные можно посчитать поштучно: one apple, two apples. У них есть единственное и множественное число, а с одной штукой можно использовать a/an. Неисчисляемые обычно воспринимаются как масса, вещество, материал, абстрактное понятие или общее количество: water, rice, money, information. Их обычно не ставим во множественное число и не используем с a/an.',
     visual: 'sort',
     accent: 'lemon',
-    searchTerms: ['исчисляемые', 'неисчисляемые', 'countable uncountable', 'much many'],
+    searchTerms: [
+      'исчисляемые',
+      'неисчисляемые',
+      'countable uncountable',
+      'some any',
+      'much many',
+      'a lot of',
+      'a few a little',
+      'количество',
+    ],
     cues: [
       {
-        label: 'count',
-        title: 'many / a few',
-        text: 'С множественными countable.',
-        exampleEn: 'There are a few apples.',
-        exampleRu: 'Есть несколько яблок.',
+        label: 'COUNTABLE',
+        title: 'Можно посчитать штуками',
+        text: 'one apple → two apples; a book → three books.',
+        exampleEn: 'There are three apples on the table.',
+        exampleRu: 'На столе три яблока.',
       },
       {
-        label: 'amount',
-        title: 'much / a little',
-        text: 'С uncountable.',
-        exampleEn: 'We need a little sugar.',
-        exampleRu: 'Нам нужно немного сахара.',
+        label: 'UNCOUNTABLE',
+        title: 'Считаем количество, а не штуки',
+        text: 'water, milk, rice, sugar, money, information.',
+        exampleEn: 'There is some milk in the fridge.',
+        exampleRu: 'В холодильнике есть немного молока.',
       },
       {
-        label: 'both',
-        title: 'some / any / a lot of',
-        text: 'Работают с обеими группами.',
-        exampleEn: 'We have a lot of time and a lot of ideas.',
-        exampleRu: 'У нас много времени и много идей.',
+        label: 'BOTH',
+        title: 'Some работает с обеими группами',
+        text: 'some + plural countable или some + uncountable.',
+        exampleEn: 'We need some apples and some water.',
+        exampleRu: 'Нам нужны яблоки и немного воды.',
       },
     ],
     memoryTip:
-      'Не говорим a bread / an information. Используем some bread, a piece of bread, some information.',
+      'Если можно естественно сказать one / two / three — существительное обычно исчисляемое. Если измеряем объём, массу или количество — часто неисчисляемое.',
     practice: {
-      prompt: 'How ___ water do you drink?',
-      options: ['many', 'much', 'a few'],
-      answer: 'much',
-      feedback: 'Water — uncountable → how much.',
+      prompt: 'Choose the correct option: We need ___ rice and ___ tomatoes.',
+      options: ['some / some', 'a / much', 'many / a little'],
+      answer: 'some / some',
+      feedback: 'Some можно использовать и с неисчисляемым rice, и с исчисляемым plural tomatoes.',
+    },
+    quantityGuide: {
+      intro:
+        'Эта тема состоит из двух шагов: сначала определяем тип существительного, потом выбираем слово количества. Именно от countable / uncountable зависит much или many, a few или a little.',
+      nounGroups: [
+        {
+          title: 'Исчисляемые',
+          subtitle: 'Countable nouns',
+          description:
+            'Предметы, людей и вещи, которые можно посчитать отдельными единицами. У них есть форма единственного и множественного числа.',
+          rules: [
+            'Можно сказать one, two, three: one apple → two apples.',
+            'С одной штукой можно использовать a/an: a book, an egg.',
+            'Во множественном числе можно использовать many и a few.',
+            'Вопрос о количестве: How many ...?',
+          ],
+          items: [
+            { icon: '🍎', word: 'apple → apples', note: 'яблоко → яблоки' },
+            { icon: '📚', word: 'book → books', note: 'книга → книги' },
+            { icon: '🪑', word: 'chair → chairs', note: 'стул → стулья' },
+            { icon: '🥚', word: 'egg → eggs', note: 'яйцо → яйца' },
+          ],
+        },
+        {
+          title: 'Неисчисляемые',
+          subtitle: 'Uncountable nouns',
+          description:
+            'То, что обычно не считаем как отдельные штуки: жидкости, вещества, материалы, еду-массу, деньги, время и абстрактные понятия.',
+          rules: [
+            'Обычно не используем a/an: some water, не a water.',
+            'Обычно нет формы множественного числа: information, не informations.',
+            'Используем much и a little.',
+            'Вопрос о количестве: How much ...?',
+          ],
+          items: [
+            { icon: '💧', word: 'water', note: 'вода' },
+            { icon: '🥛', word: 'milk', note: 'молоко' },
+            { icon: '🍚', word: 'rice', note: 'рис' },
+            { icon: '💰', word: 'money', note: 'деньги' },
+            { icon: 'ℹ️', word: 'information', note: 'информация' },
+          ],
+        },
+      ],
+      someBridge: {
+        title: 'Some = какое-то количество / несколько',
+        text:
+          'Some удобно тем, что оно работает и с исчисляемыми, и с неисчисляемыми. Разница только в форме существительного после него.',
+        countable: ['some apples', 'some books', 'some friends'],
+        uncountable: ['some water', 'some milk', 'some rice'],
+        examples: [
+          { en: 'I bought some apples.', ru: 'Я купил несколько яблок.' },
+          { en: 'There is some juice in the fridge.', ru: 'В холодильнике есть немного сока.' },
+        ],
+      },
+      sections: [
+        {
+          title: 'Some / Any',
+          subtitle: 'Есть какое-то количество — или спрашиваем, есть ли вообще?',
+          rows: [
+            {
+              word: 'some',
+              with: 'countable plural + uncountable',
+              meaning: 'обычно в утверждениях; также в предложениях и вежливых просьбах',
+              examples: [
+                { en: 'I have some friends here.', ru: 'У меня здесь есть несколько друзей.' },
+                { en: 'There is some juice in the fridge.', ru: 'В холодильнике есть немного сока.' },
+                { en: 'Would you like some tea?', ru: 'Хотите чаю?' },
+              ],
+            },
+            {
+              word: 'any',
+              with: 'countable plural + uncountable',
+              meaning: 'обычно в вопросах и отрицаниях',
+              examples: [
+                { en: 'Do you have any brothers?', ru: 'У тебя есть братья?' },
+                { en: 'Is there any milk?', ru: 'Есть молоко?' },
+                { en: 'I don’t have any money.', ru: 'У меня нет денег.' },
+              ],
+            },
+          ],
+          tip:
+            'Базовая схема для A2: утверждение → some; вопрос / отрицание → any. Но в предложениях и просьбах часто остаётся some: Would you like some tea?',
+        },
+        {
+          title: 'Much / Many / A lot of',
+          subtitle: 'Как сказать «много»?',
+          rows: [
+            {
+              word: 'many',
+              with: 'только countable plural',
+              meaning: 'много отдельных предметов / людей',
+              examples: [
+                { en: 'How many students are there?', ru: 'Сколько там учеников?' },
+                { en: 'We don’t have many chairs.', ru: 'У нас не так много стульев.' },
+              ],
+            },
+            {
+              word: 'much',
+              with: 'только uncountable',
+              meaning: 'много количества вещества / времени / денег и т. д.',
+              examples: [
+                { en: 'How much water do you drink?', ru: 'Сколько воды ты пьёшь?' },
+                { en: 'I don’t have much time.', ru: 'У меня не так много времени.' },
+              ],
+            },
+            {
+              word: 'a lot of',
+              with: 'countable plural + uncountable',
+              meaning: 'много; очень универсальная разговорная форма',
+              examples: [
+                { en: 'She has a lot of books.', ru: 'У неё много книг.' },
+                { en: 'We have a lot of homework.', ru: 'У нас много домашней работы.' },
+              ],
+            },
+          ],
+          tip:
+            'В обычных утвердительных предложениях a lot of часто звучит естественнее, чем much: I have a lot of time. Much особенно часто встречается в вопросах и отрицаниях.',
+        },
+        {
+          title: 'A few / A little',
+          subtitle: 'Как сказать «немного, несколько»?',
+          rows: [
+            {
+              word: 'a few',
+              with: 'только countable plural',
+              meaning: 'несколько отдельных предметов / людей; небольшое, но существующее количество',
+              examples: [
+                { en: 'I have a few questions.', ru: 'У меня есть несколько вопросов.' },
+                { en: 'We bought a few apples.', ru: 'Мы купили несколько яблок.' },
+              ],
+            },
+            {
+              word: 'a little',
+              with: 'только uncountable',
+              meaning: 'немного вещества, времени, денег и т. д.',
+              examples: [
+                { en: 'Add a little sugar.', ru: 'Добавь немного сахара.' },
+                { en: 'I have a little time.', ru: 'У меня есть немного времени.' },
+              ],
+            },
+          ],
+          tip:
+            'Быстрая проверка: можно поставить число? → a few. Нельзя посчитать штуками? → a little.',
+        },
+      ],
+      chooser: {
+        countable: ['a / an', 'many', 'a few', 'some', 'any', 'a lot of'],
+        uncountable: ['much', 'a little', 'some', 'any', 'a lot of'],
+      },
     },
   },
   'grammar-articles': {
