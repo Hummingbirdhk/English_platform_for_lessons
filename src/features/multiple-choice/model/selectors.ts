@@ -5,6 +5,11 @@ export type MultipleChoiceSliceState = Record<
   { selectedOptionId: string | null; status: MultipleChoiceStatus }
 >;
 
+const EMPTY_MULTIPLE_CHOICE_STATE = {
+  selectedOptionId: null,
+  status: 'idle' as const,
+};
+
 export function selectMultipleChoiceState(state: MultipleChoiceSliceState, exerciseId: string) {
-  return state[exerciseId] ?? { selectedOptionId: null, status: 'idle' as const };
+  return state[exerciseId] ?? EMPTY_MULTIPLE_CHOICE_STATE;
 }
