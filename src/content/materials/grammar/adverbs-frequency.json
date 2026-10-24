@@ -5,11 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Daily routine",
-  "tags": [
-    "grammar",
-    "frequency",
-    "always usually often sometimes never"
-  ],
+  "tags": ["grammar", "frequency", "always usually often sometimes never"],
   "summary": "Use frequency adverbs to say how often something happens.",
   "explanation": {
     "en": "Always, usually, often, sometimes, rarely and never show frequency. Their position depends on the verb.",

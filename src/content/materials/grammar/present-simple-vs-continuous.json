@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Present tenses",
-  "tags": [
-    "grammar",
-    "present simple",
-    "present continuous",
-    "contrast"
-  ],
+  "tags": ["grammar", "present simple", "present continuous", "contrast"],
   "summary": "Choose Present Simple for routines and Present Continuous for actions happening now.",
   "explanation": {
     "en": "Present Simple is for repeated or usual actions. Present Continuous is for actions in progress now or temporary situations.",

@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Future",
-  "tags": [
-    "grammar",
-    "future",
-    "will",
-    "won't"
-  ],
+  "tags": ["grammar", "future", "will", "won't"],
   "summary": "Use will for predictions, instant decisions, offers and promises.",
   "explanation": {
     "en": "Will is common for predictions and decisions made at the moment of speaking. It is also used for offers and promises.",

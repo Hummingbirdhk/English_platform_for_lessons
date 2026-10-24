@@ -5,13 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Rules & obligation",
-  "tags": [
-    "grammar",
-    "have to",
-    "don't have to",
-    "needn't",
-    "obligation"
-  ],
+  "tags": ["grammar", "have to", "don't have to", "needn't", "obligation"],
   "summary": "Use have to for necessary actions and don't have to or needn't when something is not necessary.",
   "explanation": {
     "en": "Have to expresses necessity. Don't have to and needn't mean there is no necessity.",

@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Instructions & directions",
-  "tags": [
-    "grammar",
-    "imperative",
-    "instructions",
-    "directions"
-  ],
+  "tags": ["grammar", "imperative", "instructions", "directions"],
   "summary": "Use the imperative for commands, instructions, warnings and directions.",
   "explanation": {
     "en": "The imperative uses the base form of the verb. Use don't before the verb for a negative command.",

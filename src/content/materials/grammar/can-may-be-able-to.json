@@ -5,13 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Modal verbs",
-  "tags": [
-    "grammar",
-    "can",
-    "may",
-    "be able to",
-    "ability permission"
-  ],
+  "tags": ["grammar", "can", "may", "be able to", "ability permission"],
   "summary": "Use can for ability and informal permission, may for more formal permission, and be able to when another tense is needed.",
   "explanation": {
     "en": "Can expresses ability and common permission. May can ask or give permission more formally. Be able to is useful when can has no suitable tense.",

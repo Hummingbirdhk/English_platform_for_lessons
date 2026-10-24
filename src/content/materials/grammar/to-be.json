@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Basics",
-  "tags": [
-    "grammar",
-    "to be",
-    "am is are",
-    "was were"
-  ],
+  "tags": ["grammar", "to be", "am is are", "was were"],
   "summary": "Use be to talk about identity, age, descriptions, location and states.",
   "explanation": {
     "en": "We use the verb be to say who or what someone is, describe people and things, and talk about where they are.",

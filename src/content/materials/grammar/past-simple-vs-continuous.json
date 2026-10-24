@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Past events",
-  "tags": [
-    "grammar",
-    "past simple",
-    "past continuous",
-    "when while"
-  ],
+  "tags": ["grammar", "past simple", "past continuous", "when while"],
   "summary": "Use Past Continuous for the background action and Past Simple for the completed event.",
   "explanation": {
     "en": "Past Continuous often shows an action in progress. Past Simple shows the shorter or completed event.",

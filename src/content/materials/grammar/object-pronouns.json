@@ -5,11 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Pronouns & determiners",
-  "tags": [
-    "grammar",
-    "object pronouns",
-    "me you him her it us them"
-  ],
+  "tags": ["grammar", "object pronouns", "me you him her it us them"],
   "summary": "Use object pronouns after verbs and prepositions.",
   "explanation": {
     "en": "Object pronouns receive the action: me, you, him, her, it, us, them.",

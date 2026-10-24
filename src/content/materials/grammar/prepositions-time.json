@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Prepositions",
-  "tags": [
-    "grammar",
-    "prepositions",
-    "time",
-    "at on in"
-  ],
+  "tags": ["grammar", "prepositions", "time", "at on in"],
   "summary": "Use at, on and in with different kinds of time expressions.",
   "explanation": {
     "en": "Use at for clock times, on for days and dates, and in for months, years and longer periods.",

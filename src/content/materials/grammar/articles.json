@@ -5,12 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Articles",
-  "tags": [
-    "grammar",
-    "articles",
-    "a an the",
-    "zero article"
-  ],
+  "tags": ["grammar", "articles", "a an the", "zero article"],
   "summary": "Choose a/an, the or no article depending on whether something is general, new or specific.",
   "explanation": {
     "en": "Use a/an for one non-specific countable thing, the for something specific or already known, and no article for many general plural or uncountable meanings.",

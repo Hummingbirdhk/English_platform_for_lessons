@@ -5,13 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Prepositions",
-  "tags": [
-    "grammar",
-    "prepositions",
-    "place",
-    "movement",
-    "in on at into"
-  ],
+  "tags": ["grammar", "prepositions", "place", "movement", "in on at into"],
   "summary": "Use place prepositions to describe location and movement prepositions to show direction.",
   "explanation": {
     "en": "Place prepositions answer where. Movement prepositions show where someone or something moves.",

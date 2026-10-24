@@ -5,11 +5,7 @@
   "grade": 6,
   "level": "A2",
   "topic": "Sentence building",
-  "tags": [
-    "grammar",
-    "relative clauses",
-    "who which that where whose"
-  ],
+  "tags": ["grammar", "relative clauses", "who which that where whose"],
   "summary": "Use relative words to add information about a person, thing or place.",
   "explanation": {
     "en": "Relative clauses join information about a noun. Use who for people, which for things, and where for places. That can often replace who/which in defining clauses.",
