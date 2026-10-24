@@ -7,6 +7,7 @@ import { MaterialsPage } from '../../pages/materials/MaterialsPage';
 import { NotFoundPage } from '../../pages/not-found/NotFoundPage';
 import { StudentPage } from '../../pages/students/StudentPage';
 import { StudentsPage } from '../../pages/students/StudentsPage';
+import { TeacherDashboardPage } from '../../pages/teacher/TeacherDashboardPage';
 
 export function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export function AppRoutes() {
       <Route path="/lesson/:lessonId" element={<LessonPage />} />
       <Route path="/students" element={<StudentsPage />} />
       <Route path="/students/:studentId" element={<StudentPage />} />
+      <Route path="/teacher" element={<TeacherDashboardPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
