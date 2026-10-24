@@ -132,6 +132,116 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
         </div>
       </section>
 
+      {presentation.tenseGuide ? (
+        <section className="grammar-studio__section tense-guide">
+          <div className="grammar-studio__section-heading">
+            <div>
+              <span className="grammar-studio__kicker">02 · КАК РАБОТАЕТ ВРЕМЯ</span>
+              <h2>Разбираем подробнее</h2>
+            </div>
+            <p>{presentation.tenseGuide.intro}</p>
+          </div>
+
+          <div className="tense-guide__uses">
+            {presentation.tenseGuide.uses.map((use, index) => (
+              <article className="tense-use-card" key={use.title}>
+                <span className="tense-use-card__number">{String(index + 1).padStart(2, '0')}</span>
+                <h3>{use.title}</h3>
+                <p>{use.text}</p>
+                <div className="grammar-example">
+                  <strong>{use.exampleEn}</strong>
+                  <span>{use.exampleRu}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="tense-guide__split">
+            <article className="tense-marker-card">
+              <div className="tense-guide__mini-heading">
+                <span className="grammar-studio__kicker">МАРКЕРЫ</span>
+                <h3>Слова-подсказки</h3>
+              </div>
+              <div className="tense-marker-list">
+                {presentation.tenseGuide.markers.map((item) => (
+                  <div className="tense-marker-row" key={item.marker}>
+                    <strong>{item.marker}</strong>
+                    <span>{item.meaning}</span>
+                    <em>{item.example}</em>
+                  </div>
+                ))}
+              </div>
+            </article>
+
+            <article className="tense-build-card">
+              <div className="tense-guide__mini-heading">
+                <span className="grammar-studio__kicker">ФОРМА</span>
+                <h3>Как строится</h3>
+              </div>
+              <div className="tense-build-list">
+                {presentation.tenseGuide.build.map((item) => (
+                  <div className="tense-build-row" key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.rule}</strong>
+                    <div>
+                      <b>{item.exampleEn}</b>
+                      <small>{item.exampleRu}</small>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </article>
+          </div>
+
+          {presentation.tenseGuide.specialCases?.length ? (
+            <details className="grammar-reference tense-special-cases">
+              <summary>
+                <span>
+                  <small>ВАЖНЫЕ ДЕТАЛИ</small>
+                  <strong>Особые случаи и ловушки</strong>
+                </span>
+                <b>+</b>
+              </summary>
+              <div className="tense-special-cases__body">
+                {presentation.tenseGuide.specialCases.map((item) => (
+                  <article key={item.title}>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <div className="grammar-example">
+                      <strong>{item.exampleEn}</strong>
+                      <span>{item.exampleRu}</span>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </details>
+          ) : null}
+
+          {presentation.tenseGuide.contrast ? (
+            <article className="tense-contrast">
+              <div className="tense-guide__mini-heading">
+                <span className="grammar-studio__kicker">СРАВНЕНИЕ</span>
+                <h3>{presentation.tenseGuide.contrast.title}</h3>
+              </div>
+              <div className="tense-contrast__header">
+                <strong>{presentation.tenseGuide.contrast.leftTitle}</strong>
+                <strong>{presentation.tenseGuide.contrast.rightTitle}</strong>
+                <span>Логика</span>
+              </div>
+              <div className="tense-contrast__rows">
+                {presentation.tenseGuide.contrast.rows.map((row) => (
+                  <div className="tense-contrast__row" key={row.left + row.right}>
+                    <div>{row.left}</div>
+                    <div>{row.right}</div>
+                    <span>{row.note}</span>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ) : null}
+        </section>
+      ) : null}
+
       {presentation.quantityGuide ? (
         <>
           <section className="grammar-studio__section quantity-guide">
@@ -282,7 +392,9 @@ export function GrammarMaterial({ material }: { material: GrammarMaterialData })
       <section className="grammar-studio__section grammar-form-lab">
         <div className="grammar-studio__section-heading">
           <div>
-            <span className="grammar-studio__kicker">02 · МЕХАНИКА</span>
+            <span className="grammar-studio__kicker">
+              {presentation.tenseGuide || presentation.quantityGuide ? '03 · МЕХАНИКА' : '02 · МЕХАНИКА'}
+            </span>
             <h2>Разбери конструкцию</h2>
           </div>
           <p>Переключай формы: формула и примеры меняются прямо в карточке.</p>
