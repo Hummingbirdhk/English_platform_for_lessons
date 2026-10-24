@@ -29,6 +29,42 @@ export type GrammarPresentation = {
     headers: string[];
     rows: string[][];
   };
+  tenseGuide?: {
+    intro: string;
+    uses: Array<{
+      title: string;
+      text: string;
+      exampleEn: string;
+      exampleRu: string;
+    }>;
+    markers: Array<{
+      marker: string;
+      meaning: string;
+      example: string;
+    }>;
+    build: Array<{
+      label: string;
+      rule: string;
+      exampleEn: string;
+      exampleRu: string;
+    }>;
+    specialCases?: Array<{
+      title: string;
+      text: string;
+      exampleEn: string;
+      exampleRu: string;
+    }>;
+    contrast?: {
+      title: string;
+      leftTitle: string;
+      rightTitle: string;
+      rows: Array<{
+        left: string;
+        right: string;
+        note: string;
+      }>;
+    };
+  };
   quantityGuide?: {
     intro: string;
     nounGroups: Array<{
