@@ -9,6 +9,6 @@ describe('modules 1-2 vocabulary lesson', () => {
     expect(lesson?.sections.some((section) => section.type === 'embed')).toBe(true);
 
     const embed = lesson?.sections.find((section) => section.type === 'embed');
-    expect(embed?.src).toContain('vocabulary-modules-1-2.html');
+    expect(embed?.src).toContain('vocabulary-modules-1-2.v2.html');
   });
 });
