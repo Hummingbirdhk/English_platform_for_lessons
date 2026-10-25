@@ -208,7 +208,10 @@ export function StudentOwnPage() {
               id="homework-date"
               value={homeworkDate}
               onChange={(event) => {
-                if (!dirty || window.confirm('Есть несохранённые изменения. Перейти к другой дате?')) {
+                if (
+                  !dirty ||
+                  window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
+                ) {
                   selectHomeworkDate(event.target.value);
                 }
               }}
@@ -266,7 +269,10 @@ export function StudentOwnPage() {
                     key={entry.lesson_date}
                     type="button"
                     onClick={() => {
-                      if (!dirty || window.confirm('Есть несохранённые изменения. Перейти к другой дате?')) {
+                      if (
+                  !dirty ||
+                  window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
+                ) {
                         selectHomeworkDate(entry.lesson_date);
                       }
                     }}
