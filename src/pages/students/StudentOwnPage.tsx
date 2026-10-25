@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { cloudClient } from '../../shared/config/cloud';
+import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
 export function StudentOwnPage() {
   const { studentId } = useParams();
+  const auth = useTeacherAuth();
   const student = studentId ? findStudentById(studentId) : undefined;
   const content = loadAllContent();
   const [focus, setFocus] = useState('');
@@ -53,6 +55,7 @@ export function StudentOwnPage() {
       <section className="student-hero">
         <div>
           <h1>{student?.displayName ?? 'Мой профиль'}</h1>
+          <button type="button" onClick={() => void auth.signOut()}>Выйти</button>
           <p>{error || 'Материалы и задания преподавателя'}</p>
         </div>
       </section>
