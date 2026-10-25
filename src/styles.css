@@ -3308,3 +3308,73 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+.student-assignment-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 250px) auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(17, 17, 20, 0.08);
+  border-radius: 22px;
+  background: var(--color-lemon);
+}
+
+.student-assignment-bar > div {
+  display: grid;
+  gap: 3px;
+}
+
+.student-assignment-bar__eyebrow {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.student-assignment-bar select {
+  min-height: 42px;
+  border: 1px solid rgba(17, 17, 20, 0.12);
+  border-radius: 13px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--color-ink);
+}
+
+.student-assignment-bar > button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 16px;
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.student-assignment-bar > button:disabled {
+  opacity: 0.42;
+  cursor: default;
+}
+
+.student-assignment-bar__message {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.lesson-assignment-shell {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+.lesson-assignment-shell .student-assignment-bar {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .student-assignment-bar {
+    grid-template-columns: 1fr;
+  }
+}
