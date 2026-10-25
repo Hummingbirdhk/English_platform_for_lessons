@@ -141,14 +141,38 @@ function mergeStoredWorkspace(student: StudentProfile, stored: string | null): S
 }
 
 export function readStudentWorkspace(student: StudentProfile): StudentWorkspace {
+  const cached = cloudCache.get(student.id);
+  if (cached) return cached;
   if (typeof window === 'undefined') return makeDefaultWorkspace(student);
   return mergeStoredWorkspace(student, window.localStorage.getItem(storageKey(student.id)));
 }
 
 export function writeStudentWorkspace(studentId: string, workspace: StudentWorkspace) {
+  cloudCache.set(studentId, workspace);
   if (typeof window === 'undefined') return;
   window.localStorage.setItem(storageKey(studentId), JSON.stringify(workspace));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
+}
+
+export function saveStudentWorkspace(student: StudentProfile, workspace: StudentWorkspace) {
+  writeStudentWorkspace(student.id, workspace);
+  void persistCloudWorkspace(student, workspace).catch(() => undefined);
+}
+
+async function hydrateStudentWorkspace(student: StudentProfile) {
+  if (cloudLoaded.has(student.id) || cloudLoading.has(student.id)) return;
+  cloudLoading.add(student.id);
+
+  try {
+    const fallback = readStudentWorkspace(student);
+    const remoteWorkspace = await fetchCloudWorkspace(student, fallback);
+    if (remoteWorkspace) {
+      cloudLoaded.add(student.id);
+      writeStudentWorkspace(student.id, remoteWorkspace);
+    }
+  } finally {
+    cloudLoading.delete(student.id);
+  }
 }
 
 export function resetStudentWorkspace(studentId: string) {
