@@ -50,3 +50,54 @@
     font-size: 15px;
   }
 }
+
+.student-own-homework-form {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.student-own-homework-form label {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.student-own-homework-form input,
+.student-own-homework-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #252525;
+  border-radius: 12px;
+  background: #fff;
+  color: #111114;
+}
+
+.student-own-homework-form button {
+  margin-top: 10px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 14px;
+  background: #111114;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.student-own-homework-form button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.student-own-homework-dates {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.student-own-homework-dates button {
+  font-size: 12px;
+  padding: 8px 12px;
+  margin: 0;
+}
