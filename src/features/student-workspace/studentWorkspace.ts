@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useSyncExternalStore } from 'react';
 import type { StudentProfile } from '../../content/types';
 
 export type StudentFocus = {
@@ -115,11 +115,8 @@ function storageKey(studentId: string) {
   return `${STORAGE_PREFIX}${studentId}`;
 }
 
-export function readStudentWorkspace(student: StudentProfile): StudentWorkspace {
+function mergeStoredWorkspace(student: StudentProfile, stored: string | null): StudentWorkspace {
   const fallback = makeDefaultWorkspace(student);
-  if (typeof window === 'undefined') return fallback;
-
-  const stored = window.localStorage.getItem(storageKey(student.id));
   if (!stored) return fallback;
 
   try {
@@ -138,6 +135,11 @@ export function readStudentWorkspace(student: StudentProfile): StudentWorkspace 
   }
 }
 
+export function readStudentWorkspace(student: StudentProfile): StudentWorkspace {
+  if (typeof window === 'undefined') return makeDefaultWorkspace(student);
+  return mergeStoredWorkspace(student, window.localStorage.getItem(storageKey(student.id)));
+}
+
 export function writeStudentWorkspace(studentId: string, workspace: StudentWorkspace) {
   if (typeof window === 'undefined') return;
   window.localStorage.setItem(storageKey(studentId), JSON.stringify(workspace));
@@ -151,38 +153,42 @@ export function resetStudentWorkspace(studentId: string) {
 }
 
 export function useStudentWorkspace(student: StudentProfile | undefined) {
-  const [workspace, setWorkspaceState] = useState<StudentWorkspace | null>(() =>
-    student ? readStudentWorkspace(student) : null,
+  const studentId = student?.id ?? '';
+
+  const subscribe = useCallback(
+    (notify: () => void) => {
+      if (!studentId || typeof window === 'undefined') return () => undefined;
+
+      const handleWorkspaceChange = (event: Event) => {
+        const detail = (event as CustomEvent<{ studentId?: string }>).detail;
+        if (!detail?.studentId || detail.studentId === studentId) notify();
+      };
+
+      const handleStorage = (event: StorageEvent) => {
+        if (!event.key || event.key === storageKey(studentId)) notify();
+      };
+
+      window.addEventListener(WORKSPACE_EVENT, handleWorkspaceChange);
+      window.addEventListener('storage', handleStorage);
+      return () => {
+        window.removeEventListener(WORKSPACE_EVENT, handleWorkspaceChange);
+        window.removeEventListener('storage', handleStorage);
+      };
+    },
+    [studentId],
   );
 
-  useEffect(() => {
-    setWorkspaceState(student ? readStudentWorkspace(student) : null);
-  }, [student]);
+  const getSnapshot = useCallback(() => {
+    if (!studentId || typeof window === 'undefined') return '';
+    return window.localStorage.getItem(storageKey(studentId)) ?? '';
+  }, [studentId]);
 
-  useEffect(() => {
-    if (!student || typeof window === 'undefined') return undefined;
-
-    const refresh = (event: Event) => {
-      const detail = (event as CustomEvent<{ studentId?: string }>).detail;
-      if (!detail?.studentId || detail.studentId === student.id) {
-        setWorkspaceState(readStudentWorkspace(student));
-      }
-    };
-
-    const refreshFromStorage = () => setWorkspaceState(readStudentWorkspace(student));
-
-    window.addEventListener(WORKSPACE_EVENT, refresh);
-    window.addEventListener('storage', refreshFromStorage);
-    return () => {
-      window.removeEventListener(WORKSPACE_EVENT, refresh);
-      window.removeEventListener('storage', refreshFromStorage);
-    };
-  }, [student]);
+  const stored = useSyncExternalStore(subscribe, getSnapshot, () => '');
+  const workspace = student ? mergeStoredWorkspace(student, stored || null) : null;
 
   function save(next: StudentWorkspace) {
     if (!student) return;
     writeStudentWorkspace(student.id, next);
-    setWorkspaceState(next);
   }
 
   function patch(patchValue: Partial<StudentWorkspace>) {
