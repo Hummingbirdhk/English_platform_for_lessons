@@ -97,7 +97,10 @@ export function StudentOwnPage() {
             <p>Преподаватель добавит сюда лексику и грамматику по текущей теме.</p>
           ) : null}
         </article>
-        <article className="student-panel student-panel--revision" style={{ background: '#ff825e' }}>
+        <article
+          className="student-panel student-panel--revision"
+          style={{ background: '#ff825e' }}
+        >
           <span className="sticker sticker--white">МОЯ ДОМАШКА</span>
           <h2>Домашнее задание</h2>
           <p>{homework || 'Пока ничего не задано'}</p>
