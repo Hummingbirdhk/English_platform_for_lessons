@@ -1,6 +1,25 @@
 import type { StudentProfile } from '../../content/types';
 import { cloudClient, isCloudConfigured } from '../../shared/config/cloud';
-import type { StudentWorkspace } from './studentWorkspace';
+type StudentWorkspace = {
+  profileTags: string[];
+  focus: {
+    main: string;
+    practice: string;
+    revision: string;
+  };
+  notes: string;
+  assignedMaterialIds: string[];
+  assignedLessonIds: string[];
+  preparationNote: string;
+  lessonHistory: Array<{
+    id: string;
+    date: string;
+    title: string;
+    detail: string;
+    homework: string;
+  }>;
+  currentHomework: string;
+};
 
 type ProfileRow = {
   student_id: string;
