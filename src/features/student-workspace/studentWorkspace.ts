@@ -157,7 +157,16 @@ export function writeStudentWorkspace(studentId: string, workspace: StudentWorks
 
 export function saveStudentWorkspace(student: StudentProfile, workspace: StudentWorkspace) {
   writeStudentWorkspace(student.id, workspace);
-  void persistCloudWorkspace(student, workspace).catch(() => undefined);
+
+  const currentTimer = cloudSaveTimers.get(student.id);
+  if (currentTimer) clearTimeout(currentTimer);
+
+  const timer = setTimeout(() => {
+    cloudSaveTimers.delete(student.id);
+    void persistCloudWorkspace(student, workspace).catch(() => undefined);
+  }, 500);
+
+  cloudSaveTimers.set(student.id, timer);
 }
 
 async function hydrateStudentWorkspace(student: StudentProfile) {
