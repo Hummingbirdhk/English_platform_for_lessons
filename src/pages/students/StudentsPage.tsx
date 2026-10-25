@@ -7,6 +7,12 @@ import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 export function StudentsPage() {
   const { students } = loadAllContent();
   const auth = useTeacherAuth();
+  if (auth.configured && auth.status === 'checking') {
+    return <main className="page-shell">Проверяю доступ…</main>;
+  }
+  if (auth.configured && auth.status !== 'authenticated') {
+    return <Navigate to="/student/login" replace />;
+  }
   if (
     auth.configured &&
     auth.status === 'authenticated' &&
