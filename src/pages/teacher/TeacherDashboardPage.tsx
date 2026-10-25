@@ -8,6 +8,7 @@ import {
   type StudentWorkspace,
   useStudentWorkspace,
 } from '../../features/student-workspace/studentWorkspace';
+import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
 type AttendanceStatus = 'planned' | 'present' | 'moved' | 'cancelled';
 
@@ -473,6 +474,7 @@ function TeacherStudentDashboard({
 
 export function TeacherDashboardPage() {
   const { students, materials } = loadAllContent();
+  const auth = useTeacherAuth();
   const order = ['student-zlata', 'student-artem'];
   const visibleStudents = students
     .filter((student) => order.includes(student.id))
@@ -503,6 +505,12 @@ export function TeacherDashboardPage() {
         <div className="teacher-dashboard__summary">
           <span>{visibleStudents.length} ученика</span>
           <span>Расписание 2026–2027</span>
+          {auth.configured ? <span>Cloud sync: on</span> : <span>Cloud sync: local</span>}
+          {auth.configured ? (
+            <button type="button" className="teacher-signout-button" onClick={() => auth.signOut()}>
+              Выйти
+            </button>
+          ) : null}
         </div>
       </section>
 
