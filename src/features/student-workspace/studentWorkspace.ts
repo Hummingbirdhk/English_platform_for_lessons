@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useSyncExternalStore } from 'react';
 import type { StudentProfile } from '../../content/types';
 import { useTeacherAuth } from '../teacher-auth/teacherAuthStore';
-import { fetchCloudWorkspace, persistCloudWorkspace } from './studentWorkspaceCloud';
+import {
+  type CloudWorkspaceField,
+  fetchCloudWorkspace,
+  persistCloudWorkspace,
+} from './studentWorkspaceCloud';
 
 export type StudentFocus = {
   main: string;
@@ -155,7 +159,11 @@ export function writeStudentWorkspace(studentId: string, workspace: StudentWorks
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
 }
 
-export function saveStudentWorkspace(student: StudentProfile, workspace: StudentWorkspace) {
+export function saveStudentWorkspace(
+  student: StudentProfile,
+  workspace: StudentWorkspace,
+  fields?: readonly CloudWorkspaceField[],
+) {
   writeStudentWorkspace(student.id, workspace);
 
   const currentTimer = cloudSaveTimers.get(student.id);
@@ -163,7 +171,7 @@ export function saveStudentWorkspace(student: StudentProfile, workspace: Student
 
   const timer = setTimeout(() => {
     cloudSaveTimers.delete(student.id);
-    void persistCloudWorkspace(student, workspace).catch(() => undefined);
+    void persistCloudWorkspace(student, workspace, fields).catch(() => undefined);
   }, 500);
 
   cloudSaveTimers.set(student.id, timer);
@@ -236,14 +244,14 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
   const stored = useSyncExternalStore(subscribe, getSnapshot, () => '');
   const workspace = student ? mergeStoredWorkspace(student, stored || null) : null;
 
-  function save(next: StudentWorkspace) {
+  function save(next: StudentWorkspace, fields?: readonly CloudWorkspaceField[]) {
     if (!student) return;
-    saveStudentWorkspace(student, next);
+    saveStudentWorkspace(student, next, fields);
   }
 
   function patch(patchValue: Partial<StudentWorkspace>) {
     if (!student || !workspace) return;
-    save({ ...workspace, ...patchValue });
+    save({ ...workspace, ...patchValue }, Object.keys(patchValue) as CloudWorkspaceField[]);
   }
 
   return { workspace, save, patch };
