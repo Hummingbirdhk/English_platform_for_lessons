@@ -1,0 +1,106 @@
+{
+  "id": "vocabulary-09-food-cooking",
+  "type": "vocabulary",
+  "title": "Food & Cooking",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Food & Cooking",
+  "tags": [
+    "vocabulary",
+    "food",
+    "Spotlight 6 · Module 9"
+  ],
+  "summary": "Продукты, приготовление еды, заказ в кафе.",
+  "items": [
+    {
+      "term": "ingredient",
+      "translation": "ингредиент",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Check the ingredients before cooking.",
+        "ru": "Проверь ингредиенты перед готовкой."
+      }
+    },
+    {
+      "term": "portion",
+      "translation": "порция",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I'd like a small portion, please.",
+        "ru": "Мне маленькую порцию, пожалуйста."
+      }
+    },
+    {
+      "term": "menu",
+      "translation": "меню",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Could I see the menu?",
+        "ru": "Можно посмотреть меню?"
+      }
+    },
+    {
+      "term": "recipe",
+      "translation": "рецепт",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This recipe is easy to follow.",
+        "ru": "Этому рецепту легко следовать."
+      }
+    },
+    {
+      "term": "boil",
+      "translation": "варить, кипятить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Boil the potatoes for fifteen minutes.",
+        "ru": "Вари картофель пятнадцать минут."
+      }
+    },
+    {
+      "term": "chop",
+      "translation": "нарезать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Chop the onions carefully.",
+        "ru": "Осторожно нарежь лук."
+      }
+    },
+    {
+      "term": "order",
+      "translation": "заказывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We ordered two sandwiches.",
+        "ru": "Мы заказали два сэндвича."
+      }
+    },
+    {
+      "term": "delicious",
+      "translation": "вкусный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The soup is delicious.",
+        "ru": "Суп очень вкусный."
+      }
+    },
+    {
+      "term": "spicy",
+      "translation": "острый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This sauce is too spicy.",
+        "ru": "Этот соус слишком острый."
+      }
+    },
+    {
+      "term": "Could I have ...?",
+      "translation": "Можно мне ...?",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Could I have some water, please?",
+        "ru": "Можно мне воды, пожалуйста?"
+      }
+    }
+  ]
+}

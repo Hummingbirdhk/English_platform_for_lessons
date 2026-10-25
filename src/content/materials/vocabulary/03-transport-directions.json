@@ -1,0 +1,97 @@
+{
+  "id": "vocabulary-03-transport-directions",
+  "type": "vocabulary",
+  "title": "Transport & Directions",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Transport & Directions",
+  "tags": [
+    "vocabulary",
+    "transport",
+    "Spotlight 6 · Module 3"
+  ],
+  "summary": "Дорожная безопасность, транспорт и маршруты.",
+  "items": [
+    {
+      "term": "pedestrian",
+      "translation": "пешеход",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Pedestrians must use the crossing.",
+        "ru": "Пешеходы должны пользоваться переходом."
+      }
+    },
+    {
+      "term": "traffic lights",
+      "translation": "светофор",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Stop when the traffic lights are red.",
+        "ru": "Остановись, когда горит красный свет."
+      }
+    },
+    {
+      "term": "seat belt",
+      "translation": "ремень безопасности",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Always wear a seat belt.",
+        "ru": "Всегда пристёгивай ремень безопасности."
+      }
+    },
+    {
+      "term": "fare",
+      "translation": "стоимость проезда",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "How much is the bus fare?",
+        "ru": "Сколько стоит проезд на автобусе?"
+      }
+    },
+    {
+      "term": "cross",
+      "translation": "переходить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Cross the road carefully.",
+        "ru": "Переходи дорогу осторожно."
+      }
+    },
+    {
+      "term": "turn",
+      "translation": "поворачивать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Turn left at the corner.",
+        "ru": "Поверни налево на углу."
+      }
+    },
+    {
+      "term": "safe",
+      "translation": "безопасный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This route is safe for cyclists.",
+        "ru": "Этот маршрут безопасен для велосипедистов."
+      }
+    },
+    {
+      "term": "crowded",
+      "translation": "переполненный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The underground is crowded today.",
+        "ru": "Сегодня метро переполнено."
+      }
+    },
+    {
+      "term": "go straight on",
+      "translation": "идти прямо",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Go straight on past the bank.",
+        "ru": "Иди прямо мимо банка."
+      }
+    }
+  ]
+}

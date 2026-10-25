@@ -3,13 +3,34 @@ import type { Material } from '../../../content/types';
 
 type VocabularyMaterialData = Extract<Material, { type: 'vocabulary' }>;
 
+const groupLabels: Record<string, string> = {
+  noun: 'Существительные',
+  verb: 'Глаголы',
+  adjective: 'Прилагательные',
+  adverb: 'Наречия',
+  phrase: 'Полезные фразы',
+  phrasal_verb: 'Фразовые глаголы',
+  idiom: 'Идиомы и устойчивые выражения',
+  other: 'Другие слова',
+};
+
 export function VocabularyMaterial({ material }: { material: VocabularyMaterialData }) {
+  const groups = Object.entries(
+    material.items.reduce<Record<string, typeof material.items>>((acc, item) => {
+      const key = item.partOfSpeech ?? 'other';
+      (acc[key] ??= []).push(item);
+      return acc;
+    }, {}),
+  );
   return (
     <article className="material-detail">
       <Typography.Title level={1}>{material.title}</Typography.Title>
       <Typography.Paragraph type="secondary">{material.summary}</Typography.Paragraph>
-      <Row gutter={[16, 16]}>
-        {material.items.map((item) => (
+      {groups.map(([group, items]) => (
+        <section key={group}>
+          <Typography.Title level={2}>{groupLabels[group]}</Typography.Title>
+          <Row gutter={[16, 16]}>
+            {(items ?? []).map((item) => (
           <Col xs={24} md={12} key={item.term}>
             <Card className="vocabulary-card">
               {item.imageUrl ? (
@@ -33,8 +54,10 @@ export function VocabularyMaterial({ material }: { material: VocabularyMaterialD
               ) : null}
             </Card>
           </Col>
-        ))}
-      </Row>
+            ))}
+          </Row>
+        </section>
+      ))}
     </article>
   );
 }

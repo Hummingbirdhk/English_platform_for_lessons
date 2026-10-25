@@ -1,0 +1,97 @@
+{
+  "id": "vocabulary-14-feelings-relations",
+  "type": "vocabulary",
+  "title": "Feelings & Relationships",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Feelings & Relationships",
+  "tags": [
+    "vocabulary",
+    "feelings",
+    "B1 extension"
+  ],
+  "summary": "Эмоции, дружба и общение.",
+  "items": [
+    {
+      "term": "confidence",
+      "translation": "уверенность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Practice builds confidence.",
+        "ru": "Практика укрепляет уверенность."
+      }
+    },
+    {
+      "term": "argument",
+      "translation": "ссора, спор",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They had an argument yesterday.",
+        "ru": "Вчера они поссорились."
+      }
+    },
+    {
+      "term": "support",
+      "translation": "поддержка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Friends can give you support.",
+        "ru": "Друзья могут поддержать тебя."
+      }
+    },
+    {
+      "term": "apologise",
+      "translation": "извиняться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "You should apologise for being rude.",
+        "ru": "Тебе стоит извиниться за грубость."
+      }
+    },
+    {
+      "term": "trust",
+      "translation": "доверять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I trust my best friend.",
+        "ru": "Я доверяю лучшему другу."
+      }
+    },
+    {
+      "term": "encourage",
+      "translation": "подбадривать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Our coach encouraged the team.",
+        "ru": "Тренер подбодрил команду."
+      }
+    },
+    {
+      "term": "disappointed",
+      "translation": "разочарованный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She was disappointed by the result.",
+        "ru": "Она была разочарована результатом."
+      }
+    },
+    {
+      "term": "embarrassed",
+      "translation": "смущённый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I felt embarrassed after the mistake.",
+        "ru": "Мне стало неловко из-за ошибки."
+      }
+    },
+    {
+      "term": "keep in touch",
+      "translation": "поддерживать связь",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We keep in touch after school.",
+        "ru": "Мы поддерживаем связь после школы."
+      }
+    }
+  ]
+}

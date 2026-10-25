@@ -1,0 +1,106 @@
+{
+  "id": "vocabulary-16-opinions-discussion",
+  "type": "vocabulary",
+  "title": "Opinions & Discussion",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Opinions & Discussion",
+  "tags": [
+    "vocabulary",
+    "communication",
+    "B1 extension"
+  ],
+  "summary": "Согласие, несогласие, аргументация.",
+  "items": [
+    {
+      "term": "opinion",
+      "translation": "мнение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Everyone can share an opinion.",
+        "ru": "Каждый может высказать мнение."
+      }
+    },
+    {
+      "term": "advantage",
+      "translation": "преимущество",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "One advantage is the low price.",
+        "ru": "Одно преимущество — низкая цена."
+      }
+    },
+    {
+      "term": "disadvantage",
+      "translation": "недостаток",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "A disadvantage is the long journey.",
+        "ru": "Недостаток — долгая дорога."
+      }
+    },
+    {
+      "term": "agree",
+      "translation": "соглашаться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I agree with your point.",
+        "ru": "Я согласен с твоей мыслью."
+      }
+    },
+    {
+      "term": "disagree",
+      "translation": "не соглашаться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I disagree because it's expensive.",
+        "ru": "Я не согласен, потому что это дорого."
+      }
+    },
+    {
+      "term": "suggest",
+      "translation": "предлагать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I suggest taking the train.",
+        "ru": "Я предлагаю поехать поездом."
+      }
+    },
+    {
+      "term": "reasonable",
+      "translation": "разумный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "That sounds like a reasonable idea.",
+        "ru": "Это звучит как разумная идея."
+      }
+    },
+    {
+      "term": "convincing",
+      "translation": "убедительный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Her argument was convincing.",
+        "ru": "Её аргумент был убедительным."
+      }
+    },
+    {
+      "term": "in my opinion",
+      "translation": "по моему мнению",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "In my opinion, reading is useful.",
+        "ru": "По моему мнению, читать полезно."
+      }
+    },
+    {
+      "term": "on the other hand",
+      "translation": "с другой стороны",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "On the other hand, it takes time.",
+        "ru": "С другой стороны, это требует времени."
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "vocabulary-19-idioms-a2-b1",
+  "type": "vocabulary",
+  "title": "Idioms & Fixed Expressions",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Idioms & Fixed Expressions",
+  "tags": [
+    "vocabulary",
+    "idioms",
+    "Idioms"
+  ],
+  "summary": "Простые идиомы и устойчивые выражения с контекстом.",
+  "items": [
+    {
+      "term": "a piece of cake",
+      "translation": "очень легко, проще простого",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "The quiz was a piece of cake.",
+        "ru": "Викторина оказалась проще простого."
+      }
+    },
+    {
+      "term": "under the weather",
+      "translation": "неважно себя чувствовать",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "I'm a bit under the weather today.",
+        "ru": "Сегодня я немного неважно себя чувствую."
+      }
+    },
+    {
+      "term": "break the ice",
+      "translation": "разрядить обстановку",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "A game helped us break the ice.",
+        "ru": "Игра помогла нам познакомиться и снять напряжение."
+      }
+    },
+    {
+      "term": "once in a blue moon",
+      "translation": "очень редко",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "We eat out once in a blue moon.",
+        "ru": "Мы очень редко едим вне дома."
+      }
+    },
+    {
+      "term": "in the same boat",
+      "translation": "в одинаковом положении",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "We're all in the same boat before the exam.",
+        "ru": "Перед экзаменом мы все в одинаковом положении."
+      }
+    },
+    {
+      "term": "cost an arm and a leg",
+      "translation": "стоить очень дорого",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "That new laptop costs an arm and a leg.",
+        "ru": "Тот новый ноутбук стоит целое состояние."
+      }
+    },
+    {
+      "term": "hit the books",
+      "translation": "усердно учиться",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "I need to hit the books tonight.",
+        "ru": "Сегодня вечером мне нужно усердно позаниматься."
+      }
+    },
+    {
+      "term": "keep an eye on",
+      "translation": "присматривать, следить",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Can you keep an eye on my bag?",
+        "ru": "Можешь присмотреть за моей сумкой?"
+      }
+    },
+    {
+      "term": "learn by heart",
+      "translation": "выучить наизусть",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "We learned the poem by heart.",
+        "ru": "Мы выучили стихотворение наизусть."
+      }
+    },
+    {
+      "term": "better late than never",
+      "translation": "лучше поздно, чем никогда",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "You started practising: better late than never!",
+        "ru": "Ты начал заниматься: лучше поздно, чем никогда!"
+      }
+    }
+  ]
+}
