@@ -1,5 +1,6 @@
 import type { StudentProfile } from '../../content/types';
 import { cloudClient, isCloudConfigured } from '../../shared/config/cloud';
+
 type StudentWorkspace = {
   profileTags: string[];
   focus: {
@@ -20,6 +21,8 @@ type StudentWorkspace = {
   }>;
   currentHomework: string;
 };
+
+export type CloudWorkspaceField = keyof StudentWorkspace;
 
 type ProfileRow = {
   student_id: string;
@@ -136,8 +139,12 @@ export async function fetchCloudWorkspace(
 export async function persistCloudWorkspace(
   student: StudentProfile,
   workspace: StudentWorkspace,
+  fields?: readonly CloudWorkspaceField[],
 ): Promise<void> {
   if (!isCloudConfigured || !cloudClient.getSession()) return;
+
+  const fieldSet = fields ? new Set(fields) : null;
+  const shouldPersist = (field: CloudWorkspaceField) => !fieldSet || fieldSet.has(field);
 
   await cloudClient.upsert('students', 'on_conflict=id', {
     id: student.id,
@@ -148,66 +155,89 @@ export async function persistCloudWorkspace(
     updated_at: new Date().toISOString(),
   });
 
-  await Promise.all([
-    cloudClient.upsert('student_profile_state', 'on_conflict=student_id', {
-      student_id: student.id,
-      profile_tags: workspace.profileTags,
-      focus_main: workspace.focus.main,
-      focus_practice: workspace.focus.practice,
-      focus_revision: workspace.focus.revision,
-      current_homework: workspace.currentHomework,
-      updated_at: new Date().toISOString(),
-    }),
-    cloudClient.upsert('teacher_notes', 'on_conflict=student_id', {
-      student_id: student.id,
-      notes: workspace.notes,
-      updated_at: new Date().toISOString(),
-    }),
-    cloudClient.upsert('lesson_preparation', 'on_conflict=student_id', {
-      student_id: student.id,
-      note: workspace.preparationNote,
-      updated_at: new Date().toISOString(),
-    }),
-  ]);
+  const scalarWrites: Array<Promise<unknown>> = [];
+
+  if (
+    shouldPersist('profileTags') ||
+    shouldPersist('focus') ||
+    shouldPersist('currentHomework')
+  ) {
+    scalarWrites.push(
+      cloudClient.upsert('student_profile_state', 'on_conflict=student_id', {
+        student_id: student.id,
+        profile_tags: workspace.profileTags,
+        focus_main: workspace.focus.main,
+        focus_practice: workspace.focus.practice,
+        focus_revision: workspace.focus.revision,
+        current_homework: workspace.currentHomework,
+        updated_at: new Date().toISOString(),
+      }),
+    );
+  }
+
+  if (shouldPersist('notes')) {
+    scalarWrites.push(
+      cloudClient.upsert('teacher_notes', 'on_conflict=student_id', {
+        student_id: student.id,
+        notes: workspace.notes,
+        updated_at: new Date().toISOString(),
+      }),
+    );
+  }
+
+  if (shouldPersist('preparationNote')) {
+    scalarWrites.push(
+      cloudClient.upsert('lesson_preparation', 'on_conflict=student_id', {
+        student_id: student.id,
+        note: workspace.preparationNote,
+        updated_at: new Date().toISOString(),
+      }),
+    );
+  }
+
+  await Promise.all(scalarWrites);
 
   const studentFilter = `student_id=eq.${encodeURIComponent(student.id)}`;
 
-  await Promise.all([
-    cloudClient.remove('assigned_materials', studentFilter),
-    cloudClient.remove('assigned_lessons', studentFilter),
-    cloudClient.remove('lesson_history', studentFilter),
-  ]);
-
-  if (workspace.assignedMaterialIds.length > 0) {
-    await cloudClient.insert(
-      'assigned_materials',
-      workspace.assignedMaterialIds.map((materialId) => ({
-        student_id: student.id,
-        material_id: materialId,
-      })),
-    );
+  if (shouldPersist('assignedMaterialIds')) {
+    await cloudClient.remove('assigned_materials', studentFilter);
+    if (workspace.assignedMaterialIds.length > 0) {
+      await cloudClient.insert(
+        'assigned_materials',
+        workspace.assignedMaterialIds.map((materialId) => ({
+          student_id: student.id,
+          material_id: materialId,
+        })),
+      );
+    }
   }
 
-  if (workspace.assignedLessonIds.length > 0) {
-    await cloudClient.insert(
-      'assigned_lessons',
-      workspace.assignedLessonIds.map((lessonId) => ({
-        student_id: student.id,
-        lesson_id: lessonId,
-      })),
-    );
+  if (shouldPersist('assignedLessonIds')) {
+    await cloudClient.remove('assigned_lessons', studentFilter);
+    if (workspace.assignedLessonIds.length > 0) {
+      await cloudClient.insert(
+        'assigned_lessons',
+        workspace.assignedLessonIds.map((lessonId) => ({
+          student_id: student.id,
+          lesson_id: lessonId,
+        })),
+      );
+    }
   }
 
-  if (workspace.lessonHistory.length > 0) {
-    await cloudClient.insert(
-      'lesson_history',
-      workspace.lessonHistory.map((item) => ({
-        student_id: student.id,
-        lesson_date: toIsoDate(item.date),
-        title: item.title,
-        detail: item.detail,
-        homework: item.homework,
-      })),
-    );
+  if (shouldPersist('lessonHistory')) {
+    await cloudClient.remove('lesson_history', studentFilter);
+    if (workspace.lessonHistory.length > 0) {
+      await cloudClient.insert(
+        'lesson_history',
+        workspace.lessonHistory.map((item) => ({
+          student_id: student.id,
+          lesson_date: toIsoDate(item.date),
+          title: item.title,
+          detail: item.detail,
+          homework: item.homework,
+        })),
+      );
+    }
   }
 }
