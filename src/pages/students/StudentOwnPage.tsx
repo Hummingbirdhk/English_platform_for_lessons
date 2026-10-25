@@ -174,7 +174,7 @@ export function StudentOwnPage() {
             </div>
           ) : (
             <p>Пока нет итогов занятий.</p>
-          )
+          )}
         </article>
       </section>
     </main>
