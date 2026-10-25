@@ -52,7 +52,9 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
       </div>
       {error ? <p role="alert">{error}</p> : null}
       {loading ? <p>Загружаю домашние задания…</p> : null}
-      {entries.length === 0 && !error && !loading ? <p>Ученик ещё не заполнил домашнюю работу.</p> : null}
+      {entries.length === 0 && !error && !loading ? (
+        <p>Ученик ещё не заполнил домашнюю работу.</p>
+      ) : null}
       <div className="teacher-history">
         {entries.map((entry) => (
           <div className="teacher-history-row" key={entry.lesson_date}>
