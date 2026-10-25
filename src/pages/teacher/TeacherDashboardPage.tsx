@@ -60,9 +60,10 @@ function formatLessonDate(date: Date) {
 }
 
 function formatLessonTime(date: Date) {
-  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(
-    date.getUTCMinutes(),
-  ).padStart(2, '0')} · 30 минут`;
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
+    2,
+    '0',
+  )} · 30 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
@@ -314,7 +315,10 @@ export function TeacherDashboardPage() {
                   <div className="teacher-focus-editor-grid">
                     <label>
                       <span>Основная тема</span>
-                      <input value={focusMain} onChange={(event) => setFocusMain(event.target.value)} />
+                      <input
+                        value={focusMain}
+                        onChange={(event) => setFocusMain(event.target.value)}
+                      />
                     </label>
                     <label>
                       <span>Активная практика</span>
@@ -381,7 +385,11 @@ export function TeacherDashboardPage() {
             <article className="teacher-panel">
               <div className="teacher-panel__heading">
                 <h2>Сейчас в работе</h2>
-                <button type="button" className="teacher-inline-edit" onClick={() => setEditingProfile(true)}>
+                <button
+                  type="button"
+                  className="teacher-inline-edit"
+                  onClick={() => setEditingProfile(true)}
+                >
                   изменить
                 </button>
               </div>

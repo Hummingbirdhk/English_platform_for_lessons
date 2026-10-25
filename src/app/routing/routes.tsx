@@ -60,7 +60,10 @@ export function AppRoutes() {
         <Route path="/students" element={<StudentsPage />} />
         <Route path="/students/:studentId" element={<StudentPage />} />
         <Route path="/teacher" element={<TeacherDashboardPage />} />
-        <Route path="/teacher/students/:studentId/preparation" element={<StudentPreparationPage />} />
+        <Route
+          path="/teacher/students/:studentId/preparation"
+          element={<StudentPreparationPage />}
+        />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>

@@ -1,19 +1,10 @@
 import { useState } from 'react';
 import { loadAllContent } from '../../content/loadContent';
-import {
-  readStudentWorkspace,
-  writeStudentWorkspace,
-} from './studentWorkspace';
+import { readStudentWorkspace, writeStudentWorkspace } from './studentWorkspace';
 
 type AssignmentMode = 'material' | 'lesson';
 
-export function StudentAssignmentBar({
-  mode,
-  itemId,
-}: {
-  mode: AssignmentMode;
-  itemId: string;
-}) {
+export function StudentAssignmentBar({ mode, itemId }: { mode: AssignmentMode; itemId: string }) {
   const { students } = loadAllContent();
   const visibleStudents = students.filter((student) =>
     ['student-zlata', 'student-artem'].includes(student.id),

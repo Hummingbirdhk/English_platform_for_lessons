@@ -65,7 +65,9 @@ export function StudentPreparationPage() {
   const availableMaterials = materials.filter(
     (material) => !workspace.assignedMaterialIds.includes(material.id),
   );
-  const availableLessons = lessons.filter((lesson) => !workspace.assignedLessonIds.includes(lesson.id));
+  const availableLessons = lessons.filter(
+    (lesson) => !workspace.assignedLessonIds.includes(lesson.id),
+  );
 
   function addMaterial() {
     if (!materialId) return;

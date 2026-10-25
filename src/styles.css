@@ -2978,7 +2978,6 @@ select {
   }
 }
 
-
 /* Student workspace management */
 .teacher-toast {
   position: fixed;
@@ -3308,7 +3307,6 @@ select {
     grid-template-columns: 1fr;
   }
 }
-
 
 .student-assignment-bar {
   display: grid;
