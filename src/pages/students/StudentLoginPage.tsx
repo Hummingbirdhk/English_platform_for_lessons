@@ -1,6 +1,9 @@
 import { type FormEvent, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import { getTeacherAuthSnapshot, useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
+import {
+  getTeacherAuthSnapshot,
+  useTeacherAuth,
+} from '../../features/teacher-auth/teacherAuthStore';
 
 export function StudentLoginPage() {
   const auth = useTeacherAuth();

@@ -11,7 +11,9 @@ export function TeacherLoginPage() {
   const [submitting, setSubmitting] = useState(false);
 
   if (!auth.configured) return <Navigate to="/teacher" replace />;
-  if (auth.status === 'authenticated' && auth.role === 'teacher') return <Navigate to="/teacher" replace />;
+  if (auth.status === 'authenticated' && auth.role === 'teacher') {
+    return <Navigate to="/teacher" replace />;
+  }
 
   async function sendCode(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();

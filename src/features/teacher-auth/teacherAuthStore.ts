@@ -105,8 +105,8 @@ export function useTeacherAuth() {
     } catch (error) {
       emit({
         status: 'anonymous',
-      role: null,
-      studentId: null,
+        role: null,
+        studentId: null,
         email,
         error: error instanceof Error ? error.message : 'Не удалось отправить код.',
       });
@@ -158,7 +158,13 @@ export function useTeacherAuth() {
     } catch {
       // Credentials and authorization errors share the same public message.
     }
-    emit({ status: 'anonymous', email: '', error: 'Неверный логин или пароль.', role: null, studentId: null });
+    emit({
+      status: 'anonymous',
+      email: '',
+      error: 'Неверный логин или пароль.',
+      role: null,
+      studentId: null,
+    });
     return false;
   }
 
