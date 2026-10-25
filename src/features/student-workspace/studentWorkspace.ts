@@ -1,0 +1,194 @@
+import { useEffect, useState } from 'react';
+import type { StudentProfile } from '../../content/types';
+
+export type StudentFocus = {
+  main: string;
+  practice: string;
+  revision: string;
+};
+
+export type LessonHistoryItem = {
+  id: string;
+  date: string;
+  title: string;
+  detail: string;
+  homework: string;
+};
+
+export type StudentWorkspace = {
+  profileTags: string[];
+  focus: StudentFocus;
+  notes: string;
+  assignedMaterialIds: string[];
+  assignedLessonIds: string[];
+  preparationNote: string;
+  lessonHistory: LessonHistoryItem[];
+  currentHomework: string;
+};
+
+const STORAGE_PREFIX = 'english-platform:student-workspace:';
+const WORKSPACE_EVENT = 'english-platform:student-workspace-change';
+
+const defaultTeacherData: Record<
+  string,
+  Pick<StudentWorkspace, 'notes' | 'lessonHistory' | 'currentHomework'>
+> = {
+  'student-zlata': {
+    notes:
+      'Хорошо понимает правила, но торопится в заданиях и пропускает окончания -s / -es. На следующем уроке повторить daily routine и дать больше коротких устных вопросов.',
+    lessonHistory: [
+      {
+        id: 'zlata-24-10',
+        date: '24.10',
+        title: 'Reading + speaking',
+        detail: 'A Day in Tom’s Life',
+        homework: 'WB: p.23, ex. 2–3',
+      },
+      {
+        id: 'zlata-10-10',
+        date: '10.10',
+        title: 'Daily routine',
+        detail: 'Vocabulary + speaking',
+        homework: '5 предложений о своём дне',
+      },
+      {
+        id: 'zlata-03-10',
+        date: '03.10',
+        title: 'Present Simple',
+        detail: 'Questions + 3rd person',
+        homework: 'WB: p.24, ex. 3',
+      },
+    ],
+    currentHomework: 'WB: p.23, ex. 2–3',
+  },
+  'student-artem': {
+    notes:
+      'Быстро запоминает лексику, но пока путает формы неправильных глаголов. Лучше работает через короткие игровые задания и визуальные подсказки.',
+    lessonHistory: [
+      {
+        id: 'artem-23-10',
+        date: '23.10',
+        title: 'Speaking practice',
+        detail: 'Yesterday / last weekend',
+        homework: '8 устных вопросов',
+      },
+      {
+        id: 'artem-09-10',
+        date: '09.10',
+        title: 'Irregular verbs',
+        detail: 'go / have / see / make / take',
+        homework: 'карточки + WB',
+      },
+      {
+        id: 'artem-02-10',
+        date: '02.10',
+        title: 'Past Simple',
+        detail: 'was / were',
+        homework: 'WB: p.41, ex. 1–2',
+      },
+    ],
+    currentHomework: '8 устных вопросов',
+  },
+};
+
+function makeDefaultWorkspace(student: StudentProfile): StudentWorkspace {
+  const teacherData = defaultTeacherData[student.id];
+  const focusItems = [...student.currentFocus];
+
+  return {
+    profileTags: focusItems,
+    focus: {
+      main: focusItems[0] ?? '',
+      practice: focusItems[1] ?? '',
+      revision: focusItems[2] ?? '',
+    },
+    notes: teacherData?.notes ?? '',
+    assignedMaterialIds: [...student.assignedMaterialIds],
+    assignedLessonIds: [...student.assignedLessonIds],
+    preparationNote: '',
+    lessonHistory: teacherData?.lessonHistory ?? [],
+    currentHomework: teacherData?.currentHomework ?? '',
+  };
+}
+
+function storageKey(studentId: string) {
+  return `${STORAGE_PREFIX}${studentId}`;
+}
+
+export function readStudentWorkspace(student: StudentProfile): StudentWorkspace {
+  const fallback = makeDefaultWorkspace(student);
+  if (typeof window === 'undefined') return fallback;
+
+  const stored = window.localStorage.getItem(storageKey(student.id));
+  if (!stored) return fallback;
+
+  try {
+    const parsed = JSON.parse(stored) as Partial<StudentWorkspace>;
+    return {
+      ...fallback,
+      ...parsed,
+      focus: { ...fallback.focus, ...(parsed.focus ?? {}) },
+      profileTags: parsed.profileTags ?? fallback.profileTags,
+      assignedMaterialIds: parsed.assignedMaterialIds ?? fallback.assignedMaterialIds,
+      assignedLessonIds: parsed.assignedLessonIds ?? fallback.assignedLessonIds,
+      lessonHistory: parsed.lessonHistory ?? fallback.lessonHistory,
+    };
+  } catch {
+    return fallback;
+  }
+}
+
+export function writeStudentWorkspace(studentId: string, workspace: StudentWorkspace) {
+  if (typeof window === 'undefined') return;
+  window.localStorage.setItem(storageKey(studentId), JSON.stringify(workspace));
+  window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
+}
+
+export function resetStudentWorkspace(studentId: string) {
+  if (typeof window === 'undefined') return;
+  window.localStorage.removeItem(storageKey(studentId));
+  window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
+}
+
+export function useStudentWorkspace(student: StudentProfile | undefined) {
+  const [workspace, setWorkspaceState] = useState<StudentWorkspace | null>(() =>
+    student ? readStudentWorkspace(student) : null,
+  );
+
+  useEffect(() => {
+    setWorkspaceState(student ? readStudentWorkspace(student) : null);
+  }, [student]);
+
+  useEffect(() => {
+    if (!student || typeof window === 'undefined') return undefined;
+
+    const refresh = (event: Event) => {
+      const detail = (event as CustomEvent<{ studentId?: string }>).detail;
+      if (!detail?.studentId || detail.studentId === student.id) {
+        setWorkspaceState(readStudentWorkspace(student));
+      }
+    };
+
+    const refreshFromStorage = () => setWorkspaceState(readStudentWorkspace(student));
+
+    window.addEventListener(WORKSPACE_EVENT, refresh);
+    window.addEventListener('storage', refreshFromStorage);
+    return () => {
+      window.removeEventListener(WORKSPACE_EVENT, refresh);
+      window.removeEventListener('storage', refreshFromStorage);
+    };
+  }, [student]);
+
+  function save(next: StudentWorkspace) {
+    if (!student) return;
+    writeStudentWorkspace(student.id, next);
+    setWorkspaceState(next);
+  }
+
+  function patch(patchValue: Partial<StudentWorkspace>) {
+    if (!student || !workspace) return;
+    save({ ...workspace, ...patchValue });
+  }
+
+  return { workspace, save, patch };
+}
