@@ -78,26 +78,17 @@ export function StudentOwnPage() {
             </div>
           ) : null}
         </div>
-        <button
-          type="button"
-          className="teacher-inline-edit"
-          onClick={() => void auth.signOut()}
-        >
+        <button type="button" className="teacher-inline-edit" onClick={() => void auth.signOut()}>
           Выйти
         </button>
       </section>
 
       <section className="student-top-grid">
-        <article
-          className="student-panel student-panel--focus"
-          style={{ background: '#fbfb8f' }}
-        >
+        <article className="student-panel student-panel--focus" style={{ background: '#fbfb8f' }}>
           <span className="sticker sticker--white">СЕЙЧАС ИЗУЧАЕМ</span>
           <h2>{focus.main || 'Тема пока не назначена'}</h2>
           <div className="revision-chips">
-            {focus.practice ? (
-              <span className="level-chip">Лексика: {focus.practice}</span>
-            ) : null}
+            {focus.practice ? <span className="level-chip">Лексика: {focus.practice}</span> : null}
             {focus.revision ? (
               <span className="level-chip">Грамматика / повторение: {focus.revision}</span>
             ) : null}
@@ -106,10 +97,7 @@ export function StudentOwnPage() {
             <p>Преподаватель добавит сюда лексику и грамматику по текущей теме.</p>
           ) : null}
         </article>
-        <article
-          className="student-panel student-panel--revision"
-          style={{ background: '#ff825e' }}
-        >
+        <article className="student-panel student-panel--revision" style={{ background: '#ff825e' }}>
           <span className="sticker sticker--white">МОЯ ДОМАШКА</span>
           <h2>Домашнее задание</h2>
           <p>{homework || 'Пока ничего не задано'}</p>
@@ -128,11 +116,7 @@ export function StudentOwnPage() {
           {assignedMaterials.length ? (
             <div className="assigned-list">
               {assignedMaterials.map((material) => (
-                <Link
-                  key={material.id}
-                  to={`/materials/${material.id}`}
-                  className="assigned-row"
-                >
+                <Link key={material.id} to={`/materials/${material.id}`} className="assigned-row">
                   <span className="assigned-row__title">{material.title}</span>
                   <span className="assigned-row__type">{material.type}</span>
                 </Link>
