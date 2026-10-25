@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { loadAllContent } from '../../content/loadContent';
-import { readStudentWorkspace, writeStudentWorkspace } from './studentWorkspace';
+import { useTeacherAuth } from '../teacher-auth/teacherAuthStore';
+import { readStudentWorkspace, saveStudentWorkspace } from './studentWorkspace';
 
 type AssignmentMode = 'material' | 'lesson';
 
 export function StudentAssignmentBar({ mode, itemId }: { mode: AssignmentMode; itemId: string }) {
   const { students } = loadAllContent();
+  const auth = useTeacherAuth();
   const visibleStudents = students.filter((student) =>
     ['student-zlata', 'student-artem'].includes(student.id),
   );
@@ -19,15 +21,17 @@ export function StudentAssignmentBar({ mode, itemId }: { mode: AssignmentMode; i
     const workspace = readStudentWorkspace(student);
     if (mode === 'material') {
       const assignedMaterialIds = Array.from(new Set([...workspace.assignedMaterialIds, itemId]));
-      writeStudentWorkspace(student.id, { ...workspace, assignedMaterialIds });
+      saveStudentWorkspace(student, { ...workspace, assignedMaterialIds });
     } else {
       const assignedLessonIds = Array.from(new Set([...workspace.assignedLessonIds, itemId]));
-      writeStudentWorkspace(student.id, { ...workspace, assignedLessonIds });
+      saveStudentWorkspace(student, { ...workspace, assignedLessonIds });
     }
 
     setMessage(`Добавлено для ${student.displayName} ✓`);
     window.setTimeout(() => setMessage(''), 1400);
   }
+
+  if (auth.configured && auth.status !== 'authenticated') return null;
 
   return (
     <section className="student-assignment-bar">

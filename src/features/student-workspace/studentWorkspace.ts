@@ -1,5 +1,7 @@
-import { useCallback, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useSyncExternalStore } from 'react';
 import type { StudentProfile } from '../../content/types';
+import { useTeacherAuth } from '../teacher-auth/teacherAuthStore';
+import { fetchCloudWorkspace, persistCloudWorkspace } from './studentWorkspaceCloud';
 
 export type StudentFocus = {
   main: string;
@@ -28,6 +30,10 @@ export type StudentWorkspace = {
 
 const STORAGE_PREFIX = 'english-platform:student-workspace:';
 const WORKSPACE_EVENT = 'english-platform:student-workspace-change';
+const cloudCache = new Map<string, StudentWorkspace>();
+const cloudLoaded = new Set<string>();
+const cloudLoading = new Set<string>();
+const cloudSaveTimers = new Map<string, ReturnType<typeof setTimeout>>();
 
 const defaultTeacherData: Record<
   string,
@@ -136,17 +142,52 @@ function mergeStoredWorkspace(student: StudentProfile, stored: string | null): S
 }
 
 export function readStudentWorkspace(student: StudentProfile): StudentWorkspace {
+  const cached = cloudCache.get(student.id);
+  if (cached) return cached;
   if (typeof window === 'undefined') return makeDefaultWorkspace(student);
   return mergeStoredWorkspace(student, window.localStorage.getItem(storageKey(student.id)));
 }
 
 export function writeStudentWorkspace(studentId: string, workspace: StudentWorkspace) {
+  cloudCache.set(studentId, workspace);
   if (typeof window === 'undefined') return;
   window.localStorage.setItem(storageKey(studentId), JSON.stringify(workspace));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
 }
 
+export function saveStudentWorkspace(student: StudentProfile, workspace: StudentWorkspace) {
+  writeStudentWorkspace(student.id, workspace);
+
+  const currentTimer = cloudSaveTimers.get(student.id);
+  if (currentTimer) clearTimeout(currentTimer);
+
+  const timer = setTimeout(() => {
+    cloudSaveTimers.delete(student.id);
+    void persistCloudWorkspace(student, workspace).catch(() => undefined);
+  }, 500);
+
+  cloudSaveTimers.set(student.id, timer);
+}
+
+async function hydrateStudentWorkspace(student: StudentProfile) {
+  if (cloudLoaded.has(student.id) || cloudLoading.has(student.id)) return;
+  cloudLoading.add(student.id);
+
+  try {
+    const fallback = readStudentWorkspace(student);
+    const remoteWorkspace = await fetchCloudWorkspace(student, fallback);
+    if (remoteWorkspace) {
+      cloudLoaded.add(student.id);
+      writeStudentWorkspace(student.id, remoteWorkspace);
+    }
+  } finally {
+    cloudLoading.delete(student.id);
+  }
+}
+
 export function resetStudentWorkspace(studentId: string) {
+  cloudCache.delete(studentId);
+  cloudLoaded.delete(studentId);
   if (typeof window === 'undefined') return;
   window.localStorage.removeItem(storageKey(studentId));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
@@ -154,6 +195,12 @@ export function resetStudentWorkspace(studentId: string) {
 
 export function useStudentWorkspace(student: StudentProfile | undefined) {
   const studentId = student?.id ?? '';
+  const auth = useTeacherAuth();
+
+  useEffect(() => {
+    if (!student || auth.status !== 'authenticated') return;
+    void hydrateStudentWorkspace(student);
+  }, [student, auth.status]);
 
   const subscribe = useCallback(
     (notify: () => void) => {
@@ -179,7 +226,10 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
   );
 
   const getSnapshot = useCallback(() => {
-    if (!studentId || typeof window === 'undefined') return '';
+    if (!studentId) return '';
+    const cached = cloudCache.get(studentId);
+    if (cached) return JSON.stringify(cached);
+    if (typeof window === 'undefined') return '';
     return window.localStorage.getItem(storageKey(studentId)) ?? '';
   }, [studentId]);
 
@@ -188,7 +238,7 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
 
   function save(next: StudentWorkspace) {
     if (!student) return;
-    writeStudentWorkspace(student.id, next);
+    saveStudentWorkspace(student, next);
   }
 
   function patch(patchValue: Partial<StudentWorkspace>) {
