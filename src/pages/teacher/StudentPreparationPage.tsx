@@ -31,6 +31,7 @@ export function StudentPreparationPage() {
   const student = studentId ? findStudentById(studentId) : undefined;
   const { materials, lessons } = loadAllContent();
   const { workspace, patch } = useStudentWorkspace(student);
+  const activeWorkspace = workspace;
   const [materialId, setMaterialId] = useState('');
   const [lessonId, setLessonId] = useState('');
   const [saved, setSaved] = useState(false);
@@ -46,7 +47,7 @@ export function StudentPreparationPage() {
       );
   }, [student]);
 
-  if (!student || !workspace) {
+  if (!student || !activeWorkspace) {
     return (
       <main className="page-shell">
         <Result status="404" title="Student not found" />
@@ -54,39 +55,39 @@ export function StudentPreparationPage() {
     );
   }
 
-  const assignedMaterials = workspace.assignedMaterialIds
+  const assignedMaterials = activeWorkspace.assignedMaterialIds
     .map((id) => materials.find((material) => material.id === id))
     .filter((material) => material !== undefined);
 
-  const assignedLessons = workspace.assignedLessonIds
+  const assignedLessons = activeWorkspace.assignedLessonIds
     .map((id) => lessons.find((lesson) => lesson.id === id))
     .filter((lesson) => lesson !== undefined);
 
   const availableMaterials = materials.filter(
-    (material) => !workspace.assignedMaterialIds.includes(material.id),
+    (material) => !activeWorkspace.assignedMaterialIds.includes(material.id),
   );
   const availableLessons = lessons.filter(
-    (lesson) => !workspace.assignedLessonIds.includes(lesson.id),
+    (lesson) => !activeWorkspace.assignedLessonIds.includes(lesson.id),
   );
 
   function addMaterial() {
     if (!materialId) return;
-    patch({ assignedMaterialIds: [...workspace.assignedMaterialIds, materialId] });
+    patch({ assignedMaterialIds: [...activeWorkspace.assignedMaterialIds, materialId] });
     setMaterialId('');
   }
 
   function removeMaterial(id: string) {
-    patch({ assignedMaterialIds: workspace.assignedMaterialIds.filter((item) => item !== id) });
+    patch({ assignedMaterialIds: activeWorkspace.assignedMaterialIds.filter((item) => item !== id) });
   }
 
   function addLesson() {
     if (!lessonId) return;
-    patch({ assignedLessonIds: [...workspace.assignedLessonIds, lessonId] });
+    patch({ assignedLessonIds: [...activeWorkspace.assignedLessonIds, lessonId] });
     setLessonId('');
   }
 
   function savePreparation() {
-    patch({ preparationNote: workspace.preparationNote });
+    patch({ preparationNote: activeWorkspace.preparationNote });
     setSaved(true);
     window.setTimeout(() => setSaved(false), 1200);
   }
@@ -112,15 +113,15 @@ export function StudentPreparationPage() {
           </div>
           <div className="teacher-focus-list">
             <div className="teacher-focus-item teacher-focus-item--0">
-              <strong>{workspace.focus.main || 'Не выбрано'}</strong>
+              <strong>{activeWorkspace.focus.main || 'Не выбрано'}</strong>
               <span>основная тема</span>
             </div>
             <div className="teacher-focus-item teacher-focus-item--1">
-              <strong>{workspace.focus.practice || 'Не выбрано'}</strong>
+              <strong>{activeWorkspace.focus.practice || 'Не выбрано'}</strong>
               <span>активная практика</span>
             </div>
             <div className="teacher-focus-item teacher-focus-item--2">
-              <strong>{workspace.focus.revision || 'Не выбрано'}</strong>
+              <strong>{activeWorkspace.focus.revision || 'Не выбрано'}</strong>
               <span>повторение</span>
             </div>
           </div>
@@ -132,7 +133,7 @@ export function StudentPreparationPage() {
             <span>последнее</span>
           </div>
           <p className="preparation-homework">
-            {workspace.currentHomework || 'Домашнее задание пока не добавлено.'}
+            {activeWorkspace.currentHomework || 'Домашнее задание пока не добавлено.'}
           </p>
         </article>
       </section>
@@ -214,7 +215,7 @@ export function StudentPreparationPage() {
         </div>
         <textarea
           className="teacher-notes preparation-notes"
-          value={workspace.preparationNote}
+          value={activeWorkspace.preparationNote}
           placeholder="Что важно повторить, что спросить, какой материал открыть первым..."
           onChange={(event) => patch({ preparationNote: event.target.value })}
         />
