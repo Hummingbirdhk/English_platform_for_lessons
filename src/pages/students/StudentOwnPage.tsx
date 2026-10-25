@@ -5,6 +5,15 @@ import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { cloudClient } from '../../shared/config/cloud';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
+type HomeworkEntry = {
+  student_id: string;
+  lesson_date: string;
+  workbook: string;
+  textbook: string;
+  extra_task: string;
+  updated_at: string;
+};
+
 type HistoryRow = {
   id: string;
   lesson_date: string;
@@ -32,6 +41,13 @@ export function StudentOwnPage() {
   const [materialIds, setMaterialIds] = useState<string[]>([]);
   const [lessonIds, setLessonIds] = useState<string[]>([]);
   const [history, setHistory] = useState<HistoryRow[]>([]);
+  const [homeworkEntries, setHomeworkEntries] = useState<HomeworkEntry[]>([]);
+  const [homeworkDate, setHomeworkDate] = useState(new Date().toLocaleDateString('en-CA'));
+  const [workbook, setWorkbook] = useState('');
+  const [textbook, setTextbook] = useState('');
+  const [extraTask, setExtraTask] = useState('');
+  const [saving, setSaving] = useState(false);
+  const [saveMessage, setSaveMessage] = useState('');
 
   useEffect(() => {
     if (!studentId) return;
@@ -53,8 +69,12 @@ export function StudentOwnPage() {
         'lesson_history',
         `select=id,lesson_date,title,detail,homework&student_id=eq.${encodeURIComponent(studentId)}&order=lesson_date.desc&limit=5`,
       ),
+      cloudClient.select<HomeworkEntry[]>(
+        'student_homework_entries',
+        `select=student_id,lesson_date,workbook,textbook,extra_task,updated_at&student_id=eq.${encodeURIComponent(studentId)}&order=lesson_date.desc&limit=20`,
+      ),
     ])
-      .then(([rows, materials, lessons, historyRows]) => {
+      .then(([rows, materials, lessons, historyRows, homeworkRows]) => {
         if (!active) return;
         setFocus({
           main: rows[0]?.focus_main ?? '',
@@ -66,6 +86,14 @@ export function StudentOwnPage() {
         setMaterialIds(materials.map((row) => row.material_id));
         setLessonIds(lessons.map((row) => row.lesson_id));
         setHistory(historyRows);
+        setHomeworkEntries(homeworkRows);
+        const latest = homeworkRows[0];
+        if (latest) {
+          setHomeworkDate(latest.lesson_date);
+          setWorkbook(latest.workbook);
+          setTextbook(latest.textbook);
+          setExtraTask(latest.extra_task);
+        }
       })
       .catch(() => {
         if (active) setError('Не удалось загрузить профиль.');
@@ -74,6 +102,49 @@ export function StudentOwnPage() {
       active = false;
     };
   }, [studentId]);
+
+  function selectHomeworkDate(date: string) {
+    setHomeworkDate(date);
+    const entry = homeworkEntries.find((item) => item.lesson_date === date);
+    setWorkbook(entry?.workbook ?? '');
+    setTextbook(entry?.textbook ?? '');
+    setExtraTask(entry?.extra_task ?? '');
+    setSaveMessage('');
+  }
+
+  async function saveHomework() {
+    if (!studentId || !homeworkDate || saving) return;
+    setSaving(true);
+    setSaveMessage('');
+    try {
+      const session = cloudClient.getSession();
+      if (!session) throw new Error('Нет активной сессии.');
+      const rows = await cloudClient.upsert<HomeworkEntry[]>(
+        'student_homework_entries',
+        'on_conflict=student_id,lesson_date',
+        {
+          student_id: studentId,
+          lesson_date: homeworkDate,
+          workbook,
+          textbook,
+          extra_task: extraTask,
+          updated_by: session.user.id,
+          updated_at: new Date().toISOString(),
+        },
+      );
+      if (!rows?.length) throw new Error('Сохранение не подтверждено.');
+      setHomeworkEntries((current) =>
+        [...current.filter((item) => item.lesson_date !== homeworkDate), rows[0]].sort(
+          (a, b) => b.lesson_date.localeCompare(a.lesson_date),
+        ),
+      );
+      setSaveMessage('Домашнее задание сохранено');
+    } catch {
+      setSaveMessage('Не удалось сохранить. Проверь подключение и права доступа.');
+    } finally {
+      setSaving(false);
+    }
+  }
 
   const assignedMaterials = content.materials.filter((item) => materialIds.includes(item.id));
   const assignedLessons = content.lessons.filter((item) => lessonIds.includes(item.id));
@@ -120,9 +191,54 @@ export function StudentOwnPage() {
           <h2>Домашнее задание</h2>
           <p>{homework || 'Пока ничего не задано'}</p>
           <p>Рабочая тетрадь · Учебник · Дополнительное задание</p>
-          <small>
-            Самостоятельное редактирование по датам занятий появится на следующем этапе.
-          </small>
+          <div className="student-own-homework-form">
+            <label htmlFor="homework-date">Дата занятия</label>
+            <input
+              id="homework-date"
+              type="date"
+              value={homeworkDate}
+              onChange={(event) => selectHomeworkDate(event.target.value)}
+            />
+            <label htmlFor="homework-workbook">Рабочая тетрадь</label>
+            <textarea
+              id="homework-workbook"
+              value={workbook}
+              onChange={(event) => setWorkbook(event.target.value)}
+              rows={2}
+            />
+            <label htmlFor="homework-textbook">Учебник</label>
+            <textarea
+              id="homework-textbook"
+              value={textbook}
+              onChange={(event) => setTextbook(event.target.value)}
+              rows={2}
+            />
+            <label htmlFor="homework-extra">Дополнительное задание</label>
+            <textarea
+              id="homework-extra"
+              value={extraTask}
+              onChange={(event) => setExtraTask(event.target.value)}
+              rows={2}
+            />
+            <button type="button" onClick={() => void saveHomework()} disabled={saving}>
+              {saving ? 'Сохраняю…' : 'Сохранить домашку'}
+            </button>
+            {saveMessage ? <p role="status">{saveMessage}</p> : null}
+            {homeworkEntries.length > 1 ? (
+              <div className="student-own-homework-dates">
+                <span>Предыдущие занятия</span>
+                {homeworkEntries.map((entry) => (
+                  <button
+                    key={entry.lesson_date}
+                    type="button"
+                    onClick={() => selectHomeworkDate(entry.lesson_date)}
+                  >
+                    {entry.lesson_date}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
         </article>
       </section>
 
