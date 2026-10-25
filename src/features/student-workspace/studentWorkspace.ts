@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useSyncExternalStore } from 'react';
 import type { StudentProfile } from '../../content/types';
 import { useTeacherAuth } from '../teacher-auth/teacherAuthStore';
-import { fetchCloudWorkspace, persistCloudWorkspace } from './studentWorkspaceCloud';
+import {
+  type CloudWorkspaceField,
+  fetchCloudWorkspace,
+  persistCloudWorkspace,
+} from './studentWorkspaceCloud';
 
 export type StudentFocus = {
   main: string;
@@ -34,6 +38,7 @@ const cloudCache = new Map<string, StudentWorkspace>();
 const cloudLoaded = new Set<string>();
 const cloudLoading = new Set<string>();
 const cloudSaveTimers = new Map<string, ReturnType<typeof setTimeout>>();
+const cloudPendingFields = new Map<string, Set<CloudWorkspaceField>>();
 
 const defaultTeacherData: Record<
   string,
@@ -155,15 +160,33 @@ export function writeStudentWorkspace(studentId: string, workspace: StudentWorks
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
 }
 
-export function saveStudentWorkspace(student: StudentProfile, workspace: StudentWorkspace) {
+export function saveStudentWorkspace(
+  student: StudentProfile,
+  workspace: StudentWorkspace,
+  fields?: readonly CloudWorkspaceField[],
+) {
   writeStudentWorkspace(student.id, workspace);
+
+  if (fields) {
+    const pending = cloudPendingFields.get(student.id) ?? new Set<CloudWorkspaceField>();
+    fields.forEach((field) => pending.add(field));
+    cloudPendingFields.set(student.id, pending);
+  } else {
+    cloudPendingFields.delete(student.id);
+  }
 
   const currentTimer = cloudSaveTimers.get(student.id);
   if (currentTimer) clearTimeout(currentTimer);
 
   const timer = setTimeout(() => {
     cloudSaveTimers.delete(student.id);
-    void persistCloudWorkspace(student, workspace).catch(() => undefined);
+    const pendingFields = cloudPendingFields.get(student.id);
+    cloudPendingFields.delete(student.id);
+    void persistCloudWorkspace(
+      student,
+      workspace,
+      pendingFields ? Array.from(pendingFields) : undefined,
+    ).catch(() => undefined);
   }, 500);
 
   cloudSaveTimers.set(student.id, timer);
@@ -188,6 +211,7 @@ async function hydrateStudentWorkspace(student: StudentProfile) {
 export function resetStudentWorkspace(studentId: string) {
   cloudCache.delete(studentId);
   cloudLoaded.delete(studentId);
+  cloudPendingFields.delete(studentId);
   if (typeof window === 'undefined') return;
   window.localStorage.removeItem(storageKey(studentId));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
@@ -236,14 +260,14 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
   const stored = useSyncExternalStore(subscribe, getSnapshot, () => '');
   const workspace = student ? mergeStoredWorkspace(student, stored || null) : null;
 
-  function save(next: StudentWorkspace) {
+  function save(next: StudentWorkspace, fields?: readonly CloudWorkspaceField[]) {
     if (!student) return;
-    saveStudentWorkspace(student, next);
+    saveStudentWorkspace(student, next, fields);
   }
 
   function patch(patchValue: Partial<StudentWorkspace>) {
     if (!student || !workspace) return;
-    save({ ...workspace, ...patchValue });
+    save({ ...workspace, ...patchValue }, Object.keys(patchValue) as CloudWorkspaceField[]);
   }
 
   return { workspace, save, patch };
