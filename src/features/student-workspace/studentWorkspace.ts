@@ -45,59 +45,13 @@ const defaultTeacherData: Record<
   Pick<StudentWorkspace, 'notes' | 'lessonHistory' | 'currentHomework'>
 > = {
   'student-zlata': {
-    notes:
-      'Хорошо понимает правила, но торопится в заданиях и пропускает окончания -s / -es. На следующем уроке повторить daily routine и дать больше коротких устных вопросов.',
-    lessonHistory: [
-      {
-        id: 'zlata-24-10',
-        date: '24.10',
-        title: 'Reading + speaking',
-        detail: 'A Day in Tom’s Life',
-        homework: 'WB: p.23, ex. 2–3',
-      },
-      {
-        id: 'zlata-10-10',
-        date: '10.10',
-        title: 'Daily routine',
-        detail: 'Vocabulary + speaking',
-        homework: '5 предложений о своём дне',
-      },
-      {
-        id: 'zlata-03-10',
-        date: '03.10',
-        title: 'Present Simple',
-        detail: 'Questions + 3rd person',
-        homework: 'WB: p.24, ex. 3',
-      },
-    ],
+    notes: '',
+    lessonHistory: [],
     currentHomework: 'WB: p.23, ex. 2–3',
   },
   'student-artem': {
-    notes:
-      'Быстро запоминает лексику, но пока путает формы неправильных глаголов. Лучше работает через короткие игровые задания и визуальные подсказки.',
-    lessonHistory: [
-      {
-        id: 'artem-23-10',
-        date: '23.10',
-        title: 'Speaking practice',
-        detail: 'Yesterday / last weekend',
-        homework: '8 устных вопросов',
-      },
-      {
-        id: 'artem-09-10',
-        date: '09.10',
-        title: 'Irregular verbs',
-        detail: 'go / have / see / make / take',
-        homework: 'карточки + WB',
-      },
-      {
-        id: 'artem-02-10',
-        date: '02.10',
-        title: 'Past Simple',
-        detail: 'was / were',
-        homework: 'WB: p.41, ex. 1–2',
-      },
-    ],
+    notes: '',
+    lessonHistory: [],
     currentHomework: '8 устных вопросов',
   },
 };
