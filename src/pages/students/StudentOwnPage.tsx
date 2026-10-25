@@ -21,10 +21,14 @@ export function StudentOwnPage() {
         'student_profile_state',
         `select=focus_main,current_homework&student_id=eq.${encodeURIComponent(studentId)}&limit=1`,
       ),
-      cloudClient.select<Array<{ material_id: string }>>('assigned_materials',
-        `select=material_id&student_id=eq.${encodeURIComponent(studentId)}`),
-      cloudClient.select<Array<{ lesson_id: string }>>('assigned_lessons',
-        `select=lesson_id&student_id=eq.${encodeURIComponent(studentId)}`),
+      cloudClient.select<Array<{ material_id: string }>>(
+        'assigned_materials',
+        `select=material_id&student_id=eq.${encodeURIComponent(studentId)}`,
+      ),
+      cloudClient.select<Array<{ lesson_id: string }>>(
+        'assigned_lessons',
+        `select=lesson_id&student_id=eq.${encodeURIComponent(studentId)}`,
+      ),
     ])
       .then(([rows, materials, lessons]) => {
         if (!active) return;
