@@ -233,7 +233,11 @@ export function StudentOwnPage() {
               onChange={(event) => setExtraTask(event.target.value)}
               rows={2}
             />
-            <button type="button" onClick={() => void saveHomework()} disabled={saving || !homeworkDate}>
+            <button
+              type="button"
+              onClick={() => void saveHomework()}
+              disabled={saving || !homeworkDate}
+            >
               {saving ? 'Сохраняю…' : 'Сохранить домашку'}
             </button>
             {saveMessage ? <p role="status">{saveMessage}</p> : null}
