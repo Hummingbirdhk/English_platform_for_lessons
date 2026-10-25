@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { type FormEvent, useState } from 'react';
 import { Navigate, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
@@ -13,14 +13,14 @@ export function TeacherLoginPage() {
   if (!auth.configured) return <Navigate to="/teacher" replace />;
   if (auth.status === 'authenticated') return <Navigate to="/teacher" replace />;
 
-  async function sendCode(event: React.FormEvent<HTMLFormElement>) {
+  async function sendCode(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setSubmitting(true);
     await auth.requestCode(email.trim());
     setSubmitting(false);
   }
 
-  async function confirmCode(event: React.FormEvent<HTMLFormElement>) {
+  async function confirmCode(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setSubmitting(true);
     const success = await auth.verifyCode(email.trim(), code.trim());
