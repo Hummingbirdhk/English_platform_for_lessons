@@ -31,29 +31,29 @@ export function VocabularyMaterial({ material }: { material: VocabularyMaterialD
           <Typography.Title level={2}>{groupLabels[group]}</Typography.Title>
           <Row gutter={[16, 16]}>
             {(items ?? []).map((item) => (
-          <Col xs={24} md={12} key={item.term}>
-            <Card className="vocabulary-card">
-              {item.imageUrl ? (
-                <img src={item.imageUrl} alt="" className="vocabulary-card__image" />
+              <Col xs={24} md={12} key={item.term}>
+                <Card className="vocabulary-card">
+                  {item.imageUrl ? (
+                    <img src={item.imageUrl} alt="" className="vocabulary-card__image" />
               ) : null}
-              <Typography.Title level={3}>{item.term}</Typography.Title>
+                  <Typography.Title level={3}>{item.term}</Typography.Title>
               {item.pronunciation ? (
-                <Typography.Text type="secondary">{item.pronunciation}</Typography.Text>
+                    <Typography.Text type="secondary">{item.pronunciation}</Typography.Text>
               ) : null}
               <Typography.Paragraph strong>{item.translation}</Typography.Paragraph>
-              <div className="example-pair">
-                <div>{item.example.en}</div>
+                  <div className="example-pair">
+                    <div>{item.example.en}</div>
                 <div className="secondary-copy">{item.example.ru}</div>
-              </div>
-              {item.collocations?.length ? (
-                <Space wrap>
+                  </div>
+                  {item.collocations?.length ? (
+                    <Space wrap>
                   {item.collocations.map((collocation) => (
                     <Tag key={collocation}>{collocation}</Tag>
                   ))}
-                </Space>
+                    </Space>
               ) : null}
-            </Card>
-          </Col>
+                </Card>
+              </Col>
             ))}
           </Row>
         </section>
