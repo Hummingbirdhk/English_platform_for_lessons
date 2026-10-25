@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import type { Material, StudentProfile } from '../../content/types';
 import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
 import { loadAllContent } from '../../content/loadContent';
 import {
@@ -60,10 +61,9 @@ function formatLessonDate(date: Date) {
 }
 
 function formatLessonTime(date: Date) {
-  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
-    2,
-    '0',
-  )} · 30 минут`;
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(
+    date.getUTCMinutes(),
+  ).padStart(2, '0')} · 30 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
@@ -74,34 +74,24 @@ function formatHistoryDate(date = new Date()) {
   return `${String(date.getDate()).padStart(2, '0')}.${String(date.getMonth() + 1).padStart(2, '0')}`;
 }
 
-export function TeacherDashboardPage() {
-  const { students, materials } = loadAllContent();
-  const visibleStudents = useMemo(() => {
-    const order = ['student-zlata', 'student-artem'];
-    return students
-      .filter((student) => order.includes(student.id))
-      .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
-  }, [students]);
-
-  const [activeStudentId, setActiveStudentId] = useState(
-    visibleStudents.find((student) => student.id === 'student-zlata')?.id ??
-      visibleStudents[0]?.id ??
-      '',
-  );
-  const activeStudent =
-    visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
-  const { workspace, patch } = useStudentWorkspace(activeStudent);
-
+function TeacherStudentDashboard({
+  student,
+  materials,
+}: {
+  student: StudentProfile;
+  materials: Material[];
+}) {
+  const { workspace, patch } = useStudentWorkspace(student);
   const [selectedMonth, setSelectedMonth] = useState({ year: 2026, month: 9 });
   const [attendanceOverrides, setAttendanceOverrides] = useState<
     Record<string, Record<string, AttendanceStatus>>
   >({});
   const [editingProfile, setEditingProfile] = useState(false);
-  const [tagsDraft, setTagsDraft] = useState('');
-  const [focusMain, setFocusMain] = useState('');
-  const [focusPractice, setFocusPractice] = useState('');
-  const [focusRevision, setFocusRevision] = useState('');
-  const [notesDraft, setNotesDraft] = useState('');
+  const [tagsDraft, setTagsDraft] = useState(() => workspace?.profileTags.join(', ') ?? '');
+  const [focusMain, setFocusMain] = useState(() => workspace?.focus.main ?? '');
+  const [focusPractice, setFocusPractice] = useState(() => workspace?.focus.practice ?? '');
+  const [focusRevision, setFocusRevision] = useState(() => workspace?.focus.revision ?? '');
+  const [notesDraft, setNotesDraft] = useState(() => workspace?.notes ?? '');
   const [savedNotice, setSavedNotice] = useState('');
   const [assignMaterialId, setAssignMaterialId] = useState('');
   const [showSummaryForm, setShowSummaryForm] = useState(false);
@@ -109,27 +99,11 @@ export function TeacherDashboardPage() {
   const [summaryDetail, setSummaryDetail] = useState('');
   const [summaryHomework, setSummaryHomework] = useState('');
 
-  useEffect(() => {
-    if (!workspace) return;
-    setTagsDraft(workspace.profileTags.join(', '));
-    setFocusMain(workspace.focus.main);
-    setFocusPractice(workspace.focus.practice);
-    setFocusRevision(workspace.focus.revision);
-    setNotesDraft(workspace.notes);
-    setEditingProfile(false);
-    setShowSummaryForm(false);
-    setAssignMaterialId('');
-  }, [activeStudentId, workspace]);
-
-  if (!activeStudent || !workspace) {
-    return (
-      <main className="page-shell teacher-dashboard">
-        <section className="teacher-dashboard__empty">Ученики пока не добавлены.</section>
-      </main>
-    );
+  if (!workspace) {
+    return <section className="teacher-dashboard__empty">Профиль загружается…</section>;
   }
 
-  const schedule = getStudentSchedule(activeStudent.id);
+  const schedule = getStudentSchedule(student.id);
   const now = new Date();
   const nextLesson = schedule
     .map((entry) => ({ entry, date: parseScheduleDateTime(entry.dateTime) }))
@@ -150,7 +124,7 @@ export function TeacherDashboardPage() {
     return {
       key: overrideKey,
       date,
-      status: attendanceOverrides[activeStudent.id]?.[overrideKey] ?? getStatus(entry.attendance),
+      status: attendanceOverrides[student.id]?.[overrideKey] ?? getStatus(entry.attendance),
       note: entry.reschedule,
       payment: entry.payment,
     };
@@ -159,7 +133,6 @@ export function TeacherDashboardPage() {
   const presentCount = attendance.filter((entry) => entry.status === 'present').length;
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
   const cancelledCount = attendance.filter((entry) => entry.status === 'cancelled').length;
-
   const availableMaterials = materials.filter(
     (material) => !workspace.assignedMaterialIds.includes(material.id),
   );
@@ -203,7 +176,7 @@ export function TeacherDashboardPage() {
     if (!summaryTitle.trim()) return;
 
     const item: LessonHistoryItem = {
-      id: `${activeStudent.id}-${Date.now()}`,
+      id: `${student.id}-${Date.now()}`,
       date: formatHistoryDate(),
       title: summaryTitle.trim(),
       detail: summaryDetail.trim(),
@@ -226,8 +199,8 @@ export function TeacherDashboardPage() {
     const nextStatus = statusOrder[(currentIndex + 1) % statusOrder.length];
     setAttendanceOverrides((current) => ({
       ...current,
-      [activeStudent.id]: {
-        ...(current[activeStudent.id] ?? {}),
+      [student.id]: {
+        ...(current[student.id] ?? {}),
         [entryKey]: nextStatus,
       },
     }));
@@ -241,9 +214,290 @@ export function TeacherDashboardPage() {
   }
 
   return (
-    <main className="page-shell teacher-dashboard">
+    <>
       {savedNotice ? <div className="teacher-toast">{savedNotice}</div> : null}
 
+      <div className="teacher-profile-grid">
+        <article className="teacher-profile-card">
+          <div className="teacher-profile-card__topline">
+            <span className="teacher-card-label">ПРОФИЛЬ УЧЕНИКА</span>
+            <button type="button" onClick={() => setEditingProfile((value) => !value)}>
+              {editingProfile ? 'Закрыть' : 'Редактировать'}
+            </button>
+          </div>
+
+          <h2>{student.displayName}</h2>
+          <p>
+            Grade {student.grade} · {student.level} · {student.curriculum}
+          </p>
+
+          {editingProfile ? (
+            <div className="teacher-profile-editor">
+              <label>
+                <span>Плашки под именем</span>
+                <input
+                  value={tagsDraft}
+                  onChange={(event) => setTagsDraft(event.target.value)}
+                  placeholder="Present Simple, Daily routine, Vocabulary revision"
+                />
+                <small>Разделяй плашки запятыми.</small>
+              </label>
+              <div className="teacher-focus-editor-grid">
+                <label>
+                  <span>Основная тема</span>
+                  <input value={focusMain} onChange={(event) => setFocusMain(event.target.value)} />
+                </label>
+                <label>
+                  <span>Активная практика</span>
+                  <input
+                    value={focusPractice}
+                    onChange={(event) => setFocusPractice(event.target.value)}
+                  />
+                </label>
+                <label>
+                  <span>Повторение</span>
+                  <input
+                    value={focusRevision}
+                    onChange={(event) => setFocusRevision(event.target.value)}
+                  />
+                </label>
+              </div>
+              <button
+                type="button"
+                className="teacher-profile-save"
+                onClick={saveProfileSettings}
+              >
+                Сохранить профиль
+              </button>
+            </div>
+          ) : (
+            <div className="teacher-chip-row">
+              {workspace.profileTags.map((topic) => (
+                <span key={topic} className="teacher-chip">
+                  {topic}
+                </span>
+              ))}
+            </div>
+          )}
+        </article>
+
+        <article className="teacher-next-lesson-card">
+          <span className="teacher-card-label">СЛЕДУЮЩЕЕ ЗАНЯТИЕ</span>
+          <strong>{nextLesson ? formatLessonDate(nextLesson.date) : 'Нет занятий'}</strong>
+          <p>{nextLesson ? formatLessonTime(nextLesson.date) : 'Расписание закончилось'}</p>
+          <Link to={`/teacher/students/${student.id}/preparation`}>
+            Открыть подготовку →
+          </Link>
+        </article>
+      </div>
+
+      <div className="teacher-two-column">
+        <article className="teacher-panel">
+          <div className="teacher-panel__heading">
+            <h2>Мои заметки</h2>
+            <span>вручную</span>
+          </div>
+          <textarea
+            className="teacher-notes"
+            value={notesDraft}
+            onChange={(event) => setNotesDraft(event.target.value)}
+          />
+          <div className="teacher-panel__actions">
+            <button type="button" onClick={saveNotes} className="teacher-save-button">
+              Сохранить заметку
+            </button>
+          </div>
+        </article>
+
+        <article className="teacher-panel">
+          <div className="teacher-panel__heading">
+            <h2>Сейчас в работе</h2>
+            <button
+              type="button"
+              className="teacher-inline-edit"
+              onClick={() => setEditingProfile(true)}
+            >
+              изменить
+            </button>
+          </div>
+          <div className="teacher-focus-list">
+            {[
+              [workspace.focus.main, 'основная тема'],
+              [workspace.focus.practice, 'активная практика'],
+              [workspace.focus.revision, 'повторение'],
+            ].map(([topic, label], index) => (
+              <div key={label} className={`teacher-focus-item teacher-focus-item--${index % 3}`}>
+                <strong>{topic || 'Не выбрано'}</strong>
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
+        </article>
+      </div>
+
+      <article className="teacher-panel">
+        <div className="teacher-attendance-heading">
+          <div>
+            <h2>Посещения</h2>
+            <div className="teacher-attendance-stats">
+              <span>Был: {presentCount}</span>
+              <span>Перенос: {movedCount}</span>
+              <span>Отмена: {cancelledCount}</span>
+            </div>
+          </div>
+          <div className="teacher-month-control">
+            <button type="button" onClick={() => moveMonth(-1)} aria-label="Предыдущий месяц">
+              ←
+            </button>
+            <strong>
+              {monthNames[selectedMonth.month]} {selectedMonth.year}
+            </strong>
+            <button type="button" onClick={() => moveMonth(1)} aria-label="Следующий месяц">
+              →
+            </button>
+          </div>
+        </div>
+
+        <div className="teacher-attendance-grid">
+          {attendance.map((entry) => (
+            <article key={entry.key} className="teacher-attendance-card">
+              <div>
+                <strong>{formatAttendanceDate(entry.date)}</strong>
+                <p>
+                  {String(entry.date.getUTCHours()).padStart(2, '0')}:
+                  {String(entry.date.getUTCMinutes()).padStart(2, '0')}
+                </p>
+                {entry.note ? <p>{entry.note}</p> : null}
+                {entry.payment ? <p>{entry.payment}</p> : null}
+              </div>
+              <button
+                type="button"
+                className={`teacher-attendance-status teacher-attendance-status--${entry.status}`}
+                onClick={() => cycleAttendance(entry.key, entry.status)}
+              >
+                {statusLabels[entry.status]}
+              </button>
+            </article>
+          ))}
+        </div>
+      </article>
+
+      <div className="teacher-two-column">
+        <article className="teacher-panel">
+          <div className="teacher-panel__heading">
+            <h2>Последние занятия</h2>
+            <span>история</span>
+          </div>
+          <div className="teacher-history">
+            {workspace.lessonHistory.map((lesson) => (
+              <div key={lesson.id} className="teacher-history-row">
+                <strong>{lesson.date}</strong>
+                <div>
+                  <b>{lesson.title}</b>
+                  <span>{lesson.detail}</span>
+                </div>
+                <em>{lesson.homework}</em>
+              </div>
+            ))}
+          </div>
+        </article>
+
+        <article className="teacher-panel">
+          <div className="teacher-panel__heading">
+            <h2>Быстрые действия</h2>
+            <span>рабочие</span>
+          </div>
+
+          <div className="teacher-quick-actions">
+            <Link
+              to={`/teacher/students/${student.id}/preparation`}
+              className="teacher-quick-action teacher-quick-action--purple"
+            >
+              <strong>Подготовить урок</strong>
+              <span>материалы + план + заметки</span>
+            </Link>
+
+            <div className="teacher-quick-action teacher-quick-action--orange teacher-quick-action--form">
+              <strong>Назначить материал</strong>
+              <select
+                value={assignMaterialId}
+                onChange={(event) => setAssignMaterialId(event.target.value)}
+              >
+                <option value="">Выбрать из библиотеки</option>
+                {availableMaterials.map((material) => (
+                  <option key={material.id} value={material.id}>
+                    {material.title}
+                  </option>
+                ))}
+              </select>
+              <button type="button" onClick={assignMaterial} disabled={!assignMaterialId}>
+                Назначить
+              </button>
+            </div>
+
+            <button
+              type="button"
+              className="teacher-quick-action teacher-quick-action--lemon"
+              onClick={() => setShowSummaryForm((value) => !value)}
+            >
+              <strong>Добавить итог урока</strong>
+              <span>тема + домашка + заметка</span>
+            </button>
+          </div>
+
+          {showSummaryForm ? (
+            <div className="teacher-summary-form">
+              <input
+                value={summaryTitle}
+                onChange={(event) => setSummaryTitle(event.target.value)}
+                placeholder="Тема урока"
+              />
+              <input
+                value={summaryDetail}
+                onChange={(event) => setSummaryDetail(event.target.value)}
+                placeholder="Что прошли / что получилось"
+              />
+              <input
+                value={summaryHomework}
+                onChange={(event) => setSummaryHomework(event.target.value)}
+                placeholder="Домашнее задание"
+              />
+              <button type="button" onClick={addLessonSummary}>
+                Сохранить итог
+              </button>
+            </div>
+          ) : null}
+        </article>
+      </div>
+    </>
+  );
+}
+
+export function TeacherDashboardPage() {
+  const { students, materials } = loadAllContent();
+  const order = ['student-zlata', 'student-artem'];
+  const visibleStudents = students
+    .filter((student) => order.includes(student.id))
+    .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+
+  const [activeStudentId, setActiveStudentId] = useState(
+    visibleStudents.find((student) => student.id === 'student-zlata')?.id ??
+      visibleStudents[0]?.id ??
+      '',
+  );
+  const activeStudent =
+    visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
+
+  if (!activeStudent) {
+    return (
+      <main className="page-shell teacher-dashboard">
+        <section className="teacher-dashboard__empty">Ученики пока не добавлены.</section>
+      </main>
+    );
+  }
+
+  return (
+    <main className="page-shell teacher-dashboard">
       <section className="teacher-dashboard__hero">
         <span className="sticker sticker--white">ЛИЧНЫЙ КАБИНЕТ</span>
         <h1>Мой рабочий стол</h1>
@@ -287,264 +541,11 @@ export function TeacherDashboardPage() {
         </aside>
 
         <section className="teacher-dashboard__main">
-          <div className="teacher-profile-grid">
-            <article className="teacher-profile-card">
-              <div className="teacher-profile-card__topline">
-                <span className="teacher-card-label">ПРОФИЛЬ УЧЕНИКА</span>
-                <button type="button" onClick={() => setEditingProfile((value) => !value)}>
-                  {editingProfile ? 'Закрыть' : 'Редактировать'}
-                </button>
-              </div>
-
-              <h2>{activeStudent.displayName}</h2>
-              <p>
-                Grade {activeStudent.grade} · {activeStudent.level} · {activeStudent.curriculum}
-              </p>
-
-              {editingProfile ? (
-                <div className="teacher-profile-editor">
-                  <label>
-                    <span>Плашки под именем</span>
-                    <input
-                      value={tagsDraft}
-                      onChange={(event) => setTagsDraft(event.target.value)}
-                      placeholder="Present Simple, Daily routine, Vocabulary revision"
-                    />
-                    <small>Разделяй плашки запятыми.</small>
-                  </label>
-                  <div className="teacher-focus-editor-grid">
-                    <label>
-                      <span>Основная тема</span>
-                      <input
-                        value={focusMain}
-                        onChange={(event) => setFocusMain(event.target.value)}
-                      />
-                    </label>
-                    <label>
-                      <span>Активная практика</span>
-                      <input
-                        value={focusPractice}
-                        onChange={(event) => setFocusPractice(event.target.value)}
-                      />
-                    </label>
-                    <label>
-                      <span>Повторение</span>
-                      <input
-                        value={focusRevision}
-                        onChange={(event) => setFocusRevision(event.target.value)}
-                      />
-                    </label>
-                  </div>
-                  <button
-                    type="button"
-                    className="teacher-profile-save"
-                    onClick={saveProfileSettings}
-                  >
-                    Сохранить профиль
-                  </button>
-                </div>
-              ) : (
-                <div className="teacher-chip-row">
-                  {workspace.profileTags.map((topic) => (
-                    <span key={topic} className="teacher-chip">
-                      {topic}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </article>
-
-            <article className="teacher-next-lesson-card">
-              <span className="teacher-card-label">СЛЕДУЮЩЕЕ ЗАНЯТИЕ</span>
-              <strong>{nextLesson ? formatLessonDate(nextLesson.date) : 'Нет занятий'}</strong>
-              <p>{nextLesson ? formatLessonTime(nextLesson.date) : 'Расписание закончилось'}</p>
-              <Link to={`/teacher/students/${activeStudent.id}/preparation`}>
-                Открыть подготовку →
-              </Link>
-            </article>
-          </div>
-
-          <div className="teacher-two-column">
-            <article className="teacher-panel">
-              <div className="teacher-panel__heading">
-                <h2>Мои заметки</h2>
-                <span>вручную</span>
-              </div>
-              <textarea
-                className="teacher-notes"
-                value={notesDraft}
-                onChange={(event) => setNotesDraft(event.target.value)}
-              />
-              <div className="teacher-panel__actions">
-                <button type="button" onClick={saveNotes} className="teacher-save-button">
-                  Сохранить заметку
-                </button>
-              </div>
-            </article>
-
-            <article className="teacher-panel">
-              <div className="teacher-panel__heading">
-                <h2>Сейчас в работе</h2>
-                <button
-                  type="button"
-                  className="teacher-inline-edit"
-                  onClick={() => setEditingProfile(true)}
-                >
-                  изменить
-                </button>
-              </div>
-              <div className="teacher-focus-list">
-                {[
-                  [workspace.focus.main, 'основная тема'],
-                  [workspace.focus.practice, 'активная практика'],
-                  [workspace.focus.revision, 'повторение'],
-                ].map(([topic, label], index) => (
-                  <div
-                    key={label}
-                    className={`teacher-focus-item teacher-focus-item--${index % 3}`}
-                  >
-                    <strong>{topic || 'Не выбрано'}</strong>
-                    <span>{label}</span>
-                  </div>
-                ))}
-              </div>
-            </article>
-          </div>
-
-          <article className="teacher-panel">
-            <div className="teacher-attendance-heading">
-              <div>
-                <h2>Посещения</h2>
-                <div className="teacher-attendance-stats">
-                  <span>Был: {presentCount}</span>
-                  <span>Перенос: {movedCount}</span>
-                  <span>Отмена: {cancelledCount}</span>
-                </div>
-              </div>
-              <div className="teacher-month-control">
-                <button type="button" onClick={() => moveMonth(-1)} aria-label="Предыдущий месяц">
-                  ←
-                </button>
-                <strong>
-                  {monthNames[selectedMonth.month]} {selectedMonth.year}
-                </strong>
-                <button type="button" onClick={() => moveMonth(1)} aria-label="Следующий месяц">
-                  →
-                </button>
-              </div>
-            </div>
-
-            <div className="teacher-attendance-grid">
-              {attendance.map((entry) => (
-                <article key={entry.key} className="teacher-attendance-card">
-                  <div>
-                    <strong>{formatAttendanceDate(entry.date)}</strong>
-                    <p>
-                      {String(entry.date.getUTCHours()).padStart(2, '0')}:
-                      {String(entry.date.getUTCMinutes()).padStart(2, '0')}
-                    </p>
-                    {entry.note ? <p>{entry.note}</p> : null}
-                    {entry.payment ? <p>{entry.payment}</p> : null}
-                  </div>
-                  <button
-                    type="button"
-                    className={`teacher-attendance-status teacher-attendance-status--${entry.status}`}
-                    onClick={() => cycleAttendance(entry.key, entry.status)}
-                  >
-                    {statusLabels[entry.status]}
-                  </button>
-                </article>
-              ))}
-            </div>
-          </article>
-
-          <div className="teacher-two-column">
-            <article className="teacher-panel">
-              <div className="teacher-panel__heading">
-                <h2>Последние занятия</h2>
-                <span>история</span>
-              </div>
-              <div className="teacher-history">
-                {workspace.lessonHistory.map((lesson) => (
-                  <div key={lesson.id} className="teacher-history-row">
-                    <strong>{lesson.date}</strong>
-                    <div>
-                      <b>{lesson.title}</b>
-                      <span>{lesson.detail}</span>
-                    </div>
-                    <em>{lesson.homework}</em>
-                  </div>
-                ))}
-              </div>
-            </article>
-
-            <article className="teacher-panel">
-              <div className="teacher-panel__heading">
-                <h2>Быстрые действия</h2>
-                <span>рабочие</span>
-              </div>
-
-              <div className="teacher-quick-actions">
-                <Link
-                  to={`/teacher/students/${activeStudent.id}/preparation`}
-                  className="teacher-quick-action teacher-quick-action--purple"
-                >
-                  <strong>Подготовить урок</strong>
-                  <span>материалы + план + заметки</span>
-                </Link>
-
-                <div className="teacher-quick-action teacher-quick-action--orange teacher-quick-action--form">
-                  <strong>Назначить материал</strong>
-                  <select
-                    value={assignMaterialId}
-                    onChange={(event) => setAssignMaterialId(event.target.value)}
-                  >
-                    <option value="">Выбрать из библиотеки</option>
-                    {availableMaterials.map((material) => (
-                      <option key={material.id} value={material.id}>
-                        {material.title}
-                      </option>
-                    ))}
-                  </select>
-                  <button type="button" onClick={assignMaterial} disabled={!assignMaterialId}>
-                    Назначить
-                  </button>
-                </div>
-
-                <button
-                  type="button"
-                  className="teacher-quick-action teacher-quick-action--lemon"
-                  onClick={() => setShowSummaryForm((value) => !value)}
-                >
-                  <strong>Добавить итог урока</strong>
-                  <span>тема + домашка + заметка</span>
-                </button>
-              </div>
-
-              {showSummaryForm ? (
-                <div className="teacher-summary-form">
-                  <input
-                    value={summaryTitle}
-                    onChange={(event) => setSummaryTitle(event.target.value)}
-                    placeholder="Тема урока"
-                  />
-                  <input
-                    value={summaryDetail}
-                    onChange={(event) => setSummaryDetail(event.target.value)}
-                    placeholder="Что прошли / что получилось"
-                  />
-                  <input
-                    value={summaryHomework}
-                    onChange={(event) => setSummaryHomework(event.target.value)}
-                    placeholder="Домашнее задание"
-                  />
-                  <button type="button" onClick={addLessonSummary}>
-                    Сохранить итог
-                  </button>
-                </div>
-              ) : null}
-            </article>
-          </div>
+          <TeacherStudentDashboard
+            key={activeStudent.id}
+            student={activeStudent}
+            materials={materials}
+          />
         </section>
       </div>
     </main>
