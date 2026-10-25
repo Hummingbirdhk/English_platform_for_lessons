@@ -1,6 +1,7 @@
 import { Result } from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
+import { useStudentWorkspace } from '../../features/student-workspace/studentWorkspace';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
@@ -8,6 +9,7 @@ export function StudentPage() {
   const { studentId } = useParams();
   const student = studentId ? findStudentById(studentId) : undefined;
   const content = loadAllContent();
+  const { workspace } = useStudentWorkspace(student);
 
   if (!student) {
     return (
@@ -17,11 +19,11 @@ export function StudentPage() {
     );
   }
 
-  const assignedMaterials = student.assignedMaterialIds
+  const assignedMaterials = (workspace?.assignedMaterialIds ?? student.assignedMaterialIds)
     .map((id) => content.materials.find((material) => material.id === id))
     .filter((material) => material !== undefined);
 
-  const assignedLessons = student.assignedLessonIds
+  const assignedLessons = (workspace?.assignedLessonIds ?? student.assignedLessonIds)
     .map((id) => content.lessons.find((lesson) => lesson.id === id))
     .filter((lesson) => lesson !== undefined);
 
@@ -34,7 +36,7 @@ export function StudentPage() {
             Grade {student.grade} · {student.level} · {student.curriculum}
           </p>
           <div className="student-hero__chips">
-            {student.currentFocus.map((topic, index) => (
+            {(workspace?.profileTags ?? student.currentFocus).map((topic, index) => (
               <span key={topic} className={index === 0 ? 'sticker sticker--dark' : 'level-chip'}>
                 {index === 0 ? `СЕЙЧАС: ${topic}` : topic}
               </span>
@@ -48,8 +50,12 @@ export function StudentPage() {
       <section className="student-top-grid">
         <article className="student-panel student-panel--focus">
           <span className="sticker sticker--purple">СЕЙЧАС ИЗУЧАЕМ</span>
-          <h2>{student.currentFocus[0]}</h2>
-          <p>{student.currentFocus.slice(1).join(' · ') || 'Текущая тема'}</p>
+          <h2>{workspace?.focus.main || student.currentFocus[0]}</h2>
+          <p>
+            {[workspace?.focus.practice, workspace?.focus.revision].filter(Boolean).join(' · ') ||
+              student.currentFocus.slice(1).join(' · ') ||
+              'Текущая тема'}
+          </p>
           <div className="progress-track" aria-hidden="true">
             <div className="progress-track__fill" />
           </div>
@@ -58,13 +64,16 @@ export function StudentPage() {
         <article className="student-panel student-panel--revision">
           <span className="sticker sticker--lemon">НУЖНО ПОВТОРИТЬ</span>
           <div className="revision-chips">
-            {student.revisionTopics.map((topic) => (
+            {(workspace?.focus.revision
+              ? [workspace.focus.revision, ...student.revisionTopics]
+              : student.revisionTopics
+            ).map((topic) => (
               <span key={topic} className="level-chip">
                 {topic}
               </span>
             ))}
           </div>
-          <p>{student.revisionTopics.length} темы на повторение</p>
+          <p>Темы, которые стоит держать в повторении</p>
         </article>
       </section>
 
@@ -88,6 +97,12 @@ export function StudentPage() {
         </article>
 
         <article className="student-progress-panel">
+          {workspace?.currentHomework ? (
+            <div className="student-homework-callout">
+              <span>Текущая домашка</span>
+              <strong>{workspace.currentHomework}</strong>
+            </div>
+          ) : null}
           <BrandArtifact kind="spark" className="student-progress-panel__spark" />
           <h2>Прогресс</h2>
           <div className="student-progress-panel__number">{student.completedTopics.length}</div>
