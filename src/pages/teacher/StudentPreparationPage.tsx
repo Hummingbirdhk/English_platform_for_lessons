@@ -3,7 +3,10 @@ import { Link, useParams } from 'react-router-dom';
 import { Result } from 'antd';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
-import { useStudentWorkspace } from '../../features/student-workspace/studentWorkspace';
+import {
+  type StudentWorkspace,
+  useStudentWorkspace,
+} from '../../features/student-workspace/studentWorkspace';
 
 const monthNamesGenitive = [
   'января',
@@ -55,41 +58,43 @@ export function StudentPreparationPage() {
     );
   }
 
-  const assignedMaterials = activeWorkspace.assignedMaterialIds
+  const currentWorkspace: StudentWorkspace = activeWorkspace;
+
+  const assignedMaterials = currentWorkspace.assignedMaterialIds
     .map((id) => materials.find((material) => material.id === id))
     .filter((material) => material !== undefined);
 
-  const assignedLessons = activeWorkspace.assignedLessonIds
+  const assignedLessons = currentWorkspace.assignedLessonIds
     .map((id) => lessons.find((lesson) => lesson.id === id))
     .filter((lesson) => lesson !== undefined);
 
   const availableMaterials = materials.filter(
-    (material) => !activeWorkspace.assignedMaterialIds.includes(material.id),
+    (material) => !currentWorkspace.assignedMaterialIds.includes(material.id),
   );
   const availableLessons = lessons.filter(
-    (lesson) => !activeWorkspace.assignedLessonIds.includes(lesson.id),
+    (lesson) => !currentWorkspace.assignedLessonIds.includes(lesson.id),
   );
 
   function addMaterial() {
     if (!materialId) return;
-    patch({ assignedMaterialIds: [...activeWorkspace.assignedMaterialIds, materialId] });
+    patch({ assignedMaterialIds: [...currentWorkspace.assignedMaterialIds, materialId] });
     setMaterialId('');
   }
 
   function removeMaterial(id: string) {
     patch({
-      assignedMaterialIds: activeWorkspace.assignedMaterialIds.filter((item) => item !== id),
+      assignedMaterialIds: currentWorkspace.assignedMaterialIds.filter((item) => item !== id),
     });
   }
 
   function addLesson() {
     if (!lessonId) return;
-    patch({ assignedLessonIds: [...activeWorkspace.assignedLessonIds, lessonId] });
+    patch({ assignedLessonIds: [...currentWorkspace.assignedLessonIds, lessonId] });
     setLessonId('');
   }
 
   function savePreparation() {
-    patch({ preparationNote: activeWorkspace.preparationNote });
+    patch({ preparationNote: currentWorkspace.preparationNote });
     setSaved(true);
     window.setTimeout(() => setSaved(false), 1200);
   }
@@ -115,15 +120,15 @@ export function StudentPreparationPage() {
           </div>
           <div className="teacher-focus-list">
             <div className="teacher-focus-item teacher-focus-item--0">
-              <strong>{activeWorkspace.focus.main || 'Не выбрано'}</strong>
+              <strong>{currentWorkspace.focus.main || 'Не выбрано'}</strong>
               <span>основная тема</span>
             </div>
             <div className="teacher-focus-item teacher-focus-item--1">
-              <strong>{activeWorkspace.focus.practice || 'Не выбрано'}</strong>
+              <strong>{currentWorkspace.focus.practice || 'Не выбрано'}</strong>
               <span>активная практика</span>
             </div>
             <div className="teacher-focus-item teacher-focus-item--2">
-              <strong>{activeWorkspace.focus.revision || 'Не выбрано'}</strong>
+              <strong>{currentWorkspace.focus.revision || 'Не выбрано'}</strong>
               <span>повторение</span>
             </div>
           </div>
@@ -135,7 +140,7 @@ export function StudentPreparationPage() {
             <span>последнее</span>
           </div>
           <p className="preparation-homework">
-            {activeWorkspace.currentHomework || 'Домашнее задание пока не добавлено.'}
+            {currentWorkspace.currentHomework || 'Домашнее задание пока не добавлено.'}
           </p>
         </article>
       </section>
@@ -217,7 +222,7 @@ export function StudentPreparationPage() {
         </div>
         <textarea
           className="teacher-notes preparation-notes"
-          value={activeWorkspace.preparationNote}
+          value={currentWorkspace.preparationNote}
           placeholder="Что важно повторить, что спросить, какой материал открыть первым..."
           onChange={(event) => patch({ preparationNote: event.target.value })}
         />
