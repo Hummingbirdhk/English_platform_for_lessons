@@ -68,5 +68,4 @@ describe('student workspace', () => {
     expect(fetchSpy).not.toHaveBeenCalled();
     fetchSpy.mockRestore();
   });
-
 });
