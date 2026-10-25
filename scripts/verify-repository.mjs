@@ -1,10 +1,4 @@
 import { spawnSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
-for (const file of ['src/content/schema/materialSchema.ts','src/entities/material/renderers/VocabularyMaterial.tsx']) {
- const a=readFileSync(file,'utf8').split('\n');
- const b=spawnSync('node_modules/.bin/prettier',[file],{encoding:'utf8'}).stdout.split('\n');
- let i=0;while(i<Math.max(a.length,b.length)){if(a[i]!==b[i]){console.log('PRETTIER_DIFF',file,i+1,JSON.stringify(a.slice(i,i+8)),JSON.stringify(b.slice(i,i+8)));break;}i++;}
-}
 const checks = [
   ['Formatting', 'npm', ['run', 'format:check']],
   ['Lint', 'npm', ['run', 'lint']],
