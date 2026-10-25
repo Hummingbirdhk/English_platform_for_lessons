@@ -77,7 +77,9 @@ export function StudentPreparationPage() {
   }
 
   function removeMaterial(id: string) {
-    patch({ assignedMaterialIds: activeWorkspace.assignedMaterialIds.filter((item) => item !== id) });
+    patch({
+      assignedMaterialIds: activeWorkspace.assignedMaterialIds.filter((item) => item !== id),
+    });
   }
 
   function addLesson() {
