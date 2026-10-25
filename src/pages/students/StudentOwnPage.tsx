@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './studentOwnPage.css';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
+import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
 import { cloudClient } from '../../shared/config/cloud';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
@@ -34,6 +35,9 @@ export function StudentOwnPage() {
   const auth = useTeacherAuth();
   const student = studentId ? findStudentById(studentId) : undefined;
   const content = loadAllContent();
+  const scheduledDates = getStudentSchedule(studentId ?? '')
+    .filter((item) => item.attendance !== 'Отмена' && item.attendance !== 'Перенос занятия')
+    .map((item) => parseScheduleDateTime(item.dateTime).toISOString().slice(0, 10));
   const [focus, setFocus] = useState({ main: '', practice: '', revision: '' });
   const [loaded, setLoaded] = useState(false);
   const [homework, setHomework] = useState('');
@@ -42,7 +46,7 @@ export function StudentOwnPage() {
   const [lessonIds, setLessonIds] = useState<string[]>([]);
   const [history, setHistory] = useState<HistoryRow[]>([]);
   const [homeworkEntries, setHomeworkEntries] = useState<HomeworkEntry[]>([]);
-  const [homeworkDate, setHomeworkDate] = useState(new Date().toLocaleDateString('en-CA'));
+  const [homeworkDate, setHomeworkDate] = useState('');
   const [workbook, setWorkbook] = useState('');
   const [textbook, setTextbook] = useState('');
   const [extraTask, setExtraTask] = useState('');
@@ -87,13 +91,16 @@ export function StudentOwnPage() {
         setLessonIds(lessons.map((row) => row.lesson_id));
         setHistory(historyRows);
         setHomeworkEntries(homeworkRows);
-        const latest = homeworkRows[0];
-        if (latest) {
-          setHomeworkDate(latest.lesson_date);
-          setWorkbook(latest.workbook);
-          setTextbook(latest.textbook);
-          setExtraTask(latest.extra_task);
-        }
+        const today = new Date().toISOString().slice(0, 10);
+        const lessonDates = getStudentSchedule(studentId)
+          .filter((item) => item.attendance !== 'Отмена' && item.attendance !== 'Перенос занятия')
+          .map((item) => parseScheduleDateTime(item.dateTime).toISOString().slice(0, 10));
+        const selectedDate = lessonDates.find((date) => date >= today) ?? lessonDates.at(-1) ?? '';
+        const currentEntry = homeworkRows.find((item) => item.lesson_date === selectedDate);
+        setHomeworkDate(selectedDate);
+        setWorkbook(currentEntry?.workbook ?? '');
+        setTextbook(currentEntry?.textbook ?? '');
+        setExtraTask(currentEntry?.extra_task ?? '');
       })
       .catch(() => {
         if (active) setError('Не удалось загрузить профиль.');
@@ -193,12 +200,18 @@ export function StudentOwnPage() {
           <p>Рабочая тетрадь · Учебник · Дополнительное задание</p>
           <div className="student-own-homework-form">
             <label htmlFor="homework-date">Дата занятия</label>
-            <input
+            <select
               id="homework-date"
-              type="date"
               value={homeworkDate}
               onChange={(event) => selectHomeworkDate(event.target.value)}
-            />
+            >
+              <option value="">Выбрать дату занятия</option>
+              {scheduledDates.map((date) => (
+                <option key={date} value={date}>
+                  {date.split('-').reverse().join('.')}
+                </option>
+              ))}
+            </select>
             <label htmlFor="homework-workbook">Рабочая тетрадь</label>
             <textarea
               id="homework-workbook"
@@ -220,7 +233,7 @@ export function StudentOwnPage() {
               onChange={(event) => setExtraTask(event.target.value)}
               rows={2}
             />
-            <button type="button" onClick={() => void saveHomework()} disabled={saving}>
+            <button type="button" onClick={() => void saveHomework()} disabled={saving || !homeworkDate}>
               {saving ? 'Сохраняю…' : 'Сохранить домашку'}
             </button>
             {saveMessage ? <p role="status">{saveMessage}</p> : null}
