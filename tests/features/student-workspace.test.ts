@@ -58,11 +58,8 @@ describe('student workspace', () => {
     expect(zlata).toBeDefined();
 
     const workspace = readStudentWorkspace(zlata!);
-    saveStudentWorkspace(
-      zlata!,
-      { ...workspace, currentHomework: 'Local-only homework' },
-      ['currentHomework'],
-    );
+    const nextWorkspace = { ...workspace, currentHomework: 'Local-only homework' };
+    saveStudentWorkspace(zlata!, nextWorkspace, ['currentHomework']);
 
     expect(readStudentWorkspace(zlata!).currentHomework).toBe('Local-only homework');
     expect(fetchSpy).not.toHaveBeenCalled();
