@@ -11,17 +11,22 @@ export function StudentOwnPage() {
   useEffect(() => {
     if (!studentId) return;
     let active = true;
-    void cloudClient.select<Array<{ focus_main: string | null; current_homework: string | null }>>(
-      'student_profile_state',
-      `select=focus_main,current_homework&student_id=eq.${encodeURIComponent(studentId)}&limit=1`,
-    ).then((rows) => {
-      if (!active) return;
-      setFocus(rows[0]?.focus_main ?? '');
-      setHomework(rows[0]?.current_homework ?? '');
-    }).catch(() => {
-      if (active) setError('Не удалось загрузить профиль.');
-    });
-    return () => { active = false; };
+    void cloudClient
+      .select<Array<{ focus_main: string | null; current_homework: string | null }>>(
+        'student_profile_state',
+        `select=focus_main,current_homework&student_id=eq.${encodeURIComponent(studentId)}&limit=1`,
+      )
+      .then((rows) => {
+        if (!active) return;
+        setFocus(rows[0]?.focus_main ?? '');
+        setHomework(rows[0]?.current_homework ?? '');
+      })
+      .catch(() => {
+        if (active) setError('Не удалось загрузить профиль.');
+      });
+    return () => {
+      active = false;
+    };
   }, [studentId]);
 
   return (

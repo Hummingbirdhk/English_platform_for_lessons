@@ -50,7 +50,8 @@ async function verifyTeacherAccess() {
 
     if (rows[0]?.role === 'teacher') {
       emit({
-        role: 'teacher', studentId: null,
+        role: 'teacher',
+        studentId: null,
         status: 'authenticated',
         email: session.user.email ?? '',
         error: '',
@@ -59,19 +60,28 @@ async function verifyTeacherAccess() {
     }
 
     if (rows[0]?.role === 'student' && rows[0].student_id) {
-      emit({ status: 'authenticated', role: 'student', studentId: rows[0].student_id,
-        email: session.user.email ?? '', error: '' });
+      emit({
+        status: 'authenticated',
+        role: 'student',
+        studentId: rows[0].student_id,
+        email: session.user.email ?? '',
+        error: '',
+      });
       return;
     }
     await cloudClient.signOut();
     emit({
-      status: 'anonymous', role: null, studentId: null,
+      status: 'anonymous',
+      role: null,
+      studentId: null,
       email: '',
       error: 'У этого аккаунта нет доступа преподавателя.',
     });
   } catch {
     emit({
-      status: 'anonymous', role: null, studentId: null,
+      status: 'anonymous',
+      role: null,
+      studentId: null,
       email: '',
       error: 'Не удалось проверить доступ преподавателя.',
     });
@@ -94,7 +104,9 @@ export function useTeacherAuth() {
       return true;
     } catch (error) {
       emit({
-        status: 'anonymous', role: null, studentId: null,
+        status: 'anonymous',
+      role: null,
+      studentId: null,
         email,
         error: error instanceof Error ? error.message : 'Не удалось отправить код.',
       });
@@ -111,7 +123,9 @@ export function useTeacherAuth() {
       return snapshot.status === 'authenticated' && snapshot.role === 'teacher';
     } catch (error) {
       emit({
-        status: 'code-sent', role: null, studentId: null,
+        status: 'code-sent',
+        role: null,
+        studentId: null,
         email,
         error: error instanceof Error ? error.message : 'Код не подошёл.',
       });
@@ -126,7 +140,13 @@ export function useTeacherAuth() {
     };
     const email = accounts[username.trim().toLowerCase()];
     if (!email) {
-      emit({ status: 'anonymous', email: '', error: 'Неверный логин или пароль.', role: null, studentId: null });
+      emit({
+        status: 'anonymous',
+        email: '',
+        error: 'Неверный логин или пароль.',
+        role: null,
+        studentId: null,
+      });
       return false;
     }
     emit({ status: 'checking', email, error: '', role: null, studentId: null });

@@ -34,14 +34,27 @@ export function StudentLoginPage() {
         <form onSubmit={login}>
           <label>
             <span>Логин</span>
-            <input autoComplete="username" value={username} onChange={(event) => setUsername(event.target.value)} required />
+            <input
+              autoComplete="username"
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+              required
+            />
           </label>
           <label>
             <span>Пароль</span>
-            <input type="password" autoComplete="current-password" value={password} onChange={(event) => setPassword(event.target.value)} required />
+            <input
+              type="password"
+              autoComplete="current-password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
+            />
           </label>
           {auth.error ? <div className="teacher-login-error">{auth.error}</div> : null}
-          <button type="submit" disabled={submitting}>{submitting ? 'Проверяю…' : 'Войти'}</button>
+          <button type="submit" disabled={submitting}>
+            {submitting ? 'Проверяю…' : 'Войти'}
+          </button>
         </form>
       </section>
     </main>

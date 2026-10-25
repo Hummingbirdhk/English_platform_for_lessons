@@ -52,7 +52,11 @@ const TeacherLoginPage = lazy(() =>
   })),
 );
 
-const StudentLoginPage = lazy(() => import('../../pages/students/StudentLoginPage').then((module) => ({ default: module.StudentLoginPage })));
+const StudentLoginPage = lazy(() =>
+  import('../../pages/students/StudentLoginPage').then((module) => ({
+    default: module.StudentLoginPage,
+  })),
+);
 
 const StudentOwnPage = lazy(() =>
   import('../../pages/students/StudentOwnPage').then((module) => ({
@@ -80,7 +84,14 @@ export function AppRoutes() {
         <Route path="/lesson/:lessonId" element={<LessonPage />} />
         <Route path="/students" element={<StudentsPage />} />
         <Route path="/student/login" element={<StudentLoginPage />} />
-        <Route path="/students/:studentId" element={<StudentGate><StudentProfileRoute /></StudentGate>} />
+        <Route
+          path="/students/:studentId"
+          element={
+            <StudentGate>
+              <StudentProfileRoute />
+            </StudentGate>
+          }
+        />
         <Route path="/teacher/login" element={<TeacherLoginPage />} />
         <Route
           path="/teacher"

@@ -7,7 +7,12 @@ import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 export function StudentsPage() {
   const { students } = loadAllContent();
   const auth = useTeacherAuth();
-  if (auth.configured && auth.status === 'authenticated' && auth.role === 'student' && auth.studentId) {
+  if (
+    auth.configured &&
+    auth.status === 'authenticated' &&
+    auth.role === 'student' &&
+    auth.studentId
+  ) {
     return <Navigate to={`/students/${auth.studentId}`} replace />;
   }
 
