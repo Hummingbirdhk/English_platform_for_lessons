@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { cloudClient } from '../../shared/config/cloud';
+import './studentHomeworkReview.css';
 
 type Entry = {
   student_id: string;
@@ -41,10 +42,14 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
   }, [studentId, refresh]);
 
   return (
-    <article className="teacher-panel">
+    <article className="teacher-panel teacher-homework-review">
       <div className="teacher-panel__heading">
         <h2>Домашка ученика</h2>
-        <button type="button" onClick={() => setRefresh((value) => value + 1)}>
+        <button
+          type="button"
+          className="teacher-homework-review__refresh"
+          onClick={() => setRefresh((value) => value + 1)}
+        >
           Обновить
         </button>
       </div>
@@ -53,17 +58,31 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
       {entries.length === 0 && !error && !loading ? (
         <p>Ученик ещё не заполнил домашнюю работу.</p>
       ) : null}
-      <div className="teacher-history">
+      <div className="teacher-homework-review__entries">
         {entries.map((entry) => (
-          <div className="teacher-history-row" key={entry.lesson_date}>
-            <strong>{entry.lesson_date.split('-').reverse().join('.')}</strong>
-            <div>
-              {entry.workbook ? <span>Рабочая тетрадь: {entry.workbook}</span> : null}
-              {entry.textbook ? <span>Учебник: {entry.textbook}</span> : null}
-              {entry.extra_task ? <span>Дополнительно: {entry.extra_task}</span> : null}
+          <section className="teacher-homework-review__entry" key={entry.lesson_date}>
+            <div className="teacher-homework-review__date">
+              <span>Занятие</span>
+              <strong>{entry.lesson_date.split('-').reverse().join('.')}</strong>
             </div>
-            <em>Изменено: {new Date(entry.updated_at).toLocaleString('ru-RU')}</em>
-          </div>
+            <div className="teacher-homework-review__content">
+              {entry.workbook ? (
+                <p><strong>Рабочая тетрадь</strong><span>{entry.workbook}</span></p>
+              ) : null}
+              {entry.textbook ? (
+                <p><strong>Учебник</strong><span>{entry.textbook}</span></p>
+              ) : null}
+              {entry.extra_task ? (
+                <p><strong>Дополнительное задание</strong><span>{entry.extra_task}</span></p>
+              ) : null}
+              {!entry.workbook && !entry.textbook && !entry.extra_task ? (
+                <p>Задания пока не заполнены.</p>
+              ) : null}
+            </div>
+            <div className="teacher-homework-review__updated">
+              Изменено {new Date(entry.updated_at).toLocaleString('ru-RU')}
+            </div>
+          </section>
         ))}
       </div>
     </article>
