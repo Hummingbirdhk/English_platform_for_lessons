@@ -168,13 +168,14 @@ function TeacherStudentDashboard({
       .map((tag) => tag.trim())
       .filter(Boolean);
     const tagsWereNotEdited = tagsDraft === currentWorkspace.profileTags.join(', ');
-    const tagsFollowDefaultFocus = currentWorkspace.profileTags.join(', ') ===
-      student.currentFocus.join(', ');
+    const tagsFollowDefaultFocus =
+      currentWorkspace.profileTags.join(', ') === student.currentFocus.join(', ');
 
     patch({
-      profileTags: tagsWereNotEdited && tagsFollowDefaultFocus
-        ? [focus.main, focus.practice, focus.revision].filter(Boolean)
-        : tags,
+      profileTags:
+        tagsWereNotEdited && tagsFollowDefaultFocus
+          ? [focus.main, focus.practice, focus.revision].filter(Boolean)
+          : tags,
       focus,
     });
     setEditingProfile(false);
