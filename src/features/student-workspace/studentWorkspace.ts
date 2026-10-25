@@ -33,6 +33,7 @@ const WORKSPACE_EVENT = 'english-platform:student-workspace-change';
 const cloudCache = new Map<string, StudentWorkspace>();
 const cloudLoaded = new Set<string>();
 const cloudLoading = new Set<string>();
+const cloudSaveTimers = new Map<string, ReturnType<typeof setTimeout>>();
 
 const defaultTeacherData: Record<
   string,
