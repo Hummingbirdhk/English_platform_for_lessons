@@ -1,7 +1,15 @@
 import type { StudentProfile } from '../../content/types';
+import { useStudentWorkspace } from '../../features/student-workspace/studentWorkspace';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function StudentCard({ student }: { student: StudentProfile }) {
+  const { workspace } = useStudentWorkspace(student);
+  const focus = workspace?.focus ?? {
+    main: student.currentFocus[0] ?? '',
+    practice: student.currentFocus[1] ?? '',
+    revision: student.currentFocus[2] ?? '',
+  };
+
   return (
     <article className="student-tile">
       <div className="student-tile__top">
@@ -12,7 +20,9 @@ export function StudentCard({ student }: { student: StudentProfile }) {
       <p>
         Grade {student.grade} · {student.curriculum}
       </p>
-      <div className="student-focus">{student.currentFocus.join(' · ')}</div>
+      <div className="student-focus">
+        {[focus.main, focus.practice, focus.revision].filter(Boolean).join(' · ')}
+      </div>
       <GlossyActionLink
         to={`/students/${student.id}`}
         label={`Открыть профиль: ${student.displayName}`}
