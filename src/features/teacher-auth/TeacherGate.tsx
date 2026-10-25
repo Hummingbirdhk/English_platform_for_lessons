@@ -12,7 +12,7 @@ export function TeacherGate({ children }: PropsWithChildren) {
     return <main className="page-shell teacher-auth-loading">Проверяю доступ…</main>;
   }
 
-  if (auth.status !== 'authenticated') {
+  if (auth.status !== 'authenticated' || auth.role !== 'teacher') {
     const next = encodeURIComponent(`${location.pathname}${location.search}`);
     return <Navigate to={`/teacher/login?next=${next}`} replace />;
   }
