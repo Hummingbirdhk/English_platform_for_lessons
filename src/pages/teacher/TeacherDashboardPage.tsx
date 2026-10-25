@@ -61,9 +61,10 @@ function formatLessonDate(date: Date) {
 }
 
 function formatLessonTime(date: Date) {
-  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(
-    date.getUTCMinutes(),
-  ).padStart(2, '0')} · 30 минут`;
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
+    2,
+    '0',
+  )} · 30 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
@@ -262,11 +263,7 @@ function TeacherStudentDashboard({
                   />
                 </label>
               </div>
-              <button
-                type="button"
-                className="teacher-profile-save"
-                onClick={saveProfileSettings}
-              >
+              <button type="button" className="teacher-profile-save" onClick={saveProfileSettings}>
                 Сохранить профиль
               </button>
             </div>
@@ -285,9 +282,7 @@ function TeacherStudentDashboard({
           <span className="teacher-card-label">СЛЕДУЮЩЕЕ ЗАНЯТИЕ</span>
           <strong>{nextLesson ? formatLessonDate(nextLesson.date) : 'Нет занятий'}</strong>
           <p>{nextLesson ? formatLessonTime(nextLesson.date) : 'Расписание закончилось'}</p>
-          <Link to={`/teacher/students/${student.id}/preparation`}>
-            Открыть подготовку →
-          </Link>
+          <Link to={`/teacher/students/${student.id}/preparation`}>Открыть подготовку →</Link>
         </article>
       </div>
 
