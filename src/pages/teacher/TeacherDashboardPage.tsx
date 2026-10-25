@@ -83,16 +83,17 @@ function TeacherStudentDashboard({
   materials: Material[];
 }) {
   const { workspace, patch } = useStudentWorkspace(student);
+  const activeWorkspace = workspace;
   const [selectedMonth, setSelectedMonth] = useState({ year: 2026, month: 9 });
   const [attendanceOverrides, setAttendanceOverrides] = useState<
     Record<string, Record<string, AttendanceStatus>>
   >({});
   const [editingProfile, setEditingProfile] = useState(false);
-  const [tagsDraft, setTagsDraft] = useState(() => workspace?.profileTags.join(', ') ?? '');
-  const [focusMain, setFocusMain] = useState(() => workspace?.focus.main ?? '');
-  const [focusPractice, setFocusPractice] = useState(() => workspace?.focus.practice ?? '');
-  const [focusRevision, setFocusRevision] = useState(() => workspace?.focus.revision ?? '');
-  const [notesDraft, setNotesDraft] = useState(() => workspace?.notes ?? '');
+  const [tagsDraft, setTagsDraft] = useState(() => activeWorkspace?.profileTags.join(', ') ?? '');
+  const [focusMain, setFocusMain] = useState(() => activeWorkspace?.focus.main ?? '');
+  const [focusPractice, setFocusPractice] = useState(() => activeWorkspace?.focus.practice ?? '');
+  const [focusRevision, setFocusRevision] = useState(() => activeWorkspace?.focus.revision ?? '');
+  const [notesDraft, setNotesDraft] = useState(() => activeWorkspace?.notes ?? '');
   const [savedNotice, setSavedNotice] = useState('');
   const [assignMaterialId, setAssignMaterialId] = useState('');
   const [showSummaryForm, setShowSummaryForm] = useState(false);
@@ -100,7 +101,7 @@ function TeacherStudentDashboard({
   const [summaryDetail, setSummaryDetail] = useState('');
   const [summaryHomework, setSummaryHomework] = useState('');
 
-  if (!workspace) {
+  if (!activeWorkspace) {
     return <section className="teacher-dashboard__empty">Профиль загружается…</section>;
   }
 
@@ -135,7 +136,7 @@ function TeacherStudentDashboard({
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
   const cancelledCount = attendance.filter((entry) => entry.status === 'cancelled').length;
   const availableMaterials = materials.filter(
-    (material) => !workspace.assignedMaterialIds.includes(material.id),
+    (material) => !activeWorkspace.assignedMaterialIds.includes(material.id),
   );
 
   function showSaved(message: string) {
@@ -168,7 +169,7 @@ function TeacherStudentDashboard({
 
   function assignMaterial() {
     if (!assignMaterialId) return;
-    patch({ assignedMaterialIds: [...workspace.assignedMaterialIds, assignMaterialId] });
+    patch({ assignedMaterialIds: [...activeWorkspace.assignedMaterialIds, assignMaterialId] });
     setAssignMaterialId('');
     showSaved('Материал назначен ✓');
   }
@@ -185,7 +186,7 @@ function TeacherStudentDashboard({
     };
 
     patch({
-      lessonHistory: [item, ...workspace.lessonHistory],
+      lessonHistory: [item, ...activeWorkspace.lessonHistory],
       currentHomework: summaryHomework.trim(),
     });
     setSummaryTitle('');
@@ -269,7 +270,7 @@ function TeacherStudentDashboard({
             </div>
           ) : (
             <div className="teacher-chip-row">
-              {workspace.profileTags.map((topic) => (
+              {activeWorkspace.profileTags.map((topic) => (
                 <span key={topic} className="teacher-chip">
                   {topic}
                 </span>
@@ -317,9 +318,9 @@ function TeacherStudentDashboard({
           </div>
           <div className="teacher-focus-list">
             {[
-              [workspace.focus.main, 'основная тема'],
-              [workspace.focus.practice, 'активная практика'],
-              [workspace.focus.revision, 'повторение'],
+              [activeWorkspace.focus.main, 'основная тема'],
+              [activeWorkspace.focus.practice, 'активная практика'],
+              [activeWorkspace.focus.revision, 'повторение'],
             ].map(([topic, label], index) => (
               <div key={label} className={`teacher-focus-item teacher-focus-item--${index % 3}`}>
                 <strong>{topic || 'Не выбрано'}</strong>
@@ -384,7 +385,7 @@ function TeacherStudentDashboard({
             <span>история</span>
           </div>
           <div className="teacher-history">
-            {workspace.lessonHistory.map((lesson) => (
+            {activeWorkspace.lessonHistory.map((lesson) => (
               <div key={lesson.id} className="teacher-history-row">
                 <strong>{lesson.date}</strong>
                 <div>
