@@ -1,6 +1,6 @@
 import { type FormEvent, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
+import { getTeacherAuthSnapshot, useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
 export function StudentLoginPage() {
   const auth = useTeacherAuth();
@@ -22,7 +22,7 @@ export function StudentLoginPage() {
     setSubmitting(true);
     const ok = await auth.loginStudent(username, password);
     setSubmitting(false);
-    if (ok) navigate('/students', { replace: true });
+    if (ok) navigate(`/students/${getTeacherAuthSnapshot().studentId}`, { replace: true });
   }
 
   return (
