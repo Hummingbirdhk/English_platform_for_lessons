@@ -134,8 +134,8 @@ export function StudentOwnPage() {
       );
       if (!rows?.length) throw new Error('Сохранение не подтверждено.');
       setHomeworkEntries((current) =>
-        [...current.filter((item) => item.lesson_date !== homeworkDate), rows[0]].sort(
-          (a, b) => b.lesson_date.localeCompare(a.lesson_date),
+        [...current.filter((item) => item.lesson_date !== homeworkDate), rows[0]].sort((a, b) =>
+          b.lesson_date.localeCompare(a.lesson_date),
         ),
       );
       setSaveMessage('Домашнее задание сохранено');
