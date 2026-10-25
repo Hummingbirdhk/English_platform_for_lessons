@@ -18,8 +18,6 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
 
   useEffect(() => {
     let active = true;
-    setLoading(true);
-    setError('');
     void cloudClient
       .select<Entry[]>(
         'student_homework_entries',
