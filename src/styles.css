@@ -2708,23 +2708,28 @@ select {
 
 .tense-use-card__number {
   position: absolute;
-  right: 18px;
-  top: 12px;
+  right: 20px;
+  top: 16px;
   font-family: var(--font-display);
-  font-size: 72px;
+  font-size: clamp(42px, 4vw, 56px);
   font-weight: 900;
-  opacity: 0.07;
+  line-height: 0.9;
+  opacity: 0.045;
 }
 
 .tense-use-card h3 {
+  position: relative;
+  z-index: 1;
   margin: 0;
-  max-width: 78%;
+  max-width: 84%;
   font-family: var(--font-display);
   font-size: 26px;
   letter-spacing: -0.035em;
 }
 
 .tense-use-card > p {
+  position: relative;
+  z-index: 1;
   margin: 10px 0 0;
   color: rgba(17, 17, 20, 0.66);
   line-height: 1.5;
