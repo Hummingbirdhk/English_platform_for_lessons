@@ -1,0 +1,81 @@
+.teacher-homework-review__refresh {
+  border: 1px solid #dddddf;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: #f6f6f3;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.teacher-homework-review__entries {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.teacher-homework-review__entry {
+  display: grid;
+  grid-template-columns: minmax(145px, 0.22fr) minmax(0, 1fr);
+  column-gap: 24px;
+  row-gap: 12px;
+  align-items: start;
+  padding: 20px 22px;
+  border-radius: 20px;
+  background: #f6f6f3;
+}
+
+.teacher-homework-review__date {
+  display: grid;
+  gap: 6px;
+}
+
+.teacher-homework-review__date > span {
+  font-size: 13px;
+  color: #707078;
+}
+
+.teacher-homework-review__date > strong {
+  font-size: 20px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.teacher-homework-review__content {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.teacher-homework-review__content p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.teacher-homework-review__content strong {
+  font-size: 13px;
+}
+
+.teacher-homework-review__content span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.teacher-homework-review__updated {
+  grid-column: 2;
+  color: #707078;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@media (max-width: 680px) {
+  .teacher-homework-review__entry {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 18px;
+  }
+
+  .teacher-homework-review__updated {
+    grid-column: 1;
+  }
+}
