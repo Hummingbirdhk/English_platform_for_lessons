@@ -21,7 +21,7 @@ type StudentScheduleConfig = {
 
 const configs: Record<string, StudentScheduleConfig> = {
   'student-artem': {
-    time: '18:00',
+    time: '19:00',
     records: {
       '03.09.2026': { attendance: 'Пришел' },
       '09.09.2026': { attendance: 'Пришел' },
