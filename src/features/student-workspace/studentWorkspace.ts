@@ -38,6 +38,7 @@ const cloudCache = new Map<string, StudentWorkspace>();
 const cloudLoaded = new Set<string>();
 const cloudLoading = new Set<string>();
 const cloudSaveTimers = new Map<string, ReturnType<typeof setTimeout>>();
+const cloudPendingFields = new Map<string, Set<CloudWorkspaceField>>();
 
 const defaultTeacherData: Record<
   string,
@@ -166,12 +167,26 @@ export function saveStudentWorkspace(
 ) {
   writeStudentWorkspace(student.id, workspace);
 
+  if (fields) {
+    const pending = cloudPendingFields.get(student.id) ?? new Set<CloudWorkspaceField>();
+    fields.forEach((field) => pending.add(field));
+    cloudPendingFields.set(student.id, pending);
+  } else {
+    cloudPendingFields.delete(student.id);
+  }
+
   const currentTimer = cloudSaveTimers.get(student.id);
   if (currentTimer) clearTimeout(currentTimer);
 
   const timer = setTimeout(() => {
     cloudSaveTimers.delete(student.id);
-    void persistCloudWorkspace(student, workspace, fields).catch(() => undefined);
+    const pendingFields = cloudPendingFields.get(student.id);
+    cloudPendingFields.delete(student.id);
+    void persistCloudWorkspace(
+      student,
+      workspace,
+      pendingFields ? Array.from(pendingFields) : undefined,
+    ).catch(() => undefined);
   }, 500);
 
   cloudSaveTimers.set(student.id, timer);
@@ -196,6 +211,7 @@ async function hydrateStudentWorkspace(student: StudentProfile) {
 export function resetStudentWorkspace(studentId: string) {
   cloudCache.delete(studentId);
   cloudLoaded.delete(studentId);
+  cloudPendingFields.delete(studentId);
   if (typeof window === 'undefined') return;
   window.localStorage.removeItem(storageKey(studentId));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
