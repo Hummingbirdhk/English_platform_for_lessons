@@ -176,6 +176,8 @@ async function hydrateStudentWorkspace(student: StudentProfile) {
 }
 
 export function resetStudentWorkspace(studentId: string) {
+  cloudCache.delete(studentId);
+  cloudLoaded.delete(studentId);
   if (typeof window === 'undefined') return;
   window.localStorage.removeItem(storageKey(studentId));
   window.dispatchEvent(new CustomEvent(WORKSPACE_EVENT, { detail: { studentId } }));
@@ -183,6 +185,12 @@ export function resetStudentWorkspace(studentId: string) {
 
 export function useStudentWorkspace(student: StudentProfile | undefined) {
   const studentId = student?.id ?? '';
+  const auth = useTeacherAuth();
+
+  useEffect(() => {
+    if (!student || auth.status !== 'authenticated') return;
+    void hydrateStudentWorkspace(student);
+  }, [student, auth.status]);
 
   const subscribe = useCallback(
     (notify: () => void) => {
@@ -208,7 +216,10 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
   );
 
   const getSnapshot = useCallback(() => {
-    if (!studentId || typeof window === 'undefined') return '';
+    if (!studentId) return '';
+    const cached = cloudCache.get(studentId);
+    if (cached) return JSON.stringify(cached);
+    if (typeof window === 'undefined') return '';
     return window.localStorage.getItem(storageKey(studentId)) ?? '';
   }, [studentId]);
 
@@ -217,7 +228,7 @@ export function useStudentWorkspace(student: StudentProfile | undefined) {
 
   function save(next: StudentWorkspace) {
     if (!student) return;
-    writeStudentWorkspace(student.id, next);
+    saveStudentWorkspace(student, next);
   }
 
   function patch(patchValue: Partial<StudentWorkspace>) {
