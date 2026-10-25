@@ -55,7 +55,9 @@ export function StudentOwnPage() {
       <section className="student-hero">
         <div>
           <h1>{student?.displayName ?? 'Мой профиль'}</h1>
-          <button type="button" onClick={() => void auth.signOut()}>Выйти</button>
+          <button type="button" onClick={() => void auth.signOut()}>
+            Выйти
+          </button>
           <p>{error || 'Материалы и задания преподавателя'}</p>
         </div>
       </section>
