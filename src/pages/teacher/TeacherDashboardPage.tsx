@@ -5,6 +5,7 @@ import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher
 import { loadAllContent } from '../../content/loadContent';
 import {
   type LessonHistoryItem,
+  type StudentWorkspace,
   useStudentWorkspace,
 } from '../../features/student-workspace/studentWorkspace';
 
@@ -105,6 +106,7 @@ function TeacherStudentDashboard({
     return <section className="teacher-dashboard__empty">Профиль загружается…</section>;
   }
 
+  const currentWorkspace: StudentWorkspace = activeWorkspace;
   const schedule = getStudentSchedule(student.id);
   const now = new Date();
   const nextLesson = schedule
@@ -136,7 +138,7 @@ function TeacherStudentDashboard({
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
   const cancelledCount = attendance.filter((entry) => entry.status === 'cancelled').length;
   const availableMaterials = materials.filter(
-    (material) => !activeWorkspace.assignedMaterialIds.includes(material.id),
+    (material) => !currentWorkspace.assignedMaterialIds.includes(material.id),
   );
 
   function showSaved(message: string) {
@@ -169,7 +171,7 @@ function TeacherStudentDashboard({
 
   function assignMaterial() {
     if (!assignMaterialId) return;
-    patch({ assignedMaterialIds: [...activeWorkspace.assignedMaterialIds, assignMaterialId] });
+    patch({ assignedMaterialIds: [...currentWorkspace.assignedMaterialIds, assignMaterialId] });
     setAssignMaterialId('');
     showSaved('Материал назначен ✓');
   }
@@ -186,7 +188,7 @@ function TeacherStudentDashboard({
     };
 
     patch({
-      lessonHistory: [item, ...activeWorkspace.lessonHistory],
+      lessonHistory: [item, ...currentWorkspace.lessonHistory],
       currentHomework: summaryHomework.trim(),
     });
     setSummaryTitle('');
@@ -270,7 +272,7 @@ function TeacherStudentDashboard({
             </div>
           ) : (
             <div className="teacher-chip-row">
-              {activeWorkspace.profileTags.map((topic) => (
+              {currentWorkspace.profileTags.map((topic) => (
                 <span key={topic} className="teacher-chip">
                   {topic}
                 </span>
@@ -318,9 +320,9 @@ function TeacherStudentDashboard({
           </div>
           <div className="teacher-focus-list">
             {[
-              [activeWorkspace.focus.main, 'основная тема'],
-              [activeWorkspace.focus.practice, 'активная практика'],
-              [activeWorkspace.focus.revision, 'повторение'],
+              [currentWorkspace.focus.main, 'основная тема'],
+              [currentWorkspace.focus.practice, 'активная практика'],
+              [currentWorkspace.focus.revision, 'повторение'],
             ].map(([topic, label], index) => (
               <div key={label} className={`teacher-focus-item teacher-focus-item--${index % 3}`}>
                 <strong>{topic || 'Не выбрано'}</strong>
@@ -385,7 +387,7 @@ function TeacherStudentDashboard({
             <span>история</span>
           </div>
           <div className="teacher-history">
-            {activeWorkspace.lessonHistory.map((lesson) => (
+            {currentWorkspace.lessonHistory.map((lesson) => (
               <div key={lesson.id} className="teacher-history-row">
                 <strong>{lesson.date}</strong>
                 <div>
