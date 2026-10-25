@@ -5,6 +5,14 @@ import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { cloudClient } from '../../shared/config/cloud';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
+type HistoryRow = {
+  id: string;
+  lesson_date: string;
+  title: string;
+  detail: string | null;
+  homework: string | null;
+};
+
 type ProfileDataRow = {
   focus_main: string | null;
   focus_practice: string | null;
@@ -23,6 +31,7 @@ export function StudentOwnPage() {
   const [error, setError] = useState('');
   const [materialIds, setMaterialIds] = useState<string[]>([]);
   const [lessonIds, setLessonIds] = useState<string[]>([]);
+  const [history, setHistory] = useState<HistoryRow[]>([]);
 
   useEffect(() => {
     if (!studentId) return;
@@ -40,8 +49,12 @@ export function StudentOwnPage() {
         'assigned_lessons',
         `select=lesson_id&student_id=eq.${encodeURIComponent(studentId)}`,
       ),
+      cloudClient.select<HistoryRow[]>(
+        'lesson_history',
+        `select=id,lesson_date,title,detail,homework&student_id=eq.${encodeURIComponent(studentId)}&order=lesson_date.desc&limit=5`,
+      ),
     ])
-      .then(([rows, materials, lessons]) => {
+      .then(([rows, materials, lessons, historyRows]) => {
         if (!active) return;
         setFocus({
           main: rows[0]?.focus_main ?? '',
@@ -52,6 +65,7 @@ export function StudentOwnPage() {
         setHomework(rows[0]?.current_homework ?? '');
         setMaterialIds(materials.map((row) => row.material_id));
         setLessonIds(lessons.map((row) => row.lesson_id));
+        setHistory(historyRows);
       })
       .catch(() => {
         if (active) setError('Не удалось загрузить профиль.');
