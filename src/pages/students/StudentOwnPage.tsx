@@ -93,7 +93,7 @@ export function StudentOwnPage() {
             </div>
           ) : null}
         </div>
-        <button type="button" className="teacher-inline-edit" onClick={() => void auth.signOut()}>
+        <button type="button" className="student-own-logout" onClick={() => void auth.signOut()}>
           Выйти
         </button>
       </section>

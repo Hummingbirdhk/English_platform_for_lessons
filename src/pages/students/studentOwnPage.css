@@ -27,3 +27,26 @@
     padding: 28px 24px;
   }
 }
+
+.student-own-page .student-hero .student-own-logout {
+  position: absolute;
+  top: 36px;
+  right: 40px;
+  padding: 13px 27px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #111114;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .student-own-page .student-hero .student-own-logout {
+    top: 28px;
+    right: 24px;
+    padding: 11px 18px;
+    font-size: 15px;
+  }
+}
