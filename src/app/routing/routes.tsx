@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { StudentGate } from '../../features/student-auth/StudentGate';
+import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 import { TeacherGate } from '../../features/teacher-auth/TeacherGate';
 
 const HomePage = lazy(() =>
@@ -53,6 +54,17 @@ const TeacherLoginPage = lazy(() =>
 
 const StudentLoginPage = lazy(() => import('../../pages/students/StudentLoginPage').then((module) => ({ default: module.StudentLoginPage })));
 
+const StudentOwnPage = lazy(() =>
+  import('../../pages/students/StudentOwnPage').then((module) => ({
+    default: module.StudentOwnPage,
+  })),
+);
+
+function StudentProfileRoute() {
+  const auth = useTeacherAuth();
+  return auth.configured && auth.role === 'student' ? <StudentOwnPage /> : <StudentPage />;
+}
+
 function RouteFallback() {
   return <main className="page-shell">Загрузка…</main>;
 }
@@ -68,7 +80,7 @@ export function AppRoutes() {
         <Route path="/lesson/:lessonId" element={<LessonPage />} />
         <Route path="/students" element={<StudentsPage />} />
         <Route path="/student/login" element={<StudentLoginPage />} />
-        <Route path="/students/:studentId" element={<StudentGate><StudentPage /></StudentGate>} />
+        <Route path="/students/:studentId" element={<StudentGate><StudentProfileRoute /></StudentGate>} />
         <Route path="/teacher/login" element={<TeacherLoginPage />} />
         <Route
           path="/teacher"
