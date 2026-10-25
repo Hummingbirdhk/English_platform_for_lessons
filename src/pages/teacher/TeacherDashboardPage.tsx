@@ -1,69 +1,13 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
 import { loadAllContent } from '../../content/loadContent';
+import {
+  type LessonHistoryItem,
+  useStudentWorkspace,
+} from '../../features/student-workspace/studentWorkspace';
 
 type AttendanceStatus = 'planned' | 'present' | 'moved' | 'cancelled';
-
-type TeacherStudentDetails = {
-  notes: string;
-  lessonHistory: Array<{
-    date: string;
-    title: string;
-    detail: string;
-    homework: string;
-  }>;
-};
-
-const teacherDetails: Record<string, TeacherStudentDetails> = {
-  'student-zlata': {
-    notes:
-      'Хорошо понимает правила, но торопится в заданиях и пропускает окончания -s / -es. На следующем уроке повторить daily routine и дать больше коротких устных вопросов.',
-    lessonHistory: [
-      {
-        date: '24.10',
-        title: 'Reading + speaking',
-        detail: 'A Day in Tom’s Life',
-        homework: 'WB: p.23, ex. 2–3',
-      },
-      {
-        date: '10.10',
-        title: 'Daily routine',
-        detail: 'Vocabulary + speaking',
-        homework: '5 предложений о своём дне',
-      },
-      {
-        date: '03.10',
-        title: 'Present Simple',
-        detail: 'Questions + 3rd person',
-        homework: 'WB: p.24, ex. 3',
-      },
-    ],
-  },
-  'student-artem': {
-    notes:
-      'Быстро запоминает лексику, но пока путает формы неправильных глаголов. Лучше работает через короткие игровые задания и визуальные подсказки.',
-    lessonHistory: [
-      {
-        date: '23.10',
-        title: 'Speaking practice',
-        detail: 'Yesterday / last weekend',
-        homework: '8 устных вопросов',
-      },
-      {
-        date: '09.10',
-        title: 'Irregular verbs',
-        detail: 'go / have / see / make / take',
-        homework: 'карточки + WB',
-      },
-      {
-        date: '02.10',
-        title: 'Past Simple',
-        detail: 'was / were',
-        homework: 'WB: p.41, ex. 1–2',
-      },
-    ],
-  },
-};
 
 const statusOrder: AttendanceStatus[] = ['planned', 'present', 'moved', 'cancelled'];
 
@@ -104,11 +48,6 @@ const monthNamesGenitive = [
   'декабря',
 ];
 
-function readStoredValue(key: string, fallback: string): string {
-  if (typeof window === 'undefined') return fallback;
-  return window.localStorage.getItem(key) ?? fallback;
-}
-
 function getStatus(attendance: string | null): AttendanceStatus {
   if (attendance === 'Пришел' || attendance === 'Пришла') return 'present';
   if (attendance === 'Перенос занятия') return 'moved';
@@ -121,22 +60,25 @@ function formatLessonDate(date: Date) {
 }
 
 function formatLessonTime(date: Date) {
-  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
-    2,
-    '0',
-  )} · 30 минут`;
+  return `${String(date.getUTCHours()).padStart(2, '0')}:${String(
+    date.getUTCMinutes(),
+  ).padStart(2, '0')} · 30 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
   return `${String(date.getUTCDate()).padStart(2, '0')} ${monthNamesGenitive[date.getUTCMonth()]}`;
 }
 
+function formatHistoryDate(date = new Date()) {
+  return `${String(date.getDate()).padStart(2, '0')}.${String(date.getMonth() + 1).padStart(2, '0')}`;
+}
+
 export function TeacherDashboardPage() {
-  const { students } = loadAllContent();
+  const { students, materials } = loadAllContent();
   const visibleStudents = useMemo(() => {
     const order = ['student-zlata', 'student-artem'];
     return students
-      .filter((student) => teacherDetails[student.id] !== undefined)
+      .filter((student) => order.includes(student.id))
       .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   }, [students]);
 
@@ -145,26 +87,40 @@ export function TeacherDashboardPage() {
       visibleStudents[0]?.id ??
       '',
   );
+  const activeStudent =
+    visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
+  const { workspace, patch } = useStudentWorkspace(activeStudent);
+
   const [selectedMonth, setSelectedMonth] = useState({ year: 2026, month: 9 });
   const [attendanceOverrides, setAttendanceOverrides] = useState<
     Record<string, Record<string, AttendanceStatus>>
   >({});
-  const [savedStudentId, setSavedStudentId] = useState<string | null>(null);
+  const [editingProfile, setEditingProfile] = useState(false);
+  const [tagsDraft, setTagsDraft] = useState('');
+  const [focusMain, setFocusMain] = useState('');
+  const [focusPractice, setFocusPractice] = useState('');
+  const [focusRevision, setFocusRevision] = useState('');
+  const [notesDraft, setNotesDraft] = useState('');
+  const [savedNotice, setSavedNotice] = useState('');
+  const [assignMaterialId, setAssignMaterialId] = useState('');
+  const [showSummaryForm, setShowSummaryForm] = useState(false);
+  const [summaryTitle, setSummaryTitle] = useState('');
+  const [summaryDetail, setSummaryDetail] = useState('');
+  const [summaryHomework, setSummaryHomework] = useState('');
 
-  const activeStudent =
-    visibleStudents.find((student) => student.id === activeStudentId) ?? visibleStudents[0];
-  const details = activeStudent ? teacherDetails[activeStudent.id] : undefined;
+  useEffect(() => {
+    if (!workspace) return;
+    setTagsDraft(workspace.profileTags.join(', '));
+    setFocusMain(workspace.focus.main);
+    setFocusPractice(workspace.focus.practice);
+    setFocusRevision(workspace.focus.revision);
+    setNotesDraft(workspace.notes);
+    setEditingProfile(false);
+    setShowSummaryForm(false);
+    setAssignMaterialId('');
+  }, [activeStudentId, workspace]);
 
-  const [notesByStudent, setNotesByStudent] = useState<Record<string, string>>(() =>
-    Object.fromEntries(
-      visibleStudents.map((student) => [
-        student.id,
-        readStoredValue(`teacher-notes:${student.id}`, teacherDetails[student.id].notes),
-      ]),
-    ),
-  );
-
-  if (!activeStudent || !details) {
+  if (!activeStudent || !workspace) {
     return (
       <main className="page-shell teacher-dashboard">
         <section className="teacher-dashboard__empty">Ученики пока не добавлены.</section>
@@ -173,7 +129,7 @@ export function TeacherDashboardPage() {
   }
 
   const schedule = getStudentSchedule(activeStudent.id);
-  const now = new Date('2026-10-24T21:00:00Z');
+  const now = new Date();
   const nextLesson = schedule
     .map((entry) => ({ entry, date: parseScheduleDateTime(entry.dateTime) }))
     .find(
@@ -203,11 +159,65 @@ export function TeacherDashboardPage() {
   const movedCount = attendance.filter((entry) => entry.status === 'moved').length;
   const cancelledCount = attendance.filter((entry) => entry.status === 'cancelled').length;
 
+  const availableMaterials = materials.filter(
+    (material) => !workspace.assignedMaterialIds.includes(material.id),
+  );
+
+  function showSaved(message: string) {
+    setSavedNotice(message);
+    window.setTimeout(() => setSavedNotice(''), 1400);
+  }
+
+  function saveProfileSettings() {
+    const tags = tagsDraft
+      .split(',')
+      .map((tag) => tag.trim())
+      .filter(Boolean);
+
+    patch({
+      profileTags: tags,
+      focus: {
+        main: focusMain.trim(),
+        practice: focusPractice.trim(),
+        revision: focusRevision.trim(),
+      },
+    });
+    setEditingProfile(false);
+    showSaved('Профиль обновлён ✓');
+  }
+
   function saveNotes() {
-    const value = notesByStudent[activeStudent.id] ?? '';
-    window.localStorage.setItem(`teacher-notes:${activeStudent.id}`, value);
-    setSavedStudentId(activeStudent.id);
-    window.setTimeout(() => setSavedStudentId(null), 1200);
+    patch({ notes: notesDraft });
+    showSaved('Заметка сохранена ✓');
+  }
+
+  function assignMaterial() {
+    if (!assignMaterialId) return;
+    patch({ assignedMaterialIds: [...workspace.assignedMaterialIds, assignMaterialId] });
+    setAssignMaterialId('');
+    showSaved('Материал назначен ✓');
+  }
+
+  function addLessonSummary() {
+    if (!summaryTitle.trim()) return;
+
+    const item: LessonHistoryItem = {
+      id: `${activeStudent.id}-${Date.now()}`,
+      date: formatHistoryDate(),
+      title: summaryTitle.trim(),
+      detail: summaryDetail.trim(),
+      homework: summaryHomework.trim(),
+    };
+
+    patch({
+      lessonHistory: [item, ...workspace.lessonHistory],
+      currentHomework: summaryHomework.trim(),
+    });
+    setSummaryTitle('');
+    setSummaryDetail('');
+    setSummaryHomework('');
+    setShowSummaryForm(false);
+    showSaved('Итог урока добавлен ✓');
   }
 
   function cycleAttendance(entryKey: string, currentStatus: AttendanceStatus) {
@@ -231,6 +241,8 @@ export function TeacherDashboardPage() {
 
   return (
     <main className="page-shell teacher-dashboard">
+      {savedNotice ? <div className="teacher-toast">{savedNotice}</div> : null}
+
       <section className="teacher-dashboard__hero">
         <span className="sticker sticker--white">ЛИЧНЫЙ КАБИНЕТ</span>
         <h1>Мой рабочий стол</h1>
@@ -276,27 +288,75 @@ export function TeacherDashboardPage() {
         <section className="teacher-dashboard__main">
           <div className="teacher-profile-grid">
             <article className="teacher-profile-card">
-              <span className="teacher-card-label">ПРОФИЛЬ УЧЕНИКА</span>
+              <div className="teacher-profile-card__topline">
+                <span className="teacher-card-label">ПРОФИЛЬ УЧЕНИКА</span>
+                <button type="button" onClick={() => setEditingProfile((value) => !value)}>
+                  {editingProfile ? 'Закрыть' : 'Редактировать'}
+                </button>
+              </div>
+
               <h2>{activeStudent.displayName}</h2>
               <p>
                 Grade {activeStudent.grade} · {activeStudent.level} · {activeStudent.curriculum}
               </p>
-              <div className="teacher-chip-row">
-                {activeStudent.currentFocus.map((topic) => (
-                  <span key={topic} className="teacher-chip">
-                    {topic}
-                  </span>
-                ))}
-              </div>
+
+              {editingProfile ? (
+                <div className="teacher-profile-editor">
+                  <label>
+                    <span>Плашки под именем</span>
+                    <input
+                      value={tagsDraft}
+                      onChange={(event) => setTagsDraft(event.target.value)}
+                      placeholder="Present Simple, Daily routine, Vocabulary revision"
+                    />
+                    <small>Разделяй плашки запятыми.</small>
+                  </label>
+                  <div className="teacher-focus-editor-grid">
+                    <label>
+                      <span>Основная тема</span>
+                      <input value={focusMain} onChange={(event) => setFocusMain(event.target.value)} />
+                    </label>
+                    <label>
+                      <span>Активная практика</span>
+                      <input
+                        value={focusPractice}
+                        onChange={(event) => setFocusPractice(event.target.value)}
+                      />
+                    </label>
+                    <label>
+                      <span>Повторение</span>
+                      <input
+                        value={focusRevision}
+                        onChange={(event) => setFocusRevision(event.target.value)}
+                      />
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    className="teacher-profile-save"
+                    onClick={saveProfileSettings}
+                  >
+                    Сохранить профиль
+                  </button>
+                </div>
+              ) : (
+                <div className="teacher-chip-row">
+                  {workspace.profileTags.map((topic) => (
+                    <span key={topic} className="teacher-chip">
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              )}
             </article>
 
             <article className="teacher-next-lesson-card">
               <span className="teacher-card-label">СЛЕДУЮЩЕЕ ЗАНЯТИЕ</span>
               <strong>{nextLesson ? formatLessonDate(nextLesson.date) : 'Нет занятий'}</strong>
               <p>{nextLesson ? formatLessonTime(nextLesson.date) : 'Расписание закончилось'}</p>
-              <button type="button" disabled>
+              <Link to={`/teacher/students/${activeStudent.id}/preparation`}>
                 Открыть подготовку →
-              </button>
+              </Link>
             </article>
           </div>
 
@@ -308,17 +368,12 @@ export function TeacherDashboardPage() {
               </div>
               <textarea
                 className="teacher-notes"
-                value={notesByStudent[activeStudent.id] ?? ''}
-                onChange={(event) =>
-                  setNotesByStudent((current) => ({
-                    ...current,
-                    [activeStudent.id]: event.target.value,
-                  }))
-                }
+                value={notesDraft}
+                onChange={(event) => setNotesDraft(event.target.value)}
               />
               <div className="teacher-panel__actions">
                 <button type="button" onClick={saveNotes} className="teacher-save-button">
-                  {savedStudentId === activeStudent.id ? 'Сохранено ✓' : 'Сохранить заметку'}
+                  Сохранить заметку
                 </button>
               </div>
             </article>
@@ -326,22 +381,22 @@ export function TeacherDashboardPage() {
             <article className="teacher-panel">
               <div className="teacher-panel__heading">
                 <h2>Сейчас в работе</h2>
-                <span>фокус</span>
+                <button type="button" className="teacher-inline-edit" onClick={() => setEditingProfile(true)}>
+                  изменить
+                </button>
               </div>
               <div className="teacher-focus-list">
-                {activeStudent.currentFocus.map((topic, index) => (
+                {[
+                  [workspace.focus.main, 'основная тема'],
+                  [workspace.focus.practice, 'активная практика'],
+                  [workspace.focus.revision, 'повторение'],
+                ].map(([topic, label], index) => (
                   <div
-                    key={topic}
+                    key={label}
                     className={`teacher-focus-item teacher-focus-item--${index % 3}`}
                   >
-                    <strong>{topic}</strong>
-                    <span>
-                      {index === 0
-                        ? 'основная тема'
-                        : index === 1
-                          ? 'активная практика'
-                          : 'повторение'}
-                    </span>
+                    <strong>{topic || 'Не выбрано'}</strong>
+                    <span>{label}</span>
                   </div>
                 ))}
               </div>
@@ -402,8 +457,8 @@ export function TeacherDashboardPage() {
                 <span>история</span>
               </div>
               <div className="teacher-history">
-                {details.lessonHistory.map((lesson) => (
-                  <div key={`${lesson.date}-${lesson.title}`} className="teacher-history-row">
+                {workspace.lessonHistory.map((lesson) => (
+                  <div key={lesson.id} className="teacher-history-row">
                     <strong>{lesson.date}</strong>
                     <div>
                       <b>{lesson.title}</b>
@@ -418,34 +473,68 @@ export function TeacherDashboardPage() {
             <article className="teacher-panel">
               <div className="teacher-panel__heading">
                 <h2>Быстрые действия</h2>
-                <span>скоро</span>
+                <span>рабочие</span>
               </div>
+
               <div className="teacher-quick-actions">
-                <button
-                  type="button"
+                <Link
+                  to={`/teacher/students/${activeStudent.id}/preparation`}
                   className="teacher-quick-action teacher-quick-action--purple"
-                  disabled
                 >
-                  <strong>Создать урок</strong>
-                  <span>из материалов платформы</span>
-                </button>
-                <button
-                  type="button"
-                  className="teacher-quick-action teacher-quick-action--orange"
-                  disabled
-                >
+                  <strong>Подготовить урок</strong>
+                  <span>материалы + план + заметки</span>
+                </Link>
+
+                <div className="teacher-quick-action teacher-quick-action--orange teacher-quick-action--form">
                   <strong>Назначить материал</strong>
-                  <span>grammar / vocabulary / reading</span>
-                </button>
+                  <select
+                    value={assignMaterialId}
+                    onChange={(event) => setAssignMaterialId(event.target.value)}
+                  >
+                    <option value="">Выбрать из библиотеки</option>
+                    {availableMaterials.map((material) => (
+                      <option key={material.id} value={material.id}>
+                        {material.title}
+                      </option>
+                    ))}
+                  </select>
+                  <button type="button" onClick={assignMaterial} disabled={!assignMaterialId}>
+                    Назначить
+                  </button>
+                </div>
+
                 <button
                   type="button"
                   className="teacher-quick-action teacher-quick-action--lemon"
-                  disabled
+                  onClick={() => setShowSummaryForm((value) => !value)}
                 >
                   <strong>Добавить итог урока</strong>
                   <span>тема + домашка + заметка</span>
                 </button>
               </div>
+
+              {showSummaryForm ? (
+                <div className="teacher-summary-form">
+                  <input
+                    value={summaryTitle}
+                    onChange={(event) => setSummaryTitle(event.target.value)}
+                    placeholder="Тема урока"
+                  />
+                  <input
+                    value={summaryDetail}
+                    onChange={(event) => setSummaryDetail(event.target.value)}
+                    placeholder="Что прошли / что получилось"
+                  />
+                  <input
+                    value={summaryHomework}
+                    onChange={(event) => setSummaryHomework(event.target.value)}
+                    placeholder="Домашнее задание"
+                  />
+                  <button type="button" onClick={addLessonSummary}>
+                    Сохранить итог
+                  </button>
+                </div>
+              ) : null}
             </article>
           </div>
         </section>
