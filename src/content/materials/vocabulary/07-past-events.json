@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-07-past-events",
+  "type": "vocabulary",
+  "title": "Past Events & Stories",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Past Events & Stories",
+  "tags": ["vocabulary", "past", "Spotlight 6 · Module 7"],
+  "summary": "События в прошлом, рассказы и биографии.",
+  "items": [
+    {
+      "term": "memory",
+      "translation": "воспоминание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "That trip is a happy memory.",
+        "ru": "Та поездка — приятное воспоминание."
+      }
+    },
+    {
+      "term": "century",
+      "translation": "век",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The castle was built in the nineteenth century.",
+        "ru": "Замок построили в девятнадцатом веке."
+      }
+    },
+    {
+      "term": "invention",
+      "translation": "изобретение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The telephone was an important invention.",
+        "ru": "Телефон был важным изобретением."
+      }
+    },
+    {
+      "term": "discover",
+      "translation": "открывать, обнаруживать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They discovered an old map.",
+        "ru": "Они нашли старую карту."
+      }
+    },
+    {
+      "term": "invent",
+      "translation": "изобретать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Who invented this machine?",
+        "ru": "Кто изобрёл эту машину?"
+      }
+    },
+    {
+      "term": "happen",
+      "translation": "случаться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "What happened yesterday?",
+        "ru": "Что случилось вчера?"
+      }
+    },
+    {
+      "term": "ancient",
+      "translation": "древний",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We visited an ancient town.",
+        "ru": "Мы посетили древний город."
+      }
+    },
+    {
+      "term": "famous",
+      "translation": "известный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The scientist became famous.",
+        "ru": "Учёный стал известным."
+      }
+    },
+    {
+      "term": "a long time ago",
+      "translation": "давным-давно",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "People travelled differently a long time ago.",
+        "ru": "Давным-давно люди путешествовали иначе."
+      }
+    }
+  ]
+}

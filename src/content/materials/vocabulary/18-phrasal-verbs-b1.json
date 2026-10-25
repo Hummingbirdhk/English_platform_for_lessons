@@ -1,0 +1,102 @@
+{
+  "id": "vocabulary-18-phrasal-verbs-b1",
+  "type": "vocabulary",
+  "title": "Phrasal Verbs — School & Life",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Phrasal Verbs — School & Life",
+  "tags": ["vocabulary", "phrasal verbs", "Phrasal verbs"],
+  "summary": "Фразовые глаголы B1 для учёбы и жизни.",
+  "items": [
+    {
+      "term": "carry on",
+      "translation": "продолжать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Carry on with your work.",
+        "ru": "Продолжай свою работу."
+      }
+    },
+    {
+      "term": "deal with",
+      "translation": "справляться с",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "How do you deal with stress?",
+        "ru": "Как ты справляешься со стрессом?"
+      }
+    },
+    {
+      "term": "run out of",
+      "translation": "заканчиваться (о запасе)",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We've run out of milk.",
+        "ru": "У нас закончилось молоко."
+      }
+    },
+    {
+      "term": "put off",
+      "translation": "откладывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't put off your homework.",
+        "ru": "Не откладывай домашнюю работу."
+      }
+    },
+    {
+      "term": "work out",
+      "translation": "разобраться; получиться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We worked out the answer together.",
+        "ru": "Мы вместе нашли ответ."
+      }
+    },
+    {
+      "term": "look after",
+      "translation": "присматривать, заботиться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She looks after her little brother.",
+        "ru": "Она присматривает за младшим братом."
+      }
+    },
+    {
+      "term": "get over",
+      "translation": "оправиться, преодолеть",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "He got over his fear of flying.",
+        "ru": "Он преодолел страх полётов."
+      }
+    },
+    {
+      "term": "set up",
+      "translation": "организовать; настроить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We set up a study group.",
+        "ru": "Мы организовали учебную группу."
+      }
+    },
+    {
+      "term": "take part in",
+      "translation": "участвовать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I took part in a school competition.",
+        "ru": "Я участвовал в школьном соревновании."
+      }
+    },
+    {
+      "term": "come up with",
+      "translation": "придумывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She came up with a great idea.",
+        "ru": "Она придумала отличную идею."
+      }
+    }
+  ]
+}

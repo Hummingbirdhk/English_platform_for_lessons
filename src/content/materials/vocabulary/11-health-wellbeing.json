@@ -1,0 +1,84 @@
+{
+  "id": "vocabulary-11-health-wellbeing",
+  "type": "vocabulary",
+  "title": "Health & Well-being",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Health & Well-being",
+  "tags": ["vocabulary", "health", "B1 extension"],
+  "summary": "Самочувствие, привычки и советы.",
+  "items": [
+    {
+      "term": "symptom",
+      "translation": "симптом",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "A headache can be a symptom of illness.",
+        "ru": "Головная боль может быть симптомом болезни."
+      }
+    },
+    {
+      "term": "treatment",
+      "translation": "лечение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The treatment helped her recover.",
+        "ru": "Лечение помогло ей выздороветь."
+      }
+    },
+    {
+      "term": "balanced diet",
+      "translation": "сбалансированное питание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "A balanced diet gives you energy.",
+        "ru": "Сбалансированное питание даёт энергию."
+      }
+    },
+    {
+      "term": "recover",
+      "translation": "выздоравливать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "He recovered after a few days.",
+        "ru": "Он выздоровел через несколько дней."
+      }
+    },
+    {
+      "term": "prevent",
+      "translation": "предотвращать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Good habits can prevent problems.",
+        "ru": "Полезные привычки помогают предотвращать проблемы."
+      }
+    },
+    {
+      "term": "exhausted",
+      "translation": "измотанный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I felt exhausted after the race.",
+        "ru": "После забега я чувствовал себя измотанным."
+      }
+    },
+    {
+      "term": "healthy",
+      "translation": "здоровый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "A healthy routine includes sleep.",
+        "ru": "Здоровый распорядок включает сон."
+      }
+    },
+    {
+      "term": "get enough sleep",
+      "translation": "высыпаться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Teenagers need to get enough sleep.",
+        "ru": "Подросткам нужно высыпаться."
+      }
+    }
+  ]
+}

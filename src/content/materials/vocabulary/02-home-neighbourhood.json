@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-02-home-neighbourhood",
+  "type": "vocabulary",
+  "title": "Home & Neighbourhood",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Home & Neighbourhood",
+  "tags": ["vocabulary", "home", "Spotlight 6 · Module 2"],
+  "summary": "Комнаты, мебель, район и ориентирование.",
+  "items": [
+    {
+      "term": "neighbourhood",
+      "translation": "район",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There is a park in my neighbourhood.",
+        "ru": "В моём районе есть парк."
+      }
+    },
+    {
+      "term": "floor",
+      "translation": "этаж; пол",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our flat is on the third floor.",
+        "ru": "Наша квартира на третьем этаже."
+      }
+    },
+    {
+      "term": "bookshelf",
+      "translation": "книжная полка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The books are on the bookshelf.",
+        "ru": "Книги на книжной полке."
+      }
+    },
+    {
+      "term": "entrance",
+      "translation": "вход",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The entrance is near the café.",
+        "ru": "Вход находится рядом с кафе."
+      }
+    },
+    {
+      "term": "decorate",
+      "translation": "украшать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We decorate our room with posters.",
+        "ru": "Мы украшаем комнату плакатами."
+      }
+    },
+    {
+      "term": "move house",
+      "translation": "переезжать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We are going to move house in June.",
+        "ru": "Мы собираемся переехать в июне."
+      }
+    },
+    {
+      "term": "comfortable",
+      "translation": "удобный, уютный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This sofa is comfortable.",
+        "ru": "Этот диван удобный."
+      }
+    },
+    {
+      "term": "spacious",
+      "translation": "просторный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Their kitchen is spacious.",
+        "ru": "Их кухня просторная."
+      }
+    },
+    {
+      "term": "next to",
+      "translation": "рядом с",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The library is next to the school.",
+        "ru": "Библиотека рядом со школой."
+      }
+    }
+  ]
+}

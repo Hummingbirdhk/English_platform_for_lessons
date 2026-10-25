@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-13-environment",
+  "type": "vocabulary",
+  "title": "Environment & Nature",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Environment & Nature",
+  "tags": ["vocabulary", "environment", "B1 extension"],
+  "summary": "Экология, ресурсы, природные явления.",
+  "items": [
+    {
+      "term": "pollution",
+      "translation": "загрязнение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Air pollution is a serious problem.",
+        "ru": "Загрязнение воздуха — серьёзная проблема."
+      }
+    },
+    {
+      "term": "wildlife",
+      "translation": "дикая природа",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We should protect local wildlife.",
+        "ru": "Нужно защищать местную дикую природу."
+      }
+    },
+    {
+      "term": "waste",
+      "translation": "отходы",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We produce too much plastic waste.",
+        "ru": "Мы производим слишком много пластиковых отходов."
+      }
+    },
+    {
+      "term": "recycle",
+      "translation": "перерабатывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Our school recycles paper.",
+        "ru": "Наша школа перерабатывает бумагу."
+      }
+    },
+    {
+      "term": "reduce",
+      "translation": "сокращать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We need to reduce waste.",
+        "ru": "Нам нужно сокращать отходы."
+      }
+    },
+    {
+      "term": "protect",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Trees help protect the soil.",
+        "ru": "Деревья помогают защищать почву."
+      }
+    },
+    {
+      "term": "renewable",
+      "translation": "возобновляемый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Solar power is renewable energy.",
+        "ru": "Солнечная энергия — возобновляемая."
+      }
+    },
+    {
+      "term": "harmful",
+      "translation": "вредный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Some chemicals are harmful to fish.",
+        "ru": "Некоторые химикаты вредны для рыб."
+      }
+    },
+    {
+      "term": "save energy",
+      "translation": "экономить энергию",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Turn off lights to save energy.",
+        "ru": "Выключай свет, чтобы экономить энергию."
+      }
+    }
+  ]
+}

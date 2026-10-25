@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-08-rules-safety",
+  "type": "vocabulary",
+  "title": "Rules & Safety",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Rules & Safety",
+  "tags": ["vocabulary", "rules", "Spotlight 6 · Module 8"],
+  "summary": "Правила, обязанности, просьбы, запреты.",
+  "items": [
+    {
+      "term": "rule",
+      "translation": "правило",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We must follow school rules.",
+        "ru": "Мы должны соблюдать школьные правила."
+      }
+    },
+    {
+      "term": "permission",
+      "translation": "разрешение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Ask for permission first.",
+        "ru": "Сначала спроси разрешения."
+      }
+    },
+    {
+      "term": "warning",
+      "translation": "предупреждение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Read the warning on the sign.",
+        "ru": "Прочитай предупреждение на знаке."
+      }
+    },
+    {
+      "term": "allow",
+      "translation": "разрешать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Our teacher allows questions.",
+        "ru": "Наш учитель разрешает задавать вопросы."
+      }
+    },
+    {
+      "term": "protect",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Helmets protect your head.",
+        "ru": "Шлемы защищают голову."
+      }
+    },
+    {
+      "term": "obey",
+      "translation": "подчиняться, соблюдать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "You must obey the rules.",
+        "ru": "Ты должен соблюдать правила."
+      }
+    },
+    {
+      "term": "forbidden",
+      "translation": "запрещённый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Swimming is forbidden here.",
+        "ru": "Здесь запрещено плавать."
+      }
+    },
+    {
+      "term": "responsible",
+      "translation": "ответственный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Be responsible for your things.",
+        "ru": "Отвечай за свои вещи."
+      }
+    },
+    {
+      "term": "be allowed to",
+      "translation": "иметь разрешение",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Are we allowed to use phones?",
+        "ru": "Нам разрешено пользоваться телефонами?"
+      }
+    }
+  ]
+}

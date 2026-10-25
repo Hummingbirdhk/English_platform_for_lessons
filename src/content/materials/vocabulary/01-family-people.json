@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-01-family-people",
+  "type": "vocabulary",
+  "title": "Family & People",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Family & People",
+  "tags": ["vocabulary", "family", "Spotlight 6 · Module 1"],
+  "summary": "Члены семьи, национальности и описание человека.",
+  "items": [
+    {
+      "term": "relative",
+      "translation": "родственник",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My relatives live in different cities.",
+        "ru": "Мои родственники живут в разных городах."
+      }
+    },
+    {
+      "term": "cousin",
+      "translation": "двоюродный брат или сестра",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My cousin is the same age as me.",
+        "ru": "Мой двоюродный брат моего возраста."
+      }
+    },
+    {
+      "term": "neighbour",
+      "translation": "сосед",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our neighbour is very friendly.",
+        "ru": "Наш сосед очень дружелюбный."
+      }
+    },
+    {
+      "term": "nationality",
+      "translation": "национальность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "What is your nationality?",
+        "ru": "Какая у тебя национальность?"
+      }
+    },
+    {
+      "term": "introduce",
+      "translation": "представлять, знакомить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Let me introduce my sister.",
+        "ru": "Позволь представить мою сестру."
+      }
+    },
+    {
+      "term": "get along with",
+      "translation": "ладить с",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I get along with my brother.",
+        "ru": "Я лажу со своим братом."
+      }
+    },
+    {
+      "term": "friendly",
+      "translation": "дружелюбный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Our new classmate is friendly.",
+        "ru": "Наш новый одноклассник дружелюбный."
+      }
+    },
+    {
+      "term": "polite",
+      "translation": "вежливый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's important to be polite.",
+        "ru": "Важно быть вежливым."
+      }
+    },
+    {
+      "term": "be good at",
+      "translation": "хорошо уметь",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "My sister is good at drawing.",
+        "ru": "Моя сестра хорошо рисует."
+      }
+    }
+  ]
+}

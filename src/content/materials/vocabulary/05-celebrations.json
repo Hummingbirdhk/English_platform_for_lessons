@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-05-celebrations",
+  "type": "vocabulary",
+  "title": "Festivals & Celebrations",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Festivals & Celebrations",
+  "tags": ["vocabulary", "festivals", "Spotlight 6 · Module 5"],
+  "summary": "Праздники, традиции, приглашения.",
+  "items": [
+    {
+      "term": "celebration",
+      "translation": "празднование",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The celebration starts at six.",
+        "ru": "Праздник начинается в шесть."
+      }
+    },
+    {
+      "term": "invitation",
+      "translation": "приглашение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I got an invitation to the party.",
+        "ru": "Я получил приглашение на вечеринку."
+      }
+    },
+    {
+      "term": "costume",
+      "translation": "костюм",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She made her own costume.",
+        "ru": "Она сама сделала костюм."
+      }
+    },
+    {
+      "term": "tradition",
+      "translation": "традиция",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "It's a family tradition.",
+        "ru": "Это семейная традиция."
+      }
+    },
+    {
+      "term": "celebrate",
+      "translation": "праздновать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We celebrate New Year together.",
+        "ru": "Мы вместе празднуем Новый год."
+      }
+    },
+    {
+      "term": "invite",
+      "translation": "приглашать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Can I invite two friends?",
+        "ru": "Можно пригласить двух друзей?"
+      }
+    },
+    {
+      "term": "special",
+      "translation": "особенный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Today is a special day.",
+        "ru": "Сегодня особенный день."
+      }
+    },
+    {
+      "term": "traditional",
+      "translation": "традиционный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We cook traditional dishes.",
+        "ru": "Мы готовим традиционные блюда."
+      }
+    },
+    {
+      "term": "look forward to",
+      "translation": "ждать с нетерпением",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I look forward to the holiday.",
+        "ru": "Я с нетерпением жду праздника."
+      }
+    }
+  ]
+}

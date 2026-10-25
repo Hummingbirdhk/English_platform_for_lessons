@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-12-technology-media",
+  "type": "vocabulary",
+  "title": "Technology & Media",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Technology & Media",
+  "tags": ["vocabulary", "technology", "B1 extension"],
+  "summary": "Гаджеты, интернет, онлайн-безопасность.",
+  "items": [
+    {
+      "term": "device",
+      "translation": "устройство",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This device is easy to use.",
+        "ru": "Этим устройством легко пользоваться."
+      }
+    },
+    {
+      "term": "privacy",
+      "translation": "конфиденциальность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Privacy matters on social media.",
+        "ru": "Конфиденциальность важна в соцсетях."
+      }
+    },
+    {
+      "term": "password",
+      "translation": "пароль",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Use a strong password.",
+        "ru": "Используй надёжный пароль."
+      }
+    },
+    {
+      "term": "upload",
+      "translation": "загружать в интернет",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Please upload the file.",
+        "ru": "Пожалуйста, загрузи файл."
+      }
+    },
+    {
+      "term": "download",
+      "translation": "скачивать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I downloaded the app yesterday.",
+        "ru": "Я скачал приложение вчера."
+      }
+    },
+    {
+      "term": "share",
+      "translation": "делиться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Don't share personal information.",
+        "ru": "Не делись личной информацией."
+      }
+    },
+    {
+      "term": "reliable",
+      "translation": "надёжный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Is this website reliable?",
+        "ru": "Этот сайт надёжный?"
+      }
+    },
+    {
+      "term": "digital",
+      "translation": "цифровой",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We use digital tools in class.",
+        "ru": "Мы используем цифровые инструменты на уроках."
+      }
+    },
+    {
+      "term": "go online",
+      "translation": "выходить в интернет",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I go online to practise English.",
+        "ru": "Я выхожу в интернет, чтобы учить английский."
+      }
+    }
+  ]
+}

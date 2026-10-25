@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-06-hobbies",
+  "type": "vocabulary",
+  "title": "Hobbies & Free Time",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Hobbies & Free Time",
+  "tags": ["vocabulary", "hobbies", "Spotlight 6 · Module 6"],
+  "summary": "Увлечения, спортивные игры, досуг.",
+  "items": [
+    {
+      "term": "hobby",
+      "translation": "хобби",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Photography is my favourite hobby.",
+        "ru": "Фотография — моё любимое хобби."
+      }
+    },
+    {
+      "term": "board game",
+      "translation": "настольная игра",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Let's play a board game.",
+        "ru": "Давай сыграем в настольную игру."
+      }
+    },
+    {
+      "term": "equipment",
+      "translation": "снаряжение, оборудование",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "You need special equipment for climbing.",
+        "ru": "Для скалолазания нужно особое снаряжение."
+      }
+    },
+    {
+      "term": "collect",
+      "translation": "коллекционировать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "He collects old postcards.",
+        "ru": "Он коллекционирует старые открытки."
+      }
+    },
+    {
+      "term": "join",
+      "translation": "вступать, присоединяться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I want to join the drama club.",
+        "ru": "Я хочу вступить в театральный кружок."
+      }
+    },
+    {
+      "term": "practise",
+      "translation": "тренироваться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "She practises the guitar every day.",
+        "ru": "Она каждый день упражняется в игре на гитаре."
+      }
+    },
+    {
+      "term": "creative",
+      "translation": "творческий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Drawing is a creative activity.",
+        "ru": "Рисование — творческое занятие."
+      }
+    },
+    {
+      "term": "competitive",
+      "translation": "соревновательный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This game is very competitive.",
+        "ru": "Эта игра очень соревновательная."
+      }
+    },
+    {
+      "term": "be keen on",
+      "translation": "увлекаться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'm keen on skateboarding.",
+        "ru": "Я увлекаюсь скейтбордингом."
+      }
+    }
+  ]
+}

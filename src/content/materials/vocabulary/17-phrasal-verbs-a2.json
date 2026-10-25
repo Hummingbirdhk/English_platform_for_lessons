@@ -1,0 +1,102 @@
+{
+  "id": "vocabulary-17-phrasal-verbs-a2",
+  "type": "vocabulary",
+  "title": "Phrasal Verbs — Everyday",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Phrasal Verbs — Everyday",
+  "tags": ["vocabulary", "phrasal verbs", "Phrasal verbs"],
+  "summary": "Повседневные фразовые глаголы A2.",
+  "items": [
+    {
+      "term": "get up",
+      "translation": "вставать с постели",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I get up at seven every day.",
+        "ru": "Я встаю в семь каждый день."
+      }
+    },
+    {
+      "term": "put on",
+      "translation": "надевать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Put on your warm coat.",
+        "ru": "Надень тёплое пальто."
+      }
+    },
+    {
+      "term": "take off",
+      "translation": "снимать одежду; взлетать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Take off your shoes at the door.",
+        "ru": "Сними обувь у двери."
+      }
+    },
+    {
+      "term": "turn on",
+      "translation": "включать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Can you turn on the light?",
+        "ru": "Можешь включить свет?"
+      }
+    },
+    {
+      "term": "turn off",
+      "translation": "выключать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Turn off your phone in class.",
+        "ru": "Выключи телефон на уроке."
+      }
+    },
+    {
+      "term": "look for",
+      "translation": "искать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I'm looking for my keys.",
+        "ru": "Я ищу ключи."
+      }
+    },
+    {
+      "term": "pick up",
+      "translation": "поднимать; забирать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Please pick up your bag.",
+        "ru": "Пожалуйста, подними сумку."
+      }
+    },
+    {
+      "term": "come back",
+      "translation": "возвращаться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Come back before dinner.",
+        "ru": "Возвращайся до ужина."
+      }
+    },
+    {
+      "term": "give up",
+      "translation": "сдаваться; бросать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't give up after one mistake.",
+        "ru": "Не сдавайся после одной ошибки."
+      }
+    },
+    {
+      "term": "find out",
+      "translation": "выяснять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Let's find out the answer.",
+        "ru": "Давай выясним ответ."
+      }
+    }
+  ]
+}

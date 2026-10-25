@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-15-work-future",
+  "type": "vocabulary",
+  "title": "Jobs & Future Plans",
+  "grade": 6,
+  "level": "B1",
+  "topic": "Jobs & Future Plans",
+  "tags": ["vocabulary", "jobs", "B1 extension"],
+  "summary": "Профессии, планы и навыки.",
+  "items": [
+    {
+      "term": "career",
+      "translation": "карьера",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She wants a career in medicine.",
+        "ru": "Она хочет построить карьеру в медицине."
+      }
+    },
+    {
+      "term": "experience",
+      "translation": "опыт",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This project gave me useful experience.",
+        "ru": "Этот проект дал мне полезный опыт."
+      }
+    },
+    {
+      "term": "skill",
+      "translation": "навык",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Teamwork is an important skill.",
+        "ru": "Умение работать в команде — важный навык."
+      }
+    },
+    {
+      "term": "apply for",
+      "translation": "подавать заявку",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "He applied for a summer job.",
+        "ru": "Он подал заявку на летнюю работу."
+      }
+    },
+    {
+      "term": "improve",
+      "translation": "улучшать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Reading improves your vocabulary.",
+        "ru": "Чтение улучшает словарный запас."
+      }
+    },
+    {
+      "term": "achieve",
+      "translation": "достигать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "You can achieve your goals.",
+        "ru": "Ты можешь достичь своих целей."
+      }
+    },
+    {
+      "term": "experienced",
+      "translation": "опытный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We met an experienced guide.",
+        "ru": "Мы встретили опытного гида."
+      }
+    },
+    {
+      "term": "challenging",
+      "translation": "сложный, требующий усилий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The task was challenging but fun.",
+        "ru": "Задание было сложным, но интересным."
+      }
+    },
+    {
+      "term": "make a decision",
+      "translation": "принимать решение",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I need to make a decision soon.",
+        "ru": "Мне скоро нужно принять решение."
+      }
+    }
+  ]
+}

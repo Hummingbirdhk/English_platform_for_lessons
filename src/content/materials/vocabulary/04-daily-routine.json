@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-04-daily-routine",
+  "type": "vocabulary",
+  "title": "Daily Life & School",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily Life & School",
+  "tags": ["vocabulary", "routine", "Spotlight 6 · Module 4"],
+  "summary": "Распорядок дня, школьные дела и частотность.",
+  "items": [
+    {
+      "term": "timetable",
+      "translation": "расписание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our timetable changes on Monday.",
+        "ru": "Наше расписание меняется в понедельник."
+      }
+    },
+    {
+      "term": "break",
+      "translation": "перемена; перерыв",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We have a short break at eleven.",
+        "ru": "У нас короткая перемена в одиннадцать."
+      }
+    },
+    {
+      "term": "subject",
+      "translation": "учебный предмет",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Science is my favourite subject.",
+        "ru": "Естествознание — мой любимый предмет."
+      }
+    },
+    {
+      "term": "revise",
+      "translation": "повторять материал",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I revise new words before a test.",
+        "ru": "Я повторяю новые слова перед тестом."
+      }
+    },
+    {
+      "term": "pack",
+      "translation": "собирать, укладывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I pack my schoolbag in the evening.",
+        "ru": "Я собираю портфель вечером."
+      }
+    },
+    {
+      "term": "hurry",
+      "translation": "торопиться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Hurry up or we'll miss the bus.",
+        "ru": "Поторопись, иначе мы опоздаем на автобус."
+      }
+    },
+    {
+      "term": "busy",
+      "translation": "занятый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I'm busy on weekdays.",
+        "ru": "В будни я занят."
+      }
+    },
+    {
+      "term": "usually",
+      "translation": "обычно",
+      "partOfSpeech": "adverb",
+      "example": {
+        "en": "I usually walk to school.",
+        "ru": "Обычно я хожу в школу пешком."
+      }
+    },
+    {
+      "term": "be on time",
+      "translation": "приходить вовремя",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Please be on time for class.",
+        "ru": "Пожалуйста, приходи на урок вовремя."
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "vocabulary-10-holidays-weather",
+  "type": "vocabulary",
+  "title": "Holidays & Weather",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Holidays & Weather",
+  "tags": ["vocabulary", "travel", "Spotlight 6 · Module 10"],
+  "summary": "Каникулы, погода, бронирование и отдых.",
+  "items": [
+    {
+      "term": "destination",
+      "translation": "место назначения",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our destination is a small village.",
+        "ru": "Наше место назначения — маленькая деревня."
+      }
+    },
+    {
+      "term": "luggage",
+      "translation": "багаж",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My luggage is quite heavy.",
+        "ru": "Мой багаж довольно тяжёлый."
+      }
+    },
+    {
+      "term": "forecast",
+      "translation": "прогноз",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The forecast says it will rain.",
+        "ru": "По прогнозу будет дождь."
+      }
+    },
+    {
+      "term": "book",
+      "translation": "бронировать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We booked a room near the beach.",
+        "ru": "Мы забронировали номер рядом с пляжем."
+      }
+    },
+    {
+      "term": "explore",
+      "translation": "исследовать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Let's explore the old town.",
+        "ru": "Давай исследуем старый город."
+      }
+    },
+    {
+      "term": "pack",
+      "translation": "упаковывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Don't forget to pack a jacket.",
+        "ru": "Не забудь положить куртку."
+      }
+    },
+    {
+      "term": "sunny",
+      "translation": "солнечный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It will be sunny tomorrow.",
+        "ru": "Завтра будет солнечно."
+      }
+    },
+    {
+      "term": "stormy",
+      "translation": "штормовой",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The sea is stormy today.",
+        "ru": "Сегодня на море шторм."
+      }
+    },
+    {
+      "term": "go sightseeing",
+      "translation": "осматривать достопримечательности",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We went sightseeing in Rome.",
+        "ru": "Мы осматривали достопримечательности Рима."
+      }
+    }
+  ]
+}
