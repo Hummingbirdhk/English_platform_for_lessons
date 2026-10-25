@@ -67,13 +67,22 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
             </div>
             <div className="teacher-homework-review__content">
               {entry.workbook ? (
-                <p><strong>Рабочая тетрадь</strong><span>{entry.workbook}</span></p>
+                <p>
+                  <strong>Рабочая тетрадь</strong>
+                  <span>{entry.workbook}</span>
+                </p>
               ) : null}
               {entry.textbook ? (
-                <p><strong>Учебник</strong><span>{entry.textbook}</span></p>
+                <p>
+                  <strong>Учебник</strong>
+                  <span>{entry.textbook}</span>
+                </p>
               ) : null}
               {entry.extra_task ? (
-                <p><strong>Дополнительное задание</strong><span>{entry.extra_task}</span></p>
+                <p>
+                  <strong>Дополнительное задание</strong>
+                  <span>{entry.extra_task}</span>
+                </p>
               ) : null}
               {!entry.workbook && !entry.textbook && !entry.extra_task ? (
                 <p>Задания пока не заполнены.</p>
