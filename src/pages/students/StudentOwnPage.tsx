@@ -52,6 +52,7 @@ export function StudentOwnPage() {
   const [extraTask, setExtraTask] = useState('');
   const [saving, setSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState('');
+  const [dirty, setDirty] = useState(false);
 
   useEffect(() => {
     if (!studentId) return;
@@ -117,6 +118,7 @@ export function StudentOwnPage() {
     setTextbook(entry?.textbook ?? '');
     setExtraTask(entry?.extra_task ?? '');
     setSaveMessage('');
+    setDirty(false);
   }
 
   async function saveHomework() {
@@ -145,6 +147,7 @@ export function StudentOwnPage() {
           b.lesson_date.localeCompare(a.lesson_date),
         ),
       );
+      setDirty(false);
       setSaveMessage('Домашнее задание сохранено');
     } catch {
       setSaveMessage('Не удалось сохранить. Проверь подключение и права доступа.');
@@ -198,12 +201,20 @@ export function StudentOwnPage() {
           <h2>Домашнее задание</h2>
           <p>{homework || 'Пока ничего не задано'}</p>
           <p>Рабочая тетрадь · Учебник · Дополнительное задание</p>
+          <p>Выбери дату урока: задания разных занятий хранятся отдельно.</p>
           <div className="student-own-homework-form">
             <label htmlFor="homework-date">Дата занятия</label>
             <select
               id="homework-date"
               value={homeworkDate}
-              onChange={(event) => selectHomeworkDate(event.target.value)}
+              onChange={(event) => {
+                if (
+                  !dirty ||
+                  window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
+                ) {
+                  selectHomeworkDate(event.target.value);
+                }
+              }}
             >
               <option value="">Выбрать дату занятия</option>
               {scheduledDates.map((date) => (
@@ -216,27 +227,36 @@ export function StudentOwnPage() {
             <textarea
               id="homework-workbook"
               value={workbook}
-              onChange={(event) => setWorkbook(event.target.value)}
+              onChange={(event) => {
+                setWorkbook(event.target.value);
+                setDirty(true);
+              }}
               rows={2}
             />
             <label htmlFor="homework-textbook">Учебник</label>
             <textarea
               id="homework-textbook"
               value={textbook}
-              onChange={(event) => setTextbook(event.target.value)}
+              onChange={(event) => {
+                setTextbook(event.target.value);
+                setDirty(true);
+              }}
               rows={2}
             />
             <label htmlFor="homework-extra">Дополнительное задание</label>
             <textarea
               id="homework-extra"
               value={extraTask}
-              onChange={(event) => setExtraTask(event.target.value)}
+              onChange={(event) => {
+                setExtraTask(event.target.value);
+                setDirty(true);
+              }}
               rows={2}
             />
             <button
               type="button"
               onClick={() => void saveHomework()}
-              disabled={saving || !homeworkDate}
+              disabled={saving || !homeworkDate || !dirty}
             >
               {saving ? 'Сохраняю…' : 'Сохранить домашку'}
             </button>
@@ -248,7 +268,14 @@ export function StudentOwnPage() {
                   <button
                     key={entry.lesson_date}
                     type="button"
-                    onClick={() => selectHomeworkDate(entry.lesson_date)}
+                    onClick={() => {
+                      if (
+                        !dirty ||
+                        window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
+                      ) {
+                        selectHomeworkDate(entry.lesson_date);
+                      }
+                    }}
                   >
                     {entry.lesson_date}
                   </button>
