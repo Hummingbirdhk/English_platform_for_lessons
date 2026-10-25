@@ -14,6 +14,14 @@ describe('application shell', () => {
     expect(within(navigation).getByRole('link', { name: /Ученики/i })).toBeInTheDocument();
   });
 
+  it('opens a student preparation workspace', async () => {
+    window.location.hash = '#/teacher/students/student-zlata/preparation';
+    render(<App />);
+
+    expect(await screen.findByText(/Подготовка к уроку/i)).toBeInTheDocument();
+    expect(screen.getByText('Злата')).toBeInTheDocument();
+  });
+
   it('shows a student-safe state for a missing lesson', async () => {
     window.location.hash = '#/lesson/missing';
     render(<App />);

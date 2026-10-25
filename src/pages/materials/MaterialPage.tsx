@@ -2,6 +2,7 @@ import { Result } from 'antd';
 import { useParams } from 'react-router-dom';
 import { findMaterialById } from '../../content/loadContent';
 import { MaterialRenderer } from '../../entities/material/MaterialRenderer';
+import { StudentAssignmentBar } from '../../features/student-workspace/StudentAssignmentBar';
 
 export function MaterialPage() {
   const { materialId } = useParams();
@@ -21,6 +22,7 @@ export function MaterialPage() {
 
   return (
     <main className="page-shell">
+      <StudentAssignmentBar mode="material" itemId={material.id} />
       <MaterialRenderer material={material} />
     </main>
   );
