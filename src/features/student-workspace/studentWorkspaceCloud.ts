@@ -120,51 +120,35 @@ export async function persistCloudWorkspace(
 ): Promise<void> {
   if (!isCloudConfigured || !cloudClient.getSession()) return;
 
-  await cloudClient.upsert(
-    'students',
-    'on_conflict=id',
-    {
-      id: student.id,
-      display_name: student.displayName,
-      grade: student.grade,
-      level: student.level,
-      curriculum: student.curriculum,
-      updated_at: new Date().toISOString(),
-    },
-  );
+  await cloudClient.upsert('students', 'on_conflict=id', {
+    id: student.id,
+    display_name: student.displayName,
+    grade: student.grade,
+    level: student.level,
+    curriculum: student.curriculum,
+    updated_at: new Date().toISOString(),
+  });
 
   await Promise.all([
-    cloudClient.upsert(
-      'student_profile_state',
-      'on_conflict=student_id',
-      {
-        student_id: student.id,
-        profile_tags: workspace.profileTags,
-        focus_main: workspace.focus.main,
-        focus_practice: workspace.focus.practice,
-        focus_revision: workspace.focus.revision,
-        current_homework: workspace.currentHomework,
-        updated_at: new Date().toISOString(),
-      },
-    ),
-    cloudClient.upsert(
-      'teacher_notes',
-      'on_conflict=student_id',
-      {
-        student_id: student.id,
-        notes: workspace.notes,
-        updated_at: new Date().toISOString(),
-      },
-    ),
-    cloudClient.upsert(
-      'lesson_preparation',
-      'on_conflict=student_id',
-      {
-        student_id: student.id,
-        note: workspace.preparationNote,
-        updated_at: new Date().toISOString(),
-      },
-    ),
+    cloudClient.upsert('student_profile_state', 'on_conflict=student_id', {
+      student_id: student.id,
+      profile_tags: workspace.profileTags,
+      focus_main: workspace.focus.main,
+      focus_practice: workspace.focus.practice,
+      focus_revision: workspace.focus.revision,
+      current_homework: workspace.currentHomework,
+      updated_at: new Date().toISOString(),
+    }),
+    cloudClient.upsert('teacher_notes', 'on_conflict=student_id', {
+      student_id: student.id,
+      notes: workspace.notes,
+      updated_at: new Date().toISOString(),
+    }),
+    cloudClient.upsert('lesson_preparation', 'on_conflict=student_id', {
+      student_id: student.id,
+      note: workspace.preparationNote,
+      updated_at: new Date().toISOString(),
+    }),
   ]);
 
   const studentFilter = `student_id=eq.${encodeURIComponent(student.id)}`;

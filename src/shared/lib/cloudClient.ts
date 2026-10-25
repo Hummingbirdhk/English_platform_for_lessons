@@ -72,9 +72,11 @@ export function buildCloudClient(endpoint: string, publicToken: string) {
     });
 
     if (!response.ok) {
-      const payload = (await response.json().catch(() => null)) as
-        | { msg?: string; error_description?: string; message?: string }
-        | null;
+      const payload = (await response.json().catch(() => null)) as {
+        msg?: string;
+        error_description?: string;
+        message?: string;
+      } | null;
       throw new Error(
         payload?.msg ??
           payload?.error_description ??
@@ -104,11 +106,7 @@ export function buildCloudClient(endpoint: string, publicToken: string) {
     return refreshSession();
   }
 
-  async function restRequest<T>(
-    table: string,
-    query: string,
-    init: RequestInit = {},
-  ): Promise<T> {
+  async function restRequest<T>(table: string, query: string, init: RequestInit = {}): Promise<T> {
     if (!configured) throw new Error('Cloud client is not configured.');
 
     const activeSession = await getValidSession();
@@ -119,10 +117,10 @@ export function buildCloudClient(endpoint: string, publicToken: string) {
     headers.set('Authorization', `Bearer ${activeSession.accessToken}`);
     headers.set('Content-Type', 'application/json');
 
-    const response = await fetch(
-      `${endpoint}/rest/v1/${table}${query ? `?${query}` : ''}`,
-      { ...init, headers },
-    );
+    const response = await fetch(`${endpoint}/rest/v1/${table}${query ? `?${query}` : ''}`, {
+      ...init,
+      headers,
+    });
 
     if (!response.ok) {
       const message = await response.text();
