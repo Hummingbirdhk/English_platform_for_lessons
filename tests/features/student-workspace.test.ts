@@ -1,9 +1,11 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { findStudentById } from '../../src/content/loadContent';
 import {
   readStudentWorkspace,
+  saveStudentWorkspace,
   writeStudentWorkspace,
 } from '../../src/features/student-workspace/studentWorkspace';
+import { isCloudConfigured } from '../../src/shared/config/cloud';
 
 describe('student workspace', () => {
   beforeEach(() => {
@@ -47,4 +49,24 @@ describe('student workspace', () => {
     expect(storedArtem.profileTags).not.toEqual(storedZlata.profileTags);
     expect(storedArtem.focus.main).toBe('Past Simple');
   });
+
+  it('keeps local persistence working when cloud is disabled in tests', () => {
+    expect(isCloudConfigured).toBe(false);
+
+    const fetchSpy = vi.spyOn(globalThis, 'fetch');
+    const zlata = findStudentById('student-zlata');
+    expect(zlata).toBeDefined();
+
+    const workspace = readStudentWorkspace(zlata!);
+    saveStudentWorkspace(
+      zlata!,
+      { ...workspace, currentHomework: 'Local-only homework' },
+      ['currentHomework'],
+    );
+
+    expect(readStudentWorkspace(zlata!).currentHomework).toBe('Local-only homework');
+    expect(fetchSpy).not.toHaveBeenCalled();
+    fetchSpy.mockRestore();
+  });
+
 });
