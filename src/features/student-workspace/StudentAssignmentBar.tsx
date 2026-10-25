@@ -21,10 +21,10 @@ export function StudentAssignmentBar({ mode, itemId }: { mode: AssignmentMode; i
     const workspace = readStudentWorkspace(student);
     if (mode === 'material') {
       const assignedMaterialIds = Array.from(new Set([...workspace.assignedMaterialIds, itemId]));
-      saveStudentWorkspace(student, { ...workspace, assignedMaterialIds });
+      saveStudentWorkspace(student, { ...workspace, assignedMaterialIds }, ['assignedMaterialIds']);
     } else {
       const assignedLessonIds = Array.from(new Set([...workspace.assignedLessonIds, itemId]));
-      saveStudentWorkspace(student, { ...workspace, assignedLessonIds });
+      saveStudentWorkspace(student, { ...workspace, assignedLessonIds }, ['assignedLessonIds']);
     }
 
     setMessage(`Добавлено для ${student.displayName} ✓`);
