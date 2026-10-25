@@ -1,5 +1,7 @@
-import { useCallback, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useSyncExternalStore } from 'react';
 import type { StudentProfile } from '../../content/types';
+import { useTeacherAuth } from '../teacher-auth/teacherAuthStore';
+import { fetchCloudWorkspace, persistCloudWorkspace } from './studentWorkspaceCloud';
 
 export type StudentFocus = {
   main: string;
@@ -28,6 +30,9 @@ export type StudentWorkspace = {
 
 const STORAGE_PREFIX = 'english-platform:student-workspace:';
 const WORKSPACE_EVENT = 'english-platform:student-workspace-change';
+const cloudCache = new Map<string, StudentWorkspace>();
+const cloudLoaded = new Set<string>();
+const cloudLoading = new Set<string>();
 
 const defaultTeacherData: Record<
   string,
