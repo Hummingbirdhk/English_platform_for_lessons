@@ -20,7 +20,14 @@ export function StudentOwnPage() {
     if (!studentId) return;
     let active = true;
     void Promise.all([
-      cloudClient.select<Array<{ focus_main: string | null; focus_practice: string | null; focus_revision: string | null; current_homework: string | null }>>(
+      cloudClient.select<
+        Array<{
+          focus_main: string | null;
+          focus_practice: string | null;
+          focus_revision: string | null;
+          current_homework: string | null;
+        }>
+      >(
         'student_profile_state',
         `select=focus_main,focus_practice,focus_revision,current_homework&student_id=eq.${encodeURIComponent(studentId)}&limit=1`,
       ),
@@ -95,7 +102,9 @@ export function StudentOwnPage() {
           <h2>Домашнее задание</h2>
           <p>{homework || 'Пока ничего не задано'}</p>
           <p>Рабочая тетрадь · Учебник · Дополнительное задание</p>
-          <small>Самостоятельное редактирование по датам занятий появится на следующем этапе.</small>
+          <small>
+            Самостоятельное редактирование по датам занятий появится на следующем этапе.
+          </small>
         </article>
       </section>
 
@@ -114,7 +123,9 @@ export function StudentOwnPage() {
               ))}
             </div>
           ) : (
-            <p>Материалы пока не назначены. Когда преподаватель добавит материал, он появится здесь.</p>
+            <p>
+              Материалы пока не назначены. Когда преподаватель добавит материал, он появится здесь.
+            </p>
           )}
         </article>
         <article className="student-progress-panel">
