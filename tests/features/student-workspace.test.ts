@@ -45,5 +45,6 @@ describe('student workspace', () => {
     expect(storedZlata.focus.main).toBe('Past Simple');
     expect(storedZlata.assignedMaterialIds).toContain('grammar-past-continuous');
     expect(storedArtem.profileTags).not.toEqual(storedZlata.profileTags);
+    expect(storedArtem.focus.main).toBe('Past Simple');
   });
 });
