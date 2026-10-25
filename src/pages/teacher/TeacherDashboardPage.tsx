@@ -147,19 +147,36 @@ function TeacherStudentDashboard({
     window.setTimeout(() => setSavedNotice(''), 1400);
   }
 
+  function toggleProfileEditor() {
+    if (!editingProfile) {
+      setTagsDraft(currentWorkspace.profileTags.join(', '));
+      setFocusMain(currentWorkspace.focus.main);
+      setFocusPractice(currentWorkspace.focus.practice);
+      setFocusRevision(currentWorkspace.focus.revision);
+    }
+    setEditingProfile((current) => !current);
+  }
+
   function saveProfileSettings() {
+    const focus = {
+      main: focusMain.trim(),
+      practice: focusPractice.trim(),
+      revision: focusRevision.trim(),
+    };
     const tags = tagsDraft
       .split(',')
       .map((tag) => tag.trim())
       .filter(Boolean);
+    const tagsWereNotEdited = tagsDraft === currentWorkspace.profileTags.join(', ');
+    const tagsFollowDefaultFocus =
+      currentWorkspace.profileTags.join(', ') === student.currentFocus.join(', ');
 
     patch({
-      profileTags: tags,
-      focus: {
-        main: focusMain.trim(),
-        practice: focusPractice.trim(),
-        revision: focusRevision.trim(),
-      },
+      profileTags:
+        tagsWereNotEdited && tagsFollowDefaultFocus
+          ? [focus.main, focus.practice, focus.revision].filter(Boolean)
+          : tags,
+      focus,
     });
     setEditingProfile(false);
     showSaved('Профиль обновлён ✓');
@@ -226,7 +243,7 @@ function TeacherStudentDashboard({
         <article className="teacher-profile-card">
           <div className="teacher-profile-card__topline">
             <span className="teacher-card-label">ПРОФИЛЬ УЧЕНИКА</span>
-            <button type="button" onClick={() => setEditingProfile((value) => !value)}>
+            <button type="button" onClick={toggleProfileEditor}>
               {editingProfile ? 'Закрыть' : 'Редактировать'}
             </button>
           </div>
@@ -273,7 +290,14 @@ function TeacherStudentDashboard({
             </div>
           ) : (
             <div className="teacher-chip-row">
-              {currentWorkspace.profileTags.map((topic) => (
+              {(currentWorkspace.profileTags.join(', ') === student.currentFocus.join(', ')
+                ? [
+                    currentWorkspace.focus.main,
+                    currentWorkspace.focus.practice,
+                    currentWorkspace.focus.revision,
+                  ].filter(Boolean)
+                : currentWorkspace.profileTags
+              ).map((topic) => (
                 <span key={topic} className="teacher-chip">
                   {topic}
                 </span>
