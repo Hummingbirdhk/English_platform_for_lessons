@@ -148,7 +148,7 @@ export function StudentOwnPage() {
         </article>
         <article className="student-progress-panel">
           <h2>Мои уроки</h2>
-          <p>Что предстоит пройти</p>
+          <h3>Что предстоит пройти</h3>
           {assignedLessons.length ? (
             <div className="assigned-list">
               {assignedLessons.map((lesson) => (
@@ -160,8 +160,21 @@ export function StudentOwnPage() {
           ) : (
             <p>Назначенных уроков пока нет.</p>
           )}
-          <p>Что прошли</p>
-          <small>История занятий появится после подключения итогов уроков.</small>
+          <h3>Что прошли</h3>
+          {history.length ? (
+            <div className="student-own-history">
+              {history.map((entry) => (
+                <div className="student-own-history-entry" key={entry.id}>
+                  <time dateTime={entry.lesson_date}>{entry.lesson_date}</time>
+                  <strong>{entry.title}</strong>
+                  {entry.detail ? <p>{entry.detail}</p> : null}
+                  {entry.homework ? <small>Домашнее задание: {entry.homework}</small> : null}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p>Пока нет итогов занятий.</p>
+          )
         </article>
       </section>
     </main>
