@@ -93,9 +93,12 @@ export function StudentOwnPage() {
         setHomeworkEntries(homeworkRows);
         const today = new Date().toISOString().slice(0, 10);
         const lessonDates = getStudentSchedule(studentId)
-          .filter((item) => item.attendance !== 'Отмена' && item.attendance !== 'Перенос занятия')
+          .filter(
+            (item) => item.attendance !== 'Отмена' && item.attendance !== 'Перенос занятия',
+          )
           .map((item) => parseScheduleDateTime(item.dateTime).toISOString().slice(0, 10));
-        const selectedDate = lessonDates.find((date) => date >= today) ?? lessonDates.at(-1) ?? '';
+        const selectedDate =
+          lessonDates.find((date) => date >= today) ?? lessonDates.at(-1) ?? '';
         const currentEntry = homeworkRows.find((item) => item.lesson_date === selectedDate);
         setHomeworkDate(selectedDate);
         setWorkbook(currentEntry?.workbook ?? '');
