@@ -4,6 +4,13 @@ import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { cloudClient } from '../../shared/config/cloud';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
+type ProfileDataRow = {
+  focus_main: string | null;
+  focus_practice: string | null;
+  focus_revision: string | null;
+  current_homework: string | null;
+};
+
 export function StudentOwnPage() {
   const { studentId } = useParams();
   const auth = useTeacherAuth();
@@ -20,14 +27,7 @@ export function StudentOwnPage() {
     if (!studentId) return;
     let active = true;
     void Promise.all([
-      cloudClient.select<
-        Array<{
-          focus_main: string | null;
-          focus_practice: string | null;
-          focus_revision: string | null;
-          current_homework: string | null;
-        }>
-      >(
+      cloudClient.select<ProfileDataRow[]>(
         'student_profile_state',
         `select=focus_main,focus_practice,focus_revision,current_homework&student_id=eq.${encodeURIComponent(studentId)}&limit=1`,
       ),
