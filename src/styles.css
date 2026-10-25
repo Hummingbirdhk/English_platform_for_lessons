@@ -2977,3 +2977,334 @@ select {
     min-height: 1100px !important;
   }
 }
+
+
+/* Student workspace management */
+.teacher-toast {
+  position: fixed;
+  top: 104px;
+  left: 50%;
+  z-index: 80;
+  transform: translateX(-50%);
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 12px 30px rgba(17, 17, 20, 0.18);
+}
+
+.teacher-profile-card__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.teacher-profile-card__topline button,
+.teacher-inline-edit {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--color-ink);
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.teacher-inline-edit {
+  background: var(--color-soft);
+}
+
+.teacher-profile-editor {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.teacher-profile-editor label,
+.teacher-summary-form label {
+  display: grid;
+  gap: 6px;
+}
+
+.teacher-profile-editor label > span {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.teacher-profile-editor input,
+.teacher-summary-form input,
+.teacher-quick-action select,
+.preparation-assign-row select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid rgba(17, 17, 20, 0.12);
+  border-radius: 13px;
+  padding: 0 12px;
+  background: #fff;
+  color: var(--color-ink);
+  outline: none;
+}
+
+.teacher-profile-editor input:focus,
+.teacher-summary-form input:focus,
+.teacher-quick-action select:focus,
+.preparation-assign-row select:focus {
+  border-color: var(--color-ink);
+}
+
+.teacher-profile-editor small {
+  color: rgba(17, 17, 20, 0.52);
+}
+
+.teacher-focus-editor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.teacher-profile-save,
+.teacher-summary-form > button,
+.preparation-assign-row > button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 15px;
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.teacher-profile-save {
+  justify-self: start;
+}
+
+.teacher-next-lesson-card > a {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 15px;
+  padding: 11px 14px;
+  background: var(--color-ink);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  transition: transform 160ms ease;
+}
+
+.teacher-next-lesson-card > a:hover {
+  transform: translateY(-2px);
+}
+
+.teacher-quick-action {
+  cursor: pointer;
+}
+
+.teacher-quick-action--form {
+  display: grid;
+  gap: 9px;
+}
+
+.teacher-quick-action--form span {
+  margin-top: 0;
+}
+
+.teacher-quick-action--form select {
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.teacher-quick-action--form button {
+  width: fit-content;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.teacher-quick-action--form button:disabled,
+.preparation-assign-row > button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.teacher-summary-form {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+  padding: 15px;
+  border-radius: 18px;
+  background: #f7f7f4;
+}
+
+.teacher-summary-form > button {
+  justify-self: start;
+}
+
+.preparation-page {
+  display: grid;
+  gap: 22px;
+}
+
+.preparation-hero {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 220px;
+  padding: 32px 36px;
+  border-radius: 34px;
+  background: var(--color-purple);
+}
+
+.preparation-hero h1 {
+  margin: 18px 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.preparation-hero p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.preparation-back-link {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.preparation-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+}
+
+.preparation-homework {
+  margin: 0;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--color-lemon);
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.preparation-assign-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.preparation-resource-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.preparation-resource-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--color-bg);
+}
+
+.preparation-resource-row > a:first-child {
+  display: grid;
+  gap: 3px;
+}
+
+.preparation-resource-row span {
+  color: rgba(17, 17, 20, 0.5);
+  font-size: 12px;
+}
+
+.preparation-resource-row > button,
+.preparation-start-link {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: #fff;
+  color: var(--color-ink);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.preparation-start-link {
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.preparation-notes {
+  min-height: 210px;
+}
+
+.student-homework-callout {
+  position: relative;
+  z-index: 1;
+  margin: 18px 0 8px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.student-homework-callout span,
+.student-homework-callout strong {
+  display: block;
+}
+
+.student-homework-callout span {
+  font-size: 11px;
+  font-weight: 800;
+  opacity: 0.58;
+  text-transform: uppercase;
+}
+
+.student-homework-callout strong {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 980px) {
+  .teacher-focus-editor-grid,
+  .preparation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .preparation-hero {
+    display: grid;
+    min-height: 0;
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .preparation-back-link {
+    width: fit-content;
+  }
+
+  .preparation-assign-row,
+  .preparation-resource-row {
+    grid-template-columns: 1fr;
+  }
+}
