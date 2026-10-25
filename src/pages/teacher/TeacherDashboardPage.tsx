@@ -9,6 +9,7 @@ import {
   useStudentWorkspace,
 } from '../../features/student-workspace/studentWorkspace';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
+import { StudentHomeworkReview } from './StudentHomeworkReview';
 
 type AttendanceStatus = 'planned' | 'present' | 'moved' | 'cancelled';
 
@@ -404,6 +405,8 @@ function TeacherStudentDashboard({
           ))}
         </div>
       </article>
+
+      <StudentHomeworkReview studentId={student.id} />
 
       <div className="teacher-two-column">
         <article className="teacher-panel">
