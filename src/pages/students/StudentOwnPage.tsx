@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './studentOwnPage.css';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { cloudClient } from '../../shared/config/cloud';
@@ -64,7 +65,7 @@ export function StudentOwnPage() {
   const assignedLessons = content.lessons.filter((item) => lessonIds.includes(item.id));
 
   return (
-    <main className="page-shell student-page">
+    <main className="page-shell student-page student-own-page">
       <section className="student-hero" style={{ background: '#9996fa' }}>
         <div>
           <span className="sticker sticker--white">МОЙ ПРОФИЛЬ</span>
