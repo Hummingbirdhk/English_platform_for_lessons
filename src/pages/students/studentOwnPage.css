@@ -1,7 +1,22 @@
-.student-own-page .student-progress-panel > p { margin: 12px 0; opacity: 1; }
-.student-own-page .assigned-row { grid-template-columns: minmax(0, 1fr) auto; }
-.student-own-page .assigned-row__title { overflow-wrap: anywhere; }
-.student-own-page .student-hero { padding: 36px 40px; }
-.student-own-page .student-hero h1 { line-height: 1.1; }
-.student-own-page .student-progress-panel { min-width: 0; }
-@media (max-width: 720px) { .student-own-page .student-hero { padding: 28px 24px; } }
+.student-own-page .student-progress-panel > p {
+  margin: 12px 0;
+  opacity: 1;
+}
+.student-own-page .assigned-row {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+.student-own-page .assigned-row__title {
+  overflow-wrap: anywhere;
+}
+.student-own-page .student-hero {
+  padding: 36px 40px;
+}
+.student-own-page .student-hero h1 {
+  line-height: 1.1;
+}
+.student-own-page .student-progress-panel {
+  min-width: 0;
+}
+@media (max-width: 720px) { .student-own-page .student-hero {
+  padding: 28px 24px;
+} }
