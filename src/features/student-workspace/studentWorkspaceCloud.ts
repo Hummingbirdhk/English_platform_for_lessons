@@ -157,11 +157,7 @@ export async function persistCloudWorkspace(
 
   const scalarWrites: Array<Promise<unknown>> = [];
 
-  if (
-    shouldPersist('profileTags') ||
-    shouldPersist('focus') ||
-    shouldPersist('currentHomework')
-  ) {
+  if (shouldPersist('profileTags') || shouldPersist('focus') || shouldPersist('currentHomework')) {
     scalarWrites.push(
       cloudClient.upsert('student_profile_state', 'on_conflict=student_id', {
         student_id: student.id,
