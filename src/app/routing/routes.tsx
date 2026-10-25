@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { TeacherGate } from '../../features/teacher-auth/TeacherGate';
 
 const HomePage = lazy(() =>
   import('../../pages/home/HomePage').then((module) => ({ default: module.HomePage })),
@@ -43,6 +44,11 @@ const StudentPreparationPage = lazy(() =>
     default: module.StudentPreparationPage,
   })),
 );
+const TeacherLoginPage = lazy(() =>
+  import('../../pages/teacher/TeacherLoginPage').then((module) => ({
+    default: module.TeacherLoginPage,
+  })),
+);
 
 function RouteFallback() {
   return <main className="page-shell">Загрузка…</main>;
@@ -59,10 +65,22 @@ export function AppRoutes() {
         <Route path="/lesson/:lessonId" element={<LessonPage />} />
         <Route path="/students" element={<StudentsPage />} />
         <Route path="/students/:studentId" element={<StudentPage />} />
-        <Route path="/teacher" element={<TeacherDashboardPage />} />
+        <Route path="/teacher/login" element={<TeacherLoginPage />} />
+        <Route
+          path="/teacher"
+          element={
+            <TeacherGate>
+              <TeacherDashboardPage />
+            </TeacherGate>
+          }
+        />
         <Route
           path="/teacher/students/:studentId/preparation"
-          element={<StudentPreparationPage />}
+          element={
+            <TeacherGate>
+              <StudentPreparationPage />
+            </TeacherGate>
+          }
         />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
