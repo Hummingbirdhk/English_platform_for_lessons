@@ -124,7 +124,7 @@ function formatLessonTime(date: Date) {
   return `${String(date.getUTCHours()).padStart(2, '0')}:${String(date.getUTCMinutes()).padStart(
     2,
     '0',
-  )} · 60 минут`;
+  )} · 30 минут`;
 }
 
 function formatAttendanceDate(date: Date) {
