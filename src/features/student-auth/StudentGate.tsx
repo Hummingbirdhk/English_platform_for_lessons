@@ -7,7 +7,11 @@ export function StudentGate({ children }: PropsWithChildren) {
   const auth = useTeacherAuth();
   if (!auth.configured) return <>{children}</>;
   if (auth.status === 'checking') return <main className="page-shell">Проверяю доступ…</main>;
-  if (auth.status !== 'authenticated') return <Navigate to="/student/login" replace />;
+  if (auth.status !== 'authenticated') {
+    const login = studentId === 'student-artem' ? '/student/artem'
+      : studentId === 'student-zlata' ? '/student/zlata' : '/student/login';
+    return <Navigate to={login} replace />;
+  }
   if (auth.role !== 'teacher' && (auth.role !== 'student' || auth.studentId !== studentId)) {
     return <Navigate to="/student/login" replace />;
   }

@@ -1,5 +1,5 @@
 import { type FormEvent, useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import {
   getTeacherAuthSnapshot,
   useTeacherAuth,
@@ -8,7 +8,12 @@ import {
 export function StudentLoginPage() {
   const auth = useTeacherAuth();
   const navigate = useNavigate();
-  const [username, setUsername] = useState('');
+  const { username: personalizedUsername } = useParams();
+  const lockedUsername =
+    personalizedUsername === 'zlata' || personalizedUsername === 'artem'
+      ? personalizedUsername
+      : '';
+  const [username, setUsername] = useState(lockedUsername);
   const [password, setPassword] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -23,7 +28,7 @@ export function StudentLoginPage() {
   async function login(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setSubmitting(true);
-    const ok = await auth.loginStudent(username, password);
+    const ok = await auth.loginStudent(lockedUsername || username, password);
     setSubmitting(false);
     if (ok) navigate(`/students/${getTeacherAuthSnapshot().studentId}`, { replace: true });
   }
@@ -39,8 +44,9 @@ export function StudentLoginPage() {
             <span>Логин</span>
             <input
               autoComplete="username"
-              value={username}
+              value={lockedUsername || username}
               onChange={(event) => setUsername(event.target.value)}
+              readOnly={Boolean(lockedUsername)}
               required
             />
           </label>

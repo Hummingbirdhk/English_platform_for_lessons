@@ -84,6 +84,7 @@ export function AppRoutes() {
         <Route path="/lesson/:lessonId" element={<LessonPage />} />
         <Route path="/students" element={<StudentsPage />} />
         <Route path="/student/login" element={<StudentLoginPage />} />
+        <Route path="/student/:username" element={<StudentLoginPage />} />
         <Route
           path="/students/:studentId"
           element={
