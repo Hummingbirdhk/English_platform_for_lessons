@@ -270,9 +270,9 @@ export function StudentOwnPage() {
                     type="button"
                     onClick={() => {
                       if (
-                  !dirty ||
-                  window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
-                ) {
+                        !dirty ||
+                        window.confirm('Есть несохранённые изменения. Перейти к другой дате?')
+                      ) {
                         selectHomeworkDate(entry.lesson_date);
                       }
                     }}
