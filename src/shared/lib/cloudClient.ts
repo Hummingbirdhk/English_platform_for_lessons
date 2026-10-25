@@ -137,8 +137,18 @@ export function buildCloudClient(endpoint: string, publicToken: string) {
   return {
     configured,
     getSession: () => session,
-    async signIn(email: string, password: string) {
-      const response = await authRequest('token?grant_type=password', { email, password });
+    async requestAccessCode(email: string) {
+      await authRequest('otp', {
+        email,
+        should_create_user: false,
+      });
+    },
+    async verifyAccessCode(email: string, token: string) {
+      const response = await authRequest('verify', {
+        email,
+        token,
+        type: 'email',
+      });
       const next = mapAuthResponse((await response.json()) as AuthResponse);
       session = next;
       writeStoredSession(next);
