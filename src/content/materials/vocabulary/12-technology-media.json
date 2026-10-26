@@ -88,6 +88,231 @@
         "en": "I go online to practise English.",
         "ru": "Я выхожу в интернет, чтобы учить английский."
       }
+    },
+    {
+      "term": "screen",
+      "translation": "экран",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The screen is too bright.",
+        "ru": "Экран слишком яркий."
+      }
+    },
+    {
+      "term": "keyboard",
+      "translation": "клавиатура",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My keyboard is broken.",
+        "ru": "Моя клавиатура сломана."
+      }
+    },
+    {
+      "term": "charger",
+      "translation": "зарядное устройство",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Can I borrow your charger?",
+        "ru": "Можно одолжить зарядку?"
+      }
+    },
+    {
+      "term": "connection",
+      "translation": "соединение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The internet connection is slow.",
+        "ru": "Интернет-соединение медленное."
+      }
+    },
+    {
+      "term": "account",
+      "translation": "учётная запись",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Create an account to sign in.",
+        "ru": "Создай учётную запись для входа."
+      }
+    },
+    {
+      "term": "notification",
+      "translation": "уведомление",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I got a new notification.",
+        "ru": "Мне пришло уведомление."
+      }
+    },
+    {
+      "term": "search engine",
+      "translation": "поисковая система",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Use a search engine to find it.",
+        "ru": "Используй поисковик, чтобы найти это."
+      }
+    },
+    {
+      "term": "software",
+      "translation": "программное обеспечение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The software needs an update.",
+        "ru": "Программу нужно обновить."
+      }
+    },
+    {
+      "term": "app",
+      "translation": "приложение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This app helps me learn words.",
+        "ru": "Это приложение помогает мне учить слова."
+      }
+    },
+    {
+      "term": "online safety",
+      "translation": "безопасность в интернете",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We discussed online safety.",
+        "ru": "Мы обсудили безопасность в интернете."
+      }
+    },
+    {
+      "term": "install",
+      "translation": "устанавливать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Install the latest version.",
+        "ru": "Установи последнюю версию."
+      }
+    },
+    {
+      "term": "update",
+      "translation": "обновлять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Update the app regularly.",
+        "ru": "Регулярно обновляй приложение."
+      }
+    },
+    {
+      "term": "connect",
+      "translation": "подключаться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Connect to the school Wi-Fi.",
+        "ru": "Подключись к школьному Wi-Fi."
+      }
+    },
+    {
+      "term": "browse",
+      "translation": "просматривать сайты",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I browsed several websites.",
+        "ru": "Я просмотрел несколько сайтов."
+      }
+    },
+    {
+      "term": "delete",
+      "translation": "удалять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Delete old messages.",
+        "ru": "Удаляй старые сообщения."
+      }
+    },
+    {
+      "term": "protect",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Protect your personal data.",
+        "ru": "Защищай свои личные данные."
+      }
+    },
+    {
+      "term": "wireless",
+      "translation": "беспроводной",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "These are wireless headphones.",
+        "ru": "Это беспроводные наушники."
+      }
+    },
+    {
+      "term": "available",
+      "translation": "доступный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The file is available online.",
+        "ru": "Файл доступен в интернете."
+      }
+    },
+    {
+      "term": "unsafe",
+      "translation": "небезопасный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This link looks unsafe.",
+        "ru": "Эта ссылка выглядит небезопасной."
+      }
+    },
+    {
+      "term": "public",
+      "translation": "общедоступный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Don't share secrets on public pages.",
+        "ru": "Не раскрывай секреты на общедоступных страницах."
+      }
+    },
+    {
+      "term": "log in",
+      "translation": "входить в аккаунт",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Log in with your username.",
+        "ru": "Войди с помощью логина."
+      }
+    },
+    {
+      "term": "log out",
+      "translation": "выходить из аккаунта",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Log out on shared computers.",
+        "ru": "Выходи из аккаунта на общих компьютерах."
+      }
+    },
+    {
+      "term": "back up",
+      "translation": "делать резервную копию",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Back up your files regularly.",
+        "ru": "Регулярно делай резервные копии файлов."
+      }
+    },
+    {
+      "term": "scroll down",
+      "translation": "прокручивать вниз",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Scroll down to see the result.",
+        "ru": "Прокрути вниз, чтобы увидеть результат."
+      }
+    },
+    {
+      "term": "keep your data safe",
+      "translation": "защищать свои данные",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Keep your data safe online.",
+        "ru": "Защищай свои данные в интернете."
+      }
     }
   ]
 }
