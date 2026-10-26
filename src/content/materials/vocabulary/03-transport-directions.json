@@ -33,7 +33,8 @@
       "example": {
         "en": "Always wear a seat belt.",
         "ru": "Всегда пристёгивай ремень безопасности."
-      }
+      },
+      "collocations": ["wear a seat belt", "fasten a seat belt"]
     },
     {
       "term": "fare",
@@ -42,7 +43,8 @@
       "example": {
         "en": "How much is the bus fare?",
         "ru": "Сколько стоит проезд на автобусе?"
-      }
+      },
+      "collocations": ["pay the fare", "bus fare"]
     },
     {
       "term": "cross",
@@ -123,7 +125,8 @@
       "example": {
         "en": "The train leaves from platform two.",
         "ru": "Поезд отправляется со второй платформы."
-      }
+      },
+      "collocations": ["wait on the platform", "platform number"]
     },
     {
       "term": "ticket office",
@@ -150,7 +153,8 @@
       "example": {
         "en": "Every passenger needs a ticket.",
         "ru": "Каждому пассажиру нужен билет."
-      }
+      },
+      "collocations": ["bus passenger", "train passenger"]
     },
     {
       "term": "traffic jam",
@@ -159,7 +163,8 @@
       "example": {
         "en": "We got stuck in a traffic jam.",
         "ru": "Мы застряли в пробке."
-      }
+      },
+      "collocations": ["heavy traffic jam", "get stuck in traffic"]
     },
     {
       "term": "road sign",

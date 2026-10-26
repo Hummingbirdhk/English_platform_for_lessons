@@ -15,7 +15,8 @@
       "example": {
         "en": "That trip is a happy memory.",
         "ru": "Та поездка — приятное воспоминание."
-      }
+      },
+      "collocations": ["happy memory", "childhood memory"]
     },
     {
       "term": "century",
@@ -33,7 +34,8 @@
       "example": {
         "en": "The telephone was an important invention.",
         "ru": "Телефон был важным изобретением."
-      }
+      },
+      "collocations": ["important invention", "modern invention"]
     },
     {
       "term": "discover",
@@ -96,7 +98,8 @@
       "example": {
         "en": "Winning the race was an achievement.",
         "ru": "Победа в забеге была достижением."
-      }
+      },
+      "collocations": ["major achievement", "personal achievement"]
     },
     {
       "term": "explorer",
@@ -114,7 +117,8 @@
       "example": {
         "en": "Their journey lasted three months.",
         "ru": "Их путешествие длилось три месяца."
-      }
+      },
+      "collocations": ["long journey", "go on a journey"]
     },
     {
       "term": "event",
@@ -168,7 +172,8 @@
       "example": {
         "en": "It was a surprising discovery.",
         "ru": "Это было неожиданное открытие."
-      }
+      },
+      "collocations": ["make a discovery", "scientific discovery"]
     },
     {
       "term": "battle",

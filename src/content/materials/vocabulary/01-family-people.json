@@ -15,7 +15,8 @@
       "example": {
         "en": "My relatives live in different cities.",
         "ru": "Мои родственники живут в разных городах."
-      }
+      },
+      "collocations": ["close relative", "distant relative"]
     },
     {
       "term": "cousin",
@@ -159,7 +160,8 @@
       "example": {
         "en": "She has a cheerful personality.",
         "ru": "У неё весёлый характер."
-      }
+      },
+      "collocations": ["strong personality", "cheerful personality"]
     },
     {
       "term": "surname",
@@ -195,7 +197,8 @@
       "example": {
         "en": "My parents support my choice.",
         "ru": "Родители поддерживают мой выбор."
-      }
+      },
+      "collocations": ["support your family", "support a decision"]
     },
     {
       "term": "argue",
@@ -204,7 +207,8 @@
       "example": {
         "en": "They sometimes argue about music.",
         "ru": "Иногда они спорят о музыке."
-      }
+      },
+      "collocations": ["argue about something", "argue with someone"]
     },
     {
       "term": "share",
@@ -231,7 +235,8 @@
       "example": {
         "en": "He is always honest with me.",
         "ru": "Он всегда честен со мной."
-      }
+      },
+      "collocations": ["be honest with someone", "an honest answer"]
     },
     {
       "term": "patient",

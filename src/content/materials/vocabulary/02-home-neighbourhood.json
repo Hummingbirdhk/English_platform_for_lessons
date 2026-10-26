@@ -15,7 +15,8 @@
       "example": {
         "en": "There is a park in my neighbourhood.",
         "ru": "В моём районе есть парк."
-      }
+      },
+      "collocations": ["quiet neighbourhood", "live in a neighbourhood"]
     },
     {
       "term": "floor",
@@ -132,7 +133,8 @@
       "example": {
         "en": "Our flat has a small balcony.",
         "ru": "В нашей квартире маленький балкон."
-      }
+      },
+      "collocations": ["small balcony", "go onto the balcony"]
     },
     {
       "term": "curtains",
@@ -195,7 +197,8 @@
       "example": {
         "en": "We rent a small flat.",
         "ru": "Мы снимаем небольшую квартиру."
-      }
+      },
+      "collocations": ["rent a flat", "pay the rent"]
     },
     {
       "term": "tidy up",
@@ -204,7 +207,8 @@
       "example": {
         "en": "Please tidy up your room.",
         "ru": "Пожалуйста, уберись в комнате."
-      }
+      },
+      "collocations": ["tidy up a room", "tidy up after dinner"]
     },
     {
       "term": "repair",
@@ -231,7 +235,8 @@
       "example": {
         "en": "This café is cosy.",
         "ru": "Это кафе уютное."
-      }
+      },
+      "collocations": ["cosy bedroom", "cosy atmosphere"]
     },
     {
       "term": "messy",

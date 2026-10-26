@@ -24,7 +24,8 @@
       "example": {
         "en": "Ask for permission first.",
         "ru": "Сначала спроси разрешения."
-      }
+      },
+      "collocations": ["ask for permission", "give permission"]
     },
     {
       "term": "warning",
@@ -33,7 +34,8 @@
       "example": {
         "en": "Read the warning on the sign.",
         "ru": "Прочитай предупреждение на знаке."
-      }
+      },
+      "collocations": ["warning sign", "give a warning"]
     },
     {
       "term": "allow",
@@ -105,7 +107,8 @@
       "example": {
         "en": "Safety is everyone's responsibility.",
         "ru": "Безопасность — ответственность каждого."
-      }
+      },
+      "collocations": ["take responsibility", "personal responsibility"]
     },
     {
       "term": "instruction",
@@ -123,7 +126,8 @@
       "example": {
         "en": "Call for help in an emergency.",
         "ru": "В чрезвычайной ситуации зови на помощь."
-      }
+      },
+      "collocations": ["in an emergency", "emergency exit"]
     },
     {
       "term": "first aid",
@@ -150,7 +154,8 @@
       "example": {
         "en": "There was an accident on the road.",
         "ru": "На дороге произошёл несчастный случай."
-      }
+      },
+      "collocations": ["have an accident", "prevent an accident"]
     },
     {
       "term": "fire exit",

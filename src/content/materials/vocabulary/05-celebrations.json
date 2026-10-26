@@ -24,7 +24,8 @@
       "example": {
         "en": "I got an invitation to the party.",
         "ru": "Я получил приглашение на вечеринку."
-      }
+      },
+      "collocations": ["send an invitation", "accept an invitation"]
     },
     {
       "term": "costume",
@@ -42,7 +43,8 @@
       "example": {
         "en": "It's a family tradition.",
         "ru": "Это семейная традиция."
-      }
+      },
+      "collocations": ["family tradition", "follow a tradition"]
     },
     {
       "term": "celebrate",
@@ -96,7 +98,8 @@
       "example": {
         "en": "Today is our school's anniversary.",
         "ru": "Сегодня годовщина основания нашей школы."
-      }
+      },
+      "collocations": ["wedding anniversary", "celebrate an anniversary"]
     },
     {
       "term": "guest",
@@ -105,7 +108,8 @@
       "example": {
         "en": "We invited twenty guests.",
         "ru": "Мы пригласили двадцать гостей."
-      }
+      },
+      "collocations": ["invite guests", "welcome guests"]
     },
     {
       "term": "host",
@@ -276,7 +280,8 @@
       "example": {
         "en": "It was a memorable day.",
         "ru": "Это был незабываемый день."
-      }
+      },
+      "collocations": ["memorable celebration", "memorable evening"]
     },
     {
       "term": "excited",

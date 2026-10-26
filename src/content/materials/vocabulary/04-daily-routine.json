@@ -15,7 +15,8 @@
       "example": {
         "en": "Our timetable changes on Monday.",
         "ru": "Наше расписание меняется в понедельник."
-      }
+      },
+      "collocations": ["school timetable", "check the timetable"]
     },
     {
       "term": "break",
@@ -42,7 +43,8 @@
       "example": {
         "en": "I revise new words before a test.",
         "ru": "Я повторяю новые слова перед тестом."
-      }
+      },
+      "collocations": ["revise for a test", "revise vocabulary"]
     },
     {
       "term": "pack",
@@ -123,7 +125,8 @@
       "example": {
         "en": "The assignment is due on Friday.",
         "ru": "Задание нужно сдать в пятницу."
-      }
+      },
+      "collocations": ["complete an assignment", "hand in an assignment"]
     },
     {
       "term": "deadline",
@@ -132,7 +135,8 @@
       "example": {
         "en": "Don't forget the deadline.",
         "ru": "Не забудь крайний срок."
-      }
+      },
+      "collocations": ["meet a deadline", "miss a deadline"]
     },
     {
       "term": "stationery",
@@ -294,7 +298,8 @@
       "example": {
         "en": "You're making great progress.",
         "ru": "Ты делаешь большие успехи."
-      }
+      },
+      "collocations": ["make steady progress", "make progress in English"]
     },
     {
       "term": "learn by heart",

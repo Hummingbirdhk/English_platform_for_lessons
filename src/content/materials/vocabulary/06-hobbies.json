@@ -15,7 +15,8 @@
       "example": {
         "en": "Photography is my favourite hobby.",
         "ru": "Фотография — моё любимое хобби."
-      }
+      },
+      "collocations": ["take up a hobby", "have a hobby"]
     },
     {
       "term": "board game",
@@ -60,7 +61,8 @@
       "example": {
         "en": "She practises the guitar every day.",
         "ru": "Она каждый день упражняется в игре на гитаре."
-      }
+      },
+      "collocations": ["practise regularly", "practise the guitar"]
     },
     {
       "term": "creative",
@@ -114,7 +116,8 @@
       "example": {
         "en": "His stamp collection is impressive.",
         "ru": "Его коллекция марок впечатляет."
-      }
+      },
+      "collocations": ["stamp collection", "add to a collection"]
     },
     {
       "term": "member",
@@ -132,7 +135,8 @@
       "example": {
         "en": "Our team won the tournament.",
         "ru": "Наша команда выиграла турнир."
-      }
+      },
+      "collocations": ["enter a tournament", "win a tournament"]
     },
     {
       "term": "competition",
@@ -141,7 +145,8 @@
       "example": {
         "en": "We entered a drawing competition.",
         "ru": "Мы участвовали в конкурсе рисунков."
-      }
+      },
+      "collocations": ["take part in a competition", "win a competition"]
     },
     {
       "term": "audience",
