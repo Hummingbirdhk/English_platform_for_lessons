@@ -15,7 +15,8 @@
       "example": {
         "en": "She wants a career in medicine.",
         "ru": "Она хочет построить карьеру в медицине."
-      }
+      },
+      "collocations": ["career choice", "build a career"]
     },
     {
       "term": "experience",
@@ -24,7 +25,8 @@
       "example": {
         "en": "This project gave me useful experience.",
         "ru": "Этот проект дал мне полезный опыт."
-      }
+      },
+      "collocations": ["work experience", "gain experience"]
     },
     {
       "term": "skill",
@@ -33,7 +35,8 @@
       "example": {
         "en": "Teamwork is an important skill.",
         "ru": "Умение работать в команде — важный навык."
-      }
+      },
+      "collocations": ["develop skills", "communication skills"]
     },
     {
       "term": "apply for",
@@ -132,7 +135,8 @@
       "example": {
         "en": "She earns a good salary.",
         "ru": "Она получает хорошую зарплату."
-      }
+      },
+      "collocations": ["earn a salary", "monthly salary"]
     },
     {
       "term": "interview",
@@ -141,7 +145,8 @@
       "example": {
         "en": "The interview starts at ten.",
         "ru": "Собеседование начинается в десять."
-      }
+      },
+      "collocations": ["job interview", "prepare for an interview"]
     },
     {
       "term": "qualification",

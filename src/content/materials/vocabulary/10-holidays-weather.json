@@ -15,7 +15,8 @@
       "example": {
         "en": "Our destination is a small village.",
         "ru": "Наше место назначения — маленькая деревня."
-      }
+      },
+      "collocations": ["holiday destination", "popular destination"]
     },
     {
       "term": "luggage",
@@ -24,7 +25,8 @@
       "example": {
         "en": "My luggage is quite heavy.",
         "ru": "Мой багаж довольно тяжёлый."
-      }
+      },
+      "collocations": ["pack your luggage", "heavy luggage"]
     },
     {
       "term": "forecast",
@@ -33,7 +35,8 @@
       "example": {
         "en": "The forecast says it will rain.",
         "ru": "По прогнозу будет дождь."
-      }
+      },
+      "collocations": ["weather forecast", "check the forecast"]
     },
     {
       "term": "book",
@@ -96,7 +99,8 @@
       "example": {
         "en": "We found cheap accommodation.",
         "ru": "Мы нашли недорогое жильё."
-      }
+      },
+      "collocations": ["book accommodation", "find accommodation"]
     },
     {
       "term": "reservation",
@@ -105,7 +109,8 @@
       "example": {
         "en": "I made a hotel reservation.",
         "ru": "Я забронировал гостиницу."
-      }
+      },
+      "collocations": ["make a reservation", "confirm a reservation"]
     },
     {
       "term": "departure",

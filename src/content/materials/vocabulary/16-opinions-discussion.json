@@ -15,7 +15,8 @@
       "example": {
         "en": "Everyone can share an opinion.",
         "ru": "Каждый может высказать мнение."
-      }
+      },
+      "collocations": ["express an opinion", "share an opinion"]
     },
     {
       "term": "advantage",
@@ -24,7 +25,8 @@
       "example": {
         "en": "One advantage is the low price.",
         "ru": "Одно преимущество — низкая цена."
-      }
+      },
+      "collocations": ["main advantage", "clear advantage"]
     },
     {
       "term": "disadvantage",
@@ -33,7 +35,8 @@
       "example": {
         "en": "A disadvantage is the long journey.",
         "ru": "Недостаток — долгая дорога."
-      }
+      },
+      "collocations": ["major disadvantage", "possible disadvantage"]
     },
     {
       "term": "agree",
@@ -132,7 +135,8 @@
       "example": {
         "en": "We need evidence to support the idea.",
         "ru": "Нам нужны доказательства в поддержку идеи."
-      }
+      },
+      "collocations": ["strong evidence", "provide evidence"]
     },
     {
       "term": "conclusion",
@@ -177,7 +181,8 @@
       "example": {
         "en": "Let's have a discussion.",
         "ru": "Давай обсудим это."
-      }
+      },
+      "collocations": ["have a discussion", "join a discussion"]
     },
     {
       "term": "suggestion",

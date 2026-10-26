@@ -15,7 +15,8 @@
       "example": {
         "en": "Air pollution is a serious problem.",
         "ru": "Загрязнение воздуха — серьёзная проблема."
-      }
+      },
+      "collocations": ["air pollution", "water pollution"]
     },
     {
       "term": "wildlife",
@@ -24,7 +25,8 @@
       "example": {
         "en": "We should protect local wildlife.",
         "ru": "Нужно защищать местную дикую природу."
-      }
+      },
+      "collocations": ["protect wildlife", "local wildlife"]
     },
     {
       "term": "waste",
@@ -33,7 +35,8 @@
       "example": {
         "en": "We produce too much plastic waste.",
         "ru": "Мы производим слишком много пластиковых отходов."
-      }
+      },
+      "collocations": ["plastic waste", "reduce waste"]
     },
     {
       "term": "recycle",
@@ -42,7 +45,8 @@
       "example": {
         "en": "Our school recycles paper.",
         "ru": "Наша школа перерабатывает бумагу."
-      }
+      },
+      "collocations": ["recycle plastic", "recycle paper"]
     },
     {
       "term": "reduce",
@@ -132,7 +136,8 @@
       "example": {
         "en": "The forest is their natural habitat.",
         "ru": "Лес — их естественная среда обитания."
-      }
+      },
+      "collocations": ["natural habitat", "destroy a habitat"]
     },
     {
       "term": "species",

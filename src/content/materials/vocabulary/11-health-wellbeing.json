@@ -15,7 +15,8 @@
       "example": {
         "en": "A headache can be a symptom of illness.",
         "ru": "Головная боль может быть симптомом болезни."
-      }
+      },
+      "collocations": ["common symptom", "show symptoms"]
     },
     {
       "term": "treatment",
@@ -24,7 +25,8 @@
       "example": {
         "en": "The treatment helped her recover.",
         "ru": "Лечение помогло ей выздороветь."
-      }
+      },
+      "collocations": ["medical treatment", "receive treatment"]
     },
     {
       "term": "balanced diet",
@@ -87,7 +89,8 @@
       "example": {
         "en": "I have a doctor's appointment.",
         "ru": "У меня запись к врачу."
-      }
+      },
+      "collocations": ["doctor's appointment", "make an appointment"]
     },
     {
       "term": "injury",
@@ -141,7 +144,8 @@
       "example": {
         "en": "The doctor gave me a prescription.",
         "ru": "Врач выписал мне рецепт."
-      }
+      },
+      "collocations": ["get a prescription", "prescription medicine"]
     },
     {
       "term": "stress",
@@ -150,7 +154,8 @@
       "example": {
         "en": "Exams can cause stress.",
         "ru": "Экзамены могут вызывать стресс."
-      }
+      },
+      "collocations": ["deal with stress", "reduce stress"]
     },
     {
       "term": "habit",

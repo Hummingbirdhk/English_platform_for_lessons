@@ -15,7 +15,8 @@
       "example": {
         "en": "This device is easy to use.",
         "ru": "Этим устройством легко пользоваться."
-      }
+      },
+      "collocations": ["digital device", "mobile device"]
     },
     {
       "term": "privacy",
@@ -24,7 +25,8 @@
       "example": {
         "en": "Privacy matters on social media.",
         "ru": "Конфиденциальность важна в соцсетях."
-      }
+      },
+      "collocations": ["protect your privacy", "privacy settings"]
     },
     {
       "term": "password",
@@ -33,7 +35,8 @@
       "example": {
         "en": "Use a strong password.",
         "ru": "Используй надёжный пароль."
-      }
+      },
+      "collocations": ["strong password", "change your password"]
     },
     {
       "term": "upload",
@@ -141,7 +144,8 @@
       "example": {
         "en": "I got a new notification.",
         "ru": "Мне пришло уведомление."
-      }
+      },
+      "collocations": ["receive a notification", "turn off notifications"]
     },
     {
       "term": "search engine",
@@ -159,7 +163,8 @@
       "example": {
         "en": "The software needs an update.",
         "ru": "Программу нужно обновить."
-      }
+      },
+      "collocations": ["install software", "update software"]
     },
     {
       "term": "app",

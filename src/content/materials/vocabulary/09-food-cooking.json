@@ -15,7 +15,8 @@
       "example": {
         "en": "Check the ingredients before cooking.",
         "ru": "Проверь ингредиенты перед готовкой."
-      }
+      },
+      "collocations": ["fresh ingredients", "main ingredient"]
     },
     {
       "term": "portion",
@@ -24,7 +25,8 @@
       "example": {
         "en": "I'd like a small portion, please.",
         "ru": "Мне маленькую порцию, пожалуйста."
-      }
+      },
+      "collocations": ["small portion", "large portion"]
     },
     {
       "term": "menu",
@@ -42,7 +44,8 @@
       "example": {
         "en": "This recipe is easy to follow.",
         "ru": "Этому рецепту легко следовать."
-      }
+      },
+      "collocations": ["follow a recipe", "try a recipe"]
     },
     {
       "term": "boil",
@@ -51,7 +54,8 @@
       "example": {
         "en": "Boil the potatoes for fifteen minutes.",
         "ru": "Вари картофель пятнадцать минут."
-      }
+      },
+      "collocations": ["boil water", "boil potatoes"]
     },
     {
       "term": "chop",
@@ -87,7 +91,8 @@
       "example": {
         "en": "This sauce is too spicy.",
         "ru": "Этот соус слишком острый."
-      }
+      },
+      "collocations": ["spicy sauce", "spicy food"]
     },
     {
       "term": "Could I have ...?",
