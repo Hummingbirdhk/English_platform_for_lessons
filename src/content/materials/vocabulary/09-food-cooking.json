@@ -97,6 +97,231 @@
         "en": "Could I have some water, please?",
         "ru": "Можно мне воды, пожалуйста?"
       }
+    },
+    {
+      "term": "meal",
+      "translation": "приём пищи",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Breakfast is my favourite meal.",
+        "ru": "Завтрак — мой любимый приём пищи."
+      }
+    },
+    {
+      "term": "dish",
+      "translation": "блюдо",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This dish is popular in Italy.",
+        "ru": "Это блюдо популярно в Италии."
+      }
+    },
+    {
+      "term": "flavour",
+      "translation": "вкус, аромат",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This soup has a rich flavour.",
+        "ru": "У этого супа насыщенный вкус."
+      }
+    },
+    {
+      "term": "appetiser",
+      "translation": "закуска",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We ordered an appetiser.",
+        "ru": "Мы заказали закуску."
+      }
+    },
+    {
+      "term": "main course",
+      "translation": "основное блюдо",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "What's the main course today?",
+        "ru": "Какое сегодня основное блюдо?"
+      }
+    },
+    {
+      "term": "dessert",
+      "translation": "десерт",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Would you like dessert?",
+        "ru": "Хотите десерт?"
+      }
+    },
+    {
+      "term": "snack",
+      "translation": "перекус",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I had a healthy snack.",
+        "ru": "Я полезно перекусил."
+      }
+    },
+    {
+      "term": "sauce",
+      "translation": "соус",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The sauce is homemade.",
+        "ru": "Этот соус домашний."
+      }
+    },
+    {
+      "term": "vegetarian",
+      "translation": "вегетарианец",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My friend is a vegetarian.",
+        "ru": "Мой друг — вегетарианец."
+      }
+    },
+    {
+      "term": "bill",
+      "translation": "счёт",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Can we have the bill, please?",
+        "ru": "Можно счёт, пожалуйста?"
+      }
+    },
+    {
+      "term": "grill",
+      "translation": "жарить на гриле",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We grilled vegetables.",
+        "ru": "Мы приготовили овощи на гриле."
+      }
+    },
+    {
+      "term": "fry",
+      "translation": "жарить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Fry the eggs in a pan.",
+        "ru": "Пожарь яйца на сковороде."
+      }
+    },
+    {
+      "term": "bake",
+      "translation": "печь",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Let's bake some biscuits.",
+        "ru": "Давай испечём печенье."
+      }
+    },
+    {
+      "term": "stir",
+      "translation": "помешивать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Stir the soup slowly.",
+        "ru": "Медленно помешивай суп."
+      }
+    },
+    {
+      "term": "pour",
+      "translation": "наливать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Pour the milk into a glass.",
+        "ru": "Налей молоко в стакан."
+      }
+    },
+    {
+      "term": "slice",
+      "translation": "нарезать ломтиками",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Slice the bread thinly.",
+        "ru": "Нарежь хлеб тонкими ломтиками."
+      }
+    },
+    {
+      "term": "serve",
+      "translation": "подавать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Serve the meal hot.",
+        "ru": "Подавай блюдо горячим."
+      }
+    },
+    {
+      "term": "fresh",
+      "translation": "свежий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "These tomatoes are fresh.",
+        "ru": "Эти помидоры свежие."
+      }
+    },
+    {
+      "term": "sour",
+      "translation": "кислый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The lemon tastes sour.",
+        "ru": "Лимон кислый на вкус."
+      }
+    },
+    {
+      "term": "sweet",
+      "translation": "сладкий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This tea is too sweet.",
+        "ru": "Этот чай слишком сладкий."
+      }
+    },
+    {
+      "term": "bitter",
+      "translation": "горький",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The coffee tastes bitter.",
+        "ru": "Кофе горький на вкус."
+      }
+    },
+    {
+      "term": "homemade",
+      "translation": "домашний",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We ate homemade pizza.",
+        "ru": "Мы ели домашнюю пиццу."
+      }
+    },
+    {
+      "term": "a slice of",
+      "translation": "ломтик чего-либо",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'd like a slice of cake.",
+        "ru": "Я бы хотел кусочек торта."
+      }
+    },
+    {
+      "term": "a piece of",
+      "translation": "кусочек чего-либо",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Take a piece of cheese.",
+        "ru": "Возьми кусочек сыра."
+      }
+    },
+    {
+      "term": "eat out",
+      "translation": "есть вне дома",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We eat out once a month.",
+        "ru": "Мы едим вне дома раз в месяц."
+      }
     }
   ]
 }

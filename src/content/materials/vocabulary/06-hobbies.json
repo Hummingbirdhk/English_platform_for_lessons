@@ -88,6 +88,231 @@
         "en": "I'm keen on skateboarding.",
         "ru": "Я увлекаюсь скейтбордингом."
       }
+    },
+    {
+      "term": "leisure",
+      "translation": "досуг",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Reading is my favourite leisure activity.",
+        "ru": "Чтение — моё любимое занятие на досуге."
+      }
+    },
+    {
+      "term": "pastime",
+      "translation": "времяпрепровождение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Painting is a relaxing pastime.",
+        "ru": "Рисование — расслабляющее занятие."
+      }
+    },
+    {
+      "term": "collection",
+      "translation": "коллекция",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "His stamp collection is impressive.",
+        "ru": "Его коллекция марок впечатляет."
+      }
+    },
+    {
+      "term": "member",
+      "translation": "участник клуба",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She's a member of the music club.",
+        "ru": "Она состоит в музыкальном клубе."
+      }
+    },
+    {
+      "term": "tournament",
+      "translation": "турнир",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our team won the tournament.",
+        "ru": "Наша команда выиграла турнир."
+      }
+    },
+    {
+      "term": "competition",
+      "translation": "соревнование",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We entered a drawing competition.",
+        "ru": "Мы участвовали в конкурсе рисунков."
+      }
+    },
+    {
+      "term": "audience",
+      "translation": "публика",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The audience enjoyed the show.",
+        "ru": "Публике понравилось представление."
+      }
+    },
+    {
+      "term": "performance",
+      "translation": "выступление",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The performance lasted an hour.",
+        "ru": "Выступление длилось час."
+      }
+    },
+    {
+      "term": "instrument",
+      "translation": "музыкальный инструмент",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Can you play an instrument?",
+        "ru": "Ты умеешь играть на инструменте?"
+      }
+    },
+    {
+      "term": "craft",
+      "translation": "ремесло",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Pottery is a traditional craft.",
+        "ru": "Гончарное дело — традиционное ремесло."
+      }
+    },
+    {
+      "term": "take up",
+      "translation": "начать заниматься",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I took up swimming last year.",
+        "ru": "В прошлом году я начал заниматься плаванием."
+      }
+    },
+    {
+      "term": "give up",
+      "translation": "бросать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't give up practising.",
+        "ru": "Не бросай тренировки."
+      }
+    },
+    {
+      "term": "improve",
+      "translation": "улучшать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Practice will improve your skills.",
+        "ru": "Практика улучшит твои навыки."
+      }
+    },
+    {
+      "term": "compete",
+      "translation": "соревноваться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Our team will compete tomorrow.",
+        "ru": "Наша команда будет соревноваться завтра."
+      }
+    },
+    {
+      "term": "train",
+      "translation": "тренироваться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We train twice a week.",
+        "ru": "Мы тренируемся дважды в неделю."
+      }
+    },
+    {
+      "term": "perform",
+      "translation": "выступать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "My sister performs in a band.",
+        "ru": "Моя сестра выступает в группе."
+      }
+    },
+    {
+      "term": "entertaining",
+      "translation": "увлекательный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The film was entertaining.",
+        "ru": "Фильм был увлекательным."
+      }
+    },
+    {
+      "term": "challenging",
+      "translation": "сложный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Climbing is challenging.",
+        "ru": "Скалолазание — сложное занятие."
+      }
+    },
+    {
+      "term": "relaxing",
+      "translation": "расслабляющий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Gardening is relaxing.",
+        "ru": "Садоводство расслабляет."
+      }
+    },
+    {
+      "term": "talented",
+      "translation": "талантливый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She's a talented dancer.",
+        "ru": "Она талантливая танцовщица."
+      }
+    },
+    {
+      "term": "be fond of",
+      "translation": "любить, увлекаться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'm fond of photography.",
+        "ru": "Я увлекаюсь фотографией."
+      }
+    },
+    {
+      "term": "take part in",
+      "translation": "принимать участие",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Take part in our competition.",
+        "ru": "Прими участие в нашем конкурсе."
+      }
+    },
+    {
+      "term": "spend time outdoors",
+      "translation": "проводить время на природе",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We spend time outdoors on weekends.",
+        "ru": "По выходным мы бываем на природе."
+      }
+    },
+    {
+      "term": "have fun",
+      "translation": "веселиться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We had fun at the skate park.",
+        "ru": "Мы повеселились в скейт-парке."
+      }
+    },
+    {
+      "term": "join a club",
+      "translation": "записаться в клуб",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'd like to join a chess club.",
+        "ru": "Я хочу записаться в шахматный клуб."
+      }
     }
   ]
 }

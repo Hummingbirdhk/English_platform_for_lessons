@@ -88,6 +88,231 @@
         "en": "We went sightseeing in Rome.",
         "ru": "Мы осматривали достопримечательности Рима."
       }
+    },
+    {
+      "term": "accommodation",
+      "translation": "жильё для отдыха",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We found cheap accommodation.",
+        "ru": "Мы нашли недорогое жильё."
+      }
+    },
+    {
+      "term": "reservation",
+      "translation": "бронь",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I made a hotel reservation.",
+        "ru": "Я забронировал гостиницу."
+      }
+    },
+    {
+      "term": "departure",
+      "translation": "отправление",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our departure is at nine.",
+        "ru": "Мы отправляемся в девять."
+      }
+    },
+    {
+      "term": "arrival",
+      "translation": "прибытие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The arrival time has changed.",
+        "ru": "Время прибытия изменилось."
+      }
+    },
+    {
+      "term": "passport",
+      "translation": "паспорт",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Don't forget your passport.",
+        "ru": "Не забудь паспорт."
+      }
+    },
+    {
+      "term": "souvenir",
+      "translation": "сувенир",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I bought a souvenir for my sister.",
+        "ru": "Я купил сестре сувенир."
+      }
+    },
+    {
+      "term": "sight",
+      "translation": "достопримечательность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The castle is a famous sight.",
+        "ru": "Замок — известная достопримечательность."
+      }
+    },
+    {
+      "term": "coast",
+      "translation": "побережье",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We stayed near the coast.",
+        "ru": "Мы остановились у побережья."
+      }
+    },
+    {
+      "term": "temperature",
+      "translation": "температура",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The temperature dropped overnight.",
+        "ru": "За ночь температура упала."
+      }
+    },
+    {
+      "term": "thunderstorm",
+      "translation": "гроза",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "A thunderstorm started in the evening.",
+        "ru": "Вечером началась гроза."
+      }
+    },
+    {
+      "term": "heatwave",
+      "translation": "жара, волна жары",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The heatwave lasted a week.",
+        "ru": "Сильная жара длилась неделю."
+      }
+    },
+    {
+      "term": "check in",
+      "translation": "регистрироваться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We checked in at the hotel.",
+        "ru": "Мы зарегистрировались в гостинице."
+      }
+    },
+    {
+      "term": "check out",
+      "translation": "выписываться из гостиницы",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We checked out before noon.",
+        "ru": "Мы выехали до полудня."
+      }
+    },
+    {
+      "term": "set off",
+      "translation": "отправляться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We set off early in the morning.",
+        "ru": "Мы отправились рано утром."
+      }
+    },
+    {
+      "term": "cancel",
+      "translation": "отменять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They cancelled the trip.",
+        "ru": "Они отменили поездку."
+      }
+    },
+    {
+      "term": "delay",
+      "translation": "задерживать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Heavy snow delayed the train.",
+        "ru": "Сильный снег задержал поезд."
+      }
+    },
+    {
+      "term": "sunbathe",
+      "translation": "загорать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We sunbathed on the beach.",
+        "ru": "Мы загорали на пляже."
+      }
+    },
+    {
+      "term": "mild",
+      "translation": "умеренный, мягкий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The weather is mild in spring.",
+        "ru": "Весной погода мягкая."
+      }
+    },
+    {
+      "term": "humid",
+      "translation": "влажный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's hot and humid today.",
+        "ru": "Сегодня жарко и влажно."
+      }
+    },
+    {
+      "term": "freezing",
+      "translation": "очень холодный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's freezing outside.",
+        "ru": "На улице очень холодно."
+      }
+    },
+    {
+      "term": "breathtaking",
+      "translation": "захватывающий дух",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The mountain view was breathtaking.",
+        "ru": "Вид на горы захватывал дух."
+      }
+    },
+    {
+      "term": "go abroad",
+      "translation": "ехать за границу",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We want to go abroad in summer.",
+        "ru": "Летом мы хотим поехать за границу."
+      }
+    },
+    {
+      "term": "make a reservation",
+      "translation": "сделать бронь",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Please make a reservation in advance.",
+        "ru": "Пожалуйста, забронируй заранее."
+      }
+    },
+    {
+      "term": "travel light",
+      "translation": "путешествовать налегке",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I prefer to travel light.",
+        "ru": "Я предпочитаю путешествовать налегке."
+      }
+    },
+    {
+      "term": "on holiday",
+      "translation": "на каникулах, в отпуске",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We're on holiday this week.",
+        "ru": "Мы на каникулах на этой неделе."
+      }
     }
   ]
 }
