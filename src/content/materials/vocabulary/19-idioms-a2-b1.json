@@ -15,7 +15,8 @@
       "example": {
         "en": "The quiz was a piece of cake.",
         "ru": "Викторина оказалась проще простого."
-      }
+      },
+      "collocations": ["the test was a piece of cake", "find something a piece of cake"]
     },
     {
       "term": "under the weather",
@@ -24,7 +25,8 @@
       "example": {
         "en": "I'm a bit under the weather today.",
         "ru": "Сегодня я немного неважно себя чувствую."
-      }
+      },
+      "collocations": ["feel under the weather", "be a bit under the weather"]
     },
     {
       "term": "break the ice",
@@ -33,7 +35,8 @@
       "example": {
         "en": "A game helped us break the ice.",
         "ru": "Игра помогла нам познакомиться и снять напряжение."
-      }
+      },
+      "collocations": ["break the ice at a party", "help break the ice"]
     },
     {
       "term": "once in a blue moon",
@@ -42,7 +45,8 @@
       "example": {
         "en": "We eat out once in a blue moon.",
         "ru": "Мы очень редко едим вне дома."
-      }
+      },
+      "collocations": ["go out once in a blue moon", "happen once in a blue moon"]
     },
     {
       "term": "in the same boat",
@@ -69,7 +73,8 @@
       "example": {
         "en": "I need to hit the books tonight.",
         "ru": "Сегодня вечером мне нужно усердно позаниматься."
-      }
+      },
+      "collocations": ["hit the books tonight", "need to hit the books"]
     },
     {
       "term": "keep an eye on",
@@ -78,7 +83,8 @@
       "example": {
         "en": "Can you keep an eye on my bag?",
         "ru": "Можешь присмотреть за моей сумкой?"
-      }
+      },
+      "collocations": ["keep an eye on your bag", "keep an eye on the children"]
     },
     {
       "term": "learn by heart",
@@ -96,6 +102,231 @@
       "example": {
         "en": "You started practising: better late than never!",
         "ru": "Ты начал заниматься: лучше поздно, чем никогда!"
+      }
+    },
+    {
+      "term": "the best of both worlds",
+      "translation": "лучшее из двух вариантов",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Working from home gives her the best of both worlds.",
+        "ru": "Работа из дома даёт ей преимущества обоих вариантов."
+      }
+    },
+    {
+      "term": "on cloud nine",
+      "translation": "на седьмом небе от счастья",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "She was on cloud nine after the news.",
+        "ru": "После новости она была на седьмом небе."
+      }
+    },
+    {
+      "term": "spill the beans",
+      "translation": "выдать секрет",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Don't spill the beans about the surprise.",
+        "ru": "Не проболтайся о сюрпризе."
+      }
+    },
+    {
+      "term": "call it a day",
+      "translation": "закончить на сегодня",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Let's call it a day and go home.",
+        "ru": "Давай закончим на сегодня и пойдём домой."
+      }
+    },
+    {
+      "term": "get cold feet",
+      "translation": "испугаться в последний момент",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "He got cold feet before the competition.",
+        "ru": "Он испугался перед соревнованием."
+      }
+    },
+    {
+      "term": "the last straw",
+      "translation": "последняя капля",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "That rude comment was the last straw.",
+        "ru": "Тот грубый комментарий стал последней каплей."
+      }
+    },
+    {
+      "term": "take it easy",
+      "translation": "не перенапрягаться",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Take it easy after your exam.",
+        "ru": "Не перенапрягайся после экзамена."
+      }
+    },
+    {
+      "term": "a big deal",
+      "translation": "важное событие или дело",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Winning the award was a big deal.",
+        "ru": "Получить награду было большим событием."
+      }
+    },
+    {
+      "term": "give someone a hand",
+      "translation": "помочь кому-то",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Can you give me a hand with these boxes?",
+        "ru": "Можешь помочь мне с коробками?"
+      }
+    },
+    {
+      "term": "get the hang of",
+      "translation": "освоиться, разобраться",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "You'll get the hang of it soon.",
+        "ru": "Ты скоро разберёшься."
+      }
+    },
+    {
+      "term": "keep your fingers crossed",
+      "translation": "держать кулачки на удачу",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Keep your fingers crossed for me.",
+        "ru": "Пожелай мне удачи."
+      }
+    },
+    {
+      "term": "make up your mind",
+      "translation": "принять решение",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "You need to make up your mind.",
+        "ru": "Тебе нужно определиться."
+      }
+    },
+    {
+      "term": "have second thoughts",
+      "translation": "начать сомневаться",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "I'm having second thoughts about the plan.",
+        "ru": "Я начинаю сомневаться в плане."
+      }
+    },
+    {
+      "term": "be all ears",
+      "translation": "внимательно слушать",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Tell me what happened. I'm all ears.",
+        "ru": "Расскажи, что случилось. Я весь во внимании."
+      }
+    },
+    {
+      "term": "in hot water",
+      "translation": "попасть в неприятности",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "He got in hot water for being late.",
+        "ru": "Он попал в неприятности из-за опоздания."
+      }
+    },
+    {
+      "term": "out of the blue",
+      "translation": "совершенно неожиданно",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "She called me out of the blue.",
+        "ru": "Она неожиданно мне позвонила."
+      }
+    },
+    {
+      "term": "on the same page",
+      "translation": "одинаково понимать ситуацию",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Let's make sure we're on the same page.",
+        "ru": "Давай убедимся, что мы одинаково всё понимаем."
+      }
+    },
+    {
+      "term": "at the last minute",
+      "translation": "в последнюю минуту",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "He finished the work at the last minute.",
+        "ru": "Он закончил работу в последнюю минуту."
+      }
+    },
+    {
+      "term": "a hard nut to crack",
+      "translation": "крепкий орешек",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "This puzzle is a hard nut to crack.",
+        "ru": "Эта головоломка — крепкий орешек."
+      }
+    },
+    {
+      "term": "go the extra mile",
+      "translation": "приложить дополнительные усилия",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "She always goes the extra mile to help.",
+        "ru": "Она всегда старается помочь сверх необходимого."
+      }
+    },
+    {
+      "term": "see eye to eye",
+      "translation": "быть одного мнения",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "We don't always see eye to eye.",
+        "ru": "Мы не всегда сходимся во мнениях."
+      }
+    },
+    {
+      "term": "hit the nail on the head",
+      "translation": "попасть в точку",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Your answer hit the nail on the head.",
+        "ru": "Твой ответ попал в точку."
+      }
+    },
+    {
+      "term": "a blessing in disguise",
+      "translation": "удача, скрытая за неприятностью",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "Missing that train was a blessing in disguise.",
+        "ru": "То, что мы опоздали на поезд, неожиданно оказалось к лучшему."
+      }
+    },
+    {
+      "term": "the tip of the iceberg",
+      "translation": "верхушка айсберга",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "This issue is just the tip of the iceberg.",
+        "ru": "Эта проблема — лишь верхушка айсберга."
+      }
+    },
+    {
+      "term": "back to square one",
+      "translation": "вернуться к исходной точке",
+      "partOfSpeech": "idiom",
+      "example": {
+        "en": "The plan failed and we're back to square one.",
+        "ru": "План провалился, и мы снова в начале."
       }
     }
   ]

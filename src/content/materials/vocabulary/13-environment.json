@@ -15,7 +15,8 @@
       "example": {
         "en": "Air pollution is a serious problem.",
         "ru": "Загрязнение воздуха — серьёзная проблема."
-      }
+      },
+      "collocations": ["air pollution", "water pollution"]
     },
     {
       "term": "wildlife",
@@ -24,7 +25,8 @@
       "example": {
         "en": "We should protect local wildlife.",
         "ru": "Нужно защищать местную дикую природу."
-      }
+      },
+      "collocations": ["protect wildlife", "local wildlife"]
     },
     {
       "term": "waste",
@@ -33,7 +35,8 @@
       "example": {
         "en": "We produce too much plastic waste.",
         "ru": "Мы производим слишком много пластиковых отходов."
-      }
+      },
+      "collocations": ["plastic waste", "reduce waste"]
     },
     {
       "term": "recycle",
@@ -42,7 +45,8 @@
       "example": {
         "en": "Our school recycles paper.",
         "ru": "Наша школа перерабатывает бумагу."
-      }
+      },
+      "collocations": ["recycle plastic", "recycle paper"]
     },
     {
       "term": "reduce",
@@ -87,6 +91,232 @@
       "example": {
         "en": "Turn off lights to save energy.",
         "ru": "Выключай свет, чтобы экономить энергию."
+      }
+    },
+    {
+      "term": "climate",
+      "translation": "климат",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The climate is changing.",
+        "ru": "Климат меняется."
+      }
+    },
+    {
+      "term": "carbon footprint",
+      "translation": "углеродный след",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Cycling reduces your carbon footprint.",
+        "ru": "Поездки на велосипеде уменьшают углеродный след."
+      }
+    },
+    {
+      "term": "recycling bin",
+      "translation": "контейнер для переработки",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Put paper in the recycling bin.",
+        "ru": "Клади бумагу в контейнер для переработки."
+      }
+    },
+    {
+      "term": "litter",
+      "translation": "мусор на улице",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Don't leave litter in the park.",
+        "ru": "Не оставляй мусор в парке."
+      }
+    },
+    {
+      "term": "habitat",
+      "translation": "среда обитания",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The forest is their natural habitat.",
+        "ru": "Лес — их естественная среда обитания."
+      },
+      "collocations": ["natural habitat", "destroy a habitat"]
+    },
+    {
+      "term": "species",
+      "translation": "биологический вид",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This species is rare.",
+        "ru": "Этот вид встречается редко."
+      }
+    },
+    {
+      "term": "flood",
+      "translation": "наводнение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The flood damaged several homes.",
+        "ru": "Наводнение повредило несколько домов."
+      }
+    },
+    {
+      "term": "drought",
+      "translation": "засуха",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The drought lasted all summer.",
+        "ru": "Засуха длилась всё лето."
+      }
+    },
+    {
+      "term": "resource",
+      "translation": "ресурс",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Fresh water is a valuable resource.",
+        "ru": "Пресная вода — ценный ресурс."
+      }
+    },
+    {
+      "term": "environment",
+      "translation": "окружающая среда",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We should protect the environment.",
+        "ru": "Нам нужно защищать окружающую среду."
+      }
+    },
+    {
+      "term": "reuse",
+      "translation": "использовать повторно",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Reuse bags instead of throwing them away.",
+        "ru": "Используй пакеты повторно."
+      }
+    },
+    {
+      "term": "pollute",
+      "translation": "загрязнять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Factories can pollute rivers.",
+        "ru": "Заводы могут загрязнять реки."
+      }
+    },
+    {
+      "term": "damage",
+      "translation": "повреждать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Plastic waste damages wildlife.",
+        "ru": "Пластиковые отходы вредят дикой природе."
+      }
+    },
+    {
+      "term": "conserve",
+      "translation": "сберегать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We must conserve water.",
+        "ru": "Мы должны беречь воду."
+      }
+    },
+    {
+      "term": "separate",
+      "translation": "разделять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Separate plastic from paper.",
+        "ru": "Отделяй пластик от бумаги."
+      }
+    },
+    {
+      "term": "destroy",
+      "translation": "уничтожать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Fires can destroy forests.",
+        "ru": "Пожары могут уничтожить леса."
+      }
+    },
+    {
+      "term": "endangered",
+      "translation": "находящийся под угрозой исчезновения",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Tigers are endangered animals.",
+        "ru": "Тигры находятся под угрозой исчезновения."
+      }
+    },
+    {
+      "term": "sustainable",
+      "translation": "экологически устойчивый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We need sustainable solutions.",
+        "ru": "Нам нужны устойчивые решения."
+      }
+    },
+    {
+      "term": "environmentally friendly",
+      "translation": "экологичный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This product is environmentally friendly.",
+        "ru": "Этот продукт экологичный."
+      }
+    },
+    {
+      "term": "natural",
+      "translation": "природный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's a natural material.",
+        "ru": "Это натуральный материал."
+      }
+    },
+    {
+      "term": "cut down on",
+      "translation": "сокращать потребление",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Cut down on plastic use.",
+        "ru": "Сократи использование пластика."
+      }
+    },
+    {
+      "term": "throw away",
+      "translation": "выбрасывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't throw away reusable bottles.",
+        "ru": "Не выбрасывай многоразовые бутылки."
+      }
+    },
+    {
+      "term": "take action",
+      "translation": "принимать меры",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We need to take action now.",
+        "ru": "Нам нужно действовать сейчас."
+      }
+    },
+    {
+      "term": "raise awareness",
+      "translation": "повышать осведомлённость",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The campaign raises awareness.",
+        "ru": "Кампания повышает осведомлённость."
+      }
+    },
+    {
+      "term": "protect the planet",
+      "translation": "беречь планету",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Small actions help protect the planet.",
+        "ru": "Маленькие действия помогают беречь планету."
       }
     }
   ]

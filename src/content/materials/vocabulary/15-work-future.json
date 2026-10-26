@@ -15,7 +15,8 @@
       "example": {
         "en": "She wants a career in medicine.",
         "ru": "Она хочет построить карьеру в медицине."
-      }
+      },
+      "collocations": ["career choice", "build a career"]
     },
     {
       "term": "experience",
@@ -24,7 +25,8 @@
       "example": {
         "en": "This project gave me useful experience.",
         "ru": "Этот проект дал мне полезный опыт."
-      }
+      },
+      "collocations": ["work experience", "gain experience"]
     },
     {
       "term": "skill",
@@ -33,7 +35,8 @@
       "example": {
         "en": "Teamwork is an important skill.",
         "ru": "Умение работать в команде — важный навык."
-      }
+      },
+      "collocations": ["develop skills", "communication skills"]
     },
     {
       "term": "apply for",
@@ -87,6 +90,233 @@
       "example": {
         "en": "I need to make a decision soon.",
         "ru": "Мне скоро нужно принять решение."
+      }
+    },
+    {
+      "term": "occupation",
+      "translation": "профессия",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "What is your occupation?",
+        "ru": "Какая у тебя профессия?"
+      }
+    },
+    {
+      "term": "colleague",
+      "translation": "коллега",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My colleagues are helpful.",
+        "ru": "Мои коллеги готовы помочь."
+      }
+    },
+    {
+      "term": "employer",
+      "translation": "работодатель",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The employer offered training.",
+        "ru": "Работодатель предложил обучение."
+      }
+    },
+    {
+      "term": "employee",
+      "translation": "сотрудник",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Every employee has an ID card.",
+        "ru": "У каждого сотрудника есть пропуск."
+      }
+    },
+    {
+      "term": "salary",
+      "translation": "зарплата",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She earns a good salary.",
+        "ru": "Она получает хорошую зарплату."
+      },
+      "collocations": ["earn a salary", "monthly salary"]
+    },
+    {
+      "term": "interview",
+      "translation": "собеседование",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The interview starts at ten.",
+        "ru": "Собеседование начинается в десять."
+      },
+      "collocations": ["job interview", "prepare for an interview"]
+    },
+    {
+      "term": "qualification",
+      "translation": "квалификация",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This job requires qualifications.",
+        "ru": "Для этой работы нужна квалификация."
+      }
+    },
+    {
+      "term": "volunteer",
+      "translation": "волонтёр",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "He works as a volunteer.",
+        "ru": "Он работает волонтёром."
+      }
+    },
+    {
+      "term": "goal",
+      "translation": "цель",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Set a realistic goal.",
+        "ru": "Поставь реалистичную цель."
+      }
+    },
+    {
+      "term": "opportunity",
+      "translation": "возможность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "This course is a great opportunity.",
+        "ru": "Этот курс — отличная возможность."
+      }
+    },
+    {
+      "term": "earn",
+      "translation": "зарабатывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "She earns money after school.",
+        "ru": "Она подрабатывает после школы."
+      }
+    },
+    {
+      "term": "employ",
+      "translation": "нанимать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The company employs fifty people.",
+        "ru": "В компании работают пятьдесят человек."
+      }
+    },
+    {
+      "term": "train",
+      "translation": "обучать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They train new staff.",
+        "ru": "Они обучают новых сотрудников."
+      }
+    },
+    {
+      "term": "develop",
+      "translation": "развивать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I want to develop my skills.",
+        "ru": "Я хочу развивать свои навыки."
+      }
+    },
+    {
+      "term": "succeed",
+      "translation": "преуспевать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Hard work can help you succeed.",
+        "ru": "Усердие может помочь добиться успеха."
+      }
+    },
+    {
+      "term": "plan ahead",
+      "translation": "планировать заранее",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We should plan ahead.",
+        "ru": "Нужно планировать заранее."
+      }
+    },
+    {
+      "term": "ambitious",
+      "translation": "амбициозный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She has ambitious goals.",
+        "ru": "У неё амбициозные цели."
+      }
+    },
+    {
+      "term": "creative",
+      "translation": "творческий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's a creative job.",
+        "ru": "Это творческая работа."
+      }
+    },
+    {
+      "term": "suitable",
+      "translation": "подходящий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Is this job suitable for you?",
+        "ru": "Эта работа тебе подходит?"
+      }
+    },
+    {
+      "term": "independent",
+      "translation": "самостоятельный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "He wants to become independent.",
+        "ru": "Он хочет стать самостоятельным."
+      }
+    },
+    {
+      "term": "apply for a job",
+      "translation": "устраиваться на работу",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "She's going to apply for a job.",
+        "ru": "Она собирается подать заявку на работу."
+      }
+    },
+    {
+      "term": "gain experience",
+      "translation": "получать опыт",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Volunteering helps you gain experience.",
+        "ru": "Волонтёрство помогает получить опыт."
+      }
+    },
+    {
+      "term": "take responsibility",
+      "translation": "брать ответственность",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Learn to take responsibility.",
+        "ru": "Учись брать ответственность."
+      }
+    },
+    {
+      "term": "make a living",
+      "translation": "зарабатывать на жизнь",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Artists can make a living from their work.",
+        "ru": "Художники могут зарабатывать своим трудом."
+      }
+    },
+    {
+      "term": "reach a goal",
+      "translation": "достичь цели",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "She worked hard to reach her goal.",
+        "ru": "Она усердно трудилась ради цели."
       }
     }
   ]

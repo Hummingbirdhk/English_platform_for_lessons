@@ -15,7 +15,8 @@
       "example": {
         "en": "I get up at seven every day.",
         "ru": "Я встаю в семь каждый день."
-      }
+      },
+      "collocations": ["get up early", "get up late"]
     },
     {
       "term": "put on",
@@ -24,7 +25,8 @@
       "example": {
         "en": "Put on your warm coat.",
         "ru": "Надень тёплое пальто."
-      }
+      },
+      "collocations": ["put on a coat", "put on your shoes"]
     },
     {
       "term": "take off",
@@ -33,7 +35,8 @@
       "example": {
         "en": "Take off your shoes at the door.",
         "ru": "Сними обувь у двери."
-      }
+      },
+      "collocations": ["take off a jacket", "take off your shoes"]
     },
     {
       "term": "turn on",
@@ -42,7 +45,8 @@
       "example": {
         "en": "Can you turn on the light?",
         "ru": "Можешь включить свет?"
-      }
+      },
+      "collocations": ["turn on the lights", "turn on a computer"]
     },
     {
       "term": "turn off",
@@ -51,7 +55,8 @@
       "example": {
         "en": "Turn off your phone in class.",
         "ru": "Выключи телефон на уроке."
-      }
+      },
+      "collocations": ["turn off the TV", "turn off the engine"]
     },
     {
       "term": "look for",
@@ -60,7 +65,8 @@
       "example": {
         "en": "I'm looking for my keys.",
         "ru": "Я ищу ключи."
-      }
+      },
+      "collocations": ["look for a job", "look for information"]
     },
     {
       "term": "pick up",
@@ -96,6 +102,231 @@
       "example": {
         "en": "Let's find out the answer.",
         "ru": "Давай выясним ответ."
+      }
+    },
+    {
+      "term": "wake up",
+      "translation": "просыпаться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I wake up early on weekdays.",
+        "ru": "По будням я просыпаюсь рано."
+      }
+    },
+    {
+      "term": "sit down",
+      "translation": "садиться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Please sit down and listen.",
+        "ru": "Пожалуйста, садись и слушай."
+      }
+    },
+    {
+      "term": "stand up",
+      "translation": "вставать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Stand up when your name is called.",
+        "ru": "Встань, когда назовут твоё имя."
+      }
+    },
+    {
+      "term": "come in",
+      "translation": "входить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Come in and close the door.",
+        "ru": "Входи и закрой дверь."
+      }
+    },
+    {
+      "term": "go out",
+      "translation": "выходить, гулять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We go out on Saturdays.",
+        "ru": "По субботам мы гуляем."
+      }
+    },
+    {
+      "term": "look up",
+      "translation": "искать информацию",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Look up the word in a dictionary.",
+        "ru": "Найди слово в словаре."
+      }
+    },
+    {
+      "term": "write down",
+      "translation": "записывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Write down your homework.",
+        "ru": "Запиши домашнее задание."
+      }
+    },
+    {
+      "term": "try on",
+      "translation": "примерять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Can I try on this jacket?",
+        "ru": "Можно примерить эту куртку?"
+      }
+    },
+    {
+      "term": "throw away",
+      "translation": "выбрасывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't throw away this box.",
+        "ru": "Не выбрасывай эту коробку."
+      }
+    },
+    {
+      "term": "put away",
+      "translation": "убирать на место",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Put away your books, please.",
+        "ru": "Убери книги на место, пожалуйста."
+      }
+    },
+    {
+      "term": "look after",
+      "translation": "присматривать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I look after my little sister.",
+        "ru": "Я присматриваю за младшей сестрой."
+      }
+    },
+    {
+      "term": "get on",
+      "translation": "садиться в транспорт",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Get on the bus here.",
+        "ru": "Садись на автобус здесь."
+      }
+    },
+    {
+      "term": "get off",
+      "translation": "выходить из транспорта",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Get off at the next stop.",
+        "ru": "Выходи на следующей остановке."
+      }
+    },
+    {
+      "term": "go back",
+      "translation": "возвращаться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We went back to the hotel.",
+        "ru": "Мы вернулись в гостиницу."
+      }
+    },
+    {
+      "term": "hurry up",
+      "translation": "торопиться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Hurry up! We're late.",
+        "ru": "Поторопись! Мы опаздываем."
+      }
+    },
+    {
+      "term": "slow down",
+      "translation": "сбавлять скорость",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Slow down near the school.",
+        "ru": "Сбавь скорость возле школы."
+      }
+    },
+    {
+      "term": "clean up",
+      "translation": "убирать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Let's clean up the kitchen.",
+        "ru": "Давай уберём кухню."
+      }
+    },
+    {
+      "term": "fill in",
+      "translation": "заполнять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Fill in the form carefully.",
+        "ru": "Внимательно заполни форму."
+      }
+    },
+    {
+      "term": "switch on",
+      "translation": "включать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Switch on the computer.",
+        "ru": "Включи компьютер."
+      }
+    },
+    {
+      "term": "switch off",
+      "translation": "выключать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Switch off the TV before bed.",
+        "ru": "Выключи телевизор перед сном."
+      }
+    },
+    {
+      "term": "grow up",
+      "translation": "вырастать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I want to be a doctor when I grow up.",
+        "ru": "Когда я вырасту, хочу стать врачом."
+      }
+    },
+    {
+      "term": "come over",
+      "translation": "приходить в гости",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Would you like to come over tomorrow?",
+        "ru": "Хочешь прийти завтра в гости?"
+      }
+    },
+    {
+      "term": "go away",
+      "translation": "уезжать, уходить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We're going away for the weekend.",
+        "ru": "Мы уезжаем на выходные."
+      }
+    },
+    {
+      "term": "get together",
+      "translation": "собираться вместе",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We get together every Friday.",
+        "ru": "Мы собираемся вместе каждую пятницу."
+      }
+    },
+    {
+      "term": "take out",
+      "translation": "вынимать, выносить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Take out your notebooks.",
+        "ru": "Достаньте тетради."
       }
     }
   ]

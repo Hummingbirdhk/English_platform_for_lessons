@@ -15,7 +15,8 @@
       "example": {
         "en": "My relatives live in different cities.",
         "ru": "Мои родственники живут в разных городах."
-      }
+      },
+      "collocations": ["close relative", "distant relative"]
     },
     {
       "term": "cousin",
@@ -87,6 +88,235 @@
       "example": {
         "en": "My sister is good at drawing.",
         "ru": "Моя сестра хорошо рисует."
+      }
+    },
+    {
+      "term": "stepmother",
+      "translation": "мачеха",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My stepmother teaches maths.",
+        "ru": "Моя мачеха преподаёт математику."
+      }
+    },
+    {
+      "term": "stepfather",
+      "translation": "отчим",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My stepfather enjoys cycling.",
+        "ru": "Мой отчим любит кататься на велосипеде."
+      }
+    },
+    {
+      "term": "grandchild",
+      "translation": "внук или внучка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Their first grandchild was born in May.",
+        "ru": "Их первый внук родился в мае."
+      }
+    },
+    {
+      "term": "only child",
+      "translation": "единственный ребёнок",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I'm an only child.",
+        "ru": "Я единственный ребёнок в семье."
+      }
+    },
+    {
+      "term": "teenager",
+      "translation": "подросток",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The teenager is thirteen.",
+        "ru": "Подростку тринадцать лет."
+      }
+    },
+    {
+      "term": "adult",
+      "translation": "взрослый",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "An adult must sign the form.",
+        "ru": "Взрослый должен подписать бланк."
+      }
+    },
+    {
+      "term": "appearance",
+      "translation": "внешность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Describe your friend's appearance.",
+        "ru": "Опиши внешность своего друга."
+      }
+    },
+    {
+      "term": "personality",
+      "translation": "характер",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She has a cheerful personality.",
+        "ru": "У неё весёлый характер."
+      },
+      "collocations": ["strong personality", "cheerful personality"]
+    },
+    {
+      "term": "surname",
+      "translation": "фамилия",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "What's your surname?",
+        "ru": "Какая у тебя фамилия?"
+      }
+    },
+    {
+      "term": "birthplace",
+      "translation": "место рождения",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "London is his birthplace.",
+        "ru": "Лондон — место его рождения."
+      }
+    },
+    {
+      "term": "resemble",
+      "translation": "быть похожим",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I resemble my grandmother.",
+        "ru": "Я похож на свою бабушку."
+      }
+    },
+    {
+      "term": "support",
+      "translation": "поддерживать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "My parents support my choice.",
+        "ru": "Родители поддерживают мой выбор."
+      },
+      "collocations": ["support your family", "support a decision"]
+    },
+    {
+      "term": "argue",
+      "translation": "спорить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They sometimes argue about music.",
+        "ru": "Иногда они спорят о музыке."
+      },
+      "collocations": ["argue about something", "argue with someone"]
+    },
+    {
+      "term": "share",
+      "translation": "делиться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We share a bedroom.",
+        "ru": "Мы живём в одной комнате."
+      }
+    },
+    {
+      "term": "care for",
+      "translation": "заботиться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "She cares for her younger sister.",
+        "ru": "Она заботится о младшей сестре."
+      }
+    },
+    {
+      "term": "honest",
+      "translation": "честный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "He is always honest with me.",
+        "ru": "Он всегда честен со мной."
+      },
+      "collocations": ["be honest with someone", "an honest answer"]
+    },
+    {
+      "term": "patient",
+      "translation": "терпеливый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Our teacher is very patient.",
+        "ru": "Наш учитель очень терпеливый."
+      }
+    },
+    {
+      "term": "generous",
+      "translation": "щедрый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "That was a generous gift.",
+        "ru": "Это был щедрый подарок."
+      }
+    },
+    {
+      "term": "outgoing",
+      "translation": "общительный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "My cousin is outgoing.",
+        "ru": "Мой двоюродный брат общительный."
+      }
+    },
+    {
+      "term": "shy",
+      "translation": "застенчивый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She feels shy in new groups.",
+        "ru": "Она стесняется в новой компании."
+      }
+    },
+    {
+      "term": "be interested in",
+      "translation": "интересоваться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'm interested in art.",
+        "ru": "Я интересуюсь искусством."
+      }
+    },
+    {
+      "term": "have a lot in common",
+      "translation": "иметь много общего",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We have a lot in common.",
+        "ru": "У нас много общего."
+      }
+    },
+    {
+      "term": "spend time together",
+      "translation": "проводить время вместе",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We spend time together on Sundays.",
+        "ru": "Мы проводим время вместе по воскресеньям."
+      }
+    },
+    {
+      "term": "take after",
+      "translation": "пойти в кого-то из родных",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "He takes after his father.",
+        "ru": "Он пошёл в отца."
+      }
+    },
+    {
+      "term": "be proud of",
+      "translation": "гордиться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I'm proud of my brother.",
+        "ru": "Я горжусь своим братом."
       }
     }
   ]

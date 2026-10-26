@@ -15,7 +15,8 @@
       "example": {
         "en": "Everyone can share an opinion.",
         "ru": "Каждый может высказать мнение."
-      }
+      },
+      "collocations": ["express an opinion", "share an opinion"]
     },
     {
       "term": "advantage",
@@ -24,7 +25,8 @@
       "example": {
         "en": "One advantage is the low price.",
         "ru": "Одно преимущество — низкая цена."
-      }
+      },
+      "collocations": ["main advantage", "clear advantage"]
     },
     {
       "term": "disadvantage",
@@ -33,7 +35,8 @@
       "example": {
         "en": "A disadvantage is the long journey.",
         "ru": "Недостаток — долгая дорога."
-      }
+      },
+      "collocations": ["major disadvantage", "possible disadvantage"]
     },
     {
       "term": "agree",
@@ -96,6 +99,233 @@
       "example": {
         "en": "On the other hand, it takes time.",
         "ru": "С другой стороны, это требует времени."
+      }
+    },
+    {
+      "term": "point of view",
+      "translation": "точка зрения",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I understand your point of view.",
+        "ru": "Я понимаю твою точку зрения."
+      }
+    },
+    {
+      "term": "argument",
+      "translation": "довод, аргумент",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "That's a strong argument.",
+        "ru": "Это веский аргумент."
+      }
+    },
+    {
+      "term": "reason",
+      "translation": "причина, довод",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Give one reason for your choice.",
+        "ru": "Назови одну причину своего выбора."
+      }
+    },
+    {
+      "term": "evidence",
+      "translation": "доказательства",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We need evidence to support the idea.",
+        "ru": "Нам нужны доказательства в поддержку идеи."
+      },
+      "collocations": ["strong evidence", "provide evidence"]
+    },
+    {
+      "term": "conclusion",
+      "translation": "вывод",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "What conclusion can we draw?",
+        "ru": "Какой вывод мы можем сделать?"
+      }
+    },
+    {
+      "term": "solution",
+      "translation": "решение проблемы",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We found a possible solution.",
+        "ru": "Мы нашли возможное решение."
+      }
+    },
+    {
+      "term": "choice",
+      "translation": "выбор",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "It's a difficult choice.",
+        "ru": "Это сложный выбор."
+      }
+    },
+    {
+      "term": "debate",
+      "translation": "дебаты",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We had a debate at school.",
+        "ru": "У нас в школе прошли дебаты."
+      }
+    },
+    {
+      "term": "discussion",
+      "translation": "обсуждение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Let's have a discussion.",
+        "ru": "Давай обсудим это."
+      },
+      "collocations": ["have a discussion", "join a discussion"]
+    },
+    {
+      "term": "suggestion",
+      "translation": "предложение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Thanks for your suggestion.",
+        "ru": "Спасибо за предложение."
+      }
+    },
+    {
+      "term": "explain",
+      "translation": "объяснять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Please explain your answer.",
+        "ru": "Пожалуйста, объясни свой ответ."
+      }
+    },
+    {
+      "term": "compare",
+      "translation": "сравнивать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Compare these two options.",
+        "ru": "Сравни эти два варианта."
+      }
+    },
+    {
+      "term": "consider",
+      "translation": "рассматривать, учитывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Consider both sides of the question.",
+        "ru": "Рассмотри обе стороны вопроса."
+      }
+    },
+    {
+      "term": "support",
+      "translation": "поддерживать довод",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Give an example to support your point.",
+        "ru": "Приведи пример в поддержку своей мысли."
+      }
+    },
+    {
+      "term": "persuade",
+      "translation": "убеждать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "She persuaded us to try it.",
+        "ru": "Она убедила нас попробовать."
+      }
+    },
+    {
+      "term": "recommend",
+      "translation": "рекомендовать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I recommend this book.",
+        "ru": "Я рекомендую эту книгу."
+      }
+    },
+    {
+      "term": "fair",
+      "translation": "справедливый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "That seems like a fair decision.",
+        "ru": "Это кажется справедливым решением."
+      }
+    },
+    {
+      "term": "clear",
+      "translation": "ясный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Your explanation is clear.",
+        "ru": "Твоё объяснение понятно."
+      }
+    },
+    {
+      "term": "effective",
+      "translation": "эффективный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This is an effective solution.",
+        "ru": "Это эффективное решение."
+      }
+    },
+    {
+      "term": "relevant",
+      "translation": "относящийся к теме",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Give a relevant example.",
+        "ru": "Приведи подходящий пример."
+      }
+    },
+    {
+      "term": "firstly",
+      "translation": "во-первых",
+      "partOfSpeech": "adverb",
+      "example": {
+        "en": "Firstly, we need more information.",
+        "ru": "Во-первых, нам нужно больше информации."
+      }
+    },
+    {
+      "term": "however",
+      "translation": "однако",
+      "partOfSpeech": "adverb",
+      "example": {
+        "en": "However, I see one problem.",
+        "ru": "Однако я вижу одну проблему."
+      }
+    },
+    {
+      "term": "for example",
+      "translation": "например",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "For example, we could walk.",
+        "ru": "Например, мы могли бы пойти пешком."
+      }
+    },
+    {
+      "term": "as a result",
+      "translation": "в результате",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "As a result, we arrived late.",
+        "ru": "В результате мы опоздали."
+      }
+    },
+    {
+      "term": "to sum up",
+      "translation": "подводя итог",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "To sum up, the plan is practical.",
+        "ru": "Подводя итог, план практичный."
       }
     }
   ]

@@ -24,7 +24,8 @@
       "example": {
         "en": "Ask for permission first.",
         "ru": "Сначала спроси разрешения."
-      }
+      },
+      "collocations": ["ask for permission", "give permission"]
     },
     {
       "term": "warning",
@@ -33,7 +34,8 @@
       "example": {
         "en": "Read the warning on the sign.",
         "ru": "Прочитай предупреждение на знаке."
-      }
+      },
+      "collocations": ["warning sign", "give a warning"]
     },
     {
       "term": "allow",
@@ -87,6 +89,234 @@
       "example": {
         "en": "Are we allowed to use phones?",
         "ru": "Нам разрешено пользоваться телефонами?"
+      }
+    },
+    {
+      "term": "obligation",
+      "translation": "обязанность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Wearing a helmet is an obligation here.",
+        "ru": "Здесь обязательно носить шлем."
+      }
+    },
+    {
+      "term": "responsibility",
+      "translation": "ответственность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Safety is everyone's responsibility.",
+        "ru": "Безопасность — ответственность каждого."
+      },
+      "collocations": ["take responsibility", "personal responsibility"]
+    },
+    {
+      "term": "instruction",
+      "translation": "инструкция",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Follow the instructions carefully.",
+        "ru": "Внимательно следуй инструкциям."
+      }
+    },
+    {
+      "term": "emergency",
+      "translation": "чрезвычайная ситуация",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Call for help in an emergency.",
+        "ru": "В чрезвычайной ситуации зови на помощь."
+      },
+      "collocations": ["in an emergency", "emergency exit"]
+    },
+    {
+      "term": "first aid",
+      "translation": "первая помощь",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "He learned basic first aid.",
+        "ru": "Он научился основам первой помощи."
+      }
+    },
+    {
+      "term": "danger",
+      "translation": "опасность",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There's danger near the cliff.",
+        "ru": "Возле обрыва опасно."
+      }
+    },
+    {
+      "term": "accident",
+      "translation": "несчастный случай",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There was an accident on the road.",
+        "ru": "На дороге произошёл несчастный случай."
+      },
+      "collocations": ["have an accident", "prevent an accident"]
+    },
+    {
+      "term": "fire exit",
+      "translation": "пожарный выход",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The fire exit is over there.",
+        "ru": "Пожарный выход вон там."
+      }
+    },
+    {
+      "term": "notice",
+      "translation": "объявление",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Read the notice on the door.",
+        "ru": "Прочитай объявление на двери."
+      }
+    },
+    {
+      "term": "fine",
+      "translation": "штраф",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Parking here may lead to a fine.",
+        "ru": "За парковку здесь могут оштрафовать."
+      }
+    },
+    {
+      "term": "avoid",
+      "translation": "избегать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Avoid walking on the ice.",
+        "ru": "Не ходи по льду."
+      }
+    },
+    {
+      "term": "warn",
+      "translation": "предупреждать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The sign warns drivers.",
+        "ru": "Знак предупреждает водителей."
+      }
+    },
+    {
+      "term": "report",
+      "translation": "сообщать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Report any dangerous situation.",
+        "ru": "Сообщай об опасных ситуациях."
+      }
+    },
+    {
+      "term": "prevent",
+      "translation": "предотвращать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "These rules prevent accidents.",
+        "ru": "Эти правила предотвращают несчастные случаи."
+      }
+    },
+    {
+      "term": "behave",
+      "translation": "вести себя",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Please behave quietly.",
+        "ru": "Пожалуйста, веди себя тихо."
+      }
+    },
+    {
+      "term": "respect",
+      "translation": "уважать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Respect other people's space.",
+        "ru": "Уважай личное пространство других."
+      }
+    },
+    {
+      "term": "careful",
+      "translation": "осторожный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Be careful with sharp objects.",
+        "ru": "Будь осторожен с острыми предметами."
+      }
+    },
+    {
+      "term": "aware",
+      "translation": "осведомлённый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Be aware of the risks.",
+        "ru": "Помни о рисках."
+      }
+    },
+    {
+      "term": "illegal",
+      "translation": "незаконный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's illegal to drive without a licence.",
+        "ru": "Водить без прав незаконно."
+      }
+    },
+    {
+      "term": "essential",
+      "translation": "необходимый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Safety equipment is essential.",
+        "ru": "Защитное снаряжение необходимо."
+      }
+    },
+    {
+      "term": "in case of",
+      "translation": "в случае",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Use this exit in case of fire.",
+        "ru": "При пожаре используй этот выход."
+      }
+    },
+    {
+      "term": "keep away from",
+      "translation": "держаться подальше",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Keep away from the edge.",
+        "ru": "Держись подальше от края."
+      }
+    },
+    {
+      "term": "pay attention to",
+      "translation": "обращать внимание на",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Pay attention to the warning.",
+        "ru": "Обрати внимание на предупреждение."
+      }
+    },
+    {
+      "term": "be responsible for",
+      "translation": "отвечать за",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "You're responsible for your belongings.",
+        "ru": "Ты отвечаешь за свои вещи."
+      }
+    },
+    {
+      "term": "ask for permission",
+      "translation": "просить разрешения",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Ask for permission before leaving.",
+        "ru": "Попроси разрешения перед уходом."
       }
     }
   ]

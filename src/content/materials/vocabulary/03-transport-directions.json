@@ -33,7 +33,8 @@
       "example": {
         "en": "Always wear a seat belt.",
         "ru": "Всегда пристёгивай ремень безопасности."
-      }
+      },
+      "collocations": ["wear a seat belt", "fasten a seat belt"]
     },
     {
       "term": "fare",
@@ -42,7 +43,8 @@
       "example": {
         "en": "How much is the bus fare?",
         "ru": "Сколько стоит проезд на автобусе?"
-      }
+      },
+      "collocations": ["pay the fare", "bus fare"]
     },
     {
       "term": "cross",
@@ -87,6 +89,234 @@
       "example": {
         "en": "Go straight on past the bank.",
         "ru": "Иди прямо мимо банка."
+      }
+    },
+    {
+      "term": "crossroads",
+      "translation": "перекрёсток",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Turn right at the crossroads.",
+        "ru": "На перекрёстке поверни направо."
+      }
+    },
+    {
+      "term": "roundabout",
+      "translation": "круговое движение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Take the second exit at the roundabout.",
+        "ru": "На круге сверни на втором съезде."
+      }
+    },
+    {
+      "term": "junction",
+      "translation": "развилка или перекрёсток",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Slow down at the junction.",
+        "ru": "Сбавь скорость на перекрёстке."
+      }
+    },
+    {
+      "term": "platform",
+      "translation": "платформа",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The train leaves from platform two.",
+        "ru": "Поезд отправляется со второй платформы."
+      },
+      "collocations": ["wait on the platform", "platform number"]
+    },
+    {
+      "term": "ticket office",
+      "translation": "билетная касса",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The ticket office closes at eight.",
+        "ru": "Билетная касса закрывается в восемь."
+      }
+    },
+    {
+      "term": "timetable",
+      "translation": "расписание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Check the bus timetable.",
+        "ru": "Проверь расписание автобусов."
+      }
+    },
+    {
+      "term": "passenger",
+      "translation": "пассажир",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Every passenger needs a ticket.",
+        "ru": "Каждому пассажиру нужен билет."
+      },
+      "collocations": ["bus passenger", "train passenger"]
+    },
+    {
+      "term": "traffic jam",
+      "translation": "пробка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We got stuck in a traffic jam.",
+        "ru": "Мы застряли в пробке."
+      },
+      "collocations": ["heavy traffic jam", "get stuck in traffic"]
+    },
+    {
+      "term": "road sign",
+      "translation": "дорожный знак",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Read the road sign carefully.",
+        "ru": "Внимательно прочитай дорожный знак."
+      }
+    },
+    {
+      "term": "helmet",
+      "translation": "шлем",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Wear a helmet when cycling.",
+        "ru": "Надевай шлем при езде на велосипеде."
+      }
+    },
+    {
+      "term": "speed limit",
+      "translation": "ограничение скорости",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The speed limit is thirty.",
+        "ru": "Ограничение скорости — тридцать."
+      }
+    },
+    {
+      "term": "catch a bus",
+      "translation": "успеть на автобус",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Let's hurry to catch the bus.",
+        "ru": "Поторопимся, чтобы успеть на автобус."
+      }
+    },
+    {
+      "term": "miss a train",
+      "translation": "опоздать на поезд",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I don't want to miss the train.",
+        "ru": "Я не хочу опоздать на поезд."
+      }
+    },
+    {
+      "term": "get off",
+      "translation": "выходить из транспорта",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Get off at the next stop.",
+        "ru": "Выходи на следующей остановке."
+      }
+    },
+    {
+      "term": "get on",
+      "translation": "садиться в транспорт",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We got on the bus together.",
+        "ru": "Мы вместе сели в автобус."
+      }
+    },
+    {
+      "term": "slow down",
+      "translation": "замедляться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Slow down near the school.",
+        "ru": "Сбавь скорость возле школы."
+      }
+    },
+    {
+      "term": "follow",
+      "translation": "следовать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Follow the signs to the station.",
+        "ru": "Следуй указателям к станции."
+      }
+    },
+    {
+      "term": "overtake",
+      "translation": "обгонять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Don't overtake on this road.",
+        "ru": "Не обгоняй на этой дороге."
+      }
+    },
+    {
+      "term": "delay",
+      "translation": "задерживать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The storm delayed our flight.",
+        "ru": "Из-за бури наш рейс задержали."
+      }
+    },
+    {
+      "term": "direct",
+      "translation": "прямой",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Is there a direct bus?",
+        "ru": "Есть прямой автобус?"
+      }
+    },
+    {
+      "term": "convenient",
+      "translation": "удобный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The underground is convenient.",
+        "ru": "Метро очень удобное."
+      }
+    },
+    {
+      "term": "dangerous",
+      "translation": "опасный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's dangerous to cross here.",
+        "ru": "Здесь опасно переходить дорогу."
+      }
+    },
+    {
+      "term": "at the end of the street",
+      "translation": "в конце улицы",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The museum is at the end of the street.",
+        "ru": "Музей находится в конце улицы."
+      }
+    },
+    {
+      "term": "take the first turning",
+      "translation": "повернуть на первом повороте",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Take the first turning on the left.",
+        "ru": "Поверни на первом повороте налево."
+      }
+    },
+    {
+      "term": "ask for directions",
+      "translation": "спросить дорогу",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Let's ask for directions.",
+        "ru": "Давай спросим дорогу."
       }
     }
   ]

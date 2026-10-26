@@ -15,7 +15,8 @@
       "example": {
         "en": "That trip is a happy memory.",
         "ru": "Та поездка — приятное воспоминание."
-      }
+      },
+      "collocations": ["happy memory", "childhood memory"]
     },
     {
       "term": "century",
@@ -33,7 +34,8 @@
       "example": {
         "en": "The telephone was an important invention.",
         "ru": "Телефон был важным изобретением."
-      }
+      },
+      "collocations": ["important invention", "modern invention"]
     },
     {
       "term": "discover",
@@ -87,6 +89,234 @@
       "example": {
         "en": "People travelled differently a long time ago.",
         "ru": "Давным-давно люди путешествовали иначе."
+      }
+    },
+    {
+      "term": "achievement",
+      "translation": "достижение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Winning the race was an achievement.",
+        "ru": "Победа в забеге была достижением."
+      },
+      "collocations": ["major achievement", "personal achievement"]
+    },
+    {
+      "term": "explorer",
+      "translation": "исследователь",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The explorer travelled across Asia.",
+        "ru": "Исследователь путешествовал по Азии."
+      }
+    },
+    {
+      "term": "journey",
+      "translation": "путешествие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Their journey lasted three months.",
+        "ru": "Их путешествие длилось три месяца."
+      },
+      "collocations": ["long journey", "go on a journey"]
+    },
+    {
+      "term": "event",
+      "translation": "событие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "It was an important event.",
+        "ru": "Это было важное событие."
+      }
+    },
+    {
+      "term": "diary",
+      "translation": "дневник",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She wrote about the trip in her diary.",
+        "ru": "Она описала поездку в дневнике."
+      }
+    },
+    {
+      "term": "legend",
+      "translation": "легенда",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We heard a local legend.",
+        "ru": "Мы услышали местную легенду."
+      }
+    },
+    {
+      "term": "historian",
+      "translation": "историк",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The historian studied old letters.",
+        "ru": "Историк изучал старые письма."
+      }
+    },
+    {
+      "term": "document",
+      "translation": "документ",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They found an old document.",
+        "ru": "Они нашли старый документ."
+      }
+    },
+    {
+      "term": "discovery",
+      "translation": "открытие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "It was a surprising discovery.",
+        "ru": "Это было неожиданное открытие."
+      },
+      "collocations": ["make a discovery", "scientific discovery"]
+    },
+    {
+      "term": "battle",
+      "translation": "битва",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The battle took place long ago.",
+        "ru": "Битва произошла давно."
+      }
+    },
+    {
+      "term": "establish",
+      "translation": "основать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They established the town in 1800.",
+        "ru": "Они основали город в 1800 году."
+      }
+    },
+    {
+      "term": "survive",
+      "translation": "выживать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The sailors survived the storm.",
+        "ru": "Моряки пережили шторм."
+      }
+    },
+    {
+      "term": "escape",
+      "translation": "сбегать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The prisoner escaped at night.",
+        "ru": "Заключённый сбежал ночью."
+      }
+    },
+    {
+      "term": "arrive",
+      "translation": "прибывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We arrived late yesterday.",
+        "ru": "Вчера мы приехали поздно."
+      }
+    },
+    {
+      "term": "realise",
+      "translation": "осознавать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I realised my mistake.",
+        "ru": "Я осознал свою ошибку."
+      }
+    },
+    {
+      "term": "describe",
+      "translation": "описывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Describe what happened next.",
+        "ru": "Опиши, что случилось потом."
+      }
+    },
+    {
+      "term": "brave",
+      "translation": "храбрый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The firefighters were brave.",
+        "ru": "Пожарные были храбрыми."
+      }
+    },
+    {
+      "term": "successful",
+      "translation": "успешный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It was a successful expedition.",
+        "ru": "Это была успешная экспедиция."
+      }
+    },
+    {
+      "term": "unexpected",
+      "translation": "неожиданный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "We heard unexpected news.",
+        "ru": "Мы услышали неожиданную новость."
+      }
+    },
+    {
+      "term": "historical",
+      "translation": "исторический",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This is a historical building.",
+        "ru": "Это историческое здание."
+      }
+    },
+    {
+      "term": "in the past",
+      "translation": "в прошлом",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Life was different in the past.",
+        "ru": "В прошлом жизнь была другой."
+      }
+    },
+    {
+      "term": "at first",
+      "translation": "сначала",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "At first I didn't understand.",
+        "ru": "Сначала я не понял."
+      }
+    },
+    {
+      "term": "in the end",
+      "translation": "в конце концов",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "In the end we found the answer.",
+        "ru": "В конце концов мы нашли ответ."
+      }
+    },
+    {
+      "term": "make history",
+      "translation": "войти в историю",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The athlete made history.",
+        "ru": "Спортсмен вошёл в историю."
+      }
+    },
+    {
+      "term": "tell a story",
+      "translation": "рассказывать историю",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Grandpa told us a funny story.",
+        "ru": "Дедушка рассказал нам забавную историю."
       }
     }
   ]

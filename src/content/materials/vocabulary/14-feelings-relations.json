@@ -15,7 +15,8 @@
       "example": {
         "en": "Practice builds confidence.",
         "ru": "Практика укрепляет уверенность."
-      }
+      },
+      "collocations": ["build confidence", "lack confidence"]
     },
     {
       "term": "argument",
@@ -24,7 +25,8 @@
       "example": {
         "en": "They had an argument yesterday.",
         "ru": "Вчера они поссорились."
-      }
+      },
+      "collocations": ["have an argument", "avoid an argument"]
     },
     {
       "term": "support",
@@ -51,7 +53,8 @@
       "example": {
         "en": "I trust my best friend.",
         "ru": "Я доверяю лучшему другу."
-      }
+      },
+      "collocations": ["trust your friends", "trust someone completely"]
     },
     {
       "term": "encourage",
@@ -87,6 +90,233 @@
       "example": {
         "en": "We keep in touch after school.",
         "ru": "Мы поддерживаем связь после школы."
+      }
+    },
+    {
+      "term": "friendship",
+      "translation": "дружба",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Friendship takes time and trust.",
+        "ru": "Дружбе нужны время и доверие."
+      },
+      "collocations": ["close friendship", "build a friendship"]
+    },
+    {
+      "term": "relationship",
+      "translation": "отношения",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They have a close relationship.",
+        "ru": "У них близкие отношения."
+      }
+    },
+    {
+      "term": "misunderstanding",
+      "translation": "недопонимание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "It was just a misunderstanding.",
+        "ru": "Это было просто недоразумение."
+      }
+    },
+    {
+      "term": "advice",
+      "translation": "совет",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Can you give me some advice?",
+        "ru": "Можешь дать мне совет?"
+      },
+      "collocations": ["give advice", "ask for advice"]
+    },
+    {
+      "term": "respect",
+      "translation": "уважение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Respect is important in friendship.",
+        "ru": "В дружбе важно уважение."
+      }
+    },
+    {
+      "term": "anxiety",
+      "translation": "тревога",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The test caused some anxiety.",
+        "ru": "Тест вызвал тревогу."
+      }
+    },
+    {
+      "term": "mood",
+      "translation": "настроение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Music improves my mood.",
+        "ru": "Музыка улучшает моё настроение."
+      }
+    },
+    {
+      "term": "compliment",
+      "translation": "комплимент",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She gave me a lovely compliment.",
+        "ru": "Она сделала мне приятный комплимент."
+      }
+    },
+    {
+      "term": "empathy",
+      "translation": "сочувствие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Empathy helps us understand others.",
+        "ru": "Сочувствие помогает понимать других."
+      }
+    },
+    {
+      "term": "disagreement",
+      "translation": "разногласие",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They had a small disagreement.",
+        "ru": "У них возникло небольшое разногласие."
+      }
+    },
+    {
+      "term": "admire",
+      "translation": "восхищаться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I admire her courage.",
+        "ru": "Я восхищаюсь её смелостью."
+      }
+    },
+    {
+      "term": "forgive",
+      "translation": "прощать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Can you forgive me?",
+        "ru": "Можешь меня простить?"
+      }
+    },
+    {
+      "term": "cheer up",
+      "translation": "подбадривать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Try to cheer your friend up.",
+        "ru": "Попробуй подбодрить друга."
+      }
+    },
+    {
+      "term": "get along",
+      "translation": "ладить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "They get along well.",
+        "ru": "Они хорошо ладят."
+      }
+    },
+    {
+      "term": "support each other",
+      "translation": "поддерживать друг друга",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Good friends support each other.",
+        "ru": "Хорошие друзья поддерживают друг друга."
+      }
+    },
+    {
+      "term": "express",
+      "translation": "выражать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "It's important to express your feelings.",
+        "ru": "Важно выражать свои чувства."
+      }
+    },
+    {
+      "term": "grateful",
+      "translation": "благодарный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I'm grateful for your help.",
+        "ru": "Я благодарен за помощь."
+      }
+    },
+    {
+      "term": "anxious",
+      "translation": "тревожный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She felt anxious before the exam.",
+        "ru": "Она тревожилась перед экзаменом."
+      }
+    },
+    {
+      "term": "jealous",
+      "translation": "ревнивый, завистливый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "He felt jealous of his friend.",
+        "ru": "Он завидовал другу."
+      }
+    },
+    {
+      "term": "confident",
+      "translation": "уверенный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She feels confident now.",
+        "ru": "Сейчас она чувствует уверенность."
+      }
+    },
+    {
+      "term": "lonely",
+      "translation": "одинокий",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I felt lonely in the new town.",
+        "ru": "В новом городе мне было одиноко."
+      }
+    },
+    {
+      "term": "make friends",
+      "translation": "заводить друзей",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "It's easy to make friends here.",
+        "ru": "Здесь легко завести друзей."
+      }
+    },
+    {
+      "term": "lose your temper",
+      "translation": "выйти из себя",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Try not to lose your temper.",
+        "ru": "Старайся не выходить из себя."
+      }
+    },
+    {
+      "term": "say sorry",
+      "translation": "извиниться",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Don't be afraid to say sorry.",
+        "ru": "Не бойся извиняться."
+      }
+    },
+    {
+      "term": "have a disagreement",
+      "translation": "не соглашаться, спорить",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We had a disagreement about the plan.",
+        "ru": "Мы поспорили о плане."
       }
     }
   ]

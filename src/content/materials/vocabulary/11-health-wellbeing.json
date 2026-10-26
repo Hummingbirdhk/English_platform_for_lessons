@@ -15,7 +15,8 @@
       "example": {
         "en": "A headache can be a symptom of illness.",
         "ru": "Головная боль может быть симптомом болезни."
-      }
+      },
+      "collocations": ["common symptom", "show symptoms"]
     },
     {
       "term": "treatment",
@@ -24,7 +25,8 @@
       "example": {
         "en": "The treatment helped her recover.",
         "ru": "Лечение помогло ей выздороветь."
-      }
+      },
+      "collocations": ["medical treatment", "receive treatment"]
     },
     {
       "term": "balanced diet",
@@ -78,6 +80,234 @@
       "example": {
         "en": "Teenagers need to get enough sleep.",
         "ru": "Подросткам нужно высыпаться."
+      }
+    },
+    {
+      "term": "appointment",
+      "translation": "приём у врача",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I have a doctor's appointment.",
+        "ru": "У меня запись к врачу."
+      },
+      "collocations": ["doctor's appointment", "make an appointment"]
+    },
+    {
+      "term": "injury",
+      "translation": "травма",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "He had a minor injury.",
+        "ru": "У него была небольшая травма."
+      }
+    },
+    {
+      "term": "pain",
+      "translation": "боль",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I have a pain in my shoulder.",
+        "ru": "У меня болит плечо."
+      }
+    },
+    {
+      "term": "headache",
+      "translation": "головная боль",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I've got a terrible headache.",
+        "ru": "У меня ужасно болит голова."
+      }
+    },
+    {
+      "term": "fever",
+      "translation": "температура, жар",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She has a high fever.",
+        "ru": "У неё высокая температура."
+      }
+    },
+    {
+      "term": "medicine",
+      "translation": "лекарство",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Take the medicine after meals.",
+        "ru": "Принимай лекарство после еды."
+      }
+    },
+    {
+      "term": "prescription",
+      "translation": "рецепт врача",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The doctor gave me a prescription.",
+        "ru": "Врач выписал мне рецепт."
+      },
+      "collocations": ["get a prescription", "prescription medicine"]
+    },
+    {
+      "term": "stress",
+      "translation": "стресс",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Exams can cause stress.",
+        "ru": "Экзамены могут вызывать стресс."
+      },
+      "collocations": ["deal with stress", "reduce stress"]
+    },
+    {
+      "term": "habit",
+      "translation": "привычка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Walking is a healthy habit.",
+        "ru": "Ходить пешком — полезная привычка."
+      }
+    },
+    {
+      "term": "energy",
+      "translation": "энергия",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I have more energy in the morning.",
+        "ru": "Утром у меня больше энергии."
+      }
+    },
+    {
+      "term": "examine",
+      "translation": "осматривать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "The doctor examined my arm.",
+        "ru": "Врач осмотрел мою руку."
+      }
+    },
+    {
+      "term": "treat",
+      "translation": "лечить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "They treated the injury quickly.",
+        "ru": "Они быстро обработали травму."
+      }
+    },
+    {
+      "term": "avoid",
+      "translation": "избегать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Avoid too much sugar.",
+        "ru": "Избегай избытка сахара."
+      }
+    },
+    {
+      "term": "exercise",
+      "translation": "заниматься физкультурой",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I exercise three times a week.",
+        "ru": "Я занимаюсь спортом трижды в неделю."
+      }
+    },
+    {
+      "term": "relax",
+      "translation": "расслабляться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Music helps me relax.",
+        "ru": "Музыка помогает мне расслабляться."
+      }
+    },
+    {
+      "term": "suffer from",
+      "translation": "страдать от",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "He suffers from allergies.",
+        "ru": "Он страдает от аллергии."
+      }
+    },
+    {
+      "term": "painful",
+      "translation": "болезненный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "My knee is still painful.",
+        "ru": "Моё колено всё ещё болит."
+      }
+    },
+    {
+      "term": "dizzy",
+      "translation": "испытывающий головокружение",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I felt dizzy after standing up.",
+        "ru": "У меня закружилась голова, когда я встал."
+      }
+    },
+    {
+      "term": "unwell",
+      "translation": "нездоровый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She has been unwell all week.",
+        "ru": "Всю неделю она плохо себя чувствует."
+      }
+    },
+    {
+      "term": "fit",
+      "translation": "в хорошей форме",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Cycling keeps me fit.",
+        "ru": "Велосипед помогает мне оставаться в форме."
+      }
+    },
+    {
+      "term": "get better",
+      "translation": "выздоравливать",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I hope you get better soon.",
+        "ru": "Надеюсь, ты скоро поправишься."
+      }
+    },
+    {
+      "term": "make an appointment",
+      "translation": "записаться на приём",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I need to make an appointment.",
+        "ru": "Мне нужно записаться на приём."
+      }
+    },
+    {
+      "term": "have a sore throat",
+      "translation": "иметь больное горло",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I have a sore throat today.",
+        "ru": "У меня сегодня болит горло."
+      }
+    },
+    {
+      "term": "take a break",
+      "translation": "сделать перерыв",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Take a break after studying.",
+        "ru": "Сделай перерыв после учёбы."
+      }
+    },
+    {
+      "term": "look after yourself",
+      "translation": "заботиться о себе",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Remember to look after yourself.",
+        "ru": "Не забывай заботиться о себе."
       }
     }
   ]

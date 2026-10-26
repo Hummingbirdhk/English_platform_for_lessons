@@ -15,7 +15,8 @@
       "example": {
         "en": "Our timetable changes on Monday.",
         "ru": "Наше расписание меняется в понедельник."
-      }
+      },
+      "collocations": ["school timetable", "check the timetable"]
     },
     {
       "term": "break",
@@ -42,7 +43,8 @@
       "example": {
         "en": "I revise new words before a test.",
         "ru": "Я повторяю новые слова перед тестом."
-      }
+      },
+      "collocations": ["revise for a test", "revise vocabulary"]
     },
     {
       "term": "pack",
@@ -87,6 +89,234 @@
       "example": {
         "en": "Please be on time for class.",
         "ru": "Пожалуйста, приходи на урок вовремя."
+      }
+    },
+    {
+      "term": "morning routine",
+      "translation": "утренний распорядок",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My morning routine takes an hour.",
+        "ru": "Мой утренний распорядок занимает час."
+      }
+    },
+    {
+      "term": "alarm clock",
+      "translation": "будильник",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "My alarm clock rings at seven.",
+        "ru": "Мой будильник звонит в семь."
+      }
+    },
+    {
+      "term": "school uniform",
+      "translation": "школьная форма",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We wear a school uniform.",
+        "ru": "Мы носим школьную форму."
+      }
+    },
+    {
+      "term": "assignment",
+      "translation": "задание",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The assignment is due on Friday.",
+        "ru": "Задание нужно сдать в пятницу."
+      },
+      "collocations": ["complete an assignment", "hand in an assignment"]
+    },
+    {
+      "term": "deadline",
+      "translation": "крайний срок",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Don't forget the deadline.",
+        "ru": "Не забудь крайний срок."
+      },
+      "collocations": ["meet a deadline", "miss a deadline"]
+    },
+    {
+      "term": "stationery",
+      "translation": "канцелярские принадлежности",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I bought new stationery.",
+        "ru": "Я купил новые канцелярские принадлежности."
+      }
+    },
+    {
+      "term": "notebook",
+      "translation": "тетрадь",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Write it in your notebook.",
+        "ru": "Запиши это в тетрадь."
+      }
+    },
+    {
+      "term": "head teacher",
+      "translation": "директор школы",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The head teacher spoke to us.",
+        "ru": "Директор школы поговорил с нами."
+      }
+    },
+    {
+      "term": "canteen",
+      "translation": "столовая",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We eat lunch in the canteen.",
+        "ru": "Мы обедаем в столовой."
+      }
+    },
+    {
+      "term": "mark",
+      "translation": "оценка",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "She got a good mark in English.",
+        "ru": "Она получила хорошую оценку по английскому."
+      }
+    },
+    {
+      "term": "attend",
+      "translation": "посещать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I attend an English club.",
+        "ru": "Я посещаю английский кружок."
+      }
+    },
+    {
+      "term": "hand in",
+      "translation": "сдавать работу",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Hand in your homework tomorrow.",
+        "ru": "Сдай домашнюю работу завтра."
+      }
+    },
+    {
+      "term": "catch up",
+      "translation": "наверстать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I need to catch up after being ill.",
+        "ru": "Мне нужно наверстать материал после болезни."
+      }
+    },
+    {
+      "term": "prepare",
+      "translation": "готовиться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We prepare for tests together.",
+        "ru": "Мы вместе готовимся к тестам."
+      }
+    },
+    {
+      "term": "concentrate",
+      "translation": "сосредотачиваться",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "It's hard to concentrate in noise.",
+        "ru": "Трудно сосредоточиться в шуме."
+      }
+    },
+    {
+      "term": "organise",
+      "translation": "организовывать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "I organise my notes by topic.",
+        "ru": "Я распределяю конспекты по темам."
+      }
+    },
+    {
+      "term": "regular",
+      "translation": "регулярный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Regular practice helps.",
+        "ru": "Регулярные занятия помогают."
+      }
+    },
+    {
+      "term": "punctual",
+      "translation": "пунктуальный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "She is always punctual.",
+        "ru": "Она всегда приходит вовремя."
+      }
+    },
+    {
+      "term": "tired",
+      "translation": "уставший",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "I feel tired after school.",
+        "ru": "Я устаю после школы."
+      }
+    },
+    {
+      "term": "rarely",
+      "translation": "редко",
+      "partOfSpeech": "adverb",
+      "example": {
+        "en": "We rarely get homework on Fridays.",
+        "ru": "По пятницам нам редко задают домашку."
+      }
+    },
+    {
+      "term": "hardly ever",
+      "translation": "почти никогда",
+      "partOfSpeech": "adverb",
+      "example": {
+        "en": "I hardly ever miss a class.",
+        "ru": "Я почти никогда не пропускаю уроки."
+      }
+    },
+    {
+      "term": "take notes",
+      "translation": "делать записи",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Take notes during the lesson.",
+        "ru": "Делай записи во время урока."
+      }
+    },
+    {
+      "term": "make progress",
+      "translation": "делать успехи",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "You're making great progress.",
+        "ru": "Ты делаешь большие успехи."
+      },
+      "collocations": ["make steady progress", "make progress in English"]
+    },
+    {
+      "term": "learn by heart",
+      "translation": "учить наизусть",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Learn these words by heart.",
+        "ru": "Выучи эти слова наизусть."
+      }
+    },
+    {
+      "term": "after-school activity",
+      "translation": "занятие после школы",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Chess is my after-school activity.",
+        "ru": "Шахматы — моё занятие после школы."
       }
     }
   ]
