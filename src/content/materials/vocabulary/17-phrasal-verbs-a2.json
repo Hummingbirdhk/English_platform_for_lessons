@@ -15,7 +15,8 @@
       "example": {
         "en": "I get up at seven every day.",
         "ru": "Я встаю в семь каждый день."
-      }
+      },
+      "collocations": ["get up early", "get up late"]
     },
     {
       "term": "put on",
@@ -24,7 +25,8 @@
       "example": {
         "en": "Put on your warm coat.",
         "ru": "Надень тёплое пальто."
-      }
+      },
+      "collocations": ["put on a coat", "put on your shoes"]
     },
     {
       "term": "take off",
@@ -33,7 +35,8 @@
       "example": {
         "en": "Take off your shoes at the door.",
         "ru": "Сними обувь у двери."
-      }
+      },
+      "collocations": ["take off a jacket", "take off your shoes"]
     },
     {
       "term": "turn on",
@@ -42,7 +45,8 @@
       "example": {
         "en": "Can you turn on the light?",
         "ru": "Можешь включить свет?"
-      }
+      },
+      "collocations": ["turn on the lights", "turn on a computer"]
     },
     {
       "term": "turn off",
@@ -51,7 +55,8 @@
       "example": {
         "en": "Turn off your phone in class.",
         "ru": "Выключи телефон на уроке."
-      }
+      },
+      "collocations": ["turn off the TV", "turn off the engine"]
     },
     {
       "term": "look for",
@@ -60,7 +65,8 @@
       "example": {
         "en": "I'm looking for my keys.",
         "ru": "Я ищу ключи."
-      }
+      },
+      "collocations": ["look for a job", "look for information"]
     },
     {
       "term": "pick up",

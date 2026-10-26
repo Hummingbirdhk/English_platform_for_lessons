@@ -15,7 +15,8 @@
       "example": {
         "en": "The quiz was a piece of cake.",
         "ru": "Викторина оказалась проще простого."
-      }
+      },
+      "collocations": ["the test was a piece of cake", "find something a piece of cake"]
     },
     {
       "term": "under the weather",
@@ -24,7 +25,8 @@
       "example": {
         "en": "I'm a bit under the weather today.",
         "ru": "Сегодня я немного неважно себя чувствую."
-      }
+      },
+      "collocations": ["feel under the weather", "be a bit under the weather"]
     },
     {
       "term": "break the ice",
@@ -33,7 +35,8 @@
       "example": {
         "en": "A game helped us break the ice.",
         "ru": "Игра помогла нам познакомиться и снять напряжение."
-      }
+      },
+      "collocations": ["break the ice at a party", "help break the ice"]
     },
     {
       "term": "once in a blue moon",
@@ -42,7 +45,8 @@
       "example": {
         "en": "We eat out once in a blue moon.",
         "ru": "Мы очень редко едим вне дома."
-      }
+      },
+      "collocations": ["go out once in a blue moon", "happen once in a blue moon"]
     },
     {
       "term": "in the same boat",
@@ -69,7 +73,8 @@
       "example": {
         "en": "I need to hit the books tonight.",
         "ru": "Сегодня вечером мне нужно усердно позаниматься."
-      }
+      },
+      "collocations": ["hit the books tonight", "need to hit the books"]
     },
     {
       "term": "keep an eye on",
@@ -78,7 +83,8 @@
       "example": {
         "en": "Can you keep an eye on my bag?",
         "ru": "Можешь присмотреть за моей сумкой?"
-      }
+      },
+      "collocations": ["keep an eye on your bag", "keep an eye on the children"]
     },
     {
       "term": "learn by heart",

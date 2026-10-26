@@ -24,7 +24,8 @@
       "example": {
         "en": "How do you deal with stress?",
         "ru": "Как ты справляешься со стрессом?"
-      }
+      },
+      "collocations": ["deal with a problem", "deal with stress"]
     },
     {
       "term": "run out of",
@@ -33,7 +34,8 @@
       "example": {
         "en": "We've run out of milk.",
         "ru": "У нас закончилось молоко."
-      }
+      },
+      "collocations": ["run out of time", "run out of money"]
     },
     {
       "term": "put off",
@@ -42,7 +44,8 @@
       "example": {
         "en": "Don't put off your homework.",
         "ru": "Не откладывай домашнюю работу."
-      }
+      },
+      "collocations": ["put off a meeting", "put off doing something"]
     },
     {
       "term": "work out",
@@ -96,7 +99,8 @@
       "example": {
         "en": "She came up with a great idea.",
         "ru": "Она придумала отличную идею."
-      }
+      },
+      "collocations": ["come up with a plan", "come up with an idea"]
     },
     {
       "term": "bring up",
@@ -123,7 +127,8 @@
       "example": {
         "en": "I finally figured out the problem.",
         "ru": "Я наконец разобрался с проблемой."
-      }
+      },
+      "collocations": ["figure out the answer", "figure out how to"]
     },
     {
       "term": "sort out",
@@ -168,7 +173,8 @@
       "example": {
         "en": "Our car broke down yesterday.",
         "ru": "Вчера наша машина сломалась."
-      }
+      },
+      "collocations": ["car breaks down", "machine breaks down"]
     },
     {
       "term": "turn down",
