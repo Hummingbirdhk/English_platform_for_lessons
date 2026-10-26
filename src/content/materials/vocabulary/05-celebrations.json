@@ -88,6 +88,231 @@
         "en": "I look forward to the holiday.",
         "ru": "Я с нетерпением жду праздника."
       }
+    },
+    {
+      "term": "anniversary",
+      "translation": "годовщина",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Today is our school's anniversary.",
+        "ru": "Сегодня годовщина основания нашей школы."
+      }
+    },
+    {
+      "term": "guest",
+      "translation": "гость",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We invited twenty guests.",
+        "ru": "Мы пригласили двадцать гостей."
+      }
+    },
+    {
+      "term": "host",
+      "translation": "хозяин мероприятия",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our host welcomed everyone.",
+        "ru": "Хозяин мероприятия поприветствовал всех."
+      }
+    },
+    {
+      "term": "fireworks",
+      "translation": "фейерверк",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We watched fireworks at midnight.",
+        "ru": "В полночь мы смотрели фейерверк."
+      }
+    },
+    {
+      "term": "decoration",
+      "translation": "украшение",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The decorations looked beautiful.",
+        "ru": "Украшения выглядели красиво."
+      }
+    },
+    {
+      "term": "parade",
+      "translation": "парад",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There was a parade in the town.",
+        "ru": "В городе прошёл парад."
+      }
+    },
+    {
+      "term": "ceremony",
+      "translation": "церемония",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The ceremony started at noon.",
+        "ru": "Церемония началась в полдень."
+      }
+    },
+    {
+      "term": "gift",
+      "translation": "подарок",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "I made a gift for my mum.",
+        "ru": "Я сделал подарок маме."
+      }
+    },
+    {
+      "term": "surprise",
+      "translation": "сюрприз",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The party was a surprise.",
+        "ru": "Вечеринка была сюрпризом."
+      }
+    },
+    {
+      "term": "candle",
+      "translation": "свеча",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There were twelve candles on the cake.",
+        "ru": "На торте было двенадцать свечей."
+      }
+    },
+    {
+      "term": "congratulate",
+      "translation": "поздравлять",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We congratulated the winners.",
+        "ru": "Мы поздравили победителей."
+      }
+    },
+    {
+      "term": "decorate the room",
+      "translation": "украшать комнату",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Let's decorate the room together.",
+        "ru": "Давай вместе украсим комнату."
+      }
+    },
+    {
+      "term": "wrap a present",
+      "translation": "заворачивать подарок",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I wrapped the present in blue paper.",
+        "ru": "Я завернул подарок в синюю бумагу."
+      }
+    },
+    {
+      "term": "organise a party",
+      "translation": "организовать вечеринку",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We organised a party for Tom.",
+        "ru": "Мы организовали вечеринку для Тома."
+      }
+    },
+    {
+      "term": "blow out candles",
+      "translation": "задувать свечи",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Make a wish and blow out the candles.",
+        "ru": "Загадай желание и задуй свечи."
+      }
+    },
+    {
+      "term": "exchange gifts",
+      "translation": "обмениваться подарками",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We exchange gifts at New Year.",
+        "ru": "Мы обмениваемся подарками на Новый год."
+      }
+    },
+    {
+      "term": "dress up",
+      "translation": "наряжаться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "The children dressed up as pirates.",
+        "ru": "Дети нарядились пиратами."
+      }
+    },
+    {
+      "term": "perform",
+      "translation": "выступать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Our class performed a song.",
+        "ru": "Наш класс исполнил песню."
+      }
+    },
+    {
+      "term": "colourful",
+      "translation": "красочный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The parade was colourful.",
+        "ru": "Парад был красочным."
+      }
+    },
+    {
+      "term": "festive",
+      "translation": "праздничный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The room looked festive.",
+        "ru": "Комната выглядела празднично."
+      }
+    },
+    {
+      "term": "memorable",
+      "translation": "незабываемый",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It was a memorable day.",
+        "ru": "Это был незабываемый день."
+      }
+    },
+    {
+      "term": "excited",
+      "translation": "взволнованный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The children were excited.",
+        "ru": "Дети были в восторге."
+      }
+    },
+    {
+      "term": "make a wish",
+      "translation": "загадать желание",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Close your eyes and make a wish.",
+        "ru": "Закрой глаза и загадай желание."
+      }
+    },
+    {
+      "term": "have a good time",
+      "translation": "хорошо проводить время",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We had a good time at the festival.",
+        "ru": "Мы хорошо провели время на фестивале."
+      }
+    },
+    {
+      "term": "send an invitation",
+      "translation": "отправить приглашение",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "Did you send the invitation?",
+        "ru": "Ты отправил приглашение?"
+      }
     }
   ]
 }

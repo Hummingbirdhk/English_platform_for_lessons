@@ -88,6 +88,231 @@
         "en": "The library is next to the school.",
         "ru": "Библиотека рядом со школой."
       }
+    },
+    {
+      "term": "detached house",
+      "translation": "отдельно стоящий дом",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They live in a detached house.",
+        "ru": "Они живут в отдельном доме."
+      }
+    },
+    {
+      "term": "block of flats",
+      "translation": "многоквартирный дом",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our block of flats is new.",
+        "ru": "Наш многоквартирный дом новый."
+      }
+    },
+    {
+      "term": "basement",
+      "translation": "подвал",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "We store bikes in the basement.",
+        "ru": "Мы храним велосипеды в подвале."
+      }
+    },
+    {
+      "term": "attic",
+      "translation": "чердак",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There are old boxes in the attic.",
+        "ru": "На чердаке стоят старые коробки."
+      }
+    },
+    {
+      "term": "balcony",
+      "translation": "балкон",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Our flat has a small balcony.",
+        "ru": "В нашей квартире маленький балкон."
+      }
+    },
+    {
+      "term": "curtains",
+      "translation": "шторы",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Close the curtains, please.",
+        "ru": "Закрой шторы, пожалуйста."
+      }
+    },
+    {
+      "term": "carpet",
+      "translation": "ковёр",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "There is a carpet under the table.",
+        "ru": "Под столом лежит ковёр."
+      }
+    },
+    {
+      "term": "cupboard",
+      "translation": "шкафчик",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "The plates are in the cupboard.",
+        "ru": "Тарелки в шкафчике."
+      }
+    },
+    {
+      "term": "armchair",
+      "translation": "кресло",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Grandma sits in her favourite armchair.",
+        "ru": "Бабушка сидит в любимом кресле."
+      }
+    },
+    {
+      "term": "pavement",
+      "translation": "тротуар",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "Stay on the pavement.",
+        "ru": "Оставайся на тротуаре."
+      }
+    },
+    {
+      "term": "suburb",
+      "translation": "пригород",
+      "partOfSpeech": "noun",
+      "example": {
+        "en": "They moved to a quiet suburb.",
+        "ru": "Они переехали в тихий пригород."
+      }
+    },
+    {
+      "term": "rent",
+      "translation": "арендовать",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "We rent a small flat.",
+        "ru": "Мы снимаем небольшую квартиру."
+      }
+    },
+    {
+      "term": "tidy up",
+      "translation": "убираться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Please tidy up your room.",
+        "ru": "Пожалуйста, уберись в комнате."
+      }
+    },
+    {
+      "term": "repair",
+      "translation": "чинить",
+      "partOfSpeech": "verb",
+      "example": {
+        "en": "Dad repaired the broken chair.",
+        "ru": "Папа починил сломанный стул."
+      }
+    },
+    {
+      "term": "share a room",
+      "translation": "делить комнату",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I share a room with my sister.",
+        "ru": "Мы с сестрой живём в одной комнате."
+      }
+    },
+    {
+      "term": "cosy",
+      "translation": "уютный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "This café is cosy.",
+        "ru": "Это кафе уютное."
+      }
+    },
+    {
+      "term": "messy",
+      "translation": "неубранный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "His bedroom is always messy.",
+        "ru": "В его комнате всегда беспорядок."
+      }
+    },
+    {
+      "term": "modern",
+      "translation": "современный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "Their kitchen looks modern.",
+        "ru": "Их кухня выглядит современной."
+      }
+    },
+    {
+      "term": "peaceful",
+      "translation": "спокойный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "It's a peaceful street.",
+        "ru": "Это спокойная улица."
+      }
+    },
+    {
+      "term": "noisy",
+      "translation": "шумный",
+      "partOfSpeech": "adjective",
+      "example": {
+        "en": "The neighbours are noisy tonight.",
+        "ru": "Сегодня соседи шумят."
+      }
+    },
+    {
+      "term": "opposite",
+      "translation": "напротив",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The post office is opposite the bank.",
+        "ru": "Почта напротив банка."
+      }
+    },
+    {
+      "term": "on the corner",
+      "translation": "на углу",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "There's a bakery on the corner.",
+        "ru": "На углу есть пекарня."
+      }
+    },
+    {
+      "term": "in the middle of",
+      "translation": "посередине",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "The table is in the middle of the room.",
+        "ru": "Стол посередине комнаты."
+      }
+    },
+    {
+      "term": "make the bed",
+      "translation": "заправлять кровать",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "I make the bed every morning.",
+        "ru": "Я заправляю кровать каждое утро."
+      }
+    },
+    {
+      "term": "do the housework",
+      "translation": "делать работу по дому",
+      "partOfSpeech": "phrase",
+      "example": {
+        "en": "We do the housework on Saturdays.",
+        "ru": "Мы занимаемся домашними делами по субботам."
+      }
     }
   ]
 }
