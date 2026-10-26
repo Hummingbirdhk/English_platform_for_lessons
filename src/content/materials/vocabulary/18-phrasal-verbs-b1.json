@@ -97,6 +97,231 @@
         "en": "She came up with a great idea.",
         "ru": "Она придумала отличную идею."
       }
+    },
+    {
+      "term": "bring up",
+      "translation": "поднимать тему",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She brought up an important question.",
+        "ru": "Она подняла важный вопрос."
+      }
+    },
+    {
+      "term": "point out",
+      "translation": "указывать на",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "He pointed out a mistake.",
+        "ru": "Он указал на ошибку."
+      }
+    },
+    {
+      "term": "figure out",
+      "translation": "разобраться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I finally figured out the problem.",
+        "ru": "Я наконец разобрался с проблемой."
+      }
+    },
+    {
+      "term": "sort out",
+      "translation": "разобраться, уладить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We need to sort out the schedule.",
+        "ru": "Нам нужно разобраться с расписанием."
+      }
+    },
+    {
+      "term": "put up with",
+      "translation": "мириться с",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I can't put up with the noise.",
+        "ru": "Я не могу мириться с этим шумом."
+      }
+    },
+    {
+      "term": "look forward to",
+      "translation": "ждать с нетерпением",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I look forward to seeing you.",
+        "ru": "Я с нетерпением жду встречи с тобой."
+      }
+    },
+    {
+      "term": "get along with",
+      "translation": "ладить с",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I get along with my classmates.",
+        "ru": "Я хорошо лажу с одноклассниками."
+      }
+    },
+    {
+      "term": "break down",
+      "translation": "ломаться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Our car broke down yesterday.",
+        "ru": "Вчера наша машина сломалась."
+      }
+    },
+    {
+      "term": "turn down",
+      "translation": "отказывать, отклонять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She turned down the offer.",
+        "ru": "Она отклонила предложение."
+      }
+    },
+    {
+      "term": "turn up",
+      "translation": "появляться",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "He turned up twenty minutes late.",
+        "ru": "Он появился с опозданием на двадцать минут."
+      }
+    },
+    {
+      "term": "take over",
+      "translation": "брать на себя управление",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She took over the project.",
+        "ru": "Она взяла проект под своё руководство."
+      }
+    },
+    {
+      "term": "come across",
+      "translation": "случайно находить",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I came across an old photo.",
+        "ru": "Я случайно нашёл старую фотографию."
+      }
+    },
+    {
+      "term": "make up",
+      "translation": "придумывать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Don't make up excuses.",
+        "ru": "Не придумывай оправдания."
+      }
+    },
+    {
+      "term": "make up for",
+      "translation": "компенсировать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I'll make up for the lost time.",
+        "ru": "Я наверстаю потерянное время."
+      }
+    },
+    {
+      "term": "cut down on",
+      "translation": "сокращать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I'm cutting down on sugary drinks.",
+        "ru": "Я сокращаю употребление сладких напитков."
+      }
+    },
+    {
+      "term": "drop out of",
+      "translation": "бросать учёбу или курс",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "He dropped out of the course.",
+        "ru": "Он бросил курс."
+      }
+    },
+    {
+      "term": "keep up with",
+      "translation": "успевать за",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "It's hard to keep up with the class.",
+        "ru": "Трудно успевать за классом."
+      }
+    },
+    {
+      "term": "go through",
+      "translation": "переживать, проходить через",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "They went through a difficult period.",
+        "ru": "Они пережили трудный период."
+      }
+    },
+    {
+      "term": "get rid of",
+      "translation": "избавляться от",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I need to get rid of these old papers.",
+        "ru": "Мне нужно избавиться от старых бумаг."
+      }
+    },
+    {
+      "term": "put together",
+      "translation": "составлять, собирать",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "We put together a presentation.",
+        "ru": "Мы подготовили презентацию."
+      }
+    },
+    {
+      "term": "check out",
+      "translation": "проверить, посмотреть",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Check out this new website.",
+        "ru": "Посмотри этот новый сайт."
+      }
+    },
+    {
+      "term": "carry out",
+      "translation": "выполнять",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "They carried out an experiment.",
+        "ru": "Они провели эксперимент."
+      }
+    },
+    {
+      "term": "hand in",
+      "translation": "сдавать работу",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "Hand in the essay on Monday.",
+        "ru": "Сдай эссе в понедельник."
+      }
+    },
+    {
+      "term": "come around",
+      "translation": "изменить мнение",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "She eventually came around to our idea.",
+        "ru": "В итоге она согласилась с нашей идеей."
+      }
+    },
+    {
+      "term": "get by",
+      "translation": "справляться с трудом",
+      "partOfSpeech": "phrasal_verb",
+      "example": {
+        "en": "I can get by with basic English.",
+        "ru": "Я могу объясниться на базовом английском."
+      }
     }
   ]
 }
