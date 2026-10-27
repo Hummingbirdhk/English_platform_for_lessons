@@ -1,0 +1,256 @@
+{
+  "id": "vocabulary-excel-technology-media",
+  "type": "vocabulary",
+  "title": "Технологии и медиа",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Technology & Media",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 40 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "technology",
+      "translation": "технологии",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "computer",
+      "translation": "компьютер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "laptop",
+      "translation": "ноутбук",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tablet",
+      "translation": "планшет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "smartphone",
+      "translation": "смартфон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mobile phone",
+      "translation": "мобильный телефон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "screen",
+      "translation": "экран",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "keyboard",
+      "translation": "клавиатура",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mouse",
+      "translation": "мышь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "printer",
+      "translation": "принтер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "camera",
+      "translation": "камера",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "headphones",
+      "translation": "наушники",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "charger",
+      "translation": "зарядное устройство",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "battery",
+      "translation": "батарея, аккумулятор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "internet",
+      "translation": "интернет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "website",
+      "translation": "веб-сайт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "app",
+      "translation": "приложение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "email",
+      "translation": "электронное письмо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "message",
+      "translation": "сообщение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "password",
+      "translation": "пароль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "file",
+      "translation": "файл",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "photo",
+      "translation": "фотография",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "video",
+      "translation": "видео",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "social media",
+      "translation": "социальные сети",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "news",
+      "translation": "новости",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "newspaper",
+      "translation": "газета",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "magazine",
+      "translation": "журнал",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "radio",
+      "translation": "радио",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "TV programme",
+      "translation": "телепрограмма",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "download",
+      "translation": "скачивать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "upload",
+      "translation": "загружать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "click",
+      "translation": "нажимать, кликать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "search",
+      "translation": "искать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "send",
+      "translation": "отправлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "receive",
+      "translation": "получать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "turn on",
+      "translation": "включать",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "turn off",
+      "translation": "выключать",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "log in",
+      "translation": "входить в аккаунт",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1"
+    },
+    {
+      "term": "online",
+      "translation": "онлайн",
+      "partOfSpeech": "adjective/adverb",
+      "level": "A2"
+    },
+    {
+      "term": "digital",
+      "translation": "цифровой",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    }
+  ]
+}

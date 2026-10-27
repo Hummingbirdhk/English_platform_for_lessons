@@ -1,0 +1,304 @@
+{
+  "id": "vocabulary-excel-body-health",
+  "type": "vocabulary",
+  "title": "Тело и здоровье",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Body & Health",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 48 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "body",
+      "translation": "тело",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "head",
+      "translation": "голова",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "face",
+      "translation": "лицо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "eye",
+      "translation": "глаз",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ear",
+      "translation": "ухо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "nose",
+      "translation": "нос",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mouth",
+      "translation": "рот",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tooth",
+      "translation": "зуб",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "teeth",
+      "translation": "зубы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "neck",
+      "translation": "шея",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shoulder",
+      "translation": "плечо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "arm",
+      "translation": "рука",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "elbow",
+      "translation": "локоть",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "hand",
+      "translation": "кисть, рука",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "finger",
+      "translation": "палец руки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "back",
+      "translation": "спина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "stomach",
+      "translation": "живот, желудок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "leg",
+      "translation": "нога",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "knee",
+      "translation": "колено",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "foot",
+      "translation": "ступня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "feet",
+      "translation": "ступни",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "toe",
+      "translation": "палец ноги",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "heart",
+      "translation": "сердце",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "health",
+      "translation": "здоровье",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "illness",
+      "translation": "болезнь",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "cold",
+      "translation": "простуда",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "flu",
+      "translation": "грипп",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cough",
+      "translation": "кашель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "temperature",
+      "translation": "температура",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "headache",
+      "translation": "головная боль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "toothache",
+      "translation": "зубная боль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "stomach ache",
+      "translation": "боль в животе",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sore throat",
+      "translation": "боль в горле",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "medicine",
+      "translation": "лекарство",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tablet",
+      "translation": "таблетка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "doctor",
+      "translation": "врач",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dentist",
+      "translation": "стоматолог",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "patient",
+      "translation": "пациент",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "appointment",
+      "translation": "приём, запись",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hurt",
+      "translation": "болеть; причинять боль",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "feel ill",
+      "translation": "плохо себя чувствовать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "get better",
+      "translation": "выздоравливать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "rest",
+      "translation": "отдыхать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "take medicine",
+      "translation": "принимать лекарство",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "healthy",
+      "translation": "здоровый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "sick",
+      "translation": "больной",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "tired",
+      "translation": "уставший",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "well",
+      "translation": "здоров, хорошо",
+      "partOfSpeech": "adjective/adverb",
+      "level": "A2"
+    }
+  ]
+}

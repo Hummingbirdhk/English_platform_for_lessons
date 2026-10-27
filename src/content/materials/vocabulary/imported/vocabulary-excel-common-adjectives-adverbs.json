@@ -1,0 +1,370 @@
+{
+  "id": "vocabulary-excel-common-adjectives-adverbs",
+  "type": "vocabulary",
+  "title": "Прилагательные и наречия",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Common & Adjectives & Adverbs",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 59 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "good",
+      "translation": "хороший",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "bad",
+      "translation": "плохой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "big",
+      "translation": "большой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "small",
+      "translation": "маленький",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "long",
+      "translation": "длинный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "short",
+      "translation": "короткий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "high",
+      "translation": "высокий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "low",
+      "translation": "низкий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "old",
+      "translation": "старый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "new",
+      "translation": "новый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "young",
+      "translation": "молодой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "easy",
+      "translation": "лёгкий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "difficult",
+      "translation": "трудный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "important",
+      "translation": "важный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "possible",
+      "translation": "возможный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "impossible",
+      "translation": "невозможный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "different",
+      "translation": "разный, отличающийся",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "same",
+      "translation": "такой же",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "right",
+      "translation": "правильный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "wrong",
+      "translation": "неправильный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "ready",
+      "translation": "готовый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "busy",
+      "translation": "занятый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "free",
+      "translation": "свободный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "full",
+      "translation": "полный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "empty",
+      "translation": "пустой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "clean",
+      "translation": "чистый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "dirty",
+      "translation": "грязный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "safe",
+      "translation": "безопасный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "dangerous",
+      "translation": "опасный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "popular",
+      "translation": "популярный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "famous",
+      "translation": "известный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "special",
+      "translation": "особенный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "useful",
+      "translation": "полезный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "careful",
+      "translation": "осторожный, внимательный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "careless",
+      "translation": "неосторожный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "successful",
+      "translation": "успешный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "local",
+      "translation": "местный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "international",
+      "translation": "международный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "probably",
+      "translation": "вероятно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "perhaps",
+      "translation": "возможно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "really",
+      "translation": "действительно, очень",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "quite",
+      "translation": "довольно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "very",
+      "translation": "очень",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "too",
+      "translation": "слишком; тоже",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "enough",
+      "translation": "достаточно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "almost",
+      "translation": "почти",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "already",
+      "translation": "уже",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "still",
+      "translation": "всё ещё",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "yet",
+      "translation": "ещё, уже (в вопросах/отрицаниях)",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "soon",
+      "translation": "скоро",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "recently",
+      "translation": "недавно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "usually",
+      "translation": "обычно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "especially",
+      "translation": "особенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "carefully",
+      "translation": "осторожно, внимательно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "quickly",
+      "translation": "быстро",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "slowly",
+      "translation": "медленно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "easily",
+      "translation": "легко",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "together",
+      "translation": "вместе",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "alone",
+      "translation": "один, в одиночестве",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": "vocabulary-excel-animals",
+  "type": "vocabulary",
+  "title": "Животные",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Animals",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 38 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "pet",
+      "translation": "домашний питомец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dog",
+      "translation": "собака",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cat",
+      "translation": "кошка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rabbit",
+      "translation": "кролик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hamster",
+      "translation": "хомяк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "guinea pig",
+      "translation": "морская свинка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "parrot",
+      "translation": "попугай",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fish",
+      "translation": "рыба",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "horse",
+      "translation": "лошадь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cow",
+      "translation": "корова",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sheep",
+      "translation": "овца",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "goat",
+      "translation": "коза",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pig",
+      "translation": "свинья",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chicken",
+      "translation": "курица",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "duck",
+      "translation": "утка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lion",
+      "translation": "лев",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tiger",
+      "translation": "тигр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "elephant",
+      "translation": "слон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "giraffe",
+      "translation": "жираф",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "monkey",
+      "translation": "обезьяна",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bear",
+      "translation": "медведь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wolf",
+      "translation": "волк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fox",
+      "translation": "лиса",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "deer",
+      "translation": "олень",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "snake",
+      "translation": "змея",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "frog",
+      "translation": "лягушка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "insect",
+      "translation": "насекомое",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bee",
+      "translation": "пчела",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "butterfly",
+      "translation": "бабочка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "spider",
+      "translation": "паук",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tail",
+      "translation": "хвост",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wing",
+      "translation": "крыло",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "paw",
+      "translation": "лапа",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "fur",
+      "translation": "шерсть, мех",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "feed",
+      "translation": "кормить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "bite",
+      "translation": "кусать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "wild",
+      "translation": "дикий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "dangerous",
+      "translation": "опасный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "id": "vocabulary-excel-celebrations-dates",
+  "type": "vocabulary",
+  "title": "Праздники и даты",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Celebrations & Dates",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 52 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "celebration",
+      "translation": "празднование",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "festival",
+      "translation": "фестиваль, праздник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "party",
+      "translation": "вечеринка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "birthday",
+      "translation": "день рождения",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wedding",
+      "translation": "свадьба",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "holiday",
+      "translation": "праздник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Christmas",
+      "translation": "Рождество",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "New Year",
+      "translation": "Новый год",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Easter",
+      "translation": "Пасха",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Halloween",
+      "translation": "Хэллоуин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "present",
+      "translation": "подарок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "gift",
+      "translation": "подарок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "card",
+      "translation": "открытка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "invitation",
+      "translation": "приглашение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "guest",
+      "translation": "гость",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "decoration",
+      "translation": "украшение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "balloon",
+      "translation": "воздушный шар",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "candle",
+      "translation": "свеча",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fireworks",
+      "translation": "фейерверк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "costume",
+      "translation": "костюм",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "parade",
+      "translation": "парад",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "tradition",
+      "translation": "традиция",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "custom",
+      "translation": "обычай",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "celebrate",
+      "translation": "праздновать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "invite",
+      "translation": "приглашать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "decorate",
+      "translation": "украшать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "give a present",
+      "translation": "дарить подарок",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "make a wish",
+      "translation": "загадывать желание",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "date",
+      "translation": "дата",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "day",
+      "translation": "день",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "week",
+      "translation": "неделя",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "month",
+      "translation": "месяц",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "year",
+      "translation": "год",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Monday",
+      "translation": "понедельник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Tuesday",
+      "translation": "вторник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Wednesday",
+      "translation": "среда",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Thursday",
+      "translation": "четверг",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Friday",
+      "translation": "пятница",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Saturday",
+      "translation": "суббота",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Sunday",
+      "translation": "воскресенье",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "January",
+      "translation": "январь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "February",
+      "translation": "февраль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "March",
+      "translation": "март",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "April",
+      "translation": "апрель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "May",
+      "translation": "май",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "June",
+      "translation": "июнь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "July",
+      "translation": "июль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "August",
+      "translation": "август",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "September",
+      "translation": "сентябрь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "October",
+      "translation": "октябрь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "November",
+      "translation": "ноябрь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "December",
+      "translation": "декабрь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    }
+  ]
+}

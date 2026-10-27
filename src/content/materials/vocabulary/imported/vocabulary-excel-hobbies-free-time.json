@@ -1,0 +1,244 @@
+{
+  "id": "vocabulary-excel-hobbies-free-time",
+  "type": "vocabulary",
+  "title": "Хобби и свободное время",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Hobbies & Free & Time",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 38 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "hobby",
+      "translation": "хобби",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "free time",
+      "translation": "свободное время",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "spare time",
+      "translation": "свободное время",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "music",
+      "translation": "музыка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "film",
+      "translation": "фильм",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "book",
+      "translation": "книга",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "game",
+      "translation": "игра",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "board game",
+      "translation": "настольная игра",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chess",
+      "translation": "шахматы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cards",
+      "translation": "карты",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "drawing",
+      "translation": "рисование",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "painting",
+      "translation": "живопись",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "photography",
+      "translation": "фотография",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "gardening",
+      "translation": "садоводство",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dancing",
+      "translation": "танцы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "singing",
+      "translation": "пение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "reading",
+      "translation": "чтение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cooking",
+      "translation": "готовка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fishing",
+      "translation": "рыбалка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "camping",
+      "translation": "кемпинг",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "collecting",
+      "translation": "коллекционирование",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "playing the guitar",
+      "translation": "игра на гитаре",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "go out",
+      "translation": "выходить куда-то, развлекаться",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "meet friends",
+      "translation": "встречаться с друзьями",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "watch TV",
+      "translation": "смотреть телевизор",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "listen to music",
+      "translation": "слушать музыку",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "read a book",
+      "translation": "читать книгу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "play computer games",
+      "translation": "играть в компьютерные игры",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "take photos",
+      "translation": "фотографировать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "join a club",
+      "translation": "вступить в клуб",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "enjoy",
+      "translation": "получать удовольствие, нравиться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "prefer",
+      "translation": "предпочитать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "be interested in",
+      "translation": "интересоваться",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "be good at",
+      "translation": "хорошо уметь",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "boring",
+      "translation": "скучный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "interesting",
+      "translation": "интересный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "exciting",
+      "translation": "захватывающий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "relaxing",
+      "translation": "расслабляющий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    }
+  ]
+}

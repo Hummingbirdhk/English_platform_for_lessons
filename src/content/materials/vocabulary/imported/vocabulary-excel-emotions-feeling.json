@@ -1,0 +1,220 @@
+{
+  "id": "vocabulary-excel-emotions-feeling",
+  "type": "vocabulary",
+  "title": "Чувства и эмоции",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Emotions & Feeling",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 34 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "feeling",
+      "translation": "чувство, ощущение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "emotion",
+      "translation": "эмоция",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "mood",
+      "translation": "настроение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "happy",
+      "translation": "счастливый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "sad",
+      "translation": "грустный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "angry",
+      "translation": "злой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "excited",
+      "translation": "взволнованный, радостно возбуждённый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "surprised",
+      "translation": "удивлённый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "worried",
+      "translation": "обеспокоенный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "nervous",
+      "translation": "нервный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "afraid",
+      "translation": "испуганный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "scared",
+      "translation": "напуганный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "tired",
+      "translation": "уставший",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "bored",
+      "translation": "скучающий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "interested",
+      "translation": "заинтересованный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "pleased",
+      "translation": "довольный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "proud",
+      "translation": "гордый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "embarrassed",
+      "translation": "смущённый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "disappointed",
+      "translation": "разочарованный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "lonely",
+      "translation": "одинокий",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "relaxed",
+      "translation": "расслабленный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "calm",
+      "translation": "спокойный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "confused",
+      "translation": "растерянный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "feel",
+      "translation": "чувствовать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "love",
+      "translation": "любить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "like",
+      "translation": "нравиться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "hate",
+      "translation": "ненавидеть",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "hope",
+      "translation": "надеяться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "worry",
+      "translation": "волноваться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "miss",
+      "translation": "скучать по",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "enjoy",
+      "translation": "получать удовольствие",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "smile",
+      "translation": "улыбаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "laugh",
+      "translation": "смеяться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "cry",
+      "translation": "плакать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    }
+  ]
+}
