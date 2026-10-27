@@ -1,0 +1,244 @@
+{
+  "id": "vocabulary-excel-daily-routine-time",
+  "type": "vocabulary",
+  "title": "Распорядок дня и время",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Daily & Routine & Time",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 38 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "routine",
+      "translation": "распорядок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "weekday",
+      "translation": "будний день",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "weekend",
+      "translation": "выходные",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "morning",
+      "translation": "утро",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "afternoon",
+      "translation": "день (после полудня)",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "evening",
+      "translation": "вечер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "night",
+      "translation": "ночь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wake up",
+      "translation": "просыпаться",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "get up",
+      "translation": "вставать",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "have a shower",
+      "translation": "принимать душ",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "brush your teeth",
+      "translation": "чистить зубы",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "get dressed",
+      "translation": "одеваться",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "have breakfast",
+      "translation": "завтракать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "leave home",
+      "translation": "выходить из дома",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "go to school",
+      "translation": "идти / ехать в школу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "go to work",
+      "translation": "идти / ехать на работу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "have lessons",
+      "translation": "быть на уроках",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "have lunch",
+      "translation": "обедать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "finish work",
+      "translation": "заканчивать работу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "come home",
+      "translation": "приходить домой",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "do homework",
+      "translation": "делать домашнюю работу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "have dinner",
+      "translation": "ужинать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "go to bed",
+      "translation": "ложиться спать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "sleep",
+      "translation": "спать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "rest",
+      "translation": "отдыхать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "relax",
+      "translation": "расслабляться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "always",
+      "translation": "всегда",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "usually",
+      "translation": "обычно",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "often",
+      "translation": "часто",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "sometimes",
+      "translation": "иногда",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "rarely",
+      "translation": "редко",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "never",
+      "translation": "никогда",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "early",
+      "translation": "рано; ранний",
+      "partOfSpeech": "adverb/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "late",
+      "translation": "поздно; поздний",
+      "partOfSpeech": "adverb/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "on time",
+      "translation": "вовремя",
+      "partOfSpeech": "adverb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "in time",
+      "translation": "успеть вовремя",
+      "partOfSpeech": "adverb phrase",
+      "level": "B1"
+    },
+    {
+      "term": "once a week",
+      "translation": "раз в неделю",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "twice a month",
+      "translation": "два раза в месяц",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    }
+  ]
+}

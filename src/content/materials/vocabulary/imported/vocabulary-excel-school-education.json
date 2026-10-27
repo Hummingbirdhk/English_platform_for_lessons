@@ -1,0 +1,328 @@
+{
+  "id": "vocabulary-excel-school-education",
+  "type": "vocabulary",
+  "title": "Школа и образование",
+  "grade": 6,
+  "level": "A2",
+  "topic": "School & Education",
+  "tags": [
+    "vocabulary",
+    "excel-import",
+    "A2-B1"
+  ],
+  "summary": "Тематический словарь из пользовательской выгрузки: 52 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "education",
+      "translation": "образование",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "school",
+      "translation": "школа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "primary school",
+      "translation": "начальная школа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "secondary school",
+      "translation": "средняя школа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "college",
+      "translation": "колледж",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "university",
+      "translation": "университет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "student",
+      "translation": "ученик, студент",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pupil",
+      "translation": "школьник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "teacher",
+      "translation": "учитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "classmate",
+      "translation": "одноклассник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "classroom",
+      "translation": "класс, кабинет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lesson",
+      "translation": "урок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "subject",
+      "translation": "предмет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "English",
+      "translation": "английский язык",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "Maths",
+      "translation": "математика",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "science",
+      "translation": "естественные науки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "history",
+      "translation": "история",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "geography",
+      "translation": "география",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "art",
+      "translation": "рисование, искусство",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "PE",
+      "translation": "физкультура",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "homework",
+      "translation": "домашняя работа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "exercise",
+      "translation": "упражнение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "test",
+      "translation": "тест",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "exam",
+      "translation": "экзамен",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mark",
+      "translation": "оценка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grade",
+      "translation": "оценка, класс",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "course",
+      "translation": "курс",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "project",
+      "translation": "проект",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "break",
+      "translation": "перемена",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "timetable",
+      "translation": "расписание",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "textbook",
+      "translation": "учебник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "notebook",
+      "translation": "тетрадь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dictionary",
+      "translation": "словарь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pen",
+      "translation": "ручка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pencil",
+      "translation": "карандаш",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ruler",
+      "translation": "линейка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rubber",
+      "translation": "ластик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "school bag",
+      "translation": "школьная сумка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "learn",
+      "translation": "учить, изучать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "study",
+      "translation": "учиться, изучать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "teach",
+      "translation": "преподавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "read",
+      "translation": "читать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "write",
+      "translation": "писать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "spell",
+      "translation": "писать / произносить по буквам",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "remember",
+      "translation": "помнить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "forget",
+      "translation": "забывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "understand",
+      "translation": "понимать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "explain",
+      "translation": "объяснять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "pass an exam",
+      "translation": "сдать экзамен",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "fail an exam",
+      "translation": "провалить экзамен",
+      "partOfSpeech": "verb phrase",
+      "level": "B1"
+    },
+    {
+      "term": "revise",
+      "translation": "повторять материал",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "graduate",
+      "translation": "оканчивать учебное заведение",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    }
+  ]
+}
