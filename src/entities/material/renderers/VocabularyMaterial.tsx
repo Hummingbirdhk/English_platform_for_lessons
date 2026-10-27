@@ -4,6 +4,16 @@ import type { Material } from '../../../content/types';
 type VocabularyMaterialData = Extract<Material, { type: 'vocabulary' }>;
 
 const groupLabels: Record<string, string> = {
+  'noun/verb': 'Существительные и глаголы',
+  'verb/noun': 'Глаголы и существительные',
+  'adjective/adverb': 'Прилагательные и наречия',
+  'adverb/adjective': 'Наречия и прилагательные',
+  'verb/adjective': 'Глаголы и прилагательные',
+  'noun/adjective': 'Существительные и прилагательные',
+  'noun phrase': 'Именные сочетания',
+  'verb phrase': 'Глагольные выражения',
+  'adverb phrase': 'Наречные выражения',
+  'phrasal verb': 'Фразовые глаголы',
   noun: 'Существительные',
   verb: 'Глаголы',
   adjective: 'Прилагательные',
@@ -29,7 +39,7 @@ export function VocabularyMaterial({ material }: { material: VocabularyMaterialD
       <Typography.Paragraph type="secondary">{material.summary}</Typography.Paragraph>
       {groups.map(([group, items]) => (
         <section key={group}>
-          <Typography.Title level={2}>{groupLabels[group]}</Typography.Title>
+          <Typography.Title level={2}>{groupLabels[group] ?? group}</Typography.Title>
           <Row gutter={[16, 16]}>
             {(items ?? []).map((item) => (
               <Col xs={24} md={12} key={item.term}>
@@ -42,10 +52,13 @@ export function VocabularyMaterial({ material }: { material: VocabularyMaterialD
                     <Typography.Text type="secondary">{item.pronunciation}</Typography.Text>
                   ) : null}
                   <Typography.Paragraph strong>{item.translation}</Typography.Paragraph>
-                  <div className="example-pair">
-                    <div>{item.example.en}</div>
-                    <div className="secondary-copy">{item.example.ru}</div>
-                  </div>
+                  {item.level ? <Tag>{item.level}</Tag> : null}
+                  {item.example ? (
+                    <div className="example-pair">
+                      <div>{item.example.en}</div>
+                      <div className="secondary-copy">{item.example.ru}</div>
+                    </div>
+                  ) : null}
                   {item.collocations?.length ? (
                     <Space wrap>
                       {item.collocations.map((collocation) => (

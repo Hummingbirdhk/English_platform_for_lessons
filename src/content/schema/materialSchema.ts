@@ -47,11 +47,10 @@ const vocabularyMaterialSchema = z.object({
       z.object({
         term: z.string().min(1),
         translation: z.string().min(1),
-        partOfSpeech: z
-          .enum(['noun', 'verb', 'adjective', 'adverb', 'phrase', 'phrasal_verb', 'idiom'])
-          .optional(),
+        partOfSpeech: z.string().min(1).optional(),
+        level: levelSchema.optional(),
         pronunciation: z.string().min(1).optional(),
-        example: bilingualTextSchema,
+        example: bilingualTextSchema.optional(),
         imageUrl: z.string().url().optional(),
         collocations: z.array(z.string().min(1)).optional(),
       }),
