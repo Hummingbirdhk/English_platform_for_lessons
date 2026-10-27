@@ -1,0 +1,282 @@
+{
+  "id": "vocabulary-excel-furniture-household",
+  "type": "vocabulary",
+  "title": "Мебель и домашние вещи",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Furniture & Household",
+  "tags": ["vocabulary", "excel-import", "A2-B1"],
+  "summary": "Тематический словарь из пользовательской выгрузки: 45 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "furniture",
+      "translation": "мебель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sofa",
+      "translation": "диван",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "armchair",
+      "translation": "кресло",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chair",
+      "translation": "стул",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "table",
+      "translation": "стол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "desk",
+      "translation": "письменный стол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bed",
+      "translation": "кровать",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wardrobe",
+      "translation": "шкаф для одежды",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cupboard",
+      "translation": "шкафчик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shelf",
+      "translation": "полка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bookshelf",
+      "translation": "книжная полка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "drawer",
+      "translation": "ящик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "carpet",
+      "translation": "ковёр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rug",
+      "translation": "коврик",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "curtain",
+      "translation": "штора",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mirror",
+      "translation": "зеркало",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lamp",
+      "translation": "лампа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "light",
+      "translation": "свет, светильник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "picture",
+      "translation": "картина, изображение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "plant",
+      "translation": "растение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "clock",
+      "translation": "часы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fridge",
+      "translation": "холодильник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "freezer",
+      "translation": "морозильник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cooker",
+      "translation": "плита",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "oven",
+      "translation": "духовка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "microwave",
+      "translation": "микроволновка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dishwasher",
+      "translation": "посудомоечная машина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "washing machine",
+      "translation": "стиральная машина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "kettle",
+      "translation": "чайник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "toaster",
+      "translation": "тостер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sink",
+      "translation": "раковина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tap",
+      "translation": "кран",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shower",
+      "translation": "душ",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bath",
+      "translation": "ванна",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "towel",
+      "translation": "полотенце",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pillow",
+      "translation": "подушка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "blanket",
+      "translation": "одеяло",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sheet",
+      "translation": "простыня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "duvet",
+      "translation": "одеяло (пуховое)",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "clean",
+      "translation": "убирать; чистый",
+      "partOfSpeech": "verb/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "tidy",
+      "translation": "прибирать; аккуратный",
+      "partOfSpeech": "verb/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "wash up",
+      "translation": "мыть посуду",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "do the laundry",
+      "translation": "стирать бельё",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "make the bed",
+      "translation": "заправлять кровать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "take out the rubbish",
+      "translation": "выносить мусор",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    }
+  ]
+}

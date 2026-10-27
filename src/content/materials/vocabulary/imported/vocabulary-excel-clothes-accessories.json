@@ -1,0 +1,306 @@
+{
+  "id": "vocabulary-excel-clothes-accessories",
+  "type": "vocabulary",
+  "title": "Одежда и аксессуары",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Clothes & Accessories",
+  "tags": ["vocabulary", "excel-import", "A2-B1"],
+  "summary": "Тематический словарь из пользовательской выгрузки: 49 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "clothes",
+      "translation": "одежда",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "T-shirt",
+      "translation": "футболка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shirt",
+      "translation": "рубашка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "blouse",
+      "translation": "блузка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sweater",
+      "translation": "свитер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "jumper",
+      "translation": "джемпер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hoodie",
+      "translation": "худи",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "jacket",
+      "translation": "куртка, пиджак",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "coat",
+      "translation": "пальто",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "raincoat",
+      "translation": "дождевик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dress",
+      "translation": "платье",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "skirt",
+      "translation": "юбка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "trousers",
+      "translation": "брюки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "jeans",
+      "translation": "джинсы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shorts",
+      "translation": "шорты",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "suit",
+      "translation": "костюм",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "uniform",
+      "translation": "форма",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tracksuit",
+      "translation": "спортивный костюм",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "underwear",
+      "translation": "нижнее бельё",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "socks",
+      "translation": "носки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tights",
+      "translation": "колготки",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "shoes",
+      "translation": "обувь, туфли",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "trainers",
+      "translation": "кроссовки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "boots",
+      "translation": "ботинки, сапоги",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sandals",
+      "translation": "сандалии",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "slippers",
+      "translation": "тапочки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hat",
+      "translation": "шляпа, шапка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cap",
+      "translation": "кепка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "scarf",
+      "translation": "шарф",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "gloves",
+      "translation": "перчатки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "belt",
+      "translation": "ремень",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tie",
+      "translation": "галстук",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bag",
+      "translation": "сумка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "handbag",
+      "translation": "дамская сумка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "backpack",
+      "translation": "рюкзак",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wallet",
+      "translation": "кошелёк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "purse",
+      "translation": "кошелёк / женская сумочка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "umbrella",
+      "translation": "зонт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "watch",
+      "translation": "наручные часы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ring",
+      "translation": "кольцо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "necklace",
+      "translation": "ожерелье",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "earrings",
+      "translation": "серьги",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wear",
+      "translation": "носить (одежду)",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "put on",
+      "translation": "надевать",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "take off",
+      "translation": "снимать (одежду)",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "match",
+      "translation": "сочетаться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "fashionable",
+      "translation": "модный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "casual",
+      "translation": "повседневный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "smart",
+      "translation": "элегантный, нарядный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    }
+  ]
+}

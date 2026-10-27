@@ -1,0 +1,270 @@
+{
+  "id": "vocabulary-excel-home-rooms",
+  "type": "vocabulary",
+  "title": "Дом и комнаты",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Home & Rooms",
+  "tags": ["vocabulary", "excel-import", "A2-B1"],
+  "summary": "Тематический словарь из пользовательской выгрузки: 43 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "home",
+      "translation": "дом, жильё",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "house",
+      "translation": "дом",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "flat",
+      "translation": "квартира",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "apartment",
+      "translation": "квартира",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "building",
+      "translation": "здание",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "floor",
+      "translation": "этаж; пол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ground floor",
+      "translation": "первый этаж (брит.)",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "roof",
+      "translation": "крыша",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wall",
+      "translation": "стена",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ceiling",
+      "translation": "потолок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "window",
+      "translation": "окно",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "door",
+      "translation": "дверь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "stairs",
+      "translation": "лестница",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "balcony",
+      "translation": "балкон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "garden",
+      "translation": "сад",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "yard",
+      "translation": "двор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "garage",
+      "translation": "гараж",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fence",
+      "translation": "забор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "gate",
+      "translation": "ворота, калитка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hall",
+      "translation": "прихожая, холл",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "living room",
+      "translation": "гостиная",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bedroom",
+      "translation": "спальня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bathroom",
+      "translation": "ванная комната",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "kitchen",
+      "translation": "кухня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dining room",
+      "translation": "столовая",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "study",
+      "translation": "кабинет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "toilet",
+      "translation": "туалет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "corridor",
+      "translation": "коридор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "basement",
+      "translation": "подвал",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "attic",
+      "translation": "чердак",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "rent",
+      "translation": "арендная плата; арендовать",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "move house",
+      "translation": "переезжать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "live",
+      "translation": "жить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "share a flat",
+      "translation": "снимать / делить квартиру вместе",
+      "partOfSpeech": "verb phrase",
+      "level": "B1"
+    },
+    {
+      "term": "upstairs",
+      "translation": "наверху",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "downstairs",
+      "translation": "внизу",
+      "partOfSpeech": "adverb",
+      "level": "A2"
+    },
+    {
+      "term": "comfortable",
+      "translation": "удобный, комфортный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "modern",
+      "translation": "современный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "traditional",
+      "translation": "традиционный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "spacious",
+      "translation": "просторный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "tiny",
+      "translation": "крошечный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "quiet",
+      "translation": "тихий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "noisy",
+      "translation": "шумный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    }
+  ]
+}

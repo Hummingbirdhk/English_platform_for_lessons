@@ -1,0 +1,306 @@
+{
+  "id": "vocabulary-excel-family-people",
+  "type": "vocabulary",
+  "title": "Семья и люди",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Family & People",
+  "tags": ["vocabulary", "excel-import", "A2-B1"],
+  "summary": "Тематический словарь из пользовательской выгрузки: 49 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "family",
+      "translation": "семья",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "parent",
+      "translation": "родитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mother",
+      "translation": "мать, мама",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mum",
+      "translation": "мама",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "father",
+      "translation": "отец, папа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dad",
+      "translation": "папа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "son",
+      "translation": "сын",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "daughter",
+      "translation": "дочь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "child",
+      "translation": "ребёнок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "children",
+      "translation": "дети",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "brother",
+      "translation": "брат",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sister",
+      "translation": "сестра",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "husband",
+      "translation": "муж",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wife",
+      "translation": "жена",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grandmother",
+      "translation": "бабушка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grandfather",
+      "translation": "дедушка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grandparents",
+      "translation": "бабушка и дедушка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grandson",
+      "translation": "внук",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "granddaughter",
+      "translation": "внучка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "uncle",
+      "translation": "дядя",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "aunt",
+      "translation": "тётя",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cousin",
+      "translation": "двоюродный брат / сестра",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "nephew",
+      "translation": "племянник",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "niece",
+      "translation": "племянница",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "relative",
+      "translation": "родственник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "relationship",
+      "translation": "отношения",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "couple",
+      "translation": "пара",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "twin",
+      "translation": "близнец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "only child",
+      "translation": "единственный ребёнок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "single parent",
+      "translation": "родитель-одиночка",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "stepmother",
+      "translation": "мачеха",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "stepfather",
+      "translation": "отчим",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "stepbrother",
+      "translation": "сводный брат",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "stepsister",
+      "translation": "сводная сестра",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "mother-in-law",
+      "translation": "свекровь / тёща",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "father-in-law",
+      "translation": "свёкор / тесть",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "get married",
+      "translation": "жениться / выйти замуж",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "be married",
+      "translation": "быть женатым / замужем",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "get divorced",
+      "translation": "развестись",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "grow up",
+      "translation": "вырасти",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "look after",
+      "translation": "заботиться о",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "get on with",
+      "translation": "ладить с",
+      "partOfSpeech": "phrasal verb",
+      "level": "B1"
+    },
+    {
+      "term": "argue",
+      "translation": "спорить, ссориться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "support",
+      "translation": "поддерживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "close",
+      "translation": "близкий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "elder",
+      "translation": "старший (о родственнике)",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "younger",
+      "translation": "младший",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "married",
+      "translation": "женатый / замужняя",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "single",
+      "translation": "неженатый / незамужняя",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    }
+  ]
+}

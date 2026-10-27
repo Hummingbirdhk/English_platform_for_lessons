@@ -1,0 +1,276 @@
+{
+  "id": "vocabulary-excel-shops-shopping",
+  "type": "vocabulary",
+  "title": "Магазины и покупки",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Shops & Shopping",
+  "tags": ["vocabulary", "excel-import", "A2-B1"],
+  "summary": "Тематический словарь из пользовательской выгрузки: 44 единиц, уровни A2–B1.",
+  "items": [
+    {
+      "term": "shop",
+      "translation": "магазин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bakery",
+      "translation": "пекарня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "butcher's",
+      "translation": "мясная лавка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "greengrocer's",
+      "translation": "овощная лавка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "newsagent's",
+      "translation": "газетный киоск",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bookshop",
+      "translation": "книжный магазин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "clothes shop",
+      "translation": "магазин одежды",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shoe shop",
+      "translation": "обувной магазин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "department store",
+      "translation": "универмаг",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pet shop",
+      "translation": "зоомагазин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "toy shop",
+      "translation": "магазин игрушек",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "gift shop",
+      "translation": "магазин подарков",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "customer",
+      "translation": "покупатель, клиент",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shop assistant",
+      "translation": "продавец-консультант",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cashier",
+      "translation": "кассир",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "price",
+      "translation": "цена",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cost",
+      "translation": "стоимость; стоить",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "cash",
+      "translation": "наличные",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "card",
+      "translation": "карта",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "receipt",
+      "translation": "чек",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "change",
+      "translation": "сдача",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sale",
+      "translation": "распродажа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "discount",
+      "translation": "скидка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "size",
+      "translation": "размер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "queue",
+      "translation": "очередь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shopping list",
+      "translation": "список покупок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "basket",
+      "translation": "корзина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "trolley",
+      "translation": "тележка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "buy",
+      "translation": "покупать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "sell",
+      "translation": "продавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "pay",
+      "translation": "платить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "spend",
+      "translation": "тратить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "save",
+      "translation": "экономить, копить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "choose",
+      "translation": "выбирать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "try on",
+      "translation": "примерять",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "fit",
+      "translation": "подходить по размеру",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "order",
+      "translation": "заказывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "return",
+      "translation": "возвращать товар",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "exchange",
+      "translation": "обменивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "afford",
+      "translation": "позволить себе",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "cheap",
+      "translation": "дешёвый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "expensive",
+      "translation": "дорогой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "free",
+      "translation": "бесплатный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "available",
+      "translation": "в наличии, доступный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    }
+  ]
+}
