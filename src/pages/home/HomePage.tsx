@@ -63,11 +63,11 @@ export function HomePage() {
 
       <section className="home-bottom-grid home-bottom-grid--single">
         <article className="quick-card">
-          <div className="quick-card__title">Открыть библиотеку материалов</div>
-          <div className="quick-card__meta">Grammar, vocabulary, reading и video</div>
+          <div className="quick-card__title">Словарь</div>
+          <div className="quick-card__meta">Найди слово или фразу, если забыл перевод</div>
           <GlossyActionLink
-            to="/materials"
-            label="Открыть библиотеку материалов"
+            to="/dictionary"
+            label="Открыть словарь"
             size="sm"
             className="quick-card__action"
           />
