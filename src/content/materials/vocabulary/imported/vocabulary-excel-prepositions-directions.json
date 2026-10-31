@@ -1,0 +1,390 @@
+{
+  "id": "vocabulary-excel-prepositions-directions",
+  "type": "vocabulary",
+  "title": "Prepositions Directions",
+  "grade": 6,
+  "level": "A1",
+  "topic": "Prepositions Directions",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 63 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "in",
+      "translation": "в",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "on",
+      "translation": "на",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "at",
+      "translation": "у; в (место или время)",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "under",
+      "translation": "под",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "above",
+      "translation": "над",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "below",
+      "translation": "ниже",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "behind",
+      "translation": "позади",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "in front of",
+      "translation": "перед",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "next to",
+      "translation": "рядом с",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "between",
+      "translation": "между",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "near",
+      "translation": "около",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "far from",
+      "translation": "далеко от",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "opposite",
+      "translation": "напротив",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "inside",
+      "translation": "внутри",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "outside",
+      "translation": "снаружи",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "into",
+      "translation": "внутрь",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "out of",
+      "translation": "изнутри",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "from",
+      "translation": "из; от",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "to",
+      "translation": "к; в",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "for",
+      "translation": "для",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "with",
+      "translation": "с",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "without",
+      "translation": "без",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "about",
+      "translation": "о",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "before",
+      "translation": "до",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "beforehand",
+      "translation": "заранее",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "after",
+      "translation": "после",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "during",
+      "translation": "во время",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "until",
+      "translation": "до какого-то времени",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "through",
+      "translation": "через; сквозь",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "across",
+      "translation": "через; поперёк",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "along",
+      "translation": "вдоль",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "around",
+      "translation": "вокруг",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "up",
+      "translation": "вверх по",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "down",
+      "translation": "вниз по",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "past",
+      "translation": "мимо",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "by",
+      "translation": "рядом; посредством",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "of",
+      "translation": "из; родительный падеж",
+      "partOfSpeech": "preposition",
+      "level": "A1"
+    },
+    {
+      "term": "here",
+      "translation": "здесь",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "there",
+      "translation": "там",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "upstairs",
+      "translation": "наверху; на верхнем этаже",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "downstairs",
+      "translation": "внизу; на нижнем этаже",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "left",
+      "translation": "налево",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "right",
+      "translation": "направо",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "ahead",
+      "translation": "впереди",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "back",
+      "translation": "назад",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "away",
+      "translation": "прочь",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "nearby",
+      "translation": "поблизости",
+      "partOfSpeech": "adverb",
+      "level": "A1"
+    },
+    {
+      "term": "on the left",
+      "translation": "слева",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "on the right",
+      "translation": "справа",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "in the middle",
+      "translation": "посередине",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "at the top",
+      "translation": "наверху",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "at the bottom",
+      "translation": "внизу",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "all the way",
+      "translation": "весь путь",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "just around the corner",
+      "translation": "совсем рядом; за углом",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "beneath",
+      "translation": "под (чем-либо)",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "beyond",
+      "translation": "за пределами",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "within",
+      "translation": "внутри; в пределах",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "throughout",
+      "translation": "на протяжении; по всему",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "among",
+      "translation": "среди",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "against",
+      "translation": "против; у поверхности",
+      "partOfSpeech": "preposition",
+      "level": "B1"
+    },
+    {
+      "term": "elsewhere",
+      "translation": "в другом месте",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "forward",
+      "translation": "вперёд",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "backwards",
+      "translation": "назад; задом наперёд",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    }
+  ]
+}

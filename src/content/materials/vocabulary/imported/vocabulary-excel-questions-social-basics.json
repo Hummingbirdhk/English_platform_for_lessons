@@ -1,0 +1,360 @@
+{
+  "id": "vocabulary-excel-questions-social-basics",
+  "type": "vocabulary",
+  "title": "Questions Social Basics",
+  "grade": 6,
+  "level": "A1",
+  "topic": "Questions Social Basics",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 58 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "hello",
+      "translation": "привет; здравствуйте",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "hi",
+      "translation": "привет",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "good morning",
+      "translation": "доброе утро",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "good afternoon",
+      "translation": "добрый день",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "good evening",
+      "translation": "добрый вечер",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "good night",
+      "translation": "спокойной ночи",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "goodbye",
+      "translation": "до свидания",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "bye",
+      "translation": "пока",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "see you later",
+      "translation": "увидимся позже",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "please",
+      "translation": "пожалуйста",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "thank you",
+      "translation": "спасибо",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "thanks a lot",
+      "translation": "большое спасибо",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "you're welcome",
+      "translation": "пожалуйста (в ответ на благодарность)",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "excuse me",
+      "translation": "извините (для обращения)",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I'm sorry",
+      "translation": "мне жаль; извините",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "no problem",
+      "translation": "без проблем",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "how are you?",
+      "translation": "как дела?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I'm fine",
+      "translation": "у меня всё хорошо",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "what's your name?",
+      "translation": "как тебя зовут?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "my name is",
+      "translation": "меня зовут",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "nice to meet you",
+      "translation": "приятно познакомиться",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "how old are you?",
+      "translation": "сколько тебе лет?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "where are you from?",
+      "translation": "откуда ты?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I don't know",
+      "translation": "я не знаю",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I don't understand",
+      "translation": "я не понимаю",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "can you help me?",
+      "translation": "ты можешь мне помочь?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "can you repeat that?",
+      "translation": "можешь повторить?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "what does it mean?",
+      "translation": "что это значит?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "how do you spell it?",
+      "translation": "как это пишется по буквам?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "what time is it?",
+      "translation": "который час?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "how much is it?",
+      "translation": "сколько это стоит?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "where is the toilet?",
+      "translation": "где туалет?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "what's the matter?",
+      "translation": "что случилось?",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "never mind",
+      "translation": "ничего страшного",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "of course",
+      "translation": "конечно",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I think so",
+      "translation": "я так думаю",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "I hope so",
+      "translation": "надеюсь",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "maybe",
+      "translation": "может быть",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "not yet",
+      "translation": "ещё нет",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "not at all",
+      "translation": "вовсе нет",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "that's right",
+      "translation": "верно",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "that's wrong",
+      "translation": "неверно",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "well done",
+      "translation": "молодец",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "congratulations",
+      "translation": "поздравляю",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "good luck",
+      "translation": "удачи",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "have a nice day",
+      "translation": "хорошего дня",
+      "partOfSpeech": "phrase",
+      "level": "A1"
+    },
+    {
+      "term": "could you help me?",
+      "translation": "не могли бы вы мне помочь?",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "would you like to...?",
+      "translation": "хочешь ...?",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "I'd like to...",
+      "translation": "я бы хотел(а) ...",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "what about...?",
+      "translation": "как насчёт ...?",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "how about...?",
+      "translation": "а как насчёт ...?",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "sounds good",
+      "translation": "звучит неплохо",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "that's a good idea",
+      "translation": "хорошая идея",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "I'm not sure",
+      "translation": "я не уверен(а)",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "I agree",
+      "translation": "я согласен(на)",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "I disagree",
+      "translation": "я не согласен(на)",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "let me see",
+      "translation": "дай подумать",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    },
+    {
+      "term": "it depends",
+      "translation": "это зависит",
+      "partOfSpeech": "phrase",
+      "level": "A2"
+    }
+  ]
+}

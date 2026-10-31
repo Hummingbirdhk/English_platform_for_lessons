@@ -1,0 +1,534 @@
+{
+  "id": "vocabulary-excel-b1-adverbs-connectors",
+  "type": "vocabulary",
+  "title": "B1 Adverbs Connectors",
+  "grade": 6,
+  "level": "B1",
+  "topic": "B1 Adverbs Connectors",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 87 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "accordingly",
+      "translation": "соответственно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "admittedly",
+      "translation": "следует признать",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "altogether",
+      "translation": "в целом; всего",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "annually",
+      "translation": "ежегодно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "anxiously",
+      "translation": "тревожно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "appropriately",
+      "translation": "соответствующим образом",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "approximately",
+      "translation": "приблизительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "assertively",
+      "translation": "уверенно и настойчиво",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "at present",
+      "translation": "в настоящее время",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "broadly",
+      "translation": "в широком смысле",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "cautiously",
+      "translation": "осторожно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "consequently",
+      "translation": "следовательно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "considerably",
+      "translation": "значительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "conveniently",
+      "translation": "удобно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "creatively",
+      "translation": "творчески",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "critically",
+      "translation": "критически",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "curiously",
+      "translation": "с любопытством",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "currently",
+      "translation": "в данный момент",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "decisively",
+      "translation": "решительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "deliberately",
+      "translation": "намеренно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "directly",
+      "translation": "непосредственно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "doubtfully",
+      "translation": "с сомнением",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "dramatically",
+      "translation": "резко; существенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "eagerly",
+      "translation": "с энтузиазмом",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "emotionally",
+      "translation": "эмоционально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "essentially",
+      "translation": "по существу",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "exceptionally",
+      "translation": "исключительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "explicitly",
+      "translation": "явно; прямо",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "externally",
+      "translation": "снаружи; извне",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "financially",
+      "translation": "финансово",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "formally",
+      "translation": "официально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "frankly",
+      "translation": "откровенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "freely",
+      "translation": "свободно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "fully",
+      "translation": "полностью",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "fundamentally",
+      "translation": "в основе своей",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "genuinely",
+      "translation": "искренне",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "globally",
+      "translation": "во всём мире",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "gracefully",
+      "translation": "изящно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "hesitantly",
+      "translation": "нерешительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "impatiently",
+      "translation": "нетерпеливо",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "indirectly",
+      "translation": "косвенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "informally",
+      "translation": "неофициально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "instantly",
+      "translation": "мгновенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "intentionally",
+      "translation": "преднамеренно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "internally",
+      "translation": "внутри",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "jointly",
+      "translation": "совместно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "legally",
+      "translation": "законно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "logically",
+      "translation": "логически",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "mainly",
+      "translation": "главным образом",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "manually",
+      "translation": "вручную",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "moderately",
+      "translation": "умеренно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "mutually",
+      "translation": "взаимно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "negatively",
+      "translation": "отрицательно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "noticeably",
+      "translation": "заметно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "objectively",
+      "translation": "объективно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "officially",
+      "translation": "официально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "originally",
+      "translation": "первоначально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "partially",
+      "translation": "частично",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "personally",
+      "translation": "лично",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "positively",
+      "translation": "положительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "practically",
+      "translation": "практически",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "precisely",
+      "translation": "точно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "privately",
+      "translation": "в частном порядке",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "productively",
+      "translation": "продуктивно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "publicly",
+      "translation": "публично",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "rapidly",
+      "translation": "быстро",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "realistically",
+      "translation": "реалистично",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "regularly",
+      "translation": "регулярно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "reportedly",
+      "translation": "по сообщениям",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "respectfully",
+      "translation": "уважительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "responsibly",
+      "translation": "ответственно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "scientifically",
+      "translation": "с научной точки зрения",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "separately",
+      "translation": "отдельно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "simultaneously",
+      "translation": "одновременно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "sincerely",
+      "translation": "искренне",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "socially",
+      "translation": "в обществе; социально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "successfully",
+      "translation": "успешно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "sufficiently",
+      "translation": "в достаточной степени",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "systematically",
+      "translation": "систематически",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "temporarily",
+      "translation": "временно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "theoretically",
+      "translation": "теоретически",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "traditionally",
+      "translation": "традиционно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "unexpectedly",
+      "translation": "неожиданно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "universally",
+      "translation": "повсеместно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "urgently",
+      "translation": "срочно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "visually",
+      "translation": "визуально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "voluntarily",
+      "translation": "добровольно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    }
+  ]
+}

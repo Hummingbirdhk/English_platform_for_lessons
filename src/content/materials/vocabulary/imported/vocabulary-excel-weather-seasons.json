@@ -1,37 +1,13 @@
 {
   "id": "vocabulary-excel-weather-seasons",
   "type": "vocabulary",
-  "title": "Погода и времена года",
+  "title": "Weather Seasons",
   "grade": 6,
   "level": "A2",
-  "topic": "Weather & Seasons",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 34 единиц, уровни A2–B1.",
+  "topic": "Weather Seasons",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 54 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "weather",
-      "translation": "погода",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "season",
-      "translation": "время года",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "spring",
-      "translation": "весна",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "summer",
-      "translation": "лето",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "autumn",
       "translation": "осень",
@@ -39,22 +15,10 @@
       "level": "A2"
     },
     {
-      "term": "winter",
-      "translation": "зима",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sun",
-      "translation": "солнце",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sunshine",
-      "translation": "солнечный свет",
-      "partOfSpeech": "noun",
-      "level": "A2"
+      "term": "changeable",
+      "translation": "переменчивый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
     },
     {
       "term": "cloud",
@@ -63,116 +27,8 @@
       "level": "A2"
     },
     {
-      "term": "rain",
-      "translation": "дождь; идти (о дожде)",
-      "partOfSpeech": "noun/verb",
-      "level": "A2"
-    },
-    {
-      "term": "snow",
-      "translation": "снег; идти (о снеге)",
-      "partOfSpeech": "noun/verb",
-      "level": "A2"
-    },
-    {
-      "term": "wind",
-      "translation": "ветер",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "storm",
-      "translation": "буря, гроза",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "thunder",
-      "translation": "гром",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "lightning",
-      "translation": "молния",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "fog",
-      "translation": "туман",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "temperature",
-      "translation": "температура",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "degree",
-      "translation": "градус",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "forecast",
-      "translation": "прогноз",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "sunny",
-      "translation": "солнечный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
       "term": "cloudy",
       "translation": "облачный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "rainy",
-      "translation": "дождливый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "snowy",
-      "translation": "снежный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "windy",
-      "translation": "ветреный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "foggy",
-      "translation": "туманный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "hot",
-      "translation": "жаркий",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "warm",
-      "translation": "тёплый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "cool",
-      "translation": "прохладный",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
@@ -183,15 +39,15 @@
       "level": "A2"
     },
     {
-      "term": "freezing",
-      "translation": "очень холодный",
+      "term": "cool",
+      "translation": "прохладный",
       "partOfSpeech": "adjective",
-      "level": "B1"
+      "level": "A2"
     },
     {
-      "term": "wet",
-      "translation": "мокрый, дождливый",
-      "partOfSpeech": "adjective",
+      "term": "degree",
+      "translation": "градус",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -201,16 +57,280 @@
       "level": "A2"
     },
     {
-      "term": "changeable",
-      "translation": "переменчивый",
+      "term": "fog",
+      "translation": "туман",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "foggy",
+      "translation": "туманный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "forecast",
+      "translation": "прогноз",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "freezing",
+      "translation": "очень холодный",
       "partOfSpeech": "adjective",
       "level": "B1"
+    },
+    {
+      "term": "hot",
+      "translation": "жаркий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "lightning",
+      "translation": "молния",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "rain",
+      "translation": "дождь; идти (о дожде)",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "rainy",
+      "translation": "дождливый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "season",
+      "translation": "время года",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "snow",
+      "translation": "снег; идти (о снеге)",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "snowy",
+      "translation": "снежный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "spring",
+      "translation": "весна",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "storm",
+      "translation": "буря, гроза",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "summer",
+      "translation": "лето",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sun",
+      "translation": "солнце",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sunny",
+      "translation": "солнечный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "sunshine",
+      "translation": "солнечный свет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "temperature",
+      "translation": "температура",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "thunder",
+      "translation": "гром",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "warm",
+      "translation": "тёплый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "weather",
+      "translation": "погода",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "weather forecast",
       "translation": "прогноз погоды",
       "partOfSpeech": "noun",
       "level": "A2"
+    },
+    {
+      "term": "wet",
+      "translation": "мокрый, дождливый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "wind",
+      "translation": "ветер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "windy",
+      "translation": "ветреный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "winter",
+      "translation": "зима",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sunrise",
+      "translation": "восход солнца",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sunset",
+      "translation": "закат",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rainbow",
+      "translation": "радуга",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "raindrop",
+      "translation": "капля дождя",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "snowflake",
+      "translation": "снежинка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "hail",
+      "translation": "град",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mist",
+      "translation": "дымка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "ice",
+      "translation": "лёд",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "frost",
+      "translation": "мороз; иней",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "breeze",
+      "translation": "лёгкий ветер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "icy",
+      "translation": "покрытый льдом",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "heatwave",
+      "translation": "волна жары",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "thunderstorm",
+      "translation": "гроза",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "snowstorm",
+      "translation": "снежная буря",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "humidity",
+      "translation": "влажность",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "precipitation",
+      "translation": "осадки",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "climate change",
+      "translation": "изменение климата",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "unpredictable",
+      "translation": "непредсказуемый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "severe",
+      "translation": "суровый; сильный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "seasonally",
+      "translation": "по сезонам",
+      "partOfSpeech": "adverb",
+      "level": "B1"
     }
   ]
 }

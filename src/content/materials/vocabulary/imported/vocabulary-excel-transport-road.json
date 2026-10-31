@@ -1,67 +1,13 @@
 {
   "id": "vocabulary-excel-transport-road",
   "type": "vocabulary",
-  "title": "Транспорт и дорога",
+  "title": "Transport Road",
   "grade": 6,
   "level": "A2",
-  "topic": "Transport & Road",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 48 единиц, уровни A2–B1.",
+  "topic": "Transport Road",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 76 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "transport",
-      "translation": "транспорт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "car",
-      "translation": "машина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bus",
-      "translation": "автобус",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "coach",
-      "translation": "междугородний автобус",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "train",
-      "translation": "поезд",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tram",
-      "translation": "трамвай",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "underground",
-      "translation": "метро",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tube",
-      "translation": "метро (Лондон)",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "taxi",
-      "translation": "такси",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "bicycle",
       "translation": "велосипед",
@@ -75,44 +21,56 @@
       "level": "A2"
     },
     {
-      "term": "motorbike",
-      "translation": "мотоцикл",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "lorry",
-      "translation": "грузовик",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "van",
-      "translation": "фургон",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "plane",
-      "translation": "самолёт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "helicopter",
-      "translation": "вертолёт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
       "term": "boat",
       "translation": "лодка",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "ship",
-      "translation": "корабль",
+      "term": "bus",
+      "translation": "автобус",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "car",
+      "translation": "машина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "catch a bus",
+      "translation": "успеть на автобус",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "coach",
+      "translation": "междугородний автобус",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cross the road",
+      "translation": "переходить дорогу",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "delay",
+      "translation": "задержка",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "drive",
+      "translation": "водить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "driver",
+      "translation": "водитель",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -123,8 +81,86 @@
       "level": "A2"
     },
     {
-      "term": "ticket",
-      "translation": "билет",
+      "term": "fly",
+      "translation": "лететь",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "get off",
+      "translation": "выходить из транспорта",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "get on",
+      "translation": "садиться в транспорт",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "go straight",
+      "translation": "идти / ехать прямо",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "helicopter",
+      "translation": "вертолёт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "helmet",
+      "translation": "шлем",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "journey",
+      "translation": "поездка, путешествие",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lorry",
+      "translation": "грузовик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "miss a train",
+      "translation": "опоздать на поезд",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "motorbike",
+      "translation": "мотоцикл",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "motorway",
+      "translation": "автомагистраль",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "passenger",
+      "translation": "пассажир",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pedestrian",
+      "translation": "пешеход",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "plane",
+      "translation": "самолёт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -133,6 +169,42 @@
       "translation": "платформа",
       "partOfSpeech": "noun",
       "level": "A2"
+    },
+    {
+      "term": "ride",
+      "translation": "ехать верхом / на велосипеде",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "road",
+      "translation": "дорога",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sail",
+      "translation": "плыть под парусом",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "seat belt",
+      "translation": "ремень безопасности",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ship",
+      "translation": "корабль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "speed limit",
+      "translation": "ограничение скорости",
+      "partOfSpeech": "noun",
+      "level": "B1"
     },
     {
       "term": "station",
@@ -147,14 +219,14 @@
       "level": "A2"
     },
     {
-      "term": "journey",
-      "translation": "поездка, путешествие",
+      "term": "taxi",
+      "translation": "такси",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "trip",
-      "translation": "поездка",
+      "term": "ticket",
+      "translation": "билет",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -171,93 +243,33 @@
       "level": "A2"
     },
     {
-      "term": "road",
-      "translation": "дорога",
+      "term": "train",
+      "translation": "поезд",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "motorway",
-      "translation": "автомагистраль",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "seat belt",
-      "translation": "ремень безопасности",
+      "term": "tram",
+      "translation": "трамвай",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "helmet",
-      "translation": "шлем",
+      "term": "transport",
+      "translation": "транспорт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "driver",
-      "translation": "водитель",
+      "term": "trip",
+      "translation": "поездка",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "passenger",
-      "translation": "пассажир",
+      "term": "tube",
+      "translation": "метро (Лондон)",
       "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pedestrian",
-      "translation": "пешеход",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "drive",
-      "translation": "водить",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "ride",
-      "translation": "ехать верхом / на велосипеде",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "fly",
-      "translation": "лететь",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "sail",
-      "translation": "плыть под парусом",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "catch a bus",
-      "translation": "успеть на автобус",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "miss a train",
-      "translation": "опоздать на поезд",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "get on",
-      "translation": "садиться в транспорт",
-      "partOfSpeech": "phrasal verb",
-      "level": "A2"
-    },
-    {
-      "term": "get off",
-      "translation": "выходить из транспорта",
-      "partOfSpeech": "phrasal verb",
       "level": "A2"
     },
     {
@@ -273,27 +285,183 @@
       "level": "A2"
     },
     {
-      "term": "go straight",
-      "translation": "идти / ехать прямо",
-      "partOfSpeech": "verb phrase",
+      "term": "underground",
+      "translation": "метро",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "cross the road",
-      "translation": "переходить дорогу",
-      "partOfSpeech": "verb phrase",
+      "term": "van",
+      "translation": "фургон",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "speed limit",
-      "translation": "ограничение скорости",
+      "term": "scooter",
+      "translation": "самокат; скутер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "skateboard",
+      "translation": "скейтборд",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "subway",
+      "translation": "метро (амер.)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "minibus",
+      "translation": "микроавтобус",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "school bus",
+      "translation": "школьный автобус",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bike lane",
+      "translation": "велодорожка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pavement",
+      "translation": "тротуар",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sidewalk",
+      "translation": "тротуар (амер.)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "route",
+      "translation": "маршрут",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "map",
+      "translation": "карта",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "compass",
+      "translation": "компас",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "roundabout",
+      "translation": "перекрёсток с круговым движением",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "junction",
+      "translation": "перекрёсток; развязка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "crossroads",
+      "translation": "перекрёсток",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "roadworks",
+      "translation": "дорожные работы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "one-way street",
+      "translation": "улица с односторонним движением",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "public transport",
+      "translation": "общественный транспорт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rush hour",
+      "translation": "час пик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "commuter",
+      "translation": "человек, регулярно ездящий на работу",
       "partOfSpeech": "noun",
       "level": "B1"
     },
     {
-      "term": "delay",
-      "translation": "задержка",
+      "term": "commute",
+      "translation": "поездка на работу и обратно",
       "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "congestion",
+      "translation": "затор; перегруженность дорог",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "transport infrastructure",
+      "translation": "транспортная инфраструктура",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "road accident",
+      "translation": "дорожное происшествие",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "overtake",
+      "translation": "обгонять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "accelerate",
+      "translation": "ускоряться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "brake",
+      "translation": "тормозить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "safely",
+      "translation": "безопасно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "unexpectedly",
+      "translation": "неожиданно",
+      "partOfSpeech": "adverb",
       "level": "B1"
     }
   ]

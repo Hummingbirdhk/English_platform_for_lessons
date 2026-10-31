@@ -1,0 +1,432 @@
+{
+  "id": "vocabulary-excel-everyday-objects-a1",
+  "type": "vocabulary",
+  "title": "Everyday Objects A1",
+  "grade": 6,
+  "level": "A1",
+  "topic": "Everyday Objects A1",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 70 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "balloon",
+      "translation": "воздушный шар",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "present box",
+      "translation": "подарочная коробка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "toy car",
+      "translation": "игрушечная машинка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "teddy bear",
+      "translation": "плюшевый мишка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "building blocks",
+      "translation": "строительные кубики",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "puzzle",
+      "translation": "головоломка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "jigsaw puzzle",
+      "translation": "пазл",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "board game",
+      "translation": "настольная игра",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "playing cards",
+      "translation": "игральные карты",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "dice",
+      "translation": "игральные кости",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "marble",
+      "translation": "стеклянный шарик",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sticker",
+      "translation": "наклейка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "badge",
+      "translation": "значок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "poster",
+      "translation": "плакат",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "calendar page",
+      "translation": "страница календаря",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "photo album",
+      "translation": "фотоальбом",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "picture frame",
+      "translation": "рамка для фотографии",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "notepad",
+      "translation": "блокнот",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sticky note",
+      "translation": "стикер для заметок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "paper clip",
+      "translation": "канцелярская скрепка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "stapler",
+      "translation": "степлер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "staple",
+      "translation": "скоба для степлера",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sellotape",
+      "translation": "клейкая лента",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "string",
+      "translation": "верёвочка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rope",
+      "translation": "верёвка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rubber band",
+      "translation": "резинка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "plastic bag",
+      "translation": "полиэтиленовый пакет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "paper bag",
+      "translation": "бумажный пакет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "envelope",
+      "translation": "конверт",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "stamp",
+      "translation": "почтовая марка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "parcel",
+      "translation": "посылка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "package",
+      "translation": "упаковка; пакет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "box lid",
+      "translation": "крышка коробки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bottle cap",
+      "translation": "крышка бутылки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "water bottle",
+      "translation": "бутылка для воды",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lunchbox",
+      "translation": "контейнер для обеда",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "keyring",
+      "translation": "брелок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "coin purse",
+      "translation": "кошелёк для мелочи",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "handkerchief",
+      "translation": "носовой платок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "tissue",
+      "translation": "бумажный платочек",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "wet wipe",
+      "translation": "влажная салфетка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "flashlight",
+      "translation": "фонарик",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "battery pack",
+      "translation": "комплект батареек",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "magnifying glass",
+      "translation": "увеличительное стекло",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "umbrella stand",
+      "translation": "подставка для зонтов",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "shopping list",
+      "translation": "список покупок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "name tag",
+      "translation": "именная бирка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "label",
+      "translation": "ярлык; этикетка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "clock face",
+      "translation": "циферблат",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pencil lead",
+      "translation": "грифель карандаша",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "paintbrush",
+      "translation": "кисточка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "colouring book",
+      "translation": "раскраска",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "crayon",
+      "translation": "восковой мелок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "felt-tip pen",
+      "translation": "фломастер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "ruler edge",
+      "translation": "край линейки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "wrap",
+      "translation": "заворачивать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "unwrap",
+      "translation": "разворачивать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "stick",
+      "translation": "приклеивать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "fold up",
+      "translation": "складывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "tear",
+      "translation": "рвать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "rip",
+      "translation": "разрывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "squeeze",
+      "translation": "сжимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "shake",
+      "translation": "трясти",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "press",
+      "translation": "нажимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "tap",
+      "translation": "слегка стучать; нажимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "point at",
+      "translation": "показывать пальцем на",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "pick up",
+      "translation": "поднимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "put down",
+      "translation": "класть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "pass",
+      "translation": "передавать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "hand over",
+      "translation": "передавать в руки",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    }
+  ]
+}
