@@ -1,0 +1,468 @@
+{
+  "id": "vocabulary-excel-pronouns-determiners",
+  "type": "vocabulary",
+  "title": "Pronouns Determiners",
+  "grade": 6,
+  "level": "A1",
+  "topic": "Pronouns Determiners",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 76 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "I",
+      "translation": "я",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "you",
+      "translation": "ты; вы",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "he",
+      "translation": "он",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "she",
+      "translation": "она",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "it",
+      "translation": "оно; это",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "we",
+      "translation": "мы",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "they",
+      "translation": "они",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "me",
+      "translation": "меня; мне",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "him",
+      "translation": "его; ему",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "her",
+      "translation": "её; ей",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "us",
+      "translation": "нас; нам",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "them",
+      "translation": "их; им",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "mine",
+      "translation": "мой (самостоятельная форма)",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "yours",
+      "translation": "твой; ваш (самостоятельная форма)",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "his",
+      "translation": "его",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "hers",
+      "translation": "её (самостоятельная форма)",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "ours",
+      "translation": "наш (самостоятельная форма)",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "theirs",
+      "translation": "их (самостоятельная форма)",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "myself",
+      "translation": "себя; сам",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "yourself",
+      "translation": "себя; сам",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "himself",
+      "translation": "себя; сам",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "herself",
+      "translation": "себя; сама",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "itself",
+      "translation": "себя; само",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "ourselves",
+      "translation": "себя; сами",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "themselves",
+      "translation": "себя; сами",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "someone",
+      "translation": "кто-то",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "somebody",
+      "translation": "кто-нибудь",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "something",
+      "translation": "что-нибудь",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "anyone",
+      "translation": "кто-нибудь",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "anybody",
+      "translation": "кто-нибудь",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "anything",
+      "translation": "что-нибудь",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "nothing",
+      "translation": "ничего",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "nobody",
+      "translation": "никто",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "everyone",
+      "translation": "все; каждый",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "everything",
+      "translation": "всё",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "who",
+      "translation": "кто",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "what",
+      "translation": "что",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "which",
+      "translation": "который; какой",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "whose",
+      "translation": "чей",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "where",
+      "translation": "где; куда",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "when",
+      "translation": "когда",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "why",
+      "translation": "почему",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "how",
+      "translation": "как",
+      "partOfSpeech": "pronoun",
+      "level": "A1"
+    },
+    {
+      "term": "my",
+      "translation": "мой",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "our",
+      "translation": "наш",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "your",
+      "translation": "твой; ваш",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "their",
+      "translation": "их",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "this",
+      "translation": "этот",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "that",
+      "translation": "тот",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "these",
+      "translation": "эти",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "those",
+      "translation": "те",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "some",
+      "translation": "некоторое количество",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "any",
+      "translation": "какой-нибудь; любой",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "many",
+      "translation": "много (исчисляемые)",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "much",
+      "translation": "много (неисчисляемые)",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "all",
+      "translation": "все; весь",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "both",
+      "translation": "оба",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "each",
+      "translation": "каждый",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "another",
+      "translation": "ещё один",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "every",
+      "translation": "каждый",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "no",
+      "translation": "никакой",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "a few",
+      "translation": "несколько (исчисляемые)",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "a little",
+      "translation": "немного (неисчисляемые)",
+      "partOfSpeech": "determiner",
+      "level": "A1"
+    },
+    {
+      "term": "each other",
+      "translation": "друг друга",
+      "partOfSpeech": "pronoun",
+      "level": "A2"
+    },
+    {
+      "term": "one another",
+      "translation": "друг друга",
+      "partOfSpeech": "pronoun",
+      "level": "A2"
+    },
+    {
+      "term": "none",
+      "translation": "никто; ни один",
+      "partOfSpeech": "pronoun",
+      "level": "A2"
+    },
+    {
+      "term": "other",
+      "translation": "другой",
+      "partOfSpeech": "pronoun",
+      "level": "A2"
+    },
+    {
+      "term": "others",
+      "translation": "другие",
+      "partOfSpeech": "pronoun",
+      "level": "A2"
+    },
+    {
+      "term": "whoever",
+      "translation": "кто бы ни",
+      "partOfSpeech": "pronoun",
+      "level": "B1"
+    },
+    {
+      "term": "whatever",
+      "translation": "что бы ни",
+      "partOfSpeech": "pronoun",
+      "level": "B1"
+    },
+    {
+      "term": "whichever",
+      "translation": "какой бы ни",
+      "partOfSpeech": "pronoun",
+      "level": "B1"
+    },
+    {
+      "term": "several",
+      "translation": "несколько",
+      "partOfSpeech": "determiner",
+      "level": "B1"
+    },
+    {
+      "term": "plenty of",
+      "translation": "много; достаточно",
+      "partOfSpeech": "determiner",
+      "level": "B1"
+    },
+    {
+      "term": "both of",
+      "translation": "оба из",
+      "partOfSpeech": "determiner",
+      "level": "B1"
+    },
+    {
+      "term": "neither",
+      "translation": "ни один из двух",
+      "partOfSpeech": "determiner",
+      "level": "B1"
+    },
+    {
+      "term": "either",
+      "translation": "любой из двух",
+      "partOfSpeech": "determiner",
+      "level": "B1"
+    }
+  ]
+}

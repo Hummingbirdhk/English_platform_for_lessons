@@ -1,0 +1,660 @@
+{
+  "id": "vocabulary-excel-b1-action-verbs",
+  "type": "vocabulary",
+  "title": "B1 Action Verbs",
+  "grade": 6,
+  "level": "B1",
+  "topic": "B1 Action Verbs",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 108 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "abandon",
+      "translation": "покидать; отказываться от",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "accompany",
+      "translation": "сопровождать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "accuse",
+      "translation": "обвинять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "adapt",
+      "translation": "приспосабливать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "adjust",
+      "translation": "регулировать; адаптировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "administrate",
+      "translation": "администрировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "advertise",
+      "translation": "рекламировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "allocate",
+      "translation": "распределять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "amend",
+      "translation": "вносить поправки",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "analyse data",
+      "translation": "анализировать данные",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "anticipate",
+      "translation": "ожидать; предвидеть",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "appeal",
+      "translation": "привлекать; обращаться с просьбой",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "appoint",
+      "translation": "назначать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "approve",
+      "translation": "одобрять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "assess risks",
+      "translation": "оценивать риски",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "assign",
+      "translation": "назначать задание",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "assist",
+      "translation": "помогать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "attempt",
+      "translation": "предпринимать попытку",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "avoid confusion",
+      "translation": "избегать путаницы",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "balance",
+      "translation": "уравновешивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "boost",
+      "translation": "повышать; стимулировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "capture",
+      "translation": "захватывать; фиксировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "categorise",
+      "translation": "распределять по категориям",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "celebrate an achievement",
+      "translation": "отмечать достижение",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "claim",
+      "translation": "утверждать; требовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "collaborate",
+      "translation": "сотрудничать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "commit",
+      "translation": "посвящать себя; совершать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "compensate",
+      "translation": "компенсировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "conclude",
+      "translation": "заключать; делать вывод",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "conduct",
+      "translation": "проводить (исследование)",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "confess",
+      "translation": "признаваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "confuse",
+      "translation": "путать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "construct",
+      "translation": "сооружать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "consult",
+      "translation": "советоваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "consume",
+      "translation": "потреблять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "convert",
+      "translation": "преобразовывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "coordinate",
+      "translation": "координировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "correctly identify",
+      "translation": "правильно определять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "cover",
+      "translation": "охватывать; накрывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "customise",
+      "translation": "настраивать под себя",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "deliver",
+      "translation": "доставлять; выступать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "demonstrate",
+      "translation": "демонстрировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "detect",
+      "translation": "обнаруживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "disagree politely",
+      "translation": "вежливо не соглашаться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "disapprove",
+      "translation": "не одобрять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "distribute",
+      "translation": "распределять; раздавать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "dominate",
+      "translation": "преобладать; доминировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "eliminate",
+      "translation": "устранять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "emphasise",
+      "translation": "подчёркивать важность",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "enable",
+      "translation": "давать возможность",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "ensure",
+      "translation": "обеспечивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "equip",
+      "translation": "оснащать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "examine",
+      "translation": "осматривать; изучать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "exclude",
+      "translation": "исключать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "expose",
+      "translation": "подвергать воздействию",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "extend",
+      "translation": "продлевать; расширять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "facilitate",
+      "translation": "облегчать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "forbid",
+      "translation": "запрещать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "formulate",
+      "translation": "формулировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "generate",
+      "translation": "создавать; генерировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "govern",
+      "translation": "управлять; регулировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "guarantee",
+      "translation": "гарантировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "illustrate",
+      "translation": "иллюстрировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "implement",
+      "translation": "внедрять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "imply",
+      "translation": "подразумевать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "indicate",
+      "translation": "указывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "inherit",
+      "translation": "наследовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "invest",
+      "translation": "вкладывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "investigate",
+      "translation": "расследовать; исследовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "launch",
+      "translation": "запускать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "limit",
+      "translation": "ограничивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "monitor",
+      "translation": "отслеживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "motivate",
+      "translation": "мотивировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "organise resources",
+      "translation": "организовывать ресурсы",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "overcome",
+      "translation": "преодолевать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "overlook",
+      "translation": "не заметить; упустить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "permit",
+      "translation": "разрешать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "postpone a meeting",
+      "translation": "откладывать встречу",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "prioritise tasks",
+      "translation": "расставлять задачи по приоритету",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "process",
+      "translation": "обрабатывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "produce",
+      "translation": "производить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "propose",
+      "translation": "предлагать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "pursue",
+      "translation": "преследовать цель",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "recognise",
+      "translation": "узнавать; признавать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "reconsider",
+      "translation": "пересматривать решение",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "recover lost work",
+      "translation": "восстанавливать потерянную работу",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "register",
+      "translation": "регистрироваться; регистрировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "release",
+      "translation": "выпускать; освобождать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "represent",
+      "translation": "представлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "resolve",
+      "translation": "разрешать проблему",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "retain",
+      "translation": "сохранять; удерживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "retrieve",
+      "translation": "извлекать; получать обратно",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "revise a plan",
+      "translation": "пересматривать план",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "schedule",
+      "translation": "назначать по расписанию",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "secure",
+      "translation": "обеспечивать безопасность",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "select",
+      "translation": "выбирать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "separate",
+      "translation": "отделять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "simplify",
+      "translation": "упрощать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "specify",
+      "translation": "уточнять; указывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "submit",
+      "translation": "отправлять на рассмотрение",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "surround",
+      "translation": "окружать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "sustain",
+      "translation": "поддерживать в течение времени",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "transfer",
+      "translation": "передавать; переводить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "transform",
+      "translation": "преобразовывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "undertake",
+      "translation": "предпринимать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "update",
+      "translation": "обновлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "vary",
+      "translation": "изменяться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "withdraw",
+      "translation": "отзывать; снимать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    }
+  ]
+}

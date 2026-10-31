@@ -1,12 +1,12 @@
 {
   "id": "vocabulary-excel-appearance-character",
   "type": "vocabulary",
-  "title": "Внешность и характер",
+  "title": "Appearance Character",
   "grade": 6,
   "level": "A2",
-  "topic": "Appearance & Character",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 52 единиц, уровни A2–B1.",
+  "topic": "Appearance Character",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 88 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
       "term": "appearance",
@@ -15,177 +15,9 @@
       "level": "A2"
     },
     {
-      "term": "height",
-      "translation": "рост",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "weight",
-      "translation": "вес",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "face",
-      "translation": "лицо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hair",
-      "translation": "волосы",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "eye",
-      "translation": "глаз",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "beard",
-      "translation": "борода",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "moustache",
-      "translation": "усы",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "glasses",
-      "translation": "очки",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "freckles",
-      "translation": "веснушки",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "smile",
-      "translation": "улыбка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tall",
-      "translation": "высокий",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "short",
-      "translation": "низкий; короткий",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "medium-height",
-      "translation": "среднего роста",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "slim",
-      "translation": "стройный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "thin",
-      "translation": "худой, тонкий",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "overweight",
-      "translation": "с избыточным весом",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
-      "term": "fit",
-      "translation": "в хорошей физической форме",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "young",
-      "translation": "молодой",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "middle-aged",
-      "translation": "среднего возраста",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
-      "term": "elderly",
-      "translation": "пожилой",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
       "term": "attractive",
       "translation": "привлекательный",
       "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "good-looking",
-      "translation": "симпатичный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "handsome",
-      "translation": "красивый (о мужчине)",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "pretty",
-      "translation": "симпатичная, красивая",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "straight hair",
-      "translation": "прямые волосы",
-      "partOfSpeech": "noun phrase",
-      "level": "A2"
-    },
-    {
-      "term": "curly hair",
-      "translation": "кудрявые волосы",
-      "partOfSpeech": "noun phrase",
-      "level": "A2"
-    },
-    {
-      "term": "wavy hair",
-      "translation": "волнистые волосы",
-      "partOfSpeech": "noun phrase",
-      "level": "A2"
-    },
-    {
-      "term": "fair hair",
-      "translation": "светлые волосы",
-      "partOfSpeech": "noun phrase",
-      "level": "A2"
-    },
-    {
-      "term": "dark hair",
-      "translation": "тёмные волосы",
-      "partOfSpeech": "noun phrase",
       "level": "A2"
     },
     {
@@ -195,50 +27,20 @@
       "level": "B1"
     },
     {
-      "term": "friendly",
-      "translation": "дружелюбный",
+      "term": "beard",
+      "translation": "борода",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "brave",
+      "translation": "смелый",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "kind",
-      "translation": "добрый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "polite",
-      "translation": "вежливый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "rude",
-      "translation": "грубый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "honest",
-      "translation": "честный",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
-      "term": "reliable",
-      "translation": "надёжный",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
-      "term": "patient",
-      "translation": "терпеливый",
-      "partOfSpeech": "adjective",
-      "level": "B1"
-    },
-    {
-      "term": "shy",
-      "translation": "застенчивый",
+      "term": "clever",
+      "translation": "умный",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
@@ -249,38 +51,68 @@
       "level": "B1"
     },
     {
-      "term": "quiet",
-      "translation": "тихий, спокойный",
+      "term": "creative",
+      "translation": "творческий",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "talkative",
-      "translation": "разговорчивый",
+      "term": "curly hair",
+      "translation": "кудрявые волосы",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "dark hair",
+      "translation": "тёмные волосы",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "elderly",
+      "translation": "пожилой",
       "partOfSpeech": "adjective",
       "level": "B1"
     },
     {
+      "term": "eye",
+      "translation": "глаз",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "face",
+      "translation": "лицо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fair hair",
+      "translation": "светлые волосы",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "fit",
+      "translation": "в хорошей физической форме",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "freckles",
+      "translation": "веснушки",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "friendly",
+      "translation": "дружелюбный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
       "term": "funny",
       "translation": "смешной",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "serious",
-      "translation": "серьёзный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "lazy",
-      "translation": "ленивый",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "hard-working",
-      "translation": "трудолюбивый",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
@@ -291,27 +123,75 @@
       "level": "B1"
     },
     {
-      "term": "selfish",
-      "translation": "эгоистичный",
+      "term": "glasses",
+      "translation": "очки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "good-looking",
+      "translation": "симпатичный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "hair",
+      "translation": "волосы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "handsome",
+      "translation": "красивый (о мужчине)",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "hard-working",
+      "translation": "трудолюбивый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "height",
+      "translation": "рост",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "honest",
+      "translation": "честный",
       "partOfSpeech": "adjective",
       "level": "B1"
     },
     {
-      "term": "clever",
-      "translation": "умный",
+      "term": "kind",
+      "translation": "добрый",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "creative",
-      "translation": "творческий",
+      "term": "lazy",
+      "translation": "ленивый",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "brave",
-      "translation": "смелый",
+      "term": "medium-height",
+      "translation": "среднего роста",
       "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "middle-aged",
+      "translation": "среднего возраста",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "moustache",
+      "translation": "усы",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -319,6 +199,342 @@
       "translation": "нервный",
       "partOfSpeech": "adjective",
       "level": "A2"
+    },
+    {
+      "term": "overweight",
+      "translation": "с избыточным весом",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "patient",
+      "translation": "терпеливый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "polite",
+      "translation": "вежливый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "pretty",
+      "translation": "симпатичная, красивая",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "quiet",
+      "translation": "тихий, спокойный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "reliable",
+      "translation": "надёжный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "rude",
+      "translation": "грубый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "selfish",
+      "translation": "эгоистичный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "serious",
+      "translation": "серьёзный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "short",
+      "translation": "низкий; короткий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "shy",
+      "translation": "застенчивый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "slim",
+      "translation": "стройный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "smile",
+      "translation": "улыбка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "straight hair",
+      "translation": "прямые волосы",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "talkative",
+      "translation": "разговорчивый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "tall",
+      "translation": "высокий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "thin",
+      "translation": "худой, тонкий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "wavy hair",
+      "translation": "волнистые волосы",
+      "partOfSpeech": "noun phrase",
+      "level": "A2"
+    },
+    {
+      "term": "weight",
+      "translation": "вес",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "young",
+      "translation": "молодой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "ponytail",
+      "translation": "хвост (причёска)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "face shape",
+      "translation": "форма лица",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "hair colour",
+      "translation": "цвет волос",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "haircut",
+      "translation": "стрижка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "beautiful",
+      "translation": "красивый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "ugly",
+      "translation": "некрасивый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "old",
+      "translation": "старый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "short-haired",
+      "translation": "коротковолосый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "long-haired",
+      "translation": "длинноволосый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "brown-eyed",
+      "translation": "кареглазый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "blue-eyed",
+      "translation": "голубоглазый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "fair-haired",
+      "translation": "светловолосый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "dark-haired",
+      "translation": "темноволосый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "smiling",
+      "translation": "улыбающийся",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "average height",
+      "translation": "среднего роста",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "well-dressed",
+      "translation": "хорошо одетый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "untidy",
+      "translation": "неопрятный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "pleasant",
+      "translation": "приятный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "unfriendly",
+      "translation": "недружелюбный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "sensible",
+      "translation": "благоразумный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "stubborn",
+      "translation": "упрямый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "self-confidence",
+      "translation": "уверенность в себе",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "first impression",
+      "translation": "первое впечатление",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "attitude",
+      "translation": "отношение; позиция",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "behaviour",
+      "translation": "поведение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "thoughtful",
+      "translation": "внимательный; заботливый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "open-minded",
+      "translation": "открытый новому",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "narrow-minded",
+      "translation": "ограниченный во взглядах",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "sensitive",
+      "translation": "чувствительный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "independent",
+      "translation": "независимый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "ambitious",
+      "translation": "амбициозный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "mature",
+      "translation": "зрелый",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "politely",
+      "translation": "вежливо",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "confidently",
+      "translation": "уверенно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "cheerfully",
+      "translation": "весело",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "patiently",
+      "translation": "терпеливо",
+      "partOfSpeech": "adverb",
+      "level": "B1"
     }
   ]
 }

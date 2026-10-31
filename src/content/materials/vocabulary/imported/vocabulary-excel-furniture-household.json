@@ -1,25 +1,13 @@
 {
   "id": "vocabulary-excel-furniture-household",
   "type": "vocabulary",
-  "title": "Мебель и домашние вещи",
+  "title": "Furniture Household",
   "grade": 6,
   "level": "A2",
-  "topic": "Furniture & Household",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 45 единиц, уровни A2–B1.",
+  "topic": "Furniture Household",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 89 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "furniture",
-      "translation": "мебель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sofa",
-      "translation": "диван",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "armchair",
       "translation": "кресло",
@@ -27,20 +15,8 @@
       "level": "A2"
     },
     {
-      "term": "chair",
-      "translation": "стул",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "table",
-      "translation": "стол",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "desk",
-      "translation": "письменный стол",
+      "term": "bath",
+      "translation": "ванна",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -51,20 +27,8 @@
       "level": "A2"
     },
     {
-      "term": "wardrobe",
-      "translation": "шкаф для одежды",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cupboard",
-      "translation": "шкафчик",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "shelf",
-      "translation": "полка",
+      "term": "blanket",
+      "translation": "одеяло",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -75,22 +39,40 @@
       "level": "A2"
     },
     {
-      "term": "drawer",
-      "translation": "ящик",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
       "term": "carpet",
       "translation": "ковёр",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "rug",
-      "translation": "коврик",
+      "term": "chair",
+      "translation": "стул",
       "partOfSpeech": "noun",
-      "level": "B1"
+      "level": "A2"
+    },
+    {
+      "term": "clean",
+      "translation": "убирать; чистый",
+      "partOfSpeech": "verb/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "clock",
+      "translation": "часы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cooker",
+      "translation": "плита",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cupboard",
+      "translation": "шкафчик",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "curtain",
@@ -99,8 +81,56 @@
       "level": "A2"
     },
     {
-      "term": "mirror",
-      "translation": "зеркало",
+      "term": "desk",
+      "translation": "письменный стол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dishwasher",
+      "translation": "посудомоечная машина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "do the laundry",
+      "translation": "стирать бельё",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "drawer",
+      "translation": "ящик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "duvet",
+      "translation": "одеяло (пуховое)",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "freezer",
+      "translation": "морозильник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fridge",
+      "translation": "холодильник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "furniture",
+      "translation": "мебель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "kettle",
+      "translation": "чайник",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -117,38 +147,20 @@
       "level": "A2"
     },
     {
-      "term": "picture",
-      "translation": "картина, изображение",
+      "term": "make the bed",
+      "translation": "заправлять кровать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "microwave",
+      "translation": "микроволновка",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "plant",
-      "translation": "растение",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "clock",
-      "translation": "часы",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "fridge",
-      "translation": "холодильник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "freezer",
-      "translation": "морозильник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cooker",
-      "translation": "плита",
+      "term": "mirror",
+      "translation": "зеркало",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -159,62 +171,8 @@
       "level": "A2"
     },
     {
-      "term": "microwave",
-      "translation": "микроволновка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "dishwasher",
-      "translation": "посудомоечная машина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "washing machine",
-      "translation": "стиральная машина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "kettle",
-      "translation": "чайник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "toaster",
-      "translation": "тостер",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sink",
-      "translation": "раковина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tap",
-      "translation": "кран",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "shower",
-      "translation": "душ",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bath",
-      "translation": "ванна",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "towel",
-      "translation": "полотенце",
+      "term": "picture",
+      "translation": "картина, изображение",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -225,10 +183,16 @@
       "level": "A2"
     },
     {
-      "term": "blanket",
-      "translation": "одеяло",
+      "term": "plant",
+      "translation": "растение",
       "partOfSpeech": "noun",
       "level": "A2"
+    },
+    {
+      "term": "rug",
+      "translation": "коврик",
+      "partOfSpeech": "noun",
+      "level": "B1"
     },
     {
       "term": "sheet",
@@ -237,15 +201,45 @@
       "level": "A2"
     },
     {
-      "term": "duvet",
-      "translation": "одеяло (пуховое)",
+      "term": "shelf",
+      "translation": "полка",
       "partOfSpeech": "noun",
-      "level": "B1"
+      "level": "A2"
     },
     {
-      "term": "clean",
-      "translation": "убирать; чистый",
-      "partOfSpeech": "verb/adjective",
+      "term": "shower",
+      "translation": "душ",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sink",
+      "translation": "раковина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sofa",
+      "translation": "диван",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "table",
+      "translation": "стол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "take out the rubbish",
+      "translation": "выносить мусор",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "tap",
+      "translation": "кран",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -255,28 +249,298 @@
       "level": "A2"
     },
     {
+      "term": "toaster",
+      "translation": "тостер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "towel",
+      "translation": "полотенце",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "wardrobe",
+      "translation": "шкаф для одежды",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "wash up",
       "translation": "мыть посуду",
       "partOfSpeech": "phrasal verb",
       "level": "A2"
     },
     {
-      "term": "do the laundry",
-      "translation": "стирать бельё",
-      "partOfSpeech": "verb phrase",
+      "term": "washing machine",
+      "translation": "стиральная машина",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "make the bed",
-      "translation": "заправлять кровать",
-      "partOfSpeech": "verb phrase",
+      "term": "toothbrush",
+      "translation": "зубная щётка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "toothpaste",
+      "translation": "зубная паста",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "soap",
+      "translation": "мыло",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "shampoo",
+      "translation": "шампунь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "shower gel",
+      "translation": "гель для душа",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "face towel",
+      "translation": "полотенце для лица",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bath mat",
+      "translation": "коврик для ванной",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "toilet paper",
+      "translation": "туалетная бумага",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "hairbrush",
+      "translation": "щётка для волос",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "comb",
+      "translation": "расчёска",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pillowcase",
+      "translation": "наволочка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bedsheet",
+      "translation": "простыня",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mattress",
+      "translation": "матрас",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bedside table",
+      "translation": "прикроватная тумбочка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "light bulb",
+      "translation": "лампочка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "switch",
+      "translation": "выключатель",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "plug",
+      "translation": "штепсельная вилка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "socket",
+      "translation": "розетка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "remote control",
+      "translation": "пульт управления",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bin",
+      "translation": "мусорное ведро",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "broom",
+      "translation": "веник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bucket",
+      "translation": "ведро",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mop",
+      "translation": "швабра",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sponge",
+      "translation": "губка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cloth",
+      "translation": "тряпка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "scissors",
+      "translation": "ножницы",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "needle",
+      "translation": "игла",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "thread",
+      "translation": "нитка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "coat hanger",
+      "translation": "плечики для одежды",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "wipe",
+      "translation": "протирать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "sweep",
+      "translation": "подметать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "fold",
+      "translation": "складывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "hang",
+      "translation": "вешать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "washing-up liquid",
+      "translation": "средство для мытья посуды",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "take out the rubbish",
-      "translation": "выносить мусор",
-      "partOfSpeech": "verb phrase",
+      "term": "detergent",
+      "translation": "моющее средство",
+      "partOfSpeech": "noun",
       "level": "A2"
+    },
+    {
+      "term": "vacuum cleaner",
+      "translation": "пылесос",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ironing board",
+      "translation": "гладильная доска",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "iron",
+      "translation": "утюг",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "microwave oven",
+      "translation": "микроволновая печь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "disinfect",
+      "translation": "дезинфицировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "assemble",
+      "translation": "собирать из деталей",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "replace",
+      "translation": "заменять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "appliance",
+      "translation": "бытовой прибор",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "maintenance",
+      "translation": "техническое обслуживание",
+      "partOfSpeech": "noun",
+      "level": "B1"
     }
   ]
 }

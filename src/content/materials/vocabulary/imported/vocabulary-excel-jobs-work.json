@@ -1,40 +1,40 @@
 {
   "id": "vocabulary-excel-jobs-work",
   "type": "vocabulary",
-  "title": "Работа и профессии",
+  "title": "Jobs Work",
   "grade": 6,
   "level": "A2",
-  "topic": "Jobs & Work",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 53 единиц, уровни A2–B1.",
+  "topic": "Jobs Work",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 91 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
-      "term": "job",
-      "translation": "работа, должность",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "work",
-      "translation": "работа; работать",
-      "partOfSpeech": "noun/verb",
-      "level": "A2"
-    },
-    {
-      "term": "career",
-      "translation": "карьера",
+      "term": "accountant",
+      "translation": "бухгалтер",
       "partOfSpeech": "noun",
       "level": "B1"
     },
     {
-      "term": "company",
-      "translation": "компания",
+      "term": "actor",
+      "translation": "актёр",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "office",
-      "translation": "офис",
+      "term": "apply for a job",
+      "translation": "подавать заявку на работу",
+      "partOfSpeech": "verb phrase",
+      "level": "B1"
+    },
+    {
+      "term": "architect",
+      "translation": "архитектор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "artist",
+      "translation": "художник",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -45,8 +45,20 @@
       "level": "A2"
     },
     {
-      "term": "manager",
-      "translation": "менеджер, руководитель",
+      "term": "builder",
+      "translation": "строитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "career",
+      "translation": "карьера",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "chef",
+      "translation": "шеф-повар",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -55,6 +67,54 @@
       "translation": "коллега",
       "partOfSpeech": "noun",
       "level": "B1"
+    },
+    {
+      "term": "company",
+      "translation": "компания",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dentist",
+      "translation": "стоматолог",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "designer",
+      "translation": "дизайнер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "developer",
+      "translation": "разработчик",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "doctor",
+      "translation": "врач",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "driver",
+      "translation": "водитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "earn",
+      "translation": "зарабатывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "electrician",
+      "translation": "электрик",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "employee",
@@ -69,128 +129,20 @@
       "level": "B1"
     },
     {
-      "term": "doctor",
-      "translation": "врач",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "nurse",
-      "translation": "медсестра / медбрат",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "dentist",
-      "translation": "стоматолог",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "teacher",
-      "translation": "учитель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
       "term": "engineer",
       "translation": "инженер",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "architect",
-      "translation": "архитектор",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "designer",
-      "translation": "дизайнер",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "programmer",
-      "translation": "программист",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "developer",
-      "translation": "разработчик",
+      "term": "experience",
+      "translation": "опыт",
       "partOfSpeech": "noun",
       "level": "B1"
     },
     {
-      "term": "accountant",
-      "translation": "бухгалтер",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "lawyer",
-      "translation": "юрист",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "journalist",
-      "translation": "журналист",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "photographer",
-      "translation": "фотограф",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "police officer",
-      "translation": "полицейский",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "firefighter",
-      "translation": "пожарный",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "driver",
-      "translation": "водитель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pilot",
-      "translation": "пилот",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "mechanic",
-      "translation": "механик",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "electrician",
-      "translation": "электрик",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "plumber",
-      "translation": "сантехник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "builder",
-      "translation": "строитель",
+      "term": "factory worker",
+      "translation": "рабочий на заводе",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -201,80 +153,8 @@
       "level": "A2"
     },
     {
-      "term": "chef",
-      "translation": "шеф-повар",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "waiter",
-      "translation": "официант",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "shop assistant",
-      "translation": "продавец-консультант",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hairdresser",
-      "translation": "парикмахер",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "vet",
-      "translation": "ветеринар",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "scientist",
-      "translation": "учёный",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "actor",
-      "translation": "актёр",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "musician",
-      "translation": "музыкант",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "artist",
-      "translation": "художник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "receptionist",
-      "translation": "администратор, секретарь на ресепшене",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "secretary",
-      "translation": "секретарь",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sales assistant",
-      "translation": "продавец",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "factory worker",
-      "translation": "рабочий на заводе",
+      "term": "firefighter",
+      "translation": "пожарный",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -285,28 +165,10 @@
       "level": "B1"
     },
     {
-      "term": "part-time",
-      "translation": "неполный рабочий день",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "salary",
-      "translation": "зарплата",
+      "term": "hairdresser",
+      "translation": "парикмахер",
       "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "earn",
-      "translation": "зарабатывать",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "apply for a job",
-      "translation": "подавать заявку на работу",
-      "partOfSpeech": "verb phrase",
-      "level": "B1"
+      "level": "A2"
     },
     {
       "term": "interview",
@@ -315,15 +177,381 @@
       "level": "B1"
     },
     {
-      "term": "experience",
-      "translation": "опыт",
+      "term": "job",
+      "translation": "работа, должность",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "journalist",
+      "translation": "журналист",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lawyer",
+      "translation": "юрист",
       "partOfSpeech": "noun",
       "level": "B1"
+    },
+    {
+      "term": "manager",
+      "translation": "менеджер, руководитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mechanic",
+      "translation": "механик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "musician",
+      "translation": "музыкант",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "nurse",
+      "translation": "медсестра / медбрат",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "office",
+      "translation": "офис",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "part-time",
+      "translation": "неполный рабочий день",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "photographer",
+      "translation": "фотограф",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pilot",
+      "translation": "пилот",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "plumber",
+      "translation": "сантехник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "police officer",
+      "translation": "полицейский",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "programmer",
+      "translation": "программист",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "receptionist",
+      "translation": "администратор, секретарь на ресепшене",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "salary",
+      "translation": "зарплата",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "sales assistant",
+      "translation": "продавец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "scientist",
+      "translation": "учёный",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "secretary",
+      "translation": "секретарь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shop assistant",
+      "translation": "продавец-консультант",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "skill",
       "translation": "навык",
       "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "teacher",
+      "translation": "учитель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "vet",
+      "translation": "ветеринар",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "waiter",
+      "translation": "официант",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "work",
+      "translation": "работа; работать",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "cashier",
+      "translation": "кассир",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cleaner",
+      "translation": "уборщик",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "postman",
+      "translation": "почтальон",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bus driver",
+      "translation": "водитель автобуса",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "taxi driver",
+      "translation": "водитель такси",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lorry driver",
+      "translation": "водитель грузовика",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "carpenter",
+      "translation": "плотник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "baker",
+      "translation": "пекарь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "waitress",
+      "translation": "официантка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "librarian",
+      "translation": "библиотекарь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "actress",
+      "translation": "актриса",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "singer",
+      "translation": "певец",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "assistant",
+      "translation": "помощник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "translator",
+      "translation": "переводчик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "interpreter",
+      "translation": "устный переводчик",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "researcher",
+      "translation": "исследователь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "software developer",
+      "translation": "разработчик программного обеспечения",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "web designer",
+      "translation": "веб-дизайнер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "flight attendant",
+      "translation": "бортпроводник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "workplace",
+      "translation": "рабочее место",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "working conditions",
+      "translation": "условия труда",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "job vacancy",
+      "translation": "вакансия",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "job application",
+      "translation": "заявление о приёме на работу",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "employment",
+      "translation": "занятость",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "unemployment",
+      "translation": "безработица",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "responsibility",
+      "translation": "обязанность; ответственность",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "teamwork",
+      "translation": "командная работа",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "promotion",
+      "translation": "повышение по службе",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "work experience",
+      "translation": "опыт работы",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "hire",
+      "translation": "нанимать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "employ",
+      "translation": "трудоустраивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "promote",
+      "translation": "повышать в должности",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "resign",
+      "translation": "увольняться по собственному желанию",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "retire",
+      "translation": "выходить на пенсию",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "train",
+      "translation": "обучать персонал",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "professionally",
+      "translation": "профессионально",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "efficiently",
+      "translation": "эффективно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "independently",
+      "translation": "самостоятельно",
+      "partOfSpeech": "adverb",
       "level": "B1"
     }
   ]

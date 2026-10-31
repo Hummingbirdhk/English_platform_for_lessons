@@ -1,22 +1,28 @@
 {
   "id": "vocabulary-excel-sport-fitness",
   "type": "vocabulary",
-  "title": "Спорт и активность",
+  "title": "Sport Fitness",
   "grade": 6,
   "level": "A2",
-  "topic": "Sport & Fitness",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 41 единиц, уровни A2–B1.",
+  "topic": "Sport Fitness",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 41 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
-      "term": "sport",
-      "translation": "спорт",
-      "partOfSpeech": "noun",
+      "term": "active",
+      "translation": "активный",
+      "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "football",
-      "translation": "футбол",
+      "term": "athletics",
+      "translation": "лёгкая атлетика",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "badminton",
+      "translation": "бадминтон",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -27,38 +33,68 @@
       "level": "A2"
     },
     {
-      "term": "volleyball",
-      "translation": "волейбол",
+      "term": "boxing",
+      "translation": "бокс",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "tennis",
-      "translation": "теннис",
+      "term": "coach",
+      "translation": "тренер",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "table tennis",
-      "translation": "настольный теннис",
+      "term": "competition",
+      "translation": "соревнование",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "badminton",
-      "translation": "бадминтон",
+      "term": "cycling",
+      "translation": "велоспорт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "hockey",
-      "translation": "хоккей",
+      "term": "do yoga",
+      "translation": "заниматься йогой",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "exercise",
+      "translation": "тренироваться; упражнение",
+      "partOfSpeech": "verb/noun",
+      "level": "A2"
+    },
+    {
+      "term": "fit",
+      "translation": "в хорошей форме",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "football",
+      "translation": "футбол",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "rugby",
-      "translation": "регби",
+      "term": "game",
+      "translation": "игра",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "go swimming",
+      "translation": "ходить плавать",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "goal",
+      "translation": "гол",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -69,14 +105,14 @@
       "level": "A2"
     },
     {
-      "term": "swimming",
-      "translation": "плавание",
+      "term": "gymnastics",
+      "translation": "гимнастика",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "running",
-      "translation": "бег",
+      "term": "hockey",
+      "translation": "хоккей",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -87,8 +123,62 @@
       "level": "A2"
     },
     {
-      "term": "cycling",
-      "translation": "велоспорт",
+      "term": "keep fit",
+      "translation": "поддерживать форму",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "lose",
+      "translation": "проигрывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "match",
+      "translation": "матч",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "play football",
+      "translation": "играть в футбол",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "player",
+      "translation": "игрок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "race",
+      "translation": "гонка, забег",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rugby",
+      "translation": "регби",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "running",
+      "translation": "бег",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "score",
+      "translation": "счёт; забивать",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "skating",
+      "translation": "катание на коньках",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -105,26 +195,26 @@
       "level": "A2"
     },
     {
-      "term": "skating",
-      "translation": "катание на коньках",
+      "term": "sport",
+      "translation": "спорт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "gymnastics",
-      "translation": "гимнастика",
+      "term": "strong",
+      "translation": "сильный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "swimming",
+      "translation": "плавание",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "athletics",
-      "translation": "лёгкая атлетика",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "boxing",
-      "translation": "бокс",
+      "term": "table tennis",
+      "translation": "настольный теннис",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -135,69 +225,9 @@
       "level": "A2"
     },
     {
-      "term": "player",
-      "translation": "игрок",
+      "term": "tennis",
+      "translation": "теннис",
       "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "coach",
-      "translation": "тренер",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "match",
-      "translation": "матч",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "game",
-      "translation": "игра",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "competition",
-      "translation": "соревнование",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "race",
-      "translation": "гонка, забег",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "score",
-      "translation": "счёт; забивать",
-      "partOfSpeech": "noun/verb",
-      "level": "A2"
-    },
-    {
-      "term": "goal",
-      "translation": "гол",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "winner",
-      "translation": "победитель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "lose",
-      "translation": "проигрывать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "win",
-      "translation": "выигрывать",
-      "partOfSpeech": "verb",
       "level": "A2"
     },
     {
@@ -207,51 +237,21 @@
       "level": "A2"
     },
     {
-      "term": "exercise",
-      "translation": "тренироваться; упражнение",
-      "partOfSpeech": "verb/noun",
+      "term": "volleyball",
+      "translation": "волейбол",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "play football",
-      "translation": "играть в футбол",
-      "partOfSpeech": "verb phrase",
+      "term": "win",
+      "translation": "выигрывать",
+      "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "go swimming",
-      "translation": "ходить плавать",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "do yoga",
-      "translation": "заниматься йогой",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "keep fit",
-      "translation": "поддерживать форму",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "fit",
-      "translation": "в хорошей форме",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "strong",
-      "translation": "сильный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "active",
-      "translation": "активный",
-      "partOfSpeech": "adjective",
+      "term": "winner",
+      "translation": "победитель",
+      "partOfSpeech": "noun",
       "level": "A2"
     }
   ]

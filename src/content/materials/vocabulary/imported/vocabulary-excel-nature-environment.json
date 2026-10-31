@@ -1,148 +1,16 @@
 {
   "id": "vocabulary-excel-nature-environment",
   "type": "vocabulary",
-  "title": "Природа и экология",
+  "title": "Nature Environment",
   "grade": 6,
   "level": "A2",
-  "topic": "Nature & Environment",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 37 единиц, уровни A2–B1.",
+  "topic": "Nature Environment",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 67 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "nature",
-      "translation": "природа",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "environment",
-      "translation": "окружающая среда",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "tree",
-      "translation": "дерево",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "flower",
-      "translation": "цветок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "grass",
-      "translation": "трава",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "forest",
-      "translation": "лес",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "wood",
-      "translation": "лес; древесина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "field",
-      "translation": "поле",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "river",
-      "translation": "река",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "lake",
-      "translation": "озеро",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sea",
-      "translation": "море",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "ocean",
-      "translation": "океан",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "mountain",
-      "translation": "гора",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hill",
-      "translation": "холм",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "valley",
-      "translation": "долина",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "desert",
-      "translation": "пустыня",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "beach",
-      "translation": "пляж",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "coast",
-      "translation": "побережье",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "island",
-      "translation": "остров",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sky",
-      "translation": "небо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "air",
       "translation": "воздух",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "earth",
-      "translation": "земля; Земля",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "planet",
-      "translation": "планета",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -153,10 +21,136 @@
       "level": "A2"
     },
     {
-      "term": "wildlife",
-      "translation": "дикая природа",
+      "term": "beach",
+      "translation": "пляж",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "climate",
+      "translation": "климат",
       "partOfSpeech": "noun",
       "level": "B1"
+    },
+    {
+      "term": "coast",
+      "translation": "побережье",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "damage",
+      "translation": "наносить ущерб; ущерб",
+      "partOfSpeech": "verb/noun",
+      "level": "B1"
+    },
+    {
+      "term": "desert",
+      "translation": "пустыня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "earth",
+      "translation": "земля; Земля",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "environment",
+      "translation": "окружающая среда",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "environmental",
+      "translation": "экологический",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "field",
+      "translation": "поле",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "flower",
+      "translation": "цветок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "forest",
+      "translation": "лес",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "global warming",
+      "translation": "глобальное потепление",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "grass",
+      "translation": "трава",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hill",
+      "translation": "холм",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "island",
+      "translation": "остров",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lake",
+      "translation": "озеро",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "litter",
+      "translation": "мусор на улице",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "mountain",
+      "translation": "гора",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "natural",
+      "translation": "природный, естественный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "nature",
+      "translation": "природа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ocean",
+      "translation": "океан",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "planet",
+      "translation": "планета",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "pollution",
@@ -165,15 +159,9 @@
       "level": "B1"
     },
     {
-      "term": "rubbish",
-      "translation": "мусор",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "litter",
-      "translation": "мусор на улице",
-      "partOfSpeech": "noun",
+      "term": "protect",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
       "level": "B1"
     },
     {
@@ -189,46 +177,238 @@
       "level": "B1"
     },
     {
+      "term": "river",
+      "translation": "река",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rubbish",
+      "translation": "мусор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "save energy",
       "translation": "экономить энергию",
       "partOfSpeech": "verb phrase",
       "level": "B1"
     },
     {
-      "term": "protect",
-      "translation": "защищать",
+      "term": "sea",
+      "translation": "море",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sky",
+      "translation": "небо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tree",
+      "translation": "дерево",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "valley",
+      "translation": "долина",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "wildlife",
+      "translation": "дикая природа",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "wood",
+      "translation": "лес; древесина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "branch",
+      "translation": "ветка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "root",
+      "translation": "корень",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "leaf",
+      "translation": "лист дерева",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "leaves",
+      "translation": "листья",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "seed",
+      "translation": "семя",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "soil",
+      "translation": "почва",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mud",
+      "translation": "грязь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "stone",
+      "translation": "камень",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rock",
+      "translation": "скала; камень",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sand",
+      "translation": "песок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "waterfall",
+      "translation": "водопад",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "stream",
+      "translation": "ручей",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pond",
+      "translation": "пруд",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cave",
+      "translation": "пещера",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "jungle",
+      "translation": "джунгли",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cliff",
+      "translation": "обрыв",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "habitat",
+      "translation": "среда обитания",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "recycling",
+      "translation": "переработка отходов",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "conservation",
+      "translation": "охрана природы",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "carbon footprint",
+      "translation": "углеродный след",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "renewable energy",
+      "translation": "возобновляемая энергия",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "fossil fuels",
+      "translation": "ископаемое топливо",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "biodiversity",
+      "translation": "биоразнообразие",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "ecosystem",
+      "translation": "экосистема",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "natural resource",
+      "translation": "природный ресурс",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "conserve",
+      "translation": "сохранять ресурсы",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "damage",
-      "translation": "наносить ущерб; ущерб",
-      "partOfSpeech": "verb/noun",
+      "term": "contaminate",
+      "translation": "загрязнять",
+      "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "climate",
-      "translation": "климат",
-      "partOfSpeech": "noun",
+      "term": "preserve",
+      "translation": "сохранять; беречь",
+      "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "global warming",
-      "translation": "глобальное потепление",
-      "partOfSpeech": "noun",
+      "term": "environmentally",
+      "translation": "с точки зрения экологии",
+      "partOfSpeech": "adverb",
       "level": "B1"
     },
     {
-      "term": "environmental",
-      "translation": "экологический",
-      "partOfSpeech": "adjective",
+      "term": "sustainably",
+      "translation": "устойчивым способом",
+      "partOfSpeech": "adverb",
       "level": "B1"
-    },
-    {
-      "term": "natural",
-      "translation": "природный, естественный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
     }
   ]
 }

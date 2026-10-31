@@ -1,55 +1,13 @@
 {
   "id": "vocabulary-excel-travel-holidays",
   "type": "vocabulary",
-  "title": "Путешествия и каникулы",
+  "title": "Travel Holidays",
   "grade": 6,
   "level": "A2",
-  "topic": "Travel & Holidays",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 49 единиц, уровни A2–B1.",
+  "topic": "Travel Holidays",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 71 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "travel",
-      "translation": "путешествовать; путешествие",
-      "partOfSpeech": "verb/noun",
-      "level": "A2"
-    },
-    {
-      "term": "holiday",
-      "translation": "отпуск, каникулы",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "vacation",
-      "translation": "отпуск (амер.)",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tourist",
-      "translation": "турист",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tourism",
-      "translation": "туризм",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "destination",
-      "translation": "место назначения",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "country",
-      "translation": "страна",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "abroad",
       "translation": "за границей",
@@ -57,86 +15,14 @@
       "level": "A2"
     },
     {
-      "term": "passport",
-      "translation": "паспорт",
+      "term": "arrival",
+      "translation": "прибытие",
       "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "visa",
-      "translation": "виза",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "luggage",
-      "translation": "багаж",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "suitcase",
-      "translation": "чемодан",
-      "partOfSpeech": "noun",
-      "level": "A2"
+      "level": "B1"
     },
     {
       "term": "backpack",
       "translation": "рюкзак",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "map",
-      "translation": "карта",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "guidebook",
-      "translation": "путеводитель",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "tour guide",
-      "translation": "экскурсовод",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tour",
-      "translation": "тур, экскурсия",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sightseeing",
-      "translation": "осмотр достопримечательностей",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sight",
-      "translation": "достопримечательность",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "monument",
-      "translation": "памятник",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "castle",
-      "translation": "замок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "palace",
-      "translation": "дворец",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -147,21 +33,9 @@
       "level": "A2"
     },
     {
-      "term": "coast",
-      "translation": "побережье",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "island",
-      "translation": "остров",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "mountain",
-      "translation": "гора",
-      "partOfSpeech": "noun",
+      "term": "book",
+      "translation": "бронировать",
+      "partOfSpeech": "verb",
       "level": "A2"
     },
     {
@@ -171,14 +45,86 @@
       "level": "A2"
     },
     {
-      "term": "tent",
-      "translation": "палатка",
+      "term": "castle",
+      "translation": "замок",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "hotel",
-      "translation": "отель",
+      "term": "check in",
+      "translation": "регистрироваться (в отеле/аэропорту)",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "check out",
+      "translation": "выписываться из отеля",
+      "partOfSpeech": "phrasal verb",
+      "level": "A2"
+    },
+    {
+      "term": "coast",
+      "translation": "побережье",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "country",
+      "translation": "страна",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "departure",
+      "translation": "отправление",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "destination",
+      "translation": "место назначения",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "double room",
+      "translation": "двухместный номер",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "explore",
+      "translation": "исследовать, осматривать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "flight",
+      "translation": "рейс, полёт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "go camping",
+      "translation": "ездить с палатками",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "go sightseeing",
+      "translation": "осматривать достопримечательности",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "guidebook",
+      "translation": "путеводитель",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "holiday",
+      "translation": "отпуск, каникулы",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -189,14 +135,56 @@
       "level": "A2"
     },
     {
-      "term": "single room",
-      "translation": "одноместный номер",
+      "term": "hotel",
+      "translation": "отель",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "double room",
-      "translation": "двухместный номер",
+      "term": "island",
+      "translation": "остров",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "luggage",
+      "translation": "багаж",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "map",
+      "translation": "карта",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "monument",
+      "translation": "памятник",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mountain",
+      "translation": "гора",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pack",
+      "translation": "упаковывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "palace",
+      "translation": "дворец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "passport",
+      "translation": "паспорт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -213,69 +201,21 @@
       "level": "B1"
     },
     {
-      "term": "book",
-      "translation": "бронировать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "check in",
-      "translation": "регистрироваться (в отеле/аэропорту)",
-      "partOfSpeech": "phrasal verb",
-      "level": "A2"
-    },
-    {
-      "term": "check out",
-      "translation": "выписываться из отеля",
-      "partOfSpeech": "phrasal verb",
-      "level": "A2"
-    },
-    {
-      "term": "pack",
-      "translation": "упаковывать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "unpack",
-      "translation": "распаковывать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "stay",
-      "translation": "останавливаться, проживать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "visit",
-      "translation": "посещать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "explore",
-      "translation": "исследовать, осматривать",
-      "partOfSpeech": "verb",
+      "term": "sight",
+      "translation": "достопримечательность",
+      "partOfSpeech": "noun",
       "level": "B1"
     },
     {
-      "term": "sunbathe",
-      "translation": "загорать",
-      "partOfSpeech": "verb",
+      "term": "sightseeing",
+      "translation": "осмотр достопримечательностей",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "go camping",
-      "translation": "ездить с палатками",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "go sightseeing",
-      "translation": "осматривать достопримечательности",
-      "partOfSpeech": "verb phrase",
+      "term": "single room",
+      "translation": "одноместный номер",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -285,21 +225,213 @@
       "level": "A2"
     },
     {
-      "term": "flight",
-      "translation": "рейс, полёт",
+      "term": "stay",
+      "translation": "останавливаться, проживать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "suitcase",
+      "translation": "чемодан",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "departure",
-      "translation": "отправление",
+      "term": "sunbathe",
+      "translation": "загорать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "tent",
+      "translation": "палатка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tour",
+      "translation": "тур, экскурсия",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tour guide",
+      "translation": "экскурсовод",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tourism",
+      "translation": "туризм",
       "partOfSpeech": "noun",
       "level": "B1"
     },
     {
-      "term": "arrival",
-      "translation": "прибытие",
+      "term": "tourist",
+      "translation": "турист",
       "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "travel",
+      "translation": "путешествовать; путешествие",
+      "partOfSpeech": "verb/noun",
+      "level": "A2"
+    },
+    {
+      "term": "unpack",
+      "translation": "распаковывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "vacation",
+      "translation": "отпуск (амер.)",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "visa",
+      "translation": "виза",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "visit",
+      "translation": "посещать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "ticket",
+      "translation": "билет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "plane",
+      "translation": "самолёт",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "airport",
+      "translation": "аэропорт",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "room key",
+      "translation": "ключ от номера",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sea",
+      "translation": "море",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "forest",
+      "translation": "лес",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "camp",
+      "translation": "лагерь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sleeping bag",
+      "translation": "спальный мешок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "postcard",
+      "translation": "открытка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "accommodation",
+      "translation": "проживание",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "boarding pass",
+      "translation": "посадочный талон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "check-in desk",
+      "translation": "стойка регистрации",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "passport control",
+      "translation": "паспортный контроль",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "customs",
+      "translation": "таможня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "itinerary",
+      "translation": "маршрут путешествия",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "travel insurance",
+      "translation": "туристическая страховка",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "cancellation",
+      "translation": "отмена",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "travel agency",
+      "translation": "туристическое агентство",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "wander",
+      "translation": "бродить; гулять без цели",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "book in advance",
+      "translation": "бронировать заранее",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "locally",
+      "translation": "поблизости; в данной местности",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "independently",
+      "translation": "самостоятельно",
+      "partOfSpeech": "adverb",
       "level": "B1"
     }
   ]

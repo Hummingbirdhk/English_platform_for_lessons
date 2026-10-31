@@ -1,89 +1,17 @@
 {
   "id": "vocabulary-excel-cooking-restaurant",
   "type": "vocabulary",
-  "title": "Готовка и ресторан",
+  "title": "Cooking Restaurant",
   "grade": 6,
   "level": "A2",
-  "topic": "Cooking & Restaurant",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 33 единиц, уровни A2–B1.",
+  "topic": "Cooking Restaurant",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 72 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
-      "term": "recipe",
-      "translation": "рецепт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "ingredient",
-      "translation": "ингредиент",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "menu",
-      "translation": "меню",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "dish",
-      "translation": "блюдо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "starter",
-      "translation": "закуска",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "main course",
-      "translation": "основное блюдо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "dessert",
-      "translation": "десерт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bill",
-      "translation": "счёт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tip",
-      "translation": "чаевые",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "waiter",
-      "translation": "официант",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "waitress",
-      "translation": "официантка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "chef",
-      "translation": "шеф-повар",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cook",
-      "translation": "готовить; повар",
-      "partOfSpeech": "verb/noun",
+      "term": "add",
+      "translation": "добавлять",
+      "partOfSpeech": "verb",
       "level": "A2"
     },
     {
@@ -93,9 +21,57 @@
       "level": "A2"
     },
     {
+      "term": "bill",
+      "translation": "счёт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "boil",
       "translation": "варить, кипятить",
       "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "book a table",
+      "translation": "забронировать столик",
+      "partOfSpeech": "verb phrase",
+      "level": "A2"
+    },
+    {
+      "term": "chef",
+      "translation": "шеф-повар",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chop",
+      "translation": "нарезать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "cook",
+      "translation": "готовить; повар",
+      "partOfSpeech": "verb/noun",
+      "level": "A2"
+    },
+    {
+      "term": "cut",
+      "translation": "резать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "dessert",
+      "translation": "десерт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dish",
+      "translation": "блюдо",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -111,56 +87,26 @@
       "level": "B1"
     },
     {
-      "term": "roast",
-      "translation": "запекать",
-      "partOfSpeech": "verb",
-      "level": "B1"
+      "term": "ingredient",
+      "translation": "ингредиент",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "main course",
+      "translation": "основное блюдо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "menu",
+      "translation": "меню",
+      "partOfSpeech": "noun",
+      "level": "A2"
     },
     {
       "term": "mix",
       "translation": "смешивать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "add",
-      "translation": "добавлять",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "cut",
-      "translation": "резать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "chop",
-      "translation": "нарезать",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "slice",
-      "translation": "нарезать ломтиками",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "peel",
-      "translation": "чистить кожуру",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "pour",
-      "translation": "наливать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "serve",
-      "translation": "подавать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -171,22 +117,10 @@
       "level": "A2"
     },
     {
-      "term": "book a table",
-      "translation": "забронировать столик",
-      "partOfSpeech": "verb phrase",
-      "level": "A2"
-    },
-    {
-      "term": "vegetarian",
-      "translation": "вегетарианец; вегетарианский",
-      "partOfSpeech": "noun/adjective",
-      "level": "A2"
-    },
-    {
-      "term": "takeaway",
-      "translation": "еда навынос",
-      "partOfSpeech": "noun",
-      "level": "A2"
+      "term": "peel",
+      "translation": "чистить кожуру",
+      "partOfSpeech": "verb",
+      "level": "B1"
     },
     {
       "term": "portion",
@@ -195,16 +129,316 @@
       "level": "B1"
     },
     {
-      "term": "taste",
-      "translation": "вкус; пробовать на вкус",
-      "partOfSpeech": "noun/verb",
+      "term": "pour",
+      "translation": "наливать",
+      "partOfSpeech": "verb",
       "level": "A2"
+    },
+    {
+      "term": "recipe",
+      "translation": "рецепт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "roast",
+      "translation": "запекать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "serve",
+      "translation": "подавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "slice",
+      "translation": "нарезать ломтиками",
+      "partOfSpeech": "verb",
+      "level": "B1"
     },
     {
       "term": "smell",
       "translation": "запах; пахнуть",
       "partOfSpeech": "noun/verb",
       "level": "A2"
+    },
+    {
+      "term": "starter",
+      "translation": "закуска",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "takeaway",
+      "translation": "еда навынос",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "taste",
+      "translation": "вкус; пробовать на вкус",
+      "partOfSpeech": "noun/verb",
+      "level": "A2"
+    },
+    {
+      "term": "tip",
+      "translation": "чаевые",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "vegetarian",
+      "translation": "вегетарианец; вегетарианский",
+      "partOfSpeech": "noun/adjective",
+      "level": "A2"
+    },
+    {
+      "term": "waiter",
+      "translation": "официант",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "waitress",
+      "translation": "официантка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "plate",
+      "translation": "тарелка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bowl",
+      "translation": "миска",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cup",
+      "translation": "чашка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mug",
+      "translation": "кружка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "glass",
+      "translation": "стакан",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "knife",
+      "translation": "нож",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "fork",
+      "translation": "вилка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "spoon",
+      "translation": "ложка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "teaspoon",
+      "translation": "чайная ложка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "chopsticks",
+      "translation": "палочки для еды",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "napkin",
+      "translation": "салфетка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "tray",
+      "translation": "поднос",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pan",
+      "translation": "сковорода",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pot",
+      "translation": "кастрюля",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "frying pan",
+      "translation": "сковорода",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "saucepan",
+      "translation": "небольшая кастрюля",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lid",
+      "translation": "крышка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "oven",
+      "translation": "духовка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "stove",
+      "translation": "плита",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cooker",
+      "translation": "кухонная плита",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "fridge",
+      "translation": "холодильник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cutting board",
+      "translation": "разделочная доска",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "put",
+      "translation": "класть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "stir",
+      "translation": "помешивать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "wash",
+      "translation": "мыть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "heat",
+      "translation": "нагревать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "cool",
+      "translation": "охлаждать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "steam",
+      "translation": "готовить на пару",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "measure",
+      "translation": "отмерять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "weigh",
+      "translation": "взвешивать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "season",
+      "translation": "приправлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "reservation",
+      "translation": "бронь столика",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "make a reservation",
+      "translation": "забронировать столик",
+      "partOfSpeech": "phrase",
+      "level": "B1"
+    },
+    {
+      "term": "split the bill",
+      "translation": "разделить счёт",
+      "partOfSpeech": "phrase",
+      "level": "B1"
+    },
+    {
+      "term": "pay separately",
+      "translation": "платить раздельно",
+      "partOfSpeech": "phrase",
+      "level": "B1"
+    },
+    {
+      "term": "allergy to nuts",
+      "translation": "аллергия на орехи",
+      "partOfSpeech": "phrase",
+      "level": "B1"
+    },
+    {
+      "term": "undercooked",
+      "translation": "недостаточно приготовленный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "overcooked",
+      "translation": "пережаренный; переваренный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "seasonal",
+      "translation": "сезонный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
     }
   ]
 }

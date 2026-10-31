@@ -1,0 +1,516 @@
+{
+  "id": "vocabulary-excel-numbers-colours-shapes",
+  "type": "vocabulary",
+  "title": "Numbers Colours Shapes",
+  "grade": 6,
+  "level": "A1",
+  "topic": "Numbers Colours Shapes",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 84 слов и выражений из утверждённого Excel A1–B1.",
+  "items": [
+    {
+      "term": "zero",
+      "translation": "ноль",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "one",
+      "translation": "один",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "two",
+      "translation": "два",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "three",
+      "translation": "три",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "four",
+      "translation": "четыре",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "five",
+      "translation": "пять",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "six",
+      "translation": "шесть",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "seven",
+      "translation": "семь",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "eight",
+      "translation": "восемь",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "nine",
+      "translation": "девять",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "ten",
+      "translation": "десять",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "eleven",
+      "translation": "одиннадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "twelve",
+      "translation": "двенадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "thirteen",
+      "translation": "тринадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "fourteen",
+      "translation": "четырнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "fifteen",
+      "translation": "пятнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "sixteen",
+      "translation": "шестнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "seventeen",
+      "translation": "семнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "eighteen",
+      "translation": "восемнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "nineteen",
+      "translation": "девятнадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "twenty",
+      "translation": "двадцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "thirty",
+      "translation": "тридцать",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "forty",
+      "translation": "сорок",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "fifty",
+      "translation": "пятьдесят",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "sixty",
+      "translation": "шестьдесят",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "seventy",
+      "translation": "семьдесят",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "eighty",
+      "translation": "восемьдесят",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "ninety",
+      "translation": "девяносто",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "one hundred",
+      "translation": "сто",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "one thousand",
+      "translation": "тысяча",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "first",
+      "translation": "первый",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "second",
+      "translation": "второй",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "third",
+      "translation": "третий",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "fourth",
+      "translation": "четвёртый",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "fifth",
+      "translation": "пятый",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "sixth",
+      "translation": "шестой",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "seventh",
+      "translation": "седьмой",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "eighth",
+      "translation": "восьмой",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "ninth",
+      "translation": "девятый",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "tenth",
+      "translation": "десятый",
+      "partOfSpeech": "number",
+      "level": "A1"
+    },
+    {
+      "term": "red",
+      "translation": "красный",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "blue",
+      "translation": "синий; голубой",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "green",
+      "translation": "зелёный",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "yellow",
+      "translation": "жёлтый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "black",
+      "translation": "чёрный",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "white",
+      "translation": "белый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "brown",
+      "translation": "коричневый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "pink",
+      "translation": "розовый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "purple",
+      "translation": "фиолетовый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "orange",
+      "translation": "оранжевый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "grey",
+      "translation": "серый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "gold",
+      "translation": "золотой",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "silver",
+      "translation": "серебряный",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "round",
+      "translation": "круглый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "square",
+      "translation": "квадратный",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "straight",
+      "translation": "прямой",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "curved",
+      "translation": "изогнутый",
+      "partOfSpeech": "adjective",
+      "level": "A1"
+    },
+    {
+      "term": "circle",
+      "translation": "круг",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "triangle",
+      "translation": "треугольник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rectangle",
+      "translation": "прямоугольник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "star",
+      "translation": "звезда",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "line",
+      "translation": "линия",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "point",
+      "translation": "точка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "shape",
+      "translation": "форма",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "size",
+      "translation": "размер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "colour",
+      "translation": "цвет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "number",
+      "translation": "число; номер",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pair",
+      "translation": "пара",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "half",
+      "translation": "половина",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "quarter",
+      "translation": "четверть",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bright",
+      "translation": "яркий",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "pale",
+      "translation": "бледный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "dark",
+      "translation": "тёмный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "light",
+      "translation": "светлый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "striped",
+      "translation": "полосатый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "spotted",
+      "translation": "пятнистый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "percentage",
+      "translation": "процентное соотношение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "fraction",
+      "translation": "дробь",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "average",
+      "translation": "среднее значение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "measurement",
+      "translation": "измерение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "approximate",
+      "translation": "приблизительный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "precise",
+      "translation": "точный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "approximately",
+      "translation": "приблизительно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "exactly",
+      "translation": "точно",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    }
+  ]
+}
