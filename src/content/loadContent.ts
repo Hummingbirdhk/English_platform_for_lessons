@@ -25,7 +25,7 @@ export function loadAllContent(): ContentBundle {
     lessons: Object.values(lessonModules),
     exercises: Object.values(exerciseModules),
     materials: Object.values(materialModules).filter(
-      (material) => material.type !== 'vocabulary' || material.tags.includes('excel-import'),
+      (material) => material.type !== 'vocabulary' || material.tags.includes('A1-B1'),
     ),
     students: Object.values(studentModules),
   };
