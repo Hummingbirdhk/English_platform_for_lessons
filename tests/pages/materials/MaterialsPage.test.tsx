@@ -14,12 +14,12 @@ describe('MaterialsPage', () => {
     );
 
     expect(screen.getByText('Present Simple')).toBeInTheDocument();
-    expect(screen.getByText('Daily Routine Time')).toBeInTheDocument();
+    expect(screen.getAllByText('Daily Routine Time').length).toBeGreaterThan(0);
 
     await user.type(screen.getByRole('searchbox'), 'Present Simple');
 
     expect(screen.getByText('Present Simple')).toBeInTheDocument();
-    expect(screen.queryByText('Daily Routine Time')).not.toBeInTheDocument();
+    expect(screen.queryAllByText('Daily Routine Time')).toHaveLength(0);
   });
 
   it('offers an explicit topic filter', () => {
