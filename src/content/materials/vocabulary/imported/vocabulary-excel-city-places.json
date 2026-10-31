@@ -1,148 +1,16 @@
 {
   "id": "vocabulary-excel-city-places",
   "type": "vocabulary",
-  "title": "Город и места",
+  "title": "City Places",
   "grade": 6,
   "level": "A2",
-  "topic": "City & Places",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 48 единиц, уровни A2–B1.",
+  "topic": "City Places",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 75 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
-      "term": "city",
-      "translation": "город",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "town",
-      "translation": "городок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "village",
-      "translation": "деревня",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "neighbourhood",
-      "translation": "район, окрестности",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "street",
-      "translation": "улица",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "road",
-      "translation": "дорога",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "square",
-      "translation": "площадь",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bridge",
-      "translation": "мост",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "park",
-      "translation": "парк",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "playground",
-      "translation": "детская площадка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "school",
-      "translation": "школа",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "university",
-      "translation": "университет",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "library",
-      "translation": "библиотека",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hospital",
-      "translation": "больница",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "clinic",
-      "translation": "клиника",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "pharmacy",
-      "translation": "аптека",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "chemist's",
-      "translation": "аптека (брит.)",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bank",
-      "translation": "банк",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "post office",
-      "translation": "почта",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "police station",
-      "translation": "полицейский участок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "fire station",
-      "translation": "пожарная часть",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "town hall",
-      "translation": "ратуша / администрация",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "museum",
-      "translation": "музей",
+      "term": "airport",
+      "translation": "аэропорт",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -153,8 +21,44 @@
       "level": "A2"
     },
     {
-      "term": "theatre",
-      "translation": "театр",
+      "term": "bank",
+      "translation": "банк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bridge",
+      "translation": "мост",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bus stop",
+      "translation": "автобусная остановка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cafe",
+      "translation": "кафе",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "car park",
+      "translation": "парковка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "centre",
+      "translation": "центр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chemist's",
+      "translation": "аптека (брит.)",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -165,14 +69,158 @@
       "level": "A2"
     },
     {
+      "term": "city",
+      "translation": "город",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "clinic",
+      "translation": "клиника",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "corner",
+      "translation": "угол",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "crowded",
+      "translation": "переполненный, многолюдный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "fire station",
+      "translation": "пожарная часть",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "historic",
+      "translation": "исторический",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "hospital",
+      "translation": "больница",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "hotel",
+      "translation": "отель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "library",
+      "translation": "библиотека",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "market",
+      "translation": "рынок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "museum",
+      "translation": "музей",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "neighbourhood",
+      "translation": "район, окрестности",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "park",
+      "translation": "парк",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pavement",
+      "translation": "тротуар",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "peaceful",
+      "translation": "спокойный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "pedestrian crossing",
+      "translation": "пешеходный переход",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pharmacy",
+      "translation": "аптека",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "playground",
+      "translation": "детская площадка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "police station",
+      "translation": "полицейский участок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "post office",
+      "translation": "почта",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "restaurant",
+      "translation": "ресторан",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "road",
+      "translation": "дорога",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "school",
+      "translation": "школа",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "shopping centre",
+      "translation": "торговый центр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "sports centre",
       "translation": "спортивный центр",
       "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "swimming pool",
-      "translation": "бассейн",
+      "term": "square",
+      "translation": "площадь",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -189,86 +237,8 @@
       "level": "A2"
     },
     {
-      "term": "bus stop",
-      "translation": "автобусная остановка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "airport",
-      "translation": "аэропорт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hotel",
-      "translation": "отель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "restaurant",
-      "translation": "ресторан",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cafe",
-      "translation": "кафе",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "market",
-      "translation": "рынок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "supermarket",
-      "translation": "супермаркет",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "shopping centre",
-      "translation": "торговый центр",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "car park",
-      "translation": "парковка",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "traffic lights",
-      "translation": "светофор",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pavement",
-      "translation": "тротуар",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pedestrian crossing",
-      "translation": "пешеходный переход",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "corner",
-      "translation": "угол",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "centre",
-      "translation": "центр",
+      "term": "street",
+      "translation": "улица",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -279,20 +249,212 @@
       "level": "B1"
     },
     {
-      "term": "crowded",
-      "translation": "переполненный, многолюдный",
-      "partOfSpeech": "adjective",
+      "term": "supermarket",
+      "translation": "супермаркет",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
-      "term": "peaceful",
-      "translation": "спокойный",
+      "term": "swimming pool",
+      "translation": "бассейн",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "theatre",
+      "translation": "театр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "town",
+      "translation": "городок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "town hall",
+      "translation": "ратуша / администрация",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "traffic lights",
+      "translation": "светофор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "university",
+      "translation": "университет",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "village",
+      "translation": "деревня",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "football pitch",
+      "translation": "футбольное поле",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "skate park",
+      "translation": "скейт-парк",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "ice rink",
+      "translation": "каток",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bookshop",
+      "translation": "книжный магазин",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "newsstand",
+      "translation": "газетный киоск",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pet shop",
+      "translation": "зоомагазин",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "railway station",
+      "translation": "железнодорожный вокзал",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "bus station",
+      "translation": "автовокзал",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "traffic light",
+      "translation": "светофор",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "public toilet",
+      "translation": "общественный туалет",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "fountain",
+      "translation": "фонтан",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "monument",
+      "translation": "памятник",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "riverbank",
+      "translation": "берег реки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pedestrian zone",
+      "translation": "пешеходная зона",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "city centre",
+      "translation": "центр города",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "residential area",
+      "translation": "жилой район",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "industrial area",
+      "translation": "промышленная зона",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "community centre",
+      "translation": "общественный центр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "exhibition",
+      "translation": "выставка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "concert hall",
+      "translation": "концертный зал",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "infrastructure",
+      "translation": "инфраструктура",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "public transport network",
+      "translation": "сеть общественного транспорта",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "urban area",
+      "translation": "городская территория",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "municipality",
+      "translation": "муниципалитет",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "landmark",
+      "translation": "ориентир; достопримечательность",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "accessible",
+      "translation": "доступный для посещения",
       "partOfSpeech": "adjective",
       "level": "B1"
     },
     {
-      "term": "historic",
-      "translation": "исторический",
+      "term": "pedestrian-friendly",
+      "translation": "удобный для пешеходов",
       "partOfSpeech": "adjective",
       "level": "B1"
     }

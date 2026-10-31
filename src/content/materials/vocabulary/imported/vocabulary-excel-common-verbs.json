@@ -1,12 +1,12 @@
 {
   "id": "vocabulary-excel-common-verbs",
   "type": "vocabulary",
-  "title": "Основные глаголы",
+  "title": "Common Verbs",
   "grade": 6,
   "level": "A2",
-  "topic": "Common & Verbs",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 60 единиц, уровни A2–B1.",
+  "topic": "Common Verbs",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 270 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
       "term": "be",
@@ -15,44 +15,20 @@
       "level": "A2"
     },
     {
-      "term": "have",
-      "translation": "иметь",
+      "term": "become",
+      "translation": "становиться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "begin",
+      "translation": "начинать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "do",
-      "translation": "делать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "make",
-      "translation": "делать, создавать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "get",
-      "translation": "получать; становиться",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "go",
-      "translation": "идти, ехать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "come",
-      "translation": "приходить",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "take",
-      "translation": "брать",
+      "term": "break",
+      "translation": "ломать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -63,16 +39,142 @@
       "level": "A2"
     },
     {
+      "term": "build",
+      "translation": "строить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "call",
+      "translation": "звонить, называть",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "carry",
+      "translation": "нести",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "change",
+      "translation": "менять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "choose",
+      "translation": "выбирать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "close",
+      "translation": "закрывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "come",
+      "translation": "приходить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "continue",
+      "translation": "продолжать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "decide",
+      "translation": "решать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "depend",
+      "translation": "зависеть",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "do",
+      "translation": "делать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "find",
+      "translation": "находить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "finish",
+      "translation": "заканчивать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "get",
+      "translation": "получать; становиться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
       "term": "give",
       "translation": "давать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "put",
-      "translation": "класть",
+      "term": "go",
+      "translation": "идти, ехать",
       "partOfSpeech": "verb",
       "level": "A2"
+    },
+    {
+      "term": "happen",
+      "translation": "случаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "have",
+      "translation": "иметь",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "hear",
+      "translation": "слышать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "help",
+      "translation": "помогать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "hold",
+      "translation": "держать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "improve",
+      "translation": "улучшать(ся)",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "include",
+      "translation": "включать в себя",
+      "partOfSpeech": "verb",
+      "level": "B1"
     },
     {
       "term": "keep",
@@ -87,62 +189,8 @@
       "level": "A2"
     },
     {
-      "term": "stay",
-      "translation": "оставаться",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "start",
-      "translation": "начинать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "begin",
-      "translation": "начинать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "finish",
-      "translation": "заканчивать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "stop",
-      "translation": "останавливать(ся)",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "try",
-      "translation": "пытаться",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "need",
-      "translation": "нуждаться",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "want",
-      "translation": "хотеть",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "use",
-      "translation": "использовать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "find",
-      "translation": "находить",
+      "term": "listen",
+      "translation": "слушать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -153,32 +201,86 @@
       "level": "A2"
     },
     {
+      "term": "make",
+      "translation": "делать, создавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "meet",
+      "translation": "встречать(ся)",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "move",
+      "translation": "двигать(ся), переезжать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "need",
+      "translation": "нуждаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "offer",
+      "translation": "предлагать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "open",
+      "translation": "открывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "plan",
+      "translation": "планировать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "play",
+      "translation": "играть",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "prepare",
+      "translation": "готовить, подготавливать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "promise",
+      "translation": "обещать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "put",
+      "translation": "класть",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "recommend",
+      "translation": "рекомендовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "repair",
+      "translation": "ремонтировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
       "term": "see",
       "translation": "видеть",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "watch",
-      "translation": "смотреть, наблюдать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "hear",
-      "translation": "слышать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "listen",
-      "translation": "слушать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "help",
-      "translation": "помогать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -189,14 +291,50 @@
       "level": "A2"
     },
     {
-      "term": "call",
-      "translation": "звонить, называть",
+      "term": "start",
+      "translation": "начинать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "meet",
-      "translation": "встречать(ся)",
+      "term": "stay",
+      "translation": "оставаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "stop",
+      "translation": "останавливать(ся)",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "suggest",
+      "translation": "предлагать, советовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "take",
+      "translation": "брать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "try",
+      "translation": "пытаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "turn",
+      "translation": "поворачивать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "use",
+      "translation": "использовать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -213,158 +351,1280 @@
       "level": "A2"
     },
     {
+      "term": "want",
+      "translation": "хотеть",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "watch",
+      "translation": "смотреть, наблюдать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
       "term": "work",
       "translation": "работать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "play",
-      "translation": "играть",
+      "term": "ask",
+      "translation": "спрашивать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "answer",
+      "translation": "отвечать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "send",
+      "translation": "отправлять",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "speak",
+      "translation": "говорить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "say",
+      "translation": "сказать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "tell",
+      "translation": "рассказывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "read",
+      "translation": "читать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "write",
+      "translation": "писать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "spell",
+      "translation": "произносить или писать по буквам",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "count",
+      "translation": "считать числа",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "think",
+      "translation": "думать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "know",
+      "translation": "знать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "understand",
+      "translation": "понимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "remember",
+      "translation": "помнить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "forget",
+      "translation": "забывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "learn",
+      "translation": "учить; узнавать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "teach",
+      "translation": "обучать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "study",
+      "translation": "учиться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "arrive",
+      "translation": "прибывать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "travel",
+      "translation": "путешествовать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "pick",
+      "translation": "выбирать; поднимать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "push",
+      "translation": "толкать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "pull",
+      "translation": "тянуть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "throw",
+      "translation": "бросать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "catch",
+      "translation": "ловить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "kick",
+      "translation": "пинать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "hit",
+      "translation": "ударять",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "jump",
+      "translation": "прыгать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "run",
+      "translation": "бегать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "walk",
+      "translation": "ходить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "swim",
+      "translation": "плавать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "climb",
+      "translation": "взбираться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "sit",
+      "translation": "сидеть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "stand",
+      "translation": "стоять",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "lie",
+      "translation": "лежать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "sleep",
+      "translation": "спать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "wake",
+      "translation": "просыпаться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "eat",
+      "translation": "есть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "drink",
+      "translation": "пить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "cook",
+      "translation": "готовить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "buy",
+      "translation": "покупать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "sell",
+      "translation": "продавать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "pay",
+      "translation": "платить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "spend",
+      "translation": "тратить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "save",
+      "translation": "сохранять; экономить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "fix",
+      "translation": "чинить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "draw",
+      "translation": "рисовать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "paint",
+      "translation": "рисовать красками",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "sing",
+      "translation": "петь",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "dance",
+      "translation": "танцевать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "laugh",
+      "translation": "смеяться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "smile",
+      "translation": "улыбаться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "cry",
+      "translation": "плакать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "shout",
+      "translation": "кричать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "whisper",
+      "translation": "шептать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "hope",
+      "translation": "надеяться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "wish",
+      "translation": "желать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "like",
+      "translation": "нравиться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "love",
+      "translation": "любить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "hate",
+      "translation": "ненавидеть",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "prefer",
+      "translation": "предпочитать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "believe",
+      "translation": "верить",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "feel",
+      "translation": "чувствовать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "share",
+      "translation": "делиться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "invite",
+      "translation": "приглашать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "join",
+      "translation": "присоединяться",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "win",
+      "translation": "побеждать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "lose",
+      "translation": "проигрывать; терять",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "search",
+      "translation": "искать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "check",
+      "translation": "проверять",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "follow",
+      "translation": "следовать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "cross",
+      "translation": "пересекать",
+      "partOfSpeech": "verb",
+      "level": "A1"
+    },
+    {
+      "term": "borrow",
+      "translation": "брать взаймы",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "move",
-      "translation": "двигать(ся), переезжать",
+      "term": "lend",
+      "translation": "давать взаймы",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "open",
-      "translation": "открывать",
+      "term": "return",
+      "translation": "возвращать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "close",
-      "translation": "закрывать",
+      "term": "receive",
+      "translation": "получать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "change",
-      "translation": "менять",
+      "term": "collect",
+      "translation": "собирать; коллекционировать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "turn",
-      "translation": "поворачивать",
+      "term": "create",
+      "translation": "создавать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "carry",
-      "translation": "нести",
+      "term": "organise",
+      "translation": "организовывать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "hold",
-      "translation": "держать",
+      "term": "compare",
+      "translation": "сравнивать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "build",
-      "translation": "строить",
+      "term": "explain",
+      "translation": "объяснять",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "break",
-      "translation": "ломать",
+      "term": "describe",
+      "translation": "описывать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "repair",
-      "translation": "ремонтировать",
+      "term": "accept",
+      "translation": "принимать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "refuse",
+      "translation": "отказывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "agree",
+      "translation": "соглашаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "disagree",
+      "translation": "не соглашаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "practise",
+      "translation": "тренироваться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "repeat",
+      "translation": "повторять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "review",
+      "translation": "пересматривать; повторять материал",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "correct",
+      "translation": "исправлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "book",
+      "translation": "бронировать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "cancel",
+      "translation": "отменять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "replace",
+      "translation": "заменять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "remove",
+      "translation": "убирать; удалять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "add",
+      "translation": "добавлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "reduce",
+      "translation": "сокращать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "increase",
+      "translation": "увеличивать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "protect",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "prevent",
+      "translation": "предотвращать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "avoid",
+      "translation": "избегать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "allow",
+      "translation": "разрешать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "require",
+      "translation": "требовать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "introduce",
+      "translation": "представлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "contact",
+      "translation": "связываться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "notice",
+      "translation": "замечать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "recognise",
+      "translation": "узнавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "realise",
+      "translation": "осознавать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "discover",
+      "translation": "обнаруживать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "invent",
+      "translation": "изобретать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "explore",
+      "translation": "исследовать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "escape",
+      "translation": "убегать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "survive",
+      "translation": "выживать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "perform",
+      "translation": "выступать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "achieve",
+      "translation": "достигать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "succeed",
+      "translation": "преуспевать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "fail",
+      "translation": "терпеть неудачу",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "complain",
+      "translation": "жаловаться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "apologise",
+      "translation": "извиняться",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "manage",
+      "translation": "справляться; управлять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "support",
+      "translation": "поддерживать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "encourage",
+      "translation": "подбадривать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "admit",
+      "translation": "признавать",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "choose",
-      "translation": "выбирать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "decide",
-      "translation": "решать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "plan",
-      "translation": "планировать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "prepare",
-      "translation": "готовить, подготавливать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "happen",
-      "translation": "случаться",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "become",
-      "translation": "становиться",
+      "term": "advise",
+      "translation": "советовать",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "improve",
-      "translation": "улучшать(ся)",
+      "term": "affect",
+      "translation": "влиять на",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "continue",
-      "translation": "продолжать",
+      "term": "analyse",
+      "translation": "анализировать",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "include",
+      "term": "announce",
+      "translation": "объявлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "appreciate",
+      "translation": "ценить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "approach",
+      "translation": "приближаться; подходить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "argue",
+      "translation": "спорить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "arrange",
+      "translation": "организовывать; договариваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "assume",
+      "translation": "предполагать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "attract",
+      "translation": "привлекать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "behave",
+      "translation": "вести себя",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "benefit",
+      "translation": "приносить пользу",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "blame",
+      "translation": "обвинять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "calculate",
+      "translation": "вычислять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "challenge",
+      "translation": "оспаривать; бросать вызов",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "clarify",
+      "translation": "прояснять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "combine",
+      "translation": "объединять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "communicate",
+      "translation": "общаться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "compete",
+      "translation": "соревноваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "concentrate",
+      "translation": "сосредотачиваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "confirm",
+      "translation": "подтверждать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "consider",
+      "translation": "рассматривать; учитывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "consist of",
+      "translation": "состоять из",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "contribute",
+      "translation": "вносить вклад",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "convince",
+      "translation": "убеждать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "cooperate",
+      "translation": "сотрудничать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "cope with",
+      "translation": "справляться с",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "criticise",
+      "translation": "критиковать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "defend",
+      "translation": "защищать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "demand",
+      "translation": "требовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "deny",
+      "translation": "отрицать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "deserve",
+      "translation": "заслуживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "determine",
+      "translation": "определять; решать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "develop",
+      "translation": "развивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "distinguish",
+      "translation": "различать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "establish",
+      "translation": "основывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "estimate",
+      "translation": "оценивать приблизительно",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "evaluate",
+      "translation": "оценивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "exchange",
+      "translation": "обменивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "expand",
+      "translation": "расширять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "experience",
+      "translation": "испытывать; переживать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "express",
+      "translation": "выражать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "focus",
+      "translation": "сосредотачиваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "handle",
+      "translation": "справляться; обращаться с",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "identify",
+      "translation": "определять; распознавать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "ignore",
+      "translation": "игнорировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "imagine",
+      "translation": "представлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "influence",
+      "translation": "влиять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "inform",
+      "translation": "сообщать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "insist",
+      "translation": "настаивать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "intend",
+      "translation": "намереваться",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "involve",
       "translation": "включать в себя",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "depend",
-      "translation": "зависеть",
+      "term": "maintain",
+      "translation": "поддерживать",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "offer",
-      "translation": "предлагать",
+      "term": "manage to",
+      "translation": "суметь",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "suggest",
-      "translation": "предлагать, советовать",
+      "term": "mention",
+      "translation": "упоминать",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "recommend",
-      "translation": "рекомендовать",
+      "term": "negotiate",
+      "translation": "вести переговоры",
       "partOfSpeech": "verb",
       "level": "B1"
     },
     {
-      "term": "promise",
-      "translation": "обещать",
+      "term": "observe",
+      "translation": "наблюдать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "obtain",
+      "translation": "получать; приобретать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "occur",
+      "translation": "происходить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "participate",
+      "translation": "участвовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "persuade",
+      "translation": "убеждать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "predict",
+      "translation": "предсказывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "promote",
+      "translation": "продвигать; способствовать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "prove",
+      "translation": "доказывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "provide",
+      "translation": "предоставлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "publish",
+      "translation": "публиковать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "react",
+      "translation": "реагировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "refer to",
+      "translation": "ссылаться на; относиться к",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "reflect",
+      "translation": "отражать; размышлять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "reject",
+      "translation": "отклонять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "relate",
+      "translation": "относиться; связывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "rely on",
+      "translation": "полагаться на",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "remind",
+      "translation": "напоминать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "request",
+      "translation": "запрашивать; просить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "respond",
+      "translation": "отвечать; реагировать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "reveal",
+      "translation": "раскрывать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "risk",
+      "translation": "рисковать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "solve",
+      "translation": "решать проблему",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "struggle",
+      "translation": "бороться; испытывать трудности",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "succeed in",
+      "translation": "преуспеть в",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "supply",
+      "translation": "снабжать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "suppose",
+      "translation": "предполагать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "tend to",
+      "translation": "иметь склонность",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "threaten",
+      "translation": "угрожать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "trust",
+      "translation": "доверять",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "value",
+      "translation": "ценить",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "wonder",
+      "translation": "интересоваться; задаваться вопросом",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "witness",
+      "translation": "быть свидетелем",
       "partOfSpeech": "verb",
       "level": "B1"
     }

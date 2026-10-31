@@ -1,35 +1,23 @@
 {
   "id": "vocabulary-excel-communication-language",
   "type": "vocabulary",
-  "title": "Общение и языки",
+  "title": "Communication Language",
   "grade": 6,
   "level": "A2",
-  "topic": "Communication & Language",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 38 единиц, уровни A2–B1.",
+  "topic": "Communication Language",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 76 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
     {
-      "term": "language",
-      "translation": "язык",
+      "term": "accent",
+      "translation": "акцент",
       "partOfSpeech": "noun",
-      "level": "A2"
+      "level": "B1"
     },
     {
-      "term": "word",
-      "translation": "слово",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sentence",
-      "translation": "предложение",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "question",
-      "translation": "вопрос",
-      "partOfSpeech": "noun",
+      "term": "agree",
+      "translation": "соглашаться",
+      "partOfSpeech": "verb",
       "level": "A2"
     },
     {
@@ -39,86 +27,8 @@
       "level": "A2"
     },
     {
-      "term": "conversation",
-      "translation": "разговор",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "discussion",
-      "translation": "обсуждение",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "opinion",
-      "translation": "мнение",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "idea",
-      "translation": "идея",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "meaning",
-      "translation": "значение",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "example",
-      "translation": "пример",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "accent",
-      "translation": "акцент",
-      "partOfSpeech": "noun",
-      "level": "B1"
-    },
-    {
-      "term": "grammar",
-      "translation": "грамматика",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "vocabulary",
-      "translation": "словарный запас",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "translation",
-      "translation": "перевод",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "speak",
-      "translation": "говорить",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "say",
-      "translation": "сказать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "tell",
-      "translation": "рассказывать, говорить кому-то",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "talk",
-      "translation": "разговаривать",
+      "term": "answer",
+      "translation": "отвечать",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -129,32 +39,26 @@
       "level": "A2"
     },
     {
-      "term": "answer",
-      "translation": "отвечать",
-      "partOfSpeech": "verb",
-      "level": "A2"
+      "term": "clearly",
+      "translation": "ясно, чётко",
+      "partOfSpeech": "adverb",
+      "level": "B1"
     },
     {
-      "term": "explain",
-      "translation": "объяснять",
+      "term": "communicate",
+      "translation": "общаться",
       "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "conversation",
+      "translation": "разговор",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
       "term": "describe",
       "translation": "описывать",
-      "partOfSpeech": "verb",
-      "level": "A2"
-    },
-    {
-      "term": "discuss",
-      "translation": "обсуждать",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "agree",
-      "translation": "соглашаться",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -165,14 +69,122 @@
       "level": "B1"
     },
     {
+      "term": "discuss",
+      "translation": "обсуждать",
+      "partOfSpeech": "verb",
+      "level": "B1"
+    },
+    {
+      "term": "discussion",
+      "translation": "обсуждение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "example",
+      "translation": "пример",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "explain",
+      "translation": "объяснять",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "fluently",
+      "translation": "бегло",
+      "partOfSpeech": "adverb",
+      "level": "B1"
+    },
+    {
+      "term": "forget",
+      "translation": "забывать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "grammar",
+      "translation": "грамматика",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "idea",
+      "translation": "идея",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "know",
+      "translation": "знать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "language",
+      "translation": "язык",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "mean",
+      "translation": "означать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "meaning",
+      "translation": "значение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "opinion",
+      "translation": "мнение",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "pronounce",
+      "translation": "произносить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "question",
+      "translation": "вопрос",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "remember",
+      "translation": "помнить",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
       "term": "repeat",
       "translation": "повторять",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "pronounce",
-      "translation": "произносить",
+      "term": "say",
+      "translation": "сказать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "sentence",
+      "translation": "предложение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "speak",
+      "translation": "говорить",
       "partOfSpeech": "verb",
       "level": "A2"
     },
@@ -183,21 +195,27 @@
       "level": "A2"
     },
     {
+      "term": "talk",
+      "translation": "разговаривать",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
+      "term": "tell",
+      "translation": "рассказывать, говорить кому-то",
+      "partOfSpeech": "verb",
+      "level": "A2"
+    },
+    {
       "term": "translate",
       "translation": "переводить",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "communicate",
-      "translation": "общаться",
-      "partOfSpeech": "verb",
-      "level": "B1"
-    },
-    {
-      "term": "mean",
-      "translation": "означать",
-      "partOfSpeech": "verb",
+      "term": "translation",
+      "translation": "перевод",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -207,32 +225,242 @@
       "level": "A2"
     },
     {
-      "term": "know",
-      "translation": "знать",
+      "term": "vocabulary",
+      "translation": "словарный запас",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "word",
+      "translation": "слово",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "alphabet",
+      "translation": "алфавит",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "letter",
+      "translation": "буква",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sound",
+      "translation": "звук",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "syllable",
+      "translation": "слог",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "syllables",
+      "translation": "слоги",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "capital letter",
+      "translation": "заглавная буква",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lower-case letter",
+      "translation": "строчная буква",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "full stop",
+      "translation": "точка (знак препинания)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "comma",
+      "translation": "запятая",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "question mark",
+      "translation": "вопросительный знак",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "exclamation mark",
+      "translation": "восклицательный знак",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "quotation marks",
+      "translation": "кавычки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "apostrophe",
+      "translation": "апостроф",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "hyphen",
+      "translation": "дефис",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "paragraph",
+      "translation": "абзац",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "text",
+      "translation": "текст",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "story",
+      "translation": "история",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "fairy tale",
+      "translation": "сказка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "poem",
+      "translation": "стихотворение",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "rhyme",
+      "translation": "рифма",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pronunciation",
+      "translation": "произношение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "spelling",
+      "translation": "правописание",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "synonym",
+      "translation": "синоним",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "antonym",
+      "translation": "антоним",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "idiom",
+      "translation": "идиома",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "expression",
+      "translation": "выражение",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "dialogue",
+      "translation": "диалог",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "speech",
+      "translation": "речь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "summarise",
+      "translation": "подводить итог",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "remember",
-      "translation": "помнить",
+      "term": "repeat after me",
+      "translation": "повторять за мной",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "forget",
-      "translation": "забывать",
+      "term": "correct a mistake",
+      "translation": "исправлять ошибку",
       "partOfSpeech": "verb",
       "level": "A2"
     },
     {
-      "term": "clearly",
-      "translation": "ясно, чётко",
+      "term": "fluency",
+      "translation": "беглость речи",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "accuracy",
+      "translation": "точность",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "misunderstanding",
+      "translation": "недопонимание",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "interpretation",
+      "translation": "толкование",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "communication skills",
+      "translation": "навыки общения",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "accurately",
+      "translation": "точно",
       "partOfSpeech": "adverb",
       "level": "B1"
     },
     {
-      "term": "fluently",
-      "translation": "бегло",
+      "term": "naturally",
+      "translation": "естественно",
       "partOfSpeech": "adverb",
       "level": "B1"
     }

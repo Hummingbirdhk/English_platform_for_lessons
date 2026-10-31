@@ -1,145 +1,13 @@
 {
   "id": "vocabulary-excel-food-drink",
   "type": "vocabulary",
-  "title": "Еда и напитки",
+  "title": "Food Drink",
   "grade": 6,
   "level": "A2",
-  "topic": "Food & Drink",
-  "tags": ["vocabulary", "excel-import", "A2-B1"],
-  "summary": "Тематический словарь из пользовательской выгрузки: 56 единиц, уровни A2–B1.",
+  "topic": "Food Drink",
+  "tags": ["vocabulary", "excel-import", "A1-B1"],
+  "summary": "Тематический словарь: 130 слов и выражений из утверждённого Excel A1–B1.",
   "items": [
-    {
-      "term": "food",
-      "translation": "еда",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "meal",
-      "translation": "приём пищи",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "breakfast",
-      "translation": "завтрак",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "lunch",
-      "translation": "обед",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "dinner",
-      "translation": "ужин",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "snack",
-      "translation": "перекус",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "bread",
-      "translation": "хлеб",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "rice",
-      "translation": "рис",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pasta",
-      "translation": "макароны, паста",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cereal",
-      "translation": "хлопья, сухой завтрак",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "flour",
-      "translation": "мука",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "meat",
-      "translation": "мясо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "beef",
-      "translation": "говядина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pork",
-      "translation": "свинина",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "chicken",
-      "translation": "курица",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "fish",
-      "translation": "рыба",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "egg",
-      "translation": "яйцо",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cheese",
-      "translation": "сыр",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "butter",
-      "translation": "сливочное масло",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "milk",
-      "translation": "молоко",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "yoghurt",
-      "translation": "йогурт",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "fruit",
-      "translation": "фрукты",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
     {
       "term": "apple",
       "translation": "яблоко",
@@ -153,86 +21,8 @@
       "level": "A2"
     },
     {
-      "term": "orange",
-      "translation": "апельсин",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "grape",
-      "translation": "виноград",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "strawberry",
-      "translation": "клубника",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "vegetable",
-      "translation": "овощ",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "potato",
-      "translation": "картофель",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tomato",
-      "translation": "помидор",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "onion",
-      "translation": "лук",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "carrot",
-      "translation": "морковь",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cucumber",
-      "translation": "огурец",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "pepper",
-      "translation": "перец",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "salad",
-      "translation": "салат",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "soup",
-      "translation": "суп",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sandwich",
-      "translation": "сэндвич",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "cake",
-      "translation": "торт, пирог",
+      "term": "beef",
+      "translation": "говядина",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -243,44 +33,56 @@
       "level": "A2"
     },
     {
+      "term": "bread",
+      "translation": "хлеб",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "breakfast",
+      "translation": "завтрак",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "butter",
+      "translation": "сливочное масло",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cake",
+      "translation": "торт, пирог",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "carrot",
+      "translation": "морковь",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cereal",
+      "translation": "хлопья, сухой завтрак",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "cheese",
+      "translation": "сыр",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "chicken",
+      "translation": "курица",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "chocolate",
       "translation": "шоколад",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "ice cream",
-      "translation": "мороженое",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "sugar",
-      "translation": "сахар",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "salt",
-      "translation": "соль",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "water",
-      "translation": "вода",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "juice",
-      "translation": "сок",
-      "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "tea",
-      "translation": "чай",
       "partOfSpeech": "noun",
       "level": "A2"
     },
@@ -291,21 +93,9 @@
       "level": "A2"
     },
     {
-      "term": "soft drink",
-      "translation": "безалкогольный напиток",
+      "term": "cucumber",
+      "translation": "огурец",
       "partOfSpeech": "noun",
-      "level": "A2"
-    },
-    {
-      "term": "hungry",
-      "translation": "голодный",
-      "partOfSpeech": "adjective",
-      "level": "A2"
-    },
-    {
-      "term": "thirsty",
-      "translation": "испытывающий жажду",
-      "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
@@ -315,15 +105,153 @@
       "level": "A2"
     },
     {
+      "term": "dinner",
+      "translation": "ужин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "egg",
+      "translation": "яйцо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "fish",
+      "translation": "рыба",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "flour",
+      "translation": "мука",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "food",
+      "translation": "еда",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "fresh",
       "translation": "свежий",
       "partOfSpeech": "adjective",
       "level": "A2"
     },
     {
-      "term": "sweet",
-      "translation": "сладкий",
+      "term": "fruit",
+      "translation": "фрукты",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "grape",
+      "translation": "виноград",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "healthy",
+      "translation": "полезный для здоровья",
       "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "hungry",
+      "translation": "голодный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "ice cream",
+      "translation": "мороженое",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "juice",
+      "translation": "сок",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lunch",
+      "translation": "обед",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "meal",
+      "translation": "приём пищи",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "meat",
+      "translation": "мясо",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "milk",
+      "translation": "молоко",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "onion",
+      "translation": "лук",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "orange",
+      "translation": "апельсин",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pasta",
+      "translation": "макароны, паста",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pepper",
+      "translation": "перец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pork",
+      "translation": "свинина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "potato",
+      "translation": "картофель",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "rice",
+      "translation": "рис",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "salad",
+      "translation": "салат",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "salt",
+      "translation": "соль",
+      "partOfSpeech": "noun",
       "level": "A2"
     },
     {
@@ -333,16 +261,532 @@
       "level": "A2"
     },
     {
+      "term": "sandwich",
+      "translation": "сэндвич",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "snack",
+      "translation": "перекус",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "soft drink",
+      "translation": "безалкогольный напиток",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "soup",
+      "translation": "суп",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
       "term": "spicy",
       "translation": "острый, пряный",
       "partOfSpeech": "adjective",
       "level": "B1"
     },
     {
-      "term": "healthy",
-      "translation": "полезный для здоровья",
+      "term": "strawberry",
+      "translation": "клубника",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sugar",
+      "translation": "сахар",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sweet",
+      "translation": "сладкий",
       "partOfSpeech": "adjective",
       "level": "A2"
+    },
+    {
+      "term": "tea",
+      "translation": "чай",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "thirsty",
+      "translation": "испытывающий жажду",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "tomato",
+      "translation": "помидор",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "vegetable",
+      "translation": "овощ",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "water",
+      "translation": "вода",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "yoghurt",
+      "translation": "йогурт",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "pear",
+      "translation": "груша",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "peach",
+      "translation": "персик",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "plum",
+      "translation": "слива",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cherry",
+      "translation": "вишня",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "watermelon",
+      "translation": "арбуз",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "melon",
+      "translation": "дыня",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "pineapple",
+      "translation": "ананас",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mango",
+      "translation": "манго",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "kiwi fruit",
+      "translation": "киви",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "raspberry",
+      "translation": "малина",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "blueberry",
+      "translation": "черника",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "blackberry",
+      "translation": "ежевика",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cabbage",
+      "translation": "капуста",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cauliflower",
+      "translation": "цветная капуста",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "broccoli",
+      "translation": "брокколи",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "courgette",
+      "translation": "кабачок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "aubergine",
+      "translation": "баклажан",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "beetroot",
+      "translation": "свёкла",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "radish",
+      "translation": "редис",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lettuce",
+      "translation": "салат-латук",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "spinach",
+      "translation": "шпинат",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "peas",
+      "translation": "горох",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "beans",
+      "translation": "фасоль",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sweetcorn",
+      "translation": "сладкая кукуруза",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mushroom",
+      "translation": "гриб",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "garlic",
+      "translation": "чеснок",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "ginger",
+      "translation": "имбирь",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "parsley",
+      "translation": "петрушка",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "dill",
+      "translation": "укроп",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "mint",
+      "translation": "мята",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "olive oil",
+      "translation": "оливковое масло",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sunflower oil",
+      "translation": "подсолнечное масло",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "vinegar",
+      "translation": "уксус",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "honey",
+      "translation": "мёд",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "jam",
+      "translation": "варенье",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "oats",
+      "translation": "овёс",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "oatmeal",
+      "translation": "овсяная каша",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "porridge",
+      "translation": "каша",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cottage cheese",
+      "translation": "творог",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cream",
+      "translation": "сливки",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "sour cream",
+      "translation": "сметана",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "chocolate bar",
+      "translation": "шоколадный батончик",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "cookie",
+      "translation": "печенье (амер.)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "crisps",
+      "translation": "чипсы (брит.)",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "popcorn",
+      "translation": "попкорн",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "noodles",
+      "translation": "лапша",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "lentils",
+      "translation": "чечевица",
+      "partOfSpeech": "noun",
+      "level": "A1"
+    },
+    {
+      "term": "seafood",
+      "translation": "морепродукты",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "prawns",
+      "translation": "креветки",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "salmon",
+      "translation": "лосось",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "tuna",
+      "translation": "тунец",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "lamb",
+      "translation": "баранина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "turkey",
+      "translation": "индейка",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "sausage",
+      "translation": "колбаса; сосиска",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ham",
+      "translation": "ветчина",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "bacon",
+      "translation": "бекон",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "minced meat",
+      "translation": "фарш",
+      "partOfSpeech": "noun",
+      "level": "A2"
+    },
+    {
+      "term": "ripe",
+      "translation": "спелый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "unripe",
+      "translation": "неспелый",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "raw",
+      "translation": "сырой",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "cooked",
+      "translation": "приготовленный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "frozen",
+      "translation": "замороженный",
+      "partOfSpeech": "adjective",
+      "level": "A2"
+    },
+    {
+      "term": "nutrition",
+      "translation": "питание; питательные вещества",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "carbohydrate",
+      "translation": "углевод",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "protein",
+      "translation": "белок",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "fibre",
+      "translation": "клетчатка",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "vitamin",
+      "translation": "витамин",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "mineral",
+      "translation": "минерал",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "calorie",
+      "translation": "калория",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "allergy",
+      "translation": "аллергия",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "intolerance",
+      "translation": "непереносимость",
+      "partOfSpeech": "noun",
+      "level": "B1"
+    },
+    {
+      "term": "nutritious",
+      "translation": "питательный",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "organic",
+      "translation": "органический",
+      "partOfSpeech": "adjective",
+      "level": "B1"
+    },
+    {
+      "term": "processed",
+      "translation": "переработанный (о продукте)",
+      "partOfSpeech": "adjective",
+      "level": "B1"
     }
   ]
 }
