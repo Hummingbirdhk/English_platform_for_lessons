@@ -14,12 +14,12 @@ describe('MaterialsPage', () => {
     );
 
     expect(screen.getByText('Present Simple')).toBeInTheDocument();
-    expect(screen.getByText('Распорядок дня и время')).toBeInTheDocument();
+    expect(screen.getByText('Daily Routine Time')).toBeInTheDocument();
 
     await user.type(screen.getByRole('searchbox'), 'Present Simple');
 
     expect(screen.getByText('Present Simple')).toBeInTheDocument();
-    expect(screen.queryByText('Распорядок дня и время')).not.toBeInTheDocument();
+    expect(screen.queryByText('Daily Routine Time')).not.toBeInTheDocument();
   });
 
   it('offers an explicit topic filter', () => {
