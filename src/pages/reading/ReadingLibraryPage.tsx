@@ -34,9 +34,7 @@ export function ReadingLibraryPage() {
           ← Все тексты
         </Link>
         <section className="reading-detail-heading">
-          <span className="reading-eyebrow">
-            {current.genre} · A2–B1
-          </span>
+          <span className="reading-eyebrow">{current.genre} · A2–B1</span>
           <h1>{current.title}</h1>
           <p>Прочитай текст в своём темпе. Незнакомые слова можно найти в словаре.</p>
           <Link className="reading-dictionary-link" to="/dictionary">
