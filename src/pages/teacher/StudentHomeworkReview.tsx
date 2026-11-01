@@ -6,6 +6,7 @@ import {
   getSubmissionFiles,
   reviewHomework,
   openHomeworkFile,
+  downloadHomeworkFile,
   type Submission,
   type SubmissionFile,
 } from '../../shared/lib/homeworkSubmissions';
@@ -112,13 +113,11 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
                   : 'На доработке'}
             </strong>
             {(files[submission.id] ?? []).map((file) => (
-              <button
-                type="button"
-                key={file.id}
-                onClick={() => void openHomeworkFile(file.storage_path)}
-              >
-                ↗ {file.original_name}
-              </button>
+              <div className="teacher-submitted-work__file" key={file.id}>
+                <span>{file.original_name}</span>
+                <button type="button" onClick={() => void openHomeworkFile(file.storage_path)}>Открыть</button>
+                <button type="button" onClick={() => void downloadHomeworkFile(file.storage_path, file.original_name).catch(() => setReviewError('Не удалось скачать файл.'))}>Скачать</button>
+              </div>
             ))}
             <textarea
               aria-label="Комментарий преподавателя"
