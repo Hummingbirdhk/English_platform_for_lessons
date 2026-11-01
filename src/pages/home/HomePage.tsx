@@ -8,7 +8,7 @@ export function HomePage() {
     {
       to: '/materials',
       title: 'Материалы',
-      description: 'Grammar · Vocabulary · Reading · Video',
+      description: 'Грамматика, лексика и темы для изучения',
       count: materials.length,
       color: 'orange',
       artifact: 'spark' as const,
@@ -16,7 +16,7 @@ export function HomePage() {
     {
       to: '/lessons',
       title: 'Уроки',
-      description: 'Готовые последовательности и практика',
+      description: 'Готовые уроки для тренировки и проверки знаний учеников',
       count: lessons.length,
       color: 'purple',
       artifact: 'fire' as const,
@@ -24,7 +24,7 @@ export function HomePage() {
     {
       to: '/students',
       title: 'Ученики',
-      description: 'Текущие темы, повторение и задания',
+      description: 'Успеваемость моих учеников',
       count: students.length,
       color: 'lemon',
       artifact: 'smile' as const,
@@ -36,7 +36,7 @@ export function HomePage() {
       <section className="home-hero">
         <div className="home-hero__copy">
           <div className="eyebrow">ТВОЯ АНГЛИЙСКАЯ ПЛАТФОРМА</div>
-          <h1>Что изучаем сегодня?</h1>
+          <h1>Чему будем учить сегодня?</h1>
           <p>Все материалы, уроки и прогресс учеников — в одном месте.</p>
         </div>
         <BrandArtifact kind="spark" className="home-hero__spark" />
@@ -64,7 +64,7 @@ export function HomePage() {
       <section className="home-bottom-grid home-bottom-grid--single">
         <article className="quick-card">
           <div className="quick-card__title">Словарь</div>
-          <div className="quick-card__meta">Найди слово или фразу, если забыл перевод</div>
+          <div className="quick-card__meta">Слова и фразы с переводом и объяснением</div>
           <GlossyActionLink
             to="/dictionary"
             label="Открыть словарь"
