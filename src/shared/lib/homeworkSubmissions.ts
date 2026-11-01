@@ -72,3 +72,18 @@ export async function reviewHomework(id: string, status: 'reviewed' | 'revision'
     updated_at: new Date().toISOString(),
   });
 }
+
+export async function downloadHomeworkFile(path: string, filename: string) {
+  const url = await cloudClient.getPrivateFileUrl(bucket, path);
+  const response = await fetch(url);
+  if (!response.ok) throw new Error('Не удалось скачать файл.');
+  const blob = await response.blob();
+  const objectUrl = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = objectUrl;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(objectUrl), 60_000);
+}
