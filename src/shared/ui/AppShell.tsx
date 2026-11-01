@@ -9,7 +9,10 @@ const navigation = [
   { to: '/students', label: 'Ученики' },
 ];
 
-export function AppShell({ children, studentId }: PropsWithChildren<{ studentId?: string | null }>) {
+export function AppShell({
+  children,
+  studentId,
+}: PropsWithChildren<{ studentId?: string | null }>) {
   const isStudent = Boolean(studentId);
   const links = navigation.map((item) =>
     isStudent && item.to === '/students'
