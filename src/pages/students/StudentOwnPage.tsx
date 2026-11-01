@@ -40,7 +40,6 @@ export function StudentOwnPage() {
     .map((item) => parseScheduleDateTime(item.dateTime).toISOString().slice(0, 10));
   const [focus, setFocus] = useState({ main: '', practice: '', revision: '' });
   const [loaded, setLoaded] = useState(false);
-  const [homework, setHomework] = useState('');
   const [error, setError] = useState('');
   const [materialIds, setMaterialIds] = useState<string[]>([]);
   const [lessonIds, setLessonIds] = useState<string[]>([]);
@@ -87,7 +86,6 @@ export function StudentOwnPage() {
           revision: rows[0]?.focus_revision ?? '',
         });
         setLoaded(true);
-        setHomework(rows[0]?.current_homework ?? '');
         setMaterialIds(materials.map((row) => row.material_id));
         setLessonIds(lessons.map((row) => row.lesson_id));
         setHistory(historyRows);
@@ -163,7 +161,6 @@ export function StudentOwnPage() {
     <main className="page-shell student-page student-own-page">
       <section className="student-hero" style={{ background: '#9996fa' }}>
         <div>
-          <span className="sticker sticker--white">МОЙ ПРОФИЛЬ</span>
           <h1>Привет, {student?.displayName ?? 'ученик'}!</h1>
           <p>Твой личный кабинет по английскому языку</p>
           {student ? (
@@ -199,9 +196,9 @@ export function StudentOwnPage() {
         >
           <span className="sticker sticker--white">МОЯ ДОМАШКА</span>
           <h2>Домашнее задание</h2>
-          <p>{homework || 'Пока ничего не задано'}</p>
-          <p>Рабочая тетрадь · Учебник · Дополнительное задание</p>
-          <p>Выбери дату урока: задания разных занятий хранятся отдельно.</p>
+          <p className="student-homework-help">
+            Выбери дату урока: задания разных занятий хранятся отдельно.
+          </p>
           <div className="student-own-homework-form">
             <label htmlFor="homework-date">Дата занятия</label>
             <select
@@ -231,7 +228,7 @@ export function StudentOwnPage() {
                 setWorkbook(event.target.value);
                 setDirty(true);
               }}
-              rows={2}
+              rows={1}
             />
             <label htmlFor="homework-textbook">Учебник</label>
             <textarea
@@ -241,7 +238,7 @@ export function StudentOwnPage() {
                 setTextbook(event.target.value);
                 setDirty(true);
               }}
-              rows={2}
+              rows={1}
             />
             <label htmlFor="homework-extra">Дополнительное задание</label>
             <textarea
@@ -251,7 +248,7 @@ export function StudentOwnPage() {
                 setExtraTask(event.target.value);
                 setDirty(true);
               }}
-              rows={2}
+              rows={1}
             />
             <button
               type="button"
@@ -335,18 +332,6 @@ export function StudentOwnPage() {
           ) : (
             <p>Пока нет итогов занятий.</p>
           )}
-        </article>
-      </section>
-      <section
-        className="home-bottom-grid home-bottom-grid--reading"
-        aria-label="Библиотека чтения"
-      >
-        <article className="quick-card quick-card--reading">
-          <div className="quick-card__title">Библиотека текстов</div>
-          <div className="quick-card__meta">Читайте, переводите и делайте задания</div>
-          <Link to="/reading" className="reading-profile-link">
-            Открыть библиотеку →
-          </Link>
         </article>
       </section>
     </main>
