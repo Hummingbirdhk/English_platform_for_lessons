@@ -70,11 +70,7 @@
       "minutes": 6,
       "type": "production",
       "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
-      "required_terms": [
-        "destination",
-        "luggage",
-        "book a room"
-      ],
+      "required_terms": ["destination", "luggage", "book a room"],
       "example_response": "I use the word \"destination\" when discussing travel & holidays.",
       "evaluation": "Teacher reviews grammar, meaning and natural collocations."
     },

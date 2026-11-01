@@ -70,11 +70,7 @@
       "minutes": 6,
       "type": "production",
       "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
-      "required_terms": [
-        "library",
-        "town hall",
-        "crossroads"
-      ],
+      "required_terms": ["library", "town hall", "crossroads"],
       "example_response": "I use the word \"library\" when discussing around the city.",
       "evaluation": "Teacher reviews grammar, meaning and natural collocations."
     },

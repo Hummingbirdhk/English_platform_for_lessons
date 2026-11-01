@@ -70,11 +70,7 @@
       "minutes": 6,
       "type": "production",
       "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
-      "required_terms": [
-        "wake up",
-        "get dressed",
-        "have breakfast"
-      ],
+      "required_terms": ["wake up", "get dressed", "have breakfast"],
       "example_response": "I use the word \"wake up\" when discussing my daily routine.",
       "evaluation": "Teacher reviews grammar, meaning and natural collocations."
     },

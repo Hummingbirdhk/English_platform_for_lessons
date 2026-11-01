@@ -70,11 +70,7 @@
       "minutes": 6,
       "type": "production",
       "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
-      "required_terms": [
-        "trust",
-        "support",
-        "apologise"
-      ],
+      "required_terms": ["trust", "support", "apologise"],
       "example_response": "I use the word \"trust\" when discussing friendship & relationships.",
       "evaluation": "Teacher reviews grammar, meaning and natural collocations."
     },
