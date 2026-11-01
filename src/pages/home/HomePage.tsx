@@ -86,7 +86,7 @@ export function HomePage() {
         </article>
         <article className="quick-card quick-card--reading">
           <div className="quick-card__title">Библиотека текстов</div>
-          <div className="quick-card__meta">Читай, переводи и делай задания после текстов</div>
+          <div className="quick-card__meta">Читайте, переводите и делайте задания</div>
           <GlossyActionLink
             to="/reading"
             label="Открыть библиотеку текстов"
