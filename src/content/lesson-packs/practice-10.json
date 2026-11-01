@@ -1,0 +1,143 @@
+{
+  "id": "practice-10",
+  "title": "News & Media",
+  "level": "B1",
+  "duration_minutes": 40,
+  "grammar": "Passive voice: Present Simple and Past Simple",
+  "vocabulary": [
+    {
+      "term": "headline",
+      "translation": "заголовок"
+    },
+    {
+      "term": "report",
+      "translation": "репортаж"
+    },
+    {
+      "term": "source",
+      "translation": "источник"
+    },
+    {
+      "term": "journalist",
+      "translation": "журналист"
+    },
+    {
+      "term": "publish",
+      "translation": "публиковать"
+    },
+    {
+      "term": "fact-check",
+      "translation": "проверять факты"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-10-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "headline",
+          "meaning": "заголовок"
+        },
+        {
+          "word": "report",
+          "meaning": "репортаж"
+        },
+        {
+          "word": "source",
+          "meaning": "источник"
+        },
+        {
+          "word": "journalist",
+          "meaning": "журналист"
+        },
+        {
+          "word": "publish",
+          "meaning": "публиковать"
+        },
+        {
+          "word": "fact-check",
+          "meaning": "проверять факты"
+        }
+      ]
+    },
+    {
+      "id": "practice-10-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": ["headline", "report", "source"],
+      "example_response": "I use the word \"headline\" when discussing news & media.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-10-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "The local news ___ every morning.",
+          "answer": "is published"
+        },
+        {
+          "text": "The article ___ yesterday.",
+          "answer": "was written"
+        }
+      ]
+    },
+    {
+      "id": "practice-10-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about news & media that use Passive voice: Present Simple and Past Simple. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Passive voice: Present Simple and Past Simple, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-10-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "News & Media — Reading",
+      "passage": "A school newspaper is produced by a team of students. Articles are written, checked and published every Friday. Last week, an interview with a local athlete was printed on the front page. The editors always compare information from different sources before publishing.",
+      "questions": [
+        {
+          "question": "How often is the newspaper published?",
+          "answer": "Every Friday"
+        },
+        {
+          "question": "What appeared on the front page last week?",
+          "answer": "An interview with an athlete"
+        }
+      ]
+    },
+    {
+      "id": "practice-10-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "News & Media — Listening",
+      "script": "Presenter: A new sports centre was opened yesterday. It was designed by local architects. Free classes are offered every Saturday. More information is published on the town website.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "When was the centre opened?",
+          "answer": "Yesterday"
+        },
+        {
+          "question": "When are free classes offered?",
+          "answer": "Every Saturday"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

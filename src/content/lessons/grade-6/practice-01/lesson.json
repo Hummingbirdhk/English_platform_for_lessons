@@ -1,0 +1,15 @@
+{
+  "id": "practice-01",
+  "title": "My Daily Routine",
+  "grade": 6,
+  "level": "A2",
+  "topic": "My Daily Routine · Present Simple vs Present Continuous",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "My Daily Routine",
+      "body": "40-minute practice lesson: vocabulary, grammar, reading and listening."
+    }
+  ]
+}

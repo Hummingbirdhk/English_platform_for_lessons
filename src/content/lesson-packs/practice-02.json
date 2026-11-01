@@ -1,0 +1,143 @@
+{
+  "id": "practice-02",
+  "title": "Around the City",
+  "level": "A2",
+  "duration_minutes": 40,
+  "grammar": "There is/There are; prepositions of place",
+  "vocabulary": [
+    {
+      "term": "library",
+      "translation": "библиотека"
+    },
+    {
+      "term": "town hall",
+      "translation": "ратуша"
+    },
+    {
+      "term": "crossroads",
+      "translation": "перекрёсток"
+    },
+    {
+      "term": "opposite",
+      "translation": "напротив"
+    },
+    {
+      "term": "turn left",
+      "translation": "повернуть налево"
+    },
+    {
+      "term": "go straight",
+      "translation": "идти прямо"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-02-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "library",
+          "meaning": "библиотека"
+        },
+        {
+          "word": "town hall",
+          "meaning": "ратуша"
+        },
+        {
+          "word": "crossroads",
+          "meaning": "перекрёсток"
+        },
+        {
+          "word": "opposite",
+          "meaning": "напротив"
+        },
+        {
+          "word": "turn left",
+          "meaning": "повернуть налево"
+        },
+        {
+          "word": "go straight",
+          "meaning": "идти прямо"
+        }
+      ]
+    },
+    {
+      "id": "practice-02-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": ["library", "town hall", "crossroads"],
+      "example_response": "I use the word \"library\" when discussing around the city.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-02-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "There ___ a library next to the park.",
+          "answer": "is"
+        },
+        {
+          "text": "The bank is ___ the café and the museum.",
+          "answer": "between"
+        }
+      ]
+    },
+    {
+      "id": "practice-02-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about around the city that use There is/There are; prepositions of place. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of There is/There are; prepositions of place, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-02-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Around the City — Reading",
+      "passage": "Our neighbourhood has a small library opposite the park. There are two cafés near the town hall. The museum is between a bookshop and a bank. Visitors often ask for directions because the streets are narrow.",
+      "questions": [
+        {
+          "question": "Where is the library?",
+          "answer": "Opposite the park"
+        },
+        {
+          "question": "What is between the bookshop and the bank?",
+          "answer": "The museum"
+        }
+      ]
+    },
+    {
+      "id": "practice-02-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Around the City — Listening",
+      "script": "Visitor: Excuse me, where is the museum? Local: Go straight to the crossroads, turn left and walk past the café. The museum is on your right.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "Where should the visitor turn?",
+          "answer": "Left at the crossroads"
+        },
+        {
+          "question": "What should they pass?",
+          "answer": "The café"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "practice-04",
+  "title": "Travel & Holidays",
+  "level": "A2",
+  "duration_minutes": 40,
+  "grammar": "Past Simple: regular and irregular verbs",
+  "vocabulary": [
+    {
+      "term": "destination",
+      "translation": "место назначения"
+    },
+    {
+      "term": "luggage",
+      "translation": "багаж"
+    },
+    {
+      "term": "book a room",
+      "translation": "забронировать номер"
+    },
+    {
+      "term": "sightseeing",
+      "translation": "осмотр достопримечательностей"
+    },
+    {
+      "term": "departure",
+      "translation": "отправление"
+    },
+    {
+      "term": "souvenir",
+      "translation": "сувенир"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-04-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "destination",
+          "meaning": "место назначения"
+        },
+        {
+          "word": "luggage",
+          "meaning": "багаж"
+        },
+        {
+          "word": "book a room",
+          "meaning": "забронировать номер"
+        },
+        {
+          "word": "sightseeing",
+          "meaning": "осмотр достопримечательностей"
+        },
+        {
+          "word": "departure",
+          "meaning": "отправление"
+        },
+        {
+          "word": "souvenir",
+          "meaning": "сувенир"
+        }
+      ]
+    },
+    {
+      "id": "practice-04-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": ["destination", "luggage", "book a room"],
+      "example_response": "I use the word \"destination\" when discussing travel & holidays.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-04-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "Last summer we ___ to the coast.",
+          "answer": "went"
+        },
+        {
+          "text": "Yesterday I ___ a postcard for my friend.",
+          "answer": "bought"
+        }
+      ]
+    },
+    {
+      "id": "practice-04-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about travel & holidays that use Past Simple: regular and irregular verbs. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Past Simple: regular and irregular verbs, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-04-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Travel & Holidays — Reading",
+      "passage": "Last August, Ben travelled to Scotland with his aunt. They stayed in a small guesthouse near a lake. They visited an old castle, walked in the hills and bought souvenirs. Ben took many photographs but forgot his umbrella.",
+      "questions": [
+        {
+          "question": "Where did Ben stay?",
+          "answer": "In a guesthouse near a lake"
+        },
+        {
+          "question": "What did he forget?",
+          "answer": "His umbrella"
+        }
+      ]
+    },
+    {
+      "id": "practice-04-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Travel & Holidays — Listening",
+      "script": "Sam: Did you enjoy your holiday? Kim: Yes, we went sightseeing every day. Sam: Did you visit the castle? Kim: We did, and we bought postcards at the gift shop.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "What did Kim do every day?",
+          "answer": "Went sightseeing"
+        },
+        {
+          "question": "What did they buy?",
+          "answer": "Postcards"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

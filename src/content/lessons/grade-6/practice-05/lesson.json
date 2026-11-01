@@ -1,0 +1,15 @@
+{
+  "id": "practice-05",
+  "title": "Health & Advice",
+  "grade": 6,
+  "level": "A2",
+  "topic": "Health & Advice · Should/should not; must/must not",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "Health & Advice",
+      "body": "40-minute practice lesson: vocabulary, grammar, reading and listening."
+    }
+  ]
+}

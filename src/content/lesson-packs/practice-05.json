@@ -1,0 +1,143 @@
+{
+  "id": "practice-05",
+  "title": "Health & Advice",
+  "level": "A2",
+  "duration_minutes": 40,
+  "grammar": "Should/should not; must/must not",
+  "vocabulary": [
+    {
+      "term": "headache",
+      "translation": "головная боль"
+    },
+    {
+      "term": "sore throat",
+      "translation": "больное горло"
+    },
+    {
+      "term": "rest",
+      "translation": "отдых"
+    },
+    {
+      "term": "appointment",
+      "translation": "запись на приём"
+    },
+    {
+      "term": "drink water",
+      "translation": "пить воду"
+    },
+    {
+      "term": "recover",
+      "translation": "выздоравливать"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-05-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "headache",
+          "meaning": "головная боль"
+        },
+        {
+          "word": "sore throat",
+          "meaning": "больное горло"
+        },
+        {
+          "word": "rest",
+          "meaning": "отдых"
+        },
+        {
+          "word": "appointment",
+          "meaning": "запись на приём"
+        },
+        {
+          "word": "drink water",
+          "meaning": "пить воду"
+        },
+        {
+          "word": "recover",
+          "meaning": "выздоравливать"
+        }
+      ]
+    },
+    {
+      "id": "practice-05-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": ["headache", "sore throat", "rest"],
+      "example_response": "I use the word \"headache\" when discussing health & advice.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-05-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "You ___ drink enough water when it is hot.",
+          "answer": "should"
+        },
+        {
+          "text": "You ___ share medicine with friends.",
+          "answer": "must not"
+        }
+      ]
+    },
+    {
+      "id": "practice-05-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about health & advice that use Should/should not; must/must not. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Should/should not; must/must not, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-05-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Health & Advice — Reading",
+      "passage": "Leo has a sore throat and feels tired. His mother tells him to rest and drink water. He should not go to football practice today. If he still feels unwell tomorrow, he will make an appointment with a doctor.",
+      "questions": [
+        {
+          "question": "Why should Leo rest?",
+          "answer": "He has a sore throat and feels tired"
+        },
+        {
+          "question": "What will he do if he is still unwell?",
+          "answer": "See a doctor"
+        }
+      ]
+    },
+    {
+      "id": "practice-05-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Health & Advice — Listening",
+      "script": "Patient: I have a headache. Doctor: You should rest and drink water. Patient: Can I go running tonight? Doctor: Not today. You should stay at home.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "What does the doctor recommend?",
+          "answer": "Rest and drink water"
+        },
+        {
+          "question": "Can the patient run tonight?",
+          "answer": "No"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

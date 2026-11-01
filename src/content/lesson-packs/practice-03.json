@@ -1,0 +1,143 @@
+{
+  "id": "practice-03",
+  "title": "Food & Eating Out",
+  "level": "A2",
+  "duration_minutes": 40,
+  "grammar": "Countable/uncountable nouns; some/any; much/many",
+  "vocabulary": [
+    {
+      "term": "ingredient",
+      "translation": "ингредиент"
+    },
+    {
+      "term": "menu",
+      "translation": "меню"
+    },
+    {
+      "term": "starter",
+      "translation": "закуска"
+    },
+    {
+      "term": "main course",
+      "translation": "основное блюдо"
+    },
+    {
+      "term": "dessert",
+      "translation": "десерт"
+    },
+    {
+      "term": "bill",
+      "translation": "счёт"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-03-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "ingredient",
+          "meaning": "ингредиент"
+        },
+        {
+          "word": "menu",
+          "meaning": "меню"
+        },
+        {
+          "word": "starter",
+          "meaning": "закуска"
+        },
+        {
+          "word": "main course",
+          "meaning": "основное блюдо"
+        },
+        {
+          "word": "dessert",
+          "meaning": "десерт"
+        },
+        {
+          "word": "bill",
+          "meaning": "счёт"
+        }
+      ]
+    },
+    {
+      "id": "practice-03-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": ["ingredient", "menu", "starter"],
+      "example_response": "I use the word \"ingredient\" when discussing food & eating out.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-03-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "We need ___ tomatoes for the salad.",
+          "answer": "some"
+        },
+        {
+          "text": "How ___ water would you like?",
+          "answer": "much"
+        }
+      ]
+    },
+    {
+      "id": "practice-03-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about food & eating out that use Countable/uncountable nouns; some/any; much/many. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Countable/uncountable nouns; some/any; much/many, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-03-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Food & Eating Out — Reading",
+      "passage": "Ella and her family visit a small café on Saturdays. Ella usually orders soup as a starter and pasta as a main course. Today the café has a new vegetable dish with fresh ingredients. Ella tries it and asks for the recipe.",
+      "questions": [
+        {
+          "question": "What does Ella usually order as a starter?",
+          "answer": "Soup"
+        },
+        {
+          "question": "What does she ask for today?",
+          "answer": "The recipe"
+        }
+      ]
+    },
+    {
+      "id": "practice-03-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Food & Eating Out — Listening",
+      "script": "Waiter: Are you ready to order? Guest: Yes, we would like two salads and some water. Waiter: Would you like dessert? Guest: Not today, thank you. Could we have the bill later?",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "How many salads do they order?",
+          "answer": "Two"
+        },
+        {
+          "question": "Do they order dessert?",
+          "answer": "No"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}
