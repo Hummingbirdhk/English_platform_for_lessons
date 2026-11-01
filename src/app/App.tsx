@@ -5,7 +5,8 @@ import { useTeacherAuth } from '../features/teacher-auth/teacherAuthStore';
 
 function AuthenticatedShell() {
   const auth = useTeacherAuth();
-  const studentId = auth.status === 'authenticated' && auth.role === 'student' ? auth.studentId : null;
+  const studentId =
+    auth.status === 'authenticated' && auth.role === 'student' ? auth.studentId : null;
   return (
     <AppShell studentId={studentId}>
       <AppRoutes />
