@@ -3492,3 +3492,33 @@ select {
   font-weight: 800;
   cursor: pointer;
 }
+
+/* Shared reading-library entry cards: home page and student profiles. */
+.home-bottom-grid--reading {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quick-card--reading {
+  background: var(--color-lemon);
+  color: var(--color-ink);
+}
+
+.quick-card--reading .quick-card__meta {
+  opacity: 0.75;
+}
+
+.reading-profile-link {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 11px 17px;
+  border-radius: 99px;
+  background: var(--color-ink);
+  color: #fff;
+  font: 700 14px Arial, sans-serif;
+}
+
+@media (max-width: 850px) {
+  .home-bottom-grid--reading {
+    grid-template-columns: 1fr;
+  }
+}
