@@ -90,7 +90,34 @@ function TeacherStudentDashboard({
   const [selectedMonth, setSelectedMonth] = useState({ year: 2026, month: 9 });
   const [attendanceOverrides, setAttendanceOverrides] = useState<
     Record<string, Record<string, AttendanceStatus>>
-  >({});
+  >(() => {
+    try {
+      return JSON.parse(localStorage.getItem('teacher-attendance-status') || '{}') as Record<
+        string,
+        Record<string, AttendanceStatus>
+      >;
+    } catch {
+      return {};
+    }
+  });
+  const [addedSessions, setAddedSessions] = useState<
+    Record<string, Array<{ dateTime: string; source?: string }>>
+  >(() => {
+    try {
+      return JSON.parse(localStorage.getItem('teacher-extra-sessions') || '{}') as Record<
+        string,
+        Array<{ dateTime: string; source?: string }>
+      >;
+    } catch {
+      return {};
+    }
+  });
+  const [sessionEditor, setSessionEditor] = useState<{
+    source?: string;
+    date: string;
+    time: string;
+  } | null>(null);
+  const [sessionError, setSessionError] = useState('');
   const [editingProfile, setEditingProfile] = useState(false);
   const [tagsDraft, setTagsDraft] = useState(() => activeWorkspace?.profileTags.join(', ') ?? '');
   const [focusMain, setFocusMain] = useState(() => activeWorkspace?.focus.main ?? '');
@@ -109,7 +136,15 @@ function TeacherStudentDashboard({
   }
 
   const currentWorkspace: StudentWorkspace = activeWorkspace;
-  const schedule = getStudentSchedule(student.id);
+  const schedule = [
+    ...getStudentSchedule(student.id),
+    ...(addedSessions[student.id] ?? []).map((session) => ({
+      dateTime: session.dateTime,
+      attendance: null,
+      reschedule: session.source ? 'Перенесённое занятие' : 'Дополнительное занятие',
+      payment: null,
+    })),
+  ];
   const now = new Date();
   const nextLesson = schedule
     .map((entry) => ({ entry, date: parseScheduleDateTime(entry.dateTime) }))
@@ -220,13 +255,58 @@ function TeacherStudentDashboard({
   function cycleAttendance(entryKey: string, currentStatus: AttendanceStatus) {
     const currentIndex = statusOrder.indexOf(currentStatus);
     const nextStatus = statusOrder[(currentIndex + 1) % statusOrder.length];
-    setAttendanceOverrides((current) => ({
-      ...current,
-      [student.id]: {
-        ...(current[student.id] ?? {}),
-        [entryKey]: nextStatus,
-      },
-    }));
+    setAttendanceOverrides((current) => {
+      const updated = {
+        ...current,
+        [student.id]: { ...(current[student.id] ?? {}), [entryKey]: nextStatus },
+      };
+      localStorage.setItem('teacher-attendance-status', JSON.stringify(updated));
+      return updated;
+    });
+  }
+
+  function saveSession() {
+    if (!sessionEditor) return;
+    setSessionError('');
+    const { source, date, time } = sessionEditor;
+    const parsed = new Date(`${date}T${time}:00`);
+    if (
+      !date ||
+      !time ||
+      Number.isNaN(parsed.getTime()) ||
+      parsed.toISOString().slice(0, 10) !== date
+    ) {
+      setSessionError('Укажи корректную дату и время.');
+      return;
+    }
+    const [year, month, day] = date.split('-');
+    const dateTime = `${day}.${month}.${year} ${time}`;
+    if (schedule.some((entry) => entry.dateTime === dateTime)) {
+      setSessionError('На эту дату и время занятие уже есть.');
+      return;
+    }
+    const updated = {
+      ...addedSessions,
+      [student.id]: [
+        ...(addedSessions[student.id] ?? []),
+        { dateTime, ...(source ? { source } : {}) },
+      ],
+    };
+    setAddedSessions(updated);
+    localStorage.setItem('teacher-extra-sessions', JSON.stringify(updated));
+    if (source) {
+      setAttendanceOverrides((current) => {
+        const next = {
+          ...current,
+          [student.id]: { ...(current[student.id] ?? {}), [source]: 'moved' as AttendanceStatus },
+        };
+        localStorage.setItem('teacher-attendance-status', JSON.stringify(next));
+        return next;
+      });
+    }
+    setSelectedMonth({ year: Number(year), month: Number(month) - 1 });
+    setSessionEditor(null);
+    showSaved(source ? 'Перенос сохранён' : 'Дополнительное занятие добавлено');
   }
 
   function moveMonth(offset: number) {
@@ -366,7 +446,7 @@ function TeacherStudentDashboard({
             <div className="teacher-attendance-stats">
               <span>Был: {presentCount}</span>
               <span>Перенос: {movedCount}</span>
-              <span>Отмена: {cancelledCount}</span>
+              <span className="teacher-attendance-cancelled-count">Отмена: {cancelledCount}</span>
             </div>
           </div>
           <div className="teacher-month-control">
@@ -382,6 +462,50 @@ function TeacherStudentDashboard({
           </div>
         </div>
 
+        <div className="teacher-schedule-actions">
+          <button
+            type="button"
+            onClick={() => {
+              setSessionEditor({ date: '', time: '19:00' });
+              setSessionError('');
+            }}
+          >
+            + Добавить занятие
+          </button>
+          <small>Изменения расписания пока сохраняются в этом браузере.</small>
+        </div>
+        {sessionEditor ? (
+          <div className="teacher-session-editor">
+            <h3>{sessionEditor.source ? 'Перенести занятие' : 'Дополнительное занятие'}</h3>
+            <label>
+              Новая дата
+              <input
+                type="date"
+                value={sessionEditor.date}
+                onChange={(event) =>
+                  setSessionEditor({ ...sessionEditor, date: event.target.value })
+                }
+              />
+            </label>
+            <label>
+              Время
+              <input
+                type="time"
+                value={sessionEditor.time}
+                onChange={(event) =>
+                  setSessionEditor({ ...sessionEditor, time: event.target.value })
+                }
+              />
+            </label>
+            <button type="button" onClick={saveSession}>
+              Сохранить
+            </button>
+            <button type="button" onClick={() => setSessionEditor(null)}>
+              Отмена
+            </button>
+            {sessionError ? <p role="alert">{sessionError}</p> : null}
+          </div>
+        ) : null}
         <div className="teacher-attendance-grid">
           {attendance.map((entry) => (
             <article key={entry.key} className="teacher-attendance-card">
@@ -394,6 +518,20 @@ function TeacherStudentDashboard({
                 {entry.note ? <p>{entry.note}</p> : null}
                 {entry.payment ? <p>{entry.payment}</p> : null}
               </div>
+              {entry.status === 'moved' ? (
+                <button
+                  type="button"
+                  className="teacher-attendance-edit"
+                  onClick={() => {
+                    const originalDate = entry.date.toISOString().slice(0, 10);
+                    const originalTime = entry.key.split(' ')[1] ?? '19:00';
+                    setSessionEditor({ source: entry.key, date: originalDate, time: originalTime });
+                    setSessionError('');
+                  }}
+                >
+                  Изменить дату и время
+                </button>
+              ) : null}
               <button
                 type="button"
                 className={`teacher-attendance-status teacher-attendance-status--${entry.status}`}
