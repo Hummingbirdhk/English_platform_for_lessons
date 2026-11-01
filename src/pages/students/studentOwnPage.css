@@ -204,3 +204,9 @@
     min-height: 0;
   }
 }
+
+.student-work-upload { margin-top:20px; padding:18px; border-radius:20px; background:#fff3e9; display:grid; gap:10px; }
+.student-work-upload h3 { margin:0; }
+.student-work-upload input {max-width:100%;}
+.student-work-upload button {border:0;border-radius:12px;background:#fff;padding:11px 15px;text-align:left;cursor:pointer;overflow-wrap:anywhere;}
+.student-work-upload button:disabled {opacity:.55;cursor:not-allowed;}
