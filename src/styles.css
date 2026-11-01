@@ -3514,7 +3514,9 @@ select {
   border-radius: 99px;
   background: var(--color-ink);
   color: #fff;
-  font: 700 14px Arial, sans-serif;
+  font:
+    700 14px Arial,
+    sans-serif;
 }
 
 @media (max-width: 850px) {

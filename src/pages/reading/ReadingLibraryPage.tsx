@@ -85,8 +85,8 @@ export function ReadingLibraryPage() {
         <span className="reading-eyebrow">ENGLISH READING LIBRARY</span>
         <h1>Давай читать!</h1>
         <p>
-          Истории, статьи и другие тексты на английском. Выбирай интересную тему, читай,
-          переводи незнакомые слова и проверяй себя.
+          Истории, статьи и другие тексты на английском. Выбирай интересную тему, читай, переводи
+          незнакомые слова и проверяй себя.
         </p>
       </section>
       <section className="reading-library-toolbar" aria-label="Поиск текстов">
