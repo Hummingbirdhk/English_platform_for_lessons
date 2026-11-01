@@ -126,6 +126,24 @@
   cursor: pointer;
 }
 
-.teacher-submitted-work__file { display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:9px 0; }
-.teacher-submitted-work__file span { flex:1; min-width:120px; overflow-wrap:anywhere; font-weight:600; }
-.teacher-submitted-work__file button { border:0; border-radius:10px; background:#f2f0ff; padding:10px 14px; font-weight:700; cursor:pointer; }
+.teacher-submitted-work__file {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 9px 0;
+}
+.teacher-submitted-work__file span {
+  flex: 1;
+  min-width: 120px;
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+.teacher-submitted-work__file button {
+  border: 0;
+  border-radius: 10px;
+  background: #f2f0ff;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
