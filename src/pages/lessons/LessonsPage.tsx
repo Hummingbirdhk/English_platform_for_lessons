@@ -27,7 +27,6 @@ export function LessonsPage() {
             <h2>{lesson.title}</h2>
             <p>{lesson.topic}</p>
             <div className="lesson-tile__footer">
-              <span>{lesson.sections.length} блоков</span>
               <GlossyActionLink
                 to={`/lesson/${lesson.id}`}
                 label={`Открыть урок: ${lesson.title}`}
