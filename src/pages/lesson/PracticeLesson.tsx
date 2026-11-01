@@ -12,7 +12,16 @@ import i from '../../content/lesson-packs/practice-09.json';
 import j from '../../content/lesson-packs/practice-10.json';
 import './PracticeLesson.css';
 
-type Exercise = (typeof a.exercises)[number];
+type BaseExercise = { id: string; section: string; minutes: number; instructions: string };
+type Question = { question: string; answer: string };
+type Exercise =
+  | (BaseExercise & { type: 'matching'; pairs: Array<{ word: string; meaning: string }> })
+  | (BaseExercise & { type: 'production'; required_terms: string[]; evaluation: string })
+  | (BaseExercise & { type: 'fill_gap'; questions: Array<{ text: string; answer: string }> })
+  | (BaseExercise & { type: 'teacher_checked'; answer_guidance: string })
+  | (BaseExercise & { type: 'reading_comprehension'; passage: string; questions: Question[] })
+  | (BaseExercise & { type: 'listening_comprehension'; script: string; questions: Question[] });
+
 const lessons = [a, b, c, d, e, f, g, h, i, j];
 export function PracticeLesson() {
   const { lessonId } = useParams();
@@ -21,7 +30,7 @@ export function PracticeLesson() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [revealed, setRevealed] = useState(false);
   if (!lesson) return <main className="page-shell">Урок не найден.</main>;
-  const exercise = lesson.exercises[step] as Exercise;
+  const exercise = lesson.exercises[step] as unknown as Exercise;
   const value = (key: string) => answers[key] ?? '';
   const save = (key: string, answer: string) => setAnswers((old) => ({ ...old, [key]: answer }));
   const next = () => {
