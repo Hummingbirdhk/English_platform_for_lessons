@@ -1,5 +1,4 @@
 import { spawnSync } from 'node:child_process';
-import { spawnSync } from 'node:child_process';
 const files = [...Array.from({length:10},(_,i)=>'src/content/lesson-packs/practice-'+String(i+1).padStart(2,'0')+'.json'), 'src/pages/lesson/PracticeLesson.css', 'src/pages/lesson/PracticeLesson.tsx'];
 for(const file of files){const result=spawnSync('node_modules/.bin/prettier',[file],{encoding:'utf8'});if(result.stdout){console.log('FMT_START '+file+' '+Buffer.from(result.stdout).toString('base64')+' FMT_END');}}
 
