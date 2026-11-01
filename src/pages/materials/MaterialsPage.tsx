@@ -9,12 +9,17 @@ const typeOptions = [
   { label: 'Все', value: 'all' },
   { label: 'Grammar', value: 'grammar' },
   { label: 'Vocabulary', value: 'vocabulary' },
-  { label: 'Reading', value: 'reading' },
-  { label: 'Video', value: 'video' },
 ];
 
 export function MaterialsPage() {
-  const { materials } = loadAllContent();
+  const { materials: allMaterials } = loadAllContent();
+  const materials = useMemo(
+    () =>
+      allMaterials.filter(
+        (material) => material.type === 'grammar' || material.type === 'vocabulary',
+      ),
+    [allMaterials],
+  );
   const [query, setQuery] = useState('');
   const [type, setType] = useState<string>('all');
   const [level, setLevel] = useState<string>('all');

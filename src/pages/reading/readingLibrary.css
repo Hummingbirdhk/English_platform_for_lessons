@@ -1,0 +1,227 @@
+.home-bottom-grid--reading {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.quick-card--reading {
+  background: var(--color-lemon);
+  color: var(--color-ink);
+}
+.quick-card--reading .quick-card__meta {
+  opacity: 0.75;
+}
+.reading-library {
+  padding-bottom: 72px;
+}
+.reading-library-hero {
+  border-radius: 36px;
+  background: var(--color-purple);
+  padding: 45px 48px;
+}
+.reading-library-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1;
+  margin: 22px 0;
+}
+.reading-library-hero p {
+  max-width: 710px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+.reading-eyebrow {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+.reading-library-toolbar {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.reading-library-toolbar input,
+.reading-library-toolbar select {
+  font:
+    16px Arial,
+    sans-serif;
+  border: 1px solid #dedee5;
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: white;
+}
+.reading-library-toolbar input {
+  flex: 2;
+  min-width: 220px;
+}
+.reading-library-toolbar select {
+  flex: 1;
+  min-width: 190px;
+}
+.reading-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.reading-tile {
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  border-radius: 28px;
+  background: #f3f2ff;
+  padding: 25px;
+  transition: transform 0.2s ease;
+}
+.reading-tile:nth-child(3n + 2) {
+  background: #fff0dd;
+}
+.reading-tile:nth-child(3n + 3) {
+  background: #fcffa6;
+}
+.reading-tile:hover {
+  transform: translateY(-3px);
+}
+.reading-tile-number {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.reading-tile-type {
+  font:
+    14px Arial,
+    sans-serif;
+  margin-top: 20px;
+}
+.reading-tile h2 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  line-height: 1.12;
+  margin: 14px 0 auto;
+}
+.reading-tile-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+  font:
+    14px Arial,
+    sans-serif;
+}
+.reading-back {
+  display: inline-block;
+  margin: 16px 0 30px;
+  font:
+    16px Arial,
+    sans-serif;
+}
+.reading-detail-heading {
+  background: var(--color-lemon);
+  padding: 36px 42px;
+  border-radius: 30px;
+}
+.reading-detail-heading h1 {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4vw, 55px);
+  margin: 16px 0;
+}
+.reading-detail-heading p {
+  font:
+    17px/1.55 Arial,
+    sans-serif;
+}
+.reading-dictionary-link {
+  display: inline-block;
+  font:
+    700 15px Arial,
+    sans-serif;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.reading-paper {
+  background: #fff;
+  border: 1px solid #e6e6ea;
+  border-radius: 28px;
+  padding: clamp(24px, 5vw, 60px);
+  margin-top: 24px;
+}
+.reading-paper p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.85;
+  letter-spacing: 0;
+  max-width: 760px;
+  margin: 0 auto 19px;
+}
+.reading-paper p:last-child {
+  margin-bottom: 0;
+}
+.reading-practice {
+  margin-top: 26px;
+  padding: 30px;
+  background: #f4f3ff;
+  border-radius: 28px;
+}
+.reading-practice h2 {
+  margin: 12px 0;
+}
+.reading-practice p {
+  font:
+    16px/1.55 Arial,
+    sans-serif;
+}
+.reading-practice button {
+  background: #111114;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+.reading-question {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+  font:
+    17px Arial,
+    sans-serif;
+}
+.reading-question textarea {
+  width: 100%;
+  border: 1px solid #d6d6df;
+  border-radius: 14px;
+  padding: 15px;
+  font:
+    17px/1.5 Arial,
+    sans-serif;
+  resize: vertical;
+}
+@media (max-width: 850px) {
+  .reading-library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-bottom-grid--reading {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .reading-library-grid {
+    grid-template-columns: 1fr;
+  }
+  .reading-library-hero {
+    padding: 30px 24px;
+  }
+  .reading-paper p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}
+
+.reading-profile-link {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 11px 17px;
+  border-radius: 99px;
+  background: #111114;
+  color: #fff;
+  font:
+    700 14px Arial,
+    sans-serif;
+}

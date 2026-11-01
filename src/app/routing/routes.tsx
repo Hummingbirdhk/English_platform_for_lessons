@@ -4,6 +4,11 @@ import { StudentGate } from '../../features/student-auth/StudentGate';
 import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 import { TeacherGate } from '../../features/teacher-auth/TeacherGate';
 
+const ReadingLibraryPage = lazy(() =>
+  import('../../pages/reading/ReadingLibraryPage').then((module) => ({
+    default: module.ReadingLibraryPage,
+  })),
+);
 const DictionaryPage = lazy(() =>
   import('../../pages/dictionary/DictionaryPage').then((module) => ({
     default: module.DictionaryPage,
@@ -85,6 +90,8 @@ export function AppRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/materials" element={<MaterialsPage />} />
         <Route path="/dictionary" element={<DictionaryPage />} />
+        <Route path="/reading" element={<ReadingLibraryPage />} />
+        <Route path="/reading/:readingId" element={<ReadingLibraryPage />} />
         <Route path="/materials/:materialId" element={<MaterialPage />} />
         <Route path="/lessons" element={<LessonsPage />} />
         <Route path="/lesson/:lessonId" element={<LessonPage />} />
