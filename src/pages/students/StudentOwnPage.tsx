@@ -322,57 +322,91 @@ export function StudentOwnPage() {
             ) : null}
           </div>
           <div className="student-work-upload">
-            <h3><span aria-hidden="true">♧</span> Моя выполненная работа</h3>
+            <h3>
+              <span aria-hidden="true">♧</span> Моя выполненная работа
+            </h3>
             {activeSubmission ? (
               <div className="student-work-upload__sent">
-                <p className="student-work-upload__status">{
-                  activeSubmission.status === 'submitted'
+                <p className="student-work-upload__status">
+                  {activeSubmission.status === 'submitted'
                     ? '✓ Отправлено · На проверке'
                     : activeSubmission.status === 'reviewed'
                       ? '✓ Проверено преподавателем'
-                      : '↻ На доработке'
-                }</p>
+                      : '↻ На доработке'}
+                </p>
                 {submittedFiles.map((file) => (
-                  <button type="button" className="student-work-upload__file" key={file.id}
-                    onClick={() => void openHomeworkFile(file.storage_path)}>
-                    <span aria-hidden="true">▧</span><span>{file.original_name}</span><span aria-hidden="true">↗</span>
+                  <button
+                    type="button"
+                    className="student-work-upload__file"
+                    key={file.id}
+                    onClick={() => void openHomeworkFile(file.storage_path)}
+                  >
+                    <span aria-hidden="true">▧</span>
+                    <span>{file.original_name}</span>
+                    <span aria-hidden="true">↗</span>
                   </button>
                 ))}
                 {activeSubmission.teacher_comment ? (
-                  <p className="student-work-upload__comment"><strong>Комментарий преподавателя:</strong> {activeSubmission.teacher_comment}</p>
+                  <p className="student-work-upload__comment">
+                    <strong>Комментарий преподавателя:</strong> {activeSubmission.teacher_comment}
+                  </p>
                 ) : null}
               </div>
             ) : (
               <>
                 <label className="student-work-upload__dropzone" htmlFor="homework-upload">
-                  <span className="student-work-upload__cloud" aria-hidden="true">☁↑</span>
+                  <span className="student-work-upload__cloud" aria-hidden="true">
+                    ☁↑
+                  </span>
                   <strong>Прикрепить работу</strong>
                   <span>Фото, PDF или документ · до 20 МБ</span>
                 </label>
-                <input id="homework-upload" className="student-work-upload__input" type="file"
-                  multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.docx"
-                  onChange={(event) => setUploadFiles(Array.from(event.target.files ?? []))} />
+                <input
+                  id="homework-upload"
+                  className="student-work-upload__input"
+                  type="file"
+                  multiple
+                  accept=".jpg,.jpeg,.png,.webp,.pdf,.docx"
+                  onChange={(event) => setUploadFiles(Array.from(event.target.files ?? []))}
+                />
                 {uploadFiles.length ? (
                   <div className="student-work-upload__files">
                     {uploadFiles.map((file, index) => (
                       <div className="student-work-upload__file" key={index}>
                         <span aria-hidden="true">▧</span>
                         <span>{file.name}</span>
-                        <span className="student-work-upload__check" aria-label="Файл выбран">✓</span>
-                        <button type="button" className="student-work-upload__remove" aria-label={`Убрать ${file.name}`}
-                          onClick={() => setUploadFiles((current) => current.filter((_, i) => i !== index))}>×</button>
+                        <span className="student-work-upload__check" aria-label="Файл выбран">
+                          ✓
+                        </span>
+                        <button
+                          type="button"
+                          className="student-work-upload__remove"
+                          aria-label={`Убрать ${file.name}`}
+                          onClick={() =>
+                            setUploadFiles((current) => current.filter((_, i) => i !== index))
+                          }
+                        >
+                          ×
+                        </button>
                       </div>
                     ))}
                   </div>
                 ) : null}
-                <button type="button" className="student-work-upload__send"
+                <button
+                  type="button"
+                  className="student-work-upload__send"
                   disabled={uploading || !homeworkDate || uploadFiles.length === 0}
-                  onClick={() => void submitWork()}>
+                  onClick={() => void submitWork()}
+                >
                   {uploading ? 'Отправляю…' : 'Отправить преподавателю'}
                 </button>
               </>
             )}
-            {submissionMessage ? <p role="status" className="student-work-upload__message">{submissionMessage}</p> : null}
+            {submissionMessage ? (
+              <p role="status" className="student-work-upload__message">
+                {submissionMessage}
+              </p>
+            ) : null}
           </div>
         </article>
       </section>
