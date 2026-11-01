@@ -3525,15 +3525,74 @@ select {
   }
 }
 
-.teacher-attendance-status--cancelled { background: #ffd9dc; color: #9d2334; }
-.teacher-attendance-cancelled-count { background: #ffe2e6; color: #9d2334; }
-.teacher-schedule-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:18px 0; }
-.teacher-schedule-actions button,.teacher-attendance-edit { border:1px solid #bac5d6; background:#fff; border-radius:14px; padding:10px 14px; font-weight:700; cursor:pointer; }
-.teacher-schedule-actions small { color:#71717a; }
-.teacher-attendance-edit { margin-top:8px; width:100%; font-size:12px; }
-.teacher-session-editor { display:flex; align-items:end; flex-wrap:wrap; gap:12px; border-radius:20px; padding:18px; background:#f1f2ff; margin-bottom:16px; }
-.teacher-session-editor h3 { width:100%; margin:0; }
-.teacher-session-editor label { display:flex; flex-direction:column; gap:5px; font-size:14px; font-weight:700; }
-.teacher-session-editor input { border:1px solid #d0d0dd; background:white; border-radius:10px; padding:10px; }
-.teacher-session-editor button { border:0; border-radius:12px; padding:11px 16px; background:#111114; color:white; cursor:pointer; }
-.teacher-session-editor p[role=alert] { color:#a11c2c; width:100%; }
+.teacher-attendance-status--cancelled {
+  background: #ffd9dc;
+  color: #9d2334;
+}
+.teacher-attendance-cancelled-count {
+  background: #ffe2e6;
+  color: #9d2334;
+}
+.teacher-schedule-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0;
+}
+.teacher-schedule-actions button,
+.teacher-attendance-edit {
+  border: 1px solid #bac5d6;
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.teacher-schedule-actions small {
+  color: #71717a;
+}
+.teacher-attendance-edit {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 12px;
+}
+.teacher-session-editor {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-radius: 20px;
+  padding: 18px;
+  background: #f1f2ff;
+  margin-bottom: 16px;
+}
+.teacher-session-editor h3 {
+  width: 100%;
+  margin: 0;
+}
+.teacher-session-editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.teacher-session-editor input {
+  border: 1px solid #d0d0dd;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.teacher-session-editor button {
+  border: 0;
+  border-radius: 12px;
+  padding: 11px 16px;
+  background: #111114;
+  color: white;
+  cursor: pointer;
+}
+.teacher-session-editor p[role='alert'] {
+  color: #a11c2c;
+  width: 100%;
+}

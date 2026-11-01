@@ -91,14 +91,32 @@ function TeacherStudentDashboard({
   const [attendanceOverrides, setAttendanceOverrides] = useState<
     Record<string, Record<string, AttendanceStatus>>
   >(() => {
-    try { return JSON.parse(localStorage.getItem('teacher-attendance-status') || '{}') as Record<string, Record<string, AttendanceStatus>>; }
-    catch { return {}; }
+    try {
+      return JSON.parse(localStorage.getItem('teacher-attendance-status') || '{}') as Record<
+        string,
+        Record<string, AttendanceStatus>
+      >;
+    } catch {
+      return {};
+    }
   });
-  const [addedSessions, setAddedSessions] = useState<Record<string, Array<{dateTime: string; source?: string}>>>(() => {
-    try { return JSON.parse(localStorage.getItem('teacher-extra-sessions') || '{}') as Record<string, Array<{dateTime: string; source?: string}>>; }
-    catch { return {}; }
+  const [addedSessions, setAddedSessions] = useState<
+    Record<string, Array<{ dateTime: string; source?: string }>>
+  >(() => {
+    try {
+      return JSON.parse(localStorage.getItem('teacher-extra-sessions') || '{}') as Record<
+        string,
+        Array<{ dateTime: string; source?: string }>
+      >;
+    } catch {
+      return {};
+    }
   });
-  const [sessionEditor, setSessionEditor] = useState<{source?: string; date: string; time: string} | null>(null);
+  const [sessionEditor, setSessionEditor] = useState<{
+    source?: string;
+    date: string;
+    time: string;
+  } | null>(null);
   const [sessionError, setSessionError] = useState('');
   const [editingProfile, setEditingProfile] = useState(false);
   const [tagsDraft, setTagsDraft] = useState(() => activeWorkspace?.profileTags.join(', ') ?? '');
@@ -238,7 +256,10 @@ function TeacherStudentDashboard({
     const currentIndex = statusOrder.indexOf(currentStatus);
     const nextStatus = statusOrder[(currentIndex + 1) % statusOrder.length];
     setAttendanceOverrides((current) => {
-      const updated = { ...current, [student.id]: { ...(current[student.id] ?? {}), [entryKey]: nextStatus } };
+      const updated = {
+        ...current,
+        [student.id]: { ...(current[student.id] ?? {}), [entryKey]: nextStatus },
+      };
       localStorage.setItem('teacher-attendance-status', JSON.stringify(updated));
       return updated;
     });
@@ -249,7 +270,12 @@ function TeacherStudentDashboard({
     setSessionError('');
     const { source, date, time } = sessionEditor;
     const parsed = new Date(`${date}T${time}:00`);
-    if (!date || !time || Number.isNaN(parsed.getTime()) || parsed.toISOString().slice(0, 10) !== date) {
+    if (
+      !date ||
+      !time ||
+      Number.isNaN(parsed.getTime()) ||
+      parsed.toISOString().slice(0, 10) !== date
+    ) {
       setSessionError('Укажи корректную дату и время.');
       return;
     }
@@ -261,13 +287,19 @@ function TeacherStudentDashboard({
     }
     const updated = {
       ...addedSessions,
-      [student.id]: [...(addedSessions[student.id] ?? []), { dateTime, ...(source ? { source } : {}) }],
+      [student.id]: [
+        ...(addedSessions[student.id] ?? []),
+        { dateTime, ...(source ? { source } : {}) },
+      ],
     };
     setAddedSessions(updated);
     localStorage.setItem('teacher-extra-sessions', JSON.stringify(updated));
     if (source) {
       setAttendanceOverrides((current) => {
-        const next = { ...current, [student.id]: { ...(current[student.id] ?? {}), [source]: 'moved' as AttendanceStatus } };
+        const next = {
+          ...current,
+          [student.id]: { ...(current[student.id] ?? {}), [source]: 'moved' as AttendanceStatus },
+        };
         localStorage.setItem('teacher-attendance-status', JSON.stringify(next));
         return next;
       });
@@ -431,16 +463,46 @@ function TeacherStudentDashboard({
         </div>
 
         <div className="teacher-schedule-actions">
-          <button type="button" onClick={() => { setSessionEditor({date:'', time:'19:00'}); setSessionError(''); }}>+ Добавить занятие</button>
+          <button
+            type="button"
+            onClick={() => {
+              setSessionEditor({ date: '', time: '19:00' });
+              setSessionError('');
+            }}
+          >
+            + Добавить занятие
+          </button>
           <small>Изменения расписания пока сохраняются в этом браузере.</small>
         </div>
         {sessionEditor ? (
           <div className="teacher-session-editor">
             <h3>{sessionEditor.source ? 'Перенести занятие' : 'Дополнительное занятие'}</h3>
-            <label>Новая дата<input type="date" value={sessionEditor.date} onChange={(event) => setSessionEditor({...sessionEditor, date: event.target.value})} /></label>
-            <label>Время<input type="time" value={sessionEditor.time} onChange={(event) => setSessionEditor({...sessionEditor, time: event.target.value})} /></label>
-            <button type="button" onClick={saveSession}>Сохранить</button>
-            <button type="button" onClick={() => setSessionEditor(null)}>Отмена</button>
+            <label>
+              Новая дата
+              <input
+                type="date"
+                value={sessionEditor.date}
+                onChange={(event) =>
+                  setSessionEditor({ ...sessionEditor, date: event.target.value })
+                }
+              />
+            </label>
+            <label>
+              Время
+              <input
+                type="time"
+                value={sessionEditor.time}
+                onChange={(event) =>
+                  setSessionEditor({ ...sessionEditor, time: event.target.value })
+                }
+              />
+            </label>
+            <button type="button" onClick={saveSession}>
+              Сохранить
+            </button>
+            <button type="button" onClick={() => setSessionEditor(null)}>
+              Отмена
+            </button>
             {sessionError ? <p role="alert">{sessionError}</p> : null}
           </div>
         ) : null}
@@ -457,12 +519,18 @@ function TeacherStudentDashboard({
                 {entry.payment ? <p>{entry.payment}</p> : null}
               </div>
               {entry.status === 'moved' ? (
-                <button type="button" className="teacher-attendance-edit" onClick={() => {
-                  const originalDate = entry.date.toISOString().slice(0, 10);
-                  const originalTime = entry.key.split(' ')[1] ?? '19:00';
-                  setSessionEditor({ source: entry.key, date: originalDate, time: originalTime });
-                  setSessionError('');
-                }}>Изменить дату и время</button>
+                <button
+                  type="button"
+                  className="teacher-attendance-edit"
+                  onClick={() => {
+                    const originalDate = entry.date.toISOString().slice(0, 10);
+                    const originalTime = entry.key.split(' ')[1] ?? '19:00';
+                    setSessionEditor({ source: entry.key, date: originalDate, time: originalTime });
+                    setSessionError('');
+                  }}
+                >
+                  Изменить дату и время
+                </button>
               ) : null}
               <button
                 type="button"
