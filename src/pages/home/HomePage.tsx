@@ -1,9 +1,12 @@
+import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 import { loadAllContent } from '../../content/loadContent';
 import { BrandArtifact } from '../../shared/ui/BrandArtifacts';
 import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 
 export function HomePage() {
   const { lessons, materials, students } = loadAllContent();
+  const auth = useTeacherAuth();
+  const isStudent = auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
   const sections = [
     {
       to: '/materials',
@@ -22,10 +25,12 @@ export function HomePage() {
       artifact: 'fire' as const,
     },
     {
-      to: '/students',
-      title: 'Ученики',
-      description: 'Успеваемость моих учеников',
-      count: students.length,
+      to: isStudent ? `/students/${auth.studentId}` : '/students',
+      title: isStudent ? 'Профиль ученика' : 'Ученики',
+      description: isStudent
+        ? 'Твоя успеваемость, домашка и материалы для изучения'
+        : 'Успеваемость моих учеников',
+      count: isStudent ? null : students.length,
       color: 'lemon',
       artifact: 'smile' as const,
     },
@@ -36,8 +41,8 @@ export function HomePage() {
       <section className="home-hero">
         <div className="home-hero__copy">
           <div className="eyebrow">ТВОЯ АНГЛИЙСКАЯ ПЛАТФОРМА</div>
-          <h1>Чему будем учить сегодня?</h1>
-          <p>Все материалы, уроки и прогресс учеников — в одном месте.</p>
+          <h1>{isStudent ? 'Что изучаем сегодня?' : 'Чему будем учить сегодня?'}</h1>
+          <p>{isStudent ? 'Все материалы, уроки и твой прогресс — всё в одном месте' : 'Все материалы, уроки и прогресс учеников — в одном месте.'}</p>
         </div>
         <BrandArtifact kind="spark" className="home-hero__spark" />
         <BrandArtifact kind="smile" className="home-hero__smile" />
@@ -47,7 +52,9 @@ export function HomePage() {
       <section className="section-entry-grid" aria-label="Основные разделы">
         {sections.map((section) => (
           <article key={section.to} className={`section-entry section-entry--${section.color}`}>
-            <span className="section-entry__meta">{section.count} В БАЗЕ</span>
+            {section.count !== null ? (
+              <span className="section-entry__meta">{section.count} В БАЗЕ</span>
+            ) : null}
             <BrandArtifact kind={section.artifact} className="section-entry__artifact" />
             <h2>{section.title}</h2>
             <p>{section.description}</p>
