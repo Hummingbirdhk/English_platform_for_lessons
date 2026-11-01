@@ -3,11 +3,14 @@ import { useParams } from 'react-router-dom';
 import { loadAllContent } from '../../content/loadContent';
 import { LessonRenderer } from '../../entities/lesson/LessonRenderer';
 import { StudentAssignmentBar } from '../../features/student-workspace/StudentAssignmentBar';
+import { PracticeLesson } from './PracticeLesson';
 
 export function LessonPage() {
   const { lessonId } = useParams();
   const content = loadAllContent();
   const lesson = content.lessons.find((item) => item.id === lessonId);
+
+  if (lessonId?.startsWith('practice-')) return <PracticeLesson />;
 
   if (!lesson) {
     return (
