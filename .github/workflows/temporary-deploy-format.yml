@@ -1,0 +1,29 @@
+name: Temporary format deployment fix
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  format:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx prettier --write src/pages/reading/ReadingLibraryPage.tsx src/styles.css
+      - name: Commit formatting
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/pages/reading/ReadingLibraryPage.tsx src/styles.css
+          if ! git diff --cached --quiet; then
+            git commit -m "Format reading page and home layout"
+            git push
+          fi
