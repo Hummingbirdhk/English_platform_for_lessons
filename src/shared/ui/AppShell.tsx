@@ -12,7 +12,8 @@ const navigation = [
 
 export function AppShell({ children }: PropsWithChildren) {
   const auth = useTeacherAuth();
-  const isStudent = auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
+  const isStudent =
+    auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
   const links = navigation.map((item) =>
     isStudent && item.to === '/students'
       ? { ...item, to: `/students/${auth.studentId}`, label: 'Профиль' }
@@ -40,11 +41,11 @@ export function AppShell({ children }: PropsWithChildren) {
           </nav>
 
           <NavLink
-            to={isStudent ? `/students/${auth.studentId}` : "/teacher"}
+            to={isStudent ? `/students/${auth.studentId}` : '/teacher'}
             className={({ isActive }) =>
               isActive ? 'app-profile app-profile--active' : 'app-profile'
             }
-            aria-label={isStudent ? "Личный кабинет ученика" : "Личный кабинет преподавателя"}
+            aria-label={isStudent ? 'Личный кабинет ученика' : 'Личный кабинет преподавателя'}
           >
             M
           </NavLink>
