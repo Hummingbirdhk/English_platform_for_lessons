@@ -1,0 +1,147 @@
+{
+  "id": "practice-09",
+  "title": "Friendship & Relationships",
+  "level": "B1",
+  "duration_minutes": 40,
+  "grammar": "Gerunds and infinitives",
+  "vocabulary": [
+    {
+      "term": "trust",
+      "translation": "доверие"
+    },
+    {
+      "term": "support",
+      "translation": "поддержка"
+    },
+    {
+      "term": "apologise",
+      "translation": "извиняться"
+    },
+    {
+      "term": "misunderstanding",
+      "translation": "недопонимание"
+    },
+    {
+      "term": "encourage",
+      "translation": "подбадривать"
+    },
+    {
+      "term": "keep in touch",
+      "translation": "поддерживать связь"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-09-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "trust",
+          "meaning": "доверие"
+        },
+        {
+          "word": "support",
+          "meaning": "поддержка"
+        },
+        {
+          "word": "apologise",
+          "meaning": "извиняться"
+        },
+        {
+          "word": "misunderstanding",
+          "meaning": "недопонимание"
+        },
+        {
+          "word": "encourage",
+          "meaning": "подбадривать"
+        },
+        {
+          "word": "keep in touch",
+          "meaning": "поддерживать связь"
+        }
+      ]
+    },
+    {
+      "id": "practice-09-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": [
+        "trust",
+        "support",
+        "apologise"
+      ],
+      "example_response": "I use the word \"trust\" when discussing friendship & relationships.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-09-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "She enjoys ___ time with her friends.",
+          "answer": "spending"
+        },
+        {
+          "text": "He promised ___ for being late.",
+          "answer": "to apologise"
+        }
+      ]
+    },
+    {
+      "id": "practice-09-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about friendship & relationships that use Gerunds and infinitives. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Gerunds and infinitives, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-09-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Friendship & Relationships — Reading",
+      "passage": "When Dan moved to a new town, he found it difficult to make friends. He decided to join a music club. At first he avoided speaking to new people, but another student encouraged him to take part in a concert. Dan now enjoys meeting his new friends after school.",
+      "questions": [
+        {
+          "question": "Why did Dan join the club?",
+          "answer": "To make friends"
+        },
+        {
+          "question": "What encouraged him?",
+          "answer": "Another student invited him to take part in a concert"
+        }
+      ]
+    },
+    {
+      "id": "practice-09-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Friendship & Relationships — Listening",
+      "script": "Olivia: I think Maya is upset with me. Noah: Have you tried talking to her? Olivia: Not yet. Noah: I suggest listening first and then explaining your side. Olivia: You are right.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "What does Noah suggest doing first?",
+          "answer": "Listening"
+        },
+        {
+          "question": "Has Olivia talked to Maya yet?",
+          "answer": "No"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

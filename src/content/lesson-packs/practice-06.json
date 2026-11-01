@@ -1,0 +1,147 @@
+{
+  "id": "practice-06",
+  "title": "Technology & Social Media",
+  "level": "B1",
+  "duration_minutes": 40,
+  "grammar": "Present Perfect vs Past Simple",
+  "vocabulary": [
+    {
+      "term": "device",
+      "translation": "устройство"
+    },
+    {
+      "term": "privacy",
+      "translation": "конфиденциальность"
+    },
+    {
+      "term": "upload",
+      "translation": "загружать в интернет"
+    },
+    {
+      "term": "notification",
+      "translation": "уведомление"
+    },
+    {
+      "term": "reliable",
+      "translation": "надёжный"
+    },
+    {
+      "term": "screen time",
+      "translation": "время у экрана"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-06-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "device",
+          "meaning": "устройство"
+        },
+        {
+          "word": "privacy",
+          "meaning": "конфиденциальность"
+        },
+        {
+          "word": "upload",
+          "meaning": "загружать в интернет"
+        },
+        {
+          "word": "notification",
+          "meaning": "уведомление"
+        },
+        {
+          "word": "reliable",
+          "meaning": "надёжный"
+        },
+        {
+          "word": "screen time",
+          "meaning": "время у экрана"
+        }
+      ]
+    },
+    {
+      "id": "practice-06-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": [
+        "device",
+        "privacy",
+        "upload"
+      ],
+      "example_response": "I use the word \"device\" when discussing technology & social media.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-06-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "I have ___ updated my password.",
+          "answer": "just"
+        },
+        {
+          "text": "She ___ a new app yesterday.",
+          "answer": "downloaded"
+        }
+      ]
+    },
+    {
+      "id": "practice-06-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about technology & social media that use Present Perfect vs Past Simple. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Present Perfect vs Past Simple, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-06-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Technology & Social Media — Reading",
+      "passage": "For one week, Nora stopped checking social media before breakfast. She has noticed that she feels calmer in the morning. Last Monday, she switched off notifications and left her phone in another room. She still uses the internet for schoolwork, but she now checks whether websites are reliable.",
+      "questions": [
+        {
+          "question": "What has Nora noticed?",
+          "answer": "She feels calmer"
+        },
+        {
+          "question": "What did she do last Monday?",
+          "answer": "Switched off notifications"
+        }
+      ]
+    },
+    {
+      "id": "practice-06-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Technology & Social Media — Listening",
+      "script": "Presenter: Have you ever deleted a social media app? Alex: Yes, I deleted one last year. Presenter: Have you downloaded it again? Alex: No, I have not. I spend more time reading now.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "When did Alex delete the app?",
+          "answer": "Last year"
+        },
+        {
+          "question": "Has Alex downloaded it again?",
+          "answer": "No"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

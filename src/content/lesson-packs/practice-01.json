@@ -1,0 +1,147 @@
+{
+  "id": "practice-01",
+  "title": "My Daily Routine",
+  "level": "A2",
+  "duration_minutes": 40,
+  "grammar": "Present Simple vs Present Continuous",
+  "vocabulary": [
+    {
+      "term": "wake up",
+      "translation": "просыпаться"
+    },
+    {
+      "term": "get dressed",
+      "translation": "одеваться"
+    },
+    {
+      "term": "have breakfast",
+      "translation": "завтракать"
+    },
+    {
+      "term": "leave home",
+      "translation": "выходить из дома"
+    },
+    {
+      "term": "do homework",
+      "translation": "делать домашнюю работу"
+    },
+    {
+      "term": "go to bed",
+      "translation": "ложиться спать"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-01-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "wake up",
+          "meaning": "просыпаться"
+        },
+        {
+          "word": "get dressed",
+          "meaning": "одеваться"
+        },
+        {
+          "word": "have breakfast",
+          "meaning": "завтракать"
+        },
+        {
+          "word": "leave home",
+          "meaning": "выходить из дома"
+        },
+        {
+          "word": "do homework",
+          "meaning": "делать домашнюю работу"
+        },
+        {
+          "word": "go to bed",
+          "meaning": "ложиться спать"
+        }
+      ]
+    },
+    {
+      "id": "practice-01-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": [
+        "wake up",
+        "get dressed",
+        "have breakfast"
+      ],
+      "example_response": "I use the word \"wake up\" when discussing my daily routine.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-01-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "I usually ___ at seven.",
+          "answer": "wake up"
+        },
+        {
+          "text": "Right now, my brother ___ breakfast.",
+          "answer": "is having"
+        }
+      ]
+    },
+    {
+      "id": "practice-01-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about my daily routine that use Present Simple vs Present Continuous. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of Present Simple vs Present Continuous, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-01-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "My Daily Routine — Reading",
+      "passage": "Mia usually wakes up at seven. She has breakfast with her family and walks to school. On Fridays, she stays after school for a music club. Today is different: she is visiting her grandmother and doing her homework there.",
+      "questions": [
+        {
+          "question": "Where does Mia go on Fridays?",
+          "answer": "To a music club"
+        },
+        {
+          "question": "What is she doing differently today?",
+          "answer": "Visiting her grandmother"
+        }
+      ]
+    },
+    {
+      "id": "practice-01-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "My Daily Routine — Listening",
+      "script": "Tom: What time do you usually leave home? Anna: At eight, but today I am leaving at nine. Tom: Why? Anna: Our first lesson is cancelled.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "When does Anna usually leave?",
+          "answer": "At eight"
+        },
+        {
+          "question": "Why is she leaving later?",
+          "answer": "Her first lesson is cancelled"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}

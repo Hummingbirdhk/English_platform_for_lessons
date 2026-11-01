@@ -1,0 +1,147 @@
+{
+  "id": "practice-07",
+  "title": "Environment & Our Planet",
+  "level": "B1",
+  "duration_minutes": 40,
+  "grammar": "First and Second Conditional",
+  "vocabulary": [
+    {
+      "term": "pollution",
+      "translation": "загрязнение"
+    },
+    {
+      "term": "recycle",
+      "translation": "перерабатывать"
+    },
+    {
+      "term": "reduce waste",
+      "translation": "сокращать отходы"
+    },
+    {
+      "term": "wildlife",
+      "translation": "дикая природа"
+    },
+    {
+      "term": "renewable",
+      "translation": "возобновляемый"
+    },
+    {
+      "term": "carbon footprint",
+      "translation": "углеродный след"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "practice-07-vocab-match",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "matching",
+      "instructions": "Match each word with its Russian meaning.",
+      "pairs": [
+        {
+          "word": "pollution",
+          "meaning": "загрязнение"
+        },
+        {
+          "word": "recycle",
+          "meaning": "перерабатывать"
+        },
+        {
+          "word": "reduce waste",
+          "meaning": "сокращать отходы"
+        },
+        {
+          "word": "wildlife",
+          "meaning": "дикая природа"
+        },
+        {
+          "word": "renewable",
+          "meaning": "возобновляемый"
+        },
+        {
+          "word": "carbon footprint",
+          "meaning": "углеродный след"
+        }
+      ]
+    },
+    {
+      "id": "practice-07-vocab-context",
+      "section": "Vocabulary",
+      "minutes": 6,
+      "type": "production",
+      "instructions": "Write two original English sentences using the target vocabulary. Then use at least one extra expression from the topic.",
+      "required_terms": [
+        "pollution",
+        "recycle",
+        "reduce waste"
+      ],
+      "example_response": "I use the word \"pollution\" when discussing environment & our planet.",
+      "evaluation": "Teacher reviews grammar, meaning and natural collocations."
+    },
+    {
+      "id": "practice-07-grammar-choice",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "fill_gap",
+      "instructions": "Choose the correct form to complete each sentence.",
+      "questions": [
+        {
+          "text": "If we recycle more, we ___ less waste.",
+          "answer": "will produce"
+        },
+        {
+          "text": "If I lived near school, I ___ there every day.",
+          "answer": "would walk"
+        }
+      ]
+    },
+    {
+      "id": "practice-07-grammar-rewrite",
+      "section": "Grammar",
+      "minutes": 6,
+      "type": "teacher_checked",
+      "instructions": "Write two sentences about environment & our planet that use First and Second Conditional. Include one question and one negative sentence.",
+      "answer_guidance": "Check use of First and Second Conditional, spelling, word order, and whether the two sentences are meaningful."
+    },
+    {
+      "id": "practice-07-reading",
+      "section": "Reading",
+      "minutes": 8,
+      "type": "reading_comprehension",
+      "title": "Environment & Our Planet — Reading",
+      "passage": "A group of students started a project to reduce plastic waste at school. They placed recycling bins in every classroom and encouraged pupils to reuse bottles. If more students join, the school will produce less rubbish. Their next goal is to save energy by turning off unused lights.",
+      "questions": [
+        {
+          "question": "What did the students put in classrooms?",
+          "answer": "Recycling bins"
+        },
+        {
+          "question": "What is their next goal?",
+          "answer": "To save energy"
+        }
+      ]
+    },
+    {
+      "id": "practice-07-listening",
+      "section": "Listening",
+      "minutes": 8,
+      "type": "listening_comprehension",
+      "title": "Environment & Our Planet — Listening",
+      "script": "Host: What would you change about your town? Student: If I were the mayor, I would create more cycle paths. Host: What will you do this year? Student: I will cycle to school if the weather is good.",
+      "audio_source": "TTS script. Needs audio recording or speech synthesis integration.",
+      "questions": [
+        {
+          "question": "What would the student create?",
+          "answer": "More cycle paths"
+        },
+        {
+          "question": "When will the student cycle to school?",
+          "answer": "If the weather is good"
+        }
+      ]
+    }
+  ],
+  "references": {
+    "grammar_topics": "Inspired by general A2/B1 English practice topics; text and tasks authored independently."
+  }
+}
