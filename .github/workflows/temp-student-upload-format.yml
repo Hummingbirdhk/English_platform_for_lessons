@@ -1,0 +1,27 @@
+name: Format student uploader temporary
+on:
+  push:
+    branches: [feature/homework-submissions-storage]
+permissions:
+  contents: write
+jobs:
+  format:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx prettier --write src/pages/students/StudentOwnPage.tsx src/pages/students/studentOwnPage.css
+      - name: Commit formatting
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/pages/students/StudentOwnPage.tsx src/pages/students/studentOwnPage.css
+          if ! git diff --cached --quiet; then
+            git commit -m "Format student uploader"
+            git push
+          fi
