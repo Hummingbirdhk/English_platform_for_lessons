@@ -73,13 +73,23 @@ export function HomePage() {
         ))}
       </section>
 
-      <section className="home-bottom-grid home-bottom-grid--single">
+      <section className="home-bottom-grid home-bottom-grid--reading">
         <article className="quick-card">
           <div className="quick-card__title">Словарь</div>
           <div className="quick-card__meta">Слова и фразы с переводом и объяснением</div>
           <GlossyActionLink
             to="/dictionary"
             label="Открыть словарь"
+            size="sm"
+            className="quick-card__action"
+          />
+        </article>
+        <article className="quick-card quick-card--reading">
+          <div className="quick-card__title">Библиотека текстов</div>
+          <div className="quick-card__meta">Читай, переводи и делай задания после текстов</div>
+          <GlossyActionLink
+            to="/reading"
+            label="Открыть библиотеку текстов"
             size="sm"
             className="quick-card__action"
           />
