@@ -35,3 +35,5 @@
 .reading-question textarea { width: 100%; border: 1px solid #d6d6df; border-radius: 14px; padding: 15px; font: 17px/1.5 Arial,sans-serif; resize: vertical; }
 @media (max-width: 850px) { .reading-library-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .home-bottom-grid--reading { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .reading-library-grid { grid-template-columns: 1fr; } .reading-library-hero { padding: 30px 24px; } .reading-paper p { font-size: 17px; line-height: 1.75; } }
+
+.reading-profile-link { align-self: flex-start; margin-top: 12px; padding: 11px 17px; border-radius: 99px; background: #111114; color: #fff; font: 700 14px Arial, sans-serif; }
