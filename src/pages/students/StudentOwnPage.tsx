@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './studentOwnPage.css';
+import { getSubmissions, getSubmissionFiles, sendHomework, openHomeworkFile, type Submission, type SubmissionFile } from '../../shared/lib/homeworkSubmissions';
 import { Link, useParams } from 'react-router-dom';
 import { findStudentById, loadAllContent } from '../../content/loadContent';
 import { getStudentSchedule, parseScheduleDateTime } from '../../content/teacher/teacherSchedule';
@@ -52,6 +53,11 @@ export function StudentOwnPage() {
   const [saving, setSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState('');
   const [dirty, setDirty] = useState(false);
+  const [uploadFiles, setUploadFiles] = useState<File[]>([]);
+  const [submissions, setSubmissions] = useState<Submission[]>([]);
+  const [submittedFiles, setSubmittedFiles] = useState<SubmissionFile[]>([]);
+  const [uploading, setUploading] = useState(false);
+  const [submissionMessage, setSubmissionMessage] = useState('');
 
   useEffect(() => {
     if (!studentId) return;
@@ -109,6 +115,27 @@ export function StudentOwnPage() {
     };
   }, [studentId]);
 
+  useEffect(() => {
+    if (!studentId) return;
+    void getSubmissions(studentId).then(setSubmissions).catch(() => setSubmissionMessage('Не удалось загрузить отправленные работы.'));
+  }, [studentId]);
+  const activeSubmission = submissions.find((entry) => entry.lesson_date === homeworkDate);
+  useEffect(() => {
+    if (!activeSubmission) return;
+    void getSubmissionFiles(activeSubmission.id).then(setSubmittedFiles).catch(() => setSubmittedFiles([]));
+  }, [activeSubmission?.id]);
+  async function submitWork() {
+    if (!studentId) return;
+    setUploading(true); setSubmissionMessage('');
+    try {
+      await sendHomework(studentId, homeworkDate, uploadFiles);
+      setSubmissions(await getSubmissions(studentId));
+      setUploadFiles([]);
+      setSubmissionMessage('Работа отправлена преподавателю.');
+    } catch (error) {
+      setSubmissionMessage(error instanceof Error ? error.message : 'Ошибка отправки');
+    } finally { setUploading(false); }
+  }
   function selectHomeworkDate(date: string) {
     setHomeworkDate(date);
     const entry = homeworkEntries.find((item) => item.lesson_date === date);
@@ -279,6 +306,24 @@ export function StudentOwnPage() {
                 ))}
               </div>
             ) : null}
+          </div>
+          <div className="student-work-upload">
+            <h3>Моя выполненная работа</h3>
+            {activeSubmission ? (
+              <>
+                <p>Статус: {activeSubmission.status === 'submitted' ? 'На проверке' : activeSubmission.status === 'reviewed' ? 'Проверено' : 'На доработке'}</p>
+                {submittedFiles.map((file) => <button type="button" key={file.id} onClick={() => void openHomeworkFile(file.storage_path)}>{file.original_name} ↗</button>)}
+                {activeSubmission.teacher_comment ? <p>Комментарий преподавателя: {activeSubmission.teacher_comment}</p> : null}
+              </>
+            ) : (
+              <>
+                <label htmlFor="homework-upload">Прикрепить работу (JPG, PNG, WebP, PDF, DOCX до 20 МБ)</label>
+                <input id="homework-upload" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.docx" onChange={(event) => setUploadFiles(Array.from(event.target.files ?? []))} />
+                {uploadFiles.map((file) => <p key={file.name}>{file.name}</p>)}
+                <button type="button" disabled={uploading || !homeworkDate || uploadFiles.length === 0} onClick={() => void submitWork()}>{uploading ? 'Отправляю…' : 'Отправить преподавателю'}</button>
+              </>
+            )}
+            {submissionMessage ? <p role="status">{submissionMessage}</p> : null}
           </div>
         </article>
       </section>
