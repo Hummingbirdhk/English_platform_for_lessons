@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react';
 import { cloudClient } from '../../shared/config/cloud';
 import './studentHomeworkReview.css';
-import { getSubmissions, getSubmissionFiles, reviewHomework, openHomeworkFile, type Submission, type SubmissionFile } from '../../shared/lib/homeworkSubmissions';
+import {
+  getSubmissions,
+  getSubmissionFiles,
+  reviewHomework,
+  openHomeworkFile,
+  type Submission,
+  type SubmissionFile,
+} from '../../shared/lib/homeworkSubmissions';
 
 type Entry = {
   student_id: string;
@@ -48,19 +55,30 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
 
   useEffect(() => {
     let active = true;
-    void getSubmissions(studentId).then(async (rows) => {
-      if (!active) return;
-      setSubmissions(rows);
-      const grouped = await Promise.all(rows.map(async (row) => [row.id, await getSubmissionFiles(row.id)] as const));
-      if (active) setFiles(Object.fromEntries(grouped));
-    }).catch(() => { if(active) setReviewError('Не удалось загрузить отправленные работы. Проверь настройки Supabase.'); });
-    return () => { active = false; };
-  }, [studentId,refresh]);
+    void getSubmissions(studentId)
+      .then(async (rows) => {
+        if (!active) return;
+        setSubmissions(rows);
+        const grouped = await Promise.all(
+          rows.map(async (row) => [row.id, await getSubmissionFiles(row.id)] as const),
+        );
+        if (active) setFiles(Object.fromEntries(grouped));
+      })
+      .catch(() => {
+        if (active)
+          setReviewError('Не удалось загрузить отправленные работы. Проверь настройки Supabase.');
+      });
+    return () => {
+      active = false;
+    };
+  }, [studentId, refresh]);
   async function saveReview(id: string, status: 'reviewed' | 'revision') {
     try {
-      await reviewHomework(id,status,comments[id] ?? '');
+      await reviewHomework(id, status, comments[id] ?? '');
       setRefresh((value) => value + 1);
-    } catch { setReviewError('Не удалось сохранить проверку.'); }
+    } catch {
+      setReviewError('Не удалось сохранить проверку.');
+    }
   }
   return (
     <article className="teacher-panel teacher-homework-review">
@@ -85,12 +103,38 @@ export function StudentHomeworkReview({ studentId }: { studentId: string }) {
         {submissions.length === 0 ? <p>Пока нет отправленных файлов.</p> : null}
         {submissions.map((submission) => (
           <section className="teacher-submitted-work" key={submission.id}>
-            <strong>{submission.lesson_date.split('-').reverse().join('.')} · {submission.status === 'submitted' ? 'На проверке' : submission.status === 'reviewed' ? 'Проверено' : 'На доработке'}</strong>
-            {(files[submission.id] ?? []).map((file) => <button type="button" key={file.id} onClick={() => void openHomeworkFile(file.storage_path)}>↗ {file.original_name}</button>)}
-            <textarea aria-label="Комментарий преподавателя" placeholder="Комментарий к работе" value={comments[submission.id] ?? submission.teacher_comment} onChange={(event) => setComments({...comments,[submission.id]:event.target.value})} />
+            <strong>
+              {submission.lesson_date.split('-').reverse().join('.')} ·{' '}
+              {submission.status === 'submitted'
+                ? 'На проверке'
+                : submission.status === 'reviewed'
+                  ? 'Проверено'
+                  : 'На доработке'}
+            </strong>
+            {(files[submission.id] ?? []).map((file) => (
+              <button
+                type="button"
+                key={file.id}
+                onClick={() => void openHomeworkFile(file.storage_path)}
+              >
+                ↗ {file.original_name}
+              </button>
+            ))}
+            <textarea
+              aria-label="Комментарий преподавателя"
+              placeholder="Комментарий к работе"
+              value={comments[submission.id] ?? submission.teacher_comment}
+              onChange={(event) =>
+                setComments({ ...comments, [submission.id]: event.target.value })
+              }
+            />
             <div className="teacher-submitted-work__actions">
-              <button type="button" onClick={() => void saveReview(submission.id,'reviewed')}>Проверено</button>
-              <button type="button" onClick={() => void saveReview(submission.id,'revision')}>На доработку</button>
+              <button type="button" onClick={() => void saveReview(submission.id, 'reviewed')}>
+                Проверено
+              </button>
+              <button type="button" onClick={() => void saveReview(submission.id, 'revision')}>
+                На доработку
+              </button>
             </div>
           </section>
         ))}
