@@ -6,7 +6,8 @@ import { GlossyActionLink } from '../../shared/ui/GlossyActionButton';
 export function HomePage() {
   const { lessons, materials, students } = loadAllContent();
   const auth = useTeacherAuth();
-  const isStudent = auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
+  const isStudent =
+    auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
   const sections = [
     {
       to: '/materials',
@@ -42,7 +43,11 @@ export function HomePage() {
         <div className="home-hero__copy">
           <div className="eyebrow">ТВОЯ АНГЛИЙСКАЯ ПЛАТФОРМА</div>
           <h1>{isStudent ? 'Что изучаем сегодня?' : 'Чему будем учить сегодня?'}</h1>
-          <p>{isStudent ? 'Все материалы, уроки и твой прогресс — всё в одном месте' : 'Все материалы, уроки и прогресс учеников — в одном месте.'}</p>
+          <p>
+            {isStudent
+              ? 'Все материалы, уроки и твой прогресс — всё в одном месте'
+              : 'Все материалы, уроки и прогресс учеников — в одном месте.'}
+          </p>
         </div>
         <BrandArtifact kind="spark" className="home-hero__spark" />
         <BrandArtifact kind="smile" className="home-hero__smile" />

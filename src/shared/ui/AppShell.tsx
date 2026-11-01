@@ -1,6 +1,5 @@
 import type { PropsWithChildren } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useTeacherAuth } from '../../features/teacher-auth/teacherAuthStore';
 
 const navigation = [
   { to: '/', label: 'Главная', end: true },
@@ -10,12 +9,14 @@ const navigation = [
   { to: '/students', label: 'Ученики' },
 ];
 
-export function AppShell({ children }: PropsWithChildren) {
-  const auth = useTeacherAuth();
-  const isStudent = auth.status === 'authenticated' && auth.role === 'student' && Boolean(auth.studentId);
+export function AppShell({
+  children,
+  studentId,
+}: PropsWithChildren<{ studentId?: string | null }>) {
+  const isStudent = Boolean(studentId);
   const links = navigation.map((item) =>
     isStudent && item.to === '/students'
-      ? { ...item, to: `/students/${auth.studentId}`, label: 'Профиль' }
+      ? { ...item, to: `/students/${studentId}`, label: 'Профиль' }
       : item,
   );
   return (
@@ -40,11 +41,11 @@ export function AppShell({ children }: PropsWithChildren) {
           </nav>
 
           <NavLink
-            to={isStudent ? `/students/${auth.studentId}` : "/teacher"}
+            to={isStudent ? `/students/${studentId}` : '/teacher'}
             className={({ isActive }) =>
               isActive ? 'app-profile app-profile--active' : 'app-profile'
             }
-            aria-label={isStudent ? "Личный кабинет ученика" : "Личный кабинет преподавателя"}
+            aria-label={isStudent ? 'Личный кабинет ученика' : 'Личный кабинет преподавателя'}
           >
             M
           </NavLink>
