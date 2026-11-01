@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 const navigation = [
   { to: '/', label: 'Главная', end: true },
   { to: '/dictionary', label: 'Словарь' },
+  { to: '/reading', label: 'Библиотека' },
   { to: '/materials', label: 'Материалы' },
   { to: '/lessons', label: 'Уроки' },
   { to: '/students', label: 'Ученики' },
