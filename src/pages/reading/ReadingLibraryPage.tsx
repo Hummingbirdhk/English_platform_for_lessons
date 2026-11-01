@@ -35,7 +35,7 @@ export function ReadingLibraryPage() {
         </Link>
         <section className="reading-detail-heading">
           <span className="reading-eyebrow">
-            {current.genre} · A2–B1 · {current.paragraphs.join(' ').split(/\s+/).length} слов
+            {current.genre} · A2–B1
           </span>
           <h1>{current.title}</h1>
           <p>Прочитай текст в своём темпе. Незнакомые слова можно найти в словаре.</p>
