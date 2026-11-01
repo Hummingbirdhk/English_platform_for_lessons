@@ -122,6 +122,13 @@ export function StudentPage() {
           )}
         </article>
       </section>
+      <section className="home-bottom-grid home-bottom-grid--reading" aria-label="Библиотека чтения">
+        <article className="quick-card quick-card--reading">
+          <div className="quick-card__title">Библиотека текстов</div>
+          <div className="quick-card__meta">Читайте, переводите и делайте задания</div>
+          <Link to="/reading" className="reading-profile-link">Открыть библиотеку →</Link>
+        </article>
+      </section>
     </main>
   );
 }
