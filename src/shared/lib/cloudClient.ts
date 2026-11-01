@@ -190,6 +190,31 @@ export function buildCloudClient(endpoint: string, publicToken: string) {
         body: JSON.stringify(body),
       });
     },
+    async update(table: string, query: string, body: unknown) {
+      return restRequest(table, query, { method: 'PATCH', headers: { Prefer: 'return=representation' }, body: JSON.stringify(body) });
+    },
+    async uploadPrivateFile(bucket: string, path: string, file: File) {
+      const active = await getValidSession();
+      if (!active || !configured) throw new Error('Authentication required.');
+      const response = await fetch(`${endpoint}/storage/v1/object/${bucket}/${path}`, {
+        method: 'POST',
+        headers: { apikey: publicToken, Authorization: `Bearer ${active.accessToken}`, 'Content-Type': file.type, 'x-upsert': 'false' },
+        body: file,
+      });
+      if (!response.ok) throw new Error('Ошибка загрузки файла: ' + await response.text());
+    },
+    async getPrivateFileUrl(bucket: string, path: string) {
+      const active = await getValidSession();
+      if (!active || !configured) throw new Error('Authentication required.');
+      const response = await fetch(`${endpoint}/storage/v1/object/sign/${bucket}/${path}`, {
+        method: 'POST',
+        headers: { apikey: publicToken, Authorization: `Bearer ${active.accessToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ expiresIn: 300 }),
+      });
+      if (!response.ok) throw new Error('Не удалось открыть файл.');
+      const data = await response.json() as { signedURL: string };
+      return `${endpoint}/storage/v1${data.signedURL}`;
+    },
     async remove(table: string, query: string) {
       return restRequest<void>(table, query, {
         method: 'DELETE',
