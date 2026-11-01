@@ -30,15 +30,23 @@ export function ReadingLibraryPage() {
   if (current) {
     return (
       <main className="page-shell reading-library">
-        <Link className="reading-back" to="/reading">← Все тексты</Link>
+        <Link className="reading-back" to="/reading">
+          ← Все тексты
+        </Link>
         <section className="reading-detail-heading">
-          <span className="reading-eyebrow">{current.genre} · A2–B1 · {current.paragraphs.join(' ').split(/\s+/).length} слов</span>
+          <span className="reading-eyebrow">
+            {current.genre} · A2–B1 · {current.paragraphs.join(' ').split(/\s+/).length} слов
+          </span>
           <h1>{current.title}</h1>
           <p>Прочитай текст в своём темпе. Незнакомые слова можно найти в словаре.</p>
-          <Link className="reading-dictionary-link" to="/dictionary">Открыть словарь ↗</Link>
+          <Link className="reading-dictionary-link" to="/dictionary">
+            Открыть словарь ↗
+          </Link>
         </section>
         <article className="reading-paper" lang="en">
-          {current.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+          {current.paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </article>
         <section className="reading-practice">
           <div>
@@ -49,20 +57,23 @@ export function ReadingLibraryPage() {
           <button type="button" onClick={() => setShowQuestions((value) => !value)}>
             {showQuestions ? 'Скрыть вопросы' : 'Перейти к вопросам'}
           </button>
-          {showQuestions && current.questions.map((question, index) => (
-            <label className="reading-question" key={question}>
-              <span>{index + 1}. {question}</span>
-              <textarea
-                aria-label={question}
-                rows={3}
-                value={answers[index] ?? ''}
-                onChange={(event) =>
-                  setAnswers((previous) => ({ ...previous, [index]: event.target.value }))
-                }
-                placeholder="Write your answer here..."
-              />
-            </label>
-          ))}
+          {showQuestions &&
+            current.questions.map((question, index) => (
+              <label className="reading-question" key={question}>
+                <span>
+                  {index + 1}. {question}
+                </span>
+                <textarea
+                  aria-label={question}
+                  rows={3}
+                  value={answers[index] ?? ''}
+                  onChange={(event) =>
+                    setAnswers((previous) => ({ ...previous, [index]: event.target.value }))
+                  }
+                  placeholder="Write your answer here..."
+                />
+              </label>
+            ))}
         </section>
       </main>
     );
@@ -73,7 +84,10 @@ export function ReadingLibraryPage() {
       <section className="reading-library-hero">
         <span className="reading-eyebrow">ENGLISH READING LIBRARY</span>
         <h1>Давай читать!</h1>
-        <p>20 историй, статей и других текстов на английском. Выбирай интересную тему, читай, переводи незнакомые слова и проверяй себя.</p>
+        <p>
+          20 историй, статей и других текстов на английском. Выбирай интересную тему, читай,
+          переводи незнакомые слова и проверяй себя.
+        </p>
       </section>
       <section className="reading-library-toolbar" aria-label="Поиск текстов">
         <input
@@ -82,17 +96,29 @@ export function ReadingLibraryPage() {
           value={search}
           onChange={(event) => setSearch(event.target.value)}
         />
-        <select aria-label="Формат текста" value={genre} onChange={(event) => setGenre(event.target.value)}>
-          {genres.map((option) => <option key={option} value={option}>{option}</option>)}
+        <select
+          aria-label="Формат текста"
+          value={genre}
+          onChange={(event) => setGenre(event.target.value)}
+        >
+          {genres.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
         </select>
       </section>
       <section className="reading-library-grid" aria-label="Библиотека текстов">
         {filtered.map((item) => (
           <Link className="reading-tile" to={`/reading/${item.id}`} key={item.id}>
-            <span className="reading-tile-number">{String(readingTexts.indexOf(item) + 1).padStart(2, '0')} / 20</span>
+            <span className="reading-tile-number">
+              {String(readingTexts.indexOf(item) + 1).padStart(2, '0')} / 20
+            </span>
             <span className="reading-tile-type">{item.genre}</span>
             <h2>{item.title}</h2>
-            <span className="reading-tile-footer">A2–B1 <span>Читать ↗</span></span>
+            <span className="reading-tile-footer">
+              A2–B1 <span>Читать ↗</span>
+            </span>
           </Link>
         ))}
       </section>

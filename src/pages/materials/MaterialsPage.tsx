@@ -14,7 +14,10 @@ const typeOptions = [
 export function MaterialsPage() {
   const { materials: allMaterials } = loadAllContent();
   const materials = useMemo(
-    () => allMaterials.filter((material) => material.type === 'grammar' || material.type === 'vocabulary'),
+    () =>
+      allMaterials.filter(
+        (material) => material.type === 'grammar' || material.type === 'vocabulary',
+      ),
     [allMaterials],
   );
   const [query, setQuery] = useState('');
