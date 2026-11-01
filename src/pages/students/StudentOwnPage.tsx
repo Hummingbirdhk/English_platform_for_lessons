@@ -196,7 +196,9 @@ export function StudentOwnPage() {
         >
           <span className="sticker sticker--white">МОЯ ДОМАШКА</span>
           <h2>Домашнее задание</h2>
-          <p className="student-homework-help">Выбери дату урока: задания разных занятий хранятся отдельно.</p>
+          <p className="student-homework-help">
+            Выбери дату урока: задания разных занятий хранятся отдельно.
+          </p>
           <div className="student-own-homework-form">
             <label htmlFor="homework-date">Дата занятия</label>
             <select
@@ -332,7 +334,6 @@ export function StudentOwnPage() {
           )}
         </article>
       </section>
-
     </main>
   );
 }
