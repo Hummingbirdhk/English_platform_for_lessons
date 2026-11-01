@@ -36,7 +36,7 @@ using(public.is_teacher()) with check(public.is_teacher());
 create policy "homework files read" on public.homework_submission_files for select to authenticated
 using(exists(select 1 from public.homework_submissions s where s.id=submission_id and (public.is_teacher() or s.student_id=public.current_student_id())));
 create policy "student add homework files" on public.homework_submission_files for insert to authenticated
-with check(exists(select 1 from public.homework_submissions s where s.id=submission_id and s.student_id=public.current_student_id() and s.status='submitted') and storage_path like (public.current_student_id() || '/%'));
+with check(exists(select 1 from public.homework_submissions s where s.id=submission_id and s.student_id=public.current_student_id() and s.status='submitted') and storage_path like (public.current_student_id() || '/' || submission_id::text || '/%'));
 
 -- Storage paths: student-id/submission-id/random-filename. Never expose public URLs.
 create policy "homework storage read" on storage.objects for select to authenticated
