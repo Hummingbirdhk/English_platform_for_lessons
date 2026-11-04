@@ -4,6 +4,7 @@ import { loadAllContent } from '../../content/loadContent';
 import { LessonRenderer } from '../../entities/lesson/LessonRenderer';
 import { StudentAssignmentBar } from '../../features/student-workspace/StudentAssignmentBar';
 import { PracticeLesson } from './PracticeLesson';
+import { IrregularVerbsLesson } from './IrregularVerbsLesson';
 
 export function LessonPage() {
   const { lessonId } = useParams();
@@ -11,6 +12,15 @@ export function LessonPage() {
   const lesson = content.lessons.find((item) => item.id === lessonId);
 
   if (lessonId?.startsWith('practice-')) return <PracticeLesson />;
+  if (lessonId === 'irregular-verbs-holiday')
+    return (
+      <>
+        <main className="page-shell lesson-assignment-shell">
+          <StudentAssignmentBar mode="lesson" itemId={lessonId} />
+        </main>
+        <IrregularVerbsLesson />
+      </>
+    );
 
   if (!lesson) {
     return (
