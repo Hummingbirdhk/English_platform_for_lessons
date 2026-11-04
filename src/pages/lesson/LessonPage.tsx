@@ -12,7 +12,15 @@ export function LessonPage() {
   const lesson = content.lessons.find((item) => item.id === lessonId);
 
   if (lessonId?.startsWith('practice-')) return <PracticeLesson />;
-  if (lessonId === 'irregular-verbs-holiday') return <><main className="page-shell lesson-assignment-shell"><StudentAssignmentBar mode="lesson" itemId={lessonId} /></main><IrregularVerbsLesson /></>;
+  if (lessonId === 'irregular-verbs-holiday')
+    return (
+      <>
+        <main className="page-shell lesson-assignment-shell">
+          <StudentAssignmentBar mode="lesson" itemId={lessonId} />
+        </main>
+        <IrregularVerbsLesson />
+      </>
+    );
 
   if (!lesson) {
     return (
