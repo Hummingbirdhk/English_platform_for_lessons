@@ -12,36 +12,36 @@ describe('IrregularVerbsLesson', () => {
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 8')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: '2', exact: true }));
+    await user.click(screen.getByRole('button', { name: '2' }));
     await user.type(screen.getAllByPlaceholderText('Past Simple form…')[0], 'found');
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 5')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: '3', exact: true }));
+    await user.click(screen.getByRole('button', { name: '3' }));
     expect(screen.getByText('SENTENCE 5')).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: 'Although' }));
-    expect(screen.getByRole('button', { name: 'Although', exact: true })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: 'Although' })).toHaveLength(2);
     await user.click(screen.getAllByRole('button', { name: '↺ Reset' })[0]);
     expect(screen.getAllByText('Click the words below to build your sentence…')).toHaveLength(5);
 
-    await user.click(screen.getByRole('button', { name: '4', exact: true }));
+    await user.click(screen.getByRole('button', { name: '4' }));
     await user.type(screen.getAllByPlaceholderText('Past Simple form…')[0], 'went');
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 8')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: '5', exact: true }));
+    await user.click(screen.getByRole('button', { name: '5' }));
     const firstTrue = screen.getAllByRole('radio', { name: 'True' })[0];
     await user.click(firstTrue);
     expect(firstTrue).toBeChecked();
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 5')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: '6', exact: true }));
+    await user.click(screen.getByRole('button', { name: '6' }));
     await user.selectOptions(screen.getByLabelText('Past Simple of begin'), 'began');
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 8')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: '1', exact: true }));
+    await user.click(screen.getByRole('button', { name: '1' }));
     expect(screen.getByLabelText('Verb type for travel')).toHaveValue('regular');
   });
 });
