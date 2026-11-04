@@ -18,8 +18,8 @@ const ordering = [
   { tokens: ['we', 'terrible,', 'hiking', 'Although', 'went', 'the weather', 'anyway.', 'was'], answer: [3, 5, 7, 1, 0, 4, 2, 6] },
   { tokens: ['because', 'She', 'cost', 'the jacket', 'didn’t', 'too much.', 'buy', 'it'], answer: [1, 4, 6, 3, 0, 7, 2, 5] },
   { tokens: ['the map', 'did', 'yesterday?', 'Where', 'that', 'you', 'lost', 'find', 'we'], answer: [3, 1, 5, 7, 0, 4, 8, 6, 2] },
-  { tokens: ['after', 'We', 'the train', 'the guide', 'left.', 'met', 'had', 'the station'], answer: [1, 5, 3, 0, 2, 6, 4, 7] },
-  { tokens: ['the truth', 'because', 'I', 'her.', 'told', 'she', 'trusted', 'me'], answer: [2, 4, 7, 0, 1, 5, 6, 3] },
+  { tokens: ['after', 'We', 'the train', 'the guide', 'left', 'met', 'had', 'the station.'], answer: [1, 5, 3, 0, 2, 6, 4, 7] },
+  { tokens: ['the truth', 'because', 'I', 'me.', 'told', 'she', 'trusted', 'her'], answer: [2, 4, 7, 0, 1, 5, 6, 3] },
 ];
 const storyVerbs = [
   { base: 'go', answer: 'went' }, { base: 'take', answer: 'took' },
