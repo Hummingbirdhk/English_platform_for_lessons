@@ -1,3 +1,5 @@
+import process from 'node:process';
+import console from 'node:console';
 import ts from 'typescript';
 import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
