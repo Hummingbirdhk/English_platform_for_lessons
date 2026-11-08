@@ -1,3 +1,5 @@
+import process from 'node:process';
+import console from 'node:console';
 import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join, posix, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
