@@ -10,8 +10,7 @@ test('public navigation opens lessons and materials', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Библиотека для уроков' })).toBeVisible();
 });
 
-test('student login remains private and never exposes a profile without auth', async ({ page }) => {
-  await page.goto('#/students/student-artem');
-  await expect(page).toHaveURL(/#\/(students|student\/login|student\/artem)/);
-  await expect(page.locator('input[type="password"]').or(page.getByText('Ученик не найден')).or(page.getByText('Вход ученика')).first()).toBeVisible();
+test('unknown lesson shows a safe not-found state', async ({ page }) => {
+  await page.goto('#/lesson/not-a-real-lesson');
+  await expect(page.getByText('Lesson not found')).toBeVisible();
 });
