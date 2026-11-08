@@ -37,7 +37,7 @@ test('tablet and desktop navigation remains fully available', async ({ page }) =
 test('small-screen reading and dictionary pages retain their content', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 780 });
   await page.goto('#/reading');
-  await expect(page.getByRole('heading', { name: /библиотека/i }).first()).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Давай читать!' })).toBeVisible();
   await page.goto('#/dictionary');
   await expect(page.locator('.dictionary-controls input').first()).toBeVisible();
 });
