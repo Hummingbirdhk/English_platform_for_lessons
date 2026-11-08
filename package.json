@@ -15,7 +15,14 @@
     "check:ui-redux": "node scripts/check-ui-redux-imports.mjs",
     "check:architecture": "node scripts/check-architecture.mjs",
     "validate:content": "tsx src/content/validate-cli.ts",
-    "verify": "node scripts/verify-repository.mjs"
+    "verify": "node scripts/verify-repository.mjs",
+    "qa": "npm run verify && npm run qa:architecture && npm run qa:architecture:test && npm run qa:security && npm run qa:security:test && npm run qa:audit",
+    "qa:architecture": "node tools/qa/architecture/check.mjs",
+    "qa:architecture:test": "node --test tools/qa/architecture/check.test.mjs",
+    "qa:security": "node tools/qa/security/check.mjs",
+    "qa:security:test": "node --test tools/qa/security/check.test.mjs",
+    "qa:audit": "npm audit --audit-level=high",
+    "qa:browser": "playwright test"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
@@ -47,7 +54,8 @@
     "typescript": "^5.9.2",
     "typescript-eslint": "8.72.0",
     "vite": "^7.1.7",
-    "vitest": "^4.1.12"
+    "vitest": "^4.1.12",
+    "@playwright/test": "^1.58.2"
   },
   "overrides": {
     "fast-uri": "3.1.9"

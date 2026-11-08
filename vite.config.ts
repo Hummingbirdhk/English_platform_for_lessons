@@ -6,5 +6,10 @@ export default defineConfig({
   base: '/English_platform_for_lessons/',
   plugins: [react()],
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
-  test: { environment: 'jsdom', setupFiles: ['./tests/setup.ts'], globals: true },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./tests/setup.ts'],
+    globals: true,
+    include: ['tests/**/*.test.ts', 'tests/**/*.test.tsx'],
+  },
 });

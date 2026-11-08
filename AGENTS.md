@@ -67,3 +67,13 @@ Important grammar explanations should normally be available in Russian and Engli
 - Never expose internal AI instructions, stack traces, file paths, debug messages, placeholders, or gibberish to students.
 
 Core sequence: **Read -> understand -> test -> implement -> verify.**
+
+## Imported QA harness
+
+QA checks are adapted from `frontend_for_website` and live under `tools/qa/`.
+Run `npm run qa` before merging (it includes `npm run verify`,
+layer boundary fixtures, security AST checks and npm dependency audit).
+Run `npm run qa:browser` for browser changes (after installing Chromium).
+Do not copy the reference application's Redux/state directory layout into this
+educational app: keep its existing layers and declarative lesson structure.
+See `tools/qa/README.md`.

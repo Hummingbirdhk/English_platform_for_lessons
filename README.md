@@ -639,3 +639,17 @@ Because the current application is hosted publicly on GitHub Pages, student file
 Detailed product rules are stored in:
 
 `rules/PRODUCT_STRUCTURE.md`
+
+## QA harness
+
+This repository uses a QA harness adapted from
+[`frontend_for_website`](https://github.com/Hummingbirdhk/frontend_for_website),
+while retaining the English platform's React/Vite architecture and npm lockfile.
+
+- `npm ci && npm run qa`: formatting, linting, TypeScript, architecture,
+  content checks, Vitest, build, architecture regression fixtures, static
+  security checks and dependency audit.
+- `npx playwright install chromium && npm run qa:browser`: browser smoke tests
+  for public navigation and interactive lessons.
+
+Details, scope and limitations: [tools/qa/README.md](tools/qa/README.md).
