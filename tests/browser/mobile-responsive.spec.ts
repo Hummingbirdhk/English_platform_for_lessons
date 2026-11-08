@@ -8,8 +8,10 @@ for (const width of [320, 375, 390]) {
     await expect(toggle).toBeVisible();
     await toggle.click();
     await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
-    await page.getByRole('navigation', { name: 'Main navigation' })
-      .getByRole('link', { name: 'Уроки' }).click();
+    await page
+      .getByRole('navigation', { name: 'Main navigation' })
+      .getByRole('link', { name: 'Уроки' })
+      .click();
     await expect(page.getByRole('heading', { name: 'Готовые последовательности' })).toBeVisible();
     await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeHidden();
     await page.goto('#/lesson/irregular-verbs-holiday');

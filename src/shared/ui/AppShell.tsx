@@ -40,7 +40,11 @@ export function AppShell({
             <span>Меню</span>
           </button>
 
-          <nav id="app-primary-navigation" className={`app-nav${menuOpen ? ' app-nav--open' : ''}`} aria-label="Main navigation">
+          <nav
+            id="app-primary-navigation"
+            className={`app-nav${menuOpen ? ' app-nav--open' : ''}`}
+            aria-label="Main navigation"
+          >
             {links.map((item) => (
               <NavLink
                 key={item.to}
