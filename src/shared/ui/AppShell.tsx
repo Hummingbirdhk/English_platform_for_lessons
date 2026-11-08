@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { PropsWithChildren } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ export function AppShell({
   children,
   studentId,
 }: PropsWithChildren<{ studentId?: string | null }>) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const isStudent = Boolean(studentId);
   const links = navigation.map((item) =>
     isStudent && item.to === '/students'
@@ -26,11 +28,28 @@ export function AppShell({
         <div className="app-header__inner">
           <div className="app-header__spacer" aria-hidden="true" />
 
-          <nav className="app-nav" aria-label="Main navigation">
+          <button
+            className="app-mobile-menu-toggle"
+            type="button"
+            aria-controls="app-primary-navigation"
+            aria-expanded={menuOpen}
+            aria-label={menuOpen ? 'Закрыть меню' : 'Открыть меню'}
+            onClick={() => setMenuOpen((previous) => !previous)}
+          >
+            <span aria-hidden="true">{menuOpen ? '✕' : '☰'}</span>
+            <span>Меню</span>
+          </button>
+
+          <nav
+            id="app-primary-navigation"
+            className={`app-nav${menuOpen ? ' app-nav--open' : ''}`}
+            aria-label="Main navigation"
+          >
             {links.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
+                onClick={() => setMenuOpen(false)}
                 end={item.end}
                 className={({ isActive }) =>
                   isActive ? 'app-nav__link app-nav__link--active' : 'app-nav__link'
