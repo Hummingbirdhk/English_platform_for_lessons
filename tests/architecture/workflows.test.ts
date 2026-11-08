@@ -6,7 +6,9 @@ describe('GitHub workflows', () => {
     const ci = fs.readFileSync('.github/workflows/ci.yml', 'utf8');
     expect(ci).toContain('npm ci');
     expect(ci).toContain('npm run qa');
-    const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')) as { scripts: Record<string, string> };
+    const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')) as {
+      scripts: Record<string, string>;
+    };
     expect(pkg.scripts.qa).toContain('npm run verify');
     expect(ci).toContain('npm run qa:browser');
   });
