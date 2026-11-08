@@ -5,7 +5,9 @@ test('public navigation opens lessons and materials', async ({ page }) => {
   await expect(page.getByRole('navigation', { name: 'Main navigation' })).toBeVisible();
   await page.getByRole('link', { name: 'Уроки' }).click();
   await expect(page.getByRole('heading', { name: 'Готовые последовательности' })).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'The Holiday That Didn\'t Go to Plan' })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: "The Holiday That Didn't Go to Plan" }),
+  ).toBeVisible();
   await page.getByRole('link', { name: 'Материалы' }).click();
   await expect(page.getByRole('heading', { name: 'Библиотека для уроков' })).toBeVisible();
 });

@@ -640,7 +640,6 @@ Detailed product rules are stored in:
 
 `rules/PRODUCT_STRUCTURE.md`
 
-
 ## QA harness
 
 This repository uses a QA harness adapted from

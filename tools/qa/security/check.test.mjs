@@ -6,7 +6,10 @@ for (const [rule, snippet] of [
   ['no-eval', 'eval(location.hash)'],
   ['no-function-constructor', 'new Function(location.hash)'],
   ['no-string-timers', 'setTimeout("alert(1)", 100)'],
-  ['no-dangerously-set-html', 'export const View = () => <div dangerouslySetInnerHTML={{ __html: location.hash }} />'],
+  [
+    'no-dangerously-set-html',
+    'export const View = () => <div dangerouslySetInnerHTML={{ __html: location.hash }} />',
+  ],
   ['no-javascript-url', 'export const View = () => <a href="javascript:alert(1)">link</a>'],
   ['no-javascript-url', 'export const View = () => <a href={"javascript:alert(1)"}>link</a>'],
 ]) {
@@ -15,5 +18,11 @@ for (const [rule, snippet] of [
   });
 }
 test('safe JSX and callbacks are allowed', () => {
-  assert.deepEqual(scanSource('safe.tsx', 'export const Safe = () => <button onClick={() => alert("Hi")}>Go</button>'), []);
+  assert.deepEqual(
+    scanSource(
+      'safe.tsx',
+      'export const Safe = () => <button onClick={() => alert("Hi")}>Go</button>',
+    ),
+    [],
+  );
 });

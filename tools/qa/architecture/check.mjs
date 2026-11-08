@@ -23,11 +23,15 @@ export function checkImportBoundary(file, specifier) {
   const higher = /^(src\/(app|pages|entities|features)\/)/.test(target);
   if (fromShared && higher) return 'shared-must-be-independent';
   if (fromContent && higher) return 'content-must-be-independent';
-  if (fromEntity && /^(src\/(pages|app)\/)/.test(target)) return 'entities-must-not-import-pages-or-app';
+  if (fromEntity && /^(src\/(pages|app)\/)/.test(target))
+    return 'entities-must-not-import-pages-or-app';
   if (fromFeature && target.startsWith('src/pages/')) return 'features-must-not-import-pages';
   if (fromFeature && target.startsWith('src/entities/')) return 'features-must-not-import-entities';
-  if (fromFeature && target.startsWith('src/app/') &&
-      !(file.includes('/controller/') && target === 'src/app/store/hooks')) {
+  if (
+    fromFeature &&
+    target.startsWith('src/app/') &&
+    !(file.includes('/controller/') && target === 'src/app/store/hooks')
+  ) {
     return 'feature-app-bridge-only-in-controller';
   }
   if (fromPage && target.startsWith('src/app/store/')) return 'pages-must-not-import-store';
