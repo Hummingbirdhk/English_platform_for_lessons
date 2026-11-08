@@ -5,7 +5,10 @@ describe('GitHub workflows', () => {
   it('runs canonical verification in CI', () => {
     const ci = fs.readFileSync('.github/workflows/ci.yml', 'utf8');
     expect(ci).toContain('npm ci');
-    expect(ci).toContain('npm run verify');
+    expect(ci).toContain('npm run qa');
+    const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')) as { scripts: Record<string, string> };
+    expect(pkg.scripts.qa).toContain('npm run verify');
+    expect(ci).toContain('npm run qa:browser');
   });
   it('deploys only verified main builds to Pages', () => {
     const deploy = fs.readFileSync('.github/workflows/deploy-pages.yml', 'utf8');
