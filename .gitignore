@@ -4,3 +4,7 @@ coverage/
 *.tsbuildinfo
 .DS_Store
 .superpowers/
+
+# QA browser reports
+/playwright-report/
+/test-results/
