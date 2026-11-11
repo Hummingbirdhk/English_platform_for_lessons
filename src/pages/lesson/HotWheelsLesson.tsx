@@ -76,7 +76,7 @@ const combine = [
 export const readingParagraphs = [
   'On Saturday, sixteen-year-old Mia visited a karting club that opened near her town last spring. She arrived with her brother Leo, who loves watching Formula 1 races, but she had never driven a kart before. Their instructor was Mr Reed, whose job was to teach drivers how to stay safe. He showed them helmets, which protected their heads, and explained the rules of the track.',
   'Mia felt nervous when she put on her helmet. However, the instructor reminded her that speed was less important than control. During her lap, she drove slowly and followed every sign. Leo, who had more experience, finished before her, but he was impressed by her progress.',
-  'After the race, the club gave each driver a certificate. Mia discovered that karting was not only exciting but also a sport that required concentration, patience and respect for other people. She wanted to return the weekend.',
+  'After the race, the club gave each driver a certificate. Mia discovered that karting was not only exciting but also a sport that required concentration, patience and respect for other people. She wanted to return the following weekend.',
 ];
 export const readingWordCount = readingParagraphs.join(' ').trim().split(/\s+/).length;
 
