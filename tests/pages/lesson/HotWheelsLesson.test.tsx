@@ -32,7 +32,9 @@ describe('Spotlight Module 3c Hot Wheels', () => {
     await user.click(screen.getByRole('checkbox', { name: 'Sentence 1: that' }));
 
     await user.click(screen.getByRole('button', { name: '3' }));
-    await user.click(screen.getByRole('radio', { name: 'Mia met an instructor who works at the karting club.' }));
+    await user.click(
+      screen.getByRole('radio', { name: 'Mia met an instructor who works at the karting club.' }),
+    );
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 5')).toBeInTheDocument();
 
@@ -44,12 +46,17 @@ describe('Spotlight Module 3c Hot Wheels', () => {
 
     await user.click(screen.getByRole('button', { name: '5' }));
     await user.click(screen.getByRole('radio', { name: 'the UK' }));
-    await user.type(screen.getByLabelText('Your short article'), 'Sofia is a driver who likes karting. Her team is great.');
+    await user.type(
+      screen.getByLabelText('Your short article'),
+      'Sofia is a driver who likes karting. Her team is great.',
+    );
     await user.click(screen.getByRole('button', { name: 'Check writing requirements' }));
     expect(screen.getByText('• Aim for 60–80 words.')).toBeInTheDocument();
     expect(screen.getByText('• Try to use at least two relative pronouns.')).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: 'Show sample answer' }));
-    expect(screen.getByText(/Sofia Reed is a seventeen-year-old karting driver/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Sofia Reed is a seventeen-year-old karting driver/),
+    ).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 4')).toBeInTheDocument();
 
