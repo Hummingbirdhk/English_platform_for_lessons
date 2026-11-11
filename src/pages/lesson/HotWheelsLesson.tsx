@@ -245,7 +245,7 @@ export function HotWheelsLesson() {
                 <div className="hot-wheels-options">
                   {entry.options.map((option, j) => (
                     <label className="hot-wheels-option" key={option}>
-                      <input type="radio" name={`combine-${i}`} checked={combineAnswers[i] === j} onChange={() => changeAnswer(2, () => setCombineAnswers((old) => ({ ...old, [i]: j }))} />
+                      <input type="radio" name={`combine-${i}`} checked={combineAnswers[i] === j} onChange={() => changeAnswer(2, () => setCombineAnswers((old) => ({ ...old, [i]: j })))} />
                       <span>{option}</span>
                     </label>
                   ))}
@@ -268,7 +268,7 @@ export function HotWheelsLesson() {
                 <div className="hot-wheels-options">
                   {entry.options.map((option, j) => (
                     <label key={option} className="hot-wheels-option">
-                      <input type="radio" name={`read-${i}`} checked={readingAnswers[i] === j} onChange={() => changeAnswer(3, () => setReadingAnswers((old) => ({ ...old, [i]: j }))} />
+                      <input type="radio" name={`read-${i}`} checked={readingAnswers[i] === j} onChange={() => changeAnswer(3, () => setReadingAnswers((old) => ({ ...old, [i]: j })))} />
                       <span>{option}</span>
                     </label>
                   ))}
@@ -290,7 +290,7 @@ export function HotWheelsLesson() {
                 <div className="hot-wheels-options">
                   {entry.options.map((option, j) => (
                     <label key={option} className="hot-wheels-option">
-                      <input type="radio" name={`fact-${i}`} checked={factAnswers[i] === j} onChange={() => changeAnswer(4, () => setFactAnswers((old) => ({ ...old, [i]: j }))} />
+                      <input type="radio" name={`fact-${i}`} checked={factAnswers[i] === j} onChange={() => changeAnswer(4, () => setFactAnswers((old) => ({ ...old, [i]: j })))} />
                       <span>{option}</span>
                     </label>
                   ))}
