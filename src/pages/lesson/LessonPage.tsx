@@ -5,6 +5,7 @@ import { LessonRenderer } from '../../entities/lesson/LessonRenderer';
 import { StudentAssignmentBar } from '../../features/student-workspace/StudentAssignmentBar';
 import { PracticeLesson } from './PracticeLesson';
 import { IrregularVerbsLesson } from './IrregularVerbsLesson';
+import { HotWheelsLesson } from './HotWheelsLesson';
 
 export function LessonPage() {
   const { lessonId } = useParams();
@@ -12,6 +13,15 @@ export function LessonPage() {
   const lesson = content.lessons.find((item) => item.id === lessonId);
 
   if (lessonId?.startsWith('practice-')) return <PracticeLesson />;
+  if (lessonId === 'spotlight-6-module-3c-hot-wheels')
+    return (
+      <>
+        <main className="page-shell lesson-assignment-shell">
+          <StudentAssignmentBar mode="lesson" itemId={lessonId} />
+        </main>
+        <HotWheelsLesson />
+      </>
+    );
   if (lessonId === 'irregular-verbs-holiday')
     return (
       <>
