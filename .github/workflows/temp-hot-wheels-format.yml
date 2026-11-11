@@ -1,0 +1,27 @@
+name: Format Hot Wheels lesson (temporary)
+on:
+  push:
+    branches: [feature/spotlight-6-module-3c-hot-wheels]
+permissions:
+  contents: write
+jobs:
+  format:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx prettier --write src/pages/lesson/HotWheelsLesson.tsx src/pages/lesson/HotWheelsLesson.css src/pages/lesson/LessonPage.tsx src/content/lessons/grade-6/spotlight-6-module-3c-hot-wheels/lesson.json tests/pages/lesson/HotWheelsLesson.test.tsx tests/browser/hot-wheels.spec.ts
+      - name: Save formatting
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/pages/lesson/HotWheelsLesson.tsx src/pages/lesson/HotWheelsLesson.css src/pages/lesson/LessonPage.tsx src/content/lessons/grade-6/spotlight-6-module-3c-hot-wheels/lesson.json tests/pages/lesson/HotWheelsLesson.test.tsx tests/browser/hot-wheels.spec.ts
+          if ! git diff --cached --quiet; then
+            git commit -m "Format Hot Wheels interactive lesson"
+            git push
+          fi
