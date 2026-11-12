@@ -31,7 +31,7 @@ describe('Past Simple Detective Club', () => {
     expect(screen.getByText('3 / 6')).toBeInTheDocument();
 
     await user.click(screen.getByRole('navigation', { name: 'Choose exercise' }).getByRole('button', { name: '3' }));
-    expect(screen.getByText('The Case of the Missing Mascot')).toBeInTheDocument();
+    expect(screen.getAllByText('The Case of the Missing Mascot')).toHaveLength(2);
     await user.type(screen.getByRole('textbox', { name: /Story gap 1/ }), 'went');
     await user.click(screen.getByRole('button', { name: 'Check answers' }));
     expect(screen.getByText('1 / 8')).toBeInTheDocument();
