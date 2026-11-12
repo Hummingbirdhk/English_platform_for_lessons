@@ -13,8 +13,8 @@ test('Hot Wheels practice is functional on desktop and mobile', async ({ page })
     .getByRole('navigation', { name: 'Choose exercise' })
     .getByRole('button', { name: '2' })
     .click();
-  await page.getByRole('checkbox', { name: 'Sentence 1: who' }).check();
-  await page.getByRole('checkbox', { name: 'Sentence 1: that' }).check();
+  await page.getByRole('checkbox', { name: 'Sentence 1: who', exact: true }).check();
+  await page.getByRole('checkbox', { name: 'Sentence 1: that', exact: true }).check();
   await page.getByRole('button', { name: 'Check answers' }).click();
   await expect(page.getByText('1 / 7')).toBeVisible();
 
